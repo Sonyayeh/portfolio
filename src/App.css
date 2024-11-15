@@ -16,7 +16,7 @@ body {
   font-family: "Micro 5", sans-serif; /* Ensure the font is applied globally */
   font-size: 1rem; /* Set a base font size */
   line-height: 1.5;
-  padding: 5vw; /* Use vw units for padding */
+  padding: 0vw, 5vh; /* Use vw units for padding */
   margin: 0;  /* Remove default margin */
   overflow-x: hidden; /* Prevent horizontal scrolling */
 }
@@ -35,7 +35,7 @@ a:hover {
 }
 
 button {
-  background-color: var(--orange);
+
   color: var(--blue);
   border: none;
   padding: 1rem 2rem;
@@ -53,13 +53,11 @@ button:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 1.5rem; /* Adjust padding for responsiveness */
-  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
+  position:static;
   z-index: 1000;
-  background-color: transparent; /* No background */
 }
 
 .top-navbar a {
@@ -154,8 +152,8 @@ button:hover {
   height: auto;
   max-width: 80%;
   position: absolute;
-  bottom: 20vw;
-  right: 8vw;
+  bottom: 18vw;
+  right: 10vw;
 }
 
 /* Down Arrow */
@@ -299,13 +297,13 @@ button:hover {
 
   .static-text {
     font-size: 5rem;
-    margin-left: -60rem;
+    margin-left: -65rem;
     margin-top: 5rem;
   }
 
   .bubble-container {
     width: 70%;
-    left: 25%;
+    left: 22%;
     top: 4rem;
   }
 
