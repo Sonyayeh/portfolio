@@ -5,7 +5,7 @@ const CatGif = (props) => (
   <motion.img
     src="./src/assets/cat.gif"  // Replace with your GIF path
     alt="Cat Animation"
-    className="responsive-cat"  // Added class for styling
+    className="flex max-w-[20rem] w-full h-auto"  // Added class for styling
     {...props}
     animate={{
       y: [-10, 0, -10],  // Same vertical animation as before

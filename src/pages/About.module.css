@@ -1,0 +1,28 @@
+
+
+  .AboutBox {
+    display: flex;           /* Use flexbox to arrange items inside */
+    margin-top: 5rem;        /* Space from the top */
+    margin-left: 10rem;;
+    width: 100%;             /* Ensure the container takes full width */
+    height: auto;            /* Height auto to fit content */     /* Vertically center the content (if needed) */
+    justify-content: flex-start; /* Align content to the left */
+  }
+
+  .abouttext {
+    font-size: 10rem;
+    color: var(--black);
+    justify-content: center;
+    margin-left: 18rem;
+    margin-top: -113rem;
+  }
+
+
+.aboutContact {
+  font-size: 10rem;
+  color: var(--black);
+  padding-left: 0rem;
+  margin-top: -60%;
+  padding-bottom: 30%;
+  text-decoration: underline;
+}

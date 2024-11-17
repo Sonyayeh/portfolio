@@ -1,0 +1,9 @@
+.Yoga {
+    display: flex;           /* Use flexbox to arrange items inside */
+    margin-top: -38rem;        /* Space from the top */
+    margin-left: 3rem;       /* Shift the container to the right (adjust as needed) */
+    width: 60%;             /* Ensure the container takes full width */
+    height: auto;            /* Height auto to fit content */     /* Vertically center the content (if needed) */
+    justify-content: flex-start; /* Align content to the left */
+  }
+  

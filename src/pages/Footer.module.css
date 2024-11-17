@@ -1,0 +1,26 @@
+.footerContainer {
+        font-size: 10rem;
+        color: var(--black);
+        padding-left: 30rem;
+        margin-top: 200%;
+        padding-bottom: 30%;
+        text-decoration: underline;
+}
+
+.about .footerContainer {
+        font-size: 10rem;
+        color: var(--black);
+        padding-left: 45rem;
+        padding-top: 25%;
+        padding-bottom: 30%;
+        text-decoration: underline;
+}
+
+.home .footerContainer {
+        font-size: 10rem;
+        color: var(--black);
+        padding-left: 20rem;
+        padding-top: 175%;
+        padding-bottom: 30%;
+        text-decoration: underline;
+}
