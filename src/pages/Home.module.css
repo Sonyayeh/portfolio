@@ -1,6 +1,6 @@
   .bubbleContainer {
     position: absolute;
-    margin-top: -10vh;
+    margin-top: -9vh;
     margin-left: 17vw;
     width: 70%;
     height: auto;
@@ -28,7 +28,7 @@
 
   .iAmText{
     display: flex;
-    margin-top: -10rem;
+    margin-top: -6rem;
     margin-left: -5rem;
     color: black;
   }
