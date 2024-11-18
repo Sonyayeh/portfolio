@@ -20,6 +20,7 @@ export default {
         'h3-lg': ['4rem', {lineHeight: '1.5', letterSpacing: '0.01em'}],
         'h3': ['3rem', {lineHeight: '1.5', letterSpacing: '0.01em'}],
         'h4': ['2rem', {lineHeight: '1.5', letterSpacing: '0.01em'}],
+        'h5': ['4rem', {lineHeight: '1.5', letterSpacing: '0.01em'}],
         
       }
     },
@@ -52,6 +53,13 @@ export default {
           '@apply font-Manrope text-h1': {},
           '@screen lg': {
           '@apply text-h4': {},
+          }
+        },
+
+        'h5': {
+          '@apply font-Micro text-h1': {},
+          '@screen lg': {
+          '@apply text-h5': {},
           }
         },
         

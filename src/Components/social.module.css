@@ -1,0 +1,34 @@
+.linkedinBox {
+    display: flex;           /* Use flexbox to arrange items inside */
+    margin-top: 18rem;        /* Space from the top */
+    margin-left: 13rem;       /* Shift the container to the right (adjust as needed) */
+    padding-right: 1rem;
+    width: 70%;             /* Ensure the container takes full width */
+    height: auto;            /* Height auto to fit content */     /* Vertically center the content (if needed) */
+
+  }
+.instaBox {
+    display: flex;           /* Use flexbox to arrange items inside */
+    margin-top: 0rem;        /* Space from the top */
+    margin-left: 5rem;       /* Shift the container to the right (adjust as needed) */
+    width: 45%;             /* Ensure the container takes full width */
+    height: auto;            /* Height auto to fit content */     /* Vertically center the content (if needed) */
+
+  }
+.gitBox {
+    display: flex;           /* Use flexbox to arrange items inside */
+    margin-top: 0rem;        /* Space from the top */
+    margin-left: 5rem;       /* Shift the container to the right (adjust as needed) */
+    width: 45%;             /* Ensure the container takes full width */
+    height: auto;            /* Height auto to fit content */     /* Vertically center the content (if needed) */
+
+  }
+.youtubeBox {
+    display: flex;           /* Use flexbox to arrange items inside */
+    margin-top: 1rem;        /* Space from the top */
+    margin-left: 5rem;       /* Shift the container to the right (adjust as needed) */
+    width: 55%;             /* Ensure the container takes full width */
+    height: auto;            /* Height auto to fit content */     /* Vertically center the content (if needed) */
+
+  }
+  

@@ -3,6 +3,11 @@ import GraphicBox from "../Components/GraphicDesign";
 import UiuxBox from "../Components/uiux";
 import DevelopBox from "../Components/develop";
 import Arrow from '../Components/ArrowSvg';
+import Footer from "../Components/footer";
+import Social from "../Components/social";
+import BusVolley from "../mockups/busstop.png";
+import MoreInfoArrow from "../Components/moreArrow";
+
 import styles from "../pages/Projects.module.css";
 
 
@@ -35,6 +40,14 @@ const Projects = () => {
                 <div>
                     <GraphicBox />
                 </div>
+                {/* volleyball mockup here */}
+                <div>
+                <img src={BusVolley} alt="Busstop Mockup" className={`${styles.image}`} />
+                </div>
+                {/* more info arrow */}
+                <div className={`${styles.graphicArrowWrapper}`}>
+                    <MoreInfoArrow />
+                </div>
 
                 
 
@@ -45,21 +58,37 @@ const Projects = () => {
                     </div>
                 </div>
 
-                {/* UI/UX containers */}
+               {/* UI/UX containers */}
                 <div className={`${styles.uiuxContainer}`}>
                     <div className={`${styles.uiuxBoxWrapper}`}>
                         <UiuxBox />
                     </div>
+                        <div className={`${styles.arrowWrapper}`}>
+                            <MoreInfoArrow />
+                        </div>
                     <div className={`${styles.uiuxBoxWrapper}`}>
                         <UiuxBox />
                     </div>
+                        <div className={`${styles.arrowWrapper}`}>
+                            <MoreInfoArrow />
+                        </div>
                     <div className={`${styles.uiuxBoxWrapper}`}>
                         <UiuxBox />
                     </div>
+                        <div className={`${styles.arrowWrapper}`}>
+                            <MoreInfoArrow />
+                        </div>
                     <div className={`${styles.uiuxBoxWrapper}`}>
                         <UiuxBox />
                     </div>
+                        <div className={`${styles.arrowWrapper}`}>
+                            <MoreInfoArrow />
+                        </div>
+                    </div>
+                    
                 </div>
+
+                
 
                 {/* Development container */}
                 <div>
@@ -73,8 +102,22 @@ const Projects = () => {
                     </div>
                 </div>
 
+                <div className={`${styles.projectContact}`}>
+                    <div>
+                        <Footer />
+                    </div>
+                    <div  className={`${styles.devArrowWrapper}`}>
+                        <MoreInfoArrow />
+                    </div>
+                </div>
+
+                <div>
+                    <div>
+                        <Social />
+                    </div>
+                </div>
             </div>
-        </div>
+
     );
 }
 

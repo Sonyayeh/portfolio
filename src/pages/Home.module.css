@@ -86,6 +86,11 @@
     color: var(--black);
     padding-left: 0rem;
     margin-top: -30%;
-    padding-bottom: 30%;
+    margin-bottom: 30%;
     text-decoration: underline;
+  }
+
+  .homeSocial {
+    margin-top: -50%;
+    margin-bottom: 15%;
   }

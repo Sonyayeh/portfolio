@@ -1,5 +1,6 @@
 import React from 'react';
 import { ReactTyped } from 'react-typed';
+import Social from '../Components/social';
 import Footer from '../Components/footer';
 import CatGif from '../Components/CatSvg';
 import PurpleWorkBox from '../Components/purpleworkbox';
@@ -107,6 +108,10 @@ const Home = () => {
         </div>
         <div className={`${styles.homeContact}`}>
           <Footer />
+        </div>
+        
+        <div className={`${styles.homeSocial}`}>
+          <Social />
         </div>
     </div>
   );

@@ -1,0 +1,23 @@
+.Arrow {          /* Use flexbox to arrange items inside */
+    margin-top: -2.75rem;        /* Space from the top */
+    margin-left: 92rem;       /* Shift the container to the right (adjust as needed) */
+    width: 100%;             /* Ensure the container takes full width */
+    height: auto;            /* Height auto to fit content */     /* Vertically center the content (if needed) */
+
+  }
+
+  .Arrow img {
+    max-width: 50px; /* Set a max width for the arrow to keep it from growing too large */
+    max-height: 50px; /* Set a max height */
+    margin-top: -8rem;
+}
+
+.ArrowText {
+    display: flex;           /* Use flexbox to arrange items inside */
+    margin-top: -4rem;        /* Space from the top */
+    margin-left: -13rem;       /* Shift the container to the right (adjust as needed) */
+    height: auto;            /* Height auto to fit content */     /* Vertically center the content (if needed) */
+  }
+
+
+

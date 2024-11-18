@@ -24,3 +24,11 @@
         padding-bottom: 30%;
         text-decoration: underline;
 }
+
+.project .footerContact {
+        font-size: 10rem;
+        color: var(--black);
+        padding-left: -2rem;
+        margin-top: -100%;
+        text-decoration: underline;
+      }

@@ -29,7 +29,7 @@
   .uiuxBoxWrapper {
     display: flex;
     margin-bottom: -40rem;
-    margin-top: 10rem; /* Space between rows */
+    margin-top: 20rem; /* Space between rows */
     max-width: 100%;
 }
 
@@ -38,3 +38,42 @@
     margin-left: -10rem;
     margin-top: -70rem;
   }
+
+  .projectContact {
+    font-size: 10rem;
+    color: var(--black);
+    margin-left: -4rem;
+    margin-top: -140%;
+  }
+
+  .arrowWrapper {
+    display: flex;           /* Aligns items inside the wrapper */
+    margin-left: 3rem;
+    margin-top: 4rem;         /* Adds some spacing above the arrow */
+    padding-bottom: 7rem;
+}
+
+  .graphicArrowWrapper {
+    display: flex;           /* Aligns items inside the wrapper */
+    margin-left: 3rem;
+    margin-top: 8.5rem;         /* Adds some spacing above the arrow */
+    padding-bottom: 0rem;
+}
+
+  .devArrowWrapper {
+    display: flex;           /* Aligns items inside the wrapper */
+    margin-left: 6rem;
+    margin-top: -42rem;         /* Adds some spacing above the arrow */
+    padding-bottom: 0rem;
+}
+
+.image {
+  display: flex;
+  margin-left: 49rem;
+  width: 100%;
+  max-width: 430px;
+  height: auto;
+  margin-top: -43rem;
+}
+
+  
