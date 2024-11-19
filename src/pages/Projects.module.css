@@ -24,12 +24,13 @@
     display: flex;
     margin-left: -10rem;
     margin-top: 10rem;
+    margin-bottom: -10rem;
   }
 
   .uiuxBoxWrapper {
     display: flex;
-    margin-bottom: -40rem;
-    margin-top: 20rem; /* Space between rows */
+    padding-bottom: -40rem;
+    margin-top: 30rem; /* Space between rows */
     max-width: 100%;
 }
 
@@ -49,15 +50,14 @@
   .arrowWrapper {
     display: flex;           /* Aligns items inside the wrapper */
     margin-left: 3rem;
-    margin-top: 4rem;         /* Adds some spacing above the arrow */
-    padding-bottom: 7rem;
+    margin-top: 10rem;         /* Adds some spacing above the arrow */
+
 }
 
   .graphicArrowWrapper {
     display: flex;           /* Aligns items inside the wrapper */
     margin-left: 3rem;
     margin-top: 8.5rem;         /* Adds some spacing above the arrow */
-    padding-bottom: 0rem;
 }
 
   .devArrowWrapper {
@@ -67,13 +67,4 @@
     padding-bottom: 0rem;
 }
 
-.image {
-  display: flex;
-  margin-left: 49rem;
-  width: 100%;
-  max-width: 430px;
-  height: auto;
-  margin-top: -43rem;
-}
 
-  

@@ -2,7 +2,7 @@
     display: flex;           /* Use flexbox to arrange items inside */
     margin-top: -20rem;        /* Space from the top */
     margin-left: -10rem;
-    padding-bottom: 45rem;   /* Shift the container to the right (adjust as needed) */
+    padding-bottom: 43rem;   /* Shift the container to the right (adjust as needed) */
     width: 100%;             /* Ensure the container takes full width */
     height: auto;            /* Height auto to fit content */     /* Vertically center the content (if needed) */
     justify-content: flex-start; /* Align content to the left */
