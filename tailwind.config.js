@@ -24,6 +24,17 @@ export default {
         
       }
     },
+    screens: {
+      'sm': '430px',
+      // => @media (min-width: 640px) { ... }
+
+      'md': '1024px',
+      // => @media (min-width: 768px) { ... }
+
+      'lg': '1280px',
+      // => @media (min-width: 1024px) { ... }
+
+    }
   },
   plugins: [
     function ({addComponents}) {
@@ -66,5 +77,7 @@ export default {
       })
     }
   ],
+
+  
 }
 

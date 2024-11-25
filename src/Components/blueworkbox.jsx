@@ -1,15 +1,17 @@
 import React from "react";
 import bluebox from "../assets/bluebox.png"; // Import the image correctly
-import styles from "../Components/blue.module.css";
 
-const PurpleWorkBox = () => {
+const BlueWorkBox = () => {
     return (
-        <div className={`${styles.BlueWorkBox}`}>
-            <div className="">
+        <div className="flex 
+        
+        md:mt-[-108rem] md:ml-[24rem]
+        w-full h-auto justify-start">
+            <div>
                 <img src={bluebox} alt="work-bubble" /> {/* Use the imported image here */}
             </div>
         </div>
     );
 }
 
-export default PurpleWorkBox;
+export default BlueWorkBox;

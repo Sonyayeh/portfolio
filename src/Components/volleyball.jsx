@@ -1,15 +1,19 @@
 import React from "react";
-import Volleyball from "../mockups/volley.png"
-import styles from "../Components/volleyball.module.css"
+import Volleyball from "../mockups/volley.png";
 
 const VolleyballMockup = () => {
-    return (
-        <div className={`${styles.Volleyball}`}>
-            <div className="">
-                <img src={Volleyball} alt="the mockup photo for Volleyball tournament" /> {/* Use the imported image here */}
-            </div>
-        </div>
-    );
-}
+  return (
+    <div className="flex justify-center items-center w-full h-auto">
+      <div className="flex justify-center items-center w-full max-w-[50rem] 
+      md:ml-[50rem]">
+        <img
+          src={Volleyball}
+          alt="the mockup photo for Volleyball tournament"
+          className="w-full h-auto max-w-[50rem]"
+        />
+      </div>
+    </div>
+  );
+};
 
 export default VolleyballMockup;

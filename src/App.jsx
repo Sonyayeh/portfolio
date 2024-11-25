@@ -1,12 +1,13 @@
+import React from "react";
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import { bubble as Menu } from "react-burger-menu";
 
+// Import your pages
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Projects from "./pages/Projects";
 import Cases from "./pages/Cases";
-
 
 import "./reset.css";
 import "./App.css";
@@ -18,9 +19,9 @@ function App() {
   return (
     <BrowserRouter>
       <div id="outer-container">
-
-        {/* Top Navbar */}
-        <nav className=" text-h2 font-Micro text-blue-300  justify-center align-middle flex">
+        
+        {/* Top Navbar - Visible on large screens, hidden on small/medium screens */}
+        <nav className="hidden lg:flex text-h2 font-Micro text-blue-300 justify-center align-middle">
           <Link to="/" className="px-10 hover:text-blue-300 hover:underline">Home</Link>
           <Link to="/projects" className="px-10 hover:text-blue-300 hover:underline">Projects</Link>
           <Link to="/about" className="px-10 hover:text-blue-300 hover:underline">About</Link>
@@ -28,16 +29,18 @@ function App() {
           <Link to="/cases" className="px-10 hover:text-blue-300 hover:underline">Cases</Link>
         </nav>
 
-        {/* Mobile Burger Menu */}
-        <Menu pageWrapId="page-wrapper" outerContainerId="outer-container">
-          <Link to="/">Home</Link>
-          <Link to="/about">About</Link>
-          <Link to="/contact">Contact</Link>
-          <Link to="/projects">Projects</Link>
-          <Link to="/cases">Cases</Link>
-        </Menu>
-        
+        {/* Mobile Burger Menu (shown only on small and medium screens) */}
+        <div className="lg:hidden">
+          <Menu pageWrapId="page-wrapper" outerContainerId="outer-container">
+            <Link to="/">Home</Link>
+            <Link to="/about">About</Link>
+            <Link to="/contact">Contact</Link>
+            <Link to="/projects">Projects</Link>
+            <Link to="/cases">Cases</Link>
+          </Menu>
+        </div>
 
+        {/* Main Content */}
         <main id="page-wrapper">
           <Routes>
             <Route path="/" element={<Home />} />
@@ -45,7 +48,6 @@ function App() {
             <Route path="/contact" element={<Contact />} />
             <Route path="/projects" element={<Projects />} />
             <Route path="/cases" element={<Cases />} />
-
           </Routes>
         </main>
       </div>
