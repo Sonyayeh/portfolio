@@ -7,10 +7,16 @@ import PurpleWorkBox from '../Components/purpleworkbox';
 import BlueWorkBox from '../Components/blueworkbox';
 import GreenWorkBox from '../Components/greenworkbox';
 import Arrow from '../Components/ArrowSvg';
-import Bubbles from '../Components/Bubbles';
 import VolleyballMockup from '../Components/volleyball';
 import YogaMockup from '../Components/puppyyoga';
 import OmuMockup from '../Components/omurice';
+
+import TwoClouds from '../assets/twoclouds.gif';
+import Bubble from '../assets/singlebubble.gif';
+
+
+
+
 
 const Home = () => {
 
@@ -18,31 +24,26 @@ const Home = () => {
   return (
     <div className="container mx-auto">
       {/* Navbar */}
-      <nav className="flex justify-between items-center py-4">
 
-
-        
-      </nav>
 
      
 
       {/* the I am text */}
-      <div className="text-center">
+      <div >
         <h1 className="text-xl 
-        sm:text-6xl sm:mb-[3rem] sm:ml-2
-        md:text-7xl md:mr-[45rem] md:mt-[5rem] 
-        lg:text-[6rem] lg:absolute lg:mr-[60rem] lg:mt-[50rem] 
+        sm:text-6xl sm:mt-[18rem] sm:ml-[-10rem]
+        md:text-7xl md:ml-[8rem] md:mt-[20rem] 
+        lg:text-[6rem] lg:mr-[60rem] lg:mb-[-17rem] 
         ">I am a&nbsp;</h1>
 
         {/* Bubble Container with ReactTyped */}
         <div className="relative 
-        mt-4 w-full h-[100vh] 
-        sm:mt-[-51rem] sm:ml-[-10rem] 
-        md:mt-[-59rem] md:ml-[1rem] md:left-[12rem] 
-        lg:mt-[-53rem] lg:ml-[2rem]">
+        sm:mt-[-31.5rem] sm:ml-[-10rem] 
+        md:mt-[-31.5rem] md:ml-[1rem] md:left-[12rem] 
+        lg:mb-[-40rem] lg:ml-[2rem] lg:mt-[-20rem]">
           <div
-            className="absolute left-0 flex justify-center items-center overflow-hidden w-[100%] h-full p-[2vw] bg-center bg-contain bg-no-repeat
-            sm:w-[40rem] sm:ml-[2rem] sm:mt-[28rem]
+            className=" left-0 flex justify-center items-center overflow-hidden w-[100%] h-full bg-center bg-contain bg-no-repeat
+            sm:w-[45rem] sm:ml-[2rem] sm:mt-[27rem]
             lg:w-[50rem]
             "
             style={{
@@ -59,31 +60,31 @@ const Home = () => {
               loop
               showCursor={true}
               fadeOut={false}
-              className="iAmText flex 
-              sm:text-[3rem] sm:ml-[4.5rem] sm:pr-[6rem] sm:pt-6 
+              className=" flex font-Micro text-black z-10 mt-[-2rem] ml-[4.5rem]
+              sm:text-[4rem] sm:ml-[4.5rem] sm:pr-[6rem] sm:pt-6 
               md:text-[4rem] md:pt-6 md:pr-[4rem] 
               lg:text-[5rem] 
-              font-Micro text-black z-10 mt-[-2rem] ml-[4.5rem]"
+              "
             />
           </div>
         </div>
       </div>
 
       {/* CatGif Section */}
-      <div className="flex justify-center sm:mt-[-35rem] mt-8 mr-[-50rem]">
+      <div className="flex justify-center">
         <CatGif 
-        className="w-32 
-        sm:w-40 sm:mr-[15rem] sm:mt-[43rem]
-        md:w-60 md:mr-[10rem]
-        lg:w-80 lg:ml-[18rem] lg:mt-[43rem]"/>
+        className="
+        sm:w-40 sm:mr-[-30rem] sm:mt-[3rem]
+        md:w-60 md:mr-[-40rem]
+        lg:w-70 lg:ml-[50rem]"/>
       </div>
 
       {/* Arrow Between CatGif and WorkBox */}
       <div className="text-center">
         <Arrow 
         className="
-        sm:w-5 sm:mb-[50rem] sm:ml-[11rem] sm:py-[10rem]
-        md:w-7 md:ml-[30rem] md:py-[10rem]
+        sm:w-5 sm:mb-[55rem] sm:ml-[11rem] sm:py-[10rem]
+        md:w-7 md:ml-[30rem] md:py-[8rem]
         lg:w-8 lg:ml-[35rem] lg:py-[0rem]
         "/>
       </div>
@@ -156,7 +157,7 @@ const Home = () => {
 
         {/* North Star Omurice */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-[-8rem]
-        lg:pl-[5rem] lg:w-[70rem] lg:mt-[20rem]">
+        lg:pl-[5rem] lg:mt-[20rem]">
           <div className='grid grid-cols-1 gap-8 w-full max-w-[1200px]
           sm:mt-[110rem]
           md:w-[40rem] md:mt-[-65rem] md:ml-[10rem]
@@ -181,15 +182,98 @@ const Home = () => {
         </div>
       </div>
 
-      {/* Bubbles Section */}
-      <div className="flex justify-center mt-8" style={{ marginTop: '-115rem', marginLeft: '-3rem', width: '100%' }}>
-        <Bubbles />
+      {/* this is the side name tag */}
+      <div>
+        <div>
+          <h3 className='
+          sm:text-3xl sm:-rotate-90 sm:pt-[60rem]
+          
+          '>Sonya Yeh</h3>
+        </div>
       </div>
+
+
+      {/* this is where the cloud gifs are at 
+      I am directly calling it from the assets folder so I wouldn't need to
+      add this many component into my home.jsx
+      */}
+      <div className='w-100%'>
+        <div>
+          <img src={TwoClouds} alt="the cloud gif 1" className='
+          sm:mt-[-33rem] sm:ml-[25rem] sm:w-[10rem]
+          md:mt-[-90rem] md:ml-[50rem] md:w-[10rem]
+          
+          '/>
+        </div>
+        <div>
+          <img src={TwoClouds} alt="the cloud gif 2" className='
+          transform scale-x-[-1]
+          sm: mt-[-130rem] sm:ml-[-13rem] sm:w-[10rem]
+          md:mt-[10rem] md:ml-[-2rem] md:w-[10rem]
+          '/>
+        </div>
+      </div>
+
+      {/* here are the bubbles, it's the same thing as the clouds */}
+      <div>
+        <div className='
+        sm:w-2/3
+        md:w-2/4
+        '>
+          <img src={Bubble} alt='this is a single bubble gif 1 near purple box' 
+          className='
+          sm:mt-[30rem] sm:ml-[-18rem]
+          md:mt-[68rem] md:ml-[-10rem]
+          '
+          />
+        </div>
+    
+
+
+          <div className='
+          sm:w-1/3 sm:h-auto
+          md:w-1/5
+          '>
+            <img src={Bubble} alt='this is a single bubble gif 2 near purple box' 
+            className='
+            sm:mt-[-15rem] sm:ml-[-15rem]
+            md:mt-[-31rem] md:ml-[6rem]
+            '
+            />
+          </div>
+
+          <div className='
+          sm:w-2/4 sm:h-auto
+          md:w-1/5
+          '>
+            <img src={Bubble} alt='this is a single bubble gif 3 near purple box' 
+            className='
+            sm:mt-[-53rem] sm:ml-[-18rem]
+            md:mt-[-31rem] md:ml-[46rem]
+            '
+            />
+          </div>
+
+          <div className='
+          sm:w-2/5 sm:h-auto
+          md:w-1/5
+          '>
+            <img src={Bubble} alt='this is a single bubble gif 4 near hero section' 
+            className='
+            sm:mt-[-98rem] sm:ml-[28rem]
+            md:mt-[-31rem] md:ml-[46rem]
+            '
+            />
+          </div>
+      </div>
+
+
+      
 
       <div className="flex flex-col items-center justify-center mt-8">
           {/* Footer Section */}
           <div className="w-full 
-          sm:w-[80%] sm:max-w-[1200px] sm:mt-[200rem] sm:text-[5rem]
+          sm:w-[80%] sm:max-w-[400px] sm:mt-[10rem] sm:text-[5rem]
           md:ml-[33rem]
           lg:mt-[230rem] lg:pb-[-20rem] lg:ml-[43rem]">
             <Footer />
@@ -197,7 +281,7 @@ const Home = () => {
 
           {/* Social Section */}
           <div className="mt-6 
-          sm:w-[40rem] sm:max-w-[40rem] sm:ml-0
+          sm:w-[40rem] sm:max-w-[40rem] sm:ml-0 sm:mb-[-40rem]
           mb:w-[40rem] md:max-w-[40rem] mb:ml-[7rem]
           lg:w-[60rem] lg:mr-[1rem] lg:mb-[-30rem]">
             <Social />
