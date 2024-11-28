@@ -2,20 +2,20 @@ import React from 'react';
 import { ReactTyped } from 'react-typed';
 import Social from '../Components/social';
 import CatGif from '../Components/CatSvg';
-import PurpleWorkBox from '../Components/PurpleWorkBox';
-import BlueWorkBox from '../Components/BlueWorkBox';
-import GreenWorkBox from '../Components/GreenWorkBox';
+import PurpleWorkBox from '../Components/purpleworkbox';
+import BlueWorkBox from '../Components/blueworkbox';
+import GreenWorkBox from '../Components/greenworkbox';
 import Arrow from '../Components/ArrowSvg';
 import VolleyballMockup from '../Components/volleyball';
-import YogaMockup from '../Components/PuppyYoga';
-import OmuMockup from '../Components/OmuRice';
+import YogaMockup from '../Components/puppyyoga';
+import OmuMockup from '../Components/omurice';
 import TwoClouds from '../assets/twoclouds.gif';
 import Bubble from '../assets/singlebubble.gif';
 
 const Home = () => {
   return (
     
-    <div className="container mx-auto flex flex-col min-h-screen">
+    <div className="container mx-auto flex flex-col misn-h-screen">
      
      {/* cloud gif */}
      <div className="flex justify-between">
