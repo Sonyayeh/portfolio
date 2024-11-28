@@ -1,294 +1,210 @@
 import React from 'react';
 import { ReactTyped } from 'react-typed';
 import Social from '../Components/social';
-import Footer from '../Components/footer';
 import CatGif from '../Components/CatSvg';
-import PurpleWorkBox from '../Components/purpleworkbox';
-import BlueWorkBox from '../Components/blueworkbox';
-import GreenWorkBox from '../Components/greenworkbox';
+import PurpleWorkBox from '../Components/PurpleWorkBox';
+import BlueWorkBox from '../Components/BlueWorkBox';
+import GreenWorkBox from '../Components/GreenWorkBox';
 import Arrow from '../Components/ArrowSvg';
-import VolleyballMockup from '../Components/volleyball';
-import YogaMockup from '../Components/puppyyoga';
-import OmuMockup from '../Components/omurice';
-
+import VolleyballMockup from '../Components/Volleyball';
+import YogaMockup from '../Components/PuppyYoga';
+import OmuMockup from '../Components/OmuRice';
 import TwoClouds from '../assets/twoclouds.gif';
 import Bubble from '../assets/singlebubble.gif';
 
-
-
-
-
 const Home = () => {
-
-
   return (
-    <div className="container mx-auto">
-      {/* Navbar */}
-
-
+    
+    <div className="container mx-auto flex flex-col min-h-screen">
      
+     {/* cloud gif */}
+     <div className="flex justify-between">
+        <img src={TwoClouds} alt="Cloud gif" 
+        className="
+        sm:w-[20rem] sm:ml-[10rem] sm:mt-[10rem]
+        md:w-[20rem] md:ml-[40rem] md:mt-[-2rem]
+        lg:w-[20rem] lg:ml-[60rem]
+        " />
+      </div>
 
-      {/* the I am text */}
-      <div >
-        <h1 className="text-xl 
-        sm:text-6xl sm:mt-[18rem] sm:ml-[-10rem]
-        md:text-7xl md:ml-[8rem] md:mt-[20rem] 
-        lg:text-[6rem] lg:mr-[60rem] lg:mb-[-17rem] 
-        ">I am a&nbsp;</h1>
+      {/* I am Text */}
+      <div className="flex justify-center items-center mt-20">
+        <h1 className="text-4xl 
+        sm:text-[8rem] sm:mt-[0rem] sm:mr-[-20rem] 
+        md:text-[6rem] md:mr-[40rem] md:mt-[3rem]
+        lg:text-[7rem] lg:mr-[50rem] lg:mt-[-2rem]
+        font-Micro">
+          I am a&nbsp;
+        </h1>
 
-        {/* Bubble Container with ReactTyped */}
-        <div className="relative 
-        sm:mt-[-31.5rem] sm:ml-[-10rem] 
-        md:mt-[-31.5rem] md:ml-[1rem] md:left-[12rem] 
-        lg:mb-[-40rem] lg:ml-[2rem] lg:mt-[-20rem]">
-          <div
-            className=" left-0 flex justify-center items-center overflow-hidden w-[100%] h-full bg-center bg-contain bg-no-repeat
-            sm:w-[45rem] sm:ml-[2rem] sm:mt-[27rem]
-            lg:w-[50rem]
-            "
-            style={{
-              backgroundImage: 'url(/src/assets/text-bubble.png)',
-            }}
-          >
-            {/* ReactTyped Component */}
-            <ReactTyped
-              strings={["UI/UX Designer", "Graphic Designer", "Video Editor", "Illustrator", "Front End Developer"]}
-              typeSpeed={100}
-              backSpeed={100}
-              backDelay={1000}
-              startDelay={500}
-              loop
-              showCursor={true}
-              fadeOut={false}
-              className=" flex font-Micro text-black z-10 mt-[-2rem] ml-[4.5rem]
-              sm:text-[4rem] sm:ml-[4.5rem] sm:pr-[6rem] sm:pt-6 
-              md:text-[4rem] md:pt-6 md:pr-[4rem] 
-              lg:text-[5rem] 
-              "
-            />
-          </div>
+      </div>
+
+      {/* Bubble Container with ReactTyped */}
+      <div className="flex justify-center mt-10 relative">
+        <div
+          className="w-full max-w-[80rem] h-[16rem] bg-contain bg-no-repeat 
+          sm:mr-[-105rem] sm:h-[12rem] sm:w-[60rem] sm:mb-[-10rem] sm:mt-[-8rem]
+          md:mr-[-25rem] md:h-[7rem] md:w-[45rem] md:mt-[-6.5rem]
+          lg:h-[20rem] lg:w-[50rem] lg:mr-[-20rem]"
+          style={{ backgroundImage: 'url(/src/assets/text-bubble.png)' }}
+        >
+          <ReactTyped
+            strings={["UI/UX Designer", "Graphic Designer", "Video Editor", "Illustrator", "Front End Developer"]}
+            typeSpeed={100}
+            backSpeed={100}
+            backDelay={1000}
+            startDelay={500}
+            loop
+            showCursor
+            className="text-black font-Micro text-3xl 
+            sm:text-[6rem] sm:ml-[10rem] sm:leading-none 
+            md:text-[5.5rem] md:ml-[3rem]
+            lg:text-[6.5rem] mx-6 mt-[-1rem]"
+          />
         </div>
       </div>
 
       {/* CatGif Section */}
-      <div className="flex justify-center">
-        <CatGif 
-        className="
-        sm:w-40 sm:mr-[-30rem] sm:mt-[3rem]
-        md:w-60 md:mr-[-40rem]
-        lg:w-70 lg:ml-[50rem]"/>
+      <div className="flex justify-center mt-12">
+        <CatGif className="w-40 
+        sm:w-[20rem] sm:mr-[-150rem] sm:mb-[-10rem] sm:mt-[10rem]
+        md:w-[10rem] md:mr-[-55rem] md:mt-[0rem] md:mb-[10rem]
+        lg:w-[20rem] lg:mr-[-65rem]" />
       </div>
 
-      {/* Arrow Between CatGif and WorkBox */}
-      <div className="text-center">
-        <Arrow 
-        className="
-        sm:w-5 sm:mb-[55rem] sm:ml-[11rem] sm:py-[10rem]
-        md:w-7 md:ml-[30rem] md:py-[8rem]
-        lg:w-8 lg:ml-[35rem] lg:py-[0rem]
-        "/>
+      {/* Arrow */}
+      <div className="text-center mt-10">
+        <Arrow className="w-8 
+        sm:w-8 sm:pb-[0rem] sm:mt-[40rem] sm:ml-[50rem]
+        md:w-10 md:ml-[28rem] md:mt-[20rem]
+        lg:w-16 lg:ml-[40rem] lg:mt-[10rem]" />
       </div>
 
       {/* Sample Work Title */}
-      <div className="flex justify-center w-full">
-        <p className="text-xl 
-          sm:text-[5rem] sm:mt-[-55rem]
-          md:text-[7rem] md:ml-[-2rem]
-          lg:text-[8rem] lg:pt-[15rem]
-          text-center">
-          Sample Work:
-        </p>
+      <div className="flex justify-center w-full mt-20">
+        <p className="text-3xl 
+        sm:text-[10rem] sm:mt-[20rem] sm:mr-[-80rem] sm:mb-[20rem]
+        md:text-[10rem] md:ml-[-80rem] md:mt-[11rem]
+        lg:text-6xl text-center">
+          Sample Work:</p>
       </div>
 
-
+         {/* Cloud GIFs */}
+         <div>
+        <img src={TwoClouds} alt="Cloud gif" className="transform scale-x-[-1] w-16 
+        sm:w-[20rem] sm:mt-[-80rem] sm:ml-[80rem] sm:pt-[50rem]
+        md:w-[20rem] md:mt-[-70rem] md:ml-[43rem] md:pt-[45rem]" />
+      </div>
 
       {/* Work Showcase (Flex and Grid Layouts) */}
-      <div className="mt-8 space-y-8
-      sm:mt-[-50rem] sm:w-[40rem] sm:h-[40rem] sm:ml-[-8rem]
-      ">
+      <div className="mt-8 space-y-8 ">
         {/* Furrever Pals */}
-        <div className="grid grid-cols-1 gap-8
-         md:pl-[10rem] md:w-[50rem]
-         lg:pl-[5rem] lg:w-[70rem] lg:mt-[20rem]">
+        <div className="grid sm:h-auto 
+        sm:w-[100rem] sm:mt-[-14rem] sm:pb-[60rem] sm:ml-[20rem] 
+        md:w-[90rem] md:ml-[-2.5rem]">
           <PurpleWorkBox />
-          <div className='
-          flex items-center
-          sm:w-[30rem] sm:h-[30rem] sm:mt-[-32.5rem] sm:ml-[5.5rem] 
-          md:w-[35rem] md:h-[30rem] md:mt-[-54.5rem] md:ml-[2.5rem] md:py-[37rem]
-          lg:w-[80rem] lg:mt-[-63rem] lg:ml-[3.5rem]
-          '>
-          <YogaMockup />
+          <div className="flex w-full justify-center items-center 
+          sm:w-[50rem] sm:ml-[6rem] sm:mt-[-47rem] md:w-[50rem]">
+            <YogaMockup />
           </div>
         </div>
         <div className="text-center">
-          <p className="text-xl
-          sm:text-5xl sm:mt-[-32rem]
-          md:text-5xl md:absolute md:ml-[18rem] md:mt-[-52rem]
-          lg:text-7xl lg:absolute lg:ml-[19rem] lg:mt-[-60rem]
-          ">Furrever Pals Puppy Yoga</p>
+          <p className="text-xl 
+          sm:text-[5rem] sm:mr-[-75rem] sm:mt-[-104rem] sm:pb-[50rem] 
+          md:text-[5rem] md:mr-[3rem]
+          lg:text-5xl">
+            Furrever Pals Puppy Yoga
+          </p>
         </div>
 
-        {/* Beach Volleyball */}
-        <div className="flex justify-center items-center mt-8 min-h-screen
-        lg:pl-[5rem] lg:w-[70rem] lg:mt-[20rem]">
-          <div className='grid grid-cols-1 w-full max-w-[1200px]
-          sm:w-[100rem] sm:pt-[30rem] sm:py-[70rem] 
-          md:w-[100rem] md:pt-[85rem]
-          lg:pr-[8rem] lg:w-[70rem] lg:mt-[15rem]
-          '>
-            <BlueWorkBox />
-            <div className='
-            sm:w-[30rem] sm:h-[20rem] sm:ml-[5rem] sm:mt-[-22rem] 
-            md:w-[80rem] md:ml-[-21rem] md:mt-[-100rem]
-            lg:w-[97rem] lg:ml-[-20.5rem] lg:mt-[-98rem]
-            '>
-            <VolleyballMockup />
+        {/* bubble */}
+        <div>
+          <div className="flex justify-between ">
+          <img src={Bubble} alt="Bubble gif" className=" 
+          sm:w-[40rem] sm:h-auto sm:ml-[-3.5rem] sm:mt-[-20rem]
+          md:w-[25rem] md:h-auto md:ml-[-15rem] md:mb-[9rem]" />
+          </div>
+          <div>
+          <img src={Bubble} alt="Bubble gif" className="
+          sm:w-[15rem] sm:h-auto sm:ml-[-3rem] sm:mt-[-25rem]
+          md:w-30 md:mt-[-30rem] md:ml-[-12rem]" />
+          </div>
+        </div>
+        
+
+
+
+          {/* Beach Volleyball */}
+          <div className="grid grid-cols-1 
+            sm:w-[60rem] sm:ml-[20rem] sm:pb-[100rem] 
+            md:w-[90rem] md:ml-[-17rem] md:mt-[-10rem]">
+            {/* BlueWorkBox */}
+            <div className="relative 
+            sm:h-[30rem] sm:pb-[-20rem]
+            md:h-[40rem] lg:h-[50rem] flex justify-center items-center">
+              <BlueWorkBox />
+              {/* VolleyballMockup inside the box */}
+              <div className="absolute 
+              sm:top-[-0rem]
+              md:ml-[0rem] md:mt-[7rem]
+              ">
+                <VolleyballMockup />
+              </div>
             </div>
           </div>
+          {/* Title */}
+          <div className="text-center mt-4">
+            <p className="text-xl 
+            sm:text-[4rem] sm:mr-[-65rem] sm:mt-[-136rem] sm:pb-[50rem] 
+            md:text-[4.5rem] md:mr-[5rem] md:mt-[-140rem]
+            lg:text-5xl"> Beach Volleyball Tournament Poster</p>
+          </div>
+
+        {/* bubble */}
+        <div>
+        <div>
+        <img src={Bubble} alt="Bubble gif" className="w-16 
+        sm:w-[20rem] sm:ml-[72rem] sm:mt-[-20rem]
+        md:w-50 md:ml-[50rem] md:mt-[-22rem]" />
+        </div>
+        <div>
+          <img src={Bubble} alt="Bubble gif" className="w-32 
+          sm:w-[40rem] sm:ml-[75rem] sm:mt-[-30rem]
+          md:w-24" />
+        </div>
         </div>
 
-        <div className="text-center mt-4">
-          <p className="text-xl 
-          sm:text-5xl sm:mt-[-99rem]
-          md:text-5xl md:absolute md:mt-[-177rem] md:ml-[28rem]
-          lg:text-6xl lg:absolute lg:mt-[-176rem] lg:ml-[36rem]
-          ">Beach Volleyball Tournament Poster</p>
-        </div>
+
+
 
         {/* North Star Omurice */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-[-8rem]
-        lg:pl-[5rem] lg:mt-[20rem]">
-          <div className='grid grid-cols-1 gap-8 w-full max-w-[1200px]
-          sm:mt-[110rem]
-          md:w-[40rem] md:mt-[-65rem] md:ml-[10rem]
-          lg:ml-[0rem] lg:w-[70rem] lg:mt-[-50rem]
-          '>
-            <GreenWorkBox />
-          </div>
-          <div className='
-          sm:w-[50rem] sm:ml-[2rem] sm:mt-[-3rem]
-          md:w-[50rem] md:ml-[-8.5rem] md:mt-[-66rem]
-          lg:w-[90rem] lg:ml-[-33rem] lg:mt-[-50rem]
-          '>
-            <OmuMockup />
+        <div className="grid grid-cols-1 
+        sm:w-[60rem] sm:ml-[20rem] sm:pt-[93rem]
+        md:w-[60rem] md:ml-[-2rem] md:pt-[100rem]">
+          <GreenWorkBox />
+          <div className="w-full 
+            sm:w-[72rem] sm:ml-[6rem] sm:mt-[1rem] 
+            md:w-[80rem] md:ml-[3rem]
+            lg:w-[80rem]">
+            <OmuMockup  />
           </div>
         </div>
         <div className="text-center mt-4">
           <p className="text-xl 
-          sm:text-5xl sm:mt-[-84rem]
-          md:text-5xl md:mt-[-147rem] md:ml-[21rem]
-          lg:text-7xl lg:absolute lg:mt-[-132rem] lg:ml-[24rem]
-          ">North Star Omurice</p>
+          sm:text-[5rem] sm:mr-[-75rem] sm:mt-[-83rem] sm:pb-[50rem] 
+          md:text-[5rem] md:mr-[5rem] md:mt-[-82rem]
+          lg:text-5xl">North Star Omurice</p>
         </div>
       </div>
 
-      {/* this is the side name tag */}
-      <div>
-        <div>
-          <h3 className='
-          sm:text-3xl sm:-rotate-90 sm:pt-[60rem]
-          
-          '>Sonya Yeh</h3>
-        </div>
+      {/* Footer and Social Sections */}
+      <div className="mt-6 
+      sm:w-[40rem] sm:max-w-[40rem] sm:ml-[30rem] sm:mb-[-40rem] 
+      md:w-[40rem] md:ml-[10rem] md:mb-[-50rem]
+      lg:w-[60rem] lg:mr-[1rem] lg:mb-[-30rem]">
+        <Social />
       </div>
-
-
-      {/* this is where the cloud gifs are at 
-      I am directly calling it from the assets folder so I wouldn't need to
-      add this many component into my home.jsx
-      */}
-      <div className='w-100%'>
-        <div>
-          <img src={TwoClouds} alt="the cloud gif 1" className='
-          sm:mt-[-33rem] sm:ml-[25rem] sm:w-[10rem]
-          md:mt-[-90rem] md:ml-[50rem] md:w-[10rem]
-          
-          '/>
-        </div>
-        <div>
-          <img src={TwoClouds} alt="the cloud gif 2" className='
-          transform scale-x-[-1]
-          sm: mt-[-130rem] sm:ml-[-13rem] sm:w-[10rem]
-          md:mt-[10rem] md:ml-[-2rem] md:w-[10rem]
-          '/>
-        </div>
-      </div>
-
-      {/* here are the bubbles, it's the same thing as the clouds */}
-      <div>
-        <div className='
-        sm:w-2/3
-        md:w-2/4
-        '>
-          <img src={Bubble} alt='this is a single bubble gif 1 near purple box' 
-          className='
-          sm:mt-[30rem] sm:ml-[-18rem]
-          md:mt-[68rem] md:ml-[-10rem]
-          '
-          />
-        </div>
-    
-
-
-          <div className='
-          sm:w-1/3 sm:h-auto
-          md:w-1/5
-          '>
-            <img src={Bubble} alt='this is a single bubble gif 2 near purple box' 
-            className='
-            sm:mt-[-15rem] sm:ml-[-15rem]
-            md:mt-[-31rem] md:ml-[6rem]
-            '
-            />
-          </div>
-
-          <div className='
-          sm:w-2/4 sm:h-auto
-          md:w-1/5
-          '>
-            <img src={Bubble} alt='this is a single bubble gif 3 near purple box' 
-            className='
-            sm:mt-[-53rem] sm:ml-[-18rem]
-            md:mt-[-31rem] md:ml-[46rem]
-            '
-            />
-          </div>
-
-          <div className='
-          sm:w-2/5 sm:h-auto
-          md:w-1/5
-          '>
-            <img src={Bubble} alt='this is a single bubble gif 4 near hero section' 
-            className='
-            sm:mt-[-98rem] sm:ml-[28rem]
-            md:mt-[-31rem] md:ml-[46rem]
-            '
-            />
-          </div>
-      </div>
-
-
-      
-
-      <div className="flex flex-col items-center justify-center mt-8">
-          {/* Footer Section */}
-          <div className="w-full 
-          sm:w-[80%] sm:max-w-[400px] sm:mt-[10rem] sm:text-[5rem]
-          md:ml-[33rem]
-          lg:mt-[230rem] lg:pb-[-20rem] lg:ml-[43rem]">
-            <Footer />
-          </div>
-
-          {/* Social Section */}
-          <div className="mt-6 
-          sm:w-[40rem] sm:max-w-[40rem] sm:ml-0 sm:mb-[-40rem]
-          mb:w-[40rem] md:max-w-[40rem] mb:ml-[7rem]
-          lg:w-[60rem] lg:mr-[1rem] lg:mb-[-30rem]">
-            <Social />
-          </div>
-        </div>
-      </div>
-
+    </div>
   );
 };
 
