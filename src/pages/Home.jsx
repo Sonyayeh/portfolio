@@ -6,7 +6,7 @@ import PurpleWorkBox from '../Components/PurpleWorkBox';
 import BlueWorkBox from '../Components/BlueWorkBox';
 import GreenWorkBox from '../Components/GreenWorkBox';
 import Arrow from '../Components/ArrowSvg';
-import VolleyballMockup from '../Components/Volleyball';
+import VolleyballMockup from '../Components/volleyball';
 import YogaMockup from '../Components/PuppyYoga';
 import OmuMockup from '../Components/OmuRice';
 import TwoClouds from '../assets/twoclouds.gif';
