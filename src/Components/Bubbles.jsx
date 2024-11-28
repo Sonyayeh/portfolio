@@ -1,15 +1,14 @@
 import React from "react";
-
-
+import bubble from "../assets/bubble.png"; // Import the image correctly
 
 function Bubbles() {
 
     return(
-        <image 
-        src="./assets/bubble.svg"
-        />
-
-        
+     <div>
+        <div>
+            <img src={bubble} alt="bubble" /> {/* Use the imported image here */}
+        </div>
+     </div>
     );
 }
 

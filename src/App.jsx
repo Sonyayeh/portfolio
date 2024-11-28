@@ -1,11 +1,15 @@
+import React from "react";
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
-import { bubble as Menu } from "react-burger-menu";
-
+import { scaleRotate as Menu } from "react-burger-menu"; // Import the hamburger menu from react-burger-menu
+import Layout from "./Components/Layout"; // Layout component that wraps around all pages
+// Import your pages
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Projects from "./pages/Projects";
+import Cases from "./pages/Cases";
 
+// Import your styles
 import "./reset.css";
 import "./App.css";
 import "./Menu.css";
@@ -15,36 +19,42 @@ import './index.css';
 function App() {
   return (
     <BrowserRouter>
-      <div id="outer-container">
+      <div id="outer-container" className="flex flex-col min-h-screen">
+        
+        {/* Desktop Navbar - Visible on large screens */}
+        {/* <nav className="hidden lg:flex text-h2 font-Micro text-blue-300 justify-center align-middle py-4">
+          <Link to="/" className="px-10 hover:text-blue-300 hover:underline">Home</Link>
+          <Link to="/projects" className="px-10 hover:text-blue-300 hover:underline">Projects</Link>
+          <Link to="/about" className="px-10 hover:text-blue-300 hover:underline">About</Link>
+          <Link to="/contact" className="px-10 hover:text-blue-300 hover:underline">Contact</Link>
+          <Link to="/cases" className="px-10 hover:text-blue-300 hover:underline">Cases</Link>
+        </nav> */}
 
-        {/* Top Navbar */}
-        <nav className="top-navbar">
-          <Link to="/">Home</Link>
-          <Link to="/about">About</Link>
-          <Link to="/contact">Contact</Link>
-          <Link to="/projects">Projects</Link>
-        </nav>
+        {/* Mobile Burger Menu (Visible on small and medium screens) */}
+        <div className="lg:hidden">
+          <Menu pageWrapId="page-wrapper" outerContainerId="outer-container">
+            <Link to="/" className="menu-item">Home</Link>
+            <Link to="/projects" className="menu-item">Projects</Link>
+            <Link to="/about" className="menu-item">About</Link>
+            <Link to="/contact" className="menu-item">Contact</Link>
+            <Link to="/cases" className="menu-item">Cases</Link>
+          </Menu>
+        </div>
 
-        {/* Mobile Burger Menu */}
-        <Menu pageWrapId="page-wrapper" outerContainerId="outer-container">
-          <Link to="/">Home</Link>
-          <Link to="/about">About</Link>
-          <Link to="/contact">Contact</Link>
-          <Link to="/projects">Projects</Link>
-        </Menu>
-
-        <main id="page-wrapper">
+        {/* Main Content Area */}
+        <main id="page-wrapper" className="flex-grow">
           <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/contact" element={<Contact />} />
-            <Route path="/projects" element={<Projects />} />
+            {/* Wrap all routes inside the Layout component */}
+            <Route path="/" element={<Layout />}>
+              <Route index element={<Home />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/contact" element={<Contact />} />
+              <Route path="/projects" element={<Projects />} />
+              <Route path="/cases" element={<Cases />} />
+            </Route>
           </Routes>
-
-
-          
-
         </main>
+
       </div>
     </BrowserRouter>
   );

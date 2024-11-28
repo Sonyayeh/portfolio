@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "title": "Beach Volleyball Tournament Poster",
+        "description": "The volleyball tournament poster project is to create a promotional poster about a fictional volleyball match in the Town of Shelbyville. All the elements on the poster were to be created only with Adobe Illustrator.",
+        "chips": "#Adobe Illustrator #Adobe Stock Images #Procreate",
+        "imageurl": "https://i.imgur.com/uslFzJE.jpeg"
+    },
+    {
+        "id": 2,
+        "title": "Furrever Pals Puppy Yoga",
+        "description": "A UI/UX project dedicated for a fictional puppy yoga studio, Furrever Pals.Everything for the project was created within Figma, as well as Adobe softwares.The goal was to create a website and service that not only attracts people, but provides a community within the city.",
+        "chips": "#Adobe Illustrator #Adobe Indesign #Adobe Photoshop #Adobe Stock Images  #Procreate #Figma",
+        "imageurl": "https://i.imgur.com/X23PsPJ.png"
+    },
+    {
+        "id": 3,
+        "title": "MyBCIT Page Re-Design",
+        "description": "The goal was to create a redesign version of MyBCIT for MDIA 2540, UI/UX 1. This project consists of technical skills for Figma and basic UX components. The main purpose for this project is to create a simpler and user-friendly version of MyBCIT to reduce any possible learning curves for new students.",
+        "chips": "#Adobe Stock Images #Procreate #Figma",
+        "imageurl": "https://i.imgur.com/AosBzjZ.png"
+    },
+    {
+        "id": 4,
+        "title": "Boardwalk Boutique App Design",
+        "description": "The goal was to create an app for an online shop using the Waterfall methodology for MDIA 2092 Project Management’s final project. For this project, my group decided to focus on rental and location aspect of an online/rental shop for skateboards and streetwear. The app is designed so users can book, shop, receive notification and locate the shop.",
+        "chips": "#Adobe Stock Images #Procreate #Figma",
+        "imageurl": "https://i.imgur.com/tkXT0ml.png"
+    },
+    {
+        "id": 5,
+        "title": "Stardust Tea Lounge: TYSN",
+        "description": "A fictional website dedicated for a fictional shop: Stardust tea lounge. In this project, I partnered up with other team mates to create TYSN, which stands for Tell You Something New, a fictional design agency company that helps local businesses in Vancouver to get noticed.",
+        "chips": "#Adobe Stock Images #Figma #Canva",
+        "imageurl": "https://i.imgur.com/oDaNpB3.png"
+    },
+    {
+        "id": 6,
+        "title": "North Star Omurice ",
+        "description": "North Star Omurice is a fictional restaurant that offers top rated Japanese omurice. The name came from the first omurice that was created: the omurice north star. The websites offer various of omurice dishes, as well as real life customer reviews.",
+        "chips": "#Adobe Stock Images #Figma #VS Code",
+        "imageurl": "https://i.imgur.com/I7ET1LV.png"
+    }
+]

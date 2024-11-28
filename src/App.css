@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Micro+5&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Micro+5&display=swap');
 
 /* Root font family and color settings */
 :root {
@@ -12,21 +13,23 @@
 /* Base Styles */
 body {
   background-color: var(--white);
-  color: var(--blue);
-  font-family: "Micro 5", sans-serif; /* Ensure the font is applied globally */
-  font-size: 1rem; /* Set a base font size */
+  color: var(--black);
+  font-family: "Micro 5", sans-serif;
+  /* Ensure the font is applied globally */
+  font-size: 1rem;
+  /* Set a base font size */
   line-height: 1.5;
-  padding: 5vw; /* Use vw units for padding */
-  margin: 0;  /* Remove default margin */
-  overflow-x: hidden; /* Prevent horizontal scrolling */
+  padding: 0vw, 5vh;
+  /* Use vw units for padding */
+  margin: 0;
+  /* Remove default margin */
+  overflow-x: hidden;
+  /* Prevent horizontal scrolling */
 }
 
-h1, h2, h3, h4, h5, h6 {
-  color: var(--blue);
-}
 
 a {
-  color: var(--blue);
+  color: var(--black);
   text-decoration: none;
 }
 
@@ -35,17 +38,17 @@ a:hover {
 }
 
 button {
-  background-color: var(--orange);
   color: var(--blue);
   border: none;
   padding: 1rem 2rem;
   cursor: pointer;
-  font-size: 1.5rem; /* Adjust button font size */
+  font-size: 1.5rem;
+  /* Adjust button font size */
 }
 
 button:hover {
   background-color: var(--white);
-  color: var(--orange);
+  color: var(--purple);
 }
 
 /* Navbar */
@@ -53,18 +56,17 @@ button:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 1.5rem; /* Adjust padding for responsiveness */
-  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
+  position: static;
   z-index: 1000;
-  background-color: transparent; /* No background */
 }
 
 .top-navbar a {
   color: var(--blue);
-  font-size: 3.5rem; /* Use rem for navbar font size */
+  font-size: 3.5rem;
+  /* Use rem for navbar font size */
   margin: 0 1rem;
   padding: 1rem;
   text-decoration: none;
@@ -78,14 +80,16 @@ button:hover {
 }
 
 #page-wrapper {
-  margin-top: 12vw; /* Adjust margin-top for navbar */
+  margin-top: 12vw;
+  /* Adjust margin-top for navbar */
 }
 
 /* Container */
 .container {
   position: relative;
   padding-left: 5vw;
-  min-width: 320px; /* Ensure minimum width for mobile devices */
+  min-width: 320px;
+  /* Ensure minimum width for mobile devices */
 }
 
 /* Text container */
@@ -98,22 +102,14 @@ button:hover {
 }
 
 /* Static Text */
-.static-text {
-  font-family: "Micro 5", sans-serif;
-  font-size: 2rem; /* Use rem for font size */
-  color: var(--black); /* Static text color */
-  line-height: 1.2;
-  text-align: center;
-  margin-top: 2rem;
-  margin-left: 2rem;
-  width: 100%; /* Ensure it takes up full width */
-}
+
 
 /* Typed text container */
 .typed-text {
   display: flex;
   font-family: "Micro 5", sans-serif;
-  font-size: 2rem; /* Use rem for font size */
+  font-size: 2rem;
+  /* Use rem for font size */
   line-height: 1.2;
   margin: 0;
   text-align: center;
@@ -154,8 +150,8 @@ button:hover {
   height: auto;
   max-width: 80%;
   position: absolute;
-  bottom: 20vw;
-  right: 8vw;
+  bottom: 18vw;
+  right: 10vw;
 }
 
 /* Down Arrow */
@@ -164,18 +160,36 @@ button:hover {
   height: auto;
   max-width: 5%;
   position: absolute;
-  bottom: 30vh; /* Center vertically */
   left: 50%;
-  transform: translateX(-50%); /* Center horizontally */
+  transform: translateX(-50%);
+  margin-top: 8rem;
 }
 
-.sample-box {
+.sample-box1 {
   width: 100%;
   height: auto;
   display: grid;
   position: absolute;
   top: 100vh;
-  right:1%;
+  right: 1%;
+}
+
+.sample-box2 {
+  width: 100%;
+  height: auto;
+  display: grid;
+  position: absolute;
+  top: 250vh;
+  right: 1%;
+}
+
+.sample-box3 {
+  width: 100%;
+  height: auto;
+  display: grid;
+  position: absolute;
+  top: 400vh;
+  right: 1%;
 }
 
 
@@ -183,7 +197,8 @@ button:hover {
 /* Base Layout for Large Screens (1280px and above) */
 @media (min-width: 1280px) {
   body {
-    font-size: 1.2rem; /* Adjust base font size for larger screens */
+    font-size: 1.2rem;
+    /* Adjust base font size for larger screens */
   }
 
   .responsive-cat {
@@ -193,9 +208,11 @@ button:hover {
   }
 
   .static-text {
-    font-size: 5rem; /* Use rem for larger screens */
+    font-size: 5rem;
+    /* Use rem for larger screens */
     margin-left: -70rem;
     margin-top: 5.5rem;
+
   }
 
   .bubble-container {
@@ -211,7 +228,8 @@ button:hover {
   }
 
   .Down-Arrow {
-    top: 85vh; /* Adjust top position for large screens */
+    top: 85vh;
+    /* Adjust top position for large screens */
     max-width: 5%;
   }
 }
@@ -225,7 +243,8 @@ button:hover {
   }
 
   .static-text {
-    font-size: 5rem; /* Adjust for medium screens */
+    font-size: 5rem;
+    /* Adjust for medium screens */
     margin-left: -50rem;
     margin-top: 9rem;
   }
@@ -243,7 +262,8 @@ button:hover {
   }
 
   .Down-Arrow {
-    top: 90vh; /* Adjust position for medium screens */
+    top: 90vh;
+    /* Adjust position for medium screens */
     max-width: 4%;
   }
 
@@ -254,7 +274,8 @@ button:hover {
 /* Small Screens (Phones) */
 @media (max-width: 720px) {
   .top-navbar a {
-    font-size: 4vw; /* Adjust navbar links for small screens */
+    font-size: 4vw;
+    /* Adjust navbar links for small screens */
   }
 
   .responsive-cat {
@@ -280,7 +301,8 @@ button:hover {
   }
 
   .Down-Arrow {
-    top: 55vh; /* Adjust position for small screens */
+    top: 55vh;
+    /* Adjust position for small screens */
     max-width: 7%;
   }
 }
@@ -288,7 +310,8 @@ button:hover {
 /* Extra Small Screens (Mobile/Tablet) */
 @media (min-width: 480px) {
   .top-navbar a {
-    font-size: 5vw; /* Even smaller navbar links */
+    font-size: 5vw;
+    /* Even smaller navbar links */
   }
 
   .responsive-cat {
@@ -299,13 +322,13 @@ button:hover {
 
   .static-text {
     font-size: 5rem;
-    margin-left: -60rem;
+    margin-left: -65rem;
     margin-top: 5rem;
   }
 
   .bubble-container {
     width: 70%;
-    left: 25%;
+    left: 22%;
     top: 4rem;
   }
 
@@ -314,7 +337,8 @@ button:hover {
   }
 
   .Down-Arrow {
-    top: 55vh; /* Adjust position for extra small screens */
+    top: 50vh;
+    /* Adjust position for extra small screens */
     max-width: 3%;
   }
 
@@ -322,6 +346,10 @@ button:hover {
     font-size: 10rem;
     color: var(--black);
     padding-left: 30%;
-    margin-top: 25%;
+    margin-top: 15%;
+  }
+
+  .heroTexts {
+    display: flex;
   }
 }

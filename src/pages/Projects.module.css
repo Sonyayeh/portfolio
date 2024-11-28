@@ -1,0 +1,70 @@
+
+.title {
+    display: flex;
+    margin-left: 33rem;
+    margin-top: -6rem;
+}
+
+.projectArrow {
+    display: flex;
+    margin-top: -2rem;
+    margin-left: 3rem;
+    margin-right: -32rem;
+    width: 100%;
+    height: auto;
+  }
+
+  .projectHeader {
+    display: flex;
+    margin-left: -10rem;
+    margin-top: 40rem;
+  }
+
+  .uiuxprojectHeader {
+    display: flex;
+    margin-left: -10rem;
+    margin-top: 10rem;
+    margin-bottom: -10rem;
+  }
+
+  .uiuxBoxWrapper {
+    display: flex;
+    padding-bottom: -40rem;
+    margin-top: 30rem; /* Space between rows */
+    max-width: 100%;
+}
+
+.devprojectHeader {
+    display: flex;
+    margin-left: -10rem;
+    margin-top: -70rem;
+  }
+
+  .projectContact {
+    font-size: 10rem;
+    color: var(--black);
+    margin-left: -4rem;
+    margin-top: -140%;
+  }
+
+  .arrowWrapper {
+    display: flex;           /* Aligns items inside the wrapper */
+    margin-left: 3rem;
+    margin-top: 10rem;         /* Adds some spacing above the arrow */
+
+}
+
+  .graphicArrowWrapper {
+    display: flex;           /* Aligns items inside the wrapper */
+    margin-left: 3rem;
+    margin-top: 8.5rem;         /* Adds some spacing above the arrow */
+}
+
+  .devArrowWrapper {
+    display: flex;           /* Aligns items inside the wrapper */
+    margin-left: 6rem;
+    margin-top: -42rem;         /* Adds some spacing above the arrow */
+    padding-bottom: 0rem;
+}
+
+

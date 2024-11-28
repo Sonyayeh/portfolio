@@ -1,0 +1,96 @@
+  .bubbleContainer {
+    position: absolute;
+    margin-top: -9vh;
+    margin-left: 17vw;
+    width: 70%;
+    height: auto;
+    background-image: url('/src/assets/text-bubble.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 2vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    overflow: hidden;
+  }
+
+  .catContainer {
+    display: flex;
+    margin-top: 2rem;
+    margin-left: 3rem;
+    padding-right: -32rem;
+    width: 100%;
+    height: auto;
+  }
+
+  .iAmText{
+    display: flex;
+    margin-top: -6rem;
+    margin-left: -5rem;
+    color: black;
+  }
+
+  .description {
+    font-size: 10rem;
+    color: var(--black);
+    justify-content: center;
+    margin-top: -19rem;
+  }
+
+  .arrowContainer {
+   display: flex;
+    margin-top: -2rem;
+    margin-left: 3rem;
+    margin-right: -32rem;
+    width: 100%;
+    height: auto;
+  }
+
+  .Bubble {
+    display: flex;
+    margin-top: -115rem;
+    margin-left: -3rem;
+    width: 100%;
+    height: auto;
+  }
+  
+  .volleyballDes {
+    display: flex;
+    margin-top: 43rem;
+    margin-left: 40rem;
+    width: 100%;
+    height: auto;
+  }
+
+  .yogaDes {
+    display: flex;
+    margin-top: 6rem;
+    margin-left: 8rem;
+    width: 100%;
+    height: auto;
+  }
+
+  .omuDes {
+    display: flex;
+    margin-top: 43rem;
+    margin-left: 13rem;
+    width: 100%;
+    height: auto;
+  }
+
+  .homeContact {
+    font-size: 10rem;
+    color: var(--black);
+    padding-left: 0rem;
+    margin-top: -30%;
+    margin-bottom: 30%;
+    text-decoration: underline;
+  }
+
+  .homeSocial {
+    margin-top: -50%;
+    margin-bottom: 15%;
+  }

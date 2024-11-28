@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 
+
 const Arrow = (props) => (
   <motion.img
     src="./src/assets/scroll.png"  // Replace with your GIF path
