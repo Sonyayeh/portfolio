@@ -11,6 +11,7 @@ import YogaMockup from '../Components/puppyyoga';
 import OmuMockup from '../Components/omurice';
 import TwoClouds from '../assets/twoclouds.gif';
 import Bubble from '../assets/singlebubble.gif';
+import TextBubble from '../assets/text-bubble.png';
 
 const Home = () => {
   return (
@@ -46,7 +47,7 @@ const Home = () => {
           sm:mr-[-105rem] sm:h-[12rem] sm:w-[60rem] sm:mb-[-10rem] sm:mt-[-8rem]
           md:mr-[-25rem] md:h-[7rem] md:w-[45rem] md:mt-[-6.5rem]
           lg:h-[20rem] lg:w-[50rem] lg:mr-[-10rem] lg:mt-[-8rem]"
-          style={{ backgroundImage: 'url(/src/assets/text-bubble.png)' }}
+         
         >
           <ReactTyped
             strings={["UI/UX Designer", "Graphic Designer", "Video Editor", "Illustrator", "Front End Developer"]}
@@ -210,7 +211,7 @@ const Home = () => {
           <p className="text-xl 
           sm:text-[5rem] sm:mr-[-75rem] sm:mt-[-83rem] sm:pb-[50rem] 
           md:text-[5rem] md:mr-[5rem] md:mt-[-82rem]
-          lg:text-[5rem] lg:mr-[20rem]">North Star Omurice</p>
+          lg:text-[5rem] lg:mr-[20rem] lg:mt-[]">North Star Omurice</p>
         </div>
       </div>
 
