@@ -19,13 +19,18 @@ const Home = () => {
      
      {/* cloud gif */}
      <div className="flex justify-between">
-        <img src={TwoClouds} alt="Cloud gif" 
-        className="
-        sm:w-[20rem] sm:ml-[10rem] sm:mt-[10rem]
-        md:w-[20rem] md:ml-[40rem] md:mt-[-2rem]
-        lg:w-[20rem] lg:ml-[60rem]
-        " />
-      </div>
+      <img 
+        src={TwoClouds} 
+        alt="Cloud gif"
+        className="w-auto max-w-full
+          sm:w-[20rem] sm:ml-[10rem] sm:mt-[10rem]
+          md:w-[20rem] md:ml-[40rem] md:mt-[-2rem]
+          lg:w-[20rem] lg:ml-[60rem]
+          
+        " 
+      />
+    </div>
+
 
       {/* I am Text */}
       <div className="flex justify-center items-center mt-20">
