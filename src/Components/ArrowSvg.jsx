@@ -1,10 +1,11 @@
 import React from "react";
+import Scroll from '../assets/scroll.png';
 import { motion } from "framer-motion";
 
 
 const Arrow = (props) => (
   <motion.img
-    src="./src/assets/scroll.png"  // Replace with your GIF path
+    src={Scroll}  // Replace with your GIF path
     alt="Arrow Animation"
     className="Down-Arrow"  // Added class for styling
     {...props}
