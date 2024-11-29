@@ -26,7 +26,6 @@ const Home = () => {
           sm:w-[20rem] sm:ml-[10rem] sm:mt-[10rem]
           md:w-[20rem] md:ml-[40rem] md:mt-[-2rem]
           lg:w-[20rem] lg:ml-[60rem]
-          
         " 
       />
     </div>
