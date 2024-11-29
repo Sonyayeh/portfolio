@@ -25,7 +25,7 @@ export default {
       }
     },
     screens: {
-      'sm': '430px',
+      'sm': '375px',
       // => @media (min-width: 640px) { ... }
 
       'md': '1024px',
