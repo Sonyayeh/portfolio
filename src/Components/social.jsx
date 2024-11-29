@@ -6,7 +6,7 @@ import youtube from "../assets/youtube.png";
 
 const Social = () => {
   return (
-    <div className="flex justify-center items-center mt-6 space-x-10 w-full
+    <div className="flex justify-center items-center space-x-10 
      md:pb-[10rem]
     ">
       {/* LinkedIn Icon */}
@@ -15,7 +15,7 @@ const Social = () => {
           src={linkedin}
           alt="Linkedin logo"
           className="w-[5rem] h-[5rem] 
-          sm:w-[6rem] sm:h-[6rem]
+          sm:w-3/4 sm:h-[3rem]
           md:w-[5rem] md:h-[5.5rem]"
         />
       </div>
@@ -26,7 +26,7 @@ const Social = () => {
           src={instagram}
           alt="Instagram logo"
           className="w-[5rem] h-[5rem] 
-          sm:w-[6rem] sm:h-[6rem] 
+          sm:w-3/4 sm:h-[3rem] 
           md:w-[5rem] md:h-[5.5rem]"
         />
       </div>
@@ -37,7 +37,7 @@ const Social = () => {
           src={git}
           alt="Github logo"
           className="w-[5rem] h-[5rem] 
-          sm:w-[6rem] sm:h-[6rem] 
+          sm:w-4/5 sm:h-[4rem] 
           md:w-[5.5rem] md:h-[5.5rem]"
         />
       </div>
@@ -48,7 +48,7 @@ const Social = () => {
           src={youtube}
           alt="Youtube logo"
           className="w-[5rem] h-[5rem] 
-          sm:w-[6rem] sm:h-[4.5rem] 
+          sm:w-3/4 sm:h-[3rem] 
           md:w-[7rem] md:h-[5.5rem]"
         />
       </div>
