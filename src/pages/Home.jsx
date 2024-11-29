@@ -72,7 +72,7 @@ const Home = () => {
       <div className="flex justify-center mt-12">
         <CatGif className="w-40 
         sm:w-[5rem] sm:mr-[-15rem] sm:mb-[20rem] sm:mt-[-5rem]
-        md:w-[10rem] md:mr-[-40rem] md:mt-[0rem] md:mb-[10rem]
+        md:w-[10rem] md:mr-[-50rem] md:mt-[0rem] md:mb-[10rem]
         lg:w-[20rem] lg:mr-[-65rem] lg:mt-[-2rem]" />
       </div>
 
