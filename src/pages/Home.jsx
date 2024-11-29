@@ -87,7 +87,7 @@ const Home = () => {
       {/* Sample Work Title */}
       <div className="flex justify-center w-full mt-20">
         <p className="text-3xl 
-        sm:text-[2rem] sm:mt-[-8rem] sm:ml-[-1rem] sm:mb-[20rem]
+        sm:text-[2rem] sm:mt-[-7.5rem] sm:ml-[-1rem] sm:mb-[20rem]
         md:text-[10rem] md:ml-[-80rem] md:mt-[11rem]
         lg:text-[10rem] text-center">
           Sample Work:</p>
@@ -117,7 +117,7 @@ const Home = () => {
         </div>
         <div className="text-center">
           <p className="text-xl 
-          sm:text-[1.5rem] sm:mr-[1rem] sm:mt-[-76rem] sm:pb-[50rem] 
+          sm:text-[1.5rem] sm:mr-[1rem] sm:mt-[-76rem] sm:pt-[-10rem] 
           md:text-[5rem] md:mr-[3rem]
           lg:text-[5.5rem] lg:mr-[23rem]">
             Furrever Pals Puppy Yoga
@@ -128,7 +128,7 @@ const Home = () => {
         <div>
           <div className="flex justify-between ">
           <img src={Bubble} alt="Bubble gif" className=" 
-          sm:w-1/4 sm:h-1/4 sm:ml-[-3rem] sm:mt-[-42rem]
+          sm:w-1/4 sm:h-1/4 sm:ml-[0.5rem] sm:mt-[-33rem]
           md:w-[25rem] md:h-auto md:ml-[-15rem] md:mb-[9rem]
           lg:w-[25rem] lg:h-auto lg:ml-[-20rem]
           max-w-full
@@ -136,7 +136,7 @@ const Home = () => {
           </div>
           <div>
           <img src={Bubble} alt="Bubble gif" className="
-          sm:w-1/3 sm:h-1/3 sm:ml-[-2.7rem] sm:mt-[-41rem]
+          sm:w-1/3 sm:h-1/3 sm:ml-[-2.7rem] sm:mt-[-36rem]
           md:w-30 md:mt-[-30rem] md:ml-[-12rem]
           lg:w-30 lg:mt-[-15rem] lg:ml-[-10rem]
           " />
@@ -152,7 +152,7 @@ const Home = () => {
             md:w-[90rem] md:ml-[-17rem] md:mt-[-10rem]">
             {/* BlueWorkBox */}
             <div className="relative 
-            sm:h-[30rem] sm:mb-[10rem] sm:mt-[-45rem]
+            sm:h-[30rem] sm:mb-[10rem] sm:mt-[4rem]
             md:h-[40rem] 
             lg:h-[50rem] lg:w-[90rem] lg:ml-[20rem] lg:mt-[-5rem]
             flex justify-center items-center">
@@ -170,7 +170,7 @@ const Home = () => {
           {/* Title */}
           <div className="text-center mt-4">
             <p className="text-xl 
-            sm:text-[1.5rem] sm:mr-[0rem] sm:mt-[-39rem]  
+            sm:text-[1.5rem] sm:mr-[0rem] sm:mt-[-33.5rem]  
             md:text-[4.5rem] md:mr-[5rem] md:mt-[-140rem]
             lg:text-[4rem] lg:mt-[-145rem] lg:mr-[-20rem]
             "> Beach Volleyball Tournament Poster</p>
@@ -180,14 +180,14 @@ const Home = () => {
         <div>
         <div>
         <img src={Bubble} alt="Bubble gif" className="w-16 
-        sm:w-1/4 sm:ml-[18.5rem] sm:mt-[-12.5rem]
+        sm:w-1/4 sm:ml-[-2.75rem] sm:mt-[-10.5rem]
         md:w-50 md:ml-[50rem] md:mt-[-22rem]
         lg:w-[30rem] lg:ml-[64rem]
         " />
         </div>
         <div>
           <img src={Bubble} alt="Bubble gif" className="w-32 
-          sm:w-1/3 sm:ml-[18rem] sm:mt-[15.5rem]
+          sm:w-1/4 sm:ml-[17rem] sm:mt-[14.5rem]
           md:w-24
           lg:w-[15rem] lg:ml-[74rem] lg:mt-[-5rem]
           " />
@@ -205,7 +205,7 @@ const Home = () => {
         ">
           <GreenWorkBox />
           <div className="absolute 
-            sm:w-[25rem] sm:ml-[-0.5rem] sm:pt-[62.5rem] 
+            sm:w-[16rem] sm:ml-[2rem] sm:mt-[-11.5rem] 
             md:w-[80rem] md:ml-[3rem]
             lg:w-[80rem]">
             <OmuMockup  />
