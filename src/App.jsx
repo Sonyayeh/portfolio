@@ -2,6 +2,9 @@ import React from "react";
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import { scaleRotate as Menu } from "react-burger-menu"; // Import the hamburger menu from react-burger-menu
 import Layout from "./Components/Layout"; // Layout component that wraps around all pages
+
+
+
 // Import your pages
 import Home from "./pages/Home";
 import About from "./pages/About";
@@ -19,6 +22,7 @@ import './index.css';
 function App() {
   return (
     <BrowserRouter>
+      
       <div id="outer-container" className="flex flex-col min-h-screen">
         
         {/* Desktop Navbar - Visible on large screens */}
