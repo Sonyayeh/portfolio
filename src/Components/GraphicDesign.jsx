@@ -12,7 +12,7 @@ const GraphicBox = () => {
     return (
         <div className="w-full relative mt-[30rem] 
         sm:mt-[10rem] sm:px-0  sm:mx-auto
-        md:ml-[6rem]
+        md:ml-[0rem]
         lg:pr-[12rem]">
 
             {/* Project Heading and Description */}
@@ -29,7 +29,7 @@ const GraphicBox = () => {
                 {/* Blue heading */}
                 <div className="bg-blue-200 px-4 flex justify-between items-center w-full">
                     <h5 className="text-white text-3xl 
-                    sm:text-6xl 
+                    sm:text-5xl 
                     md:text-7xl 
                     lg:text-6xl">
                         Project
@@ -41,23 +41,23 @@ const GraphicBox = () => {
                     <ul className="flex gap-6 items-center space-x-1 bg-white w-full px-6 justify-start">
                         {/* List items with responsive font sizes */}
                         <li className="text-blue-200 text-lg 
-                        sm:text-5xl 
-                        md:text-lg 
+                        sm:text-3xl 
+                        md:text-4xl 
                         lg:text-2xl 
                         font-semibold">DISC</li>
                         <li className="text-blue-200 text-lg 
-                        sm:text-5xl 
-                        md:text-lg 
+                        sm:text-3xl 
+                        md:text-4xl 
                         lg:text-2xl 
                         font-semibold">OPTION</li>
                         <li className="text-blue-200 text-lg 
-                        sm:text-5xl 
-                        md:text-lg 
+                        sm:text-3xl 
+                        md:text-4xl 
                         lg:text-2xl 
                         font-semibold">VIEW</li>
                         <li className="text-blue-200 text-lg 
-                        sm:text-5xl 
-                        md:text-lg 
+                        sm:text-3xl 
+                        md:text-4xl 
                         lg:text-2xl 
                         font-semibold">HELP</li>
                     </ul>
@@ -95,6 +95,7 @@ const GraphicBox = () => {
                         <img
                             src={project.imageurl} 
                             className="w-full h-auto object-contain rounded-xl
+                            sm:w-[20rem] sm:h-[30rem] sm:mr-[7rem]
                             lg:ml-[10rem] lg:w-[30rem]
                             "
                         />
@@ -102,7 +103,7 @@ const GraphicBox = () => {
                     {/* the software used section */}
                     <div>
                         <h4 className="text-blue-300 
-                        sm:text-[1.5rem] sm:pl-[1rem]
+                        sm:text-[1rem] sm:pl-[1rem]
                         lg:ml-[-80rem] lg:mt-[40rem]
                         ">
                             {project.chips}
