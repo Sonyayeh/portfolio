@@ -25,7 +25,7 @@ const Home = () => {
         className="w-auto max-w-full
           sm:w-[8rem] sm:ml-[12rem] sm:mt-[4rem]
           md:w-[15rem] md:ml-[35rem] md:mt-[-2rem]
-          lg:w-[20rem] lg:ml-[60rem]
+          lg:w-[20rem] lg:ml-[0rem] lg:mt-[12rem]
         " 
       />
     </div>
@@ -36,7 +36,7 @@ const Home = () => {
         <h1 className="text-4xl 
         sm:text-[2rem] sm:mt-[-5rem] sm:mr-[15rem] 
         md:text-[4.5rem] md:mr-[30rem] md:mt-[3rem]
-        lg:text-[7rem] lg:ml-[-20rem] lg:mt-[-3rem]
+        lg:text-[5rem] lg:ml-[10rem] lg:mt-[-42rem]
         font-Micro">
           I am a&nbsp;
         </h1>
@@ -49,7 +49,7 @@ const Home = () => {
           className="w-full max-w-[80rem] h-[16rem] bg-contain bg-no-repeat 
           sm:mr-[-4rem] sm:h-[12rem] sm:w-[13rem] sm:mb-[-10rem] sm:mt-[-5.75rem]
           md:ml-[15rem] md:h-[7rem] md:w-[35rem] md:mt-[-6.2rem]
-          lg:h-[20rem] lg:w-[50rem] lg:mr-[-10rem] lg:mt-[-8rem]"
+          lg:h-[20rem] lg:w-[45rem] lg:mr-[-35rem] lg:mt-[-27rem]"
           style={{ backgroundImage: 'url(/src/assets/text-bubble.png)' }}
         >
           <ReactTyped
@@ -63,7 +63,7 @@ const Home = () => {
             className="text-black font-Micro
             sm:text-[1.6rem] sm:ml-[1rem] sm:leading-none 
             md:text-[4rem] md:ml-[3rem]
-            lg:text-[6.5rem] mx-6 mt-[-1rem]"
+            lg:text-[5rem] mx-6 mt-[-1rem]"
           />
         </div>
       </div>
@@ -73,7 +73,7 @@ const Home = () => {
         <CatGif className="w-40 
         sm:w-[5rem] sm:mr-[-15rem] sm:mb-[20rem] sm:mt-[-5rem]
         md:w-[10rem] md:mr-[-50rem] md:mt-[0rem] md:mb-[10rem]
-        lg:w-[20rem] lg:mr-[-65rem] lg:mt-[-2rem]" />
+        lg:w-[12rem] lg:ml-[40rem] lg:mt-[-20rem] lg:mb-[20rem]" />
       </div>
 
       {/* Arrow */}
@@ -81,7 +81,7 @@ const Home = () => {
         <Arrow className="w-8 
         sm:w-6 sm:pb-[0rem] sm:mt-[-10rem] sm:ml-[10rem]
         md:w-10 md:ml-[25rem] md:mt-[18rem]
-        lg:w-16 lg:ml-[35rem] lg:mt-[-15rem]" />
+        lg:w-12 lg:ml-[45rem] lg:mt-[-17rem]" />
       </div>
 
       {/* Sample Work Title */}
@@ -89,7 +89,7 @@ const Home = () => {
         <p className="text-3xl 
         sm:text-[2rem] sm:mt-[-7.5rem] sm:ml-[-1rem] sm:mb-[20rem]
         md:text-[5rem] md:ml-[8rem] md:mt-[11rem]
-        lg:text-[10rem] text-center">
+        lg:text-[7rem] lg:mt-[-10rem] lg:mr-[-25rem] text-center">
           Sample Work:</p>
       </div>
 
@@ -98,7 +98,7 @@ const Home = () => {
         <img src={TwoClouds} alt="Cloud gif" className="transform scale-x-[-1] w-16 
         sm:w-[8rem] sm:mt-[-80rem] sm:ml-[14rem] sm:pt-[57rem]
         md:w-[20rem] md:mt-[-73rem] md:ml-[35rem] md:pt-[45rem]
-        lg:w-[20rem] lg:ml-[60rem] " />
+        lg:w-[20rem] lg:ml-[70rem] lg:mt-[-65rem]" />
       </div>
 
       {/* Work Showcase (Flex and Grid Layouts) */}
@@ -107,13 +107,13 @@ const Home = () => {
         <div className="grid sm:h-auto 
         sm:w-[20rem] sm:mt-[-20rem] sm:pb-[60rem] sm:ml-[0.5rem] 
         md:w-[40rem] md:ml-[1.5rem] md:mb-[2rem]
-        lg:w-[90rem] lg:ml-[-5rem]
+        lg:w-[55rem] lg:ml-[-0.5rem] lg:mt-[-10rem]
         ">
           <PurpleWorkBox />
           <div className="flex w-full justify-center items-center 
           sm:w-[15rem] sm:ml-[2.5rem] sm:mt-[-15rem] 
           md:w-[30rem] md:ml-[4rem] md:mt-[-30rem]
-          
+          lg:w-[50rem] lg:ml-[2.5rem] lg:mt-[-42rem]
           ">
             <YogaMockup />
           </div>
@@ -122,7 +122,7 @@ const Home = () => {
           <p className="text-xl 
           sm:text-[1.5rem] sm:mr-[1rem] sm:mt-[-76rem] sm:pt-[-10rem] 
           md:text-[3.5rem] md:mr-[2rem] md:mt-[-89rem]
-          lg:text-[5.5rem] lg:mr-[23rem]">
+          lg:text-[4rem] lg:mr-[5rem] lg:mt-[-99.5rem]">
             Furrever Pals Puppy Yoga
           </p>
         </div>
@@ -133,7 +133,7 @@ const Home = () => {
           <img src={Bubble} alt="Bubble gif" className=" 
           sm:w-1/4 sm:h-1/4 sm:ml-[0.5rem] sm:mt-[-33rem]
           md:w-1/4 md:h-1/4 md:ml-[-7rem] md:mt-[10rem]
-          lg:w-[25rem] lg:h-auto lg:ml-[-20rem]
+          lg:w-2/4 lg:h-auto lg:ml-[50rem]
           max-w-full
           " />
           </div>
@@ -141,7 +141,7 @@ const Home = () => {
           <img src={Bubble} alt="Bubble gif" className="
           sm:w-1/3 sm:h-1/3 sm:ml-[-2.7rem] sm:mt-[-36rem]
           md:w-1/3 ms:h-1/3 md:mt-[-1.5rem] md:ml-[-6.5rem]
-          lg:w-30 lg:mt-[-15rem] lg:ml-[-10rem]
+          lg:w-1/4 lg:mt-[-23rem] lg:ml-[63rem]
           " />
           </div>
         </div>
@@ -152,19 +152,20 @@ const Home = () => {
           {/* Beach Volleyball */}
           <div className="grid grid-cols-1 
             sm:w-[20rem] sm:ml-[0.5rem]
-            md:w-[40rem] md:ml-[8rem] md:mt-[-10rem]">
+            md:w-[40rem] md:ml-[8rem] md:mt-[-10rem]
+            ">
             {/* BlueWorkBox */}
             <div className="relative 
             sm:h-[30rem] sm:mb-[10rem] sm:mt-[4rem]
             md:h-[20rem] 
-            lg:h-[50rem] lg:w-[90rem] lg:ml-[20rem] lg:mt-[-5rem]
+            lg:h-[50rem] lg:w-[55rem] lg:ml-[27rem] lg:mt-[15rem]
             flex justify-center items-center">
               <BlueWorkBox />
               {/* VolleyballMockup inside the box */}
               <div className="absolute 
               sm:top-[11rem] sm:w-[15rem]
               md:ml-[0rem] md:mt-[-8rem] md:w-[30rem]
-              lg:mt-[12rem]
+              lg:mt-[0.5rem] lg:w-[50rem]
               ">
                 <VolleyballMockup />
               </div>
@@ -175,7 +176,7 @@ const Home = () => {
             <p className="text-xl 
             sm:text-[1.5rem] sm:mr-[0rem] sm:mt-[-33.5rem]  
             md:text-[3rem] md:ml-[11.6rem] md:mt-[-33rem]
-            lg:text-[4rem] lg:mt-[-145rem] lg:mr-[-20rem]
+            lg:text-[4rem] lg:mt-[-55rem] lg:mr-[-55rem]
             "> Beach Volleyball Tournament Poster</p>
           </div>
 
@@ -185,14 +186,14 @@ const Home = () => {
         <img src={Bubble} alt="Bubble gif" className="w-16 
         sm:w-1/4 sm:ml-[-2.75rem] sm:mt-[-10.5rem]
         md:w-1/4 md:ml-[42rem] md:mt-[20rem]
-        lg:w-[30rem] lg:ml-[64rem]
+        lg:w-1/4 lg:ml-[2rem] lg:mt-[20rem]
         " />
         </div>
         <div>
           <img src={Bubble} alt="Bubble gif" className="w-32 
           sm:w-1/4 sm:ml-[17rem] sm:mt-[14.5rem]
           md:w-2/5 md:ml-[38rem] md:mb-[-60rem]
-          lg:w-[15rem] lg:ml-[74rem] lg:mt-[-5rem]
+          lg:w-2/4 lg:ml-[3rem] lg:mt-[-10rem]
           " />
         </div>
         </div>
@@ -204,13 +205,13 @@ const Home = () => {
         <div className="relative 
         sm:w-[20rem] sm:pt-[-5rem] sm:ml-[1rem]
         md:w-[40rem] md:ml-[2.5rem] md:pt-[33rem]
-        lg:w-[60rem] lg:ml-[-5rem]
+        lg:w-[55rem] lg:ml-[-0.5rem] lg:pt-[60rem]
         ">
           <GreenWorkBox />
           <div className="absolute 
             sm:w-[16rem] sm:ml-[2rem] sm:mt-[-11.5rem] 
             md:w-[30rem] md:ml-[5rem] md:mt-[-22rem]
-            lg:w-[80rem]">
+            lg:w-[50rem] lg:ml-[2.5rem] lg:mt-[-34rem]">
             <OmuMockup  />
           </div>
         </div>
@@ -218,7 +219,7 @@ const Home = () => {
           <p className="text-xl 
           sm:text-[1.5rem] sm:ml-[-0.5rem] sm:mt-[-16rem] 
           md:text-[4rem] md:mr-[-1rem] md:mt-[-28rem]
-          lg:text-[5rem] lg:mr-[20rem]">North Star Omurice</p>
+          lg:text-[4rem] lg:ml-[-8rem] lg:mt-[-39.5rem]">North Star Omurice</p>
         </div>
       </div>
 
@@ -226,7 +227,7 @@ const Home = () => {
       <div className="mt-6 
       sm:w-[40rem] sm:max-w-[20rem] sm:ml-[1.5rem] sm:mt-[15rem] 
       md:w-[40rem] md:ml-[10rem] md:mt-[30rem]
-      lg:w-[60rem] lg:mr-[1rem] lg:mb-[-30rem]">
+      lg:w-[60rem] lg:ml-[35rem] lg:mb-[-8rem] lg:mt-[40rem]">
         <Social />
       </div>
     </div>

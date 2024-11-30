@@ -6,7 +6,7 @@ const Header = () => {
   return (
     <div>
       {/* Top Navbar - Visible on large screens, hidden on small/medium screens */}
-      <nav className="hidden lg:flex text-[6rem] font-Micro text-blue-300 justify-center ml-[0rem] mt-[-12rem]">
+      <nav className="hidden lg:flex text-[4rem] font-Micro text-blue-300 justify-center mt-[-6rem] pb-[2rem]">
         <Link to="/" className="px-10 hover:text-blue-300 hover:underline">
           Home
         </Link>
