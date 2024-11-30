@@ -11,22 +11,27 @@ const PuppyProject = () => {
 
     return (
         <div className="w-full relative mt-[30rem] 
-        sm:mt-[10rem] sm:px-0  sm:mx-auto
-        md:ml-[6rem]
-        lg:pr-[12rem]">
+        sm:mt-[30rem] sm:px-0  sm:mx-auto
+        md:ml-[0rem]
+        lg:pl-[4rem] lg:pr-[4rem] ">
 
             {/* Project Heading and Description */}
-            <div className="text-start w-full">
-                <h1 className=" pl-2 text-2xl 
-                sm:text-[4rem] sm:pb-[8rem] 
-                md:text-8xl md:pb-[1rem] md:pt-[10rem] 
+            <div className="text-start w-full
+            
+            ">
+                <h1 className=" pl-2 text-2xl t-[20rem]
+                sm:text-[4rem] sm:pb-[2rem] sm:pl-[6.5rem] sm:mt-[-16rem]
+                md:text-8xl md:pl-[2rem] md:pt-[10rem] 
                 lg:text-8xl lg:pl-5">
                     UI/UX Design:
                 </h1>
 
                 {/* Blue heading */}
                 <div className="bg-purple-200 px-4 flex justify-between items-center w-full">
-                    <h5 className="text-white text-3xl sm:text-5xl md:text-4xl lg:text-6xl">
+                    <h5 className="text-white text-3xl 
+                    sm:text-3xl 
+                    md:text-6xl 
+                    lg:text-6xl">
                         Project
                     </h5>
                 </div>
@@ -35,33 +40,52 @@ const PuppyProject = () => {
                 <div className="bg-purple-200 p-4 pt-0">
                     <ul className="flex gap-6 items-center space-x-1 bg-white w-full px-6 justify-start">
                         {/* List items with responsive font sizes */}
-                        <li className="text-purple-200 text-lg sm:text-3xl md:text-lg lg:text-2xl font-semibold">DISC</li>
-                        <li className="text-purple-200 text-lg sm:text-3xl md:text-lg lg:text-2xl font-semibold">OPTION</li>
-                        <li className="text-purple-200 text-lg sm:text-3xl md:text-lg lg:text-2xl font-semibold">VIEW</li>
-                        <li className="text-purple-200 text-lg sm:text-3xl md:text-lg lg:text-2xl font-semibold">HELP</li>
+                        <li className="text-purple-200 text-lg 
+                        sm:text-3xl 
+                        md:text-4xl 
+                        lg:text-2xl 
+                        font-semibold">DISC</li>
+                        <li className="text-purple-200 text-lg 
+                        sm:text-3xl 
+                        md:text-4xl 
+                        lg:text-2xl 
+                        font-semibold">OPTION</li>
+                        <li className="text-purple-200 text-lg 
+                        sm:text-3xl 
+                        md:text-4xl 
+                        lg:text-2xl 
+                        font-semibold">VIEW</li>
+                        <li className="text-purple-200 text-lg 
+                        sm:text-3xl 
+                        md:text-4xl 
+                        lg:text-2xl 
+                        font-semibold">HELP</li>
                     </ul>
                 </div>
             </div>
 
             {/* Project box with border */}
-            <div className="w-full p-0 sm:p-0 md:p-3 flex border-solid border-x-[1rem] border-b-[1rem] border-purple-200">
+            <div className="w-full p-0 sm:p-0 flex border-solid border-x-[1rem] border-b-[1rem] border-purple-200
+            md:p-3 
+            ">
 
                 {/* Content Container */}
                 <div className="space-y-4 flex flex-col py-2 px-4 
-                sm:px-6 w-full 
+                sm:px-7 w-full 
                 lg:flex-row">
 
                     {/* Title and Description Section */}
                     <div className="w-full lg:w-1/2 lg:text-left">
                         <h5 className="text-black pb-2 text-2xl 
-                        sm:text-5xl sm:text-center sm:pt-5 
-                        md:text-4xl 
-                        lg:text-6xl lg:pl-4 lg:py-10">
+                        sm:text-[1.5rem] sm:text-start sm:pt-5
+                        md:text-[4rem] md:pt-5 md:pl-10 
+                        lg:text-[5rem] lg:pl-4 lg:pt-[2rem] lg:absolute">
                             {project.title}
                         </h5>
                         <h4 className="text-lg leading-6 
-                        sm:text-2xl sm:py-5 sm:pl-5
-                        md:text-2xl lg:text-3xl md:pl-[1rem] md:w-full md:mb-[1rem]">
+                        sm:text-[1rem] sm:pt-2  
+                        md:text-2xl md:py-5 md:pl-5 md:pr-[23rem]
+                        lg:text-3xl lg:py-[10rem] lg:ml-1 lg:pr-[1rem]">
                             {project.description}
                         </h4>
                     </div>
@@ -70,16 +94,31 @@ const PuppyProject = () => {
                     <div className="flex justify-center w-full lg:w-1/2 lg:ml-auto">
                         <img
                             src={project.imageurl} 
-                            alt={project.title}
-                            className="w-full h-auto object-contain rounded-xl"
+                            className="w-full h-auto object-contain rounded-xl
+                            sm:w-[20rem] sm:h-[30rem]
+                            md:w-[20rem] md:h-[25rem] md:ml-[30rem] md:mt-[-20rem] md:mb-[-2rem]
+                            lg:ml-[5rem] lg:w-[35rem] lg:h-[35rem] lg:mt-[6rem]
+                            "
                         />
                     </div>
                     {/* the software used section */}
                     <div>
                         <h4 className="text-purple-300 
-                        sm:text-[1.5rem] sm:pl-[1rem]">
+                        sm:text-[1rem] sm:mt-[-1rem]
+                        md:text-1xl md:mt-[0rem] md:ml-[2rem] md:w-[30rem]
+                        lg:text-lg lg:ml-[-60rem] lg:mt-[40rem] lg:mr-[-5rem] lg:w-[20rem]
+                        ">
                             {project.chips}
                         </h4>
+                    </div>
+                     {/* View More Button */}
+                     <div className="flex justify-center mt-8">
+                        <button className="px-6 py-3 bg-purple-300 text-white rounded-lg shadow-md hover:bg-purple-500 hover:text-white focus:outline-none focus:ring-2 focus:ring-purple-300 transition-colors duration-300
+                        md:mr-[-30rem] md:mt-[-2rem]
+                        lg:mr-[-10rem] lg:mt-[50rem] lg:ml-[-37rem]
+                        ">
+                            View More
+                        </button>
                     </div>
                 </div>
             </div>
