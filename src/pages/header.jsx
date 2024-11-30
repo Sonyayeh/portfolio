@@ -1,5 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
+// I used the react burger menu from class and i feel like
+// out of all the animations it offers, bubble is the one that 
+// is the quirkiest of them all, so I used that one
 import { bubble as Menu } from "react-burger-menu";
 
 const Header = () => {

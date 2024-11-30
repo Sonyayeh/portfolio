@@ -1,3 +1,5 @@
+// this code is basically the same as the arrow svg jsx file
+// please refer to that jsx file for like, 2-3? extra comments!
 import React from "react";
 import Cat from '../assets/cat.gif';
 import { motion } from "framer-motion";

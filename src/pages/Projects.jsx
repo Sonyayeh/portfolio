@@ -1,14 +1,26 @@
+// this page has a lot of things, please bare with me
+// all you need to know is that every project containers are the same
+// but with differnt color coordination
+// I have every projects made into components and the imported
+// into this file
+// this was a last minute decision, so I dont know if it was properly
+// made, but at least something's there
+
+// I will make a comment in GraphicDesign.jsx because the others are mostly the same
+// just the positioning and numbers are slightly differnt because there are slightly bigger images
 import React from "react";
 
 import Arrow from '../Components/ArrowSvg';
 import Social from "../Components/social";
+// here are the project sections
 import Graphic from "../Components/GraphicDesign";
 import PuppyProject from "../Components/puppyproject";
 import BcitProject from "../Components/bcitproject";
 import BoardProject from "../Components/boardproject";
 import TysnProject from "../Components/tysnproject";
 import OmuMockup from "../Components/omuproject";
-
+// and ofc here are the gifs, i think i forgot to add them in about me page
+// that was my mistake
 import TwoClouds from '../assets/twoclouds.gif';
 import Bubble from '../assets/singlebubble.gif';
 
@@ -32,7 +44,7 @@ const Projects = () => {
                     />
                     </div>
 
-                     {/* bubble */}
+                     {/* bubbl gifs, same as the other pages but the numbers and positions are differnt */}
                     <div>
                         <div className="flex justify-between ">
                         <img src={Bubble} alt="Bubble gif" className=" 
@@ -98,6 +110,8 @@ const Projects = () => {
                 <div>
                     <TysnProject />
                 </div>
+                {/* I named this one the OmuMockup instead of OmuProject because I didn't have my
+                old files sorted, that's why it's called a different name */}
                 <div>
                     <OmuMockup />
                 </div>

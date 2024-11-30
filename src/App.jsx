@@ -5,14 +5,14 @@ import Layout from "./Components/Layout"; // Layout component that wraps around 
 
 
 
-// Import your pages
+// Import  pages
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Projects from "./pages/Projects";
 import Cases from "./pages/Cases";
 
-// Import your styles
+// Import  styles
 import "./reset.css";
 import "./App.css";
 import "./Menu.css";
@@ -25,6 +25,7 @@ function App() {
       
       <div id="outer-container" className="flex flex-col min-h-screen">
         
+        {/* I have this greyed out just in case i need anything from here */}
         {/* Desktop Navbar - Visible on large screens */}
         {/* <nav className="hidden lg:flex text-h2 font-Micro text-blue-300 justify-center align-middle py-4">
           <Link to="/" className="px-10 hover:text-blue-300 hover:underline">Home</Link>

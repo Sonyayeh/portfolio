@@ -1,20 +1,25 @@
 import React from "react";
 import Pointercursor from "../Components/photopointer";
 import Photo from "../Components/photo";
-import Footer from "./footer";
-
+// I imported my photo from components folder
+// this is the social media icon I wanted to use ionicons but
+// cannot be installed, please consider them as placeholders :(((
 import Social from '../Components/social';
 
 const About = () => {
     return (
-      <div className="container mx-auto px-5 sm:mr-[-4rem] md:ml-[-5rem] lg:ml-[6rem]">
+      // they are basically the same as the other pages, but just
+      // positioning differences
+      <div className="container mx-auto px-5 lg:ml-[6rem]">
         <div className="card">
         </div>
-
-        <div className="w-full relative mt-[30rem] 
-        sm:mt-[10rem] sm:px-0 sm:ml-[-4rem]
+        {/* Since I found out I used the same kind of container box
+        for most of my content, i used the same box from projects page
+        and changed it into an About Me container box */}
+        <div className="relative mt-[30rem] 
+        sm:mt-[10rem] sm:px-0 sm:ml-[0rem] sm:w-[20rem]
         md:ml-[6rem]
-        lg:pr-[12rem]">
+        lg:pl-[20rem] lg:w-[80rem] ">
 
             {/* Project Heading and Description */}
             <div className="text-start w-full
@@ -30,29 +35,29 @@ const About = () => {
                     </h5>
                 </div>
 
-                {/* White background tab bar */}
+                {/* White background tab bar with the fake tabs */}
                 <div className="bg-blue-200 p-4 pt-0">
                     <ul className="flex gap-6 items-center space-x-1 bg-white w-full px-6 justify-start">
                         {/* List items with responsive font sizes */}
                         <li className="text-blue-200 text-lg 
                         sm:text-2xl 
                         md:text-lg 
-                        lg:text-2xl 
+                        lg:text-6xl 
                         font-semibold">DISC</li>
                         <li className="text-blue-200 text-lg 
                         sm:text-2xl 
                         md:text-lg 
-                        lg:text-2xl 
+                        lg:text-6xl 
                         font-semibold">OPTION</li>
                         <li className="text-blue-200 text-lg 
                         sm:text-2xl 
                         md:text-lg 
-                        lg:text-2xl 
+                        lg:text-6xl 
                         font-semibold">VIEW</li>
                         <li className="text-blue-200 text-lg 
                         sm:text-2xl 
                         md:text-lg 
-                        lg:text-2xl 
+                        lg:text-6xl 
                         font-semibold">HELP</li>
                     </ul>
                 </div>
@@ -62,12 +67,13 @@ const About = () => {
             <div className="w-full p-0 sm:p-0 flex border-solid border-x-[1rem] border-b-[1rem] border-blue-200
             md:p-3">
 
-                {/* Content Container */}
+                {/* my Cringe Content Container */}
                 <div className="space-y-4 flex flex-col py-2 px-4 
                 sm:px-2 w-full 
                 lg:flex-row">
                   <h4 className="
                   sm:text-[0.5rem]
+                  lg:text-[2rem]
                   ">
                     Hello, I’m Sonya! I am currently a student of the New Media Design + Web Development program at BCIT and I have a passion for designing digital experiences that enhance people’s everyday lives. <br /><br />
                     
@@ -78,6 +84,8 @@ const About = () => {
                     Currently, I am in my third term, pursuing my passion for UI/UX design and some front-end development! <br /><br />
 
                     Some of my skills include: <br />
+                    {/* the br tags are line breaker tags so there are spaces between each selected lines
+                    and I used a specific bullet point for my li list */}
                     <ul className="list-disc pl-5">
                     <li>UI/UX <br /></li>
                     <li>Figma <br /></li>
@@ -97,22 +105,25 @@ const About = () => {
             </div>
 
         </div>
-
-        {/* Photo Component - moved to top */}
-        <div className="absolute top-0 left-0 right-0 sm:w-4/5
-        sm:ml-[13rem] sm:pl-[10rem] sm:mt-[142rem]
-        md:1/3 md:ml-[35rem] md:mt-[135rem]
+          
+        {/* Photo Component */}
+        <div className="absolute top-0 left-0 right-0 sm:w-2/5
+        sm:ml-[27rem] sm:mt-[142rem]
+        md:w-1/3 md:ml-[35rem] md:mt-[135rem]
+        lg:w-2/3 lg:ml-[15rem] lg:mt-[120rem]
         ">
             <Photo />
         </div>
 
-        {/* Pointercursor Component - moved to top */}
+        {/* Pointercursor Component */}
         <div className="absolute top-0 left-0 right-0 
-        sm:w-1/3 sm:ml-[20rem] sm:mt-[58rem]
+        sm:w-1/3 sm:ml-[24rem] sm:mt-[58rem]
         md:w-1/3 md:ml-[45rem] md:mt-[50rem]
+        lg:w-1/3 lg:ml-[15rem] lg:mt-[35rem]
         ">
             <Pointercursor />
         </div>
+        {/* I'm missing a purple cursor, I will add it when the time allows D,: */}
 
         {/* Footer Section */}
         <div className="flex  items-center justify-center">
@@ -122,7 +133,7 @@ const About = () => {
         <div className="
           sm:max-w-[40rem] sm:ml-[-14.5rem] sm:mr-[-5rem] sm:mt-[10rem] 
           mb:w-[40rem] md:max-w-[40rem] mb:ml-[7rem]
-          lg:w-[60rem] lg:mr-[1rem] lg:mb-[-30rem]">
+          lg:w-[60rem] lg:ml-[20rem] lg:mb-[-10rem]">
             <Social />
           </div>
 

@@ -1,6 +1,9 @@
 import React from "react";
 import Scroll from '../assets/scroll.png';
 import { motion } from "framer-motion";
+// the motion one is the animation I used for Cat gif as well
+// I believe you'll need to install this in terminal to use:
+// npm install framer-motion
 
 
 const Arrow = (props) => (
@@ -22,3 +25,5 @@ const Arrow = (props) => (
 );
 
 export default Arrow;
+// the code here will be the same as the cat gif, but the 
+// speed is slightly faster than the cat!

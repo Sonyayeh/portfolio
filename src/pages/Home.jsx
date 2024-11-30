@@ -11,6 +11,9 @@ import YogaMockup from '../Components/puppyyoga';
 import OmuMockup from '../Components/omurice';
 import TwoClouds from '../assets/twoclouds.gif';
 import Bubble from '../assets/singlebubble.gif';
+// the thing above are some components or page decorations...I am
+// thinking about adding some more bubbles if time allows me to do so
+
 
 const Home = () => {
   return (
@@ -20,8 +23,10 @@ const Home = () => {
      {/* cloud gif */}
      <div className="flex justify-between">
       <img 
+      // referencing the imported gif
         src={TwoClouds} 
         alt="Cloud gif"
+        // setting the sizes and positions of the gif in differnet pages
         className="w-auto max-w-full
           sm:w-[8rem] sm:ml-[12rem] sm:mt-[4rem]
           md:w-[15rem] md:ml-[33rem] md:mt-[-2rem]
@@ -31,8 +36,9 @@ const Home = () => {
     </div>
 
 
-      {/* I am Text */}
+      {/* the "I am" Text */}
       <div className="flex justify-center items-center mt-20">
+        {/* basically the same thing as the two clouds */}
         <h1 className="text-4xl 
         sm:text-[2rem] sm:mt-[-5rem] sm:mr-[15rem] 
         md:text-[4.5rem] md:mr-[35rem] md:mt-[-1rem]
@@ -46,12 +52,20 @@ const Home = () => {
       {/* Bubble Container with ReactTyped */}
       <div className="flex justify-center mt-10 relative">
         <div
+        // Same thing as above, but I am referring the background image as the
+        // text bubble image. I will change that for the portfolio website as it
+        // is not rendered properly
           className="w-full max-w-[80rem] h-[16rem] bg-contain bg-no-repeat 
           sm:mr-[-4rem] sm:h-[12rem] sm:w-[13rem] sm:mb-[-10rem] sm:mt-[-5.75rem]
           md:ml-[10rem] md:h-[7rem] md:w-[35rem] md:mt-[-6rem]
           lg:h-[20rem] lg:w-[50rem] lg:mr-[-35rem] lg:mt-[-27rem]"
           style={{ backgroundImage: 'url(/src/assets/text-bubble.png)' }}
         >
+          {/* this is a new react type I downloaded, I believe it is called
+           react-type. In order to see this work, you'll need to install this in
+           the terminal: npm install react-typed*/}
+           {/* what this code does is that it will cycle through the strings, and you
+           can adjust the speed, back speed, delays, etc. */}
           <ReactTyped
             strings={["UI/UX Designer", "Graphic Designer", "Video Editor", "Illustrator", "Front End Developer"]}
             typeSpeed={100}
@@ -69,6 +83,8 @@ const Home = () => {
       </div>
 
       {/* CatGif Section */}
+      {/* I imported the cat gif specifically as a component because I was using an 
+      animation method, for reference, it's at CatSvg.jsx in the Components folder */}
       <div className="flex justify-center mt-12">
         <CatGif className="w-40 
         sm:w-[5rem] sm:mr-[-15rem] sm:mb-[20rem] sm:mt-[-5rem]
@@ -77,6 +93,8 @@ const Home = () => {
       </div>
 
       {/* Arrow */}
+      {/* this is the same thing as the cat gif above, you can find the code in the
+      ArrowSvg.jsx in the same Components folder */}
       <div className="text-center mt-10">
         <Arrow className="w-8 
         sm:w-6 sm:pb-[0rem] sm:mt-[-10rem] sm:ml-[10rem]
@@ -85,6 +103,7 @@ const Home = () => {
       </div>
 
       {/* Sample Work Title */}
+      {/* this is the sample work text */}
       <div className="flex justify-center w-full mt-20">
         <p className="text-3xl 
         sm:text-[2rem] sm:mt-[-7.5rem] sm:ml-[-1rem] sm:mb-[20rem]
@@ -94,6 +113,8 @@ const Home = () => {
       </div>
 
          {/* Cloud GIFs */}
+         {/* same code as the one before, but I added the tranform scale-x-[-1], which
+         makes the gif itself mirrored  */}
          <div>
         <img src={TwoClouds} alt="Cloud gif" className="transform scale-x-[-1] w-16 
         sm:w-[8rem] sm:mt-[-80rem] sm:ml-[14rem] sm:pt-[57rem]
@@ -102,6 +123,11 @@ const Home = () => {
       </div>
 
       {/* Work Showcase (Flex and Grid Layouts) */}
+      {/* here, I am importing the work boxes, mockups and their designated titles */}
+      {/* they're mostly the same, only the positioning are different */}
+      {/* they SHOULD, should, be responsive */}
+      {/* I have each sectiones separated with large gaps so I don't confuse myself when
+      adjusting */}
       <div className="mt-8 space-y-8 ">
         {/* Furrever Pals */}
         <div className="grid sm:h-auto 
@@ -148,7 +174,7 @@ const Home = () => {
         
 
 
-
+          
           {/* Beach Volleyball */}
           <div className="grid grid-cols-1 
             sm:w-[20rem] sm:ml-[0.5rem]
@@ -181,6 +207,7 @@ const Home = () => {
           </div>
 
         {/* bubble */}
+        {/* same bubble as before, some of them are positioned differntly with differnt screen sizes */}
         <div>
         <div>
         <img src={Bubble} alt="Bubble gif" className="w-16 
@@ -224,6 +251,9 @@ const Home = () => {
       </div>
 
       {/* Footer and Social Sections */}
+      {/* I actually wanted to download IonIcons, but for some reason it didn't work... 
+      I might have to ask for help about that but please consider these as placeholders */}
+      {/* as for the footer, I have it in Layouts.jsx, and I will make the comments there */}
       <div className="mt-6 
       sm:w-[40rem] sm:max-w-[20rem] sm:ml-[1.5rem] sm:mt-[15rem] 
       md:w-[40rem] md:ml-[15rem] md:mt-[30rem]

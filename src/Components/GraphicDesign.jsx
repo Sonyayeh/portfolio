@@ -1,8 +1,10 @@
 import React from "react";
+// I have each project information imported from project.json, I will make my comments there as well!
 import projectData from "../data/project.json";  // Import the JSON data
 
 const GraphicBox = () => {
-    // Find the project with id 1
+    // this line is to go into the project data in project.json and find the 
+    // data that has the project id of 1, and then being brought into here
     const project = projectData.find((proj) => proj.id === 1);
 
     if (!project) {
@@ -10,6 +12,7 @@ const GraphicBox = () => {
     }
 
     return (
+        // I think i commented about this section so many times already 
         <div className="w-full relative mt-[30rem] 
         sm:mt-[10rem] sm:px-0  sm:mx-auto
         md:ml-[0rem]
@@ -19,6 +22,12 @@ const GraphicBox = () => {
             <div className="text-start w-full
             
             ">
+                {/* this is the section title
+                I did it in a way where the first project of each
+                section would have the section title,
+                so when it is brought into the project page
+                I don't have to make another title and manually
+                adjust it */}
                 <h1 className=" pl-2 text-2xl 
                 sm:text-[4rem] sm:pb-[2rem] sm:pl-[6.5rem] sm:mt-[-16rem]
                 md:text-8xl md:pl-[2rem] md:pt-[10rem] 
@@ -36,7 +45,8 @@ const GraphicBox = () => {
                     </h5>
                 </div>
 
-                {/* White background tab bar */}
+                {/* White background tab bar , same thing as the about 
+                me, also, thank you so very much for this omg I could never */}
                 <div className="bg-blue-200 p-4 pt-0">
                     <ul className="flex gap-6 items-center space-x-1 bg-white w-full px-6 justify-start">
                         {/* List items with responsive font sizes */}
@@ -80,6 +90,10 @@ const GraphicBox = () => {
                         sm:text-[1.5rem] sm:text-start sm:pt-5
                         md:text-[4rem] md:pt-5 md:pl-10 
                         lg:text-[4.5rem] lg:pl-4 lg:pt-[2rem] lg:absolute">
+                            {/* with each project.xxx, it is manually grabbing
+                            the information of project.id, in this case it's
+                            project.1, so it will add in project 1's title, 
+                            description, imageurl, and chips! */}
                             {project.title}
                         </h5>
                         <h4 className="text-lg leading-6 
@@ -111,7 +125,8 @@ const GraphicBox = () => {
                             {project.chips}
                         </h4>
                     </div>
-                     {/* View More Button */}
+                     {/* View More Button, I decided not to use the arrow because it's too small
+                     even I can't see it*/}
                      <div className="flex justify-center mt-8">
                         <button className="px-6 py-3 bg-blue-300 text-white rounded-lg shadow-md hover:bg-blue-500 hover:text-white focus:outline-none focus:ring-2 focus:ring-blue-300 transition-colors duration-300
                         md:mr-[-35rem] md:mt-[-2rem]
