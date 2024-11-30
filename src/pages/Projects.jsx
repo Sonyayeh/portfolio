@@ -19,9 +19,9 @@ const Projects = () => {
                 <div>
                     <div>
                         <h1 className="
-                        sm:text-8xl sm:mt-[15rem] sm:ml-[19rem]
-                        md:text-7xl md:ml-[26rem] md:mt-[20rem] 
-                        lg:text-[6rem] lg:absolute lg:ml-[42.5rem] lg:mt-[0rem] 
+                        sm:text-[2rem] sm:mt-[15rem] sm:ml-[19rem]
+                        md:text-[5rem] md:ml-[26rem] md:mt-[20rem] 
+                        lg:text-[7rem] lg:absolute lg:ml-[42.5rem] lg:mt-[0rem] 
                         " 
                         >Projects:</h1>
                     </div>
