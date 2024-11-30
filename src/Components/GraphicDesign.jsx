@@ -13,14 +13,14 @@ const GraphicBox = () => {
         <div className="w-full relative mt-[30rem] 
         sm:mt-[10rem] sm:px-0  sm:mx-auto
         md:ml-[0rem]
-        lg:pr-[12rem]">
+        lg:pl-[4rem] lg:pr-[4rem] ">
 
             {/* Project Heading and Description */}
             <div className="text-start w-full
-           
+            
             ">
                 <h1 className=" pl-2 text-2xl 
-                sm:text-[6rem] sm:pb-[6rem] 
+                sm:text-[2rem] sm:pb-[2rem] sm:pl-[4rem] sm:mt-[-16rem]
                 md:text-8xl md:pb-[1rem] md:pt-[10rem] 
                 lg:text-8xl lg:pl-5">
                     Graphic Design:
@@ -29,7 +29,7 @@ const GraphicBox = () => {
                 {/* Blue heading */}
                 <div className="bg-blue-200 px-4 flex justify-between items-center w-full">
                     <h5 className="text-white text-3xl 
-                    sm:text-5xl 
+                    sm:text-3xl 
                     md:text-7xl 
                     lg:text-6xl">
                         Project
@@ -77,13 +77,13 @@ const GraphicBox = () => {
                     {/* Title and Description Section */}
                     <div className="w-full lg:w-1/2 lg:text-left">
                         <h5 className="text-black pb-2 text-2xl 
-                        sm:text-6xl sm:text-center sm:pt-5
+                        sm:text-[1.5rem] sm:text-start sm:pt-5
                         md:text-4xl 
                         lg:text-6xl lg:pl-4 lg:pt-[8rem] lg:absolute">
                             {project.title}
                         </h5>
                         <h4 className="text-lg leading-6 
-                        sm:text-[1.2rem] sm:py-5 sm:pl-5 
+                        sm:text-[1rem] sm:pt-2  
                         md:text-2xl  md:w-full md:mb-[1rem] md:pl-[5rem]
                         lg:text-3xl lg:pl-2 lg:ml-10 lg:pt-[17rem]">
                             {project.description}
@@ -95,7 +95,7 @@ const GraphicBox = () => {
                         <img
                             src={project.imageurl} 
                             className="w-full h-auto object-contain rounded-xl
-                            sm:w-[20rem] sm:h-[30rem] sm:mr-[7rem]
+                            sm:w-[20rem] sm:h-[30rem]
                             lg:ml-[10rem] lg:w-[30rem]
                             "
                         />
@@ -103,11 +103,17 @@ const GraphicBox = () => {
                     {/* the software used section */}
                     <div>
                         <h4 className="text-blue-300 
-                        sm:text-[1rem] sm:pl-[1rem]
+                        sm:text-[1rem] sm:mt-[-1rem]
                         lg:ml-[-80rem] lg:mt-[40rem]
                         ">
                             {project.chips}
                         </h4>
+                    </div>
+                     {/* View More Button */}
+                     <div className="flex justify-center mt-8">
+                        <button className="px-6 py-3 bg-blue-300 text-white rounded-lg shadow-md hover:bg-purple-300 focus:outline-none focus:ring-2 focus:ring-blue-300 transition-colors duration-300">
+                            View More
+                        </button>
                     </div>
                 </div>
             </div>
