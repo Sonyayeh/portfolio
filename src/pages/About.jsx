@@ -1,22 +1,25 @@
 import React from "react";
 import Pointercursor from "../Components/photopointer";
 import Photo from "../Components/photo";
-import Footer from "./footer.jsx";
+import Footer from "./footer";
+
 import Social from '../Components/social';
 
 const About = () => {
     return (
-      <div className="container mx-auto px-5 sm:mr-[-5rem] md:ml-[4rem] lg:ml-[6rem]">
+      <div className="container mx-auto px-5 sm:mr-[-4rem] md:ml-[-5rem] lg:ml-[6rem]">
         <div className="card">
         </div>
 
         <div className="w-full relative mt-[30rem] 
-        sm:mt-[10rem] sm:px-0 sm:mx-auto
+        sm:mt-[10rem] sm:px-0 sm:ml-[-4rem]
         md:ml-[6rem]
         lg:pr-[12rem]">
 
             {/* Project Heading and Description */}
-            <div className="text-start w-full">
+            <div className="text-start w-full
+            lg:mr-[20rem]
+            ">
                 {/* Blue heading */}
                 <div className="bg-blue-200 px-4 flex justify-between items-center w-full">
                     <h5 className="text-white text-3xl 
@@ -64,7 +67,7 @@ const About = () => {
                 sm:px-2 w-full 
                 lg:flex-row">
                   <h4 className="
-                  sm:text-[1rem]
+                  sm:text-[0.5rem]
                   ">
                     Hello, I’m Sonya! I am currently a student of the New Media Design + Web Development program at BCIT and I have a passion for designing digital experiences that enhance people’s everyday lives. <br /><br />
                     
@@ -96,30 +99,28 @@ const About = () => {
         </div>
 
         {/* Photo Component - moved to top */}
-        <div className="absolute top-0 left-0 right-0 sm:w-full 
-        sm:ml-[1rem] sm:pl-[10rem] sm:mt-[211rem]
+        <div className="absolute top-0 left-0 right-0 sm:w-4/5
+        sm:ml-[13rem] sm:pl-[10rem] sm:mt-[142rem]
+        md:1/3 md:ml-[35rem] md:mt-[135rem]
         ">
             <Photo />
         </div>
 
         {/* Pointercursor Component - moved to top */}
-        <div className="absolute top-0 left-0 right-0 sm:w-full sm:pl-[8rem] sm:mt-[125rem]">
+        <div className="absolute top-0 left-0 right-0 
+        sm:w-1/3 sm:ml-[20rem] sm:mt-[58rem]
+        md:w-1/3 md:ml-[45rem] md:mt-[50rem]
+        ">
             <Pointercursor />
         </div>
 
         {/* Footer Section */}
-        <div className="flex flex-col items-center justify-center mt-8">
-          {/* Footer Section */}
-          <div className="w-full 
-          sm:w-[80%] sm:max-w-[400px] sm:mt-[15rem] sm:text-[5rem] sm:ml-[0rem]
-          md:ml-[33rem]
-          lg:mt-[230rem] lg:pb-[-20rem] lg:ml-[43rem]">
-            <Footer />
-          </div>
+        <div className="flex  items-center justify-center">
+          
         </div>
         {/* Social Section */}
-        <div className="mt-6 
-          sm:w-[30rem] sm:max-w-[40rem] sm:ml-[-5rem] sm:mb-[-40rem]
+        <div className="
+          sm:max-w-[40rem] sm:ml-[-14.5rem] sm:mr-[-5rem] sm:mt-[10rem] 
           mb:w-[40rem] md:max-w-[40rem] mb:ml-[7rem]
           lg:w-[60rem] lg:mr-[1rem] lg:mb-[-30rem]">
             <Social />

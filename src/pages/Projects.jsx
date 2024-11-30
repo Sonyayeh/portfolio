@@ -1,7 +1,6 @@
 import React from "react";
 
 import Arrow from '../Components/ArrowSvg';
-import Footer from "./footer";
 import Social from "../Components/social";
 import Graphic from "../Components/GraphicDesign";
 import PuppyProject from "../Components/puppyproject";
@@ -109,7 +108,7 @@ const Projects = () => {
                         <Social />
                     </div>
                 </div>
-
+            
             </div>
 
     );

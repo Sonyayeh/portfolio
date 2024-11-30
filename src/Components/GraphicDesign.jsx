@@ -96,7 +96,7 @@ const GraphicBox = () => {
                             src={project.imageurl} 
                             className="w-full h-auto object-contain rounded-xl
                             sm:w-[20rem] sm:h-[30rem]
-                            md:w-[20rem] md:h-[30rem] md:ml-[30rem] md:mt-[-15rem] md:mb-[-2rem]
+                             md:w-[20rem] md:h-[25rem] md:ml-[35rem] md:mt-[-10rem] md:mb-[-2rem]
                             lg:ml-[5rem] lg:w-[35rem] lg:h-[35rem] lg:mt-[6rem]
                             "
                         />
@@ -106,7 +106,7 @@ const GraphicBox = () => {
                         <h4 className="text-blue-300 
                         sm:text-[1rem] sm:mt-[-1rem]
                         md:text-1xl md:mt-[2rem]
-                        lg:text-[1.3rem] lg:ml-[-55rem] lg:mt-[45rem] 
+                        lg:text-[1.3rem] lg:ml-[-85rem] lg:mt-[45rem] 
                         ">
                             {project.chips}
                         </h4>
@@ -114,8 +114,8 @@ const GraphicBox = () => {
                      {/* View More Button */}
                      <div className="flex justify-center mt-8">
                         <button className="px-6 py-3 bg-blue-300 text-white rounded-lg shadow-md hover:bg-blue-500 hover:text-white focus:outline-none focus:ring-2 focus:ring-blue-300 transition-colors duration-300
-                        md:mr-[-30rem] md:mt-[-2rem]
-                        lg:mr-[-15rem] lg:mt-[44rem] lg:ml-[-37rem]
+                        md:mr-[-35rem] md:mt-[-2rem]
+                        lg:mr-[-15rem] lg:mt-[44rem] lg:ml-[-50rem]
                         
                         ">
                             View More
