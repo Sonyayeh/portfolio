@@ -21,7 +21,7 @@ const About = () => {
         for most of my content, i used the same box from projects page
         and changed it into an About Me container box */}
         <div className="relative mt-[30rem] 
-        sm:mt-[8rem] sm:px-0 sm:ml-[-2.63rem] sm:w-[15rem]
+        sm:mt-[8rem] sm:ml-[6rem] sm:w-[17rem]
         md:ml-[6rem]
         lg:pl-[20rem] lg:w-[80rem] ">
 
@@ -111,7 +111,7 @@ const About = () => {
         </div>
         {/* Photo Component */}
         <div className=" top-0 left-0 
-        sm:w-2/3 sm:mt-[110rem] sm:ml-[10rem] sm:pb-[30rem] sm:pr-[1rem]
+        sm:w-2/3 sm:mt-[70rem] sm:ml-[10rem] sm:pb-[13rem] sm:pr-[1rem]
         md:w-1/3 md:ml-[35rem] md:mt-[135rem]
         lg:w-2/3 lg:ml-[15rem] lg:mt-[120rem]
         ">
@@ -119,8 +119,8 @@ const About = () => {
         </div>
 
         {/* Pointercursor Component */}
-        <div className=" top-0 left-0 right-0 
-        sm:w-1/3 sm:ml-[14rem] sm:mb-[9rem]
+        <div className=" top-0 left-0  
+        sm:w-1/3 sm:ml-[9rem] sm:mt-[-10rem]
         md:w-1/3 md:ml-[45rem] md:mt-[50rem]
         lg:w-1/3 lg:ml-[15rem] lg:mt-[35rem]
         ">
@@ -135,7 +135,7 @@ const About = () => {
         </div>
         {/* Social Section */}
         <div className="
-          sm:w-[40rem] sm:ml-[-9.5rem] sm:mr-[-5rem] sm:mt-[10rem] 
+          sm:w-[40rem] sm:ml-[-9.5rem] sm:mr-[-5rem] sm:mt-[50rem] 
           mb:w-[40rem] md:max-w-[40rem] mb:ml-[7rem]
           lg:w-[60rem] lg:ml-[20rem] lg:mb-[-10rem]">
             <Social />
