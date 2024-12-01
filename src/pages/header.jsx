@@ -13,7 +13,7 @@ const Header = () => {
           className="h-16 w-auto 
           sm:pl-[18rem]
           md:pl-[50rem] md:mt-[-2rem] md:h-[8rem]
-          lg:pl-[75rem] lg:mt-[-10rem] lg:mb-[5rem] lg:h-[10rem]" 
+          lg:mr-[130rem] lg:mt-[-10rem] lg:mb-[5rem] lg:h-[10rem]" 
         />
       </div>
 

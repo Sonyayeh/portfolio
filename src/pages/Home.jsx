@@ -42,7 +42,7 @@ const Home = () => {
       <div className="flex justify-center items-center mt-20">
         {/* basically the same thing as the two clouds */}
         <h1 className="text-4xl 
-        sm:text-[2rem] sm:mt-[-5rem] sm:mr-[15rem] 
+        sm:text-[2rem] sm:mt-[-5rem] sm:mr-[12rem] 
         md:text-[4.5rem] md:mr-[35rem] md:mt-[-1rem]
         lg:text-[5rem] lg:ml-[10rem] lg:mt-[-42rem]
         font-Micro">
@@ -58,7 +58,7 @@ const Home = () => {
         // text bubble image. I will change that for the portfolio website as it
         // is not rendered properly
           className="w-full max-w-[80rem] h-[16rem] bg-contain bg-no-repeat 
-          sm:mr-[-4rem] sm:h-[12rem] sm:w-[13rem] sm:mb-[-10rem] sm:mt-[-5.75rem]
+          sm:mr-[-7rem] sm:h-[12rem] sm:w-[13rem] sm:mb-[-10rem] sm:mt-[-5.75rem]
           md:ml-[10rem] md:h-[7rem] md:w-[35rem] md:mt-[-6rem]
           lg:h-[20rem] lg:w-[50rem] lg:mr-[-35rem] lg:mt-[-27rem]"
           style={{ backgroundImage: 'url(/src/assets/text-bubble.png)' }}
@@ -89,7 +89,7 @@ const Home = () => {
       animation method, for reference, it's at CatSvg.jsx in the Components folder */}
       <div className="flex justify-center mt-12">
         <CatGif className="w-40 
-        sm:w-[5rem] sm:mr-[-15rem] sm:mb-[20rem] sm:mt-[-5rem]
+        sm:w-[5rem] sm:mr-[-20rem] sm:mb-[20rem] sm:mt-[-5rem]
         md:w-[10rem] md:mr-[-40rem] md:mt-[1rem] md:mb-[3rem]
         lg:w-[12rem] lg:ml-[55rem] lg:mt-[-20rem] lg:mb-[20rem]" />
       </div>
@@ -99,7 +99,7 @@ const Home = () => {
       ArrowSvg.jsx in the same Components folder */}
       <div className="text-center mt-10">
         <Arrow className="w-8 
-        sm:w-6 sm:pb-[0rem] sm:mt-[-10rem] sm:ml-[10rem]
+        sm:w-6 sm:pb-[0rem] sm:mt-[-10rem] sm:ml-[11.5rem]
         md:w-10 md:ml-[25rem] md:mt-[5rem]
         lg:w-12 lg:ml-[43rem] lg:mt-[-17rem]" />
       </div>
@@ -108,7 +108,7 @@ const Home = () => {
       {/* this is the sample work text */}
       <div className="flex justify-center w-full mt-20">
         <p className="text-3xl 
-        sm:text-[2rem] sm:mt-[-7.5rem] sm:ml-[-1rem] sm:mb-[20rem]
+        sm:text-[3rem] sm:mt-[-7.5rem] sm:ml-[2rem] sm:mb-[20rem]
         md:text-[5rem] md:ml-[2rem] md:mt-[11rem]
         lg:text-[7rem] lg:mt-[-10rem] lg:mr-[-28rem] text-center">
           Sample Work:</p>
@@ -119,7 +119,7 @@ const Home = () => {
          makes the gif itself mirrored  */}
          <div>
         <img src={TwoClouds} alt="Cloud gif" className="transform scale-x-[-1] w-16 
-        sm:w-[8rem] sm:mt-[-80rem] sm:ml-[14rem] sm:pt-[57rem]
+        sm:w-[8rem] sm:mt-[-80rem] sm:ml-[16rem] sm:pt-[57rem]
         md:w-[20rem] md:mt-[-73rem] md:ml-[33rem] md:pt-[45rem]
         lg:w-[20rem] lg:ml-[60rem] lg:mt-[-65rem]" />
       </div>
@@ -133,7 +133,7 @@ const Home = () => {
       <div className="mt-8 space-y-8 ">
         {/* Furrever Pals */}
         <div className="grid sm:h-auto 
-        sm:w-[20rem] sm:mt-[-20rem] sm:pb-[60rem] sm:ml-[0.5rem] 
+        sm:w-[20rem] sm:mt-[-20rem] sm:pb-[60rem] sm:ml-[2rem] 
         md:w-[40rem] md:ml-[5rem] md:mb-[2rem]
         lg:w-[55rem] lg:ml-[-0.5rem] lg:mt-[-10rem]
         ">
@@ -167,7 +167,7 @@ const Home = () => {
           </div>
           <div>
           <img src={Bubble} alt="Bubble gif" className="
-          sm:w-1/3 sm:h-1/3 sm:ml-[-2.7rem] sm:mt-[-36rem]
+          sm:w-1/3 sm:h-1/3 sm:ml-[-3rem] sm:mt-[-36rem]
           md:w-1/3 ms:h-1/3 md:mt-[-1.5rem] md:ml-[-6.5rem]
           lg:w-1/4 lg:mt-[-23rem] lg:ml-[70rem]
           " />
@@ -179,7 +179,7 @@ const Home = () => {
           
           {/* Beach Volleyball */}
           <div className="grid grid-cols-1 
-            sm:w-[20rem] sm:ml-[0.5rem]
+            sm:w-[20rem] sm:ml-[2rem]
             md:w-[40rem] md:ml-[5rem] md:mt-[-10rem]
             ">
             {/* BlueWorkBox */}
@@ -220,7 +220,7 @@ const Home = () => {
         </div>
         <div>
           <img src={Bubble} alt="Bubble gif" className="w-32 
-          sm:w-1/4 sm:ml-[17rem] sm:mt-[14.5rem]
+          sm:w-1/4 sm:ml-[20rem] sm:mt-[14.5rem]
           md:w-1/5 md:ml-[-5rem] md:mb-[-60rem]
           lg:w-2/4 lg:ml-[-7rem] lg:mt-[-10rem]
           " />
@@ -232,7 +232,7 @@ const Home = () => {
 
         {/* North Star Omurice */}
         <div className="relative 
-        sm:w-[20rem] sm:pt-[-5rem] sm:ml-[1rem]
+        sm:w-[20rem] sm:pt-[-5rem] sm:ml-[2rem]
         md:w-[40rem] md:ml-[5rem] md:pt-[40rem]
         lg:w-[55rem] lg:ml-[-0.5rem] lg:pt-[60rem]
         ">
