@@ -4,10 +4,11 @@ import React from "react";
 // to add that in contact page instead (it's not done yet btw don't look yet plz)
 function Footer() {
   return (
-    <div className="flex justify-center items-center py-8">
+    <div className="flex justify-center items-center py-8 lg:pb-[10rem]">
       <div className="text-xl text-center
       sm:text-[1rem] sm:mr-[-1rem] sm:pt-[-50rem] 
       md:text-[3rem] md:justify-center md:pt-[0rem]
+      lg:text-[4rem] lg:justify-center lg:pb-[10rem]
       ">
         {/* I used a copyright footer text instead */}
         <p>&copy; 2024 Sonya Yeh, All Rights Reserved</p>

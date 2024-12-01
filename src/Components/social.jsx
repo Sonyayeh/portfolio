@@ -1,56 +1,59 @@
 import React from "react";
-import linkedin from "../assets/linkedin.png";
-import instagram from "../assets/instagram.png";
-import git from "../assets/github.png";
-import youtube from "../assets/youtube.png";
+import IonIcon from "@reacticons/ionicons";
 
 const Social = () => {
   return (
-    <div className="flex justify-center items-center space-x-10 
-     md:pb-[10rem]
-    ">
-      {/* LinkedIn Icon */}
-      <div className="flex items-center">
-        <img
-          src={linkedin}
-          alt="Linkedin logo"
-          className="w-[5rem] h-[5rem] 
-          sm:w-3/4 sm:h-[3rem]
-          md:w-[5rem] md:h-[5.5rem]"
-        />
-      </div>
-
-      {/* Instagram Icon */}
-      <div className="flex items-center">
-        <img
-          src={instagram}
-          alt="Instagram logo"
-          className="w-[5rem] h-[5rem] 
-          sm:w-3/4 sm:h-[3rem] 
-          md:w-[5rem] md:h-[5.5rem]"
-        />
-      </div>
-
-      {/* Github Icon */}
-      <div className="flex items-center">
-        <img
-          src={git}
-          alt="Github logo"
-          className="w-[5rem] h-[5rem] 
-          sm:w-4/5 sm:h-[4rem] 
-          md:w-[5.5rem] md:h-[5.5rem]"
-        />
-      </div>
-
-      {/* YouTube Icon */}
-      <div className="flex items-center">
-        <img
-          src={youtube}
-          alt="Youtube logo"
-          className="w-[5rem] h-[5rem] 
-          sm:w-3/4 sm:h-[3rem] 
-          md:w-[7rem] md:h-[5.5rem]"
-        />
+    <div 
+      className="flex justify-center items-center md:pb-[1rem] lg:pt-[5rem] lg:pb-[3rem]"
+    >
+      <div className="justify-center items-center">
+        {/* GitHub Icon and added the link to my github*/}
+        <a 
+          href="https://github.com/Sonyayeh" 
+          target="_blank" 
+          rel="noopener noreferrer"
+        >
+          <IonIcon 
+            className="text-blue-300 sm:text-[2.5rem] hover:text-purple-300 hover:cursor-pointer sm:px-4 md:text-[3.5rem] md:px-3 lg:text-[4rem] lg:px-2" 
+            name="logo-github" 
+          />
+        </a>
+        
+        {/* LinkedIn Icon and added the link to my Linkedin*/}
+        <a 
+          href="https://www.linkedin.com/in/sonya-yeh-63a17a2b0/" 
+          target="_blank" 
+          rel="noopener noreferrer"
+        >
+          <IonIcon 
+            className="text-blue-300 sm:text-[2.5rem] hover:text-purple-300 hover:cursor-pointer sm:px-4 md:text-[3.5rem] md:px-3 lg:text-[4rem] lg:px-2" 
+            name="logo-linkedin" 
+          />
+        </a>
+        
+        {/* YouTube Icon and added the link to my Youtube*/}
+        <a 
+          href="https://www.youtube.com/@sonyayeah" 
+          target="_blank" 
+          rel="noopener noreferrer"
+        >
+          <IonIcon 
+            className="text-blue-300 sm:text-[2.5rem] hover:text-purple-300 hover:cursor-pointer sm:px-4 lg:text-[4rem] md:text-[3.5rem] md:px-3 lg:px-2" 
+            name="logo-youtube" 
+          />
+        </a>
+        
+        {/* Instagram Icon and added the link to my Instgram*/}
+        <a 
+          href="https://www.instagram.com/sooonyeh/" 
+          target="_blank" 
+          rel="noopener noreferrer"
+        >
+          <IonIcon 
+            className="text-blue-300 sm:text-[2.5rem] hover:text-purple-300 hover:cursor-pointer sm:px-4 lg:text-[4rem] md:text-[3.5rem] md:px-3 lg:px-2" 
+            name="logo-instagram" 
+          />
+        </a>
       </div>
     </div>
   );

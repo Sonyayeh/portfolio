@@ -1,13 +1,22 @@
 import React from "react";
 import { Link } from "react-router-dom";
-// I used the react burger menu from class and i feel like
-// out of all the animations it offers, bubble is the one that 
-// is the quirkiest of them all, so I used that one
 import { bubble as Menu } from "react-burger-menu";
 
 const Header = () => {
   return (
     <div>
+      {/* Logo */}
+      <div className="flex justify-center items-center py-4">
+        <img 
+          src="/logo.svg" 
+          alt="Logo" 
+          className="h-16 w-auto 
+          sm:pl-[18rem]
+          md:pl-[50rem] md:mt-[-2rem] md:h-[8rem]
+          lg:pl-[80rem] lg:mt-[-5rem] lg:mb-[1rem] lg:h-[10rem]" 
+        />
+      </div>
+
       {/* Top Navbar - Visible on large screens, hidden on small/medium screens */}
       <nav className="hidden lg:flex text-[4rem] font-Micro text-blue-300 justify-center mt-[-6rem] pb-[2rem]">
         <Link to="/" className="px-10 hover:text-blue-300 hover:underline">

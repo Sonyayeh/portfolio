@@ -11,6 +11,7 @@ import YogaMockup from '../Components/puppyyoga';
 import OmuMockup from '../Components/omurice';
 import TwoClouds from '../assets/twoclouds.gif';
 import Bubble from '../assets/singlebubble.gif';
+
 // the thing above are some components or page decorations...I am
 // thinking about adding some more bubbles if time allows me to do so
 
@@ -22,13 +23,14 @@ const Home = () => {
      
      {/* cloud gif */}
      <div className="flex justify-between">
+      
       <img 
       // referencing the imported gif
         src={TwoClouds} 
         alt="Cloud gif"
         // setting the sizes and positions of the gif in differnet pages
         className="w-auto max-w-full
-          sm:w-[8rem] sm:ml-[12rem] sm:mt-[4rem]
+          sm:w-[8rem] sm:ml-[1rem] sm:mt-[4rem]
           md:w-[15rem] md:ml-[33rem] md:mt-[-2rem]
           lg:w-[20rem] lg:ml-[0rem] lg:mt-[12rem]
         " 
@@ -257,7 +259,7 @@ const Home = () => {
       <div className="mt-6 
       sm:w-[40rem] sm:max-w-[20rem] sm:ml-[1.5rem] sm:mt-[15rem] 
       md:w-[40rem] md:ml-[15rem] md:mt-[30rem]
-      lg:w-[60rem] lg:ml-[35rem] lg:mb-[-8rem] lg:mt-[40rem]">
+      lg:w-[60rem] lg:ml-[35rem] lg:mb-[-2rem] lg:mt-[30rem]">
         <Social />
       </div>
     </div>
