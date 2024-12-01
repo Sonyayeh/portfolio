@@ -148,7 +148,7 @@ const Home = () => {
         </div>
         <div className="text-center">
           <p className="text-xl 
-          sm:text-[1.5rem] sm:mr-[1rem] sm:mt-[-76rem] sm:pt-[-10rem] 
+          sm:text-[1.5rem] sm:mr-[-2.5rem] sm:mt-[-76rem] sm:pt-[-10rem] 
           md:text-[3.5rem] md:mr-[2rem] md:mt-[-89rem]
           lg:text-[4rem] lg:mr-[5rem] lg:mt-[-99.5rem]">
             Furrever Pals Puppy Yoga
@@ -202,7 +202,7 @@ const Home = () => {
           {/* Title */}
           <div className="text-center mt-4">
             <p className="text-xl 
-            sm:text-[1.5rem] sm:mr-[0rem] sm:mt-[-33.5rem]  
+            sm:text-[1.5rem] sm:mr-[-2rem] sm:mt-[-33.5rem]  
             md:text-[3.2rem] md:ml-[-1rem] md:mt-[-33rem]
             lg:text-[4rem] lg:mt-[-55rem] lg:mr-[-68rem]
             "> Beach Volleyball Tournament Poster</p>
@@ -246,7 +246,7 @@ const Home = () => {
         </div>
         <div className="text-center mt-4">
           <p className="text-xl 
-          sm:text-[1.5rem] sm:ml-[-0.5rem] sm:mt-[-16rem] 
+          sm:text-[1.5rem] sm:ml-[2rem] sm:mt-[-16rem] 
           md:text-[4rem] md:mr-[-1rem] md:mt-[-28rem]
           lg:text-[4rem] lg:ml-[-8rem] lg:mt-[-39.5rem]">North Star Omurice</p>
         </div>

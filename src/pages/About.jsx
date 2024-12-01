@@ -13,11 +13,15 @@ const About = () => {
       <div className="container mx-auto px-5 lg:ml-[6rem]">
         <div className="card">
         </div>
+        <h5 className="sm:mr-[2rem]"> 
+            Hello!
+        </h5>
+
         {/* Since I found out I used the same kind of container box
         for most of my content, i used the same box from projects page
         and changed it into an About Me container box */}
         <div className="relative mt-[30rem] 
-        sm:mt-[10rem] sm:px-0 sm:ml-[0rem] sm:w-[20rem]
+        sm:mt-[8rem] sm:px-0 sm:ml-[-2.63rem] sm:w-[15rem]
         md:ml-[6rem]
         lg:pl-[20rem] lg:w-[80rem] ">
 
@@ -37,25 +41,25 @@ const About = () => {
 
                 {/* White background tab bar with the fake tabs */}
                 <div className="bg-blue-200 p-4 pt-0">
-                    <ul className="flex gap-6 items-center space-x-1 bg-white w-full px-6 justify-start">
+                    <ul className="flex gap-6 items-center space-x-1 bg-white w-full px-6 justify-start sm:px-5">
                         {/* List items with responsive font sizes */}
                         <li className="text-blue-200 text-lg 
-                        sm:text-2xl 
+                        sm:text-1xl sm:ml-[-1rem]
                         md:text-lg 
                         lg:text-6xl 
                         font-semibold">DISC</li>
                         <li className="text-blue-200 text-lg 
-                        sm:text-2xl 
+                        sm:text-1xl sm:ml-[-1rem]
                         md:text-lg 
                         lg:text-6xl 
                         font-semibold">OPTION</li>
                         <li className="text-blue-200 text-lg 
-                        sm:text-2xl 
+                        sm:text-1xl sm:ml-[1rem]
                         md:text-lg 
                         lg:text-6xl 
                         font-semibold">VIEW</li>
                         <li className="text-blue-200 text-lg 
-                        sm:text-2xl 
+                        sm:text-1xl sm:ml-[-1rem]
                         md:text-lg 
                         lg:text-6xl 
                         font-semibold">HELP</li>
@@ -105,10 +109,9 @@ const About = () => {
             </div>
 
         </div>
-          
         {/* Photo Component */}
-        <div className="absolute top-0 left-0 right-0 sm:w-2/5
-        sm:ml-[27rem] sm:mt-[142rem]
+        <div className=" top-0 left-0 
+        sm:w-2/3 sm:mt-[110rem] sm:ml-[10rem] sm:pb-[30rem] sm:pr-[1rem]
         md:w-1/3 md:ml-[35rem] md:mt-[135rem]
         lg:w-2/3 lg:ml-[15rem] lg:mt-[120rem]
         ">
@@ -116,13 +119,14 @@ const About = () => {
         </div>
 
         {/* Pointercursor Component */}
-        <div className="absolute top-0 left-0 right-0 
-        sm:w-1/3 sm:ml-[24rem] sm:mt-[58rem]
+        <div className=" top-0 left-0 right-0 
+        sm:w-1/3 sm:ml-[14rem] sm:mb-[9rem]
         md:w-1/3 md:ml-[45rem] md:mt-[50rem]
         lg:w-1/3 lg:ml-[15rem] lg:mt-[35rem]
         ">
             <Pointercursor />
         </div>
+          
         {/* I'm missing a purple cursor, I will add it when the time allows D,: */}
 
         {/* Footer Section */}
@@ -131,7 +135,7 @@ const About = () => {
         </div>
         {/* Social Section */}
         <div className="
-          sm:max-w-[40rem] sm:ml-[-14.5rem] sm:mr-[-5rem] sm:mt-[10rem] 
+          sm:w-[40rem] sm:ml-[-9.5rem] sm:mr-[-5rem] sm:mt-[10rem] 
           mb:w-[40rem] md:max-w-[40rem] mb:ml-[7rem]
           lg:w-[60rem] lg:ml-[20rem] lg:mb-[-10rem]">
             <Social />

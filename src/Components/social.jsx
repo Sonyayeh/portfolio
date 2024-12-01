@@ -4,7 +4,7 @@ import IonIcon from "@reacticons/ionicons";
 const Social = () => {
   return (
     <div 
-      className="flex justify-center items-center md:pb-[1rem] lg:pt-[5rem] lg:pb-[3rem]"
+      className="flex justify-center items-center sm:pr-[-2rem] md:pb-[1rem] lg:pt-[5rem] lg:pb-[3rem]"
     >
       <div className="justify-center items-center">
         {/* GitHub Icon and added the link to my github*/}
