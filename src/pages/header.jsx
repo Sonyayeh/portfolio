@@ -13,12 +13,12 @@ const Header = () => {
           className="h-16 w-auto 
           sm:pl-[18rem]
           md:pl-[50rem] md:mt-[-2rem] md:h-[8rem]
-          lg:mr-[130rem] lg:mt-[-10rem] lg:mb-[5rem] lg:h-[10rem]" 
+          lg:mr-[130rem] lg:mt-[-12rem] lg:mb-[5rem] lg:h-[10rem]" 
         />
       </div>
 
       {/* Top Navbar - Visible on large screens, hidden on small/medium screens */}
-      <nav className="hidden lg:flex text-[4rem] font-Micro text-blue-300 justify-center mt-[-6rem] pb-[2rem]">
+      <nav className="hidden lg:flex text-[4rem] font-Micro text-blue-300 justify-center mt-[-12rem] pb-[2rem]">
         <Link to="/" className="px-10 hover:text-blue-300 hover:underline">
           Home
         </Link>

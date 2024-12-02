@@ -28,7 +28,7 @@ const Home = () => {
         <h1 className="text-4xl 
         sm:text-[2rem] sm:mt-[-0.5rem] sm:ml-[1rem] sm:pr-[1rem]
         md:text-[4.5rem] md:mr-[30rem] md:mt-[6rem]
-        lg:text-[5rem] lg:ml-[10rem] lg:mt-[-42rem]
+        lg:text-[5rem] lg:ml-[-10rem] lg:mt-[1rem]
         font-Micro">
           I am a&nbsp;
         </h1>
@@ -37,7 +37,7 @@ const Home = () => {
           className="w-full max-w-[80rem] h-[16rem] bg-contain bg-no-repeat 
           sm:mr-[0rem] sm:h-[2.5rem] sm:w-[15rem] sm:mb-[10rem] sm:mt-[10rem] 
           md:ml-[-30rem] md:h-[7rem] md:w-[35rem] md:mb-[3rem]
-          lg:h-[20rem] lg:w-[50rem] lg:mr-[-35rem] lg:mt-[-27rem]" />
+          lg:h-[7rem] lg:w-[50rem] lg:mr-[-35rem] lg:mt-[5rem]" />
 
       </div>
 
@@ -56,7 +56,7 @@ const Home = () => {
         className="w-auto max-w-full
           sm:w-[8rem] sm:ml-[1rem] sm:mt-[-23.5rem] sm:pb-[3rem]
           md:w-[15rem] md:ml-[33rem] md:mt-[-25rem]
-          lg:w-[20rem] lg:ml-[0rem] lg:mt-[12rem]
+          lg:w-[20rem] lg:ml-[70rem] lg:mt-[-30rem] lg:mb-[1rem]
         " 
       />
           
@@ -77,7 +77,8 @@ const Home = () => {
             className="text-black font-Micro
             sm:text-[1.6rem] sm:ml-[8rem] sm:leading-none 
             md:text-[4rem] md:ml-[16rem]
-            lg:text-[5rem] mx-6 mt-[-1rem]"
+            lg:text-[4.5rem] lg:pl-[20rem]
+            mx-6 mt-[-1rem]"
           />
         </div>
       </div>
@@ -89,7 +90,7 @@ const Home = () => {
         <CatGif className="w-40 
         sm:w-[5rem] sm:mr-[-20rem] sm:mb-[20rem] sm:mt-[-13rem]
         md:w-[10rem] md:mr-[-40rem] md:mt-[1rem] md:mb-[3rem]
-        lg:w-[12rem] lg:ml-[55rem] lg:mt-[-20rem] lg:mb-[20rem]" />
+        lg:w-[12rem] lg:ml-[45rem] lg:mt-[-5rem] lg:mb-[20rem]" />
       </div>
 
       {/* Arrow */}
@@ -99,7 +100,7 @@ const Home = () => {
         <Arrow className="w-8 
         sm:w-6 sm:pb-[0rem] sm:mt-[0rem] sm:ml-[11.5rem]
         md:w-10 md:ml-[25rem] md:mt-[15rem]
-        lg:w-12 lg:ml-[43rem] lg:mt-[-17rem]" />
+        lg:w-12 lg:ml-[43rem] lg:mt-[-19rem] lg:mb-[10rem]" />
       </div>
 
       {/* Sample Work Title */}
@@ -257,7 +258,7 @@ const Home = () => {
       <div className="mt-6 
       sm:w-[40rem] sm:max-w-[20rem] sm:ml-[1.5rem] sm:mt-[15rem] 
       md:w-[40rem] md:ml-[15rem] md:mt-[30rem]
-      lg:w-[60rem] lg:ml-[35rem] lg:mb-[-2rem] lg:mt-[30rem]">
+      lg:w-[60rem] lg:ml-[35rem] lg:mb-[10rem] lg:mt-[43rem]">
         <Social />
       </div>
     </div>
