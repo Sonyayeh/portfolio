@@ -27,7 +27,7 @@ const Home = () => {
         {/* basically the same thing as the two clouds */}
         <h1 className="text-4xl 
         sm:text-[2rem] sm:mt-[-0.5rem] sm:ml-[1rem] sm:pr-[1rem]
-        md:text-[4.5rem] md:mr-[35rem] md:mt-[-1rem]
+        md:text-[4.5rem] md:mr-[30rem] md:mt-[6rem]
         lg:text-[5rem] lg:ml-[10rem] lg:mt-[-42rem]
         font-Micro">
           I am a&nbsp;
@@ -36,7 +36,7 @@ const Home = () => {
         <img src={TextBubble} alt="Text bubble for the cat section" 
           className="w-full max-w-[80rem] h-[16rem] bg-contain bg-no-repeat 
           sm:mr-[0rem] sm:h-[2.5rem] sm:w-[15rem] sm:mb-[10rem] sm:mt-[10rem] 
-          md:ml-[10rem] md:h-[7rem] md:w-[35rem] md:mt-[-6rem]
+          md:ml-[-30rem] md:h-[7rem] md:w-[35rem] md:mb-[3rem]
           lg:h-[20rem] lg:w-[50rem] lg:mr-[-35rem] lg:mt-[-27rem]" />
 
       </div>
@@ -55,7 +55,7 @@ const Home = () => {
         // setting the sizes and positions of the gif in differnet pages
         className="w-auto max-w-full
           sm:w-[8rem] sm:ml-[1rem] sm:mt-[-23.5rem] sm:pb-[3rem]
-          md:w-[15rem] md:ml-[33rem] md:mt-[-2rem]
+          md:w-[15rem] md:ml-[33rem] md:mt-[-25rem]
           lg:w-[20rem] lg:ml-[0rem] lg:mt-[12rem]
         " 
       />
@@ -76,7 +76,7 @@ const Home = () => {
             showCursor
             className="text-black font-Micro
             sm:text-[1.6rem] sm:ml-[8rem] sm:leading-none 
-            md:text-[4rem] md:ml-[3rem]
+            md:text-[4rem] md:ml-[16rem]
             lg:text-[5rem] mx-6 mt-[-1rem]"
           />
         </div>
@@ -98,7 +98,7 @@ const Home = () => {
       <div className="text-center mt-10">
         <Arrow className="w-8 
         sm:w-6 sm:pb-[0rem] sm:mt-[0rem] sm:ml-[11.5rem]
-        md:w-10 md:ml-[25rem] md:mt-[5rem]
+        md:w-10 md:ml-[25rem] md:mt-[15rem]
         lg:w-12 lg:ml-[43rem] lg:mt-[-17rem]" />
       </div>
 
