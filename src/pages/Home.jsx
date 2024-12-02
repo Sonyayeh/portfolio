@@ -11,6 +11,7 @@ import YogaMockup from '../Components/puppyyoga';
 import OmuMockup from '../Components/omurice';
 import TwoClouds from '../assets/twoclouds.gif';
 import Bubble from '../assets/singlebubble.gif';
+import TextBubble from "../assets/text-bubble.png";
 
 // the thing above are some components or page decorations...I am
 // thinking about adding some more bubbles if time allows me to do so
@@ -20,49 +21,46 @@ const Home = () => {
   return (
     
     <div className="container flex flex-col ">
-     
-     {/* cloud gif */}
-     <div className="flex justify-between">
-      
-      <img 
-      // referencing the imported gif
-        src={TwoClouds} 
-        alt="Cloud gif"
-        // setting the sizes and positions of the gif in differnet pages
-        className="w-auto max-w-full
-          sm:w-[8rem] sm:ml-[1rem] sm:mt-[4rem]
-          md:w-[15rem] md:ml-[33rem] md:mt-[-2rem]
-          lg:w-[20rem] lg:ml-[0rem] lg:mt-[12rem]
-        " 
-      />
-    </div>
-
 
       {/* the "I am" Text */}
       <div className="flex justify-center items-center mt-20">
         {/* basically the same thing as the two clouds */}
         <h1 className="text-4xl 
-        sm:text-[2rem] sm:mt-[-5rem] sm:mr-[12rem] 
+        sm:text-[2rem] sm:mt-[-0.5rem] sm:ml-[1rem] sm:pr-[1rem]
         md:text-[4.5rem] md:mr-[35rem] md:mt-[-1rem]
         lg:text-[5rem] lg:ml-[10rem] lg:mt-[-42rem]
         font-Micro">
           I am a&nbsp;
         </h1>
+        {/* the text bubble section */}
+        <img src={TextBubble} alt="Text bubble for the cat section" 
+          className="w-full max-w-[80rem] h-[16rem] bg-contain bg-no-repeat 
+          sm:mr-[0rem] sm:h-[2.5rem] sm:w-[15rem] sm:mb-[10rem] sm:mt-[10rem] 
+          md:ml-[10rem] md:h-[7rem] md:w-[35rem] md:mt-[-6rem]
+          lg:h-[20rem] lg:w-[50rem] lg:mr-[-35rem] lg:mt-[-27rem]" />
 
       </div>
 
       {/* Bubble Container with ReactTyped */}
       <div className="flex justify-center mt-10 relative">
-        <div
-        // Same thing as above, but I am referring the background image as the
-        // text bubble image. I will change that for the portfolio website as it
-        // is not rendered properly
-          className="w-full max-w-[80rem] h-[16rem] bg-contain bg-no-repeat 
-          sm:mr-[-7rem] sm:h-[12rem] sm:w-[13rem] sm:mb-[-10rem] sm:mt-[-5.75rem]
-          md:ml-[10rem] md:h-[7rem] md:w-[35rem] md:mt-[-6rem]
-          lg:h-[20rem] lg:w-[50rem] lg:mr-[-35rem] lg:mt-[-27rem]"
-          style={{ backgroundImage: 'url(/src/assets/text-bubble.png)' }}
-        >
+        <div>
+        {/* // Same thing as above, but I am referring the background image as the */}
+        {/* // text bubble image. I will change that for the portfolio website as it */}
+        {/* // is not rendered properly */}
+
+         <img 
+      // referencing the imported gif
+        src={TwoClouds} 
+        alt="Cloud gif"
+        // setting the sizes and positions of the gif in differnet pages
+        className="w-auto max-w-full
+          sm:w-[8rem] sm:ml-[1rem] sm:mt-[-23.5rem] sm:pb-[3rem]
+          md:w-[15rem] md:ml-[33rem] md:mt-[-2rem]
+          lg:w-[20rem] lg:ml-[0rem] lg:mt-[12rem]
+        " 
+      />
+          
+        
           {/* this is a new react type I downloaded, I believe it is called
            react-type. In order to see this work, you'll need to install this in
            the terminal: npm install react-typed*/}
@@ -77,7 +75,7 @@ const Home = () => {
             loop
             showCursor
             className="text-black font-Micro
-            sm:text-[1.6rem] sm:ml-[1rem] sm:leading-none 
+            sm:text-[1.6rem] sm:ml-[8rem] sm:leading-none 
             md:text-[4rem] md:ml-[3rem]
             lg:text-[5rem] mx-6 mt-[-1rem]"
           />
@@ -89,7 +87,7 @@ const Home = () => {
       animation method, for reference, it's at CatSvg.jsx in the Components folder */}
       <div className="flex justify-center mt-12">
         <CatGif className="w-40 
-        sm:w-[5rem] sm:mr-[-20rem] sm:mb-[20rem] sm:mt-[-5rem]
+        sm:w-[5rem] sm:mr-[-20rem] sm:mb-[20rem] sm:mt-[-13rem]
         md:w-[10rem] md:mr-[-40rem] md:mt-[1rem] md:mb-[3rem]
         lg:w-[12rem] lg:ml-[55rem] lg:mt-[-20rem] lg:mb-[20rem]" />
       </div>
@@ -99,7 +97,7 @@ const Home = () => {
       ArrowSvg.jsx in the same Components folder */}
       <div className="text-center mt-10">
         <Arrow className="w-8 
-        sm:w-6 sm:pb-[0rem] sm:mt-[-10rem] sm:ml-[11.5rem]
+        sm:w-6 sm:pb-[0rem] sm:mt-[0rem] sm:ml-[11.5rem]
         md:w-10 md:ml-[25rem] md:mt-[5rem]
         lg:w-12 lg:ml-[43rem] lg:mt-[-17rem]" />
       </div>
@@ -108,7 +106,7 @@ const Home = () => {
       {/* this is the sample work text */}
       <div className="flex justify-center w-full mt-20">
         <p className="text-3xl 
-        sm:text-[3rem] sm:mt-[-7.5rem] sm:ml-[2rem] sm:mb-[20rem]
+        sm:text-[3rem] sm:mt-[-1rem] sm:ml-[2rem] sm:mb-[20rem]
         md:text-[5rem] md:ml-[2rem] md:mt-[11rem]
         lg:text-[7rem] lg:mt-[-10rem] lg:mr-[-28rem] text-center">
           Sample Work:</p>
