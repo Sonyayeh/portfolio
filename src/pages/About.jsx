@@ -1,6 +1,11 @@
 import React from "react";
 import Pointercursor from "../Components/photopointer";
+import PhotoCarousel from "../Components/Foodslider";
+import TravelPhotos from "../Components/TravelPhotos";
 import Photo from "../Components/photo";
+import Heart from "../assets/heart.svg";
+import Camera from "../assets/camera.svg"
+import Floppy from "../assets/floppy.svg";
 // I imported my photo from components folder
 // this is the social media icon I wanted to use ionicons but
 // cannot be installed, please consider them as placeholders :(((
@@ -13,7 +18,10 @@ const About = () => {
       <div className="container mx-auto px-5 lg:ml-[6rem]">
         <div className="card">
         </div>
-        <h5 className="sm:mr-[2rem]"> 
+        <h5 className="
+        sm:ml-[4rem]
+        md:ml-[15rem]
+        "> 
             Hello!
         </h5>
 
@@ -22,7 +30,7 @@ const About = () => {
         and changed it into an About Me container box */}
         <div className="relative mt-[30rem] 
         sm:mt-[8rem] sm:ml-[6rem] sm:w-[17rem]
-        md:ml-[6rem]
+        md:ml-[2rem] md:w-[50rem] md:mt-[2rem]
         lg:pl-[20rem] lg:w-[80rem] ">
 
             {/* Project Heading and Description */}
@@ -45,22 +53,22 @@ const About = () => {
                         {/* List items with responsive font sizes */}
                         <li className="text-blue-200 text-lg 
                         sm:text-1xl sm:ml-[-1rem]
-                        md:text-lg 
+                        md:text-3xl
                         lg:text-6xl 
                         font-semibold">DISC</li>
                         <li className="text-blue-200 text-lg 
                         sm:text-1xl sm:ml-[-1rem]
-                        md:text-lg 
+                        md:text-3xl
                         lg:text-6xl 
                         font-semibold">OPTION</li>
                         <li className="text-blue-200 text-lg 
                         sm:text-1xl sm:ml-[1rem]
-                        md:text-lg 
+                        md:text-3xl
                         lg:text-6xl 
                         font-semibold">VIEW</li>
                         <li className="text-blue-200 text-lg 
                         sm:text-1xl sm:ml-[-1rem]
-                        md:text-lg 
+                        md:text-3xl
                         lg:text-6xl 
                         font-semibold">HELP</li>
                     </ul>
@@ -77,6 +85,7 @@ const About = () => {
                 lg:flex-row">
                   <h4 className="
                   sm:text-[0.5rem]
+                  md:text-[1rem]
                   lg:text-[2rem]
                   ">
                     Hello, I’m Sonya! I am currently a student of the New Media Design + Web Development program at BCIT and I have a passion for designing digital experiences that enhance people’s everyday lives. <br /><br />
@@ -98,21 +107,21 @@ const About = () => {
                     <li>Basic HTML/CSS/JavaScript <br /><br /></li>
                     </ul>
 
-                    Other than school, I enjoy doing: <br />
-                    <ul>
-                        <li>-Cooking/Baking</li>
-                        <li>-Sewing</li>
-                        <li>-Traveling</li>
-                    </ul>
                   </h4>
                 </div>
             </div>
 
         </div>
+        <div className="my-10 mx-auto w-full border-t-4 border-dashed border-purple-300"></div>
+
+        <h5 className="
+        sm:text-[2.5rem] sm:mt-[-1rem] sm:ml-[2rem]
+        "
+        > A little more about me: </h5>
         {/* Photo Component */}
         <div className=" top-0 left-0 
-        sm:w-2/3 sm:mt-[70rem] sm:ml-[10rem] sm:pb-[13rem] sm:pr-[1rem]
-        md:w-1/3 md:ml-[35rem] md:mt-[135rem]
+        sm:w-2/3 sm:mt-[60rem] sm:ml-[10rem] sm:pb-[13rem] sm:pr-[1rem]
+        md:w-1/3 md:ml-[10rem] md:mt-[115rem]
         lg:w-2/3 lg:ml-[15rem] lg:mt-[120rem]
         ">
             <Photo />
@@ -121,12 +130,73 @@ const About = () => {
         {/* Pointercursor Component */}
         <div className=" top-0 left-0  
         sm:w-1/3 sm:ml-[9rem] sm:mt-[-10rem]
-        md:w-1/3 md:ml-[45rem] md:mt-[50rem]
+        md:w-1/3 md:ml-[7rem] md:pt-[5rem]
         lg:w-1/3 lg:ml-[15rem] lg:mt-[35rem]
         ">
             <Pointercursor />
         </div>
-          
+        
+
+       {/* food image section */}
+       <div className="bg-blue-100 justify-center ml-[-5rem] w-[30rem]">
+            <div>
+                <h5
+                className="
+                    sm:text-[3rem] sm:mt-[50rem] sm:ml-[2rem]
+                    md:text-[5rem] md:ml-[10rem]
+                "
+                >
+                Outside of school...
+                </h5>
+                <h5 className="sm:text-[2rem] sm:mb-[-2rem] sm:ml-[2rem] flex items-center">
+                <span>I enjoy cooking!</span>
+                <img 
+                    src={Heart} 
+                    alt="Heart" 
+                    className="ml-2 w-6 h-6" // Adjust the size as necessary
+                />
+                </h5>
+                <h5 className="flex items-center
+                sm:text-[1.25rem] sm:ml-[2rem] sm:mt-[1rem] sm:mb-[-0.5rem] 
+                ">
+                    (Not the best at it tho...)
+                </h5>
+                
+            </div>
+                <div className="
+                sm:w-[20rem]
+                ">
+                    <PhotoCarousel />
+                </div>
+                
+            </div>
+            {/* travel section */}
+            <div>
+                <div className="bg-purple-100 justify-center pt-[2rem] ml-[-5rem] w-[30rem]">
+                <h5 className="sm:text-[1.7rem] sm:mb-[-2rem] sm:ml-[5rem] flex items-center">
+                    <img 
+                        src={Camera} 
+                        alt="Camera" 
+                        className="w-8 h-8 mr-2" // Adds some margin to the right of the heart for spacing
+                        />
+                        I also love travelling and taking photos!
+                    </h5>
+                    <div className="
+                        sm:w-[20rem]
+                        ">
+                            <TravelPhotos />
+                    </div>
+                    
+                    <img 
+                        src={Floppy} 
+                        alt="Floppy disk, click here to my secret photo album >:)" 
+                        className="w-8 h-8 mr-2" // Adds some margin to the right of the heart for spacing
+                        />
+
+                </div>
+            </div>
+
+
         {/* I'm missing a purple cursor, I will add it when the time allows D,: */}
 
         {/* Footer Section */}
