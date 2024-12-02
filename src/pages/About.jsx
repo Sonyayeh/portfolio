@@ -5,7 +5,7 @@ import TravelPhotos from "../Components/TravelPhotos";
 import Photo from "../Components/photo";
 import Heart from "../assets/heart.svg";
 import Camera from "../assets/camera.svg"
-import Floppy from "../assets/floppy.svg";
+import Floppy from "../assets/Floppy.svg";
 // I imported my photo from components folder
 // this is the social media icon I wanted to use ionicons but
 // cannot be installed, please consider them as placeholders :(((
