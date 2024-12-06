@@ -54,7 +54,7 @@ const Home = () => {
         alt="Cloud gif"
         // setting the sizes and positions of the gif in differnet pages
         className="w-auto max-w-full
-          sm:w-[8rem] sm:ml-[1rem] sm:mt-[-23.5rem] sm:pb-[3rem]
+          sm:w-[8rem] sm:mr-[10rem] sm:mt-[-33.2rem] sm:pb-[12.5rem]
           md:w-[15rem] md:ml-[33rem] md:mt-[-25rem]
           lg:w-[20rem] lg:ml-[70rem] lg:mt-[-30rem] lg:mb-[1rem]
         " 
@@ -75,10 +75,9 @@ const Home = () => {
             loop
             showCursor
             className="text-black font-Micro
-            sm:text-[1.6rem] sm:ml-[8rem] sm:leading-none 
+            sm:text-[1.6rem] sm:mt-[2rem] sm:ml-[7rem]
             md:text-[4rem] md:ml-[16rem]
-            lg:text-[4.5rem] lg:pl-[20rem]
-            mx-6 mt-[-1rem]"
+            lg:text-[4.5rem] lg:pl-[20rem]"
           />
         </div>
       </div>
