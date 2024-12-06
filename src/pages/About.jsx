@@ -16,22 +16,21 @@ const About = () => {
       // they are basically the same as the other pages, but just
       // positioning differences
       <div className="container mx-auto px-5 lg:ml-[6rem]">
-        <div className="card">
-        </div>
+
         <h5 className="
-        sm:ml-[4rem]
+        sm:ml-[7rem] sm:text-[3rem]
         md:ml-[15rem]
         "> 
-            Hello!
+            Heyo!
         </h5>
 
         {/* Since I found out I used the same kind of container box
         for most of my content, i used the same box from projects page
         and changed it into an About Me container box */}
-        <div className="relative mt-[30rem] 
-        sm:mt-[8rem] sm:ml-[6rem] sm:w-[17rem]
+        <div className=" relative mt-[30rem] 
+        sm:mt-[8rem] sm:ml-[6rem] sm:w-[20rem]
         md:ml-[2rem] md:w-[50rem] md:mt-[2rem]
-        lg:pl-[20rem] lg:w-[80rem] ">
+        lg:w-[80rem] ">
 
             {/* Project Heading and Description */}
             <div className="text-start w-full
@@ -81,10 +80,10 @@ const About = () => {
 
                 {/* my Cringe Content Container */}
                 <div className="space-y-4 flex flex-col py-2 px-4 
-                sm:px-2 w-full 
+                sm:px-1.5 w-full 
                 lg:flex-row">
                   <h4 className="
-                  sm:text-[0.5rem]
+                  sm:text-[0.75rem]
                   md:text-[1rem]
                   lg:text-[2rem]
                   ">
@@ -115,12 +114,12 @@ const About = () => {
         <div className="my-10 mx-auto w-full border-t-4 border-dashed border-purple-300"></div>
 
         <h5 className="
-        sm:text-[2.5rem] sm:mt-[-1rem] sm:ml-[2rem]
+        sm:text-[2rem] sm:mt-[-1rem] sm:ml-[2rem]
         "
         > A little more about me: </h5>
         {/* Photo Component */}
-        <div className=" top-0 left-0 
-        sm:w-2/3 sm:mt-[60rem] sm:ml-[10rem] sm:pb-[13rem] sm:pr-[1rem]
+        <div className="
+        sm:w-2/3 sm:mt-[30rem] sm:ml-[8rem] sm:pb-[13rem] sm:pr-[1rem]
         md:w-1/3 md:ml-[10rem] md:mt-[115rem]
         lg:w-2/3 lg:ml-[15rem] lg:mt-[120rem]
         ">
@@ -142,7 +141,7 @@ const About = () => {
             <div>
                 <h5
                 className="
-                    sm:text-[3rem] sm:mt-[50rem] sm:ml-[2rem]
+                    sm:text-[3rem] sm:mt-[80rem] sm:ml-[2rem]
                     md:text-[5rem] md:ml-[10rem]
                 "
                 >

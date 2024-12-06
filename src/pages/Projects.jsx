@@ -118,7 +118,10 @@ const Projects = () => {
                 
                 <div>
                    
-                    <div>
+                   {/* no position adjustments for medium and large screens */}
+                    <div className="
+                    sm:pt-[2rem]
+                    ">
                         <Social />
                     </div>
                 </div>
