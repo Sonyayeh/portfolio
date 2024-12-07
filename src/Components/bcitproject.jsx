@@ -11,7 +11,7 @@ const BcitProject = () => {
 
     return (
         <div className="w-full relative mt-[30rem] 
-        sm:mt-[30rem] sm:px-0  sm:mx-auto
+        sm:mt-[10rem] sm:px-0  sm:mx-auto
         md:ml-[0rem]
         lg:pl-[4rem] lg:pr-[4rem] ">
 

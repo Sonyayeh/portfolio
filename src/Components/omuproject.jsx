@@ -12,7 +12,7 @@ const OmuMockup = () => {
 
     return (
         <div className="w-full relative mt-[30rem] 
-        sm:mt-[30rem] sm:px-0  sm:mx-auto
+        sm:mt-[25rem] sm:px-0  sm:mx-auto sm:pb-[2rem]
         md:ml-[0rem]
         lg:pl-[4rem] lg:pr-[4rem] ">
 
@@ -20,7 +20,7 @@ const OmuMockup = () => {
             <div className="text-start w-full">
 
             <h1 className=" pl-2 text-2xl 
-                sm:text-[4rem] sm:pb-[2rem] sm:pl-[6.5rem] sm:mt-[-16rem]
+                sm:text-[4rem] sm:pb-[2rem] sm:pl-[4rem] sm:mt-[-16rem]
                 md:text-8xl md:pl-[2rem] md:pt-[10rem] 
                 lg:text-8xl lg:pl-5">
                     Development Project:

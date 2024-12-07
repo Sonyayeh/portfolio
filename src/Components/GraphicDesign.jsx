@@ -29,7 +29,7 @@ const GraphicBox = () => {
                 I don't have to make another title and manually
                 adjust it */}
                 <h1 className=" pl-2 text-2xl 
-                sm:text-[4rem] sm:pb-[2rem] sm:pl-[6.5rem] sm:mt-[-16rem]
+                sm:text-[4rem] sm:pb-[2rem] sm:pl-[7.5rem] sm:mt-[-16rem]
                 md:text-8xl md:pl-[2rem] md:pt-[10rem] 
                 lg:text-8xl lg:pl-5">
                     Graphic Design:
