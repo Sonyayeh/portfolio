@@ -12,7 +12,7 @@ import Contact from "./pages/Contact";
 import Projects from "./pages/Projects";
 import Cases from "./pages/Cases";
 import TravelPictures from "./pages/TravelPhotoFolder";
-import BeachBall from "./Projects/beachball";
+import BeachBall from "./pages/BeachBall";
 
 // Import  styles
 import "./reset.css";

@@ -30,44 +30,44 @@ const Beachball = () => {
         <div className="w-[12rem] relative mt-[30rem] sm:ml-[-0.1rem] sm:mt-[10rem] sm:px-0 sm:mx-auto md:ml-[0rem] lg:pl-[4rem] lg:pr-[4rem]">
             {/* Project Heading and Description */}
             <div className="text-start w-[12rem]">
-                <h1 className="pl-2 text-2xl sm:text-[1rem] sm:pb-[1rem] sm:pl-[0.5rem] sm:mt-[-8rem] md:text-8xl md:pl-[2rem] md:pt-[10rem] lg:text-8xl lg:pl-5">
+                <h1 className="pl-2 text-2xl justify-center text-center sm:text-[2rem] sm:pb-[1rem] sm:mr-[-15rem] sm:mt-[-8rem] md:text-8xl md:pl-[2rem] md:pt-[10rem] lg:text-8xl lg:pl-5">
                     Beach Volleyball Tournament Poster:
                 </h1>
 
                 {/* Blue heading */}
-                <div className="bg-blue-200 px-4 flex justify-between items-center w-[13rem]">
-                    <h5 className="text-white w-[10rem] text-3xl sm:text-sm md:text-6xl lg:text-6xl">
+                <div className="bg-blue-200 px-4 flex justify-between items-center w-[27rem]">
+                    <h5 className="text-white w-[12rem] text-3xl sm:text-xl md:text-6xl lg:text-6xl">
                         Project
                     </h5>
                 </div>
 
                 {/* White background tab bar */}
-                <div className="bg-blue-200 p-4 pt-0 w-[13rem]">
-                    <ul className="flex gap-3 items-center space-x-1 bg-white w-[11rem] pr-2 pl-1 justify-start">
+                <div className="bg-blue-200 p-4 pt-0 w-[27rem]">
+                    <ul className="flex gap-3 items-center space-x-1 bg-white w-[25rem] pr-2 pl-1 justify-start">
                         {/* Tabs: ensure active tab styling is applied */}
                         <li
-                            className={`text-blue-200 text-lg sm:text-sm md:text-xl lg:text-2xl font-semibold ${activeTab === 'ABOUT' ? 'text-purple-300' : 'hover:underline'}`}
+                            className={`text-blue-200 text-lg sm:text-xl md:text-xl lg:text-2xl font-semibold ${activeTab === 'ABOUT' ? 'text-purple-300' : 'hover:underline'}`}
                             onClick={() => handleTabClick('ABOUT')}
                             style={{ cursor: 'pointer' }}  // Ensure pointer cursor on hover
                         >
                             ABOUT
                         </li>
                         <li
-                            className={`text-blue-200 text-lg sm:text-sm md:text-4xl lg:text-2xl font-semibold ${activeTab === 'PROCESS' ? 'text-purple-300' : 'hover:underline'}`}
+                            className={`text-blue-200 text-lg sm:text-xl md:text-4xl lg:text-2xl font-semibold ${activeTab === 'PROCESS' ? 'text-purple-300' : 'hover:underline'}`}
                             onClick={() => handleTabClick('PROCESS')}
                             style={{ cursor: 'pointer' }}
                         >
                             PROCESS
                         </li>
                         <li
-                            className={`text-blue-200 text-lg sm:text-sm md:text-4xl lg:text-2xl font-semibold ${activeTab === 'TIMELINE' ? 'text-purple-300' : 'hover:underline'}`}
+                            className={`text-blue-200 text-lg sm:text-xl md:text-4xl lg:text-2xl font-semibold ${activeTab === 'TIMELINE' ? 'text-purple-300' : 'hover:underline'}`}
                             onClick={() => handleTabClick('TIMELINE')}
                             style={{ cursor: 'pointer' }}
                         >
                             TIMELINE
                         </li>
                         <li
-                            className={`text-blue-200 text-lg sm:text-sm md:text-4xl lg:text-2xl font-semibold ${activeTab === 'ATTACHMENTS' ? 'text-purple-300' : 'hover:underline'}`}
+                            className={`text-blue-200 text-lg sm:text-xl md:text-4xl lg:text-2xl font-semibold ${activeTab === 'ATTACHMENTS' ? 'text-purple-300' : 'hover:underline'}`}
                             onClick={() => handleTabClick('ATTACHMENTS')}
                             style={{ cursor: 'pointer' }}
                         >
@@ -78,7 +78,7 @@ const Beachball = () => {
             </div>
 
             {/* Project box with border */}
-            <div className="w-[13rem] p-0 sm:p-0 flex border-solid border-x-[1rem] border-b-[1rem] border-blue-200 md:p-3">
+            <div className="w-[27rem] p-0 sm:p-0 flex border-solid border-x-[1rem] border-b-[1rem] border-blue-200 md:p-3">
 
                 {/* Content Container */}
                 {/* Dynamic Content Section based on Active Tab */}
@@ -120,8 +120,8 @@ const Beachball = () => {
 
             {activeTab === 'ATTACHMENTS' && (
                 <div className="space-y-4">
-                    <p className="text-lg text-purple-400 sm:text-[2rem] md:text-2xl lg:text-3xl">
-                        Here are some attachments of the project:
+                    <p className="text-lg text-purple-400 justify-center text-center sm:text-[1.5rem] md:text-2xl lg:text-3xl">
+                        Project Sketches & Final Project:
                     </p>
                     
                     {/* Add Images */}
@@ -132,12 +132,12 @@ const Beachball = () => {
                         <img 
                             src={First} 
                             alt="Image 1" 
-                            className="w-full h-auto rounded-lg 
-                            sm:ml-[-17rem] sm:mt-[3rem] sm:pb-[2rem]
+                            className="w-[8rem] h-auto rounded-lg 
+                            sm:ml-[-12rem] sm:mt-[4rem] sm:pb-[2rem]
                             " 
                         />
-                        <h3 className="flex
-                        sm:mr-[-15rem] sm:text-sm
+                        <h3 className="flex 
+                        sm:mr-[-12rem] sm:ml-[9rem] sm:mt-[-12.5rem] sm:text-sm
                         ">This is the first sketch. My idea was to simply create a group of people enjoying beach volleyball on the beach. The concept was simple, but the execution was not so ideal. After working on it for a while, I decided to scrap the idea. </h3>
                         </div>
                         <div>
