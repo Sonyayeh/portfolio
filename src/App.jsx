@@ -11,6 +11,7 @@ import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Projects from "./pages/Projects";
 import Cases from "./pages/Cases";
+import TravelPictures from "./pages/TravelPhotoFolder";
 
 // Import  styles
 import "./reset.css";
@@ -56,6 +57,7 @@ function App() {
               <Route path="/contact" element={<Contact />} />
               <Route path="/projects" element={<Projects />} />
               <Route path="/cases" element={<Cases />} />
+              <Route path="/travelphotofolder" element={<TravelPictures />} /> {/* Add this route */}
             </Route>
           </Routes>
         </main>

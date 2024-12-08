@@ -1,11 +1,15 @@
 import React from "react";
+import {Link} from "react-router-dom";
 import Pointercursor from "../Components/photopointer";
 import PhotoCarousel from "../Components/Foodslider";
 import TravelPhotos from "../Components/TravelPhotos";
 import Photo from "../Components/photo";
+import Language from "../Components/language";
 import Heart from "../assets/heart.svg";
 import Camera from "../assets/camera.svg"
 import Floppy from "../assets/Floppy.svg";
+import Skills from "../Components/skills";
+import PurpleCursor from "../Components/PurplePointer";
 // I imported my photo from components folder
 // this is the social media icon I wanted to use ionicons but
 // cannot be installed, please consider them as placeholders :(((
@@ -18,17 +22,23 @@ const About = () => {
       <div className="container mx-auto px-5 lg:ml-[6rem]">
 
         <h5 className="
-        sm:ml-[7rem] sm:text-[3rem]
+        sm:ml-[-4rem] sm:text-[5rem] 
         md:ml-[15rem]
         "> 
-            Heyo!
+            Heya!
+        </h5>
+        <h5 className="
+        sm:ml-[-4rem] sm:text-[2rem] sm:mt-[-4rem]
+        md:ml-[15rem]
+        "> 
+            Nice to meet you!
         </h5>
 
         {/* Since I found out I used the same kind of container box
         for most of my content, i used the same box from projects page
         and changed it into an About Me container box */}
         <div className=" relative mt-[30rem] 
-        sm:mt-[8rem] sm:ml-[6rem] sm:w-[20rem]
+        sm:mt-[2rem] sm:ml-[-7.5rem] sm:w-[35rem]
         md:ml-[2rem] md:w-[50rem] md:mt-[2rem]
         lg:w-[80rem] ">
 
@@ -95,18 +105,22 @@ const About = () => {
                     
                     Currently, I am in my third term, pursuing my passion for UI/UX design and some front-end development! <br /><br />
 
-                    Some of my skills include: <br />
-                    {/* the br tags are line breaker tags so there are spaces between each selected lines
-                    and I used a specific bullet point for my li list */}
-                    <ul className="list-disc pl-5">
-                    <li>UI/UX <br /></li>
-                    <li>Figma <br /></li>
-                    <li>Adobe Applications (InDesign, Illustrator, Premiere Pro, Photoshop, etc.) <br /></li>
-                    <li>Video/Photo editing <br /></li>
-                    <li>Basic HTML/CSS/JavaScript <br /><br /></li>
-                    </ul>
-
                   </h4>
+                </div>
+            </div>
+            <div className="
+            sm:ml-[23rem] sm:w-40 sm:mt-[-5rem]
+            ">
+                <PurpleCursor />
+            </div>
+            <div>
+                <div>
+                    <h5
+                    className="sm:text-[2rem] sm:ml-[9rem] sm:mt-[-2rem]"
+                    >Some of my skills being:</h5>
+                </div>
+                <div>
+                    <Skills />
                 </div>
             </div>
 
@@ -118,8 +132,8 @@ const About = () => {
         "
         > A little more about me: </h5>
         {/* Photo Component */}
-        <div className="
-        sm:w-2/3 sm:mt-[30rem] sm:ml-[8rem] sm:pb-[13rem] sm:pr-[1rem]
+        <div className=" absolute
+        sm:w-2/3 sm:mt-[42rem] sm:ml-[28rem] sm:pb-[-10rem] sm:pr-[1rem]
         md:w-1/3 md:ml-[10rem] md:mt-[115rem]
         lg:w-2/3 lg:ml-[15rem] lg:mt-[120rem]
         ">
@@ -127,8 +141,8 @@ const About = () => {
         </div>
 
         {/* Pointercursor Component */}
-        <div className=" top-0 left-0  
-        sm:w-1/3 sm:ml-[9rem] sm:mt-[-10rem]
+        <div className=" absolute
+        sm:w-1/3 sm:ml-[13rem] sm:mt-[-73rem]
         md:w-1/3 md:ml-[7rem] md:pt-[5rem]
         lg:w-1/3 lg:ml-[15rem] lg:mt-[35rem]
         ">
@@ -137,7 +151,9 @@ const About = () => {
         
 
        {/* food image section */}
-       <div className="bg-blue-100 justify-center ml-[-5rem] w-[30rem]">
+       <div className="bg-blue-100 justify-center ml-[-5rem] w-[30rem]
+       sm:mt-[-75rem]
+       ">
             <div>
                 <h5
                 className="
@@ -186,13 +202,21 @@ const About = () => {
                             <TravelPhotos />
                     </div>
                     
-                    <img 
-                        src={Floppy} 
-                        alt="Floppy disk, click here to my secret photo album >:)" 
-                        className="w-8 h-8 mr-2" // Adds some margin to the right of the heart for spacing
-                        />
+                    <div>
+                        <h5 className="text-xl text-right mr-10">Click me for more photos!</h5>
+                        <Link to="/travelphotofolder">
+                            <img 
+                                src={Floppy} 
+                                alt="Floppy disk, click here to my secret photo album >:)" 
+                                className="w-8 h-8 mb-2 ml-[27rem] hover:cursor-pointer"
+                                />
+                        </Link>
+                    </div>
 
                 </div>
+            </div>
+            <div>
+                <Language />
             </div>
 
 
@@ -204,7 +228,7 @@ const About = () => {
         </div>
         {/* Social Section */}
         <div className="
-          sm:w-[40rem] sm:ml-[-9.5rem] sm:mr-[-5rem] sm:mt-[50rem] 
+          sm:w-[40rem] sm:ml-[-9.5rem] sm:mr-[-5rem] sm:mt-[10rem] 
           mb:w-[40rem] md:max-w-[40rem] mb:ml-[7rem]
           lg:w-[60rem] lg:ml-[20rem] lg:mb-[-10rem]">
             <Social />

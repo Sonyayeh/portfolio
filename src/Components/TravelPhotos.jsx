@@ -1,21 +1,21 @@
 import React, { useState, useEffect } from "react";
-import Beef from "../assets/food/beefnoods.png";
-import Cake from "../assets/food/cake.jpg";
-import Chicken from "../assets/food/chicken.jpg";
-import Cookie from "../assets/food/cookie.png";
-import Croissant from "../assets/food/croissant.jpg";
-import Cookies from "../assets/food/cookiebox.png";
-import Hotpot from "../assets/food/hotpot.png";
+import Field from "../assets/travel/field.jpg";
+import Nova from "../assets/travel/nova.jpg";
+import Brook from "../assets/travel/brooklyn.jpg";
+import Street from "../assets/travel/street.jpg";
+import River from "../assets/travel/netherland.jpg";
+import Bridge from "../assets/travel/bridge.jpg";
+import Lake from "../assets/travel/lake.jpg";
 
 const MasonryPhotoSection = () => {
   const photos = [
-    { id: 1, src: Beef, alt: "Beef Noodles" },
-    { id: 2, src: Cake, alt: "Strawberry Cake" },
-    { id: 3, src: Chicken, alt: "Chicken Dish" },
-    { id: 4, src: Cookie, alt: "Single Cookie" },
-    { id: 5, src: Croissant, alt: "Croissant" },
-    { id: 6, src: Cookies, alt: "Box of Cookies" },
-    { id: 7, src: Hotpot, alt: "Hotpot" },
+    { id: 1, src: Field, alt: "the backyard from my grandmother's home in Changhua, Taiwan" },
+    { id: 2, src: Nova, alt: "Nova Scotia ocean view" },
+    { id: 3, src: Street, alt: "Shooping district in Tokyo" },
+    { id: 4, src: Brook, alt: "Brooklyn bridge in New York" },
+    { id: 5, src: River, alt: "A river near my hotel in Amsterdam, Netherlands" },
+    { id: 6, src: Bridge, alt: "I don't remember which bridge this is but it's one of the bridges I visited with my aunt in Taiwan" },
+    { id: 7, src: Lake, alt: "Again, I don't remember what this place is called but it's in Nova Scotia" },
   ];
 
   const [columns, setColumns] = useState(3);
