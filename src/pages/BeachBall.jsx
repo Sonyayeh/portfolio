@@ -4,10 +4,11 @@ import projectData from "../data/project.json";
 import Poster from "../assets/volleyball/poster.png";
 import First from "../assets/volleyball/firstdesign.png";
 import Second from "../assets/volleyball/seconddesign.png";
-import Third from "../assets/volleyball/finaldesign.png";
-import Final from "../assets/volleyball/Finaldesign.png";
+import Third from "../assets/volleyball/thirddesign.png";
+import Final from "../assets/volleyball/finaldesign.png";
 import Flower from "../assets/volleyball/hibiscussketch.png";
-import Ref from "../assets/volleyball/refimg.png";
+import Bus from "../assets/volleyball/Busstop.png";
+import Flyer from "../assets/volleyball/vollyball.png";
 
 const Beachball = () => {
     // Find the project by id from projectData
@@ -36,8 +37,8 @@ const Beachball = () => {
 
                 {/* Blue heading */}
                 <div className="bg-blue-200 px-4 flex justify-between items-center w-[27rem]">
-                    <h5 className="text-white w-[12rem] text-3xl sm:text-xl md:text-6xl lg:text-6xl">
-                        Project
+                    <h5 className="text-white w-[12rem] text-3xl sm:text-2xl md:text-6xl lg:text-6xl">
+                        Index.HTML
                     </h5>
                 </div>
 
@@ -73,6 +74,13 @@ const Beachball = () => {
                         >
                             SAMPLE
                         </li>
+                        <li
+                            className={`text-blue-200 text-lg sm:text-xl md:text-4xl lg:text-2xl font-semibold ${activeTab === 'MOCKUPS' ? 'text-purple-300' : 'hover:underline'}`}
+                            onClick={() => handleTabClick('MOCKUPS')}
+                            style={{ cursor: 'pointer' }}
+                        >
+                            MOCKUPS
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -85,6 +93,7 @@ const Beachball = () => {
                 <div className="w-full lg:w-1/2 px-4 py-4 h-64 overflow-y-auto">
                     {activeTab === 'ABOUT' && (
                         <h3 className="text-lg sm:text-[1rem] md:text-2xl lg:text-3xl">
+                            <strong className="underline">Main Goal: <br/></strong>
                             The goal was to create a poster about a volleyball tournament. This project requires all the skillsets I have learned in MDIA 1160 and 2260, which are Adobe Illustrator 1 and 2. The main purpose is to make sure students understand course material and the software completely, and able to work under
                             pressure effectively.  <br /><br /> The volleyball tournament poster project is to create a promotional poster about an upcoming volleyball match in the Town of Shelbyville. All the elements on the poster were to be created only with Adobe Illustrator. <br /><br /> Other than Adobe Illustrator, I also used Procreate for sketches and took reference images downloaded from Adobe Stock Image. 
                         </h3>
@@ -92,10 +101,15 @@ const Beachball = () => {
 
                     {activeTab === 'PROCESS' && (
                         <h3 className="text-lg sm:text-[1rem] md:text-2xl lg:text-3xl">
+                            <strong className="underline">Beginning:<br/></strong>
                             I started my project with some simple sketches. It was difficult, for I was trying my best to not overlap my designs with reference images I downloaded. I was also trying to find many elements that may represent beach and summer that were not in the images. It surely isn’t the most problematic part of this project, but one of the biggest issues I had while working on this project. <br /><br />
+                            <strong className="underline">Difficulties:<br/></strong>
                             Since this poster is about a volleyball tournament that anyone can attend, it is important to keep that concept of community within the design. In the beginning, my sketches had a lot of people included. It was to show the elements of teamwork and community I was initially going for. However, I realized how difficult it may be if I were to add in 3-4 people in a small poster. I changed my direction to focus mainly on the volleyball aspect of this project and made several more sketches based on it. 
                             
-                            <br/><br/>Because I only had 2 weeks to work on this project, I must decide and come up with a simple but attractive design in a short amount of time. In the end, I came up with a sketch with a volleyball in the center of the page, with hibiscus flowers surrounding the ball, along with a net behind the
+                            
+                            <br/><br/>
+                            Because I only had 2 weeks to work on this project, I must decide and come up with a simple but attractive design in a short amount of time. In the end, I came up with a sketch with a volleyball in the center of the page, with hibiscus flowers surrounding the ball, along with a net behind the volleyball with some seagulls and sun rays to represent summer. It was a lot more difficult to come
+                            up with such simple concept, but I believe the result delivers the theme and event quite enough.
                         </h3>
                     )}
 
@@ -120,14 +134,14 @@ const Beachball = () => {
 
             {activeTab === 'ATTACHMENTS' && (
                 <div className="space-y-4">
-                    <p className="text-lg text-purple-400 justify-center text-center sm:text-[1.5rem] md:text-2xl lg:text-3xl">
+                    <p className="text-lg text-black-400 justify-center text-center sm:text-[1.5rem] md:text-2xl lg:text-3xl">
                         Project Sketches & Final Project:
                     </p>
                     
                     {/* Add Images */}
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
                         <h5 className="sm:text-xl sm:pt-[1rem]
-                        underline text-blue-300">First Sketch:</h5>
+                        underline text-purple-300">First Sketch:</h5>
                         
                         <img 
                             src={First} 
@@ -140,32 +154,123 @@ const Beachball = () => {
                         sm:mr-[-12rem] sm:ml-[9rem] sm:mt-[-12.5rem] sm:text-sm
                         ">This is the first sketch. My idea was to simply create a group of people enjoying beach volleyball on the beach. The concept was simple, but the execution was not so ideal. After working on it for a while, I decided to scrap the idea. </h3>
                         </div>
+
                         <div>
-                        <h5 className="sm:text-xl sm:pt-[1rem]
-                        underline text-blue-300">Second Sketch:</h5>
+                        <h5 className="sm:text-xl sm:pt-[1rem] sm:pb-1
+                        underline text-purple-300">Second Sketch:</h5>
                         <img 
                             src={Second}
                             alt="Image 2" 
-                            className="w-full h-auto rounded-lg
-                            sm:ml-[-17rem] sm:mt-[3rem] sm:pb-[2rem]
+                            className="w-[8rem] h-auto rounded-lg
+                            sm:mr-[-12rem] sm:mt-[1rem] sm:pb-[5rem]
                             " 
                         />
+                        <h3 className="flex 
+                        sm:mr-[-1rem] sm:pr-3 sm:ml-[9rem] sm:mt-[-17rem] sm:text-sm
+                        ">This is the second sketch. I shifted my idea to having a person reaching for the volleyball, as if they were reaching for the champion position of the volleyball tournament. I thought it would be a nice way to represent the event, only to realize the tournament isn't just about winning, but also enjoying the sport. In the end, I scrapped this idea. </h3>
                         </div>
+
                         <div>
                          <h5 className="sm:text-xl sm:pt-[1rem]
-                         underline text-blue-300">Third Sketch:</h5>
+                         underline text-purple-300">Third Sketch:</h5>
                         <img 
                             src={Third}
                             alt="Image 3" 
-                            className="w-full h-auto rounded-lg
-                            sm:ml-[-17rem] sm:mt-[3rem] sm:pb-[2rem]
+                            className="w-[10rem] h-auto rounded-lg
+                            sm:ml-[-1rem] sm:mt-[1rem] sm:pb-[2rem]
                             " 
                         />
+                        <h3 className="flex 
+                        sm:mr-[-1rem] sm:ml-[9rem] sm:mt-[-14rem] sm:text-sm
+                        ">This is the third sketch. I decided to focus more on volleyball as a sport. Thinking about how it's a beach volleyball tournament, there has to have nature that features the beach. With that in mind, I decided to add palm trees, seagulls, with the ball being in the center and main focus of the poster. </h3>
+                        </div>
+
+                        <div>
+                         <h5 className="sm:text-xl sm:pt-[3rem]
+                         underline text-purple-300">Fourth Sketch:</h5>
+                        <img 
+                            src={Final}
+                            alt="Image 3" 
+                            className="w-[10rem] h-auto rounded-lg
+                            sm:ml-[-1rem] sm:mt-[1rem] sm:pb-[1rem]
+                            " 
+                        />
+                        <h3 className="flex 
+                        sm:mr-[-1rem] sm:ml-[9rem] sm:mt-[-12.5rem] sm:text-sm
+                        ">This is the fourth sketch. After having others looking at the third sketch, I decided to make the ball even larger, with some other elements that features the tropical background of beach volleyball, as it originated in 1915 on Waikiki Beach, Hawaii. </h3>
+                        </div>
+
+                        <div>
+                         <h5 className="sm:text-xl sm:pt-[3rem]
+                         underline text-purple-300">Hibiscus Sketch:</h5>
+                        <img 
+                            src={Flower}
+                            alt="Image 3" 
+                            className="w-[10rem] h-auto rounded-lg
+                            sm:ml-[-1rem] sm:mt-[1rem] sm:pb-[4rem]
+                            " 
+                        />
+                        <h3 className="flex 
+                        sm:mr-[-1rem] sm:ml-[9rem] sm:mt-[-15rem] sm:text-sm
+                        ">This is the hibiscus sketch. Since I decided on persuing the fourth sketch, I added in some hibiscus since they're the first tropical flower that came into my mind. I sketched them in procreate, and was imported to Adobe Illustrator soon after. </h3>
+                        </div>
+
+                        <div>
+                         <h5 className="sm:text-xl sm:pt-[3rem]
+                         underline text-purple-300">Final Version:</h5>
+                        <img 
+                            src={Poster}
+                            alt="Image 3" 
+                            className="w-[10rem] h-auto rounded-lg
+                            sm:ml-[-0.5rem] sm:mt-[1rem] sm:pb-[1rem]
+                            " 
+                        />
+                        <h3 className="flex 
+                        sm:mr-[-1rem] sm:ml-[10rem] sm:mt-[-14rem] sm:text-sm
+                        ">This is the final product. I took the fourth sketch as a starting point, and produced this poster. The creation of the poster is all done in Adobe Illustrator. I also added some sun rays at the top of the poster to imitate the sun, as well as adding some hibiscus flowers at the bottom. The title includes orange and yellow, which are both tropical colors.  </h3>
                         </div>
                 </div>
             )}
+            {/* mockup section */}
+            {activeTab === 'MOCKUPS' && (
+                        <h5 className="text-lg  sm:text-[1rem] md:text-2xl lg:text-3xl">
+                            <p className="text-xl ">
+                            <strong className="justify-center underline text-centers">Mockup Samples: <br/></strong>
+                           Here are some mockups for the poster: <br /><br />
+                            </p>
+                           
+                           <div>
+                           <img 
+                            src={Bus}
+                            alt="Image 3" 
+                            className="w-[10rem] h-auto
+                            sm:ml-[-0.5rem] sm:mt-[1rem] sm:pb-[1rem]
+                            " 
+                        />
+                        <h3 className="flex 
+                        sm:mr-[-1rem] sm:ml-[10rem] sm:mt-[-14rem] sm:text-xs
+                        ">This is the bus stop mockup. I figured it'll look nice in a larger surface, hense I chose to do a bus stop instead. The mockup is done with Adobe Photoshop, and the mockup background was downloaded from Adobe Stock Images.  </h3>
+                           </div>
+                           <div>
+                           <img 
+                            src={Flyer}
+                            alt="Image 3" 
+                            className="w-[10rem] h-auto 
+                            sm:ml-[-0.5rem] sm:mt-[8rem] sm:pb-[1rem]
+                            " 
+                        />
+                        <h3 className="flex 
+                        sm:mr-[-1rem] sm:ml-[10rem] sm:mt-[-8.5rem] sm:text-xs
+                        ">This is the flyer mockup. I thought doing a flyer mockup would be ideal if event hosters are trying to promote their event. The mockup is done with Adobe Photoshop, and the mockup background was downloaded from Adobe Stock Images.  </h3>
+                           </div>
+                        
+                           
+                        </h5>
+                    )}
+
 
                 </div>
+                
             </div>
         </div>
     );

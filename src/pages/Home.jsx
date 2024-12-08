@@ -176,44 +176,44 @@ const Home = () => {
 
 
           
-                {/* Beach Volleyball */}
-        <div 
-          className="grid grid-cols-1 hover:cursor-pointer
+          {/* Beach Volleyball */}
+          <div className="grid grid-cols-1 hover:cursor-pointer
             sm:w-[20rem] sm:ml-[2rem]
-            md:w-[40rem] md:ml-[5rem] md:mt-[-10rem]"
-        >
-          {/* BlueWorkBox */}
-          <Link 
-            to="/beachball" 
-            className="relative sm:h-[30rem] sm:mb-[10rem] sm:mt-[4rem]
-              md:h-[20rem] 
-              lg:h-[50rem] lg:w-[55rem] lg:ml-[30rem] lg:mt-[15rem] 
-              flex justify-center items-center"
+            md:w-[40rem] md:ml-[5rem] md:mt-[-10rem]
+            ">
+                      
+           {/* BlueWorkBox */}
+          <div className="relative 
+            sm:h-[30rem] sm:mb-[-20rem] sm:mt-[4rem]
+            md:h-[20rem] 
+            lg:h-[50rem] lg:w-[55rem] lg:ml-[30rem] lg:mt-[15rem]
+            flex justify-center items-center"
           >
-            {/* BlueWorkBox */}
-            <BlueWorkBox />
-
-            {/* VolleyballMockup inside the box */}
-            <div 
-              className="absolute sm:top-[11rem] sm:w-[15rem]
+            {/* Wrap the BlueWorkBox and VolleyballMockup inside the Link */}
+            <Link to="/beachball" className="w-full h-full flex justify-center items-center">
+              <BlueWorkBox />
+              {/* VolleyballMockup inside the box */}
+              <div className="absolute
+                sm:top-[11rem] sm:w-[15rem]
                 md:ml-[0rem] md:mt-[-8rem] md:w-[30rem]
                 lg:mt-[0.5rem] lg:w-[50rem]"
-            >
-              <VolleyballMockup />
-            </div>
-          </Link>
-        </div>
+              > 
+                <VolleyballMockup />
+              </div>
+            </Link>
+          </div>
 
-        {/* Title */}
-        <div className="text-center mt-4">
-          <p className="text-xl 
-            sm:text-[1.5rem] sm:mr-[-2rem] sm:mt-[-33.5rem]  
-            md:text-[3.2rem] md:ml-[-1rem] md:mt-[-33rem]
-            lg:text-[4rem] lg:mt-[-55rem] lg:mr-[-68rem]"
-          >
-            Beach Volleyball Tournament Poster
-          </p>
-        </div>
+          {/* Title */}
+          <div className="text-center mt-4">
+            <p className="text-xl 
+              sm:text-[1.5rem] sm:mr-[-1rem] sm:mt-[-2.5rem]  
+              md:text-[3.2rem] md:ml-[-1rem] md:mt-[-33rem]
+              lg:text-[4rem] lg:mt-[-55rem] lg:mr-[-68rem]"
+            >
+              Beach Volleyball Tournament Poster
+            </p>
+          </div>
+          </div>
 
 
         {/* bubble */}
