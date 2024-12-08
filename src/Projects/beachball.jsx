@@ -9,7 +9,7 @@ import Final from "../assets/volleyball/Finaldesign.png";
 import Flower from "../assets/volleyball/hibiscussketch.png";
 import Ref from "../assets/volleyball/refimg.png";
 
-const GraphicBox = () => {
+const Beachball = () => {
     // Find the project by id from projectData
     const project = projectData.find((proj) => proj.id === 1);
 
@@ -171,4 +171,4 @@ const GraphicBox = () => {
     );
 };
 
-export default GraphicBox;
+export default Beachball;
