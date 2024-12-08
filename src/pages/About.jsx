@@ -22,13 +22,13 @@ const About = () => {
       <div className="container mx-auto px-5 lg:ml-[6rem]">
 
         <h5 className="
-        sm:ml-[-4rem] sm:text-[5rem] 
+        sm:ml-[-2rem] sm:text-[5rem] 
         md:ml-[15rem]
         "> 
             Heya!
         </h5>
         <h5 className="
-        sm:ml-[-4rem] sm:text-[2rem] sm:mt-[-4rem]
+        sm:ml-[-2rem] sm:text-[2rem] sm:mt-[-4rem]
         md:ml-[15rem]
         "> 
             Nice to meet you!
