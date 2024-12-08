@@ -38,7 +38,7 @@ const About = () => {
         for most of my content, i used the same box from projects page
         and changed it into an About Me container box */}
         <div className=" relative mt-[30rem] 
-        sm:mt-[2rem] sm:ml-[-7.5rem] sm:w-[35rem]
+        sm:mt-[2rem] sm:ml-[-2rem] sm:w-[25rem]
         md:ml-[2rem] md:w-[50rem] md:mt-[2rem]
         lg:w-[80rem] ">
 
@@ -109,14 +109,14 @@ const About = () => {
                 </div>
             </div>
             <div className="
-            sm:ml-[23rem] sm:w-40 sm:mt-[-5rem]
+            sm:ml-[15rem] sm:w-40 sm:mt-[-5rem]
             ">
                 <PurpleCursor />
             </div>
             <div>
                 <div>
                     <h5
-                    className="sm:text-[2rem] sm:ml-[9rem] sm:mt-[-2rem]"
+                    className="sm:text-[2rem] sm:ml-[5rem] sm:mt-[-2rem]"
                     >Some of my skills being:</h5>
                 </div>
                 <div>
@@ -133,7 +133,7 @@ const About = () => {
         > A little more about me: </h5>
         {/* Photo Component */}
         <div className=" absolute
-        sm:w-2/3 sm:mt-[42rem] sm:ml-[28rem] sm:pb-[-10rem] sm:pr-[1rem]
+        sm:w-1/3 sm:mt-[-67rem] sm:ml-[16rem] sm:pr-[1rem]
         md:w-1/3 md:ml-[10rem] md:mt-[115rem]
         lg:w-2/3 lg:ml-[15rem] lg:mt-[120rem]
         ">
@@ -142,7 +142,7 @@ const About = () => {
 
         {/* Pointercursor Component */}
         <div className=" absolute
-        sm:w-1/3 sm:ml-[13rem] sm:mt-[-73rem]
+        sm:w-1/4 sm:ml-[15rem] sm:mt-[-71.5rem]
         md:w-1/3 md:ml-[7rem] md:pt-[5rem]
         lg:w-1/3 lg:ml-[15rem] lg:mt-[35rem]
         ">
@@ -151,7 +151,7 @@ const About = () => {
         
 
        {/* food image section */}
-       <div className="bg-blue-100 justify-center ml-[-5rem] w-[30rem]
+       <div className="bg-blue-100 justify-center ml-[-3.5rem] w-[27.3rem]
        sm:mt-[-75rem]
        ">
             <div>
@@ -187,7 +187,7 @@ const About = () => {
             </div>
             {/* travel section */}
             <div>
-                <div className="bg-purple-100 justify-center pt-[2rem] ml-[-5rem] w-[30rem]">
+                <div className="bg-purple-100 justify-center pt-[2rem] ml-[-3.5rem] w-[27.3rem]">
                 <h5 className="sm:text-[1.7rem] sm:mb-[-2rem] sm:ml-[5rem] flex items-center">
                     <img 
                         src={Camera} 
@@ -208,7 +208,7 @@ const About = () => {
                             <img 
                                 src={Floppy} 
                                 alt="Floppy disk, click here to my secret photo album >:)" 
-                                className="w-8 h-8 mb-2 ml-[27rem] hover:cursor-pointer"
+                                className="w-8 h-8 mb-2 ml-[25rem] hover:cursor-pointer"
                                 />
                         </Link>
                     </div>
