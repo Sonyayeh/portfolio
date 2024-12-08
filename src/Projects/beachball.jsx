@@ -29,49 +29,49 @@ const GraphicBox = () => {
     return (
         <div className="w-[12rem] relative mt-[30rem] sm:ml-[-0.1rem] sm:mt-[10rem] sm:px-0 sm:mx-auto md:ml-[0rem] lg:pl-[4rem] lg:pr-[4rem]">
             {/* Project Heading and Description */}
-            <div className="text-start w-full">
+            <div className="text-start w-[12rem]">
                 <h1 className="pl-2 text-2xl sm:text-[1rem] sm:pb-[1rem] sm:pl-[0.5rem] sm:mt-[-8rem] md:text-8xl md:pl-[2rem] md:pt-[10rem] lg:text-8xl lg:pl-5">
                     Beach Volleyball Tournament Poster:
                 </h1>
 
                 {/* Blue heading */}
-                <div className="bg-blue-200 px-4 flex justify-between items-center w-[12.5rem]">
-                    <h5 className="text-white text-3xl sm:text-sm md:text-6xl lg:text-6xl">
+                <div className="bg-blue-200 px-4 flex justify-between items-center w-[13rem]">
+                    <h5 className="text-white w-[10rem] text-3xl sm:text-sm md:text-6xl lg:text-6xl">
                         Project
                     </h5>
                 </div>
 
                 {/* White background tab bar */}
-                <div className="bg-blue-200 p-4 pt-0">
-                    <ul className="flex gap-3 items-center space-x-1 bg-white w-[13rem] pr-3 pl-1 justify-start">
+                <div className="bg-blue-200 p-4 pt-0 w-[13rem]">
+                    <ul className="flex gap-3 items-center space-x-1 bg-white w-[11rem] pr-2 pl-1 justify-start">
                         {/* Tabs: ensure active tab styling is applied */}
                         <li
-                            className={`text-blue-200 text-lg sm:text-lg md:text-xl lg:text-2xl font-semibold ${activeTab === 'ABOUT' ? 'text-purple-300' : 'hover:underline'}`}
+                            className={`text-blue-200 text-lg sm:text-sm md:text-xl lg:text-2xl font-semibold ${activeTab === 'ABOUT' ? 'text-purple-300' : 'hover:underline'}`}
                             onClick={() => handleTabClick('ABOUT')}
                             style={{ cursor: 'pointer' }}  // Ensure pointer cursor on hover
                         >
                             ABOUT
                         </li>
                         <li
-                            className={`text-blue-200 text-lg sm:text-lg md:text-4xl lg:text-2xl font-semibold ${activeTab === 'PROCESS' ? 'text-purple-300' : 'hover:underline'}`}
+                            className={`text-blue-200 text-lg sm:text-sm md:text-4xl lg:text-2xl font-semibold ${activeTab === 'PROCESS' ? 'text-purple-300' : 'hover:underline'}`}
                             onClick={() => handleTabClick('PROCESS')}
                             style={{ cursor: 'pointer' }}
                         >
                             PROCESS
                         </li>
                         <li
-                            className={`text-blue-200 text-lg sm:text-lg md:text-4xl lg:text-2xl font-semibold ${activeTab === 'TIMELINE' ? 'text-purple-300' : 'hover:underline'}`}
+                            className={`text-blue-200 text-lg sm:text-sm md:text-4xl lg:text-2xl font-semibold ${activeTab === 'TIMELINE' ? 'text-purple-300' : 'hover:underline'}`}
                             onClick={() => handleTabClick('TIMELINE')}
                             style={{ cursor: 'pointer' }}
                         >
                             TIMELINE
                         </li>
                         <li
-                            className={`text-blue-200 text-lg sm:text-lg md:text-4xl lg:text-2xl font-semibold ${activeTab === 'ATTACHMENTS' ? 'text-purple-300' : 'hover:underline'}`}
+                            className={`text-blue-200 text-lg sm:text-sm md:text-4xl lg:text-2xl font-semibold ${activeTab === 'ATTACHMENTS' ? 'text-purple-300' : 'hover:underline'}`}
                             onClick={() => handleTabClick('ATTACHMENTS')}
                             style={{ cursor: 'pointer' }}
                         >
-                            ATTACHMENTS
+                            SAMPLE
                         </li>
                     </ul>
                 </div>
