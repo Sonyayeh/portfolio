@@ -12,6 +12,7 @@ import Contact from "./pages/Contact";
 import Projects from "./pages/Projects";
 import Cases from "./pages/Cases";
 import TravelPictures from "./pages/TravelPhotoFolder";
+import BeachBall from "./Projects/beachball";
 
 // Import  styles
 import "./reset.css";
@@ -58,6 +59,7 @@ function App() {
               <Route path="/projects" element={<Projects />} />
               <Route path="/cases" element={<Cases />} />
               <Route path="/travelphotofolder" element={<TravelPictures />} /> {/* Add this route */}
+              <Route path="/beachball" element={<BeachBall />} /> {/* Add this route */}
             </Route>
           </Routes>
         </main>

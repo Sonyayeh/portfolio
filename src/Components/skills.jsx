@@ -103,6 +103,9 @@ const Skills = () => {
         <li className="px-4 py-2 bg-blue-300 text-white rounded shadow-md">
           Video Editing
         </li>
+        <li className="px-4 py-2 bg-blue-300 text-white rounded shadow-md">
+          Graphic Design
+        </li>
       </ul>
     </div>
   );

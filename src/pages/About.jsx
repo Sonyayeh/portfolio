@@ -119,7 +119,7 @@ const About = () => {
                     className="sm:text-[2rem] sm:ml-[5rem] sm:mt-[-2rem]"
                     >Some of my skills being:</h5>
                 </div>
-                <div>
+                <div className="w-50">
                     <Skills />
                 </div>
             </div>
