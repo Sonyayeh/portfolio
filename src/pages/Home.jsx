@@ -28,7 +28,7 @@ const Home = () => {
         {/* basically the same thing as the two clouds */}
         <h1 className="text-4xl 
         sm:text-[2rem] sm:mt-[-0.5rem] sm:ml-[1rem] sm:pr-[1rem]
-        md:text-[4.5rem] md:mr-[30rem] md:mt-[6rem]
+        md:text-[4.5rem] md:mr-[30rem] md:mt-[-6rem]
         lg:text-[5rem] lg:ml-[-10rem] lg:mt-[1rem]
         font-Micro">
           I am a&nbsp;
@@ -37,7 +37,7 @@ const Home = () => {
         <img src={TextBubble} alt="Text bubble for the cat section" 
           className="w-full max-w-[80rem] h-[16rem] bg-contain bg-no-repeat 
           sm:mr-[0rem] sm:h-[2.5rem] sm:w-[15rem] sm:mb-[10rem] sm:mt-[10rem] 
-          md:ml-[-30rem] md:h-[7rem] md:w-[35rem] md:mb-[3rem]
+          md:ml-[-30rem] md:h-[7rem] md:w-[35rem] md:mb-[14rem]
           lg:h-[7rem] lg:w-[50rem] lg:mr-[-35rem] lg:mt-[5rem]" />
 
       </div>
@@ -56,7 +56,7 @@ const Home = () => {
         // setting the sizes and positions of the gif in differnet pages
         className="w-auto max-w-full
           sm:w-[8rem] sm:mr-[10rem] sm:mt-[-33.2rem] sm:pb-[12.5rem]
-          md:w-[15rem] md:ml-[33rem] md:mt-[-25rem]
+          md:w-[15rem] md:mr-[30rem] md:mt-[-47rem]
           lg:w-[20rem] lg:ml-[70rem] lg:mt-[-30rem] lg:mb-[-9.5rem]
         " 
       />
@@ -77,7 +77,7 @@ const Home = () => {
             showCursor
             className="text-black font-Micro
             sm:text-[1.6rem] sm:mt-[2rem] sm:ml-[7rem]
-            md:text-[4rem] md:ml-[16rem]
+            md:text-[4rem] md:ml-[16rem] md:mb-[2rem]
             lg:text-[4.5rem] lg:pl-[20rem] lg:mt-[-8rem]"
           />
         </div>
@@ -89,7 +89,7 @@ const Home = () => {
       <div className="flex justify-center mt-12">
         <CatGif className="w-40 
         sm:w-[5rem] sm:mr-[-20rem] sm:mb-[20rem] sm:mt-[-13rem]
-        md:w-[10rem] md:mr-[-40rem] md:mt-[1rem] md:mb-[3rem]
+        md:w-[10rem] md:mr-[-40rem] md:pb-[12rem] md:mb-[-7rem]
         lg:w-[12rem] lg:ml-[45rem] lg:mt-[-5rem] lg:mb-[20rem]" />
       </div>
 
@@ -208,7 +208,7 @@ const Home = () => {
           <div className="text-center mt-4">
             <p className="text-xl 
               sm:text-[1.5rem] sm:mr-[-1rem] sm:mt-[-2.5rem]  
-              md:text-[3.2rem] md:ml-[-1rem] md:mt-[-33rem]
+              md:text-[3.2rem] md:ml-[-1rem] md:mt-[-3rem]
               lg:text-[4rem] lg:mt-[-23.5rem] lg:mr-[-70rem]"
             >
               Beach Volleyball Tournament Poster
