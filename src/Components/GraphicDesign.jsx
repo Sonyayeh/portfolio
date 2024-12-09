@@ -1,4 +1,6 @@
 import React from "react";
+import { Link } from "react-router-dom";
+
 // I have each project information imported from project.json, I will make my comments there as well!
 import projectData from "../data/project.json";  // Import the JSON data
 
@@ -128,17 +130,20 @@ const GraphicBox = () => {
                      {/* View More Button, I decided not to use the arrow because it's too small
                      even I can't see it*/}
                      <div className="flex justify-center mt-8">
-                        <button className="px-6 py-3 bg-blue-300 text-white rounded-lg shadow-md hover:bg-blue-500 hover:text-white focus:outline-none focus:ring-2 focus:ring-blue-300 transition-colors duration-300
-                        md:mr-[-35rem] md:mt-[-2rem]
-                        lg:mr-[-15rem] lg:mt-[44rem] lg:ml-[-50rem]
-                        
-                        ">
-                            View More
+                    <Link to="/beachball">
+                        <button
+                        className="px-6 py-3 bg-blue-300 text-white rounded-lg shadow-md hover:bg-blue-500 hover:text-white focus:outline-none focus:ring-2 focus:ring-blue-300 transition-colors duration-300
+                            md:mr-[-35rem] md:mt-[-2rem]
+                            lg:mr-[-15rem] lg:mt-[44rem] lg:ml-[-50rem]"
+                        >
+                        View More
                         </button>
+                    </Link>
                     </div>
+
                 </div>
             </div>
-
+            
         </div>
     );
 }
