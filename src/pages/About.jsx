@@ -158,7 +158,7 @@ const About = () => {
         <div className=" absolute
         sm:w-1/4 sm:ml-[15rem] sm:mt-[-71.5rem]
         md:w-1/3 md:ml-[-1rem] md:pt-[16rem]
-        lg:w-1/3 lg:ml-[-5rem] lg:mt-[-143rem]
+        lg:w-1/3 lg:ml-[-2rem] lg:mt-[-143rem]
         ">
             <Pointercursor />
         </div>
