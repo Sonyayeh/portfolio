@@ -51,7 +51,7 @@ const Boardwalk = () => {
                 </div>
 
                 {/* White background tab bar */}
-                <div className="bg-purple-200 p-4 pt-0 w-[27rem] md:w-[50rem] lg:w-[90rem]">
+                <div className="bg-purple-200 p-4 pt-0 w-[27rem] md:w-[50rem] lg:w-[78rem]">
                     <ul className="flex gap-3 items-center space-x-1 bg-white w-[25rem] pr-2 pl-1 justify-start md:w-[48rem] lg:w-[76rem]">
                         {/* Tabs: ensure active tab styling is applied */}
                         <li
