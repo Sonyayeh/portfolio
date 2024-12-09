@@ -122,7 +122,7 @@ const About = () => {
                     <h5
                     className="sm:text-[2rem] sm:ml-[5rem] sm:mt-[-2rem]
                     md:pt-[20rem] md:ml-[15rem] md:text-[3rem]
-                    lg:ml-[8rem] lg:text-[5rem]
+                    lg:ml-[6rem] lg:text-[5rem]
                     "
                     >Some of my skills being:</h5>
                 </div>
@@ -142,7 +142,7 @@ const About = () => {
         <h5 className="
         sm:text-[2rem] sm:mt-[-1rem] sm:ml-[2rem]
         md:text-[3rem] md:ml-[12rem]
-        lg:text-[4rem] lg:ml-[23rem]
+        lg:text-[6rem] lg:ml-[11rem]
         "
         > A little more about me: </h5>
         {/* Photo Component */}
@@ -206,7 +206,7 @@ const About = () => {
                 <div className="
                 sm:w-[20rem]
                 md:ml-[8rem] md:w-[40rem] md:pt-[2rem]
-                lg:w-[60rem] lg:ml-[8rem] lg:mt-[-2rem]
+                lg:w-[60rem] lg:ml-[12rem] lg:mt-[-2rem]
                 ">
                     <PhotoCarousel />
                 </div>
