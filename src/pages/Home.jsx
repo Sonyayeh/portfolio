@@ -179,8 +179,8 @@ const Home = () => {
           {/* Beach Volleyball */}
           <div className="grid grid-cols-1 hover:cursor-pointer
             sm:w-[20rem] sm:ml-[2rem]
-            md:w-[40rem] md:ml-[2rem] md:mt-[-10rem]
-            lg:pb-[-2rem] lg:pt-[-20rem]
+            md:w-[40rem] md:ml-[5rem] md:mt-[-10rem]
+            lg:pb-[-2rem] lg:pt-[-20rem] lg:mr-[2rem]
             ">
                       
            {/* BlueWorkBox */}
