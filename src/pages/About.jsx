@@ -122,13 +122,13 @@ const About = () => {
                     <h5
                     className="sm:text-[2rem] sm:ml-[5rem] sm:mt-[-2rem]
                     md:pt-[20rem] md:ml-[15rem] md:text-[3rem]
-                    lg:ml-[10rem] lg:text-[5rem]
+                    lg:ml-[8rem] lg:text-[5rem]
                     "
                     >Some of my skills being:</h5>
                 </div>
                 <div className="w-50
                 md:pt-[3rem] md:text-[2rem]
-                lg:mr-[2rem] lg:ml-[-8rem] lg:text-[3rem]
+                lg:mr-[2rem] lg:ml-[-15rem] lg:text-[3rem]
                 ">
                     <Skills />
                 </div>
@@ -168,7 +168,7 @@ const About = () => {
        <div className="bg-blue-100 justify-center ml-[-3.5rem] w-[27.3rem]
        sm:mt-[-75rem]
        md:w-[55rem] md:ml-[-4.5rem]
-       lg:w-[85rem] lg:ml-[-4rem]
+       lg:w-[85rem] lg:ml-[-8rem]
        ">
             <div>
                 <h5
@@ -206,7 +206,7 @@ const About = () => {
                 <div className="
                 sm:w-[20rem]
                 md:ml-[8rem] md:w-[40rem] md:pt-[2rem]
-                lg:w-[60rem] lg:ml-[12rem] lg:mt-[-2rem]
+                lg:w-[60rem] lg:ml-[8rem] lg:mt-[-2rem]
                 ">
                     <PhotoCarousel />
                 </div>

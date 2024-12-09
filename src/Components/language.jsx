@@ -61,7 +61,7 @@ const Language = () => {
       </h5>
 
       {/* Chinese/Mandarin Bar */}
-      <div className="bar-main-container bg-purple-300 text-white rounded-lg w-72 mx-auto mb-4 md:ml-[3rem] md:mb-[2rem] lg:ml-[1rem]">
+      <div className="bar-main-container bg-purple-300 text-white rounded-lg w-72 mx-auto mb-4 md:ml-[3rem] md:mb-[2rem] lg:ml-[-2rem]">
         <h5 className="text-3xl lg:text-[2.2rem]">Chinese/Mandarin</h5>
         <div className="p-2">
           <div
@@ -75,7 +75,7 @@ const Language = () => {
       </div>
 
       {/* English Bar */}
-      <div className="bar-main-container bg-sky-300 text-white rounded-lg w-72 mx-auto mb-4 md:ml-[23rem] md:mt-[-8rem] lg:ml-[30rem]">
+      <div className="bar-main-container bg-sky-300 text-white rounded-lg w-72 mx-auto mb-4 md:ml-[23rem] md:mt-[-6.5rem] lg:ml-[27rem]">
         <h5 className="text-3xl lg:text-[2.2rem]">English</h5>
         <div className="p-2">
           <div
@@ -89,7 +89,7 @@ const Language = () => {
       </div>
 
       {/* French Bar */}
-      <div className="bar-main-container bg-emerald-300 text-white rounded-lg w-72 mx-auto mb-4 md:ml-[3rem] lg:ml-[57rem] lg:mt-[-7rem]">
+      <div className="bar-main-container bg-emerald-300 text-white rounded-lg w-72 mx-auto mb-4 md:ml-[3rem] lg:ml-[57rem] lg:mt-[-5.5rem]">
         <h5 className="text-3xl lg:text-[2.2rem]">French</h5>
         <div className="p-2">
           <div
@@ -103,7 +103,7 @@ const Language = () => {
       </div>
 
       {/* Japanese Bar */}
-      <div className="bar-main-container bg-yellow-300 text-white rounded-lg w-72 mx-auto mb-4 md:ml-[23rem] md:mt-[-7rem] lg:ml-[1rem] lg:mt-[3rem]">
+      <div className="bar-main-container bg-yellow-300 text-white rounded-lg w-72 mx-auto mb-4 md:ml-[23rem] md:mt-[-7rem] lg:ml-[-2rem] lg:mt-[5rem]">
         <h5 className="text-3xl lg:text-[2.2rem]">Japanese</h5>
         <div className="p-2">
           <div
@@ -118,7 +118,7 @@ const Language = () => {
       </div>
 
       {/* Spanish Bar */}
-      <div className="bar-main-container bg-orange-300 text-white rounded-lg w-72 mx-auto mb-4 md:ml-[3rem] lg:ml-[30rem] lg:mt-[-7rem]">
+      <div className="bar-main-container bg-orange-300 text-white rounded-lg w-72 mx-auto mb-4 md:ml-[3rem] lg:ml-[27rem] lg:mt-[-5.5rem]">
         <h5 className="text-3xl lg:text-[2.2rem]">Spanish</h5>
         <div className="p-2">
           <div
