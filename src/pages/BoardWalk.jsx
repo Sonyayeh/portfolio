@@ -95,7 +95,7 @@ const Boardwalk = () => {
 
             {/* Project box with border */}
             <div className="w-[27rem] p-0 sm:p-0 flex border-solid border-x-[1rem] border-b-[1rem] border-purple-200 md:p-4 md:w-[50rem] md:h-[20rem] 
-            lg:w-[90rem] lg:h-[40rem] ">
+            lg:w-[78rem] lg:h-[40rem] ">
 
                 {/* Content Container */}
                 {/* Dynamic Content Section based on Active Tab */}
