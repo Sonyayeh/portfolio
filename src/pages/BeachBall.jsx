@@ -5,7 +5,7 @@ import Poster from "../assets/volleyball/poster.png";
 import First from "../assets/volleyball/firstdesign.png";
 import Second from "../assets/volleyball/seconddesign.png";
 import Third from "../assets/volleyball/thirddesign.png";
-import Final from "../assets/volleyball/finaldesign.png";
+import Final from "../assets/volleyball/Finaldesign.png";
 import Flower from "../assets/volleyball/hibiscussketch.png";
 import Bus from "../assets/volleyball/Busstop.png";
 import Flyer from "../assets/volleyball/vollyball.png";
