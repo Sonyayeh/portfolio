@@ -113,7 +113,7 @@ const About = () => {
             <div className="
             sm:ml-[15rem] sm:w-40 sm:mt-[-5rem]
             md:ml-[42rem]
-            lg:ml-[50rem] lg:w-[20rem] lg:mb-[2rem]
+            lg:ml-[54rem] lg:w-[20rem] lg:mb-[2rem]
             ">
                 <PurpleCursor />
             </div>
@@ -175,6 +175,7 @@ const About = () => {
                 className="
                     sm:text-[3rem] sm:mt-[80rem] sm:ml-[2rem]
                     md:text-[4rem] md:ml-[15rem]
+                    lg:text-[5rem] lg:ml-[10rem]
                 "
                 >
                 Outside of school...
@@ -203,7 +204,7 @@ const About = () => {
                 <div className="
                 sm:w-[20rem]
                 md:ml-[8rem] md:w-[40rem] md:pt-[2rem]
-                lg:w-[60rem] lg:ml-[18rem] lg:mt-[-2rem]
+                lg:w-[60rem] lg:ml-[12rem] lg:mt-[-2rem]
                 ">
                     <PhotoCarousel />
                 </div>
@@ -214,7 +215,7 @@ const About = () => {
                 <div className="bg-purple-100 justify-center pt-[2rem] ml-[-3.5rem] w-[27.3rem] md:w-[55rem] md:ml-[-4.5rem] lg:w-[85rem] lg:ml-[-8rem] lg:mt-[2rem]">
                 <h5 className="sm:text-[1.7rem] sm:mb-[-2rem] sm:ml-[5rem]
                 md:text-[3rem] md:ml-[12rem]
-                lg:text-[3rem] lg:ml-[50rem]
+                lg:text-[3rem] lg:ml-[40rem]
                 flex items-center">
                     <img 
                         src={Camera} 
@@ -240,7 +241,7 @@ const About = () => {
                                 alt="Floppy disk, click here to my secret photo album >:)" 
                                 className="w-8 h-8 mb-2 ml-[25rem] 
                                 md:ml-[33rem]
-                                lg:ml-[80rem]
+                                lg:ml-[64rem]
                                 hover:cursor-pointer"
                                 />
                         </Link>

@@ -61,7 +61,7 @@ const Language = () => {
       </h5>
 
       {/* Chinese/Mandarin Bar */}
-      <div className="bar-main-container bg-purple-300 text-white rounded-lg w-72 mx-auto mb-4 md:ml-[3rem] md:mb-[2rem] lg:ml-[2rem]">
+      <div className="bar-main-container bg-purple-300 text-white rounded-lg w-72 mx-auto mb-4 md:ml-[3rem] md:mb-[2rem] lg:ml-[-2rem]">
         <h5 className="text-3xl">Chinese/Mandarin</h5>
         <div className="p-2">
           <div
@@ -75,7 +75,7 @@ const Language = () => {
       </div>
 
       {/* English Bar */}
-      <div className="bar-main-container bg-sky-300 text-white rounded-lg w-72 mx-auto mb-4 md:ml-[23rem] md:mt-[-8rem] lg:ml-[28rem]">
+      <div className="bar-main-container bg-sky-300 text-white rounded-lg w-72 mx-auto mb-4 md:ml-[23rem] md:mt-[-8rem] lg:ml-[26rem]">
         <h5 className="text-3xl">English</h5>
         <div className="p-2">
           <div
@@ -103,7 +103,7 @@ const Language = () => {
       </div>
 
       {/* Japanese Bar */}
-      <div className="bar-main-container bg-yellow-300 text-white rounded-lg w-72 mx-auto mb-4 md:ml-[23rem] md:mt-[-7rem] lg:ml-[2rem] lg:mt-[3rem]">
+      <div className="bar-main-container bg-yellow-300 text-white rounded-lg w-72 mx-auto mb-4 md:ml-[23rem] md:mt-[-7rem] lg:ml-[-2rem] lg:mt-[3rem]">
         <h5 className="text-3xl">Japanese</h5>
         <div className="p-2">
           <div
@@ -117,7 +117,7 @@ const Language = () => {
       </div>
 
       {/* Spanish Bar */}
-      <div className="bar-main-container bg-orange-300 text-white rounded-lg w-72 mx-auto mb-4 md:ml-[3rem] lg:ml-[28rem] lg:mt-[-7rem]">
+      <div className="bar-main-container bg-orange-300 text-white rounded-lg w-72 mx-auto mb-4 md:ml-[3rem] lg:ml-[26rem] lg:mt-[-7rem]">
         <h5 className="text-3xl">Spanish</h5>
         <div className="p-2">
           <div
@@ -145,7 +145,7 @@ const Language = () => {
       </div>
 
       {/* Dutch Bar */}
-      <div className="bar-main-container bg-pink-300 text-white rounded-lg w-72 mx-auto mb-4 md:ml-[13rem] lg:ml-[28rem] lg:mt-[3rem]">
+      <div className="bar-main-container bg-pink-300 text-white rounded-lg w-72 mx-auto mb-4 md:ml-[13rem] lg:ml-[26rem] lg:mt-[3rem]">
         <h5 className="text-3xl">Dutch</h5>
         <div className="p-2">
           <div
