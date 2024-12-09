@@ -1,14 +1,10 @@
 import React, { useState } from "react";
 // Importing project data
 import projectData from "../data/project.json"; 
-import Poster from "../assets/volleyball/poster.png";
-import First from "../assets/volleyball/firstdesign.png";
-import Second from "../assets/volleyball/seconddesign.png";
-import Third from "../assets/volleyball/thirddesign.png";
-import Final from "../assets/volleyball/Finaldesign.png";
-import Flower from "../assets/volleyball/hibiscussketch.png";
-import Bus from "../assets/volleyball/Busstop.png";
-import Flyer from "../assets/volleyball/vollyball.png";
+import one from "../assets/Boardwalk/boardmock1.jpg"
+import two from "../assets/Boardwalk/boardmock2.jpg"
+import hold from "../assets/Boardwalk/holding.jpg"
+import list from "../assets/Boardwalk/boardwalkphones.jpg"
 import Social from '../Components/social';
 
 
@@ -44,7 +40,7 @@ const Boardwalk = () => {
                 </h1>
 
                 {/* Blue heading */}
-                <div className="bg-blue-200 px-4 flex justify-between items-center w-[27rem] md:w-[50rem]
+                <div className="bg-purple-200 px-4 flex justify-between items-center w-[27rem] md:w-[50rem]
                 lg:w-[90rem]">
                     <h5 className="text-white w-[12rem] text-3xl
                     sm:text-2xl 
@@ -55,39 +51,39 @@ const Boardwalk = () => {
                 </div>
 
                 {/* White background tab bar */}
-                <div className="bg-blue-200 p-4 pt-0 w-[27rem] md:w-[50rem] lg:w-[90rem]">
+                <div className="bg-purple-200 p-4 pt-0 w-[27rem] md:w-[50rem] lg:w-[90rem]">
                     <ul className="flex gap-3 items-center space-x-1 bg-white w-[25rem] pr-2 pl-1 justify-start md:w-[48rem] lg:w-[88rem]">
                         {/* Tabs: ensure active tab styling is applied */}
                         <li
-                            className={`text-blue-200 text-lg sm:text-xl md:text-4xl md:ml-2 lg:text-5xl font-semibold ${activeTab === 'ABOUT' ? 'text-purple-300' : 'hover:underline'}`}
+                            className={`text-purple-200 text-lg sm:text-xl md:text-4xl md:ml-2 lg:text-5xl font-semibold ${activeTab === 'ABOUT' ? 'text-sky-300' : 'hover:underline'}`}
                             onClick={() => handleTabClick('ABOUT')}
                             style={{ cursor: 'pointer' }}  // Ensure pointer cursor on hover
                         >
                             ABOUT
                         </li>
                         <li
-                            className={`text-blue-200 text-lg sm:text-xl md:text-4xl lg:text-5xl lg:pl-4 font-semibold ${activeTab === 'PROCESS' ? 'text-purple-300' : 'hover:underline'}`}
+                            className={`text-purple-200 text-lg sm:text-xl md:text-4xl lg:text-5xl lg:pl-4 font-semibold ${activeTab === 'PROCESS' ? 'text-sky-300' : 'hover:underline'}`}
                             onClick={() => handleTabClick('PROCESS')}
                             style={{ cursor: 'pointer' }}
                         >
                             PROCESS
                         </li>
                         <li
-                            className={`text-blue-200 text-lg sm:text-xl md:text-4xl lg:text-5xl lg:pl-4 font-semibold ${activeTab === 'TIMELINE' ? 'text-purple-300' : 'hover:underline'}`}
+                            className={`text-purple-200 text-lg sm:text-xl md:text-4xl lg:text-5xl lg:pl-4 font-semibold ${activeTab === 'TIMELINE' ? 'text-sky-300' : 'hover:underline'}`}
                             onClick={() => handleTabClick('TIMELINE')}
                             style={{ cursor: 'pointer' }}
                         >
                             TIMELINE
                         </li>
                         <li
-                            className={`text-blue-200 text-lg sm:text-xl md:text-4xl lg:text-5xl lg:pl-4 font-semibold ${activeTab === 'ATTACHMENTS' ? 'text-purple-300' : 'hover:underline'}`}
+                            className={`text-purple-200 text-lg sm:text-xl md:text-4xl lg:text-5xl lg:pl-4 font-semibold ${activeTab === 'ATTACHMENTS' ? 'text-sky-300' : 'hover:underline'}`}
                             onClick={() => handleTabClick('ATTACHMENTS')}
                             style={{ cursor: 'pointer' }}
                         >
                             SAMPLE
                         </li>
                         <li
-                            className={`text-blue-200 text-lg sm:text-xl md:text-4xl lg:text-5xl lg:pl-4 font-semibold ${activeTab === 'MOCKUPS' ? 'text-purple-300' : 'hover:underline'}`}
+                            className={`text-purple-200 text-lg sm:text-xl md:text-4xl lg:text-5xl lg:pl-4 font-semibold ${activeTab === 'MOCKUPS' ? 'text-sky-300' : 'hover:underline'}`}
                             onClick={() => handleTabClick('MOCKUPS')}
                             style={{ cursor: 'pointer' }}
                         >
@@ -98,7 +94,7 @@ const Boardwalk = () => {
             </div>
 
             {/* Project box with border */}
-            <div className="w-[27rem] p-0 sm:p-0 flex border-solid border-x-[1rem] border-b-[1rem] border-blue-200 md:p-4 md:w-[50rem] md:h-[20rem] 
+            <div className="w-[27rem] p-0 sm:p-0 flex border-solid border-x-[1rem] border-b-[1rem] border-purple-200 md:p-4 md:w-[50rem] md:h-[20rem] 
             lg:w-[90rem] lg:h-[40rem] ">
 
                 {/* Content Container */}
@@ -108,6 +104,18 @@ const Boardwalk = () => {
                         <h3 className="text-lg sm:text-[1rem] md:text-2xl lg:text-3xl">
                             <strong className="underline">Main Goal: <br/></strong>
                             The goal was to create an app for an online shop using the Waterfall methodology for MDIA 2092 Project Management’s final project. It is required to make the online shop app fully functional, as in having the animations and prototype on Figma. For this project, my group decided to focus on rental and location aspect of an online/rental shop for skateboards and streetwear. The app is designed so users can book, shop, receive notification and locate the shop.  <br /><br /> Boardwalk Boutique is a skate shop that does skateboard rentals and streetwear and skateboard retail. It is a fictional skate shop located in the heart of Vancouver. The app includes various of designs and brands of skateboards and is to guarantee users to find something for them.  <br /><br />There are also the review sections users can read upon before renting/purchasing any merchandise, and they can also leave comments about products. 
+                            <br/><br/>
+                            <strong className="underline">Group Members:</strong>
+                            <br></br>
+                            Since this is a group project, here are the following group members with their roles:
+                            <br/><br />
+                            <ul className="list-disc px-2">
+                                <li><strong> Sonya Yeh: </strong>– UI/UX Designer: Mobile App </li>
+                                <li><strong> Vahan Vartanian: </strong>– Graphic Designer </li>
+                                <li><strong> Karleil Villareal: </strong>– UI/UX Designer:Website Mockup</li>
+                                <li><strong> Courtney Yan: </strong>– Project Manager </li>
+                                <li><strong> Daniel Kolpakov: </strong>– Developer </li>
+                            </ul>
                         </h3>
                     )}
 
@@ -158,26 +166,26 @@ const Boardwalk = () => {
                         underline text-purple-300">First Sketch:</h5>
                         
                         <img 
-                            src={First} 
+                            src={one} 
                             alt="Image 1" 
                             className="w-[8rem] h-auto rounded-lg 
                             sm:ml-[-12rem] sm:mt-[4rem] sm:pb-[2rem]
-                            md:ml-[-24rem]
+                            md:ml-[-23rem]
                             lg:w-[30rem] lg:ml-[-2rem]
                             " 
                         />
                         <h3 className="flex 
-                        sm:mr-[-12rem] sm:ml-[9rem] sm:mt-[-12.5rem] sm:text-sm
+                        sm:mr-[-12rem] sm:ml-[9rem] sm:mt-[-15rem] sm:text-sm
                         md:text-xl
-                        lg:mt-[40rem] lg:ml-[-55rem] lg:text-2xl
-                        ">This is the first sketch. My idea was to simply create a group of people enjoying beach volleyball on the beach. The concept was simple, but the execution was not so ideal. After working on it for a while, I decided to scrap the idea. </h3>
+                        lg:mt-[55rem] lg:ml-[-55rem] lg:text-2xl lg:pb-[2rem]
+                        ">This is the first sketch. I was not sure of how I can design an app because it is my first time designing one. I took a lot of notes regarding on what elements and sections I may need for the project. I ended with a simple sketch of the overall layout. </h3>
                         </div>
 
                         <div>
                         <h5 className="sm:text-xl sm:pt-[1rem] sm:pb-1
                         underline text-purple-300 lg:text-[3rem]">Second Sketch:</h5>
                         <img 
-                            src={Second}
+                            src={two}
                             alt="Image 2" 
                             className="w-[8rem] h-auto rounded-lg
                             sm:mr-[-12rem] sm:mt-[1rem] sm:pb-[5rem]
@@ -187,120 +195,80 @@ const Boardwalk = () => {
                         <h3 className="flex 
                         sm:mr-[-1rem] sm:pr-3 sm:ml-[9rem] sm:mt-[-17rem] sm:text-sm
                         md:text-xl
-                        lg:mt-[-2rem] lg:ml-[12rem] lg:text-2xl
-                        ">This is the second sketch. I shifted my idea to having a person reaching for the volleyball, as if they were reaching for the champion position of the volleyball tournament. I thought it would be a nice way to represent the event, only to realize the tournament isn't just about winning, but also enjoying the sport. In the end, I scrapped this idea. </h3>
+                        lg:mt-[-2rem] lg:ml-[2rem] lg:text-2xl lg:pb-[2rem]
+                        ">This is the second sketch. After my group members' feedbacks, I shifted my gear to make something that is more simple and straight forward. I focused too much on the elements we needed, rather than the overall functionality. After I got an approval from my group members, I imported this sketch to Figma and started prototyping. </h3>
                         </div>
 
-                        <div>
-                         <h5 className="sm:text-xl sm:pt-[1rem]
-                         underline text-purple-300 lg:text-[3rem]">Third Sketch:</h5>
-                        <img 
-                            src={Third}
-                            alt="Image 3" 
-                            className="w-[10rem] h-auto rounded-lg
-                            sm:ml-[-1rem] sm:mt-[1rem] sm:pb-[2rem]
-                            lg:w-[30rem] lg:ml-[25rem]
-                            " 
-                        />
+                        <h5 className="sm:text-xl underline text-purple-300 lg:text-[3rem]">
+                        Figma File:
+                        </h5>
+                        <iframe
+                        style={{ border: "1px solid rgba(0, 0, 0, 0.1)" }}
+                        width="370"
+                        height="450"
+                        src="https://embed.figma.com/design/1gCrT0CT3cuodCsgmVOBvB/Broadway-Boutique?node-id=0-1&embed-host=share"
+                        allowFullScreen
+                        title="Figma Embed"
+                        className=" top-0 left-0 w-full h-full 
+                        sm:w-[100%] sm:h-[200px] 
+                        md:w-[95%] md:h-[400px]
+                        lg:h-[600px]
+                        "
+                        ></iframe>
                         <h3 className="flex 
-                        sm:mr-[-1rem] sm:ml-[9rem] sm:mt-[-14rem] sm:text-sm
-                        md:text-xl
-                        lg:mt-[-2rem] lg:ml-[8rem] lg:text-2xl
-                        ">This is the third sketch. I decided to focus more on volleyball as a sport. Thinking about how it's a beach volleyball tournament, there has to have nature that features the beach. With that in mind, I decided to add palm trees, seagulls, with the ball being in the center and main focus of the poster. </h3>
-                        </div>
-
-                        <div>
-                         <h5 className="sm:text-xl sm:pt-[3rem]
-                         underline text-purple-300 lg:text-[3rem]">Fourth Sketch:</h5>
-                        <img 
-                            src={Final}
-                            alt="Image 3" 
-                            className="w-[10rem] h-auto rounded-lg
-                            sm:ml-[-1rem] sm:mt-[1rem] sm:pb-[1rem]
-                            lg:w-[30rem] lg:ml-[25rem] lg:pb-[2rem]
-                            " 
-                        />
-                        <h3 className="flex 
-                        sm:mr-[-1rem] sm:ml-[9rem] sm:mt-[-12.5rem] sm:text-sm
-                        md:text-xl
+                        sm:pt-[-7rem] sm:text-sm
+                        md:text-xl md:ml-[5rem]
                         lg:mt-[-2rem] lg:ml-[12rem] lg:text-2xl
-                        ">This is the fourth sketch. After having others looking at the third sketch, I decided to make the ball even larger, with some other elements that features the tropical background of beach volleyball, as it originated in 1915 on Waikiki Beach, Hawaii. </h3>
-                        </div>
+                        ">This is the Figma file. It has three pages: Lo-Fi, Hi-Fi and style guide. It is fully prototyped in Hi-Fi, please do play around with it to experience the app yourself! </h3>
 
-                        <div>
-                         <h5 className="sm:text-xl sm:pt-[3rem]
-                         underline text-purple-300 lg:text-[3rem]">Hibiscus Sketch:</h5>
-                        <img 
-                            src={Flower}
-                            alt="Image 3" 
-                            className="w-[10rem] h-auto rounded-lg
-                            sm:ml-[-1rem] sm:mt-[1rem] sm:pb-[4rem]
-                            lg:w-[30rem] lg:ml-[25rem] lg:pb-[2rem]
-                            " 
-                        />
-                        <h3 className="flex 
-                        sm:mr-[-1rem] sm:ml-[9rem] sm:mt-[-15rem] sm:text-sm
-                        md:text-xl
-                        lg:mt-[-2rem] lg:ml-[12rem] lg:text-2xl
-                        ">This is the hibiscus sketch. Since I decided on persuing the fourth sketch, I added in some hibiscus since they're the first tropical flower that came into my mind. I sketched them in procreate, and was imported to Adobe Illustrator soon after. </h3>
-                        </div>
 
-                        <div>
-                         <h5 className="sm:text-xl sm:pt-[3rem]
-                         underline text-purple-300 lg:text-[3rem]">Final Version:</h5>
-                        <img 
-                            src={Poster}
-                            alt="Image 3" 
-                            className="w-[10rem] h-auto rounded-lg
-                            sm:ml-[-0.5rem] sm:mt-[1rem] sm:pb-[1rem]
-                            lg:w-[30rem] lg:ml-[25rem] lg:pb-[3rem]
-                            " 
-                        />
-                        <h3 className="flex 
-                        sm:mr-[-1rem] sm:ml-[10rem] sm:mt-[-14rem] sm:text-sm
-                        md:text-xl md:mb-[1rem]
-                        lg:mt-[-2rem] lg:ml-[12rem] lg:text-2xl
-                        ">This is the final product. I took the fourth sketch as a starting point, and produced this poster. The creation of the poster is all done in Adobe Illustrator. I also added some sun rays at the top of the poster to imitate the sun, as well as adding some hibiscus flowers at the bottom. The title includes orange and yellow, which are both tropical colors.  </h3>
-                        </div>
-                </div>
+                            </div>
             )}
             {/* mockup section */}
             {activeTab === 'MOCKUPS' && (
                         <h5 className="text-lg  sm:text-[1rem] md:text-4xl lg:text-[3rem]">
                             <p className="text-xl ">
-                            <strong className="justify-center underline text-center md:text-4xl lg:text-[3rem]">Mockup Samples: <br/></strong>
+                            <strong className="justify-center underline md:text-[3rem] md:ml-[15rem]
+                             lg:text-[4rem] lg:ml-[30rem]                            ">Mockup Samples: <br/></strong>
+                             <p className="
+                             md:ml-[10rem] md:text-[2rem] md:pt-[2rem]
+                             lg:ml-[28rem]
+                             ">
                            Here are some mockups for the poster: <br /><br />
+                             </p>
                             </p>
                            
                            <div>
                            <img 
-                            src={Bus}
+                            src={list}
                             alt="Image 3" 
                             className="w-[10rem] h-auto
                             sm:ml-[-0.5rem] sm:mt-[1rem] sm:pb-[1rem]
-                            lg:w-[30rem] lg:ml-[25rem] lg:pb-[3rem]
+                            md:w-[80%] md:ml-[5rem]
+                            lg:w-[70rem] lg:ml-[7rem] lg:pb-[-4rem]
                             " 
                         />
                         <h3 className="flex 
-                        sm:mr-[-1rem] sm:ml-[10rem] sm:mt-[-14rem] sm:text-xs
-                        md:text-xl
-                        lg:mt-[-2rem] lg:ml-[12rem] lg:text-2xl
-                        ">This is the bus stop mockup. I figured it'll look nice in a larger surface, hense I chose to do a bus stop instead. The mockup is done with Adobe Photoshop, and the mockup background was downloaded from Adobe Stock Images.  </h3>
+                        sm:mr-[-1rem] sm:ml-[10rem] sm:mt-[-6.5rem] sm:text-xs
+                        md:text-xl md:ml-[5rem] md:pt-[8rem]
+                        lg:mt-[-6rem] lg:ml-[12rem] lg:text-2xl lg:mb-[1rem]
+                        ">I decided to display the project in multiple phone screens to imitate real apps. I took the mockup image from Adobe Stock Images and the editings were done with Adobe Photoshop.  </h3>
                            </div>
                            <div>
                            <img 
-                            src={Flyer}
+                            src={hold}
                             alt="Image 3" 
                             className="w-[10rem] h-auto 
-                            sm:ml-[-0.5rem] sm:mt-[8rem] sm:pb-[1rem]
-                            lg:w-[30rem] lg:ml-[25rem] lg:pb-[3rem]
+                            sm:ml-[-0.5rem] sm:mt-[4rem] sm:pb-[1rem]
+                            md:w-[80%] md:ml-[5rem]
+                            lg:w-[70rem] lg:ml-[7rem] lg:pb-[3rem]
                             " 
                         />
                         <h3 className="flex 
-                        sm:mr-[-1rem] sm:ml-[10rem] sm:mt-[-8.5rem] sm:text-xs
-                        md:text-xl 
-                        lg:mt-[-2rem] lg:ml-[12rem] lg:text-2xl
-                        ">This is the flyer mockup. I thought doing a flyer mockup would be ideal if event hosters are trying to promote their event. The mockup is done with Adobe Photoshop, and the mockup background was downloaded from Adobe Stock Images.  </h3>
+                        sm:mr-[-1rem] sm:ml-[10rem] sm:mt-[-8rem] sm:text-xs
+                        md:text-xl md:ml-[5rem] md:pb-[-20rem] md:mt-[2rem]
+                        lg:mt-[-1rem] lg:ml-[8rem] lg:text-2xl
+                        ">Since the previous mockup was about having screens on actual devices, I figured it'll be only be appropriate to have a mockup of a person holding their phone with the app displayed. The mockup is also downloaded from Adobe Stock Images and edits were made with Adobe Photoshop.  </h3>
                            </div>
                         
                            
