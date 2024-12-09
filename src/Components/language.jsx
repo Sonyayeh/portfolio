@@ -75,7 +75,7 @@ const Language = () => {
       </div>
 
       {/* English Bar */}
-      <div className="bar-main-container bg-sky-300 text-white rounded-lg w-72 mx-auto mb-4 md:ml-[23rem] md:mt-[-8rem] lg:ml-[2rem]">
+      <div className="bar-main-container bg-sky-300 text-white rounded-lg w-72 mx-auto mb-4 md:ml-[23rem] md:mt-[-8rem] lg:ml-[28rem]">
         <h5 className="text-3xl">English</h5>
         <div className="p-2">
           <div
@@ -89,7 +89,7 @@ const Language = () => {
       </div>
 
       {/* French Bar */}
-      <div className="bar-main-container bg-emerald-300 text-white rounded-lg w-72 mx-auto mb-4 md:ml-[3rem] lg:ml-[2rem]">
+      <div className="bar-main-container bg-emerald-300 text-white rounded-lg w-72 mx-auto mb-4 md:ml-[3rem] lg:ml-[54rem] lg:mt-[-7rem]">
         <h5 className="text-3xl">French</h5>
         <div className="p-2">
           <div
@@ -103,7 +103,7 @@ const Language = () => {
       </div>
 
       {/* Japanese Bar */}
-      <div className="bar-main-container bg-yellow-300 text-white rounded-lg w-72 mx-auto mb-4 md:ml-[23rem] md:mt-[-7rem] lg:ml-[2rem]">
+      <div className="bar-main-container bg-yellow-300 text-white rounded-lg w-72 mx-auto mb-4 md:ml-[23rem] md:mt-[-7rem] lg:ml-[2rem] lg:mt-[3rem]">
         <h5 className="text-3xl">Japanese</h5>
         <div className="p-2">
           <div
@@ -117,7 +117,7 @@ const Language = () => {
       </div>
 
       {/* Spanish Bar */}
-      <div className="bar-main-container bg-orange-300 text-white rounded-lg w-72 mx-auto mb-4 md:ml-[3rem] lg:ml-[2rem]">
+      <div className="bar-main-container bg-orange-300 text-white rounded-lg w-72 mx-auto mb-4 md:ml-[3rem] lg:ml-[28rem] lg:mt-[-7rem]">
         <h5 className="text-3xl">Spanish</h5>
         <div className="p-2">
           <div
@@ -131,7 +131,7 @@ const Language = () => {
       </div>
 
       {/* German Bar */}
-      <div className="bar-main-container bg-red-300 text-white rounded-lg w-72 mx-auto mb-4 md:ml-[23rem] md:mt-[-7rem] lg:ml-[2rem]">
+      <div className="bar-main-container bg-red-300 text-white rounded-lg w-72 mx-auto mb-4 md:ml-[23rem] md:mt-[-7rem] lg:ml-[54rem]">
         <h5 className="text-3xl">German</h5>
         <div className="p-2">
           <div
@@ -145,7 +145,7 @@ const Language = () => {
       </div>
 
       {/* Dutch Bar */}
-      <div className="bar-main-container bg-pink-300 text-white rounded-lg w-72 mx-auto mb-4 md:ml-[13rem] lg:ml-[2rem]">
+      <div className="bar-main-container bg-pink-300 text-white rounded-lg w-72 mx-auto mb-4 md:ml-[13rem] lg:ml-[28rem] lg:mt-[3rem]">
         <h5 className="text-3xl">Dutch</h5>
         <div className="p-2">
           <div
@@ -160,7 +160,7 @@ const Language = () => {
 
       {/* List of Other Languages */}
       <div>
-        <h5 className="text-left text-black-400 text-3xl mb-4 md:ml-[6rem] md:pt-[5rem] lg:ml-[28rem] lg:mt-[-45rem] lg:text-[3rem]">
+        <h5 className="text-left text-black-400 text-3xl mb-4 md:ml-[6rem] md:pt-[5rem] lg:ml-[28rem] lg:mt-[-45rem] lg:text-[3rem] lg:pt-[50rem]">
           Some other languages I learned are:
           <ul className="list-disc ml-6 mt-2">
             <li className="text-purple-300 font-bold">Turkish</li>

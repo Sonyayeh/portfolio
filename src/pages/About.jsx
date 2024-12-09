@@ -149,7 +149,7 @@ const About = () => {
         <div className=" absolute w-full
         sm:w-1/3 sm:mt-[-67rem] sm:ml-[16rem] sm:pr-[1rem]
         md:w-1/3 md:ml-[-0.5rem] md:mt-[-48rem]
-        lg:w-2/3 lg:ml-[-9rem] lg:mt-[-90rem]
+        lg:w-2/3 lg:ml-[-9rem] lg:mt-[-120rem]
         ">
             <Photo />
         </div>
@@ -158,7 +158,7 @@ const About = () => {
         <div className=" absolute
         sm:w-1/4 sm:ml-[15rem] sm:mt-[-71.5rem]
         md:w-1/3 md:ml-[-1rem] md:pt-[16rem]
-        lg:w-1/3 lg:ml-[-8rem] lg:mt-[-103rem]
+        lg:w-1/3 lg:ml-[-8rem] lg:mt-[-143rem]
         ">
             <Pointercursor />
         </div>
@@ -263,7 +263,7 @@ const About = () => {
         <div className="
           sm:w-[40rem] sm:ml-[-9.5rem] sm:mr-[-5rem] sm:mt-[10rem] 
           mb:w-[40rem] md:max-w-[40rem] md:ml-[2rem]
-          lg:w-[60rem] lg:ml-[20rem]">
+          lg:w-[60rem] lg:ml-[20rem] lg:mt-[-20rem]">
             <Social />
           </div>
 

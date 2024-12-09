@@ -28,7 +28,7 @@ const Home = () => {
         {/* basically the same thing as the two clouds */}
         <h1 className="text-4xl 
         sm:text-[2rem] sm:mt-[-0.5rem] sm:ml-[1rem] sm:pr-[1rem]
-        md:text-[4.5rem] md:mr-[30rem] md:mt-[-6rem]
+        md:text-[4.5rem] md:mr-[30rem] md:mt-[-5rem]
         lg:text-[5rem] lg:ml-[-10rem] lg:mt-[-10rem]
         font-Micro">
           I am a&nbsp;
@@ -57,7 +57,7 @@ const Home = () => {
         className="w-auto max-w-full
           sm:w-[8rem] sm:mr-[10rem] sm:mt-[-33.2rem] sm:pb-[12.5rem]
           md:w-[15rem] md:mr-[30rem] md:mt-[-47rem]
-          lg:w-[20rem] lg:ml-[110rem] lg:mt-[-41rem] lg:mb-[-9.5rem]
+          lg:w-[20rem] lg:ml-[100rem] lg:mt-[-41rem] lg:mb-[-9.5rem]
         " 
       />
           
