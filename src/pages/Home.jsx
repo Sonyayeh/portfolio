@@ -57,7 +57,7 @@ const Home = () => {
         className="w-auto max-w-full
           sm:w-[8rem] sm:mr-[10rem] sm:mt-[-33.2rem] sm:pb-[12.5rem]
           md:w-[15rem] md:ml-[33rem] md:mt-[-25rem]
-          lg:w-[20rem] lg:ml-[70rem] lg:mt-[-30rem] lg:mb-[1rem]
+          lg:w-[20rem] lg:ml-[70rem] lg:mt-[-30rem] lg:mb-[-9.5rem]
         " 
       />
           
@@ -208,7 +208,7 @@ const Home = () => {
             <p className="text-xl 
               sm:text-[1.5rem] sm:mr-[-1rem] sm:mt-[-2.5rem]  
               md:text-[3.2rem] md:ml-[-1rem] md:mt-[-33rem]
-              lg:text-[4rem] lg:mt-[-55rem] lg:mr-[-68rem]"
+              lg:text-[4rem] lg:mt-[-23.5rem] lg:mr-[-75rem]"
             >
               Beach Volleyball Tournament Poster
             </p>

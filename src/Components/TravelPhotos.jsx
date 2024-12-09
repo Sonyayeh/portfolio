@@ -6,6 +6,7 @@ import Street from "../assets/travel/street.jpg";
 import River from "../assets/travel/netherland.jpg";
 import Bridge from "../assets/travel/bridge.jpg";
 import Lake from "../assets/travel/lake.jpg";
+import Masonry, {ResponsiveMasonry} from "react-responsive-masonry";
 
 const MasonryPhotoSection = () => {
   const photos = [
@@ -19,6 +20,7 @@ const MasonryPhotoSection = () => {
   ];
 
   return (
+    <ResponsiveMasonry>
     <div className="bg-purple-100 p-6">
       <div
         className="grid gap-5"
@@ -37,6 +39,7 @@ const MasonryPhotoSection = () => {
         ))}
       </div>
     </div>
+    </ResponsiveMasonry>
   );
 };
 
