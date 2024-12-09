@@ -78,7 +78,7 @@ const Home = () => {
             className="text-black font-Micro
             sm:text-[1.6rem] sm:mt-[2rem] sm:ml-[7rem]
             md:text-[4rem] md:ml-[16rem]
-            lg:text-[4.5rem] lg:pl-[20rem]"
+            lg:text-[4.5rem] lg:pl-[20rem] lg:mt-[-8rem]"
           />
         </div>
       </div>
