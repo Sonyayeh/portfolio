@@ -45,7 +45,7 @@ const Beachball = () => {
 
                 {/* Blue heading */}
                 <div className="bg-blue-200 px-4 flex justify-between items-center w-[27rem] md:w-[50rem]
-                lg:w-[90rem]">
+                lg:w-[78rem]">
                     <h5 className="text-white w-[12rem] text-3xl
                     sm:text-2xl 
                     md:text-5xl 

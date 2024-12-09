@@ -41,7 +41,7 @@ const Boardwalk = () => {
 
                 {/* Blue heading */}
                 <div className="bg-purple-200 px-4 flex justify-between items-center w-[27rem] md:w-[50rem]
-                lg:w-[90rem]">
+                lg:w-[78rem]">
                     <h5 className="text-white w-[12rem] text-3xl
                     sm:text-2xl 
                     md:text-5xl 
@@ -52,7 +52,7 @@ const Boardwalk = () => {
 
                 {/* White background tab bar */}
                 <div className="bg-purple-200 p-4 pt-0 w-[27rem] md:w-[50rem] lg:w-[90rem]">
-                    <ul className="flex gap-3 items-center space-x-1 bg-white w-[25rem] pr-2 pl-1 justify-start md:w-[48rem] lg:w-[88rem]">
+                    <ul className="flex gap-3 items-center space-x-1 bg-white w-[25rem] pr-2 pl-1 justify-start md:w-[48rem] lg:w-[76rem]">
                         {/* Tabs: ensure active tab styling is applied */}
                         <li
                             className={`text-purple-200 text-lg sm:text-xl md:text-4xl md:ml-2 lg:text-5xl font-semibold ${activeTab === 'ABOUT' ? 'text-sky-300' : 'hover:underline'}`}
@@ -282,7 +282,7 @@ const Boardwalk = () => {
             <div className="
                     sm:pt-[2rem] sm:ml-[4rem] sm:w-[20rem]
                     md:ml-[15rem] md:mt-[2rem]
-                    lg:ml-[35rem]
+                    lg:ml-[-12rem] 
                     ">
                         <Social />
                     </div>
