@@ -39,7 +39,7 @@ const Beachball = () => {
                 <h1 className="pl-2 text-2xl justify-center text-center 
                 sm:text-[2rem] sm:pb-[1rem] sm:mr-[-15rem] sm:mt-[-8rem] sm:w-[20rem] 
                 md:text-5xl md:ml-[0rem] md:pt-[10rem] md:w-[50rem] md:mb-[2rem]
-                lg:text-7xl lg:ml-[15rem] lg:w-[60rem] lg:mb-[5rem] lg:mt-[2rem]">
+                lg:text-7xl lg:ml-[8rem] lg:w-[60rem] lg:mb-[5rem] lg:mt-[2rem]">
                     Beach Volleyball Tournament Poster:
                 </h1>
 
