@@ -8,7 +8,7 @@ const Header = () => {
       {/* Logo */}
       <div className="flex justify-center items-center py-4">
         <img 
-          src="/logo.svg" 
+          src="/logo.svg"
           alt="Logo" 
           className="h-16 w-auto 
           sm:pl-[18rem]
