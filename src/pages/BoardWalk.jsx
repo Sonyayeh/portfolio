@@ -282,7 +282,7 @@ const Boardwalk = () => {
             <div className="
                     sm:pt-[2rem] sm:ml-[4rem] sm:w-[20rem]
                     md:ml-[15rem] md:mt-[2rem]
-                    lg:ml-[-12rem] 
+                    lg:ml-[28rem] 
                     ">
                         <Social />
                     </div>
