@@ -100,7 +100,7 @@ const Home = () => {
         <Arrow className="w-8 
         sm:w-6 sm:pb-[0rem] sm:mt-[0rem] sm:ml-[11.5rem]
         md:w-10 md:ml-[25rem] md:mt-[15rem]
-        lg:w-12 lg:ml-[43rem] lg:mt-[-31rem] lg:mb-[10rem]" />
+        lg:w-12 lg:ml-[43rem] lg:mt-[-36rem] lg:mb-[10rem]" />
       </div>
 
       {/* Sample Work Title */}
@@ -268,7 +268,7 @@ const Home = () => {
       <div className="mt-6 
       sm:w-[40rem] sm:max-w-[20rem] sm:ml-[1.5rem] sm:mt-[15rem] 
       md:w-[40rem] md:ml-[15rem] md:mt-[30rem]
-      lg:w-[60rem] lg:ml-[30rem] lg:mb-[-8rem] lg:mt-[40rem]">
+      lg:w-[60rem] lg:ml-[30rem] lg:mb-[2rem] lg:mt-[40rem]">
         <Social />
       </div>
     </div>
