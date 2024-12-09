@@ -29,7 +29,7 @@ const Home = () => {
         <h1 className="text-4xl 
         sm:text-[2rem] sm:mt-[-0.5rem] sm:ml-[1rem] sm:pr-[1rem]
         md:text-[4.5rem] md:mr-[30rem] md:mt-[-6rem]
-        lg:text-[5rem] lg:ml-[-10rem] lg:mt-[1rem]
+        lg:text-[5rem] lg:ml-[-10rem] lg:mt-[-10rem]
         font-Micro">
           I am a&nbsp;
         </h1>
@@ -57,7 +57,7 @@ const Home = () => {
         className="w-auto max-w-full
           sm:w-[8rem] sm:mr-[10rem] sm:mt-[-33.2rem] sm:pb-[12.5rem]
           md:w-[15rem] md:mr-[30rem] md:mt-[-47rem]
-          lg:w-[20rem] lg:ml-[70rem] lg:mt-[-30rem] lg:mb-[-9.5rem]
+          lg:w-[20rem] lg:ml-[110rem] lg:mt-[-41rem] lg:mb-[-9.5rem]
         " 
       />
           
@@ -78,7 +78,7 @@ const Home = () => {
             className="text-black font-Micro
             sm:text-[1.6rem] sm:mt-[2rem] sm:ml-[7rem]
             md:text-[4rem] md:ml-[16rem] md:mb-[2rem]
-            lg:text-[4.5rem] lg:pl-[20rem] lg:mt-[-8rem]"
+            lg:text-[4.5rem] lg:pl-[50rem] lg:mt-[-8rem]"
           />
         </div>
       </div>
@@ -90,7 +90,7 @@ const Home = () => {
         <CatGif className="w-40 
         sm:w-[5rem] sm:mr-[-20rem] sm:mb-[20rem] sm:mt-[-13rem]
         md:w-[10rem] md:mr-[-40rem] md:pb-[12rem] md:mb-[-7rem]
-        lg:w-[12rem] lg:ml-[45rem] lg:mt-[-5rem] lg:mb-[20rem]" />
+        lg:w-[12rem] lg:ml-[45rem] lg:mt-[-15rem] lg:mb-[20rem]" />
       </div>
 
       {/* Arrow */}
@@ -100,7 +100,7 @@ const Home = () => {
         <Arrow className="w-8 
         sm:w-6 sm:pb-[0rem] sm:mt-[0rem] sm:ml-[11.5rem]
         md:w-10 md:ml-[25rem] md:mt-[15rem]
-        lg:w-12 lg:ml-[43rem] lg:mt-[-19rem] lg:mb-[10rem]" />
+        lg:w-12 lg:ml-[43rem] lg:mt-[-31rem] lg:mb-[10rem]" />
       </div>
 
       {/* Sample Work Title */}
