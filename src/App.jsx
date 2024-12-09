@@ -13,6 +13,7 @@ import Projects from "./pages/Projects";
 import Cases from "./pages/Cases";
 import TravelPictures from "./pages/TravelPhotoFolder";
 import Vollyball from "./pages/BeachBall";
+import Boutique from "./pages/BoardWalk";
 
 // Import  styles
 import "./reset.css";
@@ -60,6 +61,7 @@ function App() {
               <Route path="/cases" element={<Cases />} />
               <Route path="/travelphotofolder" element={<TravelPictures />} /> {/* Add this route */}
               <Route path="/beachball" element={<Vollyball />} /> {/* Add this route */}
+              <Route path="/boardwalk" element={<Boutique />} />
             </Route>
           </Routes>
         </main>
