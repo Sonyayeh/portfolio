@@ -56,7 +56,7 @@ const Beachball = () => {
 
                 {/* White background tab bar */}
                 <div className="bg-blue-200 p-4 pt-0 w-[27rem] md:w-[50rem] lg:w-[90rem]">
-                    <ul className="flex gap-3 items-center space-x-1 bg-white w-[25rem] pr-2 pl-1 justify-start md:w-[48rem] lg:w-[88rem]">
+                    <ul className="flex gap-3 items-center space-x-1 bg-white w-[25rem] pr-2 pl-1 justify-start md:w-[48rem] lg:w-[76rem]">
                         {/* Tabs: ensure active tab styling is applied */}
                         <li
                             className={`text-blue-200 text-lg sm:text-xl md:text-4xl md:ml-2 lg:text-5xl font-semibold ${activeTab === 'ABOUT' ? 'text-purple-300' : 'hover:underline'}`}
@@ -99,7 +99,7 @@ const Beachball = () => {
 
             {/* Project box with border */}
             <div className="w-[27rem] p-0 sm:p-0 flex border-solid border-x-[1rem] border-b-[1rem] border-blue-200 md:p-4 md:w-[50rem] md:h-[20rem] 
-            lg:w-[90rem] lg:h-[40rem] ">
+            lg:w-[78rem] lg:h-[40rem] ">
 
                 {/* Content Container */}
                 {/* Dynamic Content Section based on Active Tab */}
@@ -313,7 +313,7 @@ const Beachball = () => {
             <div className="
                     sm:pt-[2rem] sm:ml-[4rem] sm:w-[20rem]
                     md:ml-[15rem] md:mt-[2rem]
-                    lg:ml-[35rem]
+                    lg:ml-[-12rem] 
                     ">
                         <Social />
                     </div>
