@@ -122,13 +122,13 @@ const About = () => {
                     <h5
                     className="sm:text-[2rem] sm:ml-[5rem] sm:mt-[-2rem]
                     md:pt-[20rem] md:ml-[15rem] md:text-[3rem]
-                    lg:ml-[5rem] lg:text-[5rem]
+                    lg:ml-[10rem] lg:text-[5rem]
                     "
                     >Some of my skills being:</h5>
                 </div>
                 <div className="w-50
                 md:pt-[3rem] md:text-[2rem]
-                lg:mr-[10rem] lg:ml-[-12rem] lg:text-[3rem]
+                lg:mr-[2rem] lg:ml-[-8rem] lg:text-[3rem]
                 ">
                     <Skills />
                 </div>
@@ -142,7 +142,7 @@ const About = () => {
         <h5 className="
         sm:text-[2rem] sm:mt-[-1rem] sm:ml-[2rem]
         md:text-[3rem] md:ml-[12rem]
-        lg:text-[4rem] lg:ml-[25rem]
+        lg:text-[4rem] lg:ml-[23rem]
         "
         > A little more about me: </h5>
         {/* Photo Component */}
@@ -168,14 +168,14 @@ const About = () => {
        <div className="bg-blue-100 justify-center ml-[-3.5rem] w-[27.3rem]
        sm:mt-[-75rem]
        md:w-[55rem] md:ml-[-4.5rem]
-       lg:w-[85rem] lg:ml-[-8rem]
+       lg:w-[85rem] lg:ml-[-4rem]
        ">
             <div>
                 <h5
                 className="
                     sm:text-[3rem] sm:mt-[80rem] sm:ml-[2rem]
                     md:text-[4rem] md:ml-[15rem]
-                    lg:text-[5rem] lg:ml-[10rem]
+                    lg:text-[7rem] lg:ml-[10rem]
                 "
                 >
                 Outside of school...
@@ -183,19 +183,21 @@ const About = () => {
                 <h5 className="
                 sm:text-[2rem] sm:mb-[-2rem] sm:ml-[2rem] 
                 md:text-[4rem] 
-                lg:text-[4rem] lg:ml-[10rem]
+                lg:text-[5rem] lg:ml-[10rem]
                 flex items-center">
                 <span>I enjoy cooking!</span>
                 <img 
                     src={Heart} 
                     alt="Heart" 
-                    className="ml-2 w-6 h-6" // Adjust the size as necessary
+                    className="ml-2 w-6 h-6
+                    lg:w-12 lg:h-12
+                    " // Adjust the size as necessary
                 />
                 </h5>
                 <h5 className="flex items-center
                 sm:text-[1.25rem] sm:ml-[2rem] sm:mt-[1rem] sm:mb-[-0.5rem]
                 md:text-[2rem] 
-                lg:text-[2rem] lg:ml-[10rem] lg:mb-[2rem]
+                lg:text-[3rem] lg:ml-[10rem] lg:mb-[2rem]
                 ">
                     (Not the best at it tho...)
                 </h5>
@@ -212,15 +214,16 @@ const About = () => {
             </div>
             {/* travel section */}
             <div>
-                <div className="bg-purple-100 justify-center pt-[2rem] ml-[-3.5rem] w-[27.3rem] md:w-[55rem] md:ml-[-4.5rem] lg:w-[85rem] lg:ml-[-8rem] lg:mt-[2rem]">
+                <div className="bg-purple-100 justify-center pt-[2rem] ml-[-3.5rem] w-[27.3rem] md:w-[55rem] md:ml-[-4.5rem] lg:w-[85rem] lg:ml-[-4rem] lg:mt-[2rem]">
                 <h5 className="sm:text-[1.7rem] sm:mb-[-2rem] sm:ml-[5rem]
                 md:text-[3rem] md:ml-[12rem]
-                lg:text-[3rem] lg:ml-[40rem]
+                lg:text-[4rem] lg:ml-[25rem]
                 flex items-center">
                     <img 
                         src={Camera} 
                         alt="Camera" 
-                        className="w-8 h-8 mr-2" // Adds some margin to the right of the heart for spacing
+                        className="w-8 h-8 mr-2
+                        lg:w-12 lg:h-12" // Adds some margin to the right of the heart for spacing
                         />
                         I also love travelling and taking photos!
                     </h5>
@@ -264,7 +267,7 @@ const About = () => {
         <div className="
           sm:w-[40rem] sm:ml-[-9.5rem] sm:mr-[-5rem] sm:mt-[10rem] 
           mb:w-[40rem] md:max-w-[40rem] md:ml-[2rem]
-          lg:w-[60rem] lg:ml-[20rem] lg:mt-[-20rem] lg:pr-[12rem]">
+          lg:w-[60rem] lg:ml-[20rem] lg:mt-[-20rem] lg:pr-[6rem]">
             <Social />
           </div>
 

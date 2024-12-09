@@ -71,7 +71,7 @@ const Skills = () => {
           JS
         </li>
         <li className="px-4 py-2 bg-blue-300 text-white rounded shadow-md">
-          React
+          React.js
         </li>
         <li className="px-4 py-2 bg-blue-300 text-white rounded shadow-md">
           Figma
@@ -86,7 +86,16 @@ const Skills = () => {
           Adobe Photoshop
         </li>
         <li className="px-4 py-2 bg-blue-300 text-white rounded shadow-md">
+          Adobe Dimension
+        </li>
+        <li className="px-4 py-2 bg-blue-300 text-white rounded shadow-md">
+          Adobe Aero
+        </li>
+        <li className="px-4 py-2 bg-blue-300 text-white rounded shadow-md">
           Adobe Premiere Pro
+        </li>
+        <li className="px-4 py-2 bg-blue-300 text-white rounded shadow-md">
+          Blender
         </li>
         <li className="px-4 py-2 bg-blue-300 text-white rounded shadow-md">
           UI/UX
