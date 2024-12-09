@@ -106,7 +106,7 @@ const OmuMockup = () => {
                         <h4 className="text-orange-300 
                         sm:text-[1rem] sm:mt-[-1rem]
                         md:text-1xl md:mt-[0rem] md:ml-[2rem] md:w-[30rem]
-                       lg:text-[1.3rem] lg:ml-[-74rem] lg:mt-[50rem] lg:mr-[-5rem] lg:w-[40rem]
+                       lg:text-[1.3rem] lg:ml-[-70rem] lg:mt-[50rem] lg:mr-[-5rem] lg:w-[40rem]
                         ">
                             {project.chips}
                         </h4>
