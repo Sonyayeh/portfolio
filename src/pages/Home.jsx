@@ -160,7 +160,7 @@ const Home = () => {
           <img src={Bubble} alt="Bubble gif" className=" 
           sm:w-1/4 sm:h-1/4 sm:ml-[0.5rem] sm:mt-[-33rem]
           md:w-1/4 md:h-1/4 md:ml-[-6.5rem] md:mt-[10rem]
-          lg:w-2/4 lg:h-auto lg:ml-[59rem]
+          lg:w-2/4 lg:h-auto lg:ml-[59rem] lg:pt-[-2rem]
           max-w-full
           " />
           </div>
@@ -180,13 +180,14 @@ const Home = () => {
           <div className="grid grid-cols-1 hover:cursor-pointer
             sm:w-[20rem] sm:ml-[2rem]
             md:w-[40rem] md:ml-[5rem] md:mt-[-10rem]
+            lg:pb-[-2rem] lg:pt-[-20rem]
             ">
                       
            {/* BlueWorkBox */}
           <div className="relative 
             sm:h-[30rem] sm:mb-[-20rem] sm:mt-[4rem]
             md:h-[20rem] 
-            lg:h-[50rem] lg:w-[55rem] lg:ml-[20rem] lg:mt-[15rem]
+            lg:h-[50rem] lg:w-[55rem] lg:ml-[27rem] lg:mt-[15rem]
             flex justify-center items-center"
           >
             {/* Wrap the BlueWorkBox and VolleyballMockup inside the Link */}
@@ -208,7 +209,7 @@ const Home = () => {
             <p className="text-xl 
               sm:text-[1.5rem] sm:mr-[-1rem] sm:mt-[-2.5rem]  
               md:text-[3.2rem] md:ml-[-1rem] md:mt-[-33rem]
-              lg:text-[4rem] lg:mt-[-23.5rem] lg:mr-[-57rem]"
+              lg:text-[4rem] lg:mt-[-23.5rem] lg:mr-[-70rem]"
             >
               Beach Volleyball Tournament Poster
             </p>
@@ -223,14 +224,14 @@ const Home = () => {
         <img src={Bubble} alt="Bubble gif" className="w-16 
         sm:w-1/4 sm:ml-[-2.75rem] sm:mt-[-10.5rem]
         md:w-2/5 md:ml-[38rem] md:mt-[15rem]
-        lg:w-1/4 lg:ml-[-5rem] lg:mt-[20rem]
+        lg:w-1/4 lg:ml-[-5rem] lg:pb-[23rem]
         " />
         </div>
         <div>
           <img src={Bubble} alt="Bubble gif" className="w-32 
           sm:w-1/4 sm:ml-[20rem] sm:mt-[14.5rem]
           md:w-1/5 md:ml-[-5rem] md:mb-[-60rem]
-          lg:w-2/4 lg:ml-[-7rem] lg:mt-[-10rem]
+          lg:w-2/4 lg:ml-[-7rem] lg:mt-[-45rem]
           " />
         </div>
         </div>
