@@ -18,7 +18,7 @@ const GraphicBox = () => {
         <div className="w-full relative mt-[30rem] 
         sm:mt-[10rem] sm:px-0  sm:mx-auto
         md:ml-[0rem]
-        lg:pl-[4rem] lg:pr-[4rem] ">
+        lg:pl-[4rem] lg:pr-[9rem] ">
 
             {/* Project Heading and Description */}
             <div className="text-start w-full
@@ -33,7 +33,7 @@ const GraphicBox = () => {
                 <h1 className=" pl-2 text-2xl 
                 sm:text-[4rem] sm:pb-[2rem] sm:pl-[7.5rem] sm:mt-[-16rem]
                 md:text-8xl md:pl-[2rem] md:pt-[10rem] 
-                lg:text-8xl lg:pl-5">
+                lg:text-8xl lg:pl-3">
                     Graphic Design:
                 </h1>
 

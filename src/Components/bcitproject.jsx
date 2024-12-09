@@ -13,7 +13,7 @@ const BcitProject = () => {
         <div className="w-full relative mt-[30rem] 
         sm:mt-[10rem] sm:px-0  sm:mx-auto
         md:ml-[0rem]
-        lg:pl-[4rem] lg:pr-[4rem] ">
+        lg:pl-[4rem] lg:pr-[9rem] ">
 
             {/* Project Heading and Description */}
             <div className="text-start w-full">
