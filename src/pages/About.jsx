@@ -42,7 +42,7 @@ const About = () => {
         <div className=" relative mt-[30rem] 
         sm:mt-[2rem] sm:ml-[-2rem] sm:w-[25rem]
         md:mr-[1rem] md:w-[50rem] md:mt-[2rem]
-        lg:w-[70rem] lg:ml-[17rem] ">
+        lg:w-[70rem] lg:ml-[9rem] ">
 
             {/* Project Heading and Description */}
             <div className="text-start w-full
@@ -149,7 +149,7 @@ const About = () => {
         <div className=" absolute w-full
         sm:w-1/3 sm:mt-[-67rem] sm:ml-[16rem] sm:pr-[1rem]
         md:w-1/3 md:ml-[-0.5rem] md:mt-[-48rem]
-        lg:w-2/3 lg:ml-[-9rem] lg:mt-[-120rem]
+        lg:w-2/3 lg:ml-[-9rem] lg:mt-[-70rem]
         ">
             <Photo />
         </div>
@@ -158,7 +158,7 @@ const About = () => {
         <div className=" absolute
         sm:w-1/4 sm:ml-[15rem] sm:mt-[-71.5rem]
         md:w-1/3 md:ml-[-1rem] md:pt-[16rem]
-        lg:w-1/3 lg:ml-[-2rem] lg:mt-[-143rem]
+        lg:w-1/3 lg:ml-[-8rem] lg:mt-[-93rem]
         ">
             <Pointercursor />
         </div>
@@ -168,7 +168,7 @@ const About = () => {
        <div className="bg-blue-100 justify-center ml-[-3.5rem] w-[27.3rem]
        sm:mt-[-75rem]
        md:w-[55rem] md:ml-[-4.5rem]
-       lg:w-[95rem] lg:ml-[-8rem]
+       lg:w-[85rem] lg:ml-[-8rem]
        ">
             <div>
                 <h5
@@ -211,7 +211,7 @@ const About = () => {
             </div>
             {/* travel section */}
             <div>
-                <div className="bg-purple-100 justify-center pt-[2rem] ml-[-3.5rem] w-[27.3rem] md:w-[55rem] md:ml-[-4.5rem] lg:w-[95rem] lg:ml-[-8rem] lg:mt-[2rem]">
+                <div className="bg-purple-100 justify-center pt-[2rem] ml-[-3.5rem] w-[27.3rem] md:w-[55rem] md:ml-[-4.5rem] lg:w-[85rem] lg:ml-[-8rem] lg:mt-[2rem]">
                 <h5 className="sm:text-[1.7rem] sm:mb-[-2rem] sm:ml-[5rem]
                 md:text-[3rem] md:ml-[12rem]
                 lg:text-[3rem] lg:ml-[50rem]
@@ -225,7 +225,7 @@ const About = () => {
                     </h5>
                     <div className="
                         sm:w-[20rem]
-                        lg:w-[90rem] lg:mt-[2rem] lg:ml-[2rem]
+                        lg:w-[80rem] lg:mt-[2rem] lg:ml-[2rem]
                         ">
                             <TravelPhotos />
                     </div>
@@ -263,7 +263,7 @@ const About = () => {
         <div className="
           sm:w-[40rem] sm:ml-[-9.5rem] sm:mr-[-5rem] sm:mt-[10rem] 
           mb:w-[40rem] md:max-w-[40rem] md:ml-[2rem]
-          lg:w-[60rem] lg:ml-[20rem] lg:mt-[-20rem]">
+          lg:w-[60rem] lg:ml-[20rem] lg:mt-[-20rem] lg:pr-[12rem]">
             <Social />
           </div>
 

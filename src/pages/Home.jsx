@@ -187,7 +187,7 @@ const Home = () => {
           <div className="relative 
             sm:h-[30rem] sm:mb-[-20rem] sm:mt-[4rem]
             md:h-[20rem] 
-            lg:h-[50rem] lg:w-[55rem] lg:ml-[27rem] lg:mt-[15rem]
+            lg:h-[50rem] lg:w-[55rem] lg:ml-[24rem] lg:mt-[15rem]
             flex justify-center items-center"
           >
             {/* Wrap the BlueWorkBox and VolleyballMockup inside the Link */}
@@ -209,7 +209,7 @@ const Home = () => {
             <p className="text-xl 
               sm:text-[1.5rem] sm:mr-[-1rem] sm:mt-[-2.5rem]  
               md:text-[3.2rem] md:ml-[-1rem] md:mt-[-3rem]
-              lg:text-[4rem] lg:mt-[-23.5rem] lg:mr-[-70rem]"
+              lg:text-[4rem] lg:mt-[-23.5rem] lg:mr-[-65rem]"
             >
               Beach Volleyball Tournament Poster
             </p>

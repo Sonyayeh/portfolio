@@ -122,7 +122,7 @@ const GraphicBox = () => {
                         <h4 className="text-blue-300 
                         sm:text-[1rem] sm:mt-[-1rem]
                         md:text-1xl md:mt-[2rem]
-                        lg:text-[1.3rem] lg:ml-[-85rem] lg:mt-[45rem] 
+                        lg:text-[1.3rem] lg:ml-[-74rem] lg:mt-[45rem] 
                         ">
                             {project.chips}
                         </h4>
