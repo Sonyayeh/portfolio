@@ -56,12 +56,12 @@ const Language = () => {
 
   return (
     <div className="text-center my-5" ref={sectionRef}>
-      <h5 className="text-black-300 text-3xl mb-4 lg:text-[3rem] lg:mr-[-20rem] lg:pt-[2rem] lg:pb-[3rem]">
+      <h5 className="text-black-300 text-3xl mb-4 lg:text-[3rem] lg:mr-[-20rem] md:pt-[2rem] md:text-[3rem] md:pb-[2rem] lg:pt-[2rem] lg:pb-[3rem]">
         I also <strong className="italic underline text-red-500">love</strong> learning languages in my spare time!
       </h5>
 
       {/* Chinese/Mandarin Bar */}
-      <div className="bar-main-container bg-purple-300 text-white rounded-lg w-72 mx-auto mb-4 lg:ml-[2rem]">
+      <div className="bar-main-container bg-purple-300 text-white rounded-lg w-72 mx-auto mb-4 md:ml-[3rem] md:mb-[2rem] lg:ml-[2rem]">
         <h5 className="text-3xl">Chinese/Mandarin</h5>
         <div className="p-2">
           <div
@@ -75,7 +75,7 @@ const Language = () => {
       </div>
 
       {/* English Bar */}
-      <div className="bar-main-container bg-sky-300 text-white rounded-lg w-72 mx-auto mb-4 lg:ml-[2rem]">
+      <div className="bar-main-container bg-sky-300 text-white rounded-lg w-72 mx-auto mb-4 md:ml-[23rem] md:mt-[-8rem] lg:ml-[2rem]">
         <h5 className="text-3xl">English</h5>
         <div className="p-2">
           <div
@@ -89,7 +89,7 @@ const Language = () => {
       </div>
 
       {/* French Bar */}
-      <div className="bar-main-container bg-emerald-300 text-white rounded-lg w-72 mx-auto mb-4 lg:ml-[2rem]">
+      <div className="bar-main-container bg-emerald-300 text-white rounded-lg w-72 mx-auto mb-4 md:ml-[3rem] lg:ml-[2rem]">
         <h5 className="text-3xl">French</h5>
         <div className="p-2">
           <div
@@ -103,7 +103,7 @@ const Language = () => {
       </div>
 
       {/* Japanese Bar */}
-      <div className="bar-main-container bg-yellow-300 text-white rounded-lg w-72 mx-auto mb-4 lg:ml-[2rem]">
+      <div className="bar-main-container bg-yellow-300 text-white rounded-lg w-72 mx-auto mb-4 md:ml-[23rem] md:mt-[-7rem] lg:ml-[2rem]">
         <h5 className="text-3xl">Japanese</h5>
         <div className="p-2">
           <div
@@ -117,7 +117,7 @@ const Language = () => {
       </div>
 
       {/* Spanish Bar */}
-      <div className="bar-main-container bg-orange-300 text-white rounded-lg w-72 mx-auto mb-4 lg:ml-[2rem]">
+      <div className="bar-main-container bg-orange-300 text-white rounded-lg w-72 mx-auto mb-4 md:ml-[3rem] lg:ml-[2rem]">
         <h5 className="text-3xl">Spanish</h5>
         <div className="p-2">
           <div
@@ -131,7 +131,7 @@ const Language = () => {
       </div>
 
       {/* German Bar */}
-      <div className="bar-main-container bg-red-300 text-white rounded-lg w-72 mx-auto mb-4 lg:ml-[2rem]">
+      <div className="bar-main-container bg-red-300 text-white rounded-lg w-72 mx-auto mb-4 md:ml-[23rem] md:mt-[-7rem] lg:ml-[2rem]">
         <h5 className="text-3xl">German</h5>
         <div className="p-2">
           <div
@@ -145,7 +145,7 @@ const Language = () => {
       </div>
 
       {/* Dutch Bar */}
-      <div className="bar-main-container bg-pink-300 text-white rounded-lg w-72 mx-auto mb-4 lg:ml-[2rem]">
+      <div className="bar-main-container bg-pink-300 text-white rounded-lg w-72 mx-auto mb-4 md:ml-[13rem] lg:ml-[2rem]">
         <h5 className="text-3xl">Dutch</h5>
         <div className="p-2">
           <div
@@ -160,7 +160,7 @@ const Language = () => {
 
       {/* List of Other Languages */}
       <div>
-        <h5 className="text-left text-black-400 text-3xl mb-4 lg:ml-[28rem] lg:mt-[-45rem] lg:text-[3rem]">
+        <h5 className="text-left text-black-400 text-3xl mb-4 md:ml-[6rem] md:pt-[5rem] lg:ml-[28rem] lg:mt-[-45rem] lg:text-[3rem]">
           Some other languages I learned are:
           <ul className="list-disc ml-6 mt-2">
             <li className="text-purple-300 font-bold">Turkish</li>
@@ -168,7 +168,7 @@ const Language = () => {
             <li className="text-purple-300 font-bold">Cantonese</li>
           </ul>
         </h5>
-        <h5 className="text-xl text-right lg:mr-[15rem] lg:mt-[1rem] lg:pb-[20rem]">(but I need to revisit them one day)</h5>
+        <h5 className="text-xl text-right md:mr-[15rem] lg:mr-[15rem] lg:mt-[1rem] lg:pb-[20rem]">(but I need to revisit them one day)</h5>
       </div>
     </div>
   );

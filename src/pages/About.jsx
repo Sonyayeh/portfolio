@@ -23,14 +23,14 @@ const About = () => {
 
         <h5 className="
         sm:ml-[-2rem] sm:text-[5rem] 
-        md:ml-[15rem] 
+        md:ml-[-1rem] 
         lg:ml-[2rem] lg:text-[7rem]
         "> 
             Heya!
         </h5>
         <h5 className="
         sm:ml-[-2rem] sm:text-[2rem] sm:mt-[-4rem]
-        md:ml-[15rem]
+        md:ml-[-1rem]
         lg:ml-[2rem] lg:pt-[1rem] lg:text-[3rem]
         "> 
             Nice to meet you!
@@ -41,7 +41,7 @@ const About = () => {
         and changed it into an About Me container box */}
         <div className=" relative mt-[30rem] 
         sm:mt-[2rem] sm:ml-[-2rem] sm:w-[25rem]
-        md:ml-[2rem] md:w-[50rem] md:mt-[2rem]
+        md:mr-[1rem] md:w-[50rem] md:mt-[2rem]
         lg:w-[70rem] lg:ml-[17rem] ">
 
             {/* Project Heading and Description */}
@@ -112,6 +112,7 @@ const About = () => {
             </div>
             <div className="
             sm:ml-[15rem] sm:w-40 sm:mt-[-5rem]
+            md:ml-[42rem]
             lg:ml-[50rem] lg:w-[20rem] lg:mb-[2rem]
             ">
                 <PurpleCursor />
@@ -120,11 +121,13 @@ const About = () => {
                 <div>
                     <h5
                     className="sm:text-[2rem] sm:ml-[5rem] sm:mt-[-2rem]
+                    md:pt-[20rem] md:ml-[15rem] md:text-[3rem]
                     lg:ml-[5rem] lg:text-[5rem]
                     "
                     >Some of my skills being:</h5>
                 </div>
                 <div className="w-50
+                md:pt-[3rem] md:text-[2rem]
                 lg:mr-[10rem] lg:ml-[-12rem] lg:text-[3rem]
                 ">
                     <Skills />
@@ -138,13 +141,14 @@ const About = () => {
 
         <h5 className="
         sm:text-[2rem] sm:mt-[-1rem] sm:ml-[2rem]
+        md:text-[3rem] md:ml-[12rem]
         lg:text-[4rem] lg:ml-[25rem]
         "
         > A little more about me: </h5>
         {/* Photo Component */}
         <div className=" absolute w-full
         sm:w-1/3 sm:mt-[-67rem] sm:ml-[16rem] sm:pr-[1rem]
-        md:w-1/3 md:ml-[10rem] md:mt-[115rem]
+        md:w-1/3 md:ml-[-0.5rem] md:mt-[-48rem]
         lg:w-2/3 lg:ml-[-9rem] lg:mt-[-90rem]
         ">
             <Photo />
@@ -153,7 +157,7 @@ const About = () => {
         {/* Pointercursor Component */}
         <div className=" absolute
         sm:w-1/4 sm:ml-[15rem] sm:mt-[-71.5rem]
-        md:w-1/3 md:ml-[7rem] md:pt-[5rem]
+        md:w-1/3 md:ml-[-1rem] md:pt-[16rem]
         lg:w-1/3 lg:ml-[-8rem] lg:mt-[-103rem]
         ">
             <Pointercursor />
@@ -163,19 +167,21 @@ const About = () => {
        {/* food image section */}
        <div className="bg-blue-100 justify-center ml-[-3.5rem] w-[27.3rem]
        sm:mt-[-75rem]
+       md:w-[55rem] md:ml-[-4.5rem]
        lg:w-[95rem] lg:ml-[-8rem]
        ">
             <div>
                 <h5
                 className="
                     sm:text-[3rem] sm:mt-[80rem] sm:ml-[2rem]
-                    md:text-[4rem] md:ml-[35rem]
+                    md:text-[4rem] md:ml-[15rem]
                 "
                 >
                 Outside of school...
                 </h5>
                 <h5 className="
                 sm:text-[2rem] sm:mb-[-2rem] sm:ml-[2rem] 
+                md:text-[4rem] 
                 lg:text-[4rem] lg:ml-[10rem]
                 flex items-center">
                 <span>I enjoy cooking!</span>
@@ -186,7 +192,8 @@ const About = () => {
                 />
                 </h5>
                 <h5 className="flex items-center
-                sm:text-[1.25rem] sm:ml-[2rem] sm:mt-[1rem] sm:mb-[-0.5rem] 
+                sm:text-[1.25rem] sm:ml-[2rem] sm:mt-[1rem] sm:mb-[-0.5rem]
+                md:text-[2rem] 
                 lg:text-[2rem] lg:ml-[10rem] lg:mb-[2rem]
                 ">
                     (Not the best at it tho...)
@@ -195,6 +202,7 @@ const About = () => {
             </div>
                 <div className="
                 sm:w-[20rem]
+                md:ml-[8rem] md:w-[40rem] md:pt-[2rem]
                 lg:w-[60rem] lg:ml-[18rem] lg:mt-[-2rem]
                 ">
                     <PhotoCarousel />
@@ -203,8 +211,9 @@ const About = () => {
             </div>
             {/* travel section */}
             <div>
-                <div className="bg-purple-100 justify-center pt-[2rem] ml-[-3.5rem] w-[27.3rem] lg:w-[95rem] lg:ml-[-8rem] lg:mt-[2rem]">
+                <div className="bg-purple-100 justify-center pt-[2rem] ml-[-3.5rem] w-[27.3rem] md:w-[55rem] md:ml-[-4.5rem] lg:w-[95rem] lg:ml-[-8rem] lg:mt-[2rem]">
                 <h5 className="sm:text-[1.7rem] sm:mb-[-2rem] sm:ml-[5rem]
+                md:text-[3rem] md:ml-[12rem]
                 lg:text-[3rem] lg:ml-[50rem]
                 flex items-center">
                     <img 
@@ -223,12 +232,14 @@ const About = () => {
                     
                     <div>
                         <h5 className="text-xl text-right mr-10
+                        md:text-[2rem]
                         ">Click me for more photos!</h5>
                         <Link to="/travelphotofolder">
                             <img 
                                 src={Floppy} 
                                 alt="Floppy disk, click here to my secret photo album >:)" 
                                 className="w-8 h-8 mb-2 ml-[25rem] 
+                                md:ml-[33rem]
                                 lg:ml-[80rem]
                                 hover:cursor-pointer"
                                 />
@@ -251,7 +262,7 @@ const About = () => {
         {/* Social Section */}
         <div className="
           sm:w-[40rem] sm:ml-[-9.5rem] sm:mr-[-5rem] sm:mt-[10rem] 
-          mb:w-[40rem] md:max-w-[40rem] mb:ml-[7rem]
+          mb:w-[40rem] md:max-w-[40rem] md:ml-[2rem]
           lg:w-[60rem] lg:ml-[20rem]">
             <Social />
           </div>

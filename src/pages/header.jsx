@@ -12,7 +12,7 @@ const Header = () => {
           alt="Logo" 
           className="h-16 w-auto 
           sm:pl-[18rem]
-          md:pl-[50rem] md:mt-[-2rem] md:h-[8rem]
+          md:pl-[40rem] md:mt-[-2rem] md:h-[8rem]
           lg:mr-[115rem] lg:mt-[-10rem] lg:mb-[5rem] lg:h-[10rem]" 
         />
       </div>
