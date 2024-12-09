@@ -268,7 +268,7 @@ const Home = () => {
       <div className="mt-6 
       sm:w-[40rem] sm:max-w-[20rem] sm:ml-[1.5rem] sm:mt-[15rem] 
       md:w-[40rem] md:ml-[15rem] md:mt-[30rem]
-      lg:w-[60rem] lg:ml-[35rem] lg:mb-[10rem] lg:mt-[43rem]">
+      lg:w-[60rem] lg:ml-[30rem] lg:mb-[-8rem] lg:mt-[40rem]">
         <Social />
       </div>
     </div>
