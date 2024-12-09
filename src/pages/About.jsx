@@ -23,13 +23,15 @@ const About = () => {
 
         <h5 className="
         sm:ml-[-2rem] sm:text-[5rem] 
-        md:ml-[15rem]
+        md:ml-[15rem] 
+        lg:ml-[2rem] lg:text-[7rem]
         "> 
             Heya!
         </h5>
         <h5 className="
         sm:ml-[-2rem] sm:text-[2rem] sm:mt-[-4rem]
         md:ml-[15rem]
+        lg:ml-[2rem] lg:pt-[1rem] lg:text-[3rem]
         "> 
             Nice to meet you!
         </h5>
@@ -40,7 +42,7 @@ const About = () => {
         <div className=" relative mt-[30rem] 
         sm:mt-[2rem] sm:ml-[-2rem] sm:w-[25rem]
         md:ml-[2rem] md:w-[50rem] md:mt-[2rem]
-        lg:w-[80rem] ">
+        lg:w-[70rem] lg:ml-[17rem] ">
 
             {/* Project Heading and Description */}
             <div className="text-start w-full
@@ -110,32 +112,40 @@ const About = () => {
             </div>
             <div className="
             sm:ml-[15rem] sm:w-40 sm:mt-[-5rem]
+            lg:ml-[50rem] lg:w-[20rem] lg:mb-[2rem]
             ">
                 <PurpleCursor />
             </div>
             <div>
                 <div>
                     <h5
-                    className="sm:text-[2rem] sm:ml-[5rem] sm:mt-[-2rem]"
+                    className="sm:text-[2rem] sm:ml-[5rem] sm:mt-[-2rem]
+                    lg:ml-[5rem] lg:text-[5rem]
+                    "
                     >Some of my skills being:</h5>
                 </div>
-                <div className="w-50">
+                <div className="w-50
+                lg:mr-[10rem] lg:ml-[-12rem] lg:text-[3rem]
+                ">
                     <Skills />
                 </div>
             </div>
 
         </div>
-        <div className="my-10 mx-auto w-full border-t-4 border-dashed border-purple-300"></div>
+        <div className="my-10 mx-auto w-full border-t-4 border-dashed border-purple-300
+        lg:ml-[10rem]
+        "></div>
 
         <h5 className="
         sm:text-[2rem] sm:mt-[-1rem] sm:ml-[2rem]
+        lg:text-[4rem] lg:ml-[25rem]
         "
         > A little more about me: </h5>
         {/* Photo Component */}
-        <div className=" absolute
+        <div className=" absolute w-full
         sm:w-1/3 sm:mt-[-67rem] sm:ml-[16rem] sm:pr-[1rem]
         md:w-1/3 md:ml-[10rem] md:mt-[115rem]
-        lg:w-2/3 lg:ml-[15rem] lg:mt-[120rem]
+        lg:w-2/3 lg:ml-[-9rem] lg:mt-[-90rem]
         ">
             <Photo />
         </div>
@@ -144,7 +154,7 @@ const About = () => {
         <div className=" absolute
         sm:w-1/4 sm:ml-[15rem] sm:mt-[-71.5rem]
         md:w-1/3 md:ml-[7rem] md:pt-[5rem]
-        lg:w-1/3 lg:ml-[15rem] lg:mt-[35rem]
+        lg:w-1/3 lg:ml-[-8rem] lg:mt-[-103rem]
         ">
             <Pointercursor />
         </div>
@@ -153,17 +163,21 @@ const About = () => {
        {/* food image section */}
        <div className="bg-blue-100 justify-center ml-[-3.5rem] w-[27.3rem]
        sm:mt-[-75rem]
+       lg:w-[95rem] lg:ml-[-8rem]
        ">
             <div>
                 <h5
                 className="
                     sm:text-[3rem] sm:mt-[80rem] sm:ml-[2rem]
-                    md:text-[5rem] md:ml-[10rem]
+                    md:text-[4rem] md:ml-[35rem]
                 "
                 >
                 Outside of school...
                 </h5>
-                <h5 className="sm:text-[2rem] sm:mb-[-2rem] sm:ml-[2rem] flex items-center">
+                <h5 className="
+                sm:text-[2rem] sm:mb-[-2rem] sm:ml-[2rem] 
+                lg:text-[4rem] lg:ml-[10rem]
+                flex items-center">
                 <span>I enjoy cooking!</span>
                 <img 
                     src={Heart} 
@@ -173,6 +187,7 @@ const About = () => {
                 </h5>
                 <h5 className="flex items-center
                 sm:text-[1.25rem] sm:ml-[2rem] sm:mt-[1rem] sm:mb-[-0.5rem] 
+                lg:text-[2rem] lg:ml-[10rem] lg:mb-[2rem]
                 ">
                     (Not the best at it tho...)
                 </h5>
@@ -180,6 +195,7 @@ const About = () => {
             </div>
                 <div className="
                 sm:w-[20rem]
+                lg:w-[60rem] lg:ml-[18rem] lg:mt-[-2rem]
                 ">
                     <PhotoCarousel />
                 </div>
@@ -187,8 +203,10 @@ const About = () => {
             </div>
             {/* travel section */}
             <div>
-                <div className="bg-purple-100 justify-center pt-[2rem] ml-[-3.5rem] w-[27.3rem]">
-                <h5 className="sm:text-[1.7rem] sm:mb-[-2rem] sm:ml-[5rem] flex items-center">
+                <div className="bg-purple-100 justify-center pt-[2rem] ml-[-3.5rem] w-[27.3rem] lg:w-[95rem] lg:ml-[-8rem] lg:mt-[2rem]">
+                <h5 className="sm:text-[1.7rem] sm:mb-[-2rem] sm:ml-[5rem]
+                lg:text-[3rem] lg:ml-[50rem]
+                flex items-center">
                     <img 
                         src={Camera} 
                         alt="Camera" 
@@ -198,17 +216,21 @@ const About = () => {
                     </h5>
                     <div className="
                         sm:w-[20rem]
+                        lg:w-[90rem] lg:mt-[2rem] lg:ml-[2rem]
                         ">
                             <TravelPhotos />
                     </div>
                     
                     <div>
-                        <h5 className="text-xl text-right mr-10">Click me for more photos!</h5>
+                        <h5 className="text-xl text-right mr-10
+                        ">Click me for more photos!</h5>
                         <Link to="/travelphotofolder">
                             <img 
                                 src={Floppy} 
                                 alt="Floppy disk, click here to my secret photo album >:)" 
-                                className="w-8 h-8 mb-2 ml-[25rem] hover:cursor-pointer"
+                                className="w-8 h-8 mb-2 ml-[25rem] 
+                                lg:ml-[80rem]
+                                hover:cursor-pointer"
                                 />
                         </Link>
                     </div>
