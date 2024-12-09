@@ -146,7 +146,7 @@ const Language = () => {
       </div>
 
       {/* Dutch Bar */}
-      <div className="bar-main-container bg-pink-300 text-white rounded-lg w-72 mx-auto mb-4 md:ml-[13rem] lg:ml-[30rem] lg:mt-[3rem]">
+      <div className="bar-main-container bg-pink-300 text-white rounded-lg w-72 mx-auto mb-4 md:ml-[13rem] lg:ml-[27rem] lg:mt-[6rem]">
         <h5 className="text-3xl lg:text-[2.2rem]">Dutch</h5>
         <div className="p-2">
           <div

@@ -214,7 +214,7 @@ const About = () => {
             </div>
             {/* travel section */}
             <div>
-                <div className="bg-purple-100 justify-center pt-[2rem] ml-[-3.5rem] w-[27.3rem] md:w-[55rem] md:ml-[-4.5rem] lg:w-[85rem] lg:ml-[-4rem] lg:mt-[2rem]">
+                <div className="bg-purple-100 justify-center pt-[2rem] ml-[-3.5rem] w-[27.3rem] md:w-[55rem] md:ml-[-8rem] lg:w-[85rem] lg:ml-[-4rem] lg:mt-[2rem]">
                 <h5 className="sm:text-[1.7rem] sm:mb-[-2rem] sm:ml-[5rem]
                 md:text-[3rem] md:ml-[12rem]
                 lg:text-[4rem] lg:ml-[25rem]
