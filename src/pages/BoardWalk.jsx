@@ -223,9 +223,9 @@ const Boardwalk = () => {
 
 
                             </div>
-            )}
-            {/* mockup section */}
-            {activeTab === 'MOCKUPS' && (
+                         )}
+                         {/* mockup section */}
+                         {activeTab === 'MOCKUPS' && (
                         <h5 className="text-lg  sm:text-[1rem] md:text-4xl lg:text-[3rem]">
                             <p className="text-xl ">
                             <strong className="justify-center underline md:text-[3rem] md:ml-[15rem]
