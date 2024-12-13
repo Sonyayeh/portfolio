@@ -97,7 +97,7 @@ const OmuMockup = () => {
                             src={project.imageurl} 
                             className="w-full h-auto object-contain rounded-xl
                             sm:w-[20rem] sm:h-[30rem]
-                            md:w-[20rem] md:h-[25rem] md:ml-[35rem] md:mt-[-22rem] md:mb-[0rem]
+                            md:w-[20rem] md:h-[25rem] md:ml-[24rem] md:mt-[-22rem] md:mb-[0rem]
                             lg:ml-[5rem] lg:w-[35rem] lg:h-[35rem] lg:mt-[6rem]
                             "
                         />
