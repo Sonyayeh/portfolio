@@ -100,7 +100,7 @@ const GraphicBox = () => {
                         </h5>
                         <h4 className="text-lg leading-6 
                         sm:text-[1rem] sm:pt-2  
-                        md:text-2xl md:mb-[-6.75rem] md:pl-5 md:pr-[20rem]
+                        md:text-2xl md:mt-[4.75rem] md:pl-5 md:pr-[20rem]
                         lg:text-3xl lg:py-[10rem] lg:ml-10 lg:pr-[1rem]">
                             {project.description}
                         </h4>
@@ -112,7 +112,7 @@ const GraphicBox = () => {
                             src={project.imageurl} 
                             className="w-full h-auto object-contain rounded-xl
                             sm:w-[20rem] sm:h-[30rem]
-                            md:w-[20rem] md:h-[25rem] md:ml-[28rem] md:mt-[-18rem] md:mb-[-2rem]
+                            md:w-[20rem] md:h-[25rem] md:ml-[28rem] md:mt-[-9rem] md:mb-[-2rem]
                             lg:ml-[5rem] lg:w-[35rem] lg:h-[35rem] lg:mt-[6rem]
                             "
                         />
@@ -133,7 +133,7 @@ const GraphicBox = () => {
                     <Link to="/beachball">
                         <button
                         className="px-6 py-3 bg-blue-300 text-white rounded-lg shadow-md hover:bg-blue-500 hover:text-white focus:outline-none focus:ring-2 focus:ring-blue-300 transition-colors duration-300
-                            md:ml-[30rem] md:mt-[-2rem]
+                            md:ml-[29rem] md:mt-[-2rem]
                             lg:mt-[44rem] lg:ml-[-21rem]"
                         >
                         View More
