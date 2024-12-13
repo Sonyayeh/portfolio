@@ -37,7 +37,7 @@ const Home = () => {
         <img src={TextBubble} alt="Text bubble for the cat section" 
           className="w-full max-w-[80rem] h-[16rem] bg-contain bg-no-repeat 
           sm:mr-[0rem] sm:h-[2.5rem] sm:w-[15rem] sm:mb-[10rem] sm:mt-[10rem] 
-          md:ml-[-30rem] md:h-[7rem] md:w-[35rem] md:mb-[14rem]
+          md:ml-[-31rem] md:h-[7rem] md:w-[35rem] md:mb-[14rem]
           lg:h-[7rem] lg:w-[50rem] lg:mr-[-35rem] lg:mt-[5rem]" />
 
       </div>
@@ -89,7 +89,7 @@ const Home = () => {
       <div className="flex justify-center mt-12">
         <CatGif className="w-40 
         sm:w-[5rem] sm:mr-[-20rem] sm:mb-[20rem] sm:mt-[-13rem]
-        md:w-[10rem] md:mr-[-40rem] md:pb-[12rem] md:mb-[-7rem]
+        md:w-[10rem] md:mr-[-38rem] md:pb-[12rem] md:mb-[-7rem]
         lg:w-[12rem] lg:ml-[45rem] lg:mt-[-15rem] lg:mb-[20rem]" />
       </div>
 
@@ -99,7 +99,7 @@ const Home = () => {
       <div className="text-center mt-10">
         <Arrow className="w-8 
         sm:w-6 sm:pb-[0rem] sm:mt-[0rem] sm:ml-[11.5rem]
-        md:w-10 md:ml-[25rem] md:mt-[15rem]
+        md:w-10 md:ml-[22rem] md:mt-[10rem]
         lg:w-12 lg:ml-[43rem] lg:mt-[-36rem] lg:mb-[10rem]" />
       </div>
 

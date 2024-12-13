@@ -36,7 +36,7 @@ function App() {
           <meta property="og:title" content="Sonya Yeh's Portfolio" />
           <meta property="og:description" content="Check out my portfolio and contact me for any further questions!" />
           <meta property="og:url" content="https://sonyayeh.ca/" />
-          <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+          <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
         </Helmet>
 
         {/* Mobile Burger Menu (Visible on small and medium screens) */}
