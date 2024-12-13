@@ -6,6 +6,8 @@ since I used some other stuff, make sure you install these:
 - npm install react-typed
 - npm install react-burger-menu
 - npm install tailwindcss@latest postcss@latest autoprefixer@latest --save
+- npm install react-helmet
+- npm install emailjs-com
 If I happen to forget anything else...I'm sorry
 but I'm 99% sure those are the only ones I used other than the other basic ones
 
