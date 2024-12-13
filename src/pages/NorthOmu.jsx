@@ -37,7 +37,7 @@ const Northstar = () => {
                 </h1>
 
                 {/* Blue heading */}
-                <div className="bg-purple-200 px-4 flex justify-between items-center w-[27rem] md:w-[50rem]
+                <div className="bg-orange-200 px-4 flex justify-between items-center w-[27rem] md:w-[50rem]
                 lg:w-[78rem]">
                     <h5 className="text-white w-[12rem] text-3xl
                     sm:text-2xl 
@@ -48,39 +48,39 @@ const Northstar = () => {
                 </div>
 
                 {/* White background tab bar */}
-                <div className="bg-purple-200 p-4 pt-0 w-[27rem] md:w-[50rem] lg:w-[78rem]">
+                <div className="bg-orange-200 p-4 pt-0 w-[27rem] md:w-[50rem] lg:w-[78rem]">
                     <ul className="flex gap-3 items-center space-x-1 bg-white w-[25rem] pr-2 pl-1 justify-start md:w-[48rem] lg:w-[76rem]">
                         {/* Tabs: ensure active tab styling is applied */}
                         <li
-                            className={`text-purple-200 text-lg sm:text-xl md:text-4xl md:ml-2 lg:text-5xl font-semibold ${activeTab === 'ABOUT' ? 'text-sky-300' : 'hover:underline'}`}
+                            className={`text-orange-200 text-lg sm:text-xl md:text-4xl md:ml-2 lg:text-5xl font-semibold ${activeTab === 'ABOUT' ? 'text-sky-300' : 'hover:underline'}`}
                             onClick={() => handleTabClick('ABOUT')}
                             style={{ cursor: 'pointer' }}  // Ensure pointer cursor on hover
                         >
                             ABOUT
                         </li>
                         <li
-                            className={`text-purple-200 text-lg sm:text-xl md:text-4xl lg:text-5xl lg:pl-4 font-semibold ${activeTab === 'PROCESS' ? 'text-sky-300' : 'hover:underline'}`}
+                            className={`text-orange-200 text-lg sm:text-xl md:text-4xl lg:text-5xl lg:pl-4 font-semibold ${activeTab === 'PROCESS' ? 'text-sky-300' : 'hover:underline'}`}
                             onClick={() => handleTabClick('PROCESS')}
                             style={{ cursor: 'pointer' }}
                         >
                             PROCESS
                         </li>
                         <li
-                            className={`text-purple-200 text-lg sm:text-xl md:text-4xl lg:text-5xl lg:pl-4 font-semibold ${activeTab === 'TIMELINE' ? 'text-sky-300' : 'hover:underline'}`}
+                            className={`text-orange-200 text-lg sm:text-xl md:text-4xl lg:text-5xl lg:pl-4 font-semibold ${activeTab === 'TIMELINE' ? 'text-sky-300' : 'hover:underline'}`}
                             onClick={() => handleTabClick('TIMELINE')}
                             style={{ cursor: 'pointer' }}
                         >
                             TIMELINE
                         </li>
                         <li
-                            className={`text-purple-200 text-lg sm:text-xl md:text-4xl lg:text-5xl lg:pl-4 font-semibold ${activeTab === 'ATTACHMENTS' ? 'text-sky-300' : 'hover:underline'}`}
+                            className={`text-orange-200 text-lg sm:text-xl md:text-4xl lg:text-5xl lg:pl-4 font-semibold ${activeTab === 'ATTACHMENTS' ? 'text-sky-300' : 'hover:underline'}`}
                             onClick={() => handleTabClick('ATTACHMENTS')}
                             style={{ cursor: 'pointer' }}
                         >
                             SAMPLE
                         </li>
                         <li
-                            className={`text-purple-200 text-lg sm:text-xl md:text-4xl lg:text-5xl lg:pl-4 font-semibold ${activeTab === 'MOCKUPS' ? 'text-sky-300' : 'hover:underline'}`}
+                            className={`text-orange-200 text-lg sm:text-xl md:text-4xl lg:text-5xl lg:pl-4 font-semibold ${activeTab === 'MOCKUPS' ? 'text-sky-300' : 'hover:underline'}`}
                             onClick={() => handleTabClick('MOCKUPS')}
                             style={{ cursor: 'pointer' }}
                         >
@@ -91,7 +91,7 @@ const Northstar = () => {
             </div>
 
             {/* Project box with border */}
-            <div className="w-[27rem] p-0 sm:p-0 flex border-solid border-x-[1rem] border-b-[1rem] border-purple-200 md:p-4 md:w-[50rem] md:h-[20rem] 
+            <div className="w-[27rem] p-0 sm:p-0 flex border-solid border-x-[1rem] border-b-[1rem] border-orange-200 md:p-4 md:w-[50rem] md:h-[20rem] 
             lg:w-[78rem] lg:h-[40rem] ">
 
                 {/* Content Container */}
@@ -150,7 +150,7 @@ const Northstar = () => {
                     <p className="text-lg text-black-400 justify-center text-center sm:text-[1.5rem] md:text-4xl lg:text-6xl">
                         Final Product:
                     </p>
-                        <h5 className="sm:text-xl underline text-purple-300 lg:text-[3rem]">
+                        <h5 className="sm:text-xl underline text-orange-300 lg:text-[3rem]">
                         Figma File:
                         </h5>
                         <iframe
