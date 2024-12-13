@@ -119,7 +119,7 @@ const Home = () => {
          <div>
         <img src={TwoClouds} alt="Cloud gif" className="transform scale-x-[-1] w-16 
         sm:w-[8rem] sm:mt-[-80rem] sm:ml-[16rem] sm:pt-[57rem]
-        md:w-[20rem] md:mt-[-73rem] md:ml-[33rem] md:pt-[45rem]
+        md:w-[20rem] md:mt-[-73rem] md:ml-[29rem] md:pt-[45rem]
         lg:w-[20rem] lg:ml-[60rem] lg:mt-[-65rem]" />
       </div>
 
@@ -223,7 +223,7 @@ const Home = () => {
         <div>
         <img src={Bubble} alt="Bubble gif" className="w-16 
         sm:w-1/4 sm:ml-[-2.75rem] sm:mt-[-10.5rem]
-        md:w-2/5 md:ml-[38rem] md:mt-[15rem]
+        md:w-2/5 md:ml-[36rem] md:mt-[17rem]
         lg:w-1/4 lg:ml-[-5rem] lg:pb-[23rem]
         " />
         </div>
@@ -242,7 +242,7 @@ const Home = () => {
         {/* North Star Omurice */}
         <div className="relative 
         sm:w-[20rem] sm:pt-[-5rem] sm:ml-[2rem]
-        md:w-[40rem] md:ml-[5rem] md:pt-[40rem]
+        md:w-[40rem] md:ml-[5rem] md:pt-[36rem]
         lg:w-[55rem] lg:ml-[-0.5rem] lg:pt-[60rem]
         ">
           <GreenWorkBox />
