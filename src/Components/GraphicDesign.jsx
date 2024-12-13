@@ -18,7 +18,7 @@ const GraphicBox = () => {
         <div className="w-full relative mt-[30rem] 
         sm:mt-[10rem] sm:px-0  sm:mx-auto
         md:ml-[0rem]
-        lg:pl-[4rem] lg:pr-[9rem] ">
+        lg:pl-[4rem] lg:pr-[7rem] ">
 
             {/* Project Heading and Description */}
             <div className="text-start w-full
@@ -90,7 +90,7 @@ const GraphicBox = () => {
                     <div className="w-full lg:w-1/2 lg:text-left">
                         <h5 className="text-black pb-2 text-2xl 
                         sm:text-[1.5rem] sm:text-start sm:pt-5
-                        md:text-[4rem] md:pt-5 md:pl-10 
+                        md:text-[3rem] md:pt-5 md:pl-10 
                         lg:text-[4.5rem] lg:pl-4 lg:pt-[2rem] lg:absolute">
                             {/* with each project.xxx, it is manually grabbing
                             the information of project.id, in this case it's
@@ -100,7 +100,7 @@ const GraphicBox = () => {
                         </h5>
                         <h4 className="text-lg leading-6 
                         sm:text-[1rem] sm:pt-2  
-                        md:text-2xl md:py-5 md:pl-5 md:pr-[20rem]
+                        md:text-2xl md:mb-[-6.75rem] md:pl-5 md:pr-[20rem]
                         lg:text-3xl lg:py-[10rem] lg:ml-10 lg:pr-[1rem]">
                             {project.description}
                         </h4>
@@ -112,7 +112,7 @@ const GraphicBox = () => {
                             src={project.imageurl} 
                             className="w-full h-auto object-contain rounded-xl
                             sm:w-[20rem] sm:h-[30rem]
-                             md:w-[20rem] md:h-[25rem] md:ml-[35rem] md:mt-[-10rem] md:mb-[-2rem]
+                            md:w-[20rem] md:h-[25rem] md:ml-[28rem] md:mt-[-18rem] md:mb-[-2rem]
                             lg:ml-[5rem] lg:w-[35rem] lg:h-[35rem] lg:mt-[6rem]
                             "
                         />
@@ -121,7 +121,7 @@ const GraphicBox = () => {
                     <div>
                         <h4 className="text-blue-300 
                         sm:text-[1rem] sm:mt-[-1rem]
-                        md:text-1xl md:mt-[2rem]
+                        md:text-1xl md:pt-[5rem]
                         lg:text-[1.3rem] lg:ml-[-70rem] lg:mt-[45rem] 
                         ">
                             {project.chips}
@@ -133,7 +133,7 @@ const GraphicBox = () => {
                     <Link to="/beachball">
                         <button
                         className="px-6 py-3 bg-blue-300 text-white rounded-lg shadow-md hover:bg-blue-500 hover:text-white focus:outline-none focus:ring-2 focus:ring-blue-300 transition-colors duration-300
-                            md:ml-[36rem] md:mt-[-2rem]
+                            md:ml-[30rem] md:mt-[-2rem]
                             lg:mt-[44rem] lg:ml-[-21rem]"
                         >
                         View More

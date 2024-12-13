@@ -15,7 +15,7 @@ const OmuMockup = () => {
         <div className="w-full relative mt-[30rem] 
         sm:mt-[25rem] sm:px-0  sm:mx-auto sm:pb-[2rem]
         md:ml-[0rem]
-        lg:pl-[4rem] lg:pr-[9rem] ">
+        lg:pl-[4rem] lg:pr-[7rem] ">
 
             {/* Project Heading and Description */}
             <div className="text-start w-full">

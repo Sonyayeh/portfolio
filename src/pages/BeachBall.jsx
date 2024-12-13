@@ -33,7 +33,7 @@ const Beachball = () => {
         <div className="w-[12rem] relative mt-[30rem] 
         sm:ml-[-0.1rem] sm:mt-[10rem] sm:px-0 sm:mx-auto 
         md:ml-[3rem] md:mt-[1rem]
-        lg:pl-[8rem] lg:pr-[4rem]">
+        lg:pl-[4rem] lg:pr-[4rem]">
             {/* Project Heading and Description */}
             <div className="text-start w-[12rem]">
                 <h1 className="pl-2 text-2xl justify-center text-center 

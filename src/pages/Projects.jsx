@@ -50,7 +50,7 @@ const Projects = () => {
                         <img src={Bubble} alt="Bubble gif" className=" 
                         sm:w-1/4 sm:h-1/4 sm:ml-[0rem] sm:mt-[10rem]
                         md:w-1/4 md:h-1/4 md:ml-[-2rem] md:mt-[10rem]
-                        lg:w-1/4 lg:h-auto lg:ml-[70rem] lg:mt-[-18rem]
+                        lg:w-1/4 lg:h-auto lg:ml-[70rem] lg:mt-[-16rem]
                         max-w-full
                         " />
                         </div>
@@ -69,8 +69,8 @@ const Projects = () => {
                     <div>
                         <h1 className="
                         sm:text-[4rem] sm:mt-[-20rem] sm:ml-[8rem]
-                        md:text-[6rem] md:ml-[21rem] md:mt-[-30rem] 
-                        lg:text-[7rem] lg:absolute lg:ml-[40rem] lg:mt-[-20rem] 
+                        md:text-[6rem] md:ml-[17rem] md:mt-[-30rem] 
+                        lg:text-[7rem] lg:absolute lg:ml-[36rem] lg:mt-[-20rem] 
                         " 
                         >Projects:</h1>
                     </div>
@@ -84,8 +84,8 @@ const Projects = () => {
                             <Arrow 
                             className="
                             sm:w-6 sm:mb-[20rem] sm:ml-[13rem] sm:pt-[5rem]
-                            md:w-10 md:ml-[27rem] md:py-[10rem] md:pt-[20rem]
-                            lg:w-12 lg:ml-[50rem] lg:py-[0rem] lg:pt-[5rem]
+                            md:w-10 md:ml-[24rem] md:py-[10rem] md:pt-[20rem]
+                            lg:w-12 lg:ml-[44rem] lg:py-[0rem] lg:pt-[5rem]
                             "/>
                         </div>
                     </div>
