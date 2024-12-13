@@ -89,7 +89,7 @@ const BcitProject = () => {
                             src={project.imageurl} 
                             className="w-full h-auto object-contain rounded-xl
                             sm:w-[20rem] sm:h-[30rem]
-                            md:w-[20rem] md:h-[25rem] md:ml-[25rem] md:mt-[-28rem] md:mb-[-2rem]
+                            md:w-[20rem] md:h-[25rem] md:ml-[25rem] md:mt-[-25rem] md:mb-[-2rem]
                             lg:ml-[5rem] lg:w-[35rem] lg:h-[35rem] lg:mt-[6rem]
                             "
                         />
