@@ -79,13 +79,13 @@ const OmuMockup = () => {
                     <div className="w-full lg:w-1/2 lg:text-left">
                         <h5 className="text-black pb-2 text-2xl 
                         sm:text-[1.5rem] sm:text-start sm:pt-5
-                        md:text-[4rem] md:pt-5 md:pl-10 
+                        md:text-[4rem] md:pt-5 md:pl-[1.5rem] 
                         lg:text-[5rem] lg:pl-4 lg:pt-[2rem] lg:absolute">
                             {project.title}
                         </h5>
                         <h4 className="text-lg leading-6 
                         sm:text-[1rem] sm:pt-2  
-                        md:text-2xl md:pt-[2.25rem] md:pl-5 md:ml-[25rem]
+                        md:text-2xl md:pt-[2.25rem] md:pl-5 md:mr-[25rem]
                         lg:text-3xl lg:py-[10rem] lg:ml-1 lg:pr-[1rem]">
                             {project.description}
                         </h4>
@@ -116,7 +116,7 @@ const OmuMockup = () => {
                      <div className="flex justify-center mt-8">
                         <Link to="/northstar">
                         <button className="px-6 py-3 bg-orange-300 text-white rounded-lg shadow-md hover:bg-orange-500 hover:text-white focus:outline-none focus:ring-2 focus:ring-orange-300 transition-colors duration-300
-                        md:mr-[-35rem] md:mt-[-2rem]
+                        md:ml-[24rem] md:mt-[-2rem]
                         lg:mr-[-10rem] lg:mt-[50rem] lg:ml-[-45rem]
                         ">
                             View More
