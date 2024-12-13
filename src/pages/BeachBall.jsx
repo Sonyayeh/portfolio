@@ -167,7 +167,7 @@ const Beachball = () => {
                         />
                         <h3 className="flex 
                         sm:mr-[-12rem] sm:ml-[9rem] sm:mt-[-12.5rem] sm:text-sm
-                        md:text-xl
+                        md:text-xl md:ml-[3rem]
                         lg:mt-[40rem] lg:ml-[-55rem] lg:text-2xl
                         ">This is the first sketch. My idea was to simply create a group of people enjoying beach volleyball on the beach. The concept was simple, but the execution was not so ideal. After working on it for a while, I decided to scrap the idea. </h3>
                         </div>
