@@ -85,7 +85,7 @@ const OmuMockup = () => {
                         </h5>
                         <h4 className="text-lg leading-6 
                         sm:text-[1rem] sm:pt-2  
-                        md:text-2xl md:py-5 md:pl-5 md:pr-[23rem]
+                        md:text-2xl md:pt-[2.25rem] md:pl-5 md:ml-[25rem]
                         lg:text-3xl lg:py-[10rem] lg:ml-1 lg:pr-[1rem]">
                             {project.description}
                         </h4>
@@ -97,7 +97,7 @@ const OmuMockup = () => {
                             src={project.imageurl} 
                             className="w-full h-auto object-contain rounded-xl
                             sm:w-[20rem] sm:h-[30rem]
-                            md:w-[20rem] md:h-[25rem] md:ml-[35rem] md:mt-[-17rem] md:mb-[0rem]
+                            md:w-[20rem] md:h-[25rem] md:ml-[35rem] md:mt-[-22rem] md:mb-[0rem]
                             lg:ml-[5rem] lg:w-[35rem] lg:h-[35rem] lg:mt-[6rem]
                             "
                         />

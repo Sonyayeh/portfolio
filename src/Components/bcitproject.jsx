@@ -71,7 +71,7 @@ const BcitProject = () => {
                     <div className="w-full lg:w-1/2 lg:text-left">
                         <h5 className="text-black pb-2 text-2xl 
                         sm:text-[1.5rem] sm:text-start sm:pt-5
-                        md:text-[4rem] md:pt-5 md:pl-[1.5rem]
+                        md:text-[4rem] md:pt-5 md:pl-[0.5rem]
                         lg:text-[5rem] lg:pl-4 lg:pt-[2rem] lg:absolute">
                             {project.title}
                         </h5>

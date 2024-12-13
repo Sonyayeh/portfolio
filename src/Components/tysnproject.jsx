@@ -89,7 +89,7 @@ const TysnProject = () => {
                             src={project.imageurl} 
                             className="w-full h-auto object-contain rounded-xl
                             sm:w-[20rem] sm:h-[30rem]
-                            md:w-[20rem] md:h-[25rem] md:ml-[35rem] md:mt-[-17rem] md:mb-[0rem]
+                            md:w-[20rem] md:h-[25rem] md:ml-[35rem] md:mt-[-22rem] md:mb-[0rem]
                             lg:ml-[5rem] lg:w-[35rem] lg:h-[35rem] lg:mt-[6rem]
                             "
                         />
@@ -107,7 +107,7 @@ const TysnProject = () => {
                      {/* View More Button */}
                      <div className="flex justify-center mt-8">
                         <button className="px-6 py-3 bg-purple-300 text-white rounded-lg shadow-md hover:bg-purple-500 hover:text-white focus:outline-none focus:ring-2 focus:ring-purple-300 transition-colors duration-300
-                        md:mr-[-35rem] md:mt-[-2rem]
+                        md:mr-[-26rem] md:mt-[-2rem]
                         lg:mr-[-10rem] lg:mt-[50rem] lg:ml-[-45rem]
                         ">
                             View More
