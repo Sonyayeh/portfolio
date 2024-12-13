@@ -78,7 +78,7 @@ const PuppyProject = () => {
                     <div className="w-full lg:w-1/2 lg:text-left">
                         <h5 className="text-black pb-2 text-2xl 
                         sm:text-[1.5rem] sm:text-start sm:pt-5
-                        md:text-[4rem] md:pt-5 md:pl-10 
+                        md:text-[4rem] md:pt-5 md:pl-[1.5rem]
                         lg:text-[5rem] lg:pl-4 lg:pt-[2rem] lg:absolute">
                             {project.title}
                         </h5>
@@ -96,7 +96,7 @@ const PuppyProject = () => {
                             src={project.imageurl} 
                             className="w-full h-auto object-contain rounded-xl
                             sm:w-[20rem] sm:h-[30rem]
-                            md:w-[20rem] md:h-[25rem] md:ml-[35rem] md:mt-[-15rem] md:mb-[-2rem]
+                            md:w-[20rem] md:h-[25rem] md:ml-[25rem] md:mt-[-25rem] md:mb-[-2rem]
                             lg:ml-[5rem] lg:w-[35rem] lg:h-[35rem] lg:mt-[6rem]
                             "
                         />
@@ -114,7 +114,7 @@ const PuppyProject = () => {
                      {/* View More Button */}
                      <div className="flex justify-center mt-8">
                         <button className="px-6 py-3 bg-purple-300 text-white rounded-lg shadow-md hover:bg-purple-500 hover:text-white focus:outline-none focus:ring-2 focus:ring-purple-300 transition-colors duration-300
-                        md:mr-[-35rem] md:mt-[-2rem]
+                        md:mr-[-25rem] md:mt-[-2rem]
                         lg:mr-[-10rem] lg:mt-[50rem] lg:ml-[-40rem]
                         ">
                             View More
