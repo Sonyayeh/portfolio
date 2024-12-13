@@ -31,7 +31,7 @@ const GraphicBox = () => {
                 I don't have to make another title and manually
                 adjust it */}
                 <h1 className=" pl-2 text-2xl 
-                sm:text-[4rem] sm:pb-[2rem] sm:pl-[7.5rem] sm:mt-[-16rem]
+                sm:text-[3rem] sm:pb-[2rem] sm:pl-[6rem] sm:mt-[-16rem]
                 md:text-8xl md:pl-[2rem] md:pt-[10rem] 
                 lg:text-8xl lg:pl-3">
                     Graphic Design:
@@ -134,7 +134,7 @@ const GraphicBox = () => {
                         <button
                         className="px-6 py-3 bg-blue-300 text-white rounded-lg shadow-md hover:bg-blue-500 hover:text-white focus:outline-none focus:ring-2 focus:ring-blue-300 transition-colors duration-300
                             md:ml-[36rem] md:mt-[-2rem]
-                            lg:mt-[44rem] lg:ml-[-23rem]"
+                            lg:mt-[44rem] lg:ml-[-21rem]"
                         >
                         View More
                         </button>

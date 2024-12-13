@@ -108,8 +108,8 @@ const BcitProject = () => {
                      <div className="flex justify-center mt-8">
                         <Link to="/bcit">
                             <button className="px-6 py-3 bg-purple-300 text-white rounded-lg shadow-md hover:bg-purple-500 hover:text-white focus:outline-none focus:ring-2 focus:ring-purple-300 transition-colors duration-300
-                            md:mr-[-35rem] md:mt-[-2rem]
-                            lg:mr-[-10rem] lg:mt-[50rem] lg:ml-[-45rem]
+                            md:ml-[34rem] md:mt-[-2rem]
+                            lg:ml-[-20rem] lg:mt-[50rem]
                             ">
                                 View More
                             </button>

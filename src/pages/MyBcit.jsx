@@ -27,12 +27,12 @@ const Bcit = () => {
         <div className="w-[12rem] relative mt-[30rem] 
         sm:ml-[-0.1rem] sm:mt-[10rem] sm:px-0 sm:mx-auto 
         md:ml-[3rem] md:mt-[1rem]
-        lg:pl-[4rem] lg:pr-[4rem]">
+        lg:pl-[8rem] lg:pr-[4rem]">
             {/* Project Heading and Description */}
             <div className="text-start w-[12rem]">
                 <h1 className="pl-2 text-2xl justify-center text-center 
-                sm:text-[2rem] sm:pb-[1rem] sm:mr-[-15rem] sm:mt-[-8rem] sm:w-[20rem] 
-                md:text-5xl md:ml-[0rem] md:pt-[10rem] md:w-[50rem] md:mb-[2rem]
+                sm:text-[2rem] sm:pb-[1rem] sm:pl-[4rem] sm:mt-[-8rem] sm:w-[20rem] 
+                md:text-5xl md:ml-[-3rem] md:pt-[10rem] md:w-[50rem] md:mb-[2rem]
                 lg:text-7xl lg:ml-[8rem] lg:w-[60rem] lg:mb-[5rem] lg:mt-[2rem]">
                     MyBCIT Redesign:
                 </h1>
@@ -146,7 +146,7 @@ const Bcit = () => {
                     </p>
                     
                     {/* Add Images */}
-                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-4">
                         <h5 className="sm:text-xl sm:pt-[1rem] md:text-[2rem] lg:text-[3rem]
                         underline text-purple-300">First Sketch:</h5>
                         
@@ -155,14 +155,14 @@ const Bcit = () => {
                             alt="Image 1" 
                             className="w-[8rem] h-auto rounded-lg 
                             sm:ml-[-12rem] sm:mt-[4rem] sm:pb-[2rem]
-                            md:ml-[-23rem]
-                            lg:w-[30rem] lg:ml-[-2rem]
+                            md:ml-[-23rem] md:w-[20rem]
+                            lg:w-[60rem] lg:ml-[4rem]
                             " 
                         />
                         <h3 className="flex 
-                        sm:mr-[-12rem] sm:ml-[9rem] sm:mt-[-15rem] sm:text-sm
-                        md:text-xl
-                        lg:mt-[55rem] lg:ml-[-55rem] lg:text-2xl lg:pb-[2rem]
+                        sm:mr-[-12rem] sm:ml-[9rem] sm:mt-[-10rem] sm:text-sm
+                        md:text-xl md:mr-[-20rem] md:pl-[11rem] md:mt-[-16.5rem]
+                        lg:mt-[5rem] lg:ml-[-4rem] lg:text-2xl lg:pb-[2rem]
                         ">This is the first sketch. I was not sure of how I can design an app because it is my first time designing one. I took a lot of notes regarding on what elements and sections I may need for the project. I ended with a simple sketch of the overall layout. </h3>
                         </div>
 
@@ -185,22 +185,43 @@ const Bcit = () => {
                         ></iframe>
                         <h3 className="flex 
                         sm:pt-[-7rem] sm:text-sm
-                        md:text-xl md:ml-[5rem]
-                        lg:mt-[-2rem] lg:ml-[12rem] lg:text-2xl
+                        md:text-xl md:ml-[3rem]
+                        lg:mt-[-2rem] lg:ml-[4rem] lg:text-2xl
                         ">This is the Figma file. It has three pages: Lo-Fi, Hi-Fi and style guide. It is fully prototyped in Hi-Fi, please do play around with it to experience the app yourself! </h3>
 
-
-                            </div>
+                        <h5 className="sm:text-xl underline text-purple-300 lg:text-[3rem]">
+                        Figma Prototype:
+                        </h5>
+                        <iframe
+                        style={{ border: "1px solid rgba(0, 0, 0, 0.1)" }}
+                        width="370"
+                        height="400"
+                        src="https://embed.figma.com/proto/QZRxtL2jsXw5Q4ojCa3RyZ/MyBcit-edit?page-id=2%3A3&node-id=134-3101&node-type=canvas&viewport=-255%2C344%2C0.11&scaling=min-zoom&content-scaling=fixed&embed-host=share"
+                        allowFullScreen
+                        title="Figma Embed"
+                        className=" top-0 left-0 w-full h-full 
+                        sm:w-[100%] sm:h-[200px] 
+                        md:w-[95%] md:h-[400px]
+                        lg:h-[600px]
+                        "
+                        ></iframe>
+                        <h3 className="flex 
+                        sm:pt-[-7rem] sm:text-sm
+                        md:text-xl md:ml-[3rem]
+                        lg:mt-[-2rem] lg:ml-[4rem] lg:text-2xl
+                        ">This is the prototype of the project, please make sure it is in full screen for the best experience! This design is supposed to improve the overall presentation and experience of MyBCIT, hoping to encourage students to use the website more often. </h3>
+                        
+                        </div>
                          )}
                          {/* mockup section */}
                          {activeTab === 'MOCKUPS' && (
                         <h5 className="text-lg  sm:text-[1rem] md:text-4xl lg:text-[3rem]">
                             <p className="text-xl ">
                             <strong className="justify-center underline md:text-[3rem] md:ml-[15rem]
-                             lg:text-[4rem] lg:ml-[30rem]                            ">Mockup Samples: <br/></strong>
+                             lg:text-[4rem] lg:ml-[26rem]                            ">Mockup Samples: <br/></strong>
                              <p className="
                              md:ml-[10rem] md:text-[2rem] md:pt-[2rem]
-                             lg:ml-[28rem]
+                             lg:ml-[24rem]
                              ">
                            Here are some mockups for the poster: <br /><br />
                              </p>
@@ -213,13 +234,13 @@ const Bcit = () => {
                             className="w-[10rem] h-auto
                             sm:ml-[-0.5rem] sm:mt-[1rem] sm:pb-[1rem]
                             md:w-[80%] md:ml-[5rem]
-                            lg:w-[70rem] lg:ml-[7rem] lg:pb-[-4rem]
+                            lg:w-[70rem] lg:ml-[1rem] lg:pb-[-4rem]
                             " 
                         />
                         <h3 className="flex 
                         sm:mr-[-1rem] sm:ml-[10rem] sm:mt-[-6.5rem] sm:text-xs
                         md:text-xl md:ml-[5rem] md:pt-[8rem]
-                        lg:mt-[-6rem] lg:ml-[12rem] lg:text-2xl lg:mb-[1rem]
+                        lg:mt-[-6rem] lg:ml-[3rem] lg:text-2xl lg:mb-[1rem]
                         ">I decided to display the project in multiple phone screens to imitate real apps. I took the mockup image from Adobe Stock Images and the editings were done with Adobe Photoshop.  </h3>
                            </div>
                            

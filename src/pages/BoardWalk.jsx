@@ -29,7 +29,7 @@ const Boardwalk = () => {
         <div className="w-[12rem] relative mt-[30rem] 
         sm:ml-[-0.1rem] sm:mt-[10rem] sm:px-0 sm:mx-auto 
         md:ml-[3rem] md:mt-[1rem]
-        lg:pl-[4rem] lg:pr-[4rem]">
+        lg:pl-[8rem] lg:pr-[4rem]">
             {/* Project Heading and Description */}
             <div className="text-start w-[12rem]">
                 <h1 className="pl-2 text-2xl justify-center text-center 
@@ -177,7 +177,7 @@ const Boardwalk = () => {
                         <h3 className="flex 
                         sm:mr-[-12rem] sm:ml-[9rem] sm:mt-[-15rem] sm:text-sm
                         md:text-xl
-                        lg:mt-[55rem] lg:ml-[-55rem] lg:text-2xl lg:pb-[2rem]
+                        lg:mt-[55rem] lg:ml-[-43rem] lg:text-2xl lg:pb-[2rem]
                         ">This is the first sketch. I was not sure of how I can design an app because it is my first time designing one. I took a lot of notes regarding on what elements and sections I may need for the project. I ended with a simple sketch of the overall layout. </h3>
                         </div>
 
@@ -195,7 +195,7 @@ const Boardwalk = () => {
                         <h3 className="flex 
                         sm:mr-[-1rem] sm:pr-3 sm:ml-[9rem] sm:mt-[-17rem] sm:text-sm
                         md:text-xl
-                        lg:mt-[-2rem] lg:ml-[2rem] lg:text-2xl lg:pb-[2rem]
+                        lg:mt-[-2rem] lg:ml-[6rem] lg:text-2xl lg:pb-[2rem]
                         ">This is the second sketch. After my group members' feedbacks, I shifted my gear to make something that is more simple and straight forward. I focused too much on the elements we needed, rather than the overall functionality. After I got an approval from my group members, I imported this sketch to Figma and started prototyping. </h3>
                         </div>
 
@@ -218,7 +218,7 @@ const Boardwalk = () => {
                         <h3 className="flex 
                         sm:pt-[-7rem] sm:text-sm
                         md:text-xl md:ml-[5rem]
-                        lg:mt-[-2rem] lg:ml-[12rem] lg:text-2xl
+                        lg:mt-[-2rem] lg:ml-[6rem] lg:text-2xl
                         ">This is the Figma file. It has three pages: Lo-Fi, Hi-Fi and style guide. It is fully prototyped in Hi-Fi, please do play around with it to experience the app yourself! </h3>
 
 
@@ -229,10 +229,10 @@ const Boardwalk = () => {
                         <h5 className="text-lg  sm:text-[1rem] md:text-4xl lg:text-[3rem]">
                             <p className="text-xl ">
                             <strong className="justify-center underline md:text-[3rem] md:ml-[15rem]
-                             lg:text-[4rem] lg:ml-[30rem]                            ">Mockup Samples: <br/></strong>
+                             lg:text-[4rem] lg:ml-[24rem]                            ">Mockup Samples: <br/></strong>
                              <p className="
                              md:ml-[10rem] md:text-[2rem] md:pt-[2rem]
-                             lg:ml-[28rem]
+                             lg:ml-[22rem]
                              ">
                            Here are some mockups for the poster: <br /><br />
                              </p>
@@ -245,13 +245,13 @@ const Boardwalk = () => {
                             className="w-[10rem] h-auto
                             sm:ml-[-0.5rem] sm:mt-[1rem] sm:pb-[1rem]
                             md:w-[80%] md:ml-[5rem]
-                            lg:w-[70rem] lg:ml-[7rem] lg:pb-[-4rem]
+                            lg:w-[70rem] lg:ml-[1rem] lg:pb-[-4rem]
                             " 
                         />
                         <h3 className="flex 
                         sm:mr-[-1rem] sm:ml-[10rem] sm:mt-[-6.5rem] sm:text-xs
                         md:text-xl md:ml-[5rem] md:pt-[8rem]
-                        lg:mt-[-6rem] lg:ml-[12rem] lg:text-2xl lg:mb-[1rem]
+                        lg:mt-[-6rem] lg:ml-[3rem] lg:text-2xl lg:mb-[1rem]
                         ">I decided to display the project in multiple phone screens to imitate real apps. I took the mockup image from Adobe Stock Images and the editings were done with Adobe Photoshop.  </h3>
                            </div>
                            <div>
@@ -261,13 +261,13 @@ const Boardwalk = () => {
                             className="w-[10rem] h-auto 
                             sm:ml-[-0.5rem] sm:mt-[4rem] sm:pb-[1rem]
                             md:w-[80%] md:ml-[5rem]
-                            lg:w-[70rem] lg:ml-[7rem] lg:pb-[3rem]
+                            lg:w-[70rem] lg:ml-[1rem] lg:pb-[3rem]
                             " 
                         />
                         <h3 className="flex 
                         sm:mr-[-1rem] sm:ml-[10rem] sm:mt-[-8rem] sm:text-xs
                         md:text-xl md:ml-[5rem] md:pb-[-20rem] md:mt-[2rem]
-                        lg:mt-[-1rem] lg:ml-[8rem] lg:text-2xl
+                        lg:mt-[-1rem] lg:ml-[2rem] lg:text-2xl
                         ">Since the previous mockup was about having screens on actual devices, I figured it'll be only be appropriate to have a mockup of a person holding their phone with the app displayed. The mockup is also downloaded from Adobe Stock Images and edits were made with Adobe Photoshop.  </h3>
                            </div>
                         

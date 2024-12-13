@@ -33,7 +33,7 @@ const Beachball = () => {
         <div className="w-[12rem] relative mt-[30rem] 
         sm:ml-[-0.1rem] sm:mt-[10rem] sm:px-0 sm:mx-auto 
         md:ml-[3rem] md:mt-[1rem]
-        lg:pl-[4rem] lg:pr-[4rem]">
+        lg:pl-[8rem] lg:pr-[4rem]">
             {/* Project Heading and Description */}
             <div className="text-start w-[12rem]">
                 <h1 className="pl-2 text-2xl justify-center text-center 
@@ -167,8 +167,8 @@ const Beachball = () => {
                         />
                         <h3 className="flex 
                         sm:mr-[-12rem] sm:ml-[9rem] sm:mt-[-12.5rem] sm:text-sm
-                        md:text-xl
-                        lg:mt-[40rem] lg:ml-[-55rem] lg:text-2xl
+                        md:text-xl md:mr-[-28rem] md:pt-[1rem]
+                        lg:mt-[40rem] lg:ml-[-42.7rem] lg:text-2xl lg:w-[56rem]
                         ">This is the first sketch. My idea was to simply create a group of people enjoying beach volleyball on the beach. The concept was simple, but the execution was not so ideal. After working on it for a while, I decided to scrap the idea. </h3>
                         </div>
 
@@ -186,7 +186,7 @@ const Beachball = () => {
                         <h3 className="flex 
                         sm:mr-[-1rem] sm:pr-3 sm:ml-[9rem] sm:mt-[-17rem] sm:text-sm
                         md:text-xl
-                        lg:mt-[-2rem] lg:ml-[12rem] lg:text-2xl
+                        lg:mt-[-2rem] lg:ml-[6rem] lg:text-2xl
                         ">This is the second sketch. I shifted my idea to having a person reaching for the volleyball, as if they were reaching for the champion position of the volleyball tournament. I thought it would be a nice way to represent the event, only to realize the tournament isn't just about winning, but also enjoying the sport. In the end, I scrapped this idea. </h3>
                         </div>
 
@@ -203,8 +203,8 @@ const Beachball = () => {
                         />
                         <h3 className="flex 
                         sm:mr-[-1rem] sm:ml-[9rem] sm:mt-[-14rem] sm:text-sm
-                        md:text-xl
-                        lg:mt-[-2rem] lg:ml-[8rem] lg:text-2xl
+                        md:text-xl md:mr-[-10rem] md:pt-[2rem]
+                        lg:mt-[-2rem] lg:ml-[1rem] lg:text-2xl
                         ">This is the third sketch. I decided to focus more on volleyball as a sport. Thinking about how it's a beach volleyball tournament, there has to have nature that features the beach. With that in mind, I decided to add palm trees, seagulls, with the ball being in the center and main focus of the poster. </h3>
                         </div>
 
@@ -221,8 +221,8 @@ const Beachball = () => {
                         />
                         <h3 className="flex 
                         sm:mr-[-1rem] sm:ml-[9rem] sm:mt-[-12.5rem] sm:text-sm
-                        md:text-xl
-                        lg:mt-[-2rem] lg:ml-[12rem] lg:text-2xl
+                        md:text-xl md:mr-[-2rem] md:pt-[2rem]
+                        lg:mt-[-2rem] lg:ml-[6rem] lg:text-2xl
                         ">This is the fourth sketch. After having others looking at the third sketch, I decided to make the ball even larger, with some other elements that features the tropical background of beach volleyball, as it originated in 1915 on Waikiki Beach, Hawaii. </h3>
                         </div>
 
@@ -257,7 +257,7 @@ const Beachball = () => {
                         />
                         <h3 className="flex 
                         sm:mr-[-1rem] sm:ml-[10rem] sm:mt-[-14rem] sm:text-sm
-                        md:text-xl md:mb-[1rem]
+                        md:text-xl md:pt-[1.5rem]
                         lg:mt-[-2rem] lg:ml-[12rem] lg:text-2xl
                         ">This is the final product. I took the fourth sketch as a starting point, and produced this poster. The creation of the poster is all done in Adobe Illustrator. I also added some sun rays at the top of the poster to imitate the sun, as well as adding some hibiscus flowers at the bottom. The title includes orange and yellow, which are both tropical colors.  </h3>
                         </div>
@@ -282,7 +282,7 @@ const Beachball = () => {
                         />
                         <h3 className="flex 
                         sm:mr-[-1rem] sm:ml-[10rem] sm:mt-[-14rem] sm:text-xs
-                        md:text-xl
+                        md:text-xl md:pt-[2rem]
                         lg:mt-[-2rem] lg:ml-[12rem] lg:text-2xl
                         ">This is the bus stop mockup. I figured it'll look nice in a larger surface, hense I chose to do a bus stop instead. The mockup is done with Adobe Photoshop, and the mockup background was downloaded from Adobe Stock Images.  </h3>
                            </div>
@@ -297,7 +297,7 @@ const Beachball = () => {
                         />
                         <h3 className="flex 
                         sm:mr-[-1rem] sm:ml-[10rem] sm:mt-[-8.5rem] sm:text-xs
-                        md:text-xl 
+                        md:text-xl md:mr-[-2rem] md:pt-[0.5rem]
                         lg:mt-[-2rem] lg:ml-[12rem] lg:text-2xl
                         ">This is the flyer mockup. I thought doing a flyer mockup would be ideal if event hosters are trying to promote their event. The mockup is done with Adobe Photoshop, and the mockup background was downloaded from Adobe Stock Images.  </h3>
                            </div>

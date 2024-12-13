@@ -37,7 +37,7 @@ const Projects = () => {
                         src={TwoClouds} 
                         alt="Cloud gif"
                         className="w-auto max-w-full
-                        sm:w-[10rem] sm:ml-[20rem]
+                        sm:w-[10rem] sm:ml-[16rem]
                         md:w-[15rem] md:ml-[35rem] md:mt-[-2rem]
                         lg:w-[20rem] lg:ml-[10rem] lg:mt-[12rem]
                         " 
@@ -68,7 +68,7 @@ const Projects = () => {
 
                     <div>
                         <h1 className="
-                        sm:text-[4rem] sm:mt-[-20rem] sm:ml-[11.5rem]
+                        sm:text-[4rem] sm:mt-[-20rem] sm:ml-[8rem]
                         md:text-[6rem] md:ml-[21rem] md:mt-[-30rem] 
                         lg:text-[7rem] lg:absolute lg:ml-[40rem] lg:mt-[-20rem] 
                         " 
@@ -83,7 +83,7 @@ const Projects = () => {
                         <div>
                             <Arrow 
                             className="
-                            sm:w-6 sm:mb-[20rem] sm:ml-[16rem] sm:pt-[5rem]
+                            sm:w-6 sm:mb-[20rem] sm:ml-[13rem] sm:pt-[5rem]
                             md:w-10 md:ml-[27rem] md:py-[10rem] md:pt-[20rem]
                             lg:w-12 lg:ml-[50rem] lg:py-[0rem] lg:pt-[5rem]
                             "/>

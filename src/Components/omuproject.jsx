@@ -20,7 +20,7 @@ const OmuMockup = () => {
             <div className="text-start w-full">
 
             <h1 className=" pl-2 text-2xl 
-                sm:text-[4rem] sm:pb-[2rem] sm:pl-[4rem] sm:mt-[-16rem]
+                sm:text-[3rem] sm:pb-[2rem] sm:pl-[3.5rem] sm:mt-[-16rem]
                 md:text-8xl md:pl-[2rem] md:pt-[10rem] 
                 lg:text-8xl lg:pl-3">
                     Development Project:
