@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import projectData from "../data/project.json";  // Import the JSON data
 
 const BcitProject = () => {
@@ -105,12 +106,14 @@ const BcitProject = () => {
                     </div>
                      {/* View More Button */}
                      <div className="flex justify-center mt-8">
-                        <button className="px-6 py-3 bg-purple-300 text-white rounded-lg shadow-md hover:bg-purple-500 hover:text-white focus:outline-none focus:ring-2 focus:ring-purple-300 transition-colors duration-300
-                        md:mr-[-35rem] md:mt-[-2rem]
-                        lg:mr-[-10rem] lg:mt-[50rem] lg:ml-[-45rem]
-                        ">
-                            View More
-                        </button>
+                        <Link to="/bcit">
+                            <button className="px-6 py-3 bg-purple-300 text-white rounded-lg shadow-md hover:bg-purple-500 hover:text-white focus:outline-none focus:ring-2 focus:ring-purple-300 transition-colors duration-300
+                            md:mr-[-35rem] md:mt-[-2rem]
+                            lg:mr-[-10rem] lg:mt-[50rem] lg:ml-[-45rem]
+                            ">
+                                View More
+                            </button>
+                        </Link>
                     </div>
                 </div>
             </div>

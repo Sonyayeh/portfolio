@@ -133,7 +133,7 @@ const GraphicBox = () => {
                     <Link to="/beachball">
                         <button
                         className="px-6 py-3 bg-blue-300 text-white rounded-lg shadow-md hover:bg-blue-500 hover:text-white focus:outline-none focus:ring-2 focus:ring-blue-300 transition-colors duration-300
-                            md:mr-[-35rem] md:mt-[-2rem]
+                            md:ml-[36rem] md:mt-[-2rem]
                             lg:mt-[44rem] lg:ml-[-23rem]"
                         >
                         View More

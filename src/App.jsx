@@ -14,6 +14,7 @@ import Cases from "./pages/Cases";
 import TravelPictures from "./pages/TravelPhotoFolder";
 import Vollyball from "./pages/BeachBall";
 import Boutique from "./pages/BoardWalk";
+import Bcit from "./pages/MyBcit";
 
 // Import  styles
 import "./reset.css";
@@ -62,6 +63,7 @@ function App() {
               <Route path="/travelphotofolder" element={<TravelPictures />} /> {/* Add this route */}
               <Route path="/beachball" element={<Vollyball />} /> {/* Add this route */}
               <Route path="/boardwalk" element={<Boutique />} />
+              <Route path="/bcit" element={<Bcit />} />
             </Route>
           </Routes>
         </main>
