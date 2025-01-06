@@ -29,8 +29,8 @@ function App() {
       <div id="outer-container" className="flex flex-col min-h-screen">
         {/* Helmet for global meta tags, basic ones first, but will add more! */}
         <Helmet>
-          <title>My Awesome Website</title>
-          <meta name="description" content="This is my portfolio" />
+          <title>Sonya Yeh</title>
+          <meta name="description" content="Hello! Welcome to my portfolio! Here are some of my most proud projects throughout BCIT's New Media Design and Web Development diploma program. They demonstrates my skills in front end developing, UI/UX designing and graphic design. I also have an associate certificate in Graphic Design certificate program in BCIT as well! Thank you for your time here and hope you have a wonderful day!" />
           <meta name="keywords" content="React, Web Development, Portfolio, Graphic Design, UI/UX Design, Web Design" />
           <meta name="author" content="Sonya Yeh" />
           <meta property="og:title" content="Sonya Yeh's Portfolio" />
