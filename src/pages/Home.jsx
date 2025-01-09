@@ -29,7 +29,7 @@ const Home = () => {
         <h1 className="text-4xl 
         sm:text-[2rem] sm:mt-[-0.5rem] sm:ml-[1rem] sm:pr-[1rem]
         md:text-[4.5rem] md:mr-[30rem] md:mt-[-5rem]
-        lg:text-[5rem] lg:ml-[-10rem] lg:mt-[-10rem]
+        lg:text-[5rem] lg:ml-[-20rem] lg:mt-[-10rem]
         font-Micro">
           I am a&nbsp;
         </h1>
@@ -38,7 +38,7 @@ const Home = () => {
           className="w-full max-w-[80rem] h-[16rem] bg-contain bg-no-repeat 
           sm:mr-[0rem] sm:h-[2.5rem] sm:w-[15rem] sm:mb-[10rem] sm:mt-[10rem] 
           md:ml-[-31rem] md:h-[7rem] md:w-[35rem] md:mb-[14rem]
-          lg:h-[7rem] lg:w-[50rem] lg:mr-[-35rem] lg:mt-[5rem]" />
+          lg:h-[7rem] lg:w-[50rem] lg:mr-[-70rem] lg:mt-[5rem]" />
 
       </div>
 
@@ -57,7 +57,7 @@ const Home = () => {
         className="w-auto max-w-full
           sm:w-[8rem] sm:mr-[10rem] sm:mt-[-33.2rem] sm:pb-[12.5rem]
           md:w-[15rem] md:mr-[30rem] md:mt-[-47rem]
-          lg:w-[20rem] lg:ml-[100rem] lg:mt-[-41rem] lg:mb-[-9.5rem]
+          lg:w-[20rem] lg:ml-[10rem] lg:mt-[-35rem] lg:mb-[-9.5rem]
         " 
       />
           
@@ -78,7 +78,7 @@ const Home = () => {
             className="text-black font-Micro
             sm:text-[1.6rem] sm:mt-[2rem] sm:ml-[7rem]
             md:text-[4rem] md:ml-[16rem] md:mb-[2rem]
-            lg:text-[4.5rem] lg:pl-[50rem] lg:mt-[-8rem]"
+            lg:text-[4.5rem] lg:pl-[20rem] lg:mt-[-10rem]"
           />
         </div>
       </div>
@@ -90,7 +90,7 @@ const Home = () => {
         <CatGif className="w-40 
         sm:w-[5rem] sm:mr-[-20rem] sm:mb-[20rem] sm:mt-[-13rem]
         md:w-[10rem] md:mr-[-38rem] md:pb-[12rem] md:mb-[-7rem]
-        lg:w-[12rem] lg:ml-[45rem] lg:mt-[-15rem] lg:mb-[20rem]" />
+        lg:w-[12rem] lg:ml-[70rem] lg:mt-[-15rem] lg:mb-[20rem]" />
       </div>
 
       {/* Arrow */}
@@ -100,7 +100,7 @@ const Home = () => {
         <Arrow className="w-8 
         sm:w-6 sm:pb-[0rem] sm:mt-[0rem] sm:ml-[11.5rem]
         md:w-10 md:ml-[22rem] md:mt-[10rem]
-        lg:w-12 lg:ml-[43rem] lg:mt-[-36rem] lg:mb-[10rem]" />
+        lg:w-12 lg:ml-[55rem] lg:mt-[-10rem] lg:mb-[10rem]" />
       </div>
 
       {/* Sample Work Title */}
@@ -109,7 +109,7 @@ const Home = () => {
         <p className="text-3xl 
         sm:text-[3rem] sm:mt-[-1rem] sm:ml-[2rem] sm:mb-[20rem]
         md:text-[5rem] md:ml-[2rem] md:mt-[11rem]
-        lg:text-[7rem] lg:mt-[-10rem] lg:mr-[-28rem] text-center">
+        lg:text-[7rem] lg:mt-[-8rem] lg:mr-[-45rem] text-center">
           Sample Work:</p>
       </div>
 
@@ -120,7 +120,7 @@ const Home = () => {
         <img src={TwoClouds} alt="Cloud gif" className="transform scale-x-[-1] w-16 
         sm:w-[8rem] sm:mt-[-80rem] sm:ml-[16rem] sm:pt-[57rem]
         md:w-[20rem] md:mt-[-73rem] md:ml-[29rem] md:pt-[45rem]
-        lg:w-[20rem] lg:ml-[60rem] lg:mt-[-65rem]" />
+        lg:w-[20rem] lg:ml-[80rem] lg:mt-[-65rem]" />
       </div>
 
       {/* Work Showcase (Flex and Grid Layouts) */}
@@ -187,7 +187,7 @@ const Home = () => {
           <div className="relative 
             sm:h-[30rem] sm:mb-[-20rem] sm:mt-[4rem]
             md:h-[20rem] 
-            lg:h-[50rem] lg:w-[55rem] lg:ml-[24rem] lg:mt-[15rem]
+            lg:h-[50rem] lg:w-[55rem] lg:ml-[45rem] lg:mt-[15rem]
             flex justify-center items-center"
           >
             {/* Wrap the BlueWorkBox and VolleyballMockup inside the Link */}
@@ -209,7 +209,7 @@ const Home = () => {
             <p className="text-xl 
               sm:text-[1.5rem] sm:mr-[-1rem] sm:mt-[-2.5rem]  
               md:text-[3.2rem] md:ml-[-1rem] md:mt-[-3rem]
-              lg:text-[4rem] lg:mt-[-23.5rem] lg:mr-[-65rem]"
+              lg:text-[4rem] lg:mt-[-23.5rem] lg:mr-[-65rem] lg:ml-[40rem]"
             >
               Beach Volleyball Tournament Poster
             </p>
@@ -268,7 +268,7 @@ const Home = () => {
       <div className="mt-6 
       sm:w-[40rem] sm:max-w-[20rem] sm:ml-[1.5rem] sm:mt-[15rem] 
       md:w-[40rem] md:ml-[15rem] md:mt-[30rem]
-      lg:w-[60rem] lg:ml-[30rem] lg:mb-[2rem] lg:mt-[40rem]">
+      lg:w-[80rem] lg:ml-[30rem] lg:mb-[2rem] lg:mt-[40rem]">
         <Social />
       </div>
     </div>
