@@ -31,7 +31,7 @@ export default {
       'md': '820px',
       // => @media (min-width: 768px) { ... }
 
-      'lg': '1004px',
+      'lg': '1280px',
       // => @media (min-width: 1024px) { ... }
 
     }

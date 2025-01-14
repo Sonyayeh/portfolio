@@ -7,7 +7,7 @@ const Social = () => {
       className="flex justify-center items-center 
       sm:mt-[7rem] sm:mb-[-10rem]
       md:pb-[12rem] md:pt-[0rem]
-      lg:pt-[8rem] lg:pb-[10rem] lg:w-[45rem]"
+      lg:pt-[8rem] lg:pb-[10rem] lg:w-[45rem] lg:ml-[-5rem]"
     >
       <div className="justify-center items-center">
         {/* GitHub Icon and added the link to my github*/}
