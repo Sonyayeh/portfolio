@@ -31,8 +31,11 @@ export default {
       'md': '820px',
       // => @media (min-width: 768px) { ... }
 
-      'lg': '1280px',
+      'lp': '1280px',
       // => @media (min-width: 1024px) { ... }
+
+      'lg': '1920px',
+      // => @media (min-width: 1920px) { ... }
 
     }
   },

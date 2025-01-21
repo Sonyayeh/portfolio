@@ -1,7 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Micro+5&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Micro+5&display=swap');
-
-/* Root font family and color settings */
+/* Base Styles */
 :root {
   --white: #ffffff;
   --black: #000000;
@@ -9,24 +6,16 @@
   --orange: #FF7518;
   --purple: rgb(198, 123, 255);
 }
-
-/* Base Styles */
 body {
   background-color: var(--white);
   color: var(--black);
   font-family: "Micro 5", sans-serif;
-  /* Ensure the font is applied globally */
   font-size: 1rem;
-  /* Set a base font size */
   line-height: 1.5;
   padding: 0vw, 5vh;
-  /* Use vw units for padding */
   margin: 0;
-  /* Remove default margin */
   overflow-x: hidden;
-  /* Prevent horizontal scrolling */
 }
-
 
 a {
   color: var(--black);
@@ -43,7 +32,6 @@ button {
   padding: 1rem 2rem;
   cursor: pointer;
   font-size: 1.5rem;
-  /* Adjust button font size */
 }
 
 button:hover {
@@ -66,7 +54,6 @@ button:hover {
 .top-navbar a {
   color: var(--blue);
   font-size: 3.5rem;
-  /* Use rem for navbar font size */
   margin: 0 1rem;
   padding: 1rem;
   text-decoration: none;
@@ -81,275 +68,37 @@ button:hover {
 
 #page-wrapper {
   margin-top: 12vw;
-  /* Adjust margin-top for navbar */
 }
 
-/* Container */
-.container {
-  position: relative;
-  padding-left: 5vw;
-  min-width: 320px;
-  /* Ensure minimum width for mobile devices */
+/* Tablet screen */
+@media (max-width: 820px) {
+  .bm-burger-button {
+    display: block;
+  }
+
+  .top-navbar {
+    display: none;
+  }
 }
-
-/* Text container */
-.text-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  margin-top: 10vh;
-}
-
-/* Static Text */
-
-
-/* Typed text container */
-.typed-text {
-  display: flex;
-  font-family: "Micro 5", sans-serif;
-  font-size: 2rem;
-  /* Use rem for font size */
-  line-height: 1.2;
-  margin: 0;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-  padding: 1rem;
-  color: black;
-  overflow: hidden;
-  word-wrap: break-word;
-}
-
-/* Bubble Container */
-.bubble-container {
-  position: absolute;
-  top: 20vh;
-  left: 10vw;
-  width: 40vw;
-  height: 10vh;
-  background-image: url('/src/assets/text-bubble.png');
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  padding: 2vw;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  box-sizing: border-box;
-  word-wrap: break-word;
-  overflow: hidden;
-}
-
-/* Responsive image */
-.responsive-cat {
-  display: flex;
-  width: 100%;
-  height: auto;
-  max-width: 80%;
-  position: absolute;
-  bottom: 18vw;
-  right: 10vw;
-}
-
-/* Down Arrow */
-.Down-Arrow {
-  width: 100%;
-  height: auto;
-  max-width: 5%;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  margin-top: 8rem;
-}
-
-.sample-box1 {
-  width: 100%;
-  height: auto;
-  display: grid;
-  position: absolute;
-  top: 100vh;
-  right: 1%;
-}
-
-.sample-box2 {
-  width: 100%;
-  height: auto;
-  display: grid;
-  position: absolute;
-  top: 250vh;
-  right: 1%;
-}
-
-.sample-box3 {
-  width: 100%;
-  height: auto;
-  display: grid;
-  position: absolute;
-  top: 400vh;
-  right: 1%;
-}
-
-
-
-/* Base Layout for Large Screens (1280px and above) */
+/* Laptop screen */
 @media (min-width: 1280px) {
-  body {
-    font-size: 1.2rem;
-    /* Adjust base font size for larger screens */
+  .bm-burger-button {
+    display: none !important;
   }
 
-  .responsive-cat {
-    max-width: 60rem;
-    margin-top: 4rem;
-    margin-left: 50rem;
-  }
-
-  .static-text {
-    font-size: 5rem;
-    /* Use rem for larger screens */
-    margin-left: -70rem;
-    margin-top: 5.5rem;
-
-  }
-
-  .bubble-container {
-    left: 24rem;
-    top: 3rem;
-    width: 70rem;
-    height: 10rem;
-  }
-
-  .typed-text {
-    font-size: 5rem;
-    padding-left: 3rem;
-  }
-
-  .Down-Arrow {
-    top: 85vh;
-    /* Adjust top position for large screens */
-    max-width: 5%;
-  }
-}
-
-/* Medium Screens (720px to 1280px) */
-@media (min-width: 720px) and (max-width: 1280px) {
-  .responsive-cat {
-    max-width: 50rem;
-    margin-top: 10rem;
-    margin-left: 35rem;
-  }
-
-  .static-text {
-    font-size: 5rem;
-    /* Adjust for medium screens */
-    margin-left: -50rem;
-    margin-top: 9rem;
-  }
-
-  .bubble-container {
-    left: 18rem;
-    top: 8rem;
-    width: 50rem;
-    height: 8rem;
-  }
-
-  .typed-text {
-    font-size: 5rem;
-    padding-left: 3rem;
-  }
-
-  .Down-Arrow {
-    top: 90vh;
-    /* Adjust position for medium screens */
-    max-width: 4%;
-  }
-
-
-
-}
-
-/* Small Screens (Phones) */
-@media (max-width: 720px) {
-  .top-navbar a {
-    font-size: 4vw;
-    /* Adjust navbar links for small screens */
-  }
-
-  .responsive-cat {
-    max-width: 45%;
-    margin-top: 23rem;
-    margin-left: 35rem;
-  }
-
-  .static-text {
-    font-size: 4rem;
-    margin-left: -8rem;
-    margin-top: 15.5rem;
-  }
-
-  .bubble-container {
-    left: 10rem;
-    top: 15rem;
-    width: 35rem;
-  }
-
-  .typed-text {
-    font-size: 4rem;
-  }
-
-  .Down-Arrow {
-    top: 55vh;
-    /* Adjust position for small screens */
-    max-width: 7%;
-  }
-}
-
-/* Extra Small Screens (Mobile/Tablet) */
-@media (min-width: 480px) {
-  .top-navbar a {
-    font-size: 5vw;
-    /* Even smaller navbar links */
-  }
-
-  .responsive-cat {
-    max-width: 15%;
-    margin-top: 22rem;
-    margin-left: 75rem;
-  }
-
-  .static-text {
-    font-size: 5rem;
-    margin-left: -65rem;
-    margin-top: 5rem;
-  }
-
-  .bubble-container {
-    width: 70%;
-    left: 22%;
-    top: 4rem;
-  }
-
-  .typed-text {
-    font-size: 5rem;
-  }
-
-  .Down-Arrow {
-    top: 50vh;
-    /* Adjust position for extra small screens */
-    max-width: 3%;
-  }
-
-  .description {
-    font-size: 10rem;
-    color: var(--black);
-    padding-left: 30%;
-    margin-top: 15%;
-  }
-
-  .heroTexts {
+  .top-navbar {
     display: flex;
   }
+}
+
+/* Ensure hamburger menu is visible for small screens */
+.bm-burger-button {
+  color: var(--blue);
+  display: block;
+  position: fixed;
+  width: 36px;
+  height: 30px;
+  left: 36px;
+  top: 36px;
+  z-index: 1000;
 }

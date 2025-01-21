@@ -24,12 +24,13 @@ const Home = () => {
     <div className="container flex flex-col ">
 
       {/* the "I am" Text */}
-      <div className="flex justify-center items-center mt-20">
+      <div className="flex justify-center items-center lg:mt-[10rem]">
         {/* basically the same thing as the two clouds */}
         <h1 className="
         sm:text-[2rem] sm:mt-[-0.5rem] sm:ml-[1rem] sm:pr-[1rem]
         md:text-[4.5rem] md:mr-[30rem] md:mt-[1rem]
-        lg:text-[5rem] lg:ml-[-60rem] lg:mt-[-5rem]
+        lg:text-[8rem] lg:ml-[-100rem] lg:mt-[-5rem]
+        lp:text-[4.5rem] lp:ml-[-10rem] lp:mt-[-6.5rem]
         font-Micro">
           I am a&nbsp;
         </h1>
@@ -38,7 +39,9 @@ const Home = () => {
           className="w-full max-w-[80rem] h-[16rem] bg-contain bg-no-repeat 
           sm:mr-[0rem] sm:h-[2.5rem] sm:w-[15rem] sm:mb-[10rem] sm:mt-[10rem] 
           md:ml-[-31rem] md:h-[7rem] md:w-[35rem] md:mb-[9rem]
-          lg:h-[7rem] lg:w-[50rem] lg:mr-[-70rem] lg:mt-[5rem]" />
+          lg:h-[9rem] lg:w-[55rem] lg:mr-[-100rem] lg:mt-[5rem]
+          lp:h-[7rem] lp:w-[40rem] lp:mt-[3rem] lp:mr-[-2rem]
+          " />
 
       </div>
 
@@ -57,13 +60,14 @@ const Home = () => {
         className="w-auto max-w-full
           sm:w-[8rem] sm:mr-[10rem] sm:mt-[-33.2rem] sm:pb-[12.5rem]
           md:w-[15rem] md:mr-[30rem] md:mt-[-47rem]
-          lg:w-[20rem] lg:ml-[1rem] lg:mt-[-30rem] lg:mb-[-9.5rem]
+          lg:w-[20rem] lg:ml-[10rem] lg:mt-[-35rem] lg:mb-[-9.5rem]
+          lp:w-[15rem] lp:ml-[1rem] lp:mt-[-30rem] lp:mb-[-5rem]
         " 
       />
       </div>
           
         <div
-        className='flex w-10 container'
+        className='flex w-10 container lg:w-[60rem]'
         >
           {/* this is a new react type I downloaded, I believe it is called
            react-type. In order to see this work, you'll need to install this in
@@ -81,7 +85,9 @@ const Home = () => {
             className="text-black font-Micro
             sm:text-[1.6rem] sm:mt-[2rem] sm:ml-[7rem]
             md:text-[4rem] md:ml-[-18rem] md:mt-[-18.5rem]
-            lg:text-[4.5rem] lg:ml-[-31rem] lg:mt-[-19rem]"
+            lg:text-[7rem] lg:ml-[-15rem] lg:mt-[-22rem]
+            lp:text-[4rem] lp:ml-[-30rem] lp:mt-[-18.5rem]
+            "
           />
         </div>
 
@@ -94,7 +100,7 @@ const Home = () => {
         <CatGif className="w-40 
         sm:w-[5rem] sm:mr-[-20rem] sm:mb-[20rem] sm:mt-[-13rem]
         md:w-[10rem] md:mr-[-38rem] md:pb-[30rem] md:mb-[-7rem]
-        lg:w-[12rem] lg:ml-[30rem] lg:mt-[-13rem] lg:mb-[20rem]" />
+        lg:w-[12rem] lg:ml-[30rem] lg:mt-[-10rem] lg:mb-[20rem]" />
       </div>
 
       {/* Arrow */}
@@ -104,7 +110,7 @@ const Home = () => {
         <Arrow className="w-8 
         sm:w-6 sm:pb-[0rem] sm:mt-[0rem] sm:ml-[11.5rem]
         md:w-10 md:ml-[25rem] md:mt-[30rem]
-        lg:w-12 lg:ml-[40rem] lg:mt-[-20rem] lg:mb-[10rem]" />
+        lg:w-12 lg:ml-[60rem] lg:mt-[-25rem] lg:mb-[10rem]" />
       </div>
 
       {/* Sample Work Title */}
@@ -113,7 +119,7 @@ const Home = () => {
         <p className="text-3xl 
         sm:text-[3rem] sm:mt-[-1rem] sm:ml-[2rem] sm:mb-[20rem]
         md:text-[5rem] md:ml-[2rem] md:mt-[11rem] md:pb-[2rem]
-        lg:text-[7rem] lg:mt-[-6rem] lg:mr-[-5rem] text-center">
+        lg:text-[7rem] lg:mt-[-5rem] lg:mr-[-2rem] text-center">
           Sample Work:</p>
       </div>
 
@@ -124,7 +130,7 @@ const Home = () => {
         <img src={TwoClouds} alt="Cloud gif" className="transform scale-x-[-1] w-16 
         sm:w-[8rem] sm:mt-[-80rem] sm:ml-[16rem] sm:pt-[57rem]
         md:w-[20rem] md:mt-[-73rem] md:ml-[29rem] md:pt-[48rem]
-        lg:w-[20rem] lg:ml-[55rem] lg:mt-[-65rem]" />
+        lg:w-[30rem] lg:ml-[80rem] lg:mt-[-78rem]" />
       </div>
 
       {/* Work Showcase (Flex and Grid Layouts) */}
@@ -138,13 +144,13 @@ const Home = () => {
         <div className="grid sm:h-auto 
         sm:w-[20rem] sm:mt-[-20rem] sm:pb-[60rem] sm:ml-[2rem] 
         md:w-[40rem] md:ml-[5rem] md:mb-[2rem] md:mt-[-15rem]
-        lg:w-[55rem] lg:ml-[-0.5rem] lg:mt-[-10rem]
+        lg:w-[70rem] lg:ml-[3rem] lg:mt-[-10rem]
         ">
           <PurpleWorkBox />
           <div className="flex w-full justify-center items-center 
           sm:w-[15rem] sm:ml-[2.5rem] sm:mt-[-15rem] 
           md:w-[30rem] md:ml-[4rem] md:mt-[-30rem]
-          lg:w-[50rem] lg:ml-[2.5rem] lg:mt-[-42rem]
+          lg:w-[55rem] lg:ml-[3.5rem] lg:mt-[-45rem]
           ">
             <YogaMockup />
           </div>
@@ -153,26 +159,27 @@ const Home = () => {
           <p className="text-xl 
           sm:text-[1.5rem] sm:mr-[-2.5rem] sm:mt-[-76rem] sm:pt-[-10rem] 
           md:text-[3.5rem] md:mr-[2rem] md:mt-[-89rem]
-          lg:text-[4rem] lg:mr-[25rem] lg:mt-[-99.5rem]">
+          lg:text-[4.5rem] lg:mr-[53rem] lg:mt-[-104rem]">
             Furrever Pals Puppy Yoga
           </p>
         </div>
 
-        {/* bubble */}
+        {/* large bubble */}
         <div>
           <div className="flex justify-between ">
           <img src={Bubble} alt="Bubble gif" className=" 
           sm:w-1/4 sm:h-1/4 sm:ml-[0.5rem] sm:mt-[-33rem]
           md:w-1/4 md:h-1/4 md:ml-[-6.5rem] md:mt-[10rem]
-          lg:w-2/4 lg:h-auto lg:ml-[49rem] lg:pt-[10rem]
+          lg:w-2/4 lg:h-auto lg:ml-[55rem] lg:mt-[12rem]
           max-w-full
           " />
           </div>
           <div>
+            {/* small bubble */}
           <img src={Bubble} alt="Bubble gif" className="
           sm:w-1/3 sm:h-1/3 sm:ml-[-3rem] sm:mt-[-36rem]
           md:w-1/3 ms:h-1/3 md:mt-[-1.5rem] md:ml-[-6.5rem]
-          lg:w-1/4 lg:mt-[-30rem] lg:ml-[70rem]
+          lg:w-1/4 lg:mt-[-55rem] lg:ml-[60rem]
           " />
           </div>
         </div>
@@ -191,7 +198,7 @@ const Home = () => {
           <div className="relative 
             sm:h-[30rem] sm:mb-[-20rem] sm:mt-[4rem]
             md:h-[20rem] 
-            lg:h-[50rem] lg:w-[55rem] lg:ml-[20rem] lg:mt-[10rem]
+            lg:h-[50rem] lg:w-[65rem] lg:ml-[48rem] lg:mt-[30rem]
             flex justify-center items-center"
           >
             {/* Wrap the BlueWorkBox and VolleyballMockup inside the Link */}
@@ -201,7 +208,7 @@ const Home = () => {
               <div className="absolute
                 sm:top-[11rem] sm:w-[15rem]
                 md:ml-[0rem] md:mt-[-8rem] md:w-[30rem]
-                lg:mt-[0.5rem] lg:w-[50rem]"
+                lg:mt-[0.5rem] lg:w-[55rem]"
               > 
                 <VolleyballMockup />
               </div>
@@ -213,7 +220,7 @@ const Home = () => {
             <p className="text-xl 
               sm:text-[1.5rem] sm:mr-[-1rem] sm:mt-[-2.5rem]  
               md:text-[3.2rem] md:ml-[-1rem] md:mt-[-3rem]
-              lg:text-[4rem] lg:mt-[-23.5rem] lg:mr-[-32rem] lg:ml-[25rem]"
+              lg:text-[4.5rem] lg:mt-[-25rem] lg:mr-[-43rem] lg:ml-[53.5rem] lg:w-[55rem]"
             >
               Beach Volleyball Tournament Poster
             </p>
@@ -225,17 +232,19 @@ const Home = () => {
         {/* same bubble as before, some of them are positioned differntly with differnt screen sizes */}
         <div>
         <div>
+          {/* this is the small bubble */}
         <img src={Bubble} alt="Bubble gif" className="w-16 
         sm:w-1/4 sm:ml-[-2.75rem] sm:mt-[-10.5rem]
         md:w-2/5 md:ml-[36rem] md:mt-[17rem]
-        lg:w-1/4 lg:ml-[55rem] lg:mt-[20rem]
+        lg:w-1/4 lg:ml-[65rem] lg:mt-[25rem]
         " />
         </div>
         <div>
+          {/* this is the big bubble */}
           <img src={Bubble} alt="Bubble gif" className="w-32 
           sm:w-1/4 sm:ml-[20rem] sm:mt-[14.5rem]
           md:w-1/5 md:ml-[-5rem] md:mb-[-60rem]
-          lg:w-2/4 lg:ml-50rem] lg:mt-[-40rem]
+          lg:w-2/4 lg:ml-[-10rem] lg:mt-[-80rem]
           " />
         </div>
         </div>
@@ -247,13 +256,13 @@ const Home = () => {
         <div className="relative 
         sm:w-[20rem] sm:pt-[-5rem] sm:ml-[2rem]
         md:w-[40rem] md:ml-[5rem] md:pt-[36rem]
-        lg:w-[55rem] lg:ml-[-0.5rem] lg:pt-[62rem]
+        lg:w-[65rem] lg:ml-[3rem] lg:pt-[65rem]
         ">
           <GreenWorkBox />
           <div className="absolute 
             sm:w-[16rem] sm:ml-[2rem] sm:mt-[-11.5rem] 
             md:w-[30rem] md:ml-[5rem] md:mt-[-22rem]
-            lg:w-[50rem] lg:ml-[2.5rem] lg:mt-[-34rem]">
+            lg:w-[55rem] lg:ml-[3rem] lg:mt-[-37rem]">
             <OmuMockup  />
           </div>
         </div>
@@ -261,7 +270,9 @@ const Home = () => {
           <p className="text-xl 
           sm:text-[1.5rem] sm:ml-[2rem] sm:mt-[-16rem] 
           md:text-[4rem] md:mr-[-1rem] md:mt-[-28rem]
-          lg:text-[4rem] lg:ml-[-22rem] lg:mt-[-39.5rem]">North Star Omurice</p>
+          lg:text-[4.5rem] lg:ml-[18rem] lg:mt-[-44rem] lg:w-[30rem]">
+          North Star Omurice
+          </p>
         </div>
       </div>
 
@@ -272,7 +283,7 @@ const Home = () => {
       <div className="mt-6 
       sm:w-[40rem] sm:max-w-[20rem] sm:ml-[1.5rem] sm:mt-[15rem] 
       md:w-[40rem] md:ml-[15rem] md:mt-[30rem]
-      lg:w-[80rem] lg:ml-[30rem] lg:mb-[2rem] lg:mt-[30rem]">
+      lg:w-[80rem] lg:ml-[45rem] lg:mb-[2rem] lg:mt-[30rem]">
         <Social />
       </div>
     </div>

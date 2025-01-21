@@ -8,17 +8,22 @@ const Header = () => {
       {/* Logo */}
       <div className="flex justify-center items-center py-4">
         <img 
-          src="/logo.svg"
-          alt="Logo" 
-          className="h-16 w-auto 
+          src="/logo1.svg"
+          alt="Logo1" 
+          className="h-16 w-auo 
           sm:pl-[18rem]
           md:pl-[40rem] md:mt-[-2rem] md:h-[8rem]
-          lg:mr-[105rem] lg:mt-[-8rem] lg:mb-[5rem] lg:h-[10rem]" 
+          lg:ml-[-135rem] lg:mt-[-8rem] lg:mb-[5rem] lg:h-[10rem]
+          lp:mr-[-10rem] lp:mt-[-6rem] lp:mb-[3rem] lp:h-[8rem]
+          " 
         />
       </div>
 
       {/* Top Navbar - Visible on large screens, hidden on small/medium screens */}
-      <nav className="hidden lg:ml-[25rem] lg:flex text-[4rem] font-Micro text-blue-300 justify-center mt-[-15rem] pb-[2rem]">
+      <nav className="hidden font-Micro text-blue-300 justify-center
+      lg:ml-[10rem] lg:flex lg:text-[6rem]  lg:mt-[-15rem] lg:pb-[2rem]
+      lp:ml-[10rem] lp:flex lp:text-[8rem]  lp:mt-[-15rem] lp:pb-[2rem]
+      ">
         <Link to="/" className="px-10 hover:text-blue-300 hover:underline">
           Home
         </Link>

@@ -8,7 +8,7 @@ function Footer() {
       <div className="text-xl text-center
       sm:text-[1.5rem] sm:justify-center sm:items-center sm:mr-[0.5rem] sm:pt-[12rem] 
       md:text-[3rem] md:justify-center md:pt-[0rem]
-      lg:text-[5rem] lg:justify-center lg:pb-[0rem] lg:mr-[-20rem]
+      lg:text-[6rem] lg:justify-center lg:pb-[0rem] lg:mr-[0rem]
       ">
         {/* I used a copyright footer text instead */}
         <p>&copy; 2024 Sonya Yeh, All Rights Reserved</p>

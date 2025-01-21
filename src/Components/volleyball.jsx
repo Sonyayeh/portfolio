@@ -8,7 +8,7 @@ const VolleyballMockup = () => {
         <img
           src={Volleyball}
           alt="the mockup photo for Volleyball tournament"
-          className="w-full h-auto max-w-[50rem]"
+          className="w-full h-auto"
         />
       </div>
     </div>
