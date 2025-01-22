@@ -14,7 +14,7 @@ const Header = () => {
           sm:pl-[18rem]
           md:pl-[40rem] md:mt-[-2rem] md:h-[8rem]
           lg:ml-[-135rem] lg:mt-[-8rem] lg:mb-[5rem] lg:h-[10rem]
-          lp:mr-[-10rem] lp:mt-[-6rem] lp:mb-[3rem] lp:h-[8rem]
+          lp:mr-[105rem] lp:mt-[-6rem] lp:mb-[3rem] lp:h-[8rem]
           " 
         />
       </div>
@@ -22,7 +22,7 @@ const Header = () => {
       {/* Top Navbar - Visible on large screens, hidden on small/medium screens */}
       <nav className="hidden font-Micro text-blue-300 justify-center
       lg:ml-[10rem] lg:flex lg:text-[6rem]  lg:mt-[-15rem] lg:pb-[2rem]
-      lp:ml-[10rem] lp:flex lp:text-[8rem]  lp:mt-[-15rem] lp:pb-[2rem]
+      lp:ml-[10rem] lp:flex lp:text-[4rem]  lp:mt-[-10rem] lp:pb-[2rem]
       ">
         <Link to="/" className="px-10 hover:text-blue-300 hover:underline">
           Home
