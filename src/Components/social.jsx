@@ -7,7 +7,7 @@ const Social = () => {
       className="flex justify-center items-center 
       sm:mt-[7rem] sm:mb-[-10rem]
       md:pb-[12rem] md:pt-[0rem]
-      lg:pt-[8rem] lg:pb-[10rem] lg:w-[45rem] lg:ml-[-5rem] lg:justify-center lg:items-center
+      lg:pt-[8rem] lg:pb-[10rem] lg:w-[45rem] lg:justify-center lg:ml-[-25.5rem]
       lp:pt-[4rem] lp:pb-[8rem] lp:w-[55rem] lp:ml-[-20rem] lp:justify-around"
     >
       <div className="flex justify-center items-center space-x-6 lp:space-x-8">
@@ -19,7 +19,7 @@ const Social = () => {
         >
           <IonIcon 
             className="text-blue-300 sm:text-[2.5rem] hover:text-purple-300 hover:cursor-pointer 
-            sm:px-2 md:text-[3.5rem] md:px-3 lg:text-[7rem] lg:px-2 lp:text-[6rem] lp:px-4" 
+            sm:px-2 md:text-[3.5rem] md:px-3 lg:text-[10rem] lg:px-2 lp:text-[6rem] lp:px-4" 
             name="logo-github" 
           />
         </a>
@@ -32,7 +32,7 @@ const Social = () => {
         >
           <IonIcon 
             className="text-blue-300 sm:text-[2.5rem] hover:text-purple-300 hover:cursor-pointer 
-            sm:px-2 md:text-[3.5rem] md:px-3 lg:text-[7rem] lg:px-5 lp:text-[6rem] lp:px-5" 
+            sm:px-2 md:text-[3.5rem] md:px-3 lg:text-[10rem] lg:px-5 lp:text-[6rem] lp:px-5" 
             name="logo-linkedin" 
           />
         </a>
@@ -45,7 +45,7 @@ const Social = () => {
         >
           <IonIcon 
             className="text-blue-300 sm:text-[2.5rem] hover:text-purple-300 hover:cursor-pointer 
-            sm:px-2 md:text-[3.5rem] md:px-3 lg:text-[7rem] lg:px-5 lp:text-[6rem] lp:px-4" 
+            sm:px-2 md:text-[3.5rem] md:px-3 lg:text-[10rem] lg:px-5 lp:text-[6rem] lp:px-4" 
             name="logo-youtube" 
           />
         </a>
@@ -58,7 +58,7 @@ const Social = () => {
         >
           <IonIcon 
             className="text-blue-300 sm:text-[2.5rem] hover:text-purple-300 hover:cursor-pointer 
-            sm:px-2 md:text-[3.5rem] md:px-3 lg:text-[7rem] lg:px-5 lp:text-[6rem] lp:px-4" 
+            sm:px-2 md:text-[3.5rem] md:px-3 lg:text-[10rem] lg:px-5 lp:text-[6rem] lp:px-4" 
             name="logo-instagram" 
           />
         </a>

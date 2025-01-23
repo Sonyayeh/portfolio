@@ -111,7 +111,7 @@ const Home = () => {
         <Arrow className="w-8 
         sm:w-6 sm:pb-[0rem] sm:mt-[0rem] sm:ml-[11.5rem]
         md:w-10 md:ml-[27rem] md:mt-[30rem]
-        lg:w-12 lg:ml-[60rem] lg:mt-[-25rem] lg:mb-[10rem]
+        lg:w-12 lg:ml-[40rem] lg:mt-[-25rem] lg:mb-[10rem]
         lp:w-12 lp:ml-[40rem] lp:mt-[-16rem] lp:mb-[10rem]" />
       </div>
 
@@ -133,7 +133,7 @@ const Home = () => {
         <img src={TwoClouds} alt="Cloud gif" className="transform scale-x-[-1] w-16 
         sm:w-[8rem] sm:mt-[-80rem] sm:ml-[16rem] sm:pt-[57rem]
         md:w-[20rem] md:mt-[-73rem] md:ml-[29rem] md:pt-[48rem]
-        lg:w-[30rem] lg:ml-[80rem] lg:mt-[-78rem]
+        lg:w-[30rem] lg:ml-[50rem] lg:mt-[-78rem]
         lp:w-[25rem] lp:ml-[50rem] lp:mt-[-78rem]" />
       </div>
 
@@ -148,7 +148,7 @@ const Home = () => {
         <div className="grid sm:h-auto 
         sm:w-[20rem] sm:mt-[-20rem] sm:pb-[60rem] sm:ml-[2rem] 
         md:w-[40rem] md:ml-[5rem] md:mb-[2rem] md:mt-[-15rem]
-        lg:w-[70rem] lg:ml-[3rem] lg:mt-[-10rem]
+        lg:w-[70rem] lg:ml-[-20rem] lg:mt-[-10rem]
         lp:w-[50rem] lp:ml-[2rem] lp:mt-[-10rem]
         ">
           <PurpleWorkBox />
@@ -165,7 +165,7 @@ const Home = () => {
           <p className="text-xl 
           sm:text-[1.5rem] sm:mr-[-2.5rem] sm:mt-[-76rem] sm:pt-[-10rem] 
           md:text-[3.5rem] md:mr-[2rem] md:mt-[-89rem]
-          lg:text-[4.5rem] lg:mr-[53rem] lg:mt-[-104rem]
+          lg:text-[4.5rem] lg:ml-[-30rem] lg:mt-[-104rem]
           lp:text-[4.5rem] lp:mr-[25rem] lp:mt-[-96rem]">
             Furrever Pals Puppy Yoga
           </p>
@@ -177,7 +177,7 @@ const Home = () => {
           <img src={Bubble} alt="Bubble gif" className=" 
           sm:w-1/4 sm:h-1/4 sm:ml-[0.5rem] sm:mt-[-33rem]
           md:w-1/4 md:h-1/4 md:ml-[-6.5rem] md:mt-[10rem]
-          lg:w-2/4 lg:h-auto lg:ml-[55rem] lg:mt-[12rem]
+          lg:w-2/4 lg:h-auto lg:ml-[55rem] lg:mt-[10rem]
           lp:w-2/4 lp:h-auto lp:ml-[40rem] lp:mt-[12rem]
           max-w-full
           " />
@@ -187,7 +187,7 @@ const Home = () => {
           <img src={Bubble} alt="Bubble gif" className="
           sm:w-1/3 sm:h-1/3 sm:ml-[-3rem] sm:mt-[-36rem]
           md:w-1/3 ms:h-1/3 md:mt-[-1.5rem] md:ml-[-6.5rem]
-          lg:w-1/4 lg:mt-[-55rem] lg:ml-[60rem]
+          lg:w-1/4 lg:mt-[-35rem] lg:ml-[60rem]
           lp:w-1.5/4 lp:mt-[-40rem] lp:ml-[50rem]
           " />
           </div>
@@ -201,14 +201,14 @@ const Home = () => {
             sm:w-[20rem] sm:ml-[2rem]
             md:w-[40rem] md:ml-[5rem] md:mt-[-10rem]
             lg:pb-[-2rem] lg:pt-[-20rem] lg:mr-[2rem]
-            lp:pb-[-2rem] lp:pt-[-10rem] lp:mr-[2rem]
+            lp:pb-[-2rem] lp:pt-[-10rem] lp:mr-[20rem]
             ">
                       
            {/* BlueWorkBox */}
           <div className="relative 
             sm:h-[30rem] sm:mb-[-20rem] sm:mt-[4rem]
             md:h-[20rem] 
-            lg:h-[50rem] lg:w-[65rem] lg:ml-[48rem] lg:mt-[30rem]
+            lg:h-[50rem] lg:w-[65rem] lg:ml-[28rem] lg:mt-[30rem]
             lp:h-[45rem] lp:w-[50rem] lp:ml-[24rem] lp:mt-[15rem]
             flex justify-center items-center"
           >
@@ -232,7 +232,7 @@ const Home = () => {
             <p className="text-xl 
               sm:text-[1.5rem] sm:mr-[-1rem] sm:mt-[-2.5rem]  
               md:text-[3.2rem] md:ml-[-1rem] md:mt-[-3rem]
-              lg:text-[4.5rem] lg:mt-[-25rem] lg:mr-[-43rem] lg:ml-[53.5rem] lg:w-[55rem]
+              lg:text-[4.5rem] lg:mt-[-25rem] lg:ml-[30rem] lg:w-[55rem]
               lp:text-[4.1rem] lp:mt-[-19rem] lp:ml-[24.5rem] lp:w-[50rem]"
             >
               Beach Volleyball Tournament Poster
@@ -271,7 +271,7 @@ const Home = () => {
         <div className="relative 
         sm:w-[20rem] sm:pt-[-5rem] sm:ml-[2rem]
         md:w-[40rem] md:ml-[5rem] md:pt-[36rem]
-        lg:w-[65rem] lg:ml-[3rem] lg:pt-[65rem]
+        lg:w-[65rem] lg:ml-[-20rem] lg:pt-[65rem]
         lp:w-[50rem] lp:ml-[3rem] lp:pt-[30rem]
         ">
           <GreenWorkBox />
@@ -287,7 +287,7 @@ const Home = () => {
           <p className="text-xl 
           sm:text-[1.5rem] sm:ml-[2rem] sm:mt-[-16rem] 
           md:text-[4rem] md:mr-[-1rem] md:mt-[-28rem]
-          lg:text-[4.5rem] lg:ml-[18rem] lg:mt-[-44rem] lg:w-[30rem]
+          lg:text-[4.5rem] lg:ml-[-5rem] lg:mt-[-44rem] lg:w-[30rem]
           lp:text-[4.5rem] lp:ml-[12rem] lp:mt-[-36rem] lp:w-[30rem]">
           North Star Omurice
           </p>

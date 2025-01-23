@@ -21,8 +21,8 @@ const Header = () => {
 
       {/* Top Navbar - Visible on large screens, hidden on small/medium screens */}
       <nav className="hidden font-Micro text-blue-300 justify-center
-      lg:ml-[12rem] lg:flex lg:text-[6rem]  lg:mt-[-15rem] lg:pb-[2rem]
-      lp:ml-[10rem] lp:flex lp:text-[8rem] lp:w-[100rem] lp:mt-[-15rem] lp:pb-[2rem]
+      lg:ml-[1rem] lg:flex lg:text-[6rem]  lg:mt-[-15rem] lg:pb-[2rem]
+      lp:ml-[10rem] lp:flex lp:text-[8rem] lp:w-[90rem] lp:mt-[-15rem] lp:pb-[2rem]
       ">
         <Link to="/" className="px-10 hover:text-blue-300 hover:underline">
           Home
