@@ -28,7 +28,7 @@ const Home = () => {
         {/* basically the same thing as the two clouds */}
         <h1 className="
         sm:text-[2rem] sm:mt-[-0.5rem] sm:ml-[1rem] sm:pr-[1rem]
-        md:text-[4.5rem] md:mr-[30rem] md:mt-[1rem]
+        md:text-[4.5rem] md:mr-[30rem] md:mt-[0.2rem]
         lg:text-[8rem] lg:ml-[-100rem] lg:mt-[-5rem]
         lp:text-[5.5rem] lp:ml-[-20rem] lp:mt-[5rem]
         font-Micro">
@@ -59,7 +59,7 @@ const Home = () => {
         // setting the sizes and positions of the gif in differnet pages
         className="w-auto max-w-full
           sm:w-[8rem] sm:mr-[10rem] sm:mt-[-33.2rem] sm:pb-[12.5rem]
-          md:w-[15rem] md:mr-[30rem] md:mt-[-47rem]
+          md:w-[15rem] md:mr-[30rem] md:mt-[-30rem]
           lg:w-[20rem] lg:ml-[10rem] lg:mt-[-35rem] lg:mb-[-9.5rem]
           lp:w-[20rem] lp:ml-[-20rem] lp:mt-[-35rem] lp:mb-[-5rem]
         " 
@@ -84,7 +84,7 @@ const Home = () => {
             showCursor
             className="text-black font-Micro
             sm:text-[1.6rem] sm:mt-[2rem] sm:ml-[7rem]
-            md:text-[4rem] md:ml-[-18rem] md:mt-[-18.5rem]
+            md:text-[4rem] md:ml-[-31rem] md:mt-[-18.5rem]
             lg:text-[7rem] lg:ml-[-15rem] lg:mt-[-22rem]
             lp:text-[5rem] lp:ml-[-30rem] lp:mt-[-19.5rem]
             "
@@ -99,7 +99,7 @@ const Home = () => {
       <div className="flex justify-center mt-12">
         <CatGif className="w-40 
         sm:w-[5rem] sm:mr-[-20rem] sm:mb-[20rem] sm:mt-[-13rem]
-        md:w-[10rem] md:mr-[-38rem] md:pb-[30rem] md:mb-[-7rem]
+        md:w-[10rem] md:mr-[-45rem] md:pb-[30rem] md:mb-[-7rem]
         lg:w-[12rem] lg:ml-[30rem] lg:mt-[-10rem] lg:mb-[20rem]
         lp:w-[12rem] lp:ml-[20rem] lp:mt-[-10rem] lp:mb-[20rem]" />
       </div>
@@ -110,7 +110,7 @@ const Home = () => {
       <div className="text-center mt-[-21rem]">
         <Arrow className="w-8 
         sm:w-6 sm:pb-[0rem] sm:mt-[0rem] sm:ml-[11.5rem]
-        md:w-10 md:ml-[25rem] md:mt-[30rem]
+        md:w-10 md:ml-[27rem] md:mt-[30rem]
         lg:w-12 lg:ml-[60rem] lg:mt-[-25rem] lg:mb-[10rem]
         lp:w-12 lp:ml-[40rem] lp:mt-[-16rem] lp:mb-[10rem]" />
       </div>

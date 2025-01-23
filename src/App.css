@@ -6,6 +6,7 @@
   --orange: #FF7518;
   --purple: rgb(198, 123, 255);
 }
+
 body {
   background-color: var(--white);
   color: var(--black);
@@ -70,6 +71,61 @@ button:hover {
   margin-top: 12vw;
 }
 
+/* General layout styling for all screens */
+.app-layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Full viewport height */
+}
+
+/* Main content area (affects all screens) */
+#page-wrapper {
+  max-width: 1280px; /* Standard width for content */
+  margin: 0 auto; /* Center align */
+  padding: 2rem 1rem; /* Add spacing */
+  flex-grow: 1; /* Push the footer to the bottom */
+}
+
+/* Screens wider than 1920px */
+@media (min-width: 1920px) {
+  #page-wrapper {
+    max-width: 1940px; /* Slightly increase width */
+    padding: 2rem 2rem;
+  }
+}
+
+/* Standard desktop screens (1440px to 1920px) */
+@media (min-width: 1440px) and (max-width: 1919px) {
+  #page-wrapper {
+    max-width: 1280px;
+    padding: 2.5rem 1.5rem;
+  }
+}
+
+/* Standard laptop screens (1280px to 1440px) */
+@media (min-width: 1280px) and (max-width: 1439px) {
+  #page-wrapper {
+    max-width: 1024px;
+    padding: 2rem 1rem;
+  }
+}
+
+/* Tablet screens (820px to 1279px) */
+@media (min-width: 820px) and (max-width: 1279px) {
+  #page-wrapper {
+    max-width: 800px;
+    padding: 1.5rem 1rem;
+  }
+}
+
+/* Mobile screens (less than 820px) */
+@media (max-width: 819px) {
+  #page-wrapper {
+    max-width: 100%; /* Full width */
+    padding: 1rem 0.5rem;
+  }
+}
+
 /* Tablet screen */
 @media (max-width: 820px) {
   .bm-burger-button {
@@ -80,6 +136,7 @@ button:hover {
     display: none;
   }
 }
+
 /* Laptop screen */
 @media (min-width: 1280px) {
   .bm-burger-button {
