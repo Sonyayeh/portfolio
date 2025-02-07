@@ -1,5 +1,5 @@
 import React from "react";
-import Pointer from "../assets/photopointer.png"
+import Pointer from "../assets/photopointer.svg"
 
 const Pointercursor = () => {
     return (

@@ -15,6 +15,7 @@
   /* Color/shape of burger icon bars on hover*/
   .bm-burger-bars-hover {
     background: var(--purple);
+    cursor: url("/webpointer.svg"), pointer !important;
   }
   
   /* Position and sizing of clickable cross button */

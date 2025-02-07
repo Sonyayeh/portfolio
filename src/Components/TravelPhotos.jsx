@@ -25,7 +25,7 @@ const MasonryPhotoSection = () => {
       <div
         className="grid gap-5"
         style={{
-          gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))", // Dynamic column layout
+          gridTemplateColumns: "repeat(auto-fit, minmax(auto, 2fr)", // Dynamic column layout
         }}
       >
         {photos.map((photo) => (

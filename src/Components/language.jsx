@@ -62,10 +62,10 @@ const Language = () => {
 
       {/* Chinese/Mandarin Bar */}
       <div className="bar-main-container bg-purple-300 text-white rounded-lg w-72 mx-auto mb-4 md:ml-[3rem] md:mb-[2rem] lg:ml-[-2rem]">
-        <h5 className="text-3xl lg:text-[2.2rem]">Chinese/Mandarin</h5>
+        <h5 className="text-3xl sm:text-[2rem] lg:text-[2.2rem]">Chinese/Mandarin</h5>
         <div className="p-2">
           <div
-            className="bar-percentage bg-black/20 rounded-lg text-center py-1 text-sm lg:text-[2rem]"
+            className="bar-percentage bg-black/20 rounded-lg text-center py-1 text-sm sm:text-[2rem] lg:text-[2rem]"
             data-percentage="98"
           ></div>
           <div className="bar-container bg-black/20 rounded-full h-2 mt-2 overflow-hidden">
@@ -76,10 +76,10 @@ const Language = () => {
 
       {/* English Bar */}
       <div className="bar-main-container bg-sky-300 text-white rounded-lg w-72 mx-auto mb-4 md:ml-[23rem] md:mt-[-6.5rem] lg:ml-[27rem]">
-        <h5 className="text-3xl lg:text-[2.2rem]">English</h5>
+        <h5 className="text-3xl sm:text-[2rem] lg:text-[2.2rem]">English</h5>
         <div className="p-2">
           <div
-            className="bar-percentage bg-black/20 rounded-lg text-center py-1 text-sm lg:text-[2rem]"
+            className="bar-percentage bg-black/20 rounded-lg text-center py-1 text-sm sm:text-[2rem] lg:text-[2rem]"
             data-percentage="98"
           ></div>
           <div className="bar-container bg-black/20 rounded-full h-2 mt-2 overflow-hidden">
@@ -90,10 +90,10 @@ const Language = () => {
 
       {/* French Bar */}
       <div className="bar-main-container bg-emerald-300 text-white rounded-lg w-72 mx-auto mb-4 md:ml-[3rem] lg:ml-[57rem] lg:mt-[-5.5rem]">
-        <h5 className="text-3xl lg:text-[2.2rem]">French</h5>
+        <h5 className="text-3xl sm:text-[2rem] lg:text-[2.2rem]">French</h5>
         <div className="p-2">
           <div
-            className="bar-percentage bg-black/20 rounded-lg text-center py-1 text-sm lg:text-[2rem]"
+            className="bar-percentage bg-black/20 rounded-lg text-center py-1 text-sm sm:text-[2rem] lg:text-[2rem]"
             data-percentage="65"
           ></div>
           <div className="bar-container bg-black/20 rounded-full h-2 mt-2 overflow-hidden">
@@ -104,10 +104,11 @@ const Language = () => {
 
       {/* Japanese Bar */}
       <div className="bar-main-container bg-yellow-300 text-white rounded-lg w-72 mx-auto mb-4 md:ml-[23rem] md:mt-[-7rem] lg:ml-[-2rem] lg:mt-[5rem]">
-        <h5 className="text-3xl lg:text-[2.2rem]">Japanese</h5>
+        <h5 className="text-3xl sm:text-[2rem] lg:text-[2.2rem]">Japanese</h5>
         <div className="p-2">
           <div
             className="bar-percentage bg-black/20 rounded-lg text-center py-1 text-sm
+            sm:text-[2rem]
             lg:text-[2rem]"
             data-percentage="80"
           ></div>
@@ -119,10 +120,10 @@ const Language = () => {
 
       {/* Spanish Bar */}
       <div className="bar-main-container bg-orange-300 text-white rounded-lg w-72 mx-auto mb-4 md:ml-[3rem] lg:ml-[27rem] lg:mt-[-5.5rem]">
-        <h5 className="text-3xl lg:text-[2.2rem]">Spanish</h5>
+        <h5 className="text-3xl sm:text-[2rem] lg:text-[2.2rem]">Spanish</h5>
         <div className="p-2">
           <div
-            className="bar-percentage bg-black/20 rounded-lg text-center py-1 text-sm lg:text-[2rem]"
+            className="bar-percentage bg-black/20 rounded-lg text-center py-1 text-sm sm:text-[2rem] lg:text-[2rem]"
             data-percentage="35"
           ></div>
           <div className="bar-container bg-black/20 rounded-full h-2 mt-2 overflow-hidden">
@@ -133,10 +134,10 @@ const Language = () => {
 
       {/* German Bar */}
       <div className="bar-main-container bg-red-300 text-white rounded-lg w-72 mx-auto mb-4 md:ml-[23rem] md:mt-[-7rem] lg:ml-[57rem]">
-        <h5 className="text-3xl lg:text-[2.2rem]">German</h5>
+        <h5 className="text-3xl sm:text-[2rem] lg:text-[2.2rem]">German</h5>
         <div className="p-2">
           <div
-            className="bar-percentage bg-black/20 rounded-lg text-center py-1 text-sm lg:text-[2rem]"
+            className="bar-percentage bg-black/20 rounded-lg text-center py-1 text-sm sm:text-[2rem] lg:text-[2rem]"
             data-percentage="20"
           ></div>
           <div className="bar-container bg-black/20 rounded-full h-2 mt-2 overflow-hidden">
@@ -147,10 +148,10 @@ const Language = () => {
 
       {/* Dutch Bar */}
       <div className="bar-main-container bg-pink-300 text-white rounded-lg w-72 mx-auto mb-4 md:ml-[13rem] lg:ml-[27rem] lg:mt-[6rem]">
-        <h5 className="text-3xl lg:text-[2.2rem]">Dutch</h5>
+        <h5 className="text-3xl sm:text-[2rem] lg:text-[2.2rem]">Dutch</h5>
         <div className="p-2">
           <div
-            className="bar-percentage bg-black/20 rounded-lg text-center py-1 text-sm lg:text-[2rem]"
+            className="bar-percentage bg-black/20 rounded-lg text-center py-1 text-sm sm:text-[2rem] lg:text-[2rem]"
             data-percentage="10"
           ></div>
           <div className="bar-container bg-black/20 rounded-full h-2 mt-2 overflow-hidden">
@@ -169,7 +170,6 @@ const Language = () => {
             <li className="text-purple-300 font-bold">Cantonese</li>
           </ul>
         </h5>
-        <h5 className="text-xl text-right md:mr-[15rem] lg:mr-[0rem] lg:mt-[1rem] lg:pb-[20rem] lg:text-[3rem]">(but I need to revisit them one day)</h5>
       </div>
     </div>
   );

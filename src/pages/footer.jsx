@@ -6,14 +6,16 @@ import React from "react";
 function Footer() {
   return (
     <div className="flex justify-center items-center  
-      lg:pb-[10rem] lg:justify-center lg:items-center
-      lp:w-[90rem] lp:justify-center lp:items-center lp:align-center lp:pb-[8rem]"
+      sm:w-[23rem]
+      md:w-[54rem]
+      lg:pb-[10rem] lg:justify-center lg:items-center lg:w-[70rem] lg:mr-[2rem]
+      lp:w-[70rem]"
     >
       <div className="text-xl text-center
-        sm:text-[1.5rem] sm:justify-center sm:items-center sm:mr-[0.5rem] sm:pt-[12rem] 
-        md:text-[4rem] md:justify-center md:pt-[0rem]
-        lg:text-[6rem] lg:pb-[0rem] lg:w-[90rem]
-        lp:text-[4rem] lp:w-[60rem] lp:justify-center lp:pb-[2rem] lp:ml-[-10rem]"
+        sm:text-[1.5rem] sm:justify-center sm:mr-[-1rem] 
+        md:text-[4rem] md:justify-center md:pb-[5rem]
+        lg:text-[6rem] lg:pb-[0rem] lg:ml-[-10rem]
+        lp:text-[5rem] lp:mr-[-12rem] lp:pt-[-1rem]"
       >
         {/* I used a copyright footer text instead */}
         <p>&copy; 2024 Sonya Yeh, All Rights Reserved</p>

@@ -3,3 +3,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+    body {
+        cursor: url("/webcursor.svg"), auto;
+      }
+    
+
+      a, button, .clickable, ion-icon [role="button"] {
+        cursor: url("/webpointer.svg"), pointer;
+      }
+    
+
+      a:hover, button:hover, .clickable:hover, ion-icon:hover [role="button"]:hover {
+        cursor: url("/webpointer.svg"), pointer;
+      }
+    }

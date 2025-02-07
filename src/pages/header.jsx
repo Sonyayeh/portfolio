@@ -3,26 +3,33 @@ import { Link } from "react-router-dom";
 import { bubble as Menu } from "react-burger-menu";
 
 const Header = () => {
+  const handleClick = () => {
+    window.scrollTo(0, 0)
+  };
   return (
     <div>
       {/* Logo */}
-      <div className="flex justify-center items-center py-4">
+      <div className="flex justify-center items-center py-4
+      sm:w-[25rem] lg:w-auto
+      ">
+        <Link onClick={handleClick} to="/" >
         <img 
           src="/logo1.svg"
           alt="Logo1" 
           className="h-16 w-auto 
-          sm:pl-[18rem]
-          md:pl-[40rem] md:mt-[-2rem] md:h-[8rem]
-          lg:ml-[-125rem] lg:mt-[5rem] lg:mb-[5rem] lg:h-[10rem]
-          lp:mr-[10rem] lp:mt-[-6rem] lp:mb-[3rem] lp:h-[8rem]
-          " 
+          sm:h-[5rem] sm:pl-[19rem]
+          md:ml-[40rem] md:mt-[1rem] md:h-[8rem]
+          lg:ml-[-25rem] lg:mt-[5rem] lg:mb-[5rem] lg:h-[10rem]
+          lp:mr-[80rem] lp:mt-[3rem] lp:mb-[7rem] lp:h-[8rem]
+          "
         />
+        </Link>
       </div>
 
       {/* Top Navbar - Visible on large screens, hidden on small/medium screens */}
       <nav className="hidden font-Micro text-blue-300 justify-center
-      lg:ml-[1rem] lg:flex lg:text-[6rem]  lg:mt-[-15rem] lg:pb-[2rem]
-      lp:ml-[10rem] lp:flex lp:text-[8rem] lp:w-[90rem] lp:mt-[-15rem] lp:pb-[2rem]
+      lg:ml-[9rem] lg:flex lg:text-[5.5rem] lg:mt-[-15rem] lg:pb-[2rem]
+      lp:ml-[9rem] lp:flex lp:text-[4.5rem] lp:w-[70rem] lp:mt-[-15rem] lp:pb-[2rem] 
       ">
         <Link to="/" className="px-10 hover:text-blue-300 hover:underline">
           Home

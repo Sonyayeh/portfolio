@@ -90,7 +90,7 @@ button:hover {
 @media (max-width: 1920px) {
   #page-wrapper {
     max-width: 1220px; /* Slightly increase width */
-    padding: 2rem 2rem;
+    padding: 1rem 1rem;
   }
 }
 
@@ -98,15 +98,15 @@ button:hover {
 @media (min-width: 1440px) and (max-width: 1920px) {
   #page-wrapper {
     max-width: 1280px;
-    padding: 2.5rem 1.5rem;
+    padding: 1rem;
   }
 }
 
 /* Standard laptop screens (1280px to 1440px) */
 @media (max-width: 1280px) {
   #page-wrapper {
-    min-width: 1024px;
-    padding: 10rem 1rem;
+    min-width: 100%;
+    padding: 1rem 1rem;
   }
 }
 
@@ -119,10 +119,10 @@ button:hover {
 }
 
 /* Mobile screens (less than 820px) */
-@media (max-width: 819px) {
+@media (max-width: 430px) {
   #page-wrapper {
-    max-width: 100%; /* Full width */
-    padding: 1rem 0.5rem;
+    max-width: 430px; /* Full width */
+    padding: 1.5rem 1rem;
   }
 }
 

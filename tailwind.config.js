@@ -1,11 +1,15 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: ["./src/**/*.{js,jsx,ts,tsx}"],
+  content: ["./src/**/*.{js,jsx,ts,tsx}", "./public/index.html"],
   theme: {
     extend: {
       colors: {
         customBlue: '#50d0ff',
         customPurple: '#ba68c8'
+      },
+      cursor: {
+      'default': 'url("/webcursor.svg"), auto', 
+      'hover': 'url("/webpointer.svg"), pointer',
       },
 
       fontFamily: {
@@ -21,8 +25,7 @@ export default {
         'h3': ['3rem', {lineHeight: '1.5', letterSpacing: '0.01em'}],
         'h4': ['2rem', {lineHeight: '1.5', letterSpacing: '0.01em'}],
         'h5': ['4rem', {lineHeight: '1.5', letterSpacing: '0.01em'}],
-        
-      }
+      }, 
     },
     screens: {
       'sm': '375px',
@@ -38,6 +41,8 @@ export default {
       // => @media (min-width: 1920px) { ... }
 
     }
+
+    
   },
   plugins: [
     function ({addComponents}) {

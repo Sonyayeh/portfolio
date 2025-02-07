@@ -1,5 +1,6 @@
 import React from "react";
 import {Link} from "react-router-dom";
+import Masonry from "react-responsive-masonry";
 import Pointercursor from "../Components/photopointer";
 import PhotoCarousel from "../Components/Foodslider";
 import TravelPhotos from "../Components/TravelPhotos";
@@ -19,17 +20,17 @@ const About = () => {
     return (
       // they are basically the same as the other pages, but just
       // positioning differences
-      <div className="container mx-auto px-5 lg:ml-[6rem]">
+      <div className="container mx-auto lg:ml-[6rem]">
 
         <h5 className="
-        sm:ml-[-2rem] sm:text-[5rem] 
+        sm:ml-[-1rem] sm:text-[5rem] 
         md:ml-[-1rem] 
         lg:ml-[2rem] lg:text-[7rem]
         "> 
             Heya!
         </h5>
         <h5 className="
-        sm:ml-[-2rem] sm:text-[2rem] sm:mt-[-4rem]
+        sm:ml-[-1rem] sm:text-[2rem] sm:mt-[-4rem]
         md:ml-[-1rem]
         lg:ml-[2rem] lg:pt-[1rem] lg:text-[3rem]
         "> 
@@ -40,7 +41,7 @@ const About = () => {
         for most of my content, i used the same box from projects page
         and changed it into an About Me container box */}
         <div className=" relative mt-[30rem] 
-        sm:mt-[2rem] sm:ml-[-2rem] sm:w-[25rem]
+        sm:mt-[2rem] sm:ml-[-1rem] sm:w-[25rem]
         md:mr-[1rem] md:w-[50rem] md:mt-[2rem]
         lg:w-[70rem] lg:ml-[9rem] ">
 
@@ -127,7 +128,8 @@ const About = () => {
                     >Some of my skills being:</h5>
                 </div>
                 <div className="w-50
-                md:pt-[3rem] md:text-[2rem]
+                sm:w-[25rem] sm:mr-[2rem]
+                md:pt-[3rem] md:text-[2rem] md:w-[50rem]
                 lg:mr-[2rem] lg:ml-[-15rem] lg:text-[3rem]
                 ">
                     <Skills />
@@ -140,14 +142,14 @@ const About = () => {
         "></div>
 
         <h5 className="
-        sm:text-[2rem] sm:mt-[-1rem] sm:ml-[2rem]
-        md:text-[3rem] md:ml-[12rem]
+        sm:text-[2.5rem] sm:mt-[-1rem] sm:ml-[2rem]
+        md:text-[5rem] md:ml-[6rem]
         lg:text-[6rem] lg:ml-[11rem]
         "
         > A little more about me: </h5>
         {/* Photo Component */}
         <div className=" absolute w-full
-        sm:w-1/3 sm:mt-[-67rem] sm:ml-[16rem] sm:pr-[1rem]
+        sm:w-1/3 sm:mt-[-74rem] sm:ml-[13.5rem]
         md:w-1/3 md:ml-[-0.5rem] md:mt-[-48rem]
         lg:w-2/3 lg:ml-[-9rem] lg:mt-[-70rem]
         ">
@@ -156,7 +158,7 @@ const About = () => {
 
         {/* Pointercursor Component */}
         <div className=" absolute
-        sm:w-1/4 sm:ml-[15rem] sm:mt-[-71.5rem]
+        sm:w-1/4 sm:ml-[18.3rem] sm:mt-[-75rem]
         md:w-1/3 md:ml-[-1rem] md:pt-[16rem]
         lg:w-1/3 lg:ml-[-8rem] lg:mt-[-93rem]
         ">
@@ -165,9 +167,9 @@ const About = () => {
         
 
        {/* food image section */}
-       <div className="bg-blue-100 justify-center ml-[-3.5rem] w-[27.3rem]
-       sm:mt-[-75rem]
-       md:w-[55rem] md:ml-[-4.5rem]
+       <div className="bg-blue-100 justify-center 
+       sm:ml-[0rem] sm:w-auto sm:mt-[-80rem]
+       md:w-[55rem] md:ml-[-2rem]
        lg:w-[85rem] lg:ml-[-8rem]
        ">
             <div>
@@ -213,45 +215,56 @@ const About = () => {
                 
             </div>
             {/* travel section */}
-            <div>
-                <div className="bg-purple-100 justify-center pt-[2rem] ml-[-3.5rem] w-[27.3rem] md:w-[55rem] md:ml-[-4.5rem] lg:w-[85rem] lg:ml-[-8rem] lg:mt-[2rem]">
-                <h5 className="sm:text-[1.7rem] sm:mb-[-2rem] sm:ml-[5rem]
-                md:text-[3rem] md:ml-[12rem]
-                lg:text-[4rem] lg:ml-[25rem]
-                flex items-center">
-                    <img 
-                        src={Camera} 
-                        alt="Camera" 
-                        className="w-8 h-8 mr-2
-                        lg:w-12 lg:h-12" // Adds some margin to the right of the heart for spacing
-                        />
-                        I also love travelling and taking photos!
-                    </h5>
-                    <div className="
-                        sm:w-[20rem]
-                        lg:w-[80rem] lg:mt-[2rem] lg:ml-[2rem]
-                        ">
-                            <TravelPhotos />
-                    </div>
-                    
-                    <div>
-                        <h5 className="text-xl text-right mr-10
-                        md:text-[2rem]
-                        ">Click me for more photos!</h5>
-                        <Link to="/travelphotofolder">
-                            <img 
-                                src={Floppy} 
-                                alt="Floppy disk, click here to my secret photo album >:)" 
-                                className="w-8 h-8 mb-2 ml-[25rem] 
-                                md:ml-[33rem]
-                                lg:ml-[64rem]
-                                hover:cursor-pointer"
-                                />
-                        </Link>
-                    </div>
+            <div className="container mx-auto lg:ml-[6rem]">
+        
+        {/* Existing content */}
 
+        <div>
+            <div className="bg-purple-100 pt-[1rem] ml-[-3.5rem] w-auto 
+            sm:ml-[0rem] sm:w-auto
+            md:w-[55rem] md:ml-[-2rem] md:mt-[1rem]
+            lg:w-[85rem] lg:ml-[-8rem] lg:mt-[2rem]">
+            <h5 className="
+            sm:text-[1.7rem] sm:mb-[-2rem] sm:ml-[5rem]
+            md:text-[3.5rem] md:ml-[10rem]
+            lg:text-[4rem] lg:ml-[25rem]
+            flex items-center">
+                <img 
+                    src={Camera} 
+                    alt="Camera" 
+                    className="w-8 h-8 mr-2
+                    lg:w-12 lg:h-12"
+                    />
+                    I also love travelling and taking photos!
+                </h5>
+                <div className="
+                    sm:w-[20rem]
+                    md:w-[50rem] md:ml-[2rem] md:mt-[1rem]
+                    lg:w-[80rem] lg:mt-[2rem] lg:ml-[2rem]
+                    ">
+                        <TravelPhotos />
                 </div>
+                
+                <div>
+                    <h5 className="text-xl text-right mr-10
+                    md:text-[2rem]
+                    ">Click me for more photos!</h5>
+                    <Link to="/travelphotofolder">
+                        <img 
+                            src={Floppy} 
+                            alt="Floppy disk, click here to my secret photo album >:)" 
+                            className="w-8 h-8 mb-2 ml-[25rem] 
+                            sm:ml-[21rem] sm:mb-[1rem]
+                            md:ml-[38rem]
+                            lg:ml-[64rem]
+                            hover:cursor-pointer"
+                            />
+                    </Link>
+                </div>
+
+             </div>
             </div>
+        </div>
             <div>
                 <Language />
             </div>
@@ -265,7 +278,7 @@ const About = () => {
         </div>
         {/* Social Section */}
         <div className="
-          sm:w-[40rem] sm:ml-[-9.5rem] sm:mr-[-5rem] sm:mt-[10rem] 
+          sm:w-[28rem] sm:ml-[-3rem] sm:mt-[-5rem] 
           mb:w-[40rem] md:max-w-[40rem] md:ml-[2rem]
           lg:w-[60rem] lg:ml-[20rem] lg:mt-[-20rem] lg:pr-[6rem]">
             <Social />
