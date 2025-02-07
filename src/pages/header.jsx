@@ -9,8 +9,8 @@ const Header = () => {
   return (
     <div>
       {/* Logo */}
-      <div className="flex justify-center items-center py-4
-      sm:w-[25rem] lg:w-auto
+      <div className="grid justify-center items-center 
+      sm:w-[25rem] lg:w-auto lp:w-[18rem]
       ">
         <Link onClick={handleClick} to="/" >
         <img 
@@ -20,7 +20,7 @@ const Header = () => {
           sm:h-[5rem] sm:pl-[19rem]
           md:ml-[40rem] md:mt-[1rem] md:h-[8rem]
           lg:ml-[-25rem] lg:mt-[5rem] lg:mb-[5rem] lg:h-[10rem]
-          lp:mr-[80rem] lp:mt-[3rem] lp:mb-[7rem] lp:h-[8rem]
+          lp:mr-[65rem] lp:mt-[3rem] lp:pr-[10rem] lp:mb-[7rem] lp:h-[8rem]
           "
         />
         </Link>
@@ -28,8 +28,8 @@ const Header = () => {
 
       {/* Top Navbar - Visible on large screens, hidden on small/medium screens */}
       <nav className="hidden font-Micro text-blue-300 justify-center
-      lg:ml-[9rem] lg:flex lg:text-[5.5rem] lg:mt-[-15rem] lg:pb-[2rem]
-      lp:ml-[9rem] lp:flex lp:text-[4.5rem] lp:w-[70rem] lp:mt-[-15rem] lp:pb-[2rem] 
+      lg:ml-[12rem] lg:flex lg:text-[5.5rem] lg:mt-[-15rem] lg:pb-[2rem]
+      lp:ml-[10rem] lp:flex lp:text-[4.5rem] lp:w-[68rem] lp:mt-[-15rem] lp:pb-[2rem] 
       ">
         <Link to="/" className="px-10 hover:text-blue-300 hover:underline">
           Home

@@ -67,8 +67,11 @@ const Skills = () => {
       >        
         <li className="flex flex-col items-center">
           <IonIcon 
-            className="text-blue-300 sm:text-[2.5rem] hover:text-purple-300 hover:cursor-pointer 
-            sm:px-4 md:text-[6rem] md:px-3 lg:text-[10rem] lg:px-2 lp:text-[6rem] lp:px-4" 
+            className="text-blue-300  hover:text-purple-300 hover:cursor-pointer 
+            sm:text-[2.5rem] sm:px-4 
+            md:text-[6rem] md:px-3 
+            lg:text-[10rem] lg:px-2 
+            lp:text-[6rem] lp:px-4" 
             name="logo-figma" 
           />
           <span className="mt-2 text-center">Figma</span> {/* Added spacing and centering */}
@@ -144,15 +147,6 @@ const Skills = () => {
             name="film-outline" 
           />
           <span className="mt-2 text-center">Video Editing</span> {/* Added spacing and centering */}
-        </li>
-        
-        <li className="flex flex-col items-center">
-          <IonIcon 
-            className="text-blue-300 sm:text-[2.5rem] hover:text-purple-300 hover:cursor-pointer 
-            sm:px-2 md:text-[6rem] md:px-3 lg:text-[10rem] lg:px-2 lp:text-[6rem] lp:px-4" 
-            name="logo-html5" 
-          />
-          <span className="mt-2 text-center">HTML</span> {/* Added spacing and centering */}
         </li>
         
         <li className="flex flex-col items-center">

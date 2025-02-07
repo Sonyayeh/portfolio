@@ -8,7 +8,6 @@ import BlueWorkBox from '../Components/blueworkbox';
 import Arrow from '../Components/ArrowSvg';
 import VolleyballMockup from '../Components/volleyball';
 import YogaMockup from '../Components/puppyyoga';
-import OmuMockup from '../Components/omurice';
 import MagMockup from '../Components/magazine';
 import TwoClouds from '../assets/twoclouds.gif';
 import Bubble from '../assets/singlebubble.gif';
@@ -61,7 +60,7 @@ const Home = () => {
         className="w-auto max-w-full
           sm:w-[8rem] sm:mr-[11rem] sm:mt-[-25rem] sm:pb-[12.5rem]
           md:w-[15rem] md:mr-[35rem] md:mt-[-30rem]
-          lg:w-[20rem] lg:ml-[-12rem] lg:mt-[-35rem] lg:mb-[-9.5rem]
+          lg:w-[20rem] lg:ml-[5rem] lg:mt-[-35rem] lg:mb-[-9.5rem]
           lp:w-[20rem] lp:ml-[1rem] lp:mt-[-32rem] lp:mb-[-5rem]
         " 
       />
@@ -134,7 +133,7 @@ const Home = () => {
         <img src={TwoClouds} alt="Cloud gif" className="transform scale-x-[-1] w-16 
         sm:w-[8rem] sm:mt-[-80rem] sm:ml-[15rem] sm:pt-[58rem]
         md:w-[20rem] md:mt-[-73rem] md:ml-[35rem] md:pt-[48rem]
-        lg:w-[30rem] lg:ml-[60rem] lg:mt-[-78rem]
+        lg:w-[30rem] lg:ml-[50rem] lg:mt-[-78rem]
         lp:w-[25rem] lp:ml-[50rem] lp:mt-[-78rem]" />
       </div>
 
@@ -150,7 +149,7 @@ const Home = () => {
         sm:w-[20rem] sm:mt-[-20rem] sm:pb-[35rem] sm:ml-[2.5rem] 
         md:w-[40rem] md:ml-[7rem] md:mb-[2rem] md:mt-[-15rem]
         lg:w-[70rem] lg:ml-[-20rem] lg:mt-[-10rem]
-        lp:w-[50rem] lp:ml-[1rem] lp:mt-[-10rem]
+        lp:w-[50rem] lp:ml-[0rem] lp:mt-[-10rem]
         ">
           <PurpleWorkBox />
           <div className="flex w-full justify-center items-center 
@@ -166,8 +165,8 @@ const Home = () => {
           <p className="text-xl 
           sm:text-[2rem] sm:mr-[-2rem] sm:mt-[-51.5rem] sm:pt-[-10rem] 
           md:text-[3.5rem] md:mr-[-3rem] md:mt-[-65rem]
-          lg:text-[5rem] lg:ml-[-30rem] lg:mt-[-80rem]
-          lp:text-[4.5rem] lp:mr-[25rem] lp:mt-[-71rem]">
+          lg:text-[5.5rem] lg:ml-[-60rem] lg:mt-[-80rem]
+          lp:text-[5rem] lp:ml-[0rem] lp:mt-[-71rem] lp:w-[50rem]">
             Furrever Pals Puppy Yoga
           </p>
         </div>
@@ -209,8 +208,8 @@ const Home = () => {
           <div className="relative 
             sm:w-[20rem] sm:ml-[0rem] sm:mt-[10rem] 
             md:w-[40rem] md:ml-[1rem] md:mt-[-3rem] 
-            lg:w-[55rem] lg:ml-[3.5rem] lg:mt-[-45rem] 
-            lp:w-[45rem] lp:ml-[2.5rem] lp:mt-[-37rem]
+            lg:w-[60rem] lg:ml-[3.5rem] lg:mt-[15rem] 
+            lp:w-[50rem] lp:ml-[21rem] lp:mt-[7rem]
             flex justify-center items-center"
           >
             {/* Wrap the BlueWorkBox and VolleyballMockup inside the Link */}
@@ -235,8 +234,8 @@ const Home = () => {
             <p className="text-xl 
               sm:text-[1.6rem] sm:mr-[-1.5rem] sm:mt-[-15.5rem]
               md:text-[3.2rem] md:ml-[1rem] md:mt-[-29rem]
-              lg:text-[4.9rem] lg:mt-[-39rem] lg:ml-[32rem] lg:w-[55rem]
-              lp:text-[4.1rem] lp:mt-[-33rem] lp:ml-[20.5rem] lp:w-[50rem]"
+              lg:text-[4.9rem] lg:mt-[-42rem] lg:ml-[7rem] lg:w-[55rem]
+              lp:text-[4.1rem] lp:mt-[-35rem] lp:ml-[21rem] lp:w-[50rem]"
             >
               Beach Volleyball Tournament Poster
             </p>
@@ -272,15 +271,15 @@ const Home = () => {
         transform scale-x-[-1] 
         sm:w-[20rem] sm:ml-[2.5rem] sm:pt-[22rem]
         md:w-[40rem] md:ml-[7rem] md:pb-[1rem] md:pt-[5rem]
-        lg:w-[65rem] lg:ml-[-20rem] lg:pt-[50rem]
-        lp:w-[50rem] lp:ml-[1rem] lp:pt-[5rem]
+        lg:w-[65rem] lg:ml-[-20rem] lg:pt-[25rem]
+        lp:w-[50rem] lp:ml-[0rem] lp:pt-[5rem]
         ">
           
           <BlueWorkBox />
           <div className="absolute 
             sm:w-[18rem] sm:ml-[1rem] sm:mt-[24rem] 
             md:w-[60rem] md:ml-[-10rem] md:mt-[10rem]
-            lg:w-[55rem] lg:ml-[3rem] lg:mt-[57rem]
+            lg:w-[60rem] lg:ml-[1rem] lg:mt-[32rem]
             lp:w-[45rem] lp:ml-[2.5rem] lp:mt-[10rem]">
             <MagMockup  />
           </div>
@@ -290,7 +289,7 @@ const Home = () => {
           sm:text-[1.6rem] sm:ml-[1.8rem] sm:mt-[-16.7rem] 
           md:text-[3rem] md:mr-[-1rem] md:mt-[-31.5rem]
           lg:text-[4.8rem] lg:ml-[-12rem] lg:mt-[-46.3rem] lg:w-[55rem]
-          lp:text-[3.5rem] lp:ml-[6rem] lp:mt-[-39rem] lp:w-[40rem]">
+          lp:text-[3.5rem] lp:ml-[5rem] lp:mt-[-39rem] lp:w-[40rem]">
             National Geographic Magazine Cover
           </p>
         </div>

@@ -11,6 +11,7 @@ import Camera from "../assets/camera.svg"
 import Floppy from "../assets/Floppy.svg";
 import Skills from "../Components/skills";
 import PurpleCursor from "../Components/PurplePointer";
+import Resume from "../Components/resume";
 // I imported my photo from components folder
 // this is the social media icon I wanted to use ionicons but
 // cannot be installed, please consider them as placeholders :(((
@@ -24,15 +25,15 @@ const About = () => {
 
         <h5 className="
         sm:ml-[-1rem] sm:text-[5rem] 
-        md:ml-[-1rem] 
-        lg:ml-[2rem] lg:text-[7rem]
+        md:ml-[-1rem] md:text-[6rem]
+        lg:ml-[-12rem] lg:text-[10rem]
         "> 
             Heya!
         </h5>
         <h5 className="
         sm:ml-[-1rem] sm:text-[2rem] sm:mt-[-4rem]
-        md:ml-[-1rem]
-        lg:ml-[2rem] lg:pt-[1rem] lg:text-[3rem]
+        md:ml-[-1rem] md:text-[4rem]
+        lg:ml-[-12rem] lg:pt-[1rem] lg:text-[5rem]
         "> 
             Nice to meet you!
         </h5>
@@ -43,7 +44,7 @@ const About = () => {
         <div className=" relative mt-[30rem] 
         sm:mt-[2rem] sm:ml-[-1rem] sm:w-[25rem]
         md:mr-[1rem] md:w-[50rem] md:mt-[2rem]
-        lg:w-[70rem] lg:ml-[9rem] ">
+        lg:w-[100rem] lg:ml-[-15rem] ">
 
             {/* Project Heading and Description */}
             <div className="text-start w-full
@@ -113,24 +114,40 @@ const About = () => {
             </div>
             <div className="
             sm:ml-[15rem] sm:w-40 sm:mt-[-5rem]
-            md:ml-[42rem]
-            lg:ml-[54rem] lg:w-[20rem] lg:mb-[2rem]
+            md:ml-[30rem] md:w-[30rem]
+            lg:ml-[87rem] lg:w-[20rem] lg:mb-[2rem]
             ">
                 <PurpleCursor />
+            </div>
+            {/* resume section here! */}
+            <div
+                className="
+                    sm:ml-[-1rem] sm:w-[15rem] sm:mt-[-6rem]
+                    md:ml-[-5rem] md:w-[40rem] md:mt-[-18rem]
+                    lg:ml-[-12rem] lg:w-[50rem] lg:mb-[-18rem] lg:pb-[10rem]
+                "
+                >
+                <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">
+                    <Resume />
+                </a>
+
+
             </div>
             <div>
                 <div>
                     <h5
                     className="sm:text-[2rem] sm:ml-[5rem] sm:mt-[-2rem]
-                    md:pt-[20rem] md:ml-[15rem] md:text-[3rem]
-                    lg:ml-[6rem] lg:text-[5rem]
+                    md:pt-[3rem] md:ml-[10rem] md:text-[4rem]
+                    lg:ml-[18rem] lg:text-[8rem]
+                    lp:ml-[20rem] lp:text-[5rem] lp:w-[50rem]
                     "
                     >Some of my skills being:</h5>
                 </div>
                 <div className="w-50
                 sm:w-[25rem] sm:mr-[2rem]
                 md:pt-[3rem] md:text-[2rem] md:w-[50rem]
-                lg:mr-[2rem] lg:ml-[-15rem] lg:text-[3rem]
+                lg:ml-[10rem] lg:text-[3rem] lg:w-[80rem]
+                lp:ml-[1rem] lp:text-[3rem] lp:w-[80rem]
                 ">
                     <Skills />
                 </div>
@@ -138,20 +155,21 @@ const About = () => {
 
         </div>
         <div className="my-10 mx-auto w-full border-t-4 border-dashed border-purple-300
-        lg:ml-[10rem]
+        lg:ml-[-5rem]
         "></div>
 
         <h5 className="
         sm:text-[2.5rem] sm:mt-[-1rem] sm:ml-[2rem]
-        md:text-[5rem] md:ml-[6rem]
-        lg:text-[6rem] lg:ml-[11rem]
+        md:text-[6rem] md:ml-[17rem]
+        lg:text-[7rem] lg:ml-[10rem]
         "
         > A little more about me: </h5>
         {/* Photo Component */}
         <div className=" absolute w-full
         sm:w-1/3 sm:mt-[-74rem] sm:ml-[13.5rem]
-        md:w-1/3 md:ml-[-0.5rem] md:mt-[-48rem]
-        lg:w-2/3 lg:ml-[-9rem] lg:mt-[-70rem]
+        md:w-3/4 md:ml-[15rem] md:mt-[-138rem]
+        lg:w-1/3 lg:ml-[50rem] lg:mt-[-135rem]
+        lp:w-1/3 lp:ml-[47rem] lp:mt-[-110rem]
         ">
             <Photo />
         </div>
@@ -159,8 +177,9 @@ const About = () => {
         {/* Pointercursor Component */}
         <div className=" absolute
         sm:w-1/4 sm:ml-[18.3rem] sm:mt-[-75rem]
-        md:w-1/3 md:ml-[-1rem] md:pt-[16rem]
-        lg:w-1/3 lg:ml-[-8rem] lg:mt-[-93rem]
+        md:w-[20rem] md:ml-[38rem] md:mt-[-139rem]
+        lg:w-[5rem] lg:ml-[72.5rem] lg:mt-[-136rem]
+        lp:w-1/3 lp:ml-[65.5rem] lp:mt-[-111rem]
         ">
             <Pointercursor />
         </div>
@@ -171,21 +190,24 @@ const About = () => {
        sm:ml-[0rem] sm:w-auto sm:mt-[-80rem]
        md:w-[55rem] md:ml-[-2rem]
        lg:w-[85rem] lg:ml-[-8rem]
+       lp:w-[80rem] lp:ml-[-4rem]
        ">
             <div>
                 <h5
                 className="
                     sm:text-[3rem] sm:mt-[80rem] sm:ml-[2rem]
                     md:text-[4rem] md:ml-[15rem]
-                    lg:text-[7rem] lg:ml-[10rem]
+                    lg:text-[7rem] lg:ml-[25rem]
+                    lp:text-[7rem] lp:ml-[20rem]
                 "
                 >
                 Outside of school...
                 </h5>
                 <h5 className="
                 sm:text-[2rem] sm:mb-[-2rem] sm:ml-[2rem] 
-                md:text-[4rem] 
-                lg:text-[5rem] lg:ml-[10rem]
+                md:text-[4.5rem] 
+                lg:text-[5rem] lg:ml-[28rem]
+                lp:text-[5rem] lp:ml-[10rem]
                 flex items-center">
                 <span>I enjoy cooking!</span>
                 <img 
@@ -198,8 +220,9 @@ const About = () => {
                 </h5>
                 <h5 className="flex items-center
                 sm:text-[1.25rem] sm:ml-[2rem] sm:mt-[1rem] sm:mb-[-0.5rem]
-                md:text-[2rem] 
-                lg:text-[3rem] lg:ml-[10rem] lg:mb-[2rem]
+                md:text-[3rem] 
+                lg:text-[3rem] lg:ml-[30rem] lg:mb-[2rem] lg:pt-[2rem]
+                lp:text-[2rem] lp:ml-[10rem] lp:mt-[-2rem]
                 ">
                     (Not the best at it tho...)
                 </h5>
@@ -207,8 +230,9 @@ const About = () => {
             </div>
                 <div className="
                 sm:w-[20rem]
-                md:ml-[8rem] md:w-[40rem] md:pt-[2rem]
+                md:ml-[8rem] md:w-[40rem] md:pt-[1rem]
                 lg:w-[60rem] lg:ml-[12rem] lg:mt-[-2rem]
+                lp:w-[60rem] lp:ml-[12rem] lp:mt-[-2rem]
                 ">
                     <PhotoCarousel />
                 </div>
@@ -223,17 +247,20 @@ const About = () => {
             <div className="bg-purple-100 pt-[1rem] ml-[-3.5rem] w-auto 
             sm:ml-[0rem] sm:w-auto
             md:w-[55rem] md:ml-[-2rem] md:mt-[1rem]
-            lg:w-[85rem] lg:ml-[-8rem] lg:mt-[2rem]">
+            lg:w-[85rem] lg:ml-[-14rem] lg:mt-[2rem]
+            lp:w-[85rem] lp:ml-[-4rem] lp:mt-[2rem]">
             <h5 className="
-            sm:text-[1.7rem] sm:mb-[-2rem] sm:ml-[5rem]
-            md:text-[3.5rem] md:ml-[10rem]
-            lg:text-[4rem] lg:ml-[25rem]
+            sm:text-[1.5rem] sm:mb-[-2rem] sm:ml-[1rem]
+            md:text-[3rem] md:ml-[5rem]
+            lg:text-[5.2rem] lg:pl-[1rem] lg:w-[90rem]
+            lp:text-[5rem] lp:ml-[5rem]
             flex items-center">
                 <img 
                     src={Camera} 
                     alt="Camera" 
                     className="w-8 h-8 mr-2
-                    lg:w-12 lg:h-12"
+                    lg:w-20 lg:h-12
+                    lp:w-24 lp:h-24"
                     />
                     I also love travelling and taking photos!
                 </h5>
@@ -241,6 +268,7 @@ const About = () => {
                     sm:w-[20rem]
                     md:w-[50rem] md:ml-[2rem] md:mt-[1rem]
                     lg:w-[80rem] lg:mt-[2rem] lg:ml-[2rem]
+                    lp:w-[80rem] lp:mt-[2rem] lp:ml-[2rem]
                     ">
                         <TravelPhotos />
                 </div>
@@ -255,8 +283,9 @@ const About = () => {
                             alt="Floppy disk, click here to my secret photo album >:)" 
                             className="w-8 h-8 mb-2 ml-[25rem] 
                             sm:ml-[21rem] sm:mb-[1rem]
-                            md:ml-[38rem]
-                            lg:ml-[64rem]
+                            md:ml-[52rem] md:mb-[2rem]
+                            lg:ml-[80rem]
+                            lp:ml-[82rem]
                             hover:cursor-pointer"
                             />
                     </Link>
@@ -279,8 +308,9 @@ const About = () => {
         {/* Social Section */}
         <div className="
           sm:w-[28rem] sm:ml-[-3rem] sm:mt-[-5rem] 
-          mb:w-[40rem] md:max-w-[40rem] md:ml-[2rem]
-          lg:w-[60rem] lg:ml-[20rem] lg:mt-[-20rem] lg:pr-[6rem]">
+          mb:w-[40rem] md:max-w-[40rem] md:ml-[10rem] 
+          lg:w-[50rem] lg:ml-[30rem] lg:mt-[-5rem] lg:pr-[6rem] lg:mb-[-7rem]
+          lp:w-[60rem] lp:ml-[35rem] lp:mt-[2rem] lp:pr-[6rem]">
             <Social />
           </div>
 
