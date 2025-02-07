@@ -208,7 +208,7 @@ const Home = () => {
            {/* BlueWorkBox */}
           <div className="relative 
             sm:w-[20rem] sm:ml-[0rem] sm:mt-[10rem] 
-            md:w-[35rem] md:ml-[2.5rem] md:mt-[-30rem] 
+            md:w-[40rem] md:ml-[1rem] md:mt-[-3rem] 
             lg:w-[55rem] lg:ml-[3.5rem] lg:mt-[-45rem] 
             lp:w-[45rem] lp:ml-[2.5rem] lp:mt-[-37rem]
             flex justify-center items-center"
@@ -233,8 +233,8 @@ const Home = () => {
           {/* Title */}
           <div className="text-center mt-4">
             <p className="text-xl 
-              sm:text-[1.6rem] sm:mr-[-0.2rem] sm:mt-[-15.5rem]
-              md:text-[3.2rem] md:ml-[1rem] md:mt-[-35rem]
+              sm:text-[1.6rem] sm:mr-[-1.5rem] sm:mt-[-15.5rem]
+              md:text-[3.2rem] md:ml-[1rem] md:mt-[-29rem]
               lg:text-[4.9rem] lg:mt-[-39rem] lg:ml-[32rem] lg:w-[55rem]
               lp:text-[4.1rem] lp:mt-[-33rem] lp:ml-[20.5rem] lp:w-[50rem]"
             >
@@ -271,7 +271,7 @@ const Home = () => {
         <div className="grid relative 
         transform scale-x-[-1] 
         sm:w-[20rem] sm:ml-[2.5rem] sm:pt-[22rem]
-        md:w-[40rem] md:ml-[7rem] md:pb-[1rem]
+        md:w-[40rem] md:ml-[7rem] md:pb-[1rem] md:pt-[5rem]
         lg:w-[65rem] lg:ml-[-20rem] lg:pt-[50rem]
         lp:w-[50rem] lp:ml-[1rem] lp:pt-[5rem]
         ">
@@ -279,7 +279,7 @@ const Home = () => {
           <BlueWorkBox />
           <div className="absolute 
             sm:w-[18rem] sm:ml-[1rem] sm:mt-[24rem] 
-            md:w-[60rem] md:ml-[-10rem] md:mt-[5rem]
+            md:w-[60rem] md:ml-[-10rem] md:mt-[10rem]
             lg:w-[55rem] lg:ml-[3rem] lg:mt-[57rem]
             lp:w-[45rem] lp:ml-[2.5rem] lp:mt-[10rem]">
             <MagMockup  />
