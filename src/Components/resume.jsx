@@ -13,7 +13,6 @@ const Resume = (props) => (
     }}
     transition={{
       duration: 1.3,
-      repeat: Infinity,  // Repeat the animation infinitely
       ease: "easeInOut",  // Smooth easing
       type: "keyframes",  // Animate in keyframe steps
     }}

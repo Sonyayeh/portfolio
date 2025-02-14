@@ -26,6 +26,21 @@ export default {
         'h4': ['2rem', {lineHeight: '1.5', letterSpacing: '0.01em'}],
         'h5': ['4rem', {lineHeight: '1.5', letterSpacing: '0.01em'}],
       }, 
+      // this is the ease in effect on the about page's goal section
+      theme: {
+        extend: {
+          animation: {
+            fadeIn: 'fadeIn 1s ease-out forwards',
+          },
+          keyframes: {
+            fadeIn: {
+              '0%': { opacity: '0' },
+              '100%': { opacity: '1' },
+            },
+          },
+        },
+      },
+      plugins: [],
     },
     screens: {
       'sm': '375px',
@@ -85,6 +100,8 @@ export default {
       })
     }
   ],
+
+  
 
   
 }

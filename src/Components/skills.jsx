@@ -57,6 +57,15 @@ const Skills = () => {
         mask: "linear-gradient(90deg, transparent, white 20%, white 80%, transparent)",
       }}
     >
+      <h5
+        className="
+        sm:text-[2.3rem] sm:ml-[3rem] sm:mt-[-2rem]
+        md:pt-[3rem] md:ml-[5rem] md:text-[5rem]
+        lg:ml-[12rem] lg:text-[6rem]
+        lp:ml-[20rem] lp:text-[5rem] lp:w-[50rem]
+        "
+        >Some of my skills being:</h5>
+
       <ul
         className="scroller__inner flex gap-4 py-2"
         style={{
@@ -70,8 +79,7 @@ const Skills = () => {
             className="text-blue-300  hover:text-purple-300 hover:cursor-pointer 
             sm:text-[2.5rem] sm:px-4 
             md:text-[6rem] md:px-3 
-            lg:text-[10rem] lg:px-2 
-            lp:text-[6rem] lp:px-4" 
+            lg:text-[10rem] lg:px-2 lp:text-[6rem] lp:px-4" 
             name="logo-figma" 
           />
           <span className="mt-2 text-center">Figma</span> {/* Added spacing and centering */}

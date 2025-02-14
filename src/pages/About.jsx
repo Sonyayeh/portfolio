@@ -1,9 +1,8 @@
 import React from "react";
 import {Link} from "react-router-dom";
-import Masonry from "react-responsive-masonry";
+import TravelPhotos from "../Components/TravelPhotos";
 import Pointercursor from "../Components/photopointer";
 import PhotoCarousel from "../Components/Foodslider";
-import TravelPhotos from "../Components/TravelPhotos";
 import Photo from "../Components/photo";
 import Language from "../Components/language";
 import Heart from "../assets/heart.svg";
@@ -12,6 +11,8 @@ import Floppy from "../assets/Floppy.svg";
 import Skills from "../Components/skills";
 import PurpleCursor from "../Components/PurplePointer";
 import Resume from "../Components/resume";
+import Values from "../Components/Values";
+import Goal from "../Components/goal";
 // I imported my photo from components folder
 // this is the social media icon I wanted to use ionicons but
 // cannot be installed, please consider them as placeholders :(((
@@ -21,7 +22,9 @@ const About = () => {
     return (
       // they are basically the same as the other pages, but just
       // positioning differences
-      <div className="container mx-auto lg:ml-[6rem]">
+      <div className="container mx-auto 
+      sm:w-full
+      lg:ml-[6rem]">
 
         <h5 className="
         sm:ml-[-1rem] sm:text-[5rem] 
@@ -45,6 +48,26 @@ const About = () => {
         sm:mt-[2rem] sm:ml-[-1rem] sm:w-[25rem]
         md:mr-[1rem] md:w-[50rem] md:mt-[2rem]
         lg:w-[100rem] lg:ml-[-15rem] ">
+
+        <div className=" absolute w-full
+        sm:w-1/3 sm:mt-[-3rem] sm:ml-[14.5rem]
+        md:w-3/4 md:ml-[15rem] md:mt-[-138rem]
+        lg:w-1/3 lg:ml-[50rem] lg:mt-[-15rem]
+        lp:w-1/3 lp:ml-[55rem] lp:mt-[3rem]
+        ">
+            <Photo />
+        </div>
+
+        {/* Pointercursor Component */}
+        <div className=" absolute
+        sm:w-1/4 sm:ml-[19.2rem] sm:mt-[-4.3rem]
+        md:w-[20rem] md:ml-[38rem] md:mt-[-139rem]
+        lg:w-[5rem] lg:ml-[69rem] lg:mt-[-16rem]
+        lp:w-1/3 lp:ml-[65.5rem] lp:mt-[2rem]
+        ">
+            <Pointercursor />
+        </div>
+        
 
             {/* Project Heading and Description */}
             <div className="text-start w-full
@@ -97,7 +120,7 @@ const About = () => {
                 sm:px-1.5 w-full 
                 lg:flex-row">
                   <h4 className="
-                  sm:text-[0.75rem]
+                  sm:text-[0.65rem]
                   md:text-[1rem]
                   lg:text-[2rem]
                   ">
@@ -133,64 +156,45 @@ const About = () => {
 
 
             </div>
+
+        </div>
+        <div>
+            <Goal />
+        </div>
+        <div>
+            <Values />
+        </div>
             <div>
-                <div>
-                    <h5
-                    className="sm:text-[2rem] sm:ml-[5rem] sm:mt-[-2rem]
-                    md:pt-[3rem] md:ml-[10rem] md:text-[4rem]
-                    lg:ml-[18rem] lg:text-[8rem]
-                    lp:ml-[20rem] lp:text-[5rem] lp:w-[50rem]
-                    "
-                    >Some of my skills being:</h5>
-                </div>
                 <div className="w-50
                 sm:w-[25rem] sm:mr-[2rem]
                 md:pt-[3rem] md:text-[2rem] md:w-[50rem]
-                lg:ml-[10rem] lg:text-[3rem] lg:w-[80rem]
+                lg:ml-[1rem] lg:text-[3rem] lg:w-[68rem]
                 lp:ml-[1rem] lp:text-[3rem] lp:w-[80rem]
                 ">
                     <Skills />
                 </div>
-            </div>
-
         </div>
+
         <div className="my-10 mx-auto w-full border-t-4 border-dashed border-purple-300
         lg:ml-[-5rem]
         "></div>
 
         <h5 className="
         sm:text-[2.5rem] sm:mt-[-1rem] sm:ml-[2rem]
-        md:text-[6rem] md:ml-[17rem]
+        md:text-[5rem] md:ml-[8rem]
         lg:text-[7rem] lg:ml-[10rem]
+        lp:text-[7rem] lp:ml-[10rem]
         "
         > A little more about me: </h5>
         {/* Photo Component */}
-        <div className=" absolute w-full
-        sm:w-1/3 sm:mt-[-74rem] sm:ml-[13.5rem]
-        md:w-3/4 md:ml-[15rem] md:mt-[-138rem]
-        lg:w-1/3 lg:ml-[50rem] lg:mt-[-135rem]
-        lp:w-1/3 lp:ml-[47rem] lp:mt-[-110rem]
-        ">
-            <Photo />
-        </div>
-
-        {/* Pointercursor Component */}
-        <div className=" absolute
-        sm:w-1/4 sm:ml-[18.3rem] sm:mt-[-75rem]
-        md:w-[20rem] md:ml-[38rem] md:mt-[-139rem]
-        lg:w-[5rem] lg:ml-[72.5rem] lg:mt-[-136rem]
-        lp:w-1/3 lp:ml-[65.5rem] lp:mt-[-111rem]
-        ">
-            <Pointercursor />
-        </div>
-        
+       
 
        {/* food image section */}
        <div className="bg-blue-100 justify-center 
        sm:ml-[0rem] sm:w-auto sm:mt-[-80rem]
        md:w-[55rem] md:ml-[-2rem]
        lg:w-[85rem] lg:ml-[-8rem]
-       lp:w-[80rem] lp:ml-[-4rem]
+       lp:w-[85rem] lp:ml-[-4rem]
        ">
             <div>
                 <h5
@@ -229,7 +233,7 @@ const About = () => {
                 
             </div>
                 <div className="
-                sm:w-[20rem]
+                sm:w-[23rem]
                 md:ml-[8rem] md:w-[40rem] md:pt-[1rem]
                 lg:w-[60rem] lg:ml-[12rem] lg:mt-[-2rem]
                 lp:w-[60rem] lp:ml-[12rem] lp:mt-[-2rem]
@@ -250,7 +254,7 @@ const About = () => {
             lg:w-[85rem] lg:ml-[-14rem] lg:mt-[2rem]
             lp:w-[85rem] lp:ml-[-4rem] lp:mt-[2rem]">
             <h5 className="
-            sm:text-[1.5rem] sm:mb-[-2rem] sm:ml-[1rem]
+            sm:text-[1.5rem] sm:mb-[-2rem] sm:ml-[1rem] 
             md:text-[3rem] md:ml-[5rem]
             lg:text-[5.2rem] lg:pl-[1rem] lg:w-[90rem]
             lp:text-[5rem] lp:ml-[5rem]
@@ -265,7 +269,7 @@ const About = () => {
                     I also love travelling and taking photos!
                 </h5>
                 <div className="
-                    sm:w-[20rem]
+                    sm:w-[23rem]
                     md:w-[50rem] md:ml-[2rem] md:mt-[1rem]
                     lg:w-[80rem] lg:mt-[2rem] lg:ml-[2rem]
                     lp:w-[80rem] lp:mt-[2rem] lp:ml-[2rem]

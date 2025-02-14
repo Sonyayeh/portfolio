@@ -13,8 +13,8 @@ function Footer() {
     >
       <div className="text-xl text-center
         sm:text-[1.5rem] sm:justify-center sm:mr-[-1rem] 
-        md:text-[4rem] md:justify-center md:pb-[5rem]
-        lg:text-[6rem] lg:pb-[0rem] lg:ml-[-10rem]
+        md:text-[4rem] md:mr-[-13rem] md:pb-[5rem]
+        lg:text-[6rem] lg:pb-[0rem] lg:ml-[-2rem]
         lp:text-[5rem] lp:mr-[-12rem] lp:pt-[-1rem]"
       >
         {/* I used a copyright footer text instead */}

@@ -57,14 +57,16 @@ const Language = () => {
   return (
     <div className="text-center my-5 pl-[2rem]" ref={sectionRef}>
       <h5 className="text-black-300 text-3xl mb-4 
+      sm:text-[1.5rem] sm:ml-[-2rem]
       lg:text-[5rem] lg:ml-[-17rem] lg:pt-[2rem] lg:pb-[3rem] lg:w-[100rem]
       lp:text-[4rem] lp:mr-[5rem] lp:pt-[2rem] lp:pb-[3rem]
       md:pt-[2rem] md:text-[3rem] md:pb-[2rem] ">
-        I also <strong className="italic underline text-red-500">love</strong> learning languages in my spare time!
+        I also learning languages in my spare time!
       </h5>
 
       {/* Chinese/Mandarin Bar */}
       <div className="bar-main-container bg-purple-300 text-white rounded-lg w-72 mx-auto mb-4 
+      sm:ml-[0.7rem]
       md:ml-[3rem] md:mb-[0.6rem] 
       lg:ml-[-5rem] 
       lp:ml-[-2rem] lp:w-full lp:pb-[2rem]
@@ -87,7 +89,9 @@ const Language = () => {
       </div>
 
       {/* English Bar */}
-      <div className="bar-main-container bg-sky-300 text-white rounded-lg w-72 mx-auto mb-4 md:ml-[23rem] md:mt-[-6.5rem] 
+      <div className="bar-main-container bg-sky-300 text-white rounded-lg w-72 mx-auto mb-4 
+      sm:ml-[0.7rem]
+      md:ml-[23rem] md:mt-[-6.5rem] 
       lg:ml-[-5rem]  lg:mt-[3rem]
       lp:ml-[-2rem] lp:w-full lp:pb-[2rem] lp:mt-[3rem]">
         <h5 className="text-3xl sm:text-[2rem] lg:text-[3rem] lp:text-[3rem]">English</h5>
@@ -105,7 +109,9 @@ const Language = () => {
       </div>
 
       {/* French Bar */}
-      <div className="bar-main-container bg-emerald-300 text-white rounded-lg w-72 mx-auto mb-4 md:ml-[3rem] 
+      <div className="bar-main-container bg-emerald-300 text-white rounded-lg w-72 mx-auto mb-4 
+      sm:ml-[0.7rem]
+      md:ml-[3rem] 
       lg:ml-[-5rem]  lg:mt-[5rem]
       lp:ml-[-2rem] lp:w-full lp:pb-[2rem] lp:mt-[3rem]">
         <h5 className="text-3xl sm:text-[2rem] lg:text-[3rem] lp:text-[3rem]">French</h5>
@@ -123,7 +129,9 @@ const Language = () => {
       </div>
 
       {/* Japanese Bar */}
-      <div className="bar-main-container bg-yellow-300 text-white rounded-lg w-72 mx-auto mb-4 md:ml-[23rem] md:mt-[-7rem] 
+      <div className="bar-main-container bg-yellow-300 text-white rounded-lg w-72 mx-auto mb-4 md:ml-[23rem] 
+      sm:ml-[0.7rem]
+      md:mt-[-7rem] 
       lg:ml-[-5rem]  lg:mt-[5rem]
       lp:ml-[-2rem] lp:w-full lp:pb-[2rem] lp:mt-[3rem]">
         <h5 className="text-3xl sm:text-[2rem] lg:text-[3rem] lp:text-[3rem]">Japanese</h5>
@@ -142,7 +150,9 @@ const Language = () => {
       </div>
 
       {/* Spanish Bar */}
-      <div className="bar-main-container bg-orange-300 text-white rounded-lg w-72 mx-auto mb-4 md:ml-[3rem] 
+      <div className="bar-main-container bg-orange-300 text-white rounded-lg w-72 mx-auto mb-4 
+      sm:ml-[0.7rem]
+      md:ml-[3rem] 
       lg:ml-[-5rem]  lg:mt-[5rem]
       lp:ml-[-2rem] lp:w-full lp:pb-[2rem] lp:mt-[3rem]">
         <h5 className="text-3xl sm:text-[2rem] lg:text-[3rem] lp:text-[3rem]">Spanish</h5>
@@ -158,7 +168,9 @@ const Language = () => {
       </div>
 
       {/* German Bar */}
-      <div className="bar-main-container bg-red-300 text-white rounded-lg w-72 mx-auto mb-4 md:ml-[23rem] md:mt-[-7rem] 
+      <div className="bar-main-container bg-red-300 text-white rounded-lg w-72 mx-auto mb-4 
+      sm:ml-[0.7rem]
+      md:ml-[23rem] md:mt-[-7rem] 
       lg:ml-[-5rem]  lg:mt-[5rem]
       lp:ml-[-2rem] lp:w-full lp:pb-[2rem] lp:mt-[3rem]">
         <h5 className="text-3xl sm:text-[2rem] lg:text-[3rem] lp:text-[3rem]">German</h5>
@@ -174,7 +186,9 @@ const Language = () => {
       </div>
 
       {/* Dutch Bar */}
-      <div className="bar-main-container bg-pink-300 text-white rounded-lg w-72 mx-auto mb-4 md:ml-[13rem] 
+      <div className="bar-main-container bg-pink-300 text-white rounded-lg w-72 mx-auto mb-4 
+      sm:ml-[0.7rem]
+      md:ml-[13rem] 
       lg:ml-[-5rem]  lg:mt-[5rem]
       lp:ml-[-2rem] lp:w-full lp:pb-[2rem] lp:mt-[3rem]">
         <h5 className="text-3xl sm:text-[2rem] lg:text-[3rem] lp:text-[3rem]">Dutch</h5>
