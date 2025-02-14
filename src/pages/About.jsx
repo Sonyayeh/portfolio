@@ -130,7 +130,7 @@ const About = () => {
 
                     I came to BCIT at first to study graphic design, but soon discovered my passion for UI/UX through one of the courses the program offered. I was recommended by the program head to enroll in the New Media Design + Web Development Diploma, as it covers more than just UI/UX, combining my knowledge of art and design. <br /><br />
                     
-                    Currently, I am in my third term, pursuing my passion for UI/UX design and some front-end development! <br /><br />
+                    Currently, I am in my fourth term, pursuing my passion for UI/UX design and some front-end development! <br /><br />
 
                   </h4>
                 </div>

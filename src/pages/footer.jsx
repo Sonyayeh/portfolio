@@ -18,7 +18,7 @@ function Footer() {
         lp:text-[5rem] lp:mr-[-12rem] lp:pt-[-1rem]"
       >
         {/* I used a copyright footer text instead */}
-        <p>&copy; 2024 Sonya Yeh, All Rights Reserved</p>
+        <p>&copy; 2025 Sonya Yeh, All Rights Reserved</p>
       </div>
     </div>
   );
