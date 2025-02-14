@@ -7,37 +7,28 @@ const Goal = () => {
   useEffect(() => {
     const section = sectionRef.current;
 
-    // Create an intersection observer to detect when the section is in view
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            setInView(true);  // Set inView to true when the section comes into view
-          }
+          setInView(entry.isIntersecting); // Set inView based on visibility
         });
       },
-      { threshold: 0.5 } // Trigger when 50% of the element is in view
+      { threshold: 0.5 } // Trigger at 50% visibility
     );
 
-    if (section) {
-      observer.observe(section);
-    }
+    if (section) observer.observe(section);
 
-    // Clean up observer when the component is unmounted
     return () => {
-      if (section) {
-        observer.unobserve(section);
-      }
+      if (section) observer.unobserve(section);
     };
   }, []);
 
   return (
     <section
       ref={sectionRef}
-      className={`max-w-6xl mx-auto opacity-0 transition-opacity duration-1000 ${inView ? 'opacity-100 animate-fadeIn' : ''}`}
-      style={{
-        animation: inView ? 'fadeIn 1s ease-out forwards' : 'none',  // Fade in when in view
-      }}
+      className={`max-w-6xl mx-auto transition-opacity duration-1000 ease-out ${
+        inView ? "opacity-100" : "opacity-0"
+      }`}
     >
       <h2 className="text-[2rem] font-bold text-center text-orange-300 mb-6
       sm:text-[1rem]
