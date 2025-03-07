@@ -294,11 +294,6 @@ const Home = () => {
           </h5>
         </div>
       </div>
-      <div>
-        <h5>
-          testing testing
-        </h5>
-      </div>
 
       {/* Footer and Social Sections */}
       {/* I actually wanted to download IonIcons, but for some reason it didn't work... 
