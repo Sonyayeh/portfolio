@@ -53,25 +53,28 @@ const Skills = () => {
       data-speed="fast"
       style={{
         WebkitMask:
-          "linear-gradient(90deg, transparent, white 20%, white 80%, transparent)",
-        mask: "linear-gradient(90deg, transparent, white 20%, white 80%, transparent)",
+          "linear-gradient(90deg, transparent, white 15%, white 84%, transparent)",
+        mask: "linear-gradient(90deg, transparent, white 15%, white 75%, transparent)",
       }}
     >
       <h5
         className="
-        sm:text-[2.3rem] sm:ml-[3rem] sm:mt-[-2rem]
-        md:pt-[3rem] md:ml-[5rem] md:text-[5rem]
-        lg:ml-[12rem] lg:text-[6rem]
-        lp:ml-[20rem] lp:text-[5rem] lp:w-[50rem]
+        text-sky-400 italic underline
+        sm:text-[1.4rem] sm:ml-[2rem] sm:pt-[1rem]
+        md:pt-[3rem] md:ml-[5rem] md:text-[3rem]
+        lg:ml-[2rem] lg:text-[4.5rem] lg:w-[62rem]
+        lp:ml-[5rem] lp:text-[5rem] lp:w-[70rem]
         "
         >Some of my skills being:</h5>
 
       <ul
-        className="scroller__inner flex gap-4 py-2"
+        className="scroller__inner flex gap-[3rem] py-4 lp:w-[60%]
+        "
         style={{
           width: "max-content",
+          maxWidth: "auto",
           animation:
-            "scroll var(--_animation-duration, 90s) var(--_animation-direction, forwards) linear infinite",
+            "scroll var(--_animation-duration, 100s) var(--_animation-direction, forwards) linear infinite",
         }}
       >        
         <li className="flex flex-col items-center">
@@ -79,7 +82,8 @@ const Skills = () => {
             className="text-blue-300  hover:text-purple-300 hover:cursor-pointer 
             sm:text-[2.5rem] sm:px-4 
             md:text-[6rem] md:px-3 
-            lg:text-[10rem] lg:px-2 lp:text-[6rem] lp:px-4" 
+            lg:text-[10rem] lg:px-3
+            lp:text-[6rem] lp:px-4" 
             name="logo-figma" 
           />
           <span className="mt-2 text-center">Figma</span> {/* Added spacing and centering */}
@@ -88,7 +92,10 @@ const Skills = () => {
         <li className="flex flex-col items-center">
           <IonIcon 
             className="text-blue-300 sm:text-[2.5rem] hover:text-purple-300 hover:cursor-pointer 
-            sm:px-2 md:text-[6rem] md:px-3 lg:text-[10rem] lg:px-2 lp:text-[6rem] lp:px-4" 
+            sm:px-2 
+            md:text-[6rem] md:px-3 
+            lg:text-[10rem] lg:px-2 
+            lp:text-[6rem] lp:px-4" 
             name="color-palette-outline" 
           />
           <span className="mt-2 text-center">Graphic Design</span> {/* Added spacing and centering */}

@@ -34,7 +34,7 @@ const Goal = () => {
       sm:text-[1rem]
       md:text-[2rem] md:w-[70rem] md:ml-[-9rem] md:pb-[1rem]
       lp:text-[2rem] lp:ml-[1rem]
-      lg:text-[2.5rem] lg:w-[124rem] lg:ml-[-25rem] lg:mt-[5rem] lg:mb-[5rem]
+      lg:text-[2.5rem] lg:w-[120rem] lg:ml-[-30rem] lg:mt-[5rem] lg:mb-[5rem]
       ">
         " I aim to use New Media to transform my artistic background into interactive storytelling experiences that connect and engage people. "
       </h2>

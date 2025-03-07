@@ -10,9 +10,9 @@ import Cookie from "../assets/food/cookie.png";
 import Croissant from "../assets/food/croissant.jpg";
 import Cookies from "../assets/food/cookiebox.png";
 import Hotpot from "../assets/food/hotpot.png";
+import Heart from "../assets/heart.svg";
 
-
-const PhotoCarousel = () => {
+const FoodSlider = () => {
   const settings = {
     dots: false,
     arrows: false,
@@ -20,84 +20,47 @@ const PhotoCarousel = () => {
     speed: 500,
     autoplay: true,
     autoplaySpeed: 2000,
-    slidesToShow: 1, // Ensure only one slide is shown
-    slidesToScroll: 1, // Scroll one slide at a time
+    slidesToShow: 1,
+    slidesToScroll: 1,
     responsive: [
-      {
-        breakpoint: 1024, // Larger screens
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-        },
-      },
-      {
-        breakpoint: 768, // Tablets
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-        },
-      },
-      {
-        breakpoint: 480, // Mobile devices
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-        },
-      },
+      { breakpoint: 1024, settings: { slidesToShow: 1, slidesToScroll: 1 } },
+      { breakpoint: 768, settings: { slidesToShow: 1, slidesToScroll: 1 } },
+      { breakpoint: 480, settings: { slidesToShow: 1, slidesToScroll: 1 } },
     ],
-    appendDots: (dots) => (
-      <ul className="absolute bottom-2 flex justify-center gap-2">
-        {dots}
-      </ul>
-    ),
-    customPaging: (i) => (
-      <button className="w-3 h-3 bg-gray-400 rounded-full hover:bg-gray-600 transition-colors">
-        <span className="sr-only">Slide {i + 1}</span>
-      </button>
-    ),
-    prevArrow: <CustomArrow direction="left" />,
-    nextArrow: <CustomArrow direction="right" />,
   };
 
   const photos = [
     { id: 1, src: Beef, alt: "Beef Noodles" },
-    { id: 2, src: Cake, alt: "Strawberry Cake" }, 
+    { id: 2, src: Cake, alt: "Strawberry Cake" },
     { id: 3, src: Chicken, alt: "Chicken" },
     { id: 4, src: Cookie, alt: "Single cookie" },
     { id: 5, src: Croissant, alt: "Croissant" },
     { id: 6, src: Cookies, alt: "Cookie box" },
     { id: 7, src: Hotpot, alt: "Hot pot" },
-
   ];
 
   return (
-    <div className="relative max-w-screen-md mx-auto p-4">
-      <Slider {...settings}>
-        {photos.map((photo) => (
-          <div key={photo.id} className="p-2">
-            <img
-              src={photo.src}
-              alt={photo.alt}
-              className="rounded-lg w-full h-auto shadow-md object-cover"
-            />
-          </div>
-        ))}
-      </Slider>
+    <div className="bg-blue-100 flex flex-col items-center p-4 md:w-[55rem] md:-ml-8 lg:w-[85rem] lg:ml-[-8rem] lp:ml-[-4rem] lp:w-[83rem]">
+
+      <h5 className="flex items-center text-center text-2xl md:w-[20rem[ md:text-[3rem] lg:text-5xl lg:pt-[1rem] lg:pb-[1rem] mb-4">
+        <span>I enjoy cooking</span>
+        <img src={Heart} alt="Heart" className="ml-2 w-6 h-6 md: lg:w-12 lg:h-12 " />
+      </h5>
+      <div className="max-w-screen-md w-full lg:w-100px">
+        <Slider {...settings}>
+          {photos.map((photo) => (
+            <div key={photo.id} className="p-2">
+              <img
+                src={photo.src}
+                alt={photo.alt}
+                className="rounded-lg w-full h-auto shadow-md object-cover"
+              />
+            </div>
+          ))}
+        </Slider>
+      </div>
     </div>
   );
 };
 
-// Custom Arrow Component
-const CustomArrow = React.forwardRef(({ direction, onClick }, ref) => (
-  <button
-    ref={ref}
-    className={`absolute top-1/2 z-10 text-xl transform -translate-y-1/2 ${
-      direction === "left" ? "left-[-60px]" : "right-[-60px]"
-    } text-blue-300 hover:text-purple-300`}
-    onClick={onClick}
-  >
-    {direction === "left" ? "◀" : "▶"}
-  </button>
-));
-
-export default PhotoCarousel;
+export default FoodSlider;

@@ -27,17 +27,17 @@ const Home = () => {
       <div className="flex justify-center items-center lg:mt-[10rem] lg:w-[20rem]">
         {/* basically the same thing as the two clouds */}
         <h1 className="
-        sm:text-[2rem] sm:mt-[-0.5rem] sm:ml-[-3rem] sm:pr-[1rem]
+        sm:text-[2rem] sm:mt-[-0.5rem] sm:ml-[-1rem] sm:pr-[3rem]
         md:text-[4.5rem] md:ml-[3rem] md:mt-[10rem]
         lg:text-[8rem] lg:ml-[-57rem] lg:mt-[-5rem]
         lp:text-[5.5rem] lp:ml-[-20rem] lp:mt-[-3rem]
         font-Micro">
-          I am a&nbsp;
+          I am a 
         </h1>
         {/* the text bubble section */}
         <img src={TextBubble} alt="Text bubble for the cat section" 
           className="w-full max-w-[80rem] h-[16rem] bg-contain bg-no-repeat 
-          sm:ml-[-1rem] sm:h-[2.5rem] sm:w-[15rem] sm:mb-[10rem] sm:mt-[10rem] 
+          sm:ml-[-2rem] sm:h-[2.5rem] sm:w-[15rem] sm:mb-[10rem] sm:mt-[10rem] 
           md:ml-[1rem] md:h-[7rem] md:w-[35rem] md:mb-[9rem] md:mt-[20rem]
           lg:h-[9rem] lg:w-[55rem] lg:mr-[-115rem] lg:mt-[5rem]
           lp:h-[7.5rem] lp:w-[55rem] lp:mt-[7rem] lp:mr-[-18rem]
@@ -83,7 +83,7 @@ const Home = () => {
             loop
             showCursor
             className="text-black font-Micro
-            sm:text-[2rem] sm:mt-[-15.5rem] sm:ml-[-14rem]
+            sm:text-[2rem] sm:mt-[-15.5rem] sm:ml-[-11.5rem]
             md:text-[4rem] md:ml-[-31rem] md:mt-[-18.5rem]
             lg:text-[7rem] lg:ml-[-8rem] lg:mt-[-21.6rem]
             lp:text-[4.8rem] lp:ml-[-17rem] lp:mt-[-19.5rem]
@@ -98,7 +98,7 @@ const Home = () => {
       animation method, for reference, it's at CatSvg.jsx in the Components folder */}
       <div className="flex justify-center mt-12">
         <CatGif className="w-40 
-        sm:w-[5rem] sm:mr-[-15rem] sm:mb-[25rem] sm:mt-[-13rem]
+        sm:w-[5rem] sm:mr-[-20rem] sm:mb-[25rem] sm:mt-[-13rem]
         md:w-[10rem] md:mr-[-45rem] md:pb-[-5rem] md:pt-[3rem]
         lg:w-[12rem] lg:ml-[21rem] lg:mt-[-15rem] lg:mb-[20rem]
         lp:w-[12rem] lp:ml-[20rem] lp:mt-[-15rem] lp:mb-[20rem]" />
@@ -118,12 +118,12 @@ const Home = () => {
       {/* Sample Work Title */}
       {/* this is the sample work text */}
       <div className="flex justify-center w-full mt-20 text-center">
-        <p className="text-3xl 
-        sm:text-[3rem] sm:mt-[3rem] sm:ml-[2rem] sm:mb-[20rem]
+        <h5 className="text-3xl 
+        sm:text-[2rem] sm:mt-[3rem] sm:ml-[2rem] sm:mb-[20rem]
         md:text-[5rem] md:ml-[5rem] md:mt-[11rem] md:pb-[2rem]
         lg:text-[10rem] lg:mt-[1rem] lg:mr-[-1rem]
         lp:text-[7rem] lp:mt-[-5rem] lp:mr-[5rem]">
-          Sample Work:</p>
+          Sample Work:</h5>
       </div>
 
          {/* Cloud GIFs */}
@@ -148,7 +148,7 @@ const Home = () => {
         <div className="grid sm:h-auto 
         sm:w-[20rem] sm:mt-[-20rem] sm:pb-[35rem] sm:ml-[2.5rem] 
         md:w-[40rem] md:ml-[7rem] md:mb-[2rem] md:mt-[-15rem]
-        lg:w-[70rem] lg:ml-[-20rem] lg:mt-[-10rem]
+        lg:w-[70rem] lg:ml-[-10rem] lg:mt-[-10rem]
         lp:w-[50rem] lp:ml-[0rem] lp:mt-[-10rem]
         ">
           <PurpleWorkBox />
@@ -162,13 +162,13 @@ const Home = () => {
           </div>
         </div>
         <div className="text-center">
-          <p className="text-xl 
-          sm:text-[2rem] sm:mr-[-2rem] sm:mt-[-51.5rem] sm:pt-[-10rem] 
+          <h5 className="text-xl 
+          sm:text-[1.3rem] sm:mr-[-2rem] sm:mt-[-51.5rem] sm:pt-[-10rem] 
           md:text-[3.5rem] md:mr-[-3rem] md:mt-[-65rem]
-          lg:text-[5.5rem] lg:ml-[-60rem] lg:mt-[-80rem]
+          lg:text-[5.5rem] lg:ml-[-5rem] lg:mt-[-80rem]
           lp:text-[5rem] lp:ml-[0rem] lp:mt-[-71rem] lp:w-[50rem]">
             Furrever Pals Puppy Yoga
-          </p>
+          </h5>
         </div>
 
         {/* large bubble */}
@@ -208,7 +208,7 @@ const Home = () => {
           <div className="relative 
             sm:w-[20rem] sm:ml-[0rem] sm:mt-[10rem] 
             md:w-[40rem] md:ml-[1rem] md:mt-[-3rem] 
-            lg:w-[60rem] lg:ml-[3.5rem] lg:mt-[15rem] 
+            lg:w-[60rem] lg:ml-[18.5rem] lg:mt-[15rem] 
             lp:w-[50rem] lp:ml-[21rem] lp:mt-[7rem]
             flex justify-center items-center"
           >
@@ -231,14 +231,14 @@ const Home = () => {
 
           {/* Title */}
           <div className="text-center mt-4">
-            <p className="text-xl 
-              sm:text-[1.6rem] sm:mr-[-1.5rem] sm:mt-[-15.5rem]
+            <h5 className="text-xl 
+              sm:text-[0.9rem] sm:mr-[0rem] sm:mt-[-15.5rem]
               md:text-[3.2rem] md:ml-[1rem] md:mt-[-29rem]
-              lg:text-[4.9rem] lg:mt-[-42rem] lg:ml-[7rem] lg:w-[55rem]
+              lg:text-[4.9rem] lg:mt-[-42rem] lg:ml-[21.5rem] lg:w-[55rem]
               lp:text-[4.1rem] lp:mt-[-35rem] lp:ml-[21rem] lp:w-[50rem]"
             >
               Beach Volleyball Tournament Poster
-            </p>
+            </h5>
           </div>
           </div>
 
@@ -251,7 +251,7 @@ const Home = () => {
         <img src={Bubble} alt="Bubble gif" className="w-16 
         sm:w-1/4 sm:ml-[-2rem] sm:mt-[-50rem]
         md:w-2/5 md:ml-[40rem] md:mt-[3rem]
-        lg:w-1/4 lg:ml-[60rem] lg:mt-[10rem]
+        lg:w-1/4 lg:ml-[60rem] lg:mt-[20rem]
         lp:w-2/4 lp:ml-[-5rem] lp:mt-[-17rem] lp:mb-[22rem]
         " />
         </div>
@@ -260,7 +260,7 @@ const Home = () => {
           <img src={Bubble} alt="Bubble gif" className="w-32 
           sm:w-1/4 sm:ml-[20rem] sm:mt-[17rem] 
           md:w-1/5 md:ml-[-1rem] md:mb-[-44rem]
-          lg:w-2/4 lg:ml-[-20rem] lg:mt-[-50rem]
+          lg:w-2/4 lg:ml-[59rem] lg:mt-[-57rem]
           lp:w-1/4 lp:ml-[55rem] lp:mt-[12rem]
           " />
         </div>
@@ -271,7 +271,7 @@ const Home = () => {
         transform scale-x-[-1] 
         sm:w-[20rem] sm:ml-[2.5rem] sm:pt-[22rem]
         md:w-[40rem] md:ml-[7rem] md:pb-[1rem] md:pt-[5rem]
-        lg:w-[65rem] lg:ml-[-20rem] lg:pt-[25rem]
+        lg:w-[65rem] lg:ml-[-15rem] lg:pt-[25rem]
         lp:w-[50rem] lp:ml-[0rem] lp:pt-[5rem]
         ">
           
@@ -285,13 +285,13 @@ const Home = () => {
           </div>
         </div>
         <div className="text-center mt-4">
-          <p className="text-xl 
-          sm:text-[1.6rem] sm:ml-[1.8rem] sm:mt-[-16.7rem] 
+          <h5 className="text-xl 
+          sm:text-[0.93rem] sm:ml-[1.8rem] sm:mt-[-16.8rem] 
           md:text-[3rem] md:mr-[-1rem] md:mt-[-31.5rem]
-          lg:text-[4.8rem] lg:ml-[-12rem] lg:mt-[-46.3rem] lg:w-[55rem]
+          lg:text-[4.8rem] lg:ml-[-9rem] lg:mt-[-46.3rem] lg:w-[55rem]
           lp:text-[3.5rem] lp:ml-[5rem] lp:mt-[-39rem] lp:w-[40rem]">
             National Geographic Magazine Cover
-          </p>
+          </h5>
         </div>
       </div>
 
@@ -300,7 +300,7 @@ const Home = () => {
       I might have to ask for help about that but please consider these as placeholders */}
       {/* as for the footer, I have it in Layouts.jsx, and I will make the comments there */}
       <div className="mt-6 
-      sm:w-[40rem] sm:max-w-[20rem] sm:ml-[1.5rem] sm:mt-[10rem] 
+      sm:w-[40rem] sm:max-w-[20rem] sm:ml-[2rem] sm:mt-[10rem] 
       md:w-[40rem] md:ml-[17rem] md:mt-[25rem] md:mb-[3rem]
       lg:w-[80rem] lg:ml-[35rem] lg:mb-[-2rem] lg:mt-[35rem]
       lp:w-[80rem] lp:ml-[33rem] lp:mt-[30rem]">

@@ -19,3 +19,59 @@
         cursor: url("/webpointer.svg"), pointer;
       }
     }
+
+    @font-face {
+      font-family: 'PerfectDOSVGA437';
+      src: url('/font/Perfect DOS VGA 437.ttf') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+    }
+    
+    
+    @font-face {
+      font-family: 'pixelmix';
+      src: url('/font/pixelmix.ttf') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+    }
+    
+
+
+   /* Keyframes for the ripple animation */
+@keyframes rippleEffect {
+  0% {
+    transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(3);
+    opacity: 0;
+  }
+}
+
+/* Apply this to each letter */
+.ripple-effect span {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  transition: color 0.1s ease; /* Smooth transition for color change */
+}
+
+/* Add ripple on hover and change text color */
+.ripple-effect span:hover {
+  color: #FF6347; /* Change text color on hover (Example: Tomato color) */
+}
+
+.ripple-effect span:hover::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: rgba(150, 112, 255, 0.6); /* Default color of the ripple */
+  transform: translate(-50%, -50%) scale(0);
+  animation: rippleEffect 0.6s ease-out;
+  opacity: 1;
+}
