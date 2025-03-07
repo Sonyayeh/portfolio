@@ -8,7 +8,7 @@ import Bridge from "../assets/travel/bridge.jpg";
 import Lake from "../assets/travel/lake.jpg";
 import { Link } from "react-router-dom";
 import Camera from "../assets/camera.svg"; // Assuming Camera and Floppy are imported here
-import Floppy from "../assets/floppy.svg";
+import Floppy from "../assets/Floppy.svg";
 
 const TravelPhotos = () => {
   const [isOpen, setIsOpen] = useState(false);
