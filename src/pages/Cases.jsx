@@ -17,6 +17,9 @@ function Cases() {
         ">
             UX Case Studies:
         </h5>
+        <p>
+            this is a testing
+        </p>
         <BcitCase />
         <PuppyCase />
         <TysnCase />
