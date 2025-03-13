@@ -187,14 +187,33 @@ const About = () => {
         {/* Existing content */}    
         </div>
             <div className="
-            md:pb-[1rem]
+            md:pb-[1rem] 
             ">
                 <Language />
             </div>
             <div 
             className="pb-5"
             >
-            <Special />
+        <div className="w-full flex flex-col items-center">
+    <h5 className="
+        sm:text-[2rem] sm:mt-[-1rem] sm:underline
+        md:text-[3.2rem]
+        lg:text-[5.1rem] lg:mr-[5rem]
+        lp:text-[5rem]
+        text-purple-400
+    ">
+        Uniqueness:
+    </h5>
+        </div>
+            <div className=" 
+            w-full flex justify-center
+            sm:justify-items-center 
+            md:justify-items-center
+            lg:pr-[10rem]
+            lp:mr-[5rem]
+            ">
+                    <Special />
+        </div>
         </div>
 
 

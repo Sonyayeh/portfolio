@@ -59,7 +59,7 @@ const Language = () => {
       <h5 className="text-black-300 text-3xl mb-4 
       sm:text-[1.5rem] sm:ml-[-2rem]
       lg:text-[4rem] lg:ml-[-17rem] lg:pt-[2rem] lg:pb-[3rem] lg:w-[100rem]
-      lp:text-[4rem] lp:mr-[5rem] lp:pt-[2rem] lp:pb-[3rem]
+      lp:text-[3rem] lp:pt-[2rem] lp:pb-[3rem]
       md:pt-[2rem] md:text-[2rem] md:pb-[2rem] ">
         I also learning languages in my spare time:
       </h5>
@@ -94,7 +94,7 @@ const Language = () => {
       {/* English Bar */}
       <div className="bar-main-container bg-sky-300 text-white rounded-lg w-72 mx-auto mb-4 
       sm:ml-[0.7rem]
-      md:ml-[23rem] md:mt-[-6.5rem] 
+      md:ml-[24rem] md:mt-[-6.5rem] 
       lg:ml-[-5rem]  lg:mt-[3rem]
       lp:ml-[-2rem] lp:w-full lp:pb-[2rem] lp:mt-[3rem]">
         <h5 className="text-3xl sm:text-[2rem] md:text-[2rem] lg:text-[3rem] lp:text-[3rem] lg:pt-[1rem] lp:pt-[1rem]">
@@ -135,12 +135,13 @@ const Language = () => {
       </div>
 
       {/* Japanese Bar */}
-      <div className="bar-main-container bg-yellow-300 text-white rounded-lg w-72 mx-auto mb-4 md:ml-[23rem] 
+      <div className="bar-main-container bg-yellow-300 text-white rounded-lg w-72 mx-auto mb-4
       sm:ml-[0.7rem]
-      md:mt-[-7rem] 
-      lg:ml-[-5rem]  lg:mt-[5rem]
+      md:mt-[-7rem] md:ml-[24rem]
+      lg:ml-[-5rem] lg:mt-[5rem]
       lp:ml-[-2rem] lp:w-full lp:pb-[2rem] lp:mt-[3rem]">
-        <h5 className="text-3xl sm:text-[2rem] lg:text-[3rem] lp:text-[3rem] lg:pt-[1rem] lp:pt-[1rem]">Japanese</h5>
+        <h5 className="text-3xl sm:text-[2rem] lg:text-[3rem] lp:text-[3rem] lg:pt-[1rem] lp:pt-[1rem]">
+          Japanese</h5>
         <div className="p-2">
           <div
             className="bar-percentage bg-black/20 rounded-lg text-center py-1 text-sm
@@ -177,7 +178,7 @@ const Language = () => {
       {/* German Bar */}
       <div className="bar-main-container bg-red-300 text-white rounded-lg w-72 mx-auto mb-4 
       sm:ml-[0.7rem]
-      md:ml-[23rem] md:mt-[-7rem] 
+      md:ml-[24rem] md:mt-[-7rem] 
       lg:ml-[-5rem]  lg:mt-[5rem]
       lp:ml-[-2rem] lp:w-full lp:pb-[2rem] lp:mt-[3rem]">
         <h5 className="text-3xl sm:text-[2rem] lg:text-[3rem] lp:text-[3rem] lg:pt-[1rem] lp:pt-[1rem]">German</h5>
@@ -195,8 +196,8 @@ const Language = () => {
       {/* Dutch Bar */}
       <div className="bar-main-container bg-pink-300 text-white rounded-lg w-72 mx-auto mb-4 
       sm:ml-[0.7rem]
-      md:ml-[13rem] 
-      lg:ml-[-5rem]  lg:mt-[5rem]
+      md:ml-[14rem] md:mt-[1rem]
+      lg:ml-[-5rem] lg:mt-[5rem]
       lp:ml-[-2rem] lp:w-full lp:pb-[2rem] lp:mt-[3rem]">
         <h5 className="text-3xl sm:text-[2rem] lg:text-[3rem] lp:text-[3rem] lg:pt-[1rem] lp:pt-[1rem]">Dutch</h5>
         <div className="p-2">

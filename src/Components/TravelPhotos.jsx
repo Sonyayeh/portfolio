@@ -59,8 +59,8 @@ const TravelPhotos = () => {
       className="bg-purple-100 pt-[1rem] ml-[-3.5rem] w-auto 
     sm:ml-[0rem] sm:w-auto
     md:w-[55rem] md:ml-[-2rem] md:mt-[1rem]
-    lg:w-[85rem] lg:ml-[-14rem] lg:mt-[2rem]
-    lp:w-[83rem] lp:ml-[-4rem] lp:mt-[2rem]"
+    lg:w-[85rem] lg:align-middle lg:mt-[2rem]
+    lp:w-[83rem] lp:align-middle lp:mt-[2rem]"
     >
       <h5
         className="flex items-center justify-between
@@ -98,7 +98,7 @@ const TravelPhotos = () => {
               <img
                 src={photo.src}
                 alt={photo.alt}
-                className="rounded-lg shadow-md w-full h-48 object-cover transform transition duration-300 hover:scale-105"
+                className="rounded-lg shadow-md w-full h-32 object-cover transform transition duration-300 hover:scale-105"
               />
             </div>
           ))}

@@ -28,7 +28,7 @@ const Home = () => {
         {/* basically the same thing as the two clouds */}
         <h1 className="
         sm:text-[2rem] sm:mt-[-0.5rem] sm:ml-[-1rem] sm:pr-[3rem]
-        md:text-[4.5rem] md:ml-[3rem] md:mt-[10rem]
+        md:text-[3.5rem] md:ml-[-0.5rem] md:mt-[10rem]
         lg:text-[8rem] lg:ml-[-57rem] lg:mt-[-5rem]
         lp:text-[5.5rem] lp:ml-[-20rem] lp:mt-[-3rem]
         font-Micro">
@@ -38,7 +38,7 @@ const Home = () => {
         <img src={TextBubble} alt="Text bubble for the cat section" 
           className="w-full max-w-[80rem] h-[16rem] bg-contain bg-no-repeat 
           sm:ml-[-2rem] sm:h-[2.5rem] sm:w-[15rem] sm:mb-[10rem] sm:mt-[10rem] 
-          md:ml-[1rem] md:h-[7rem] md:w-[35rem] md:mb-[9rem] md:mt-[20rem]
+          md:ml-[-2rem] md:h-[6rem] md:w-[35rem] md:mb-[9rem] md:mt-[20rem]
           lg:h-[9rem] lg:w-[55rem] lg:mr-[-115rem] lg:mt-[5rem]
           lp:h-[7.5rem] lp:w-[55rem] lp:mt-[7rem] lp:mr-[-18rem]
           " />
@@ -84,9 +84,9 @@ const Home = () => {
             showCursor
             className="text-black font-Micro
             sm:text-[2rem] sm:mt-[-15.5rem] sm:ml-[-11.5rem]
-            md:text-[4rem] md:ml-[-31rem] md:mt-[-18.5rem]
-            lg:text-[7rem] lg:ml-[-8rem] lg:mt-[-21.6rem]
-            lp:text-[4.8rem] lp:ml-[-17rem] lp:mt-[-19.5rem]
+            md:text-[4rem] md:ml-[-32rem] md:mt-[-18rem]
+            lg:text-[7rem] lg:ml-[-12rem] lg:mt-[-21.6rem]
+            lp:text-[4.8rem] lp:ml-[-15rem] lp:mt-[-19.5rem]
             "
           />
         </div>
@@ -100,7 +100,7 @@ const Home = () => {
         <CatGif className="w-40 
         sm:w-[5rem] sm:mr-[-20rem] sm:mb-[25rem] sm:mt-[-13rem]
         md:w-[10rem] md:mr-[-45rem] md:pb-[-5rem] md:pt-[3rem]
-        lg:w-[12rem] lg:ml-[21rem] lg:mt-[-15rem] lg:mb-[20rem]
+        lg:w-[12rem] lg:ml-[35rem] lg:mt-[-15rem] lg:mb-[20rem]
         lp:w-[12rem] lp:ml-[20rem] lp:mt-[-15rem] lp:mb-[20rem]" />
       </div>
 
@@ -133,8 +133,8 @@ const Home = () => {
         <img src={TwoClouds} alt="Cloud gif" className="transform scale-x-[-1] w-16 
         sm:w-[8rem] sm:mt-[-80rem] sm:ml-[15rem] sm:pt-[58rem]
         md:w-[20rem] md:mt-[-73rem] md:ml-[35rem] md:pt-[48rem]
-        lg:w-[30rem] lg:ml-[50rem] lg:mt-[-78rem]
-        lp:w-[25rem] lp:ml-[50rem] lp:mt-[-78rem]" />
+        lg:w-[30rem] lg:ml-[65rem] lg:mt-[-78rem]
+        lp:w-[25rem] lp:ml-[50rem] lp:mt-[-65rem]" />
       </div>
 
       {/* Work Showcase (Flex and Grid Layouts) */}
@@ -164,9 +164,9 @@ const Home = () => {
         <div className="text-center">
           <h5 className="text-xl 
           sm:text-[1.3rem] sm:mr-[-2rem] sm:mt-[-51.5rem] sm:pt-[-10rem] 
-          md:text-[3.5rem] md:mr-[-3rem] md:mt-[-65rem]
-          lg:text-[5.5rem] lg:ml-[-5rem] lg:mt-[-80rem]
-          lp:text-[5rem] lp:ml-[0rem] lp:mt-[-71rem] lp:w-[50rem]">
+          md:text-[2.5rem] md:mr-[-3rem] md:mt-[-65rem]
+          lg:text-[3.6rem] lg:ml-[-5rem] lg:mt-[-79rem]
+          lp:text-[3.2rem] lp:ml-[0rem] lp:mt-[-71rem] lp:w-[50rem]">
             Furrever Pals Puppy Yoga
           </h5>
         </div>
@@ -233,9 +233,9 @@ const Home = () => {
           <div className="text-center mt-4">
             <h5 className="text-xl 
               sm:text-[0.9rem] sm:mr-[0rem] sm:mt-[-15.5rem]
-              md:text-[3.2rem] md:ml-[1rem] md:mt-[-29rem]
-              lg:text-[4.9rem] lg:mt-[-42rem] lg:ml-[21.5rem] lg:w-[55rem]
-              lp:text-[4.1rem] lp:mt-[-35rem] lp:ml-[21rem] lp:w-[50rem]"
+              md:text-[1.8rem] md:ml-[2rem] md:mt-[-29rem]
+              lg:text-[2.8rem] lg:mt-[-42rem] lg:ml-[21.5rem] lg:w-[55rem]
+              lp:text-[2.3rem] lp:mt-[-35rem] lp:ml-[21rem] lp:w-[50rem]"
             >
               Beach Volleyball Tournament Poster
             </h5>
@@ -287,9 +287,9 @@ const Home = () => {
         <div className="text-center mt-4">
           <h5 className="text-xl 
           sm:text-[0.93rem] sm:ml-[1.8rem] sm:mt-[-16.8rem] 
-          md:text-[3rem] md:mr-[-1rem] md:mt-[-31.5rem]
-          lg:text-[4.8rem] lg:ml-[-9rem] lg:mt-[-46.3rem] lg:w-[55rem]
-          lp:text-[3.5rem] lp:ml-[5rem] lp:mt-[-39rem] lp:w-[40rem]">
+          md:text-[1.8rem] md:mr-[-1rem] md:mt-[-31.5rem]
+          lg:text-[2.8rem] lg:ml-[-9rem] lg:mt-[-46.3rem] lg:w-[55rem]
+          lp:text-[2rem] lp:ml-[5rem] lp:mt-[-39rem] lp:w-[40rem]">
             National Geographic Magazine Cover
           </h5>
         </div>

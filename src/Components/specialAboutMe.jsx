@@ -14,13 +14,16 @@ const messages = [
 ];
 
 const Special = () => {
+  
   const [index, setIndex] = useState(0);
 
   // this section tells that after the initial text and title section stays on the page for 10 seconds, it will move onto the next title and text, evident at the preIndex +1 area. It should have enough time for users to read the paragraph, if not, I can always extend the duration.
   useEffect(() => {
+    
     const interval = setInterval(() => {
       setIndex((prevIndex) => (prevIndex + 1) % messages.length);
     }, 10000); 
+    
     return () => clearInterval(interval);
   }, []);
 
@@ -28,8 +31,10 @@ const Special = () => {
   // I also added a border style so it kind of matches with the bashed line I had above, to kind of having some consistant design throughout the About Me page!
   // I also made sure the container is flexible, so it can resize on its own depending on how much text there is.
   return (
-    <div className="relative w-full max-w-xl flex flex-col justify-center items-center overflow-hidden p-6 border-2 border-dashed border-blue-300 h-auto md:ml-[5rem] lg:min-w-[63rem] lg:min-h-[40rem] lg:p-10 lg:ml-[3rem]
+
+    <div className="relative w-full max-w-xl flex flex-col justify-center items-center overflow-hidden p-6 border-2 border-dashed border-blue-300 h-auto lg:min-w-[63rem] lg:min-h-[40rem] lg:p-10 
     lp:min-w-[70rem] lp:min-h-[20rem] lp:p-10 lp:ml-[3rem]">
+      
     {/* this is the animation section
       the animation shows that the title and text will come in from the right with a fade in effect, and then exit to the left with a fading effect.
     */}
@@ -40,7 +45,7 @@ const Special = () => {
       animate={{ opacity: 1, x: 0 }}
       exit={{ opacity: 0, x: -20 }}
       transition={{ duration: 1 }}
-      className="text-center bg-white-500 text-blue-300 px-6 rounded-lg w-full flex flex-col justify-center lg:w-[55rem] lg:min-h-[50rem] lg:p-6 "
+      className="text-center bg-white-500 text-blue-300 px-6 rounded-lg w-full flex flex-col lg:w-[55rem] lg:min-h-[30rem] lg:p-6 "
     >
       {/* this is the title section */}
       {/* it will retreieve the messages with the tag of .titles from above */}
