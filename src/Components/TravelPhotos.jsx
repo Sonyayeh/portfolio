@@ -64,7 +64,7 @@ const TravelPhotos = () => {
     >
       <h5
         className="flex items-center justify-between
-        sm:text-[1.5rem] sm:mb-[-2rem] sm:ml-[1rem]
+        sm:text-[0.83rem] sm:mb-[1rem] sm:ml-[1rem]
         md:text-[2.1rem] md:ml-[2rem] md:pb-[2rem]
         lg:text-[3.2rem] lg:ml-[2rem] lg:w-[90rem]
         lp:text-[5rem] lp:ml-[5rem]"
@@ -81,7 +81,7 @@ const TravelPhotos = () => {
 
       <div
         className="
-            sm:w-[23rem]
+            sm:w-full sm:max-w-[22rem] sm:mx-auto
             md:w-[50rem] md:ml-[2rem] md:mt-[1rem]
             lg:w-[80rem] lg:mt-[2rem] lg:ml-[2rem]
             lp:w-[80rem] lp:mt-[2rem] lp:ml-[2rem]
@@ -106,7 +106,9 @@ const TravelPhotos = () => {
       </div>
 
       <div>
-        <h5 className="text-xl text-right mr-10 md:text-[2rem] lg:text-[2.5rem]">
+        <h5 className="text-xl text-right mr-10 
+        sm:text-[1rem] sm:mb[-1rem] sm:pt-[1rem]
+        md:text-[2rem] lg:text-[2.5rem]">
           Click me for more photos!
         </h5>
         <Link to="/travelphotofolder">

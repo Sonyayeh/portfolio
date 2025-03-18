@@ -40,6 +40,7 @@ const Projects = () => {
                         sm:w-[10rem] sm:ml-[16rem]
                         md:w-[15rem] md:ml-[35rem] md:mt-[-2rem]
                         lg:w-[20rem] lg:ml-[10rem] lg:mt-[12rem]
+                        lp:w-[20rem] lp:ml-[60rem] 
                         " 
                     />
                     </div>
@@ -66,11 +67,12 @@ const Projects = () => {
                         </div>
                     </div>
 
-                    <div>
+                    <div className="w-full flex flex-col items-center">
                         <h1 className="
-                        sm:text-[4rem] sm:mt-[-20rem] sm:ml-[8rem]
-                        md:text-[6rem] md:ml-[17rem] md:mt-[-30rem] 
+                        sm:text-[3rem] sm:mt-[-15rem]
+                        md:text-[6rem] md:mt-[-30rem] 
                         lg:text-[7rem] lg:absolute lg:ml-[36rem] lg:mt-[-20rem] 
+                        lp:text-[7rem] lp:mt-[-50rem] 
                         " 
                         >Projects:</h1>
                     </div>
@@ -80,12 +82,13 @@ const Projects = () => {
 
                 {/* the down arrow */}
                     <div>
-                        <div>
+                        <div className="w-full flex flex-col items-center">
                             <Arrow 
                             className="
-                            sm:w-6 sm:mb-[20rem] sm:ml-[13rem] sm:pt-[5rem]
-                            md:w-10 md:ml-[24rem] md:py-[10rem] md:pt-[20rem]
+                            sm:w-6 sm:mb-[10rem] 
+                            md:w-10 md:py-[10rem]
                             lg:w-12 lg:ml-[44rem] lg:py-[0rem] lg:pt-[5rem]
+                            lp:w-12  lp:py-[0rem] lp:mt-[-30rem]
                             "/>
                         </div>
                     </div>

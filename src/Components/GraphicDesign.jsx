@@ -30,15 +30,17 @@ const GraphicBox = () => {
                 so when it is brought into the project page
                 I don't have to make another title and manually
                 adjust it */}
-                <h1 className=" pl-2 text-2xl 
-                sm:text-[3rem] sm:pb-[2rem] sm:pl-[6rem] sm:mt-[-16rem]
+                <h1 className=" w-full flex flex-col items-center
+                sm:text-[2.2rem] sm:pb-[2rem] sm:mt-[-16rem]
                 md:text-8xl md:pl-[2rem] md:pt-[10rem] 
                 lg:text-8xl lg:pl-3">
                     Graphic Design:
                 </h1>
 
                 {/* Blue heading */}
-                <div className="bg-blue-200 px-4 flex justify-between items-center w-full">
+                <div className="bg-blue-200 px-4 flex justify-between items-center w-full
+                sm:pt-1 sm:pb-1
+                ">
                     <h5 className="text-white text-3xl 
                     sm:text-3xl 
                     md:text-6xl 
@@ -87,11 +89,12 @@ const GraphicBox = () => {
                 lg:flex-row">
 
                     {/* Title and Description Section */}
-                    <div className="w-full lg:w-1/2 lg:text-left">
+                    <div className="w-full flex flex-col items-center">
                         <h5 className="text-black pb-2 text-2xl 
-                        sm:text-[1.5rem] sm:text-start sm:pt-5
-                        md:text-[3rem] md:pt-5 md:pl-10 
-                        lg:text-[4.5rem] lg:pl-4 lg:pt-[2rem] lg:absolute">
+                        sm:text-3 sm:text-start sm:pt-5 sm:font-bold sm:text-blue-400
+                        md:text-[2.3rem] md:pt-5
+                        lg:text-[4.5rem] lg:pl-4 lg:pt-[2rem] lg:absolute
+                        lp:text-[3rem] lp:pt-[2rem]">
                             {/* with each project.xxx, it is manually grabbing
                             the information of project.id, in this case it's
                             project.1, so it will add in project 1's title, 
@@ -118,10 +121,10 @@ const GraphicBox = () => {
                         />
                     </div>
                     {/* the software used section */}
-                    <div>
+                    <div className="w-full flex flex-col items-start">
                         <h4 className="text-blue-300 
                         sm:text-[1rem] sm:mt-[-1rem]
-                        md:text-1xl md:pt-[5rem]
+                        md:text-[1.4rem] md:w-[25rem] md:ml-[1.5rem]
                         lg:text-[1.3rem] lg:ml-[-70rem] lg:mt-[45rem] 
                         ">
                             {project.chips}
@@ -133,7 +136,7 @@ const GraphicBox = () => {
                     <Link to="/beachball">
                         <button
                         className="px-6 py-3 bg-blue-300 text-white rounded-lg shadow-md hover:bg-blue-500 hover:text-white focus:outline-none focus:ring-2 focus:ring-blue-300 transition-colors duration-300
-                            md:ml-[29rem] md:mt-[-2rem]
+                            md:ml-[28rem] md:mt-[-2rem]
                             lg:mt-[44rem] lg:ml-[-21rem]"
                         >
                         View More
