@@ -55,8 +55,8 @@ const BeachWorkSection = () => {
               onClick={() => openLightbox(index)}
             />
             <p className="mt-2 text-left text-lg text-gray-700 
-            font-Dos leading-[4rem]
-            md:text-[2.5rem] md:pr-[4rem]
+            font-Dos 
+            md:text-[2.5rem] md:pr-[4rem] md:leading-[4rem]
             ">{image.description}</p>
           </div>
         ))}

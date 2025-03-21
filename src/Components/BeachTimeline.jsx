@@ -63,6 +63,13 @@ const BeachTimeline = () => {
             z-index: 2;
             top: -8px; /* Adjust this value to position the dot on top of the line */
           }
+          @media (min-width: 768px) and (max-width: 1024px) {
+            .timeline-dot {
+              width: 20px; /* Adjusted size for medium screens */
+              height: 20px; /* Adjusted size for medium screens */
+              top: -10px; /* Adjust this value to position the dot on top of the line */
+            }
+          }
         `}
       </style>
       <h1 className="pl-2 justify-center text-center 

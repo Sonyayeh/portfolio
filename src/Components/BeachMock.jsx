@@ -46,8 +46,8 @@ const BeachMock = () => {
               onClick={() => openLightbox(index)}
             />
             <p className="mt-2 text-left text-lg text-gray-700
-            font-Dos leading-[4rem]
-            md:text-[2.5rem] md:w-[43rem] md:gap-x-3 md:pl-[1rem]
+            font-Dos 
+            md:text-[2.5rem] md:w-[43rem] md:gap-x-3 md:pl-[1rem] md:leading-[4rem]
             
             ">{image.description}</p>
           </div>
