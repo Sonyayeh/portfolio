@@ -1,4 +1,9 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
+// Importing project data
+import projectData from "../data/project.json"; 
+import MagSoftware from "../Components/MagazineIcon";
+import MagazineWorkSection from "../Components/MagazineWorkSection";
+import Social from '../Components/social';
 
 const BeachTimeLine = () => {
   const listItemsRef = useRef([]);
@@ -99,7 +104,7 @@ const BeachTimeLine = () => {
       md:text-5xl md:ml-[-1rem] md:pt-[5rem] md:w-[50rem] md:mb-[2rem]
       lp:text-4xl lp:w-[75rem] lp:justify-center lp:items-center
       lg:text-7xl lg:ml-[3rem] lg:w-[60rem] lg:mb-[5rem] lg:mt-[2rem]">
-        Total hours: <span className="text-red-600">15 hours</span>
+        Total hours: <span className="text-red-600">11 hours</span>
       </h1>
       <div className="relative md:ml-[12rem]">
         {/* the timeline itself */}
@@ -110,12 +115,10 @@ const BeachTimeLine = () => {
         "></div>
         <ul className="space-y-10 relative">
           {[
-            { date: "November 15", text: "Brainstorming and sketching", hours: "(1 hour)", side: "right" },
-            { date: "November 18", text: "Create 3 different sketch variations", hours: "(3 hours)", side: "left" },
-            { date: "November 20", text: "Rough concept created and brought into Illustrator, further research about beach and summer were made + sketches", hours: "(2 hours)", side: "right" },
-            { date: "November 23", text: "Image collected, hibiscus and volleyball references found, sketches made and brought into Illustrator", hours: "(3 hours)", side: "left" },
-            { date: "November 25", text: "Worked on individual elements of the poster: volleyball, hibiscus, texts, banner, starfish, etc.", hours: "(3 hours)", side: "right" },
-            { date: "November 28", text: "Finished the rest of the poster and finalized report: background gradient, light rays, shadings, positioning and overall layout", hours: "(3 hours)", side: "left" },
+            { date: "March 23", text: "Assignment Given", hours: "(1 hour)", side: "right" },
+            { date: "March 28", text: "Cut, pieced everything together and refinement", hours: "(4 hours)", side: "left" },
+            { date: "March 30", text: "Redesigned and repositioned project", hours: "(3 hours)", side: "right" },
+            { date: "March 31", text: "Finalized and wrapped up project", hours: "(3 hours)", side: "left" },
           ].map((item, index) => (
             <li
               key={index}
@@ -170,4 +173,114 @@ const BeachTimeLine = () => {
   );
 };
 
-export default BeachTimeLine;
+const MagazineDesign = () => {
+    // Find the project by id from projectData
+    const project = projectData.find((proj) => proj.id === 1);
+
+    // State for the active tab
+    const [activeTab, setActiveTab] = useState('ABOUT');
+
+    // If project not found, return a message
+    if (!project) {
+        return <div>Project not found</div>;
+    }
+
+    // Function to handle tab click
+    const handleTabClick = (tab) => {
+        setActiveTab(tab);
+    };
+
+    return (
+        <div className="w-[12rem] relative mt-[30rem] 
+        sm:ml-[-1rem] sm:mt-[10rem] sm:px-0 sm:mx-auto 
+        md:ml-[3rem] md:mt-[1rem]
+        lg:pl-[4rem] lg:pr-[4rem]">
+            {/* Project Heading and Description */}
+            <div className="text-start w-[12rem]">
+                <h1 className="pl-2 justify-center text-center text-blue-500 underline decoration-dashed
+                sm:text-[2rem] sm:pb-[5rem] sm:mt-[-5rem] sm:w-[25rem]
+                md:text-[2.5rem] md:ml-[-8rem] md:pt-[10rem] md:w-[65rem]
+                lp:text-[3.7rem] lp:w-[85rem] lp:justify-center lp:items-center
+                lg:text-7xl lg:ml-[-28rem] lg:w-[120rem] lg:mb-[5rem] lg:mt-[2rem]">
+                    National Geographics Magazine Design:
+                </h1>
+                <h1 className="pl-2 justify-center text-center underline decoration-dashed text-blue-400
+                sm:text-[1.7rem] sm:pb-[1rem] sm:w-[25rem] sm:ml-1
+                md:text-5xl md:ml-[-2rem] md:pt-[3rem] md:w-[50rem]
+                lp:text-[4rem] lp:w-[75rem] lp:justify-center lp:items-center
+                lg:text-7xl lg:w-[60rem] lg:mb-[5rem] lg:mt-[2rem]">
+                    Overview:
+                </h1>
+                <h3 className="pl-2 text-orange-500
+                sm:text-[1rem] sm:pb-[1rem] sm:w-[25rem] sm:ml-4
+                md:text-5xl md:ml-[0rem] md:pt-[5rem] md:w-[50rem] md:mb-[2rem]
+                lp:text-[2.5rem] lp:w-[75rem] lp:justify-center lp:items-center
+                lg:text-7xl lg:ml-[-20rem] lg:w-[110rem] lg:mb-[5rem] lg:mt-[2rem]">
+                The goal was to create a magazine cover with the selected of required material given by
+                the instructor covered in (photoshop class). The main purpose of this project is to able to
+                come up with a creative design despite limited resources and restrictions with Adobe
+                Photoshop only.
+                
+                {/* All the elements on the poster were to be created only with Adobe Illustrator. Other than Adobe Illustrator, I also used Procreate for sketches and took reference images downloaded from Adobe Stock Image */}
+                </h3>
+                 {/* added a line for separate sections */}
+               <div className="border-t-2 border-blue-500 
+               sm:w-[20rem] sm:ml-[3rem] sm:pb-[2rem]
+               md:w-[40rem] md:ml-[4rem]
+               lp:w-[65rem]
+               lg:w-[100rem] lg:ml-[-16rem]
+               "></div>
+
+                {/* software used section */}
+                <div className="pb-[2rem]">
+                    <MagSoftware />
+                </div>
+
+                 {/* added a line for separate sections */}
+                 <div className="border-t-2 border-blue-500 
+               sm:w-[20rem] sm:ml-[3rem] sm:pb-[2rem]
+               md:w-[40rem] md:ml-[4rem]
+               lp:w-[65rem]
+               lg:w-[100rem] lg:ml-[-16rem]
+               "></div>
+                
+
+                {/* timeline section */}
+                <div>
+                <BeachTimeLine />
+               </div>
+
+                {/* added a line for separate sections */}
+               <div className="border-t-2 border-blue-500 my-10 
+               sm:w-[20rem] sm:ml-[3rem]
+               md:w-[40rem] md:ml-[4rem] 
+               lp:w-[65rem]
+               lg:w-[100rem] lg:ml-[-16rem] lg:pb-[5rem] lg:mt-[6rem]
+               "></div>
+
+                {/* I jumped right into the project so there's no work process :((( */}
+                <div>
+                <MagazineWorkSection />
+                </div>
+
+                {/* added a line for separate sections */}
+                <div className="border-t-2 border-blue-500 my-10 
+               sm:w-[20rem] sm:ml-[3rem]
+               md:w-[40rem] md:ml-[4rem] 
+               lp:w-[65rem]
+               lg:w-[100rem] lg:ml-[-16rem] lg:mb-[8rem]
+               "></div>
+
+               </div>
+               <div className=" w-full flex flex-col justify-center items-center
+               sm:ml-[7rem]
+               md:ml-[18rem]
+               lp:ml-[40rem]
+               ">
+                <Social />
+               </div>
+               </div>
+    );
+};
+
+export default MagazineDesign;

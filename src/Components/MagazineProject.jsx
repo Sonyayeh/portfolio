@@ -1,15 +1,13 @@
-// before I get confused, this is the beach volleyball tournament project container!!!!!!!!
-// DON'T FORGET AGAIN YOU GOLDFISH BRAIN
 import React from "react";
 import { Link } from "react-router-dom";
 
 // I have each project information imported from project.json, I will make my comments there as well!
 import projectData from "../data/project.json";  // Import the JSON data
 
-const GraphicBox = () => {
+const Magazine = () => {
     // this line is to go into the project data in project.json and find the 
     // data that has the project id of 1, and then being brought into here
-    const project = projectData.find((proj) => proj.id === 1);
+    const project = projectData.find((proj) => proj.id === 6);
 
     if (!project) {
         return <div>Project not found</div>;  // Handle case where project is not found
@@ -24,18 +22,7 @@ const GraphicBox = () => {
 
             {/* Project Heading and Description */}
             <div className="text-start w-full">
-                {/* this is the section title
-                I did it in a way where the first project of each
-                section would have the section title,
-                so when it is brought into the project page
-                I don't have to make another title and manually
-                adjust it */}
-                <h1 className="pl-2 text-2xl justify-center text-center items-center
-                sm:text-[2rem] sm:pb-[2rem] sm:mt-[-16rem] 
-                md:text-8xl md:pl-[2rem] md:pt-[10rem] 
-                lg:text-8xl lg:pl-3">
-                    Graphic Design:
-                </h1>
+                
 
                 {/* Blue heading */}
                 <div className="bg-blue-200 px-4 flex justify-between items-center w-full">
@@ -92,8 +79,9 @@ const GraphicBox = () => {
                     <div className="w-full lg:w-1/2 lg:text-left">
                         <h5 className="text-blue-400 pb-2 text-2xl 
                         sm:text-[1.5rem] sm:text-start sm:pt-5
-                        md:text-[2.6rem] md:pt-5 md:ml-[-1rem] md:w-[59rem]
-                        lg:text-[3rem] lg:pl-4 lg:pt-[4rem] lg:absolute lg:w-[60rem]">
+                        md:text-[2.5rem] md:pt-5 md:ml-[-1.5rem] md:w-[54rem]
+                        lp:ml-[0rem]
+                        lg:text-[3rem] lg:ml-[-1rem] lg:pt-[4rem] lg:absolute lg:w-[65rem]">
                             {project.title}
                         </h5>
                         <h4 className="text-lg leading-6 
@@ -134,12 +122,12 @@ const GraphicBox = () => {
                     </div>
 
                     {/* Image Section */}
-                    <div className="flex justify-center w-full lg:w-1/2 lg:ml-[-14rem] lg:pt-[43rem]">
+                    <div className="flex justify-center w-full lg:w-1/2 lg:ml-[-14rem] lg:pt-[40rem]">
                         <img
                             src={project.imageurl} 
                             className="w-full h-auto object-contain rounded-xl
                             sm:w-[20rem] sm:h-[30rem]
-                            md:w-[20rem] md:h-[25rem] md:ml-[28rem] md:mt-[-35rem] md:mb-[-2rem]
+                            md:w-[20rem] md:h-[25rem] md:ml-[28rem] md:mt-[-37rem] md:mb-[-2rem]
                             lp:h-[35rem] lp:w-[35rem] lp:max-h-[50rem]
                             lg:w-[45rem] lg:h-[45rem]"
                         />
@@ -149,13 +137,13 @@ const GraphicBox = () => {
 
                 {/* View More Button */}
                 <div className="flex justify-center mt-8">
-                    <Link to="/beachball">
+                    <Link to="/magazine">
                         <button
                         className="px-6 py-3 bg-blue-300 text-white rounded-lg shadow-md hover:bg-blue-500 hover:text-white focus:outline-none focus:ring-2 focus:ring-blue-300 transition-colors duration-300
                             sm:mb-[2rem] sm:mt-[-1rem]
-                            md:ml-[28rem] md:mt-[-2rem] md:mb-[3rem]
+                            md:ml-[28rem] md:mt-[-2rem] md:mb-[2rem]
                             lp:ml-[28rem]
-                            lg:mt-[4rem] lg:justify-center lg:items-center">
+                            lg:mt-[-2rem] lg:justify-center lg:items-center">
                         View More
                         </button>
                     </Link>
@@ -167,4 +155,4 @@ const GraphicBox = () => {
     );
 }
 
-export default GraphicBox;
+export default Magazine;

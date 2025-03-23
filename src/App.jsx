@@ -12,6 +12,7 @@ import Projects from "./pages/Projects";
 import Cases from "./pages/Cases";
 import TravelPictures from "./pages/TravelPhotoFolder";
 import Vollyball from "./pages/BeachBall";
+import Magazine from "./pages/Magazine";
 import Boutique from "./pages/BoardWalk";
 import Bcit from "./pages/MyBcit";
 import Northstar from "./pages/NorthOmu";
@@ -62,6 +63,7 @@ function App() {
               <Route path="/cases" element={<Cases />} />
               <Route path="/travelphotofolder" element={<TravelPictures />} />
               <Route path="/beachball" element={<Vollyball />} />
+              <Route path="/magazine" element={<Magazine />} />
               <Route path="/boardwalk" element={<Boutique />} />
               <Route path="/bcit" element={<Bcit />} />
               <Route path="/northstar" element={<Northstar />} />

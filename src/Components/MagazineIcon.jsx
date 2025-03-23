@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import IonIcon from "@reacticons/ionicons";
 
-const SoftwareUsed = () => {
+const MagSoftware = () => {
     const iconRefs = useRef([]);
 
     useEffect(() => {
@@ -64,58 +64,41 @@ const SoftwareUsed = () => {
             lp:items-center lp:justify-center lp:w-[75rem]
             lg:items-center lg:justify-center lg:w-[100rem] lg:pb-[5rem] lg:mt-[6rem] lg:ml-[-22rem]
             ">
-                {/* adobe illustrator icon */}
-                <li className="flex flex-col items-center icon" ref={(el) => iconRefs.current[0] = el}>
+                {/* adobe photoshop icon */}
+                <li className="flex flex-col items-center">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
-                    className="sm:w-[2.5rem] sm:h-[2.5rem] md:w-[6rem] md:h-[6rem] lg:w-[10rem] lg:h-[10rem] ">
-                    <rect width="24" height="24" fill="#330000" rx="4" /> {/* Darker background for Illustrator */}
-                    <text x="12" y="16" fill="#FF9A01" fontSize="12" fontFamily="Arial, sans-serif" fontWeight="bold" textAnchor="middle">Ai</text> {/* Illustrator color for text */}
+                    className="sm:w-[2.5rem] sm:h-[2.5rem] md:w-[6rem] md:h-[6rem] lg:w-[10rem] lg:h-[10rem] hover:cursor-pointer">
+                    <rect width="24" height="24" fill="#001E36" rx="4" /> {/* Darker background for Photoshop */}
+                    <text x="12" y="16" fill="#31A8FF" fontSize="12" fontFamily="Arial, sans-serif" fontWeight="bold" textAnchor="middle">Ps</text> {/* Photoshop color for text */}
                 </svg>
-                <span className="mt-2 text-center lp:text-[2.5rem] lg:text-[3.5rem] lg:pb-6">Adobe Illustrator</span>
+                <span className="mt-2 text-center 
+                md:text-[2rem]
+                lp:text-[2.5rem] 
+                lg:text-[3.5rem] lg:pb-6
+                ">Adobe Photoshop</span>
                 </li>
 
-                {/* graphic design icon */}
-                <li className="flex flex-col items-center icon" ref={(el) => iconRefs.current[1] = el}>
-                    <IonIcon 
-                        className="text-blue-300 sm:text-[2.5rem] 
-                        sm:px-2 
-                        md:text-[6rem] md:px-3 
-                        lg:text-[12rem] lg:px-6 lg:pb-[2rem] 
-                        lp:text-[7.5rem] lp:px-4 lp:mb-3
-                        " 
-                        name="color-palette-outline" 
-                    />
-                    <span className="mt-2 text-center lp:text-[2.5rem] lp:mt-[-3rem] lg:text-[3.5rem] lg:pb-10">Graphic Design</span>
-                </li>
-
-                {/* procreate icon */}
+                {/* prcreate icon */}
                 <li className="flex flex-col items-center icon" ref={(el) => iconRefs.current[2] = el}>
                     <IonIcon 
                         className="text-blue-300 sm:text-[2.5rem]  
                         sm:px-2 
                         md:text-[6rem] md:px-3 
                         lg:text-[12rem] lg:px-6 lg:pb-[2rem]
-                        lp:text-[7.5rem] lp:px-4 lp:mb-8" 
+                        lp:text-[7.5rem] lp:px-4 lp:mb-3" 
                         name="brush-outline" 
                     />
-                    <span className="mt-2 text-center lp:text-[2.5rem] lp:mt-[-3rem] lg:text-[3.5rem] lg:pb-10">Procreate</span>
+                    <span className="mt-2 text-center 
+                    md:text-[2rem]
+                    lp:text-[2.5rem] lp:mt-[-1rem] 
+                    lg:text-[3.5rem] lg:pb-10
+                    ">Procreate</span>
                 </li>
 
-                {/* Adobe Stock Images */}
-                <li className="flex flex-col items-center icon" ref={(el) => iconRefs.current[3] = el}>
-                    <IonIcon 
-                        className="text-blue-300 sm:text-[2.5rem]   
-                        sm:px-2 
-                        md:text-[6rem] md:px-3 
-                        lg:text-[12rem] lg:px-6 lg:pb-[2rem]
-                        lp:text-[7.5rem] lp:px-4 lp:mb-8" 
-                        name="image-outline" 
-                    />
-                    <span className="mt-2 text-center lp:text-[2.5rem] lp:mt-[-3rem] lg:text-[3.5rem]  lg:pb-10">Adobe Stock Images</span>
-                </li>
+                
             </ul>
         </div>
     );
 };
 
-export default SoftwareUsed;
+export default MagSoftware;
