@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 // Importing project data
 import projectData from "../data/project.json"; 
 import SoftwareUsed from "./BeachIcons";
-import BeachTimeLine from "../Components/beachTimeline";
+import BeachTimeLine from "src/Components/BeachTimeline.jsx";
 import BeachWorkSection from "../Components/BeachWorkSection";
 import BeachMock from "../Components/BeachMock";
 import Social from '../Components/social';
