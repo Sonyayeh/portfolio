@@ -90,6 +90,7 @@ const Beachball = () => {
                "></div>
 
                 {/* work section Section */}
+                {/* the working process */}
                 <div>
                 <BeachWorkSection />
                 </div>
