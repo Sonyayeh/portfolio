@@ -25,6 +25,7 @@ const Projects = () => {
                     {/* cloud gif */}
                     <div className="flex justify-between">
                         <img 
+                            loading="lazy"
                             src={TwoClouds} 
                             alt="Cloud gif"
                             className="w-auto max-w-full
@@ -39,7 +40,8 @@ const Projects = () => {
                     {/* bubble gifs, same as the other pages but the numbers and positions are different */}
                     <div>
                         <div className="flex justify-between">
-                            <img src={Bubble} alt="Bubble gif" className=" 
+                            <img src={Bubble} loading="lazy" alt="Bubble gif" 
+                            className=" 
                             sm:w-1/4 sm:h-1/4 sm:ml-[0rem] sm:mt-[10rem]
                             md:w-1/4 md:h-1/4 md:ml-[-2rem] md:mt-[10rem]
                             lg:w-1/4 lg:h-auto lg:ml-[70rem] lg:mt-[-16rem]
