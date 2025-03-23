@@ -1,154 +1,125 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import Arrow from '../Components/ArrowSvg';
+import Social from "../Components/social";
+// here are the project sections
+import Graphic from "../Components/GraphicDesign";
+import PuppyProject from "../Components/puppyproject";
+import BcitProject from "../Components/bcitproject";
+import BoardProject from "../Components/boardproject";
+import TysnProject from "../Components/tysnproject";
 
-// I have each project information imported from project.json, I will make my comments there as well!
-import projectData from "../data/project.json";  // Import the JSON data
+// and ofc here are the gifs, i think i forgot to add them in about me page
+// that was my mistake
+import TwoClouds from '../assets/twoclouds.gif';
+import Bubble from '../assets/singlebubble.gif';
 
-const GraphicBox = () => {
-    // this line is to go into the project data in project.json and find the 
-    // data that has the project id of 1, and then being brought into here
-    const project = projectData.find((proj) => proj.id === 1);
-
-    if (!project) {
-        return <div>Project not found</div>;  // Handle case where project is not found
-    }
+const Projects = () => {
+    const scrollToGraphic = () => {
+        document.getElementById('graphic-section').scrollIntoView({ behavior: 'smooth' });
+    };
 
     return (
-        // I think i commented about this section so many times already 
-        <div className="w-full relative mt-[30rem] 
-        sm:mt-[10rem] sm:px-0  sm:mx-auto
-        md:ml-[0rem]
-        lg:pl-[4rem] lg:pr-[7rem] ">
-
-            {/* Project Heading and Description */}
-            <div className="text-start w-full
-            
-            ">
-                {/* this is the section title
-                I did it in a way where the first project of each
-                section would have the section title,
-                so when it is brought into the project page
-                I don't have to make another title and manually
-                adjust it */}
-                <h1 className=" w-full flex flex-col items-center
-                sm:text-[2.2rem] sm:pb-[2rem] sm:mt-[-16rem]
-                md:text-8xl md:pl-[2rem] md:pt-[10rem] 
-                lg:text-8xl lg:pl-3">
-                    Graphic Design:
-                </h1>
-
-                {/* Blue heading */}
-                <div className="bg-blue-200 px-4 flex justify-between items-center w-full
-                sm:pt-1 sm:pb-1
-                ">
-                    <h5 className="text-white text-3xl 
-                    sm:text-3xl 
-                    md:text-6xl 
-                    lg:text-6xl">
-                        Project
-                    </h5>
-                </div>
-
-                {/* White background tab bar , same thing as the about 
-                me, also, thank you so very much for this omg I could never */}
-                <div className="bg-blue-200 p-4 pt-0">
-                    <ul className="flex gap-6 items-center space-x-1 bg-white w-full px-6 justify-start">
-                        {/* List items with responsive font sizes */}
-                        <li className="text-blue-200 text-lg 
-                        sm:text-3xl 
-                        md:text-4xl 
-                        lg:text-2xl 
-                        font-semibold">DISC</li>
-                        <li className="text-blue-200 text-lg 
-                        sm:text-3xl 
-                        md:text-4xl 
-                        lg:text-2xl 
-                        font-semibold">OPTION</li>
-                        <li className="text-blue-200 text-lg 
-                        sm:text-3xl 
-                        md:text-4xl 
-                        lg:text-2xl 
-                        font-semibold">VIEW</li>
-                        <li className="text-blue-200 text-lg 
-                        sm:text-3xl 
-                        md:text-4xl 
-                        lg:text-2xl 
-                        font-semibold">HELP</li>
-                    </ul>
-                </div>
-            </div>
-
-            {/* Project box with border */}
-            <div className="w-full p-0 sm:p-0 flex border-solid border-x-[1rem] border-b-[1rem] border-blue-200
-            md:p-3 
-            ">
-
-                {/* Content Container */}
-                <div className="space-y-4 flex flex-col py-2 px-4 
-                sm:px-7 w-full 
-                lg:flex-row">
-
-                    {/* Title and Description Section */}
-                    <div className="w-full flex flex-col items-center">
-                        <h5 className="text-black pb-2 text-2xl 
-                        sm:text-3 sm:text-start sm:pt-5 sm:font-bold sm:text-blue-400
-                        md:text-[2.3rem] md:pt-5
-                        lg:text-[4.5rem] lg:pl-4 lg:pt-[2rem] lg:absolute
-                        lp:text-[3rem] lp:pt-[2rem]">
-                            {/* with each project.xxx, it is manually grabbing
-                            the information of project.id, in this case it's
-                            project.1, so it will add in project 1's title, 
-                            description, imageurl, and chips! */}
-                            {project.title}
-                        </h5>
-                        <h4 className="text-lg leading-6 
-                        sm:text-[1rem] sm:pt-2  
-                        md:text-2xl md:mt-[4.75rem] md:pl-5 md:pr-[20rem]
-                        lg:text-3xl lg:py-[10rem] lg:ml-10 lg:pr-[1rem]">
-                            {project.description}
-                        </h4>
-                    </div>
-
-                    {/* Image Section */}
-                    <div className="flex justify-center w-full lg:w-1/2 lg:ml-auto">
-                        <img
-                            src={project.imageurl} 
-                            className="w-full h-auto object-contain rounded-xl
-                            sm:w-[20rem] sm:h-[30rem]
-                            md:w-[20rem] md:h-[25rem] md:ml-[28rem] md:mt-[-18rem] md:mb-[-2rem]
-                            lg:ml-[5rem] lg:w-[35rem] lg:h-[35rem] lg:mt-[6rem]
-                            "
+        <div>
+            <div />
+                {/* page title */}
+                <div>
+                    {/* cloud gif */}
+                    <div className="flex justify-between">
+                        <img 
+                            src={TwoClouds} 
+                            alt="Cloud gif"
+                            className="w-auto max-w-full
+                            sm:w-[10rem] sm:ml-[16rem]
+                            md:w-[15rem] md:ml-[35rem] md:mt-[-2rem]
+                            lg:w-[20rem] lg:ml-[10rem] lg:mt-[12rem]
+                            lp:w-[20rem] lp:ml-[60rem] 
+                            " 
                         />
                     </div>
-                    {/* the software used section */}
-                    <div className="w-full flex flex-col items-start">
-                        <h4 className="text-blue-300 
-                        sm:text-[1rem] sm:mt-[-1rem]
-                        md:text-[1.4rem] md:w-[25rem] md:ml-[1.5rem]
-                        lg:text-[1.3rem] lg:ml-[-70rem] lg:mt-[45rem] 
-                        ">
-                            {project.chips}
-                        </h4>
+
+                    {/* bubble gifs, same as the other pages but the numbers and positions are different */}
+                    <div>
+                        <div className="flex justify-between">
+                            <img src={Bubble} alt="Bubble gif" className=" 
+                            sm:w-1/4 sm:h-1/4 sm:ml-[0rem] sm:mt-[10rem]
+                            md:w-1/4 md:h-1/4 md:ml-[-2rem] md:mt-[10rem]
+                            lg:w-1/4 lg:h-auto lg:ml-[70rem] lg:mt-[-16rem]
+                            max-w-full
+                            " />
+                        </div>
                     </div>
-                     {/* View More Button, I decided not to use the arrow because it's too small
-                     even I can't see it*/}
-                     <div className="flex justify-center mt-8">
-                    <Link to="/beachball">
-                        <button
-                        className="px-6 py-3 bg-blue-300 text-white rounded-lg shadow-md hover:bg-blue-500 hover:text-white focus:outline-none focus:ring-2 focus:ring-blue-300 transition-colors duration-300
-                            md:ml-[28rem] md:mt-[-2rem]
-                            lg:mt-[44rem] lg:ml-[-21rem]"
-                        >
-                        View More
-                        </button>
-                    </Link>
+                    <div>
+                        <div className="flex justify-between">
+                            <img src={Bubble} alt="Bubble gif" className=" 
+                            sm:w-2/4 sm:h-1/4 sm:ml-[0rem] sm:mt-[-5rem]
+                            md:w-2/4 md:h-1/4 md:ml-[-5rem] md:mt-[-5rem]
+                            lg:w-1/5 lg:h-1/5 lg:ml-[80rem] lg:mt-[-25rem]
+                            max-w-full
+                            " />
+                        </div>
                     </div>
 
+                    <div className="w-full flex flex-col items-center">
+                        <h1 className="
+                        sm:text-[3rem] sm:mt-[-15rem]
+                        md:text-[6rem] md:mt-[-30rem] 
+                        lg:text-[7rem] lg:absolute lg:ml-[36rem] lg:mt-[-20rem] 
+                        lp:text-[6rem] lp:mt-[-50rem] lp:justify-center lp:items-center
+                        " 
+                        >Projects:</h1>
+                    </div>
+
+                    {/* the down arrow */}
+                    <div>
+                        <div className="w-full flex flex-col items-center">
+                            <Arrow 
+                            className="
+                            sm:w-6 sm:mb-[10rem] 
+                            md:w-10 md:py-[10rem]
+                            lg:w-12 lg:ml-[44rem] lg:py-[0rem] lg:pt-[5rem]
+                            lp:w-12  lp:py-[0rem] lp:mt-[-22rem]
+                            " 
+                            onClick={scrollToGraphic}
+                            />
+                        </div>
+                    </div>
                 </div>
-            </div>
+
+                {/* The project section */}
+                {/* I am importing them from the xxxproject.jsx files, which then the project information were imported in */}
+                {/* graphic design, but this is volleyball poster */}
+                <div id="graphic-section">
+                    <Graphic />
+                </div>
+                {/* this section is the UI/UX projects */}
+                <div>
+                    <PuppyProject />
+                </div>
+                <div>
+                    <BcitProject />
+                </div>
+                <div>
+                    <BoardProject />
+                </div>
+                <div>
+                    <TysnProject />
+                </div>
+                {/* I named this one the OmuMockup instead of OmuProject because I didn't have my
+                old files sorted, that's why it's called a different name */}
+                <div>
+                </div>
+                <TysnProject />
+                <div>
+                    {/* no position adjustments for medium and large screens */}
+                    <div className="
+                    sm:pt-[2rem]
+                    ">
+                        <Social />
+                    </div>
+                </div>
             
-        </div>
+            </div>
     );
 }
 
-export default GraphicBox;
+export default Projects;

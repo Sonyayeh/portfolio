@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 // Importing project data
 import projectData from "../data/project.json"; 
 import SoftwareUsed from "./BeachIcons";
-import BeachTimeline from "../Components/BeachTimeline";
+import BeachTimeLine from "../Components/BeachTimeLine"; // Corrected import path with correct case
 import BeachWorkSection from "../Components/BeachWorkSection";
 import BeachMock from "../Components/BeachMock";
 import Social from '../Components/social';
@@ -34,19 +34,22 @@ const Beachball = () => {
                 <h1 className="pl-2 justify-center text-center text-blue-500 underline decoration-dashed
                 sm:text-[2rem] sm:pb-[5rem] sm:mt-[-5rem] sm:w-[25rem]
                 md:text-[3rem] md:ml-[0rem] md:pt-[10rem] md:w-[50rem]
-                lg:text-7xl lg:ml-[8rem] lg:w-[60rem] lg:mb-[5rem] lg:mt-[2rem]">
+                lp:text-[3.7rem] lp:w-[75rem] lp:justify-center lp:items-center
+                lg:text-7xl lg:ml-[-28rem] lg:w-[120rem] lg:mb-[5rem] lg:mt-[2rem]">
                     Beach Volleyball Tournament Poster:
                 </h1>
                 <h1 className="pl-2 justify-center text-center underline decoration-dashed text-blue-400
                 sm:text-[1.7rem] sm:pb-[1rem] sm:w-[25rem] sm:ml-1
                 md:text-5xl md:ml-[0rem] md:pt-[3rem] md:w-[50rem]
-                lg:text-7xl lg:ml-[8rem] lg:w-[60rem] lg:mb-[5rem] lg:mt-[2rem]">
+                lp:text-[4rem] lp:w-[75rem] lp:justify-center lp:items-center
+                lg:text-7xl lg:w-[60rem] lg:mb-[5rem] lg:mt-[2rem]">
                     Overview:
                 </h1>
                 <h3 className="pl-2 text-orange-500
                 sm:text-[1rem] sm:pb-[1rem] sm:w-[25rem] sm:ml-4
                 md:text-5xl md:ml-[0rem] md:pt-[5rem] md:w-[50rem] md:mb-[2rem]
-                lg:text-7xl lg:ml-[8rem] lg:w-[60rem] lg:mb-[5rem] lg:mt-[2rem]">
+                lp:text-[2.5rem] lp:w-[75rem] lp:justify-center lp:items-center
+                lg:text-7xl lg:ml-[-20rem] lg:w-[110rem] lg:mb-[5rem] lg:mt-[2rem]">
                 The goal was to create a poster about a volleyball tournament. This project requires all the skillsets I have learned in MDIA 1160 and 2260, which are Adobe Illustrator 1 and 2. The main purpose is to make sure students understand course material and the software completely, and able to work under pressure effectively. The volleyball tournament poster project is to create a promotional poster about an upcoming volleyball match in the Town of Shelbyville. 
                 
                 {/* All the elements on the poster were to be created only with Adobe Illustrator. Other than Adobe Illustrator, I also used Procreate for sketches and took reference images downloaded from Adobe Stock Image */}
@@ -55,6 +58,8 @@ const Beachball = () => {
                <div className="border-t-2 border-blue-500 
                sm:w-[20rem] sm:ml-[3rem] sm:pb-[2rem]
                md:w-[40rem] md:ml-[4rem]
+               lp:w-[65rem]
+               lg:w-[100rem] lg:ml-[-16rem]
                "></div>
 
                 {/* software used section */}
@@ -66,18 +71,22 @@ const Beachball = () => {
                  <div className="border-t-2 border-blue-500 
                sm:w-[20rem] sm:ml-[3rem] sm:pb-[2rem]
                md:w-[40rem] md:ml-[4rem]
+               lp:w-[65rem]
+               lg:w-[100rem] lg:ml-[-16rem]
                "></div>
                 
 
                 {/* timeline section */}
                 <div>
-                <BeachTimeline />
+                <BeachTimeLine />
                </div>
 
                 {/* added a line for separate sections */}
                <div className="border-t-2 border-blue-500 my-10 
                sm:w-[20rem] sm:ml-[3rem]
                md:w-[40rem] md:ml-[4rem] 
+               lp:w-[65rem]
+               lg:w-[100rem] lg:ml-[-16rem] lg:pb-[5rem] lg:mt-[6rem]
                "></div>
 
                 {/* work section Section */}
@@ -89,6 +98,8 @@ const Beachball = () => {
                 <div className="border-t-2 border-blue-500 my-10 
                sm:w-[20rem] sm:ml-[3rem]
                md:w-[40rem] md:ml-[4rem] 
+               lp:w-[65rem]
+               lg:w-[100rem] lg:ml-[-16rem] lg:mb-[8rem]
                "></div>
 
                 {/* Mockup section */}
@@ -100,12 +111,15 @@ const Beachball = () => {
                 <div className="border-t-2 border-blue-500 my-10 
                sm:w-[20rem] sm:ml-[3rem]
                md:w-[40rem] md:ml-[4rem] 
+               lp:w-[65rem]
+               lg:w-[100rem] lg:ml-[-16rem]
                "></div>
 
                </div>
-               <div className=" w-full flex flex-col items-center
+               <div className=" w-full flex flex-col justify-center items-center
                sm:ml-[7rem]
                md:ml-[18rem]
+               lp:ml-[40rem]
                ">
                 <Social />
                </div>

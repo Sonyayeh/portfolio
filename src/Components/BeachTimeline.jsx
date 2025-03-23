@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from "react";
 
-const BeachTimeline = () => {
+const BeachTimeLine = () => {
   const listItemsRef = useRef([]);
 
   useEffect(() => {
@@ -70,24 +70,44 @@ const BeachTimeline = () => {
               top: -10px; /* Adjust this value to position the dot on top of the line */
             }
           }
+          @media (min-width: 1280px) {
+            .timeline-dot {
+              width: 25px; /* Adjusted size for large screens */
+              height: 25px; /* Adjusted size for large screens */
+              top: -12px; /* Adjust this value to position the dot on top of the line */
+            }
+          @media (min-width: 1920px) {
+            .timeline-dot {
+              width: 35px; /* Adjusted size for large screens */
+              height: 35px; /* Adjusted size for large screens */
+              top: -12px; /* Adjust this value to position the dot on top of the line */
+            }
+          }
         `}
       </style>
       <h1 className="pl-2 justify-center text-center 
       underline decoration-dashed text-blue-400 pt-8
       sm:text-[1.7rem] sm:w-[25rem] sm:ml-1
       md:text-5xl md:ml-[-1rem] md:pt-[5rem] md:w-[50rem]
-      lg:text-7xl lg:ml-[8rem] lg:w-[60rem] lg:mb-[5rem] lg:mt-[2rem]">
+      lp:text-6xl lp:w-[75rem] lp:justify-center lp:items-center
+      lg:text-7xl lg:ml-[3rem] lg:w-[60rem] lg:mb-[5rem] lg:mt-[2rem]">
         Working timeline:
       </h1>
       <h1 className="pl-2 justify-center text-center 
       underline decoration-dashed text-blue-400
       sm:text-[1.3rem] sm:pb-[1rem] sm:w-[25rem] sm:ml-1
       md:text-5xl md:ml-[-1rem] md:pt-[5rem] md:w-[50rem] md:mb-[2rem]
-      lg:text-7xl lg:ml-[8rem] lg:w-[60rem] lg:mb-[5rem] lg:mt-[2rem]">
+      lp:text-4xl lp:w-[75rem] lp:justify-center lp:items-center
+      lg:text-7xl lg:ml-[3rem] lg:w-[60rem] lg:mb-[5rem] lg:mt-[2rem]">
         Total hours: <span className="text-red-600">15 hours</span>
       </h1>
       <div className="relative md:ml-[12rem]">
-        <div className="timeline-line md:ml-[11rem]"></div>
+        {/* the timeline itself */}
+        <div className="timeline-line 
+        md:ml-[11rem]
+        lp:ml-[25rem]
+        lg:ml-[20rem]
+        "></div>
         <ul className="space-y-10 relative">
           {[
             { date: "November 15", text: "Brainstorming and sketching", hours: "(1 hour)", side: "right" },
@@ -102,13 +122,20 @@ const BeachTimeline = () => {
               ref={(el) => (listItemsRef.current[index] = el)}
               className="timeline-item flex justify-between items-center w-full transition-all duration-700 ease-in-out"
             >
-              <div className="timeline-dot md:ml-[11rem]"></div>
+              {/* the timeline dot section */}
+              <div className="timeline-dot 
+              md:ml-[11rem]
+              lp:ml-[25rem]
+              lg:ml-[20rem]
+              "></div>
               {item.side === "right" ? (
                 <>
                 {/* right side */}
                   <div className="w-1/2 text-right pr-8 text-orange-400 font-Dos">
                     <span className="block text-left ml-[15rem] w-[11rem] sm:text-[1.3rem]
                     md:text-[2rem] md:w-[25rem] md:ml-[15rem]
+                    lp:text-[2.5rem] lp:w-[35rem] lp:ml-[28rem]
+                    lg:text-[3rem] lg:w-[40rem] lg:ml-[25rem]
                     ">
                       <strong>{item.date}</strong><br />
                       {item.text}<br />
@@ -125,6 +152,8 @@ const BeachTimeline = () => {
                     <span className="block text-left ml-[-5rem] w-[12rem] 
                     sm:text-[1.3rem] 
                     md:text-[2rem] md:w-[25rem] md:ml-[-14rem]
+                    lp:text-[2.5rem] lp:w-[35rem] lp:ml-[-12rem]
+                    lg:text-[3rem] lg:w-[45rem] lg:ml-[-25rem]
                     ">
                       <strong>{item.date}</strong><br />
                       {item.text}<br />
@@ -141,4 +170,4 @@ const BeachTimeline = () => {
   );
 };
 
-export default BeachTimeline;
+export default BeachTimeLine;

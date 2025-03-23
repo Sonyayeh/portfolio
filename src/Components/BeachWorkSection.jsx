@@ -39,38 +39,55 @@ const BeachWorkSection = () => {
       <h2 className="text-center text-2xl font-bold mb-4 w-[17rem] text-blue-400 underline decoration-dashed
       sm:ml-[1rem] 
       md:text-[3rem] md:w-[35rem] md:pb-[2rem]
+      lp:text-[5rem] lp:w-[70rem] lp:pb-[2rem] lp:ml-[-3rem]
+      lg:justify-center lg:items-center lg:ml-[-1rem] lg:text-7xl lg:w-[60rem] lg:mb-[5rem] lg:mt-[2rem]
       ">Sketches & Process:</h2>
       <div className="overflow-x-auto flex space-x-4 py-4 scrollbar-visible 
+      // this is where the scroller window is 
+      sm:w-[300px]
       md:w-[700px] md:ml-[-4rem]
+      lp:w-[70rem]
+      lg:ml-[-5rem]
       ">
         {images.map((image, index) => (
           <div key={index} className="flex-shrink-0 ml-[2rem] 
           sm:w-[280px]
           md:w-[700px] 
+          lp:w-[70rem] 
           ">
             <img
               src={image.src}
               alt={image.alt}
-              className="w-full h-auto cursor-pointer"
+              className="w-full h-auto hover:cursor-hover"
               onClick={() => openLightbox(index)}
             />
-            <p className="mt-2 text-left text-lg text-gray-700 
+            {/* added a line for separate sections */}
+            <div className="border-t-2 border-blue-500 my-10 
+               sm:w-[20rem] sm:ml-[3rem]
+               md:w-[40rem] md:ml-[4rem] 
+               lp:w-[65rem] lp:ml-[2rem]
+               "></div>
+            <p className="mt-2 text-left text-lg text-blue-500 
             font-Dos 
             md:text-[2.5rem] md:pr-[4rem] md:leading-[4rem]
+            lp:ml-[2rem] lp:w-[69rem]
             ">{image.description}</p>
           </div>
         ))}
       </div>
       {isOpen && (
         <div className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50 lightbox-overlay" onClick={handleClickOutside}>
+          <button className="absolute top-4 right-4 text-white text-3xl" onClick={closeLightbox}>X</button>
           <div className="relative flex items-center overflow-x-auto scrollbar-visible">
-
             <div className="flex space-x-4 py-4">
               {images.map((image, index) => (
-                <div key={index} className="flex-shrink-0 w-[420px] pr-3
+                <div key={index} 
+                // adjustment for the ligthbox images
+                className="flex-shrink-0 w-[420px] pr-3
                 md:w-[850px] md:pr-2
+                lp:w-[500px] lp:pr-2
                 ">
-                  <img src={image.src} alt={image.alt} className="max-w-full max-h-full" />
+                  <img src={image.src} alt={image.alt} className="max-w-full max-h-full hover:cursor-hover" />
                 </div>
               ))}
             </div>

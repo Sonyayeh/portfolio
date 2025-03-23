@@ -72,7 +72,7 @@ const Projects = () => {
                         sm:text-[3rem] sm:mt-[-15rem]
                         md:text-[6rem] md:mt-[-30rem] 
                         lg:text-[7rem] lg:absolute lg:ml-[36rem] lg:mt-[-20rem] 
-                        lp:text-[7rem] lp:mt-[-50rem] 
+                        lp:text-[6rem] lp:mt-[-50rem] lp:justify-center lp:items-center
                         " 
                         >Projects:</h1>
                     </div>
@@ -88,7 +88,7 @@ const Projects = () => {
                             sm:w-6 sm:mb-[10rem] 
                             md:w-10 md:py-[10rem]
                             lg:w-12 lg:ml-[44rem] lg:py-[0rem] lg:pt-[5rem]
-                            lp:w-12  lp:py-[0rem] lp:mt-[-30rem]
+                            lp:w-12  lp:py-[0rem] lp:mt-[-2rem]
                             "/>
                         </div>
                     </div>
