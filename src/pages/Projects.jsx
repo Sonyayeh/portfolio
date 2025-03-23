@@ -106,7 +106,7 @@ const Projects = () => {
                 {/* I named this one the OmuMockup instead of OmuProject because I didn't have my
                 old files sorted, that's why it's called a different name */}
                 <div>
-                    <OmuMockup />
+                    <TysnProject />
                 </div>
                 
                 <div>
