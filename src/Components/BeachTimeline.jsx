@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from "react";
 
-const BeachTimeLine = () => {
+const BeachTime = () => {
   const listItemsRef = useRef([]);
 
   useEffect(() => {
@@ -170,4 +170,4 @@ const BeachTimeLine = () => {
   );
 };
 
-export default BeachTimeLine;
+export default BeachTime;

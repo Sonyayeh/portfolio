@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 // Importing project data
 import projectData from "../data/project.json"; 
 import SoftwareUsed from "./BeachIcons";
-import BeachTimeLine from "src/Components/BeachTimeline.jsx";
+import BeachTime from "../Components/beachTimeline";
 import BeachWorkSection from "../Components/BeachWorkSection";
 import BeachMock from "../Components/BeachMock";
 import Social from '../Components/social';
@@ -78,7 +78,7 @@ const Beachball = () => {
 
                 {/* timeline section */}
                 <div>
-                <BeachTimeLine />
+                <BeachTime />
                </div>
 
                 {/* added a line for separate sections */}
