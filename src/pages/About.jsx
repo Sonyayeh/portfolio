@@ -228,7 +228,7 @@ const About = () => {
           sm:w-[28rem] sm:ml-[-3rem] sm:mt-[-5rem] 
           mb:w-[40rem] md:max-w-[40rem] md:ml-[10rem] 
           lg:w-[50rem] lg:ml-[32rem] lg:mt-[-5rem] lg:pr-[6rem] lg:mb-[-7rem]
-          lp:w-[60rem] lp:ml-[30rem] lp:mt-[2rem] lp:pr-[6rem]">
+          lp:w-[60rem] lp:ml-[35rem] lp:mt-[2rem] lp:pr-[6rem]">
             <Social />
           </div>
             </div>
