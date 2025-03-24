@@ -1,10 +1,11 @@
 import React, { useEffect, useRef, useState } from "react";
 // Importing project data
 import projectData from "../data/project.json"; 
-import SoftwareUsed from "./BeachIcons";
+import SoftwareUsed from "../Components/BeachIcons";
 import BeachWorkSection from "../Components/BeachWorkSection";
 import BeachMock from "../Components/BeachMock";
 import Social from '../Components/social';
+import { Link } from "react-router-dom";
 
 const BeachTimeLine = () => {
   const listItemsRef = useRef([]);
@@ -284,6 +285,19 @@ const Beachball = () => {
                lp:w-[65rem]
                lg:w-[100rem] lg:ml-[-16rem]
                "></div>
+
+               {/* Next Button */}
+                <div className="flex justify-end mt-8 sm:w-[25rem]">
+                    <Link to="/magazine" className="flex items-center text-blue-300 hover:text-blue-500 transition-colors duration-300"
+                     onClick={() => window.scrollTo({ top: 0 })}
+                    >
+                        <h3 className="mr-2 text-blue-400 hover:text-blue-500 sm:text-[1.5rem]">Next</h3>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="w-8 h-8">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
+                        </svg>
+                    </Link>
+                </div>
+
 
                </div>
                <div className=" w-full flex flex-col justify-center items-center

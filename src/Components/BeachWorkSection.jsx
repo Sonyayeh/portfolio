@@ -63,7 +63,7 @@ const BeachWorkSection = () => {
             />
             {/* added a line for separate sections */}
             <div className="border-t-2 border-blue-500 my-10 
-               sm:w-[20rem] sm:ml-[3rem]
+               sm:w-[16rem] sm:ml-[0rem]
                md:w-[40rem] md:ml-[4rem] 
                lp:w-[65rem] lp:ml-[2rem]
                "></div>

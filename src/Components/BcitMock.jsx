@@ -1,13 +1,13 @@
 import React, { useState } from "react";
-import Bus from "../assets/volleyball/Busstop.png";
-import Flyer from "../assets/volleyball/vollyball.png";
+import Login from "../assets/BCIT/login.png";
+import Concept from "../assets/BCIT/one.png";
 
 const images = [
-    { src: Bus, alt: "Bus Stop Mockup", description: "This is the bus stop mockup. I figured it'll look nice in a larger surface, hense I chose to do a bus stop instead. The mockup is done with Adobe Photoshop, and the mockup background was downloaded from Adobe Stock Images." },
-    { src: Flyer, alt: "Flyer Mockup", description: "This is the flyer mockup. I thought doing a flyer mockup would be ideal if event hosters are trying to promote their event. The mockup is done with Adobe Photoshop, and the mockup background was downloaded from Adobe Stock Images." },
+    { src: Concept, alt: "Rough Concept Sketches", description: "This is a simple, generalized sketch of each screen with some reasonings. Before I did the sketches, I knew immediately what I want to change and improve on. Each screen specifically mentions features that I wished to implement and believed each improvements would benefit user experience and interface." },
+    { src: Login, alt: "Bus Stop Mockup", description: "This is a log in mockup. It only made sense if the mockup is to display on a computer/laptop. This mockup was created and edited with Adobe Photoshop." },
 ];
 
-const BeachMock = () => {
+const BcitWork = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
@@ -30,8 +30,8 @@ const BeachMock = () => {
     <div className="relative ml-[4rem] w-[19rem] mx-auto
     md:w-[46rem] md:ml-[-2rem]
     ">
-      <h2 className="text-center text-2xl font-bold mb-4 w-[17rem] text-blue-400 underline decoration-dashed
-      sm:ml-[1rem] 
+      <h2 className="text-center text-2xl font-bold mb-4 w-[17rem] text-purple-400 underline decoration-dashed
+      sm:ml-[0rem] 
       md:text-[3rem] md:w-[35rem] md:pb-[2rem] md:ml-[8rem]
       lp:text-[5rem] lp:w-[70rem] lp:pb-[2rem] lp:ml-[3rem]
       lg:justify-center lg:items-center lg:ml-[5rem] lg:text-7xl lg:w-[60rem] lg:mb-[5rem] lg:mt-[2rem]">
@@ -57,12 +57,12 @@ const BeachMock = () => {
                 onClick={() => openLightbox(index)}
               />
               {/* added a line for separate sections */}
-              <div className="border-t-2 border-blue-500 my-10 
+              <div className="border-t-2 border-purple-500 my-10 
                sm:w-[16rem] sm:ml-[0rem]
                md:w-[40rem] md:ml-[4rem] 
                lp:w-[65rem] lp:ml-[0rem]
                "></div>
-              <p className="mt-2 text-left text-lg text-blue-500
+              <p className="mt-2 text-left text-lg text-purple-500
               font-Dos 
               md:text-[2.5rem] md:w-[43rem] md:gap-x-3 md:pl-[1rem] md:leading-[4rem]
               lp:ml-[-1rem] lp:w-[69rem]
@@ -110,4 +110,4 @@ const BeachMock = () => {
   );
 };
 
-export default BeachMock;
+export default BcitWork;

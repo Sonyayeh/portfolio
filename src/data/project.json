@@ -27,6 +27,7 @@
         "chip1": "#Adobe Stock Images",
         "chip2": "#Procreate",
         "chip3": "#Figma",
+        "chip4": "#Canva",
         "imageurl": "https://i.imgur.com/AosBzjZ.png"
     },
     {
@@ -40,11 +41,12 @@
     },
     {
         "id": 5,
-        "title": "Stardust Tea Lounge: TYSN",
-        "description": "A fictional website dedicated for a fictional shop: Stardust tea lounge. In this project, I partnered up with other team mates to create TYSN, which stands for Tell You Something New, a fictional design agency company that helps local businesses in Vancouver to get noticed.",
+        "title": "Bing: The Redesign",
+        "description": "The redesign of Bing is to create a more user friendly with features that are relavant to users. Along with other talented designers, we were able to enhance the user experience and layout of the search engin, making it less confusing and clutter, which helps users to get to the point right away when navigating. ",
         "chip1": "#Adobe Stock Images",
         "chip2": "#Figma",
         "chip3": "#Canva",
+        "chip4": "#Procreate",
         "imageurl": "https://i.imgur.com/oDaNpB3.png"
     },
     {

@@ -6,8 +6,7 @@ import Magazine from "../Components/MagazineProject";
 import PuppyProject from "../Components/puppyproject";
 import BcitProject from "../Components/bcitproject";
 import BoardProject from "../Components/boardproject";
-import TysnProject from "../Components/tysnproject";
-import OmuMockup from "../Components/omuproject";
+import Bing from "../Components/Bing";
 import TwoClouds from '../assets/twoclouds.gif';
 import Bubble from '../assets/singlebubble.gif';
 
@@ -103,18 +102,15 @@ const Projects = () => {
                     <BoardProject />
                 </div>
                 <div>
-                    <TysnProject />
-                </div>
-                {/* I named this one the OmuMockup instead of OmuProject because I didn't have my
-                old files sorted, that's why it's called a different name */}
-                <div>
-                    <OmuMockup />
+                    <Bing />
                 </div>
                 
                 <div>
                     {/* no position adjustments for medium and large screens */}
                     <div className="
                     sm:pt-[2rem]
+                    lp:ml-[31rem]
+                    lg:ml-[35rem]
                     ">
                         <Social />
                     </div>
