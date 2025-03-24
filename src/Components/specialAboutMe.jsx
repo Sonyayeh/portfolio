@@ -32,7 +32,8 @@ const Special = () => {
   // I also made sure the container is flexible, so it can resize on its own depending on how much text there is.
   return (
 
-    <div className="relative w-full max-w-xl flex flex-col justify-center items-center overflow-hidden p-6 border-2 border-dashed border-blue-300 h-auto lg:min-w-[63rem] lg:min-h-[40rem] lg:p-10 
+    <div className="relative w-full max-w-xl flex flex-col justify-center items-center overflow-hidden p-6 border-2 border-dashed border-blue-300 h-auto 
+    lg:min-w-[63rem] lg:min-h-[40rem] lg:p-10 lg:ml-[7rem]
     lp:min-w-[70rem] lp:min-h-[20rem] lp:p-10 lp:ml-[-2rem]">
       
     {/* this is the animation section

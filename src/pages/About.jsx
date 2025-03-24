@@ -228,7 +228,7 @@ const About = () => {
         <div className="
           sm:w-[28rem] sm:ml-[-3rem] sm:mt-[-5rem] 
           mb:w-[40rem] md:max-w-[40rem] md:ml-[10rem] 
-          lg:w-[50rem] lg:ml-[32rem] lg:mt-[-5rem] lg:pr-[6rem] lg:mb-[-7rem]
+          lg:w-[50rem] lg:ml-[35rem] lg:mt-[-5rem] lg:pr-[6rem] lg:mb-[-7rem]
           lp:w-[60rem] lp:ml-[36rem] lp:mt-[2rem] lp:pr-[6rem]">
             <Social />
           </div>
