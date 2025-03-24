@@ -116,7 +116,7 @@ const BoardProject = () => {
                     </div>
 
                     {/* Image Section */}
-                    <div className="flex justify-center w-full lg:w-1/2 lg:ml-[-14rem] lg:pt-[43rem] ">
+                    <div className="flex justify-center w-full lg:w-1/2 lg:ml-[-14rem] lg:pt-[58rem] ">
                         <img
                             src={project.imageurl} 
                             className="w-full h-auto object-contain rounded-xl
