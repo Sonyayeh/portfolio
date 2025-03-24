@@ -5,7 +5,7 @@ function Footer() {
     <div className="flex justify-center items-center  
       sm:w-[23rem]
       md:w-[54rem]
-      lg:pb-[10rem] lg:justify-center lg:items-center lg:w-[70rem] lg:ml-[2rem]
+      lg:pb-[10rem] lg:justify-center lg:items-center lg:w-[65rem] lg:ml-[9rem]
       lp:w-[70rem] lp:ml-[2rem]"
     >
       <div className="flex flex-col items-center lg:flex-row lg:items-center">
