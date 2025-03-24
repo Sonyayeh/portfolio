@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 import Social from '../Components/social';
 
 
-const BeachTimeLine = () => {
+const MagTimeLine = () => {
   const listItemsRef = useRef([]);
 
   useEffect(() => {
@@ -249,7 +249,7 @@ const MagazineDesign = () => {
 
                 {/* timeline section */}
                 <div>
-                <BeachTimeLine />
+                <MagTimeLine />
                </div>
 
                 {/* added a line for separate sections */}
