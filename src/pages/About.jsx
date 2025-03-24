@@ -188,6 +188,7 @@ const About = () => {
         </div>
             <div className="
             md:pb-[1rem] 
+            lp:ml-[5rem]
             ">
                 <Language />
             </div>
