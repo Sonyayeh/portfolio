@@ -141,7 +141,9 @@ const BoardProject = () => {
                             sm:mb-[2rem] sm:mt-[-1rem]
                             md:ml-[28rem] md:mt-[-2rem] md:mb-[3rem]
                             lp:ml-[28rem]
-                            lg:mt-[4rem] lg:justify-center lg:items-center">
+                            lg:mt-[4rem] lg:justify-center lg:items-center"
+                            onClick={() => window.scrollTo({ top: 0 })}
+                            >
                         View More
                         </button>
                     </Link>

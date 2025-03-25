@@ -130,7 +130,7 @@ const Bing = () => {
                             sm:w-[20rem] sm:h-[30rem] sm:mt-[-3rem]
                             md:w-[20rem] md:h-[25rem] md:ml-[28rem] md:mt-[-40rem] md:mb-[-2rem]
                             lp:h-[35rem] lp:w-[35rem] lp:max-h-[50rem] lp:mt-[-50rem]
-                            lg:w-[45rem] lg:h-[45rem]"
+                            lg:w-[45rem] lg:h-[45rem] lg:mt-[-38rem]"
                         />
                     </div>
 
@@ -148,7 +148,9 @@ const Bing = () => {
                             sm:mb-[2rem] sm:mt-[-1rem]
                             md:ml-[28rem] md:mt-[-2rem] md:mb-[3rem]
                             lp:ml-[28rem] 
-                            lg:mt-[4rem] lg:justify-center lg:items-center">
+                            lg:mt-[4rem] lg:justify-center lg:items-center"
+                            onClick={() => window.scrollTo({ top: 0 })}
+                            >
                         View More
                         </button>
                     </Link>

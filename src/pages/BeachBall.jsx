@@ -287,12 +287,18 @@ const Beachball = () => {
                "></div>
 
                {/* Next Button */}
-                <div className="flex justify-end mt-8 sm:w-[25rem]">
+                <div className="flex justify-end mt-8 
+                sm:w-[25rem]
+                lg:ml-[60rem]
+                ">
                     <Link to="/magazine" className="flex items-center text-blue-300 hover:text-blue-500 transition-colors duration-300"
                      onClick={() => window.scrollTo({ top: 0 })}
                     >
-                        <h3 className="mr-2 text-blue-400 hover:text-blue-500 sm:text-[1.5rem]">Next</h3>
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="w-8 h-8">
+                        <h3 className="mr-2 text-blue-400 hover:text-blue-500 
+                        sm:text-[1.5rem]
+                        lg:text-[3rem]
+                        ">Next</h3>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="w-8 h-8 lg:h-16 lg:w-16">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
                         </svg>
                     </Link>

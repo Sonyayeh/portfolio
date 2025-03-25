@@ -143,7 +143,9 @@ const Magazine = () => {
                             sm:mb-[2rem] sm:mt-[-1rem]
                             md:ml-[28rem] md:mt-[-2rem] md:mb-[2rem]
                             lp:ml-[28rem]
-                            lg:mt-[-2rem] lg:justify-center lg:items-center">
+                            lg:mt-[-2rem] lg:justify-center lg:items-center"
+                            onClick={() => window.scrollTo({ top: 0 })}
+                            >
                         View More
                         </button>
                     </Link>

@@ -15,7 +15,6 @@ import Vollyball from "./pages/BeachBall";
 import Magazine from "./pages/Magazine";
 import Boutique from "./pages/BoardWalk";
 import Bcit from "./pages/MyBcit";
-import Northstar from "./pages/NorthOmu";
 
 // Import styles
 import "./reset.css";
@@ -66,7 +65,6 @@ function App() {
               <Route path="/magazine" element={<Magazine />} />
               <Route path="/boardwalk" element={<Boutique />} />
               <Route path="/bcit" element={<Bcit />} />
-              <Route path="/northstar" element={<Northstar />} />
             </Route>
           </Routes>
         </main>

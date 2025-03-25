@@ -275,31 +275,44 @@ const MagazineDesign = () => {
 
                 {/* Next Button */}
 
-                <div className="flex justify-between mt-8 sm:w-[25rem] sm:pl-3">
-                {/* Back Button */}
-                <Link 
-                    to="/beachball" 
-                    className="flex items-center text-blue-300 hover:text-blue-500 transition-colors duration-300"
-                    onClick={() => window.scrollTo({ top: 0})}
-                >
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="w-8 h-8">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 19l-7-7 7-7" />
-                    </svg>
-                    <h3 className="ml-2 text-blue-400 hover:text-blue-500 sm:text-[1.5rem]">Back</h3>
-                </Link>
+                <div className="flex lg:justify-between mt-8 sm:w-[25rem] lg:w-[90rem] lg:ml-[-11rem] lg:mx-auto">
+    
+                  {/* Back Button */}
+                  <Link 
+                      to="/beachball" 
+                      className="flex items-center text-blue-300 hover:text-blue-500 transition-colors duration-300"
+                      onClick={() => window.scrollTo({ top: 0 })}
+                  >
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" 
+                          className="w-8 h-8 lg:w-16 lg:h-16">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 19l-7-7 7-7" />
+                      </svg>
+                      <h3 className="ml-2 text-blue-400 hover:text-blue-500 
+                          sm:text-[1.5rem] 
+                          lg:text-[3rem]">
+                          Back
+                      </h3>
+                  </Link>
 
-                {/* Next Button */}
-                <Link 
-                    to="/bcit" 
-                    className="flex items-center text-blue-300 hover:text-blue-500 transition-colors duration-300"
-                    onClick={() => window.scrollTo({ top: 0 })}
-                >
-                    <h3 className="mr-3 text-blue-400 hover:text-blue-500 sm:text-[1.5rem] sm:pr-2">Next</h3>
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="w-8 h-8">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
-                    </svg>
-                </Link>
-            </div>
+                  {/* Next Button */}
+                  <Link 
+                      to="/bcit" 
+                      className="flex items-center text-blue-300 hover:text-blue-500 transition-colors duration-300"
+                      onClick={() => window.scrollTo({ top: 0 })}
+                  >
+                      <h3 className="mr-3 text-blue-400 hover:text-blue-500 
+                          sm:text-[1.5rem] 
+                          lg:text-[3rem]">
+                          Next
+                      </h3>
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" 
+                          className="w-8 h-8 lg:w-16 lg:h-16">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
+                      </svg>
+                  </Link>
+
+              </div>
+
 
 
 

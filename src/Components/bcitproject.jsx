@@ -148,7 +148,9 @@ const BcitProject = () => {
                             sm:mb-[2rem] 
                             md:ml-[28rem] md:mt-[-2rem] md:mb-[3rem]
                             lp:ml-[28rem]
-                            lg:justify-center lg:items-center">
+                            lg:justify-center lg:items-center"
+                            onClick={() => window.scrollTo({ top: 0 })}
+                            >
                         View More
                         </button>
                     </Link>

@@ -5,6 +5,7 @@ const BcitiFig = () => {
         <div>
             <h5 className="sm:text-xl underline text-purple-400 
             sm:ml-[9rem] sm:w-[10rem] sm:pb-[2rem]
+            md:text-[3rem] md:w-[20rem] md:ml-[15rem]
             lg:text-[3rem]">
                 Figma File:
             </h5>
@@ -18,12 +19,12 @@ const BcitiFig = () => {
                 title="Figma Embed"
                 className="top-0 left-0 w-full h-[450px] 
                 sm:w-[20rem] sm:ml-[3rem]
-                md:w-full 
+                md:w-[30rem] md:ml-[9rem]
                 lg:h-[600px]"
             ></iframe>
             <h3 className="flex text-emerald-500
                 sm:pt-[1rem] sm:text-sm sm:ml-[4rem] sm:w-[20rem]
-                md:text-xl md:ml-[5rem]
+                md:text-xl md:ml-[9rem] md:w-[40rem] md:pt-[2rem]
                 lg:mt-[-2rem] lg:ml-[6rem] lg:text-2xl">
                 This is the Figma file. It has three pages: Lo-Fi, Hi-Fi and style guide. It is fully prototyped in Hi-Fi, please do play around with it to experience the app yourself!
             </h3>
@@ -42,18 +43,18 @@ const BcitiFig = () => {
                 Prototype:
             </h5>
             <iframe
-                style={{
-                    border: "1px solid rgba(0, 0, 0, 0.1)",
-                    height: "300px",
-                }}
-                src="https://embed.figma.com/proto/QZRxtL2jsXw5Q4ojCa3RyZ/MyBcit-edit?page-id=2%3A3&node-id=134-3101&node-type=canvas&viewport=-255%2C344%2C0.11&scaling=min-zoom&content-scaling=fixed&embed-host=share"
-                allowFullScreen
-                title="Figma Embed"
-                className="top-0 left-0 w-full h-[450px] 
-                sm:w-[20rem] sm:ml-[3rem]
-                md:w-full 
-                lg:h-[600px]"
-            ></iframe>
+            style={{
+                border: "1px solid rgba(0, 0, 0, 0.1)",
+            }}
+            src="https://embed.figma.com/proto/QZRxtL2jsXw5Q4ojCa3RyZ/MyBcit-edit?page-id=2%3A3&node-id=134-3101&node-type=canvas&viewport=-255%2C344%2C0.11&scaling=min-zoom&content-scaling=fixed&embed-host=share"
+            allowFullScreen
+            title="Figma Embed"
+            className="top-0 left-0 w-full max-w-[820px] mx-auto 
+            sm:w-[20rem] sm:ml-[3rem]
+            md:w-[45rem] md:h-[38rem] md:ml-0 
+            lg:w-[820px] lg:h-[550px]"
+        ></iframe>
+
             <h3 className="flex text-emerald-500
                 sm:pt-[1rem] sm:text-sm sm:ml-[4rem] sm:w-[20rem]
                 md:text-xl md:ml-[5rem]
