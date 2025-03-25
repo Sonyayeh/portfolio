@@ -216,7 +216,9 @@ const Home = () => {
           lg:w-[65rem] lg:ml-[-15rem] lg:pt-[25rem]
           lp:w-[50rem] lp:ml-[0rem] lp:pt-[5rem] relative z-0">
           <BlueWorkBox />
+          {/* I flipped it back! */}
           <div className="absolute 
+            transform scale-x-[-1] 
             sm:w-[18rem] sm:ml-[1rem] sm:mt-[24rem] 
             md:w-[60rem] md:ml-[-10rem] md:mt-[10rem]
             lg:w-[60rem] lg:ml-[1rem] lg:mt-[32rem]
