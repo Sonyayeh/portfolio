@@ -14,6 +14,7 @@ import TravelPictures from "./pages/TravelPhotoFolder";
 import Vollyball from "./pages/BeachBall";
 import Magazine from "./pages/Magazine";
 import Boutique from "./pages/BoardWalk";
+import Bing from "./pages/Bing";
 import Bcit from "./pages/MyBcit";
 
 // Import styles
@@ -81,6 +82,7 @@ function App() {
               <Route path="/beachball" element={<Vollyball />} />
               <Route path="/magazine" element={<Magazine />} />
               <Route path="/boardwalk" element={<Boutique />} />
+              <Route path="/bing" element={<Bing />} />
               <Route path="/bcit" element={<Bcit />} />
             </Route>
           </Routes>

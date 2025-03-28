@@ -47,7 +47,7 @@ const BeachWorkSection = () => {
       sm:w-[300px]
       md:w-[700px] md:ml-[-4rem]
       lp:w-[70rem]
-      lg:ml-[-5rem]
+      lg:ml-[-9rem]
       ">
         {images.map((image, index) => (
           <div key={index} className="flex-shrink-0 ml-[2rem] 

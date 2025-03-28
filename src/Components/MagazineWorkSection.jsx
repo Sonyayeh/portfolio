@@ -38,16 +38,16 @@ const MagazineWorkSection = () => {
       ">Sketches & Process:</h2>
       <div className="overflow-x-auto flex space-x-4 py-4 scrollbar-visible 
       // this is where the scroller window is 
-      sm:w-[320px] sm:ml-[-4rem]
+      sm:w-[320px] sm:ml-[-2.5rem]
       md:w-[700px] md:ml-[-4rem]
       lp:w-[55rem] lp:ml-[4rem]
-      lg:ml-[2rem] lg:w-[54rem]
+      lg:ml-[1rem] lg:w-[56rem]
       ">
         {images.map((image, index) => (
           <div key={index} className="flex-shrink-0 ml-[2rem] 
           sm:w-[280px]  sm:pl-[2rem]
           md:w-[650px] 
-          lp:w-[50rem] 
+          lp:w-[51rem] 
           ">
             <img
               src={image.src}

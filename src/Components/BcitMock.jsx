@@ -33,9 +33,9 @@ const BcitWork = () => {
       <h2 className="text-center text-2xl font-bold mb-4 w-[17rem] text-purple-400 underline decoration-dashed
       sm:ml-[0rem] 
       md:text-[3rem] md:w-[35rem] md:pb-[2rem] md:ml-[8rem]
-      lp:text-[5rem] lp:w-[70rem] lp:pb-[2rem] lp:ml-[3rem]
+      lp:text-[5rem] lp:w-[60rem] lp:mt-[6rem] lp:pb-[3rem] lp:justify-center lp:items-center lp:text-center 
       lg:justify-center lg:items-center lg:ml-[5rem] lg:text-7xl lg:w-[60rem] lg:mb-[5rem] lg:mt-[2rem]">
-      Mockups:</h2>
+     Sketches & Mockups:</h2>
       <div>
         <div className="overflow-x-auto flex space-x-4 py-4 scrollbar-visible
         lp:space-x-[4rem]
@@ -62,7 +62,7 @@ const BcitWork = () => {
                md:w-[40rem] md:ml-[4rem] 
                lp:w-[65rem] lp:ml-[0rem]
                "></div>
-              <p className="mt-2 text-left text-lg text-purple-500
+              <p className="mt-2 text-left text-lg text-emerald-500
               font-Dos 
               md:text-[2.5rem] md:w-[43rem] md:gap-x-3 md:pl-[1rem] md:leading-[4rem]
               lp:ml-[-1rem] lp:w-[69rem]

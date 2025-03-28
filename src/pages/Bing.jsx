@@ -1,13 +1,12 @@
 import React, { useEffect, useRef, useState } from "react";
 // Importing project data
 import projectData from "../data/project.json"; 
-import MagSoftware from "../Components/MagazineIcon";
-import MagazineWorkSection from "../Components/MagazineWorkSection";
-import { Link } from "react-router-dom";
+import BingSoftware from "../Components/BingIcon";
+import BoardFig from "../Components/BoardFigma";
 import Social from '../Components/social';
+import { Link } from "react-router-dom";
 
-
-const MagTimeLine = () => {
+const BingTimeLine = () => {
   const listItemsRef = useRef([]);
 
   useEffect(() => {
@@ -56,7 +55,7 @@ const MagTimeLine = () => {
             transform: translateX(-50%);
             width: 4px;
             height: 100%;
-            background-color: #349beb;
+            background-color: #c084fc;
             z-index: 1;
           }
           .timeline-dot {
@@ -65,7 +64,7 @@ const MagTimeLine = () => {
             transform: translateX(-50%);
             width: 15px;
             height: 15px;
-            background-color: #349beb;
+            background-color: #c084fc;
             border-radius: 50%;
             z-index: 2;
             top: -8px; /* Adjust this value to position the dot on top of the line */
@@ -83,6 +82,7 @@ const MagTimeLine = () => {
               height: 25px; /* Adjusted size for large screens */
               top: -12px; /* Adjust this value to position the dot on top of the line */
             }
+          }
           @media (min-width: 1920px) {
             .timeline-dot {
               width: 35px; /* Adjusted size for large screens */
@@ -93,7 +93,7 @@ const MagTimeLine = () => {
         `}
       </style>
       <h1 className="pl-2 justify-center text-center 
-      underline decoration-dashed text-blue-400 pt-8
+      underline decoration-dashed text-purple-400 pt-8
       sm:text-[1.7rem] sm:w-[25rem] sm:ml-1
       md:text-5xl md:ml-[-1rem] md:pt-[5rem] md:w-[50rem]
       lp:text-6xl lp:w-[75rem] lp:justify-center lp:items-center
@@ -101,12 +101,12 @@ const MagTimeLine = () => {
         Working timeline:
       </h1>
       <h1 className="pl-2 justify-center text-center 
-      underline decoration-dashed text-blue-400
+      underline decoration-dashed text-purple-400
       sm:text-[1.3rem] sm:pb-[1rem] sm:w-[25rem] sm:ml-1
       md:text-5xl md:ml-[-1rem] md:pt-[5rem] md:w-[50rem] md:mb-[2rem]
       lp:text-4xl lp:w-[75rem] lp:justify-center lp:items-center
       lg:text-7xl lg:ml-[3rem] lg:w-[60rem] lg:mb-[5rem] lg:mt-[2rem]">
-        Total hours: <span className="text-red-600">11 hours</span>
+        Total hours: <span className="text-red-600">20 hours</span>
       </h1>
       <div className="relative md:ml-[12rem]">
         {/* the timeline itself */}
@@ -117,10 +117,15 @@ const MagTimeLine = () => {
         "></div>
         <ul className="space-y-10 relative">
           {[
-            { date: "March 23", text: "Assignment Given", hours: "(1 hour)", side: "right" },
-            { date: "March 28", text: "Cut, pieced everything together and refinement", hours: "(4 hours)", side: "left" },
-            { date: "March 30", text: "Redesigned and repositioned project", hours: "(3 hours)", side: "right" },
-            { date: "March 31", text: "Finalized and wrapped up project", hours: "(3 hours)", side: "left" },
+            { date: "November 5", text: "Assignment given and screener candidate questions researched", hours: "(2 hours)", side: "right" },
+            { date: "November 12", text: "Screener questions document created", hours: "(1 hour)", side: "left" },
+            { date: "November 18", text: "Screener questions answered", hours: "(2 hours)", side: "right" },
+            { date: "November 19", text: "Hypothesis created", hours: "(1 hour)", side: "left" },
+            { date: "November 26", text: "User result and submitted to document folder", hours: "(2 hours)", side: "right" },
+            { date: "November 27", text: "Google Sheet created", hours: "(1 hour)", side: "left" },
+            { date: "December 9", text: "SUS, System Usability Scale, created", hours: "(3 hours)", side: "right" },
+            { date: "December 10", text: "Figma file created and finished part 1", hours: "(5 hours)", side: "left" },
+            { date: "December 12", text: "Figma file created and finished part 2", hours: "(5 hours)", side: "right" },
           ].map((item, index) => (
             <li
               key={index}
@@ -136,7 +141,7 @@ const MagTimeLine = () => {
               {item.side === "right" ? (
                 <>
                 {/* right side */}
-                  <div className="w-1/2 text-right pr-8 text-orange-400 font-Dos">
+                  <div className="w-1/2 text-right pr-8 text-emerald-400 font-Dos">
                     <span className="block text-left ml-[15rem] w-[11rem] sm:text-[1.3rem]
                     md:text-[2rem] md:w-[25rem] md:ml-[15rem]
                     lp:text-[2.5rem] lp:w-[35rem] lp:ml-[28rem]
@@ -153,7 +158,7 @@ const MagTimeLine = () => {
                 <>
                 {/* left side */}
                   <div className="w-1/2"></div>
-                  <div className="w-1/2 text-right pr-8 text-orange-400 font-Dos">
+                  <div className="w-1/2 text-right pr-8 text-emerald-400 font-Dos">
                     <span className="block text-left ml-[-5rem] w-[12rem] 
                     sm:text-[1.3rem] 
                     md:text-[2rem] md:w-[25rem] md:ml-[-14rem]
@@ -175,9 +180,9 @@ const MagTimeLine = () => {
   );
 };
 
-const MagazineDesign = () => {
+const Bing = () => {
     // Find the project by id from projectData
-    const project = projectData.find((proj) => proj.id === 1);
+    const project = projectData.find((proj) => proj.id === 4);
 
     // State for the active tab
     const [activeTab, setActiveTab] = useState('ABOUT');
@@ -199,34 +204,29 @@ const MagazineDesign = () => {
         lg:pl-[4rem] lg:pr-[4rem]">
             {/* Project Heading and Description */}
             <div className="text-start w-[12rem]">
-                <h1 className="pl-2 justify-center text-center text-blue-500 underline decoration-dashed
-                sm:text-[2rem] sm:pb-[5rem] sm:mt-[-5rem] sm:w-[25rem]
-                md:text-[2.5rem] md:ml-[-8rem] md:pt-[10rem] md:w-[65rem]
-                lp:text-[3.7rem] lp:w-[85rem] lp:justify-center lp:items-center
+                <h1 className="justify-center text-center text-purple-500 underline decoration-dashed
+                sm:text-[2rem] sm:pb-[5rem] sm:mt-[-5rem] sm:w-[25rem] sm:justify-center sm:items-center sm:text-center
+                md:text-[3rem] md:ml-[0rem] md:pt-[10rem] md:w-[50rem]
+                lp:text-[3.7rem] lp:w-[75rem] lp:justify-center lp:items-center
                 lg:text-7xl lg:ml-[-28rem] lg:w-[120rem] lg:mb-[5rem] lg:mt-[2rem]">
-                    National Geographics Magazine Design:
+                    Boardwalk Project:
                 </h1>
-                <h1 className="pl-2 justify-center text-center underline decoration-dashed text-blue-400
+                <h1 className="justify-center text-center underline decoration-dashed text-purple-400
                 sm:text-[1.7rem] sm:pb-[1rem] sm:w-[25rem] sm:ml-1
-                md:text-5xl md:ml-[-2rem] md:pt-[3rem] md:w-[50rem]
+                md:text-5xl md:pt-[3rem] md:w-[50rem] md:justify-center md:text-center md:items-center
                 lp:text-[4rem] lp:w-[75rem] lp:justify-center lp:items-center
                 lg:text-7xl lg:w-[60rem] lg:mb-[5rem] lg:mt-[2rem]">
                     Overview:
                 </h1>
-                <h3 className="pl-2 text-orange-500
+                <h3 className="text-emerald-500
                 sm:text-[1rem] sm:pb-[1rem] sm:w-[25rem] sm:ml-4
-                md:text-5xl md:ml-[0rem] md:pt-[5rem] md:w-[50rem] md:mb-[2rem]
+                md:text-5xl md:pt-[3rem] md:w-[50rem] md:justify-center md:items-center md:pb-[2rem]
                 lp:text-[2.5rem] lp:w-[75rem] lp:justify-center lp:items-center
                 lg:text-7xl lg:ml-[-20rem] lg:w-[110rem] lg:mb-[5rem] lg:mt-[2rem]">
-                The goal was to create a magazine cover with the selected of required material given by
-                the instructor covered in (photoshop class). The main purpose of this project is to able to
-                come up with a creative design despite limited resources and restrictions with Adobe
-                Photoshop only.
-                
-                {/* All the elements on the poster were to be created only with Adobe Illustrator. Other than Adobe Illustrator, I also used Procreate for sketches and took reference images downloaded from Adobe Stock Image */}
+                We redesigned Bing to address usability issues like a confusing layout, lack of relevant information, and an overly cluttered interface. Our goal is to simplify navigation, enhance accessibility, and introduce customization options, creating a cleaner and more user-friendly experience.
                 </h3>
                  {/* added a line for separate sections */}
-               <div className="border-t-2 border-blue-500 
+               <div className="border-t-2 border-purple-500 
                sm:w-[20rem] sm:ml-[3rem] sm:pb-[2rem]
                md:w-[40rem] md:ml-[4rem]
                lp:w-[65rem]
@@ -235,11 +235,11 @@ const MagazineDesign = () => {
 
                 {/* software used section */}
                 <div className="pb-[2rem]">
-                    <MagSoftware />
+                    <BingSoftware />
                 </div>
 
                  {/* added a line for separate sections */}
-                 <div className="border-t-2 border-blue-500 
+                 <div className="border-t-2 border-purple-500 
                sm:w-[20rem] sm:ml-[3rem] sm:pb-[2rem]
                md:w-[40rem] md:ml-[4rem]
                lp:w-[65rem]
@@ -249,88 +249,74 @@ const MagazineDesign = () => {
 
                 {/* timeline section */}
                 <div>
-                <MagTimeLine />
+                <BingTimeLine />
                </div>
 
                 {/* added a line for separate sections */}
-               <div className="border-t-2 border-blue-500 my-10 
-               sm:w-[20rem] sm:ml-[3rem]
-               md:w-[40rem] md:ml-[4rem] 
-               lp:w-[65rem]
-               lg:w-[100rem] lg:ml-[-16rem] lg:pb-[5rem] lg:mt-[6rem]
-               "></div>
-
-                {/* I jumped right into the project so there's no work process :((( */}
-                <div>
-                <MagazineWorkSection />
-                </div>
-
-                {/* added a line for separate sections */}
-                <div className="border-t-2 border-blue-500 my-10 
+                <div className="border-t-2 border-purple-500 my-10 
                sm:w-[20rem] sm:ml-[3rem]
                md:w-[40rem] md:ml-[4rem] 
                lp:w-[65rem]
                lg:w-[100rem] lg:ml-[-16rem] lg:mb-[8rem]
                "></div>
 
+                {/* Mockup section */}
+                <div>
+                    <BoardFig />
+                </div>
 
-                {/* the navigation section, I added this area so users don't have to go back and forth with the project page section when they want to see the next project */}
-                {/* Next Button */}
+                {/* added a line for separate sections */}
+                <div className="border-t-2 border-purple-500 my-10 
+               sm:w-[20rem] sm:ml-[3rem]
+               md:w-[40rem] md:ml-[4rem] 
+               lp:w-[65rem]
+               lg:w-[100rem] lg:ml-[-16rem]
+               "></div>
+
                 <div className="flex l mt-8 
-                p:justify-between
-                sm:w-[25rem] sm:justify-between sm:ml-[0.6rem]
-                md:justify-between md:w-[50rem] md:ml-[-1rem]
-                lp:w-[63rem] lp:ml-[5rem] lp:max-aut
-                lg:w-[90rem] lg:ml-[-11rem] lg:mx-auto lg:justify-between ">
-    
-                  {/* Back Button */}
-                  <Link 
-                      to="/beachball" 
-                      className="flex items-center text-blue-300 hover:text-orange-500 transition-colors duration-300"
-                      onClick={() => window.scrollTo({ top: 0 })}
-                  >
-                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" 
-                          className="w-8 h-8 lg:w-16 lg:h-16">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 19l-7-7 7-7" />
-                      </svg>
-                      <h3 className="ml-2 text-blue-400 hover:text-orange-500 
-                          sm:text-[1.5rem]
-                          md:text-[2.5rem]
-                          lp:text-[3rem]
-                          lg:text-[4rem]">
-                          Back
-                      </h3>
-                  </Link>
+                               p:justify-between
+                               sm:w-[25rem] sm:justify-between sm:ml-[0.6rem]
+                               md:justify-between md:w-[50rem] md:ml-[-1rem]
+                               lp:w-[63rem] lp:ml-[5rem] lp:max-aut
+                               lg:w-[90rem] lg:ml-[-11rem] lg:mx-auto lg:justify-between ">
+                <Link 
+                    to="/bcit" 
+                    className="flex items-center text-purple-300 hover:text-emerald-500 transition-colors duration-300"
+                    onClick={() => window.scrollTo({ top: 0 })}
+                >
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="w-8 h-8">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 19l-7-7 7-7" />
+                    </svg>
+                    <h3 className="ml-2 text-purple-400 hover:text-purple-500
+                    sm:text-[1.5rem]
+                    md:text-[2.5rem]
+                    lp:text-[3rem]
+                    lg:text-[4rem]">Back</h3>
+                </Link>
 
-                  {/* Next Button */}
-                  <Link 
-                      to="/bcit" 
-                      className="flex items-center text-blue-300 hover:text-oragne-500 transition-colors duration-300"
-                      onClick={() => window.scrollTo({ top: 0 })}
-                  >
-                      <h3 className="mr-3 text-blue-400 hover:text-orange-500 
-                          sm:text-[1.5rem]
-                          md:text-[2.5rem]
-                          lp:text-[3rem]
-                          lg:text-[4rem]">
-                          Next
-                      </h3>
-                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" 
-                          className="w-8 h-8 lg:w-16 lg:h-16">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
-                      </svg>
-                  </Link>
+                {/* Next Button */}
+                <Link 
+                    to="/bing" 
+                    className="flex items-center text-purple-300 hover:text-emerald-500 transition-colors duration-300"
+                    onClick={() => window.scrollTo({ top: 0})}
+                >
+                    <h3 className="mr-3 text-purple-400 hover:text-purple-500 sm:text-[1.5rem]
+                                         md:text-[2.5rem]
+                                         lp:text-[3rem]
+                                         lg:text-[4rem]">Next</h3>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="w-8 h-8">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
+                    </svg>
+                </Link>
+            </div>
 
-              </div>
-
-
-
+              
 
                </div>
                <div className=" w-full flex flex-col justify-center items-center
                sm:ml-[7rem]
                md:ml-[18rem]
-               lp:ml-[41rem]
+               lp:ml-[40rem]
                ">
                 <Social />
                </div>
@@ -338,4 +324,4 @@ const MagazineDesign = () => {
     );
 };
 
-export default MagazineDesign;
+export default Bing;

@@ -221,7 +221,7 @@ const MyBcit = () => {
                 sm:text-[1rem] sm:pb-[1rem] sm:w-[25rem] sm:ml-4
                 md:text-5xl md:ml-[0rem] md:pt-[5rem] md:w-[50rem] md:mb-[2rem]
                 lp:text-[2.5rem] lp:w-[75rem] lp:justify-center lp:items-center
-                lg:text-7xl lg:ml-[-20rem] lg:w-[110rem] lg:mb-[5rem] lg:mt-[2rem]">
+                lg:text-7xl lg:ml-[-20rem] lg:w-[110rem] lg:mb-[5rem] lg:mt-[2rem] lg:leading-[7rem]">
                 I overhauled MyBCIT to create a simpler, more user-friendly interface and reduce the learning curve for new students for the MDIA 2540 UI/UX final project. The project involved using my UI/UX and technical skillset in Figma, along with fundamental UX elements comprehension. As a student in real-time. I was determined to make MyBCIT appear brand new and simpler to navigate for students and administrators. My restructuring not only makes it easier to navigate but also introduces valuable features for the new user, such as putting the student ID on the front page, not having to excavate through several pages to find it.  
                 
                 {/* All the elements on the poster were to be created only with Adobe Illustrator. Other than Adobe Illustrator, I also used Procreate for sketches and took reference images downloaded from Adobe Stock Image */}
@@ -279,6 +279,8 @@ const MyBcit = () => {
                     <BcitiFig />
                 </div>
 
+                
+
                 {/* added a line for separate sections */}
                 <div className="border-t-2 border-purple-500 my-10 
                sm:w-[20rem] sm:ml-[3rem]
@@ -287,33 +289,52 @@ const MyBcit = () => {
                lg:w-[100rem] lg:ml-[-16rem]
                "></div>
 
-            <div className="flex justify-between mt-8 sm:w-[25rem] sm:pl-3">
-                {/* Back Button */}
-                <Link 
-                    to="/beachball" 
-                    className="flex items-center text-purple-300 hover:text-blue-500 transition-colors duration-300"
-                    onClick={() => window.scrollTo({ top: 0 })}
-                >
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="w-8 h-8">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 19l-7-7 7-7" />
-                    </svg>
-                    <h3 className="ml-2 text-purple-400 hover:text-purple-500 sm:text-[1.5rem]">Back</h3>
-                </Link>
-
-                {/* Next Button */}
-                <Link 
-                    to="/boardwalk" 
-                    className="flex items-center text-purple-300 hover:text-blue-500 transition-colors duration-300"
-                    onClick={() => window.scrollTo({ top: 0})}
-                >
-                    <h3 className="mr-3 text-purple-400 hover:text-purple-500 sm:text-[1.5rem]  sm:pr-2">Next</h3>
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="w-8 h-8">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
-                    </svg>
-                </Link>
-            </div>
-
-              
+               <div className="flex l mt-8 
+                               p:justify-between
+                               sm:w-[25rem] sm:justify-between sm:ml-[0.6rem]
+                               md:justify-between md:w-[50rem] md:ml-[-1rem]
+                               lp:w-[63rem] lp:ml-[5rem] lp:max-aut
+                               lg:w-[90rem] lg:ml-[-11rem] lg:mx-auto lg:justify-between ">
+                   
+                                 {/* Back Button */}
+                                 <Link 
+                                     to="/magazine" 
+                                     className="flex items-center text-purple-300 hover:text-emerald-500 transition-colors duration-300"
+                                     onClick={() => window.scrollTo({ top: 0 })}
+                                 >
+                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" 
+                                         className="w-8 h-8 lg:w-16 lg:h-16">
+                                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 19l-7-7 7-7" />
+                                     </svg>
+                                     <h3 className="ml-2 text-purple-400 hover:text-emerald-500 
+                                         sm:text-[1.5rem]
+                                         md:text-[2.5rem]
+                                         lp:text-[3rem]
+                                         lg:text-[4rem]">
+                                         Back
+                                     </h3>
+                                 </Link>
+               
+                                 {/* Next Button */}
+                                 <Link 
+                                     to="/boardwalk" 
+                                     className="flex items-center text-purple-300 hover:text-emerald-500 transition-colors duration-300"
+                                     onClick={() => window.scrollTo({ top: 0 })}
+                                 >
+                                     <h3 className="mr-3 text-purple-400 hover:text-emerald-500 
+                                         sm:text-[1.5rem]
+                                         md:text-[2.5rem]
+                                         lp:text-[3rem]
+                                         lg:text-[4rem]">
+                                         Next
+                                     </h3>
+                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" 
+                                         className="w-8 h-8 lg:w-16 lg:h-16">
+                                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
+                                     </svg>
+                                 </Link>
+               
+                             </div>
 
                </div>
                <div className=" w-full flex flex-col justify-center items-center

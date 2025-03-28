@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import IonIcon from "@reacticons/ionicons";
 
-const BcitSoftware = () => {
+const BingSoftware = () => {
     const iconRefs = useRef([]);
 
     useEffect(() => {
@@ -20,7 +20,6 @@ const BcitSoftware = () => {
             { threshold: 0.1 }
         );
 
-        // Observe all icons in the ref array
         iconRefs.current.forEach((icon) => {
             if (icon) observer.observe(icon);
         });
@@ -61,42 +60,47 @@ const BcitSoftware = () => {
                 Software Used:
             </h1>
             <ul className="flex justify-center space-x-8 pl-[12.5rem]
-            sm:space-x-3 sm:ml-[0rem]
+            sm:ml-[0.5rem]
             md:ml-[-7rem] md:justify-center md:items-center md:pb-[4rem] md:w-[50rem]
             lp:items-center lp:justify-center lp:w-[75rem]
             lg:items-center lg:justify-center lg:w-[100rem] lg:pb-[5rem] lg:mt-[6rem] lg:ml-[-22rem]
             ">
-                {/* Adobe Stock Images */}
-                <li className="flex flex-col items-center icon" ref={(el) => iconRefs.current[3] = el}>
-                    <IonIcon 
-                        className="text-purple-300 sm:text-[2.5rem]   
-                        md:text-[6rem] md:px-3 
-                        lg:text-[12rem] lg:px-6 lg:pb-[2rem]
-                        lp:text-[7.5rem] lp:px-4 lp:mb-8" 
-                        name="image-outline" 
-                    />
-                   <span className="mt-2 text-center justify-center items-center
-                    sm:w-[2rem]
-                    md:text-[2rem] md:w-[13rem]
-                    lp:text-[3rem] lp:w-[20rem]
-                    lg:text-[3.5rem] lg:pb-6">Adobe Stock Images</span>
-                </li>
-
-                 {/* Procreate Icon */}
-                 <li className="flex flex-col items-center icon" ref={(el) => iconRefs.current[2] = el}>
+               
+                
+                {/* procreate icon */}
+                <li className="flex flex-col items-center icon" ref={(el) => iconRefs.current[5] = el}>
                     <IonIcon 
                         className="text-purple-300 sm:text-[2.5rem]  
                         sm:px-2 
                         md:text-[6rem] md:px-3 
-                        lg:text-[12rem] lg:px-6 lg:pb-[2rem]
-                        lp:text-[7.5rem] lp:px-4 lp:mb-8" 
+                        lg:text-[12rem] lg:px-6 lg:mb-[2rem]
+                        lp:text-[7.5rem] lp:px-4 lp:mb-[0.6rem]" 
                         name="brush-outline" 
                     />
+                    <span className="mt-2 text-center 
+                    md:text-[2rem]
+                    lp:text-[3rem] lp:mt-[-1rem] 
+                    lg:text-[3.5rem] lg:pb-10
+                    ">Procreate</span>
+                </li>
+
+                <li className="flex flex-col items-center icon
+                lp:pb-2
+                " ref={(el) => iconRefs.current[3] = el}>
+                    <IonIcon 
+                        className="text-purple-300 
+                        sm:text-[2.5rem] sm:px-2 
+                        md:text-[6rem] md:px-3 
+                        lg:text-[12rem] lg:px-6 
+                        lp:text-[7.5rem]" 
+                        name="image-outline" 
+                    />
                     <span className="mt-2 text-center justify-center items-center
-                    sm:w-[2rem]
+                    sm:w-[6.5rem]
                     md:text-[2rem] md:w-[11rem]
                     lp:text-[3rem] lp:w-[20rem]
-                    lg:text-[3.5rem] lg:pb-6">Procreate</span>
+                    lg:text-[3.5rem] lg:pb-6
+                    ">Adobe Stock Images</span>
                 </li>
 
                  {/* Figma Icon */}
@@ -116,26 +120,9 @@ const BcitSoftware = () => {
                     lg:text-[3.5rem] lg:pb-6">Figma</span>
                 </li>
 
-                {/* Canva Icon */}
-                <li className="flex flex-col items-center icon" ref={(el) => iconRefs.current[0] = el}>
-                    <IonIcon 
-                        className="text-purple-300 hover:text-purple-300 hover:cursor-pointer 
-                        sm:text-[2.5rem] sm:px-2 
-                        md:text-[6rem] md:px-3 
-                        lg:text-[12rem] lg:px-6 
-                        lp:text-[7.5rem]" 
-                        name="color-palette-outline" // Best match for Canva!
-                    />
-                    <span className="mt-2 text-center 
-                    sm:w-[2rem] 
-                    md:text-[2rem] md:w-[11rem]
-                    lp:text-[2.5rem] lp:mt-[-3rem] 
-                    lg:text-[3.5rem] lg:w-[22rem] lg:pb-10">Canva</span>
-                </li>
-                
             </ul>
         </div>
     );
 };
 
-export default BcitSoftware;
+export default BingSoftware;

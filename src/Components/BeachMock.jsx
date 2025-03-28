@@ -43,6 +43,7 @@ const BeachMock = () => {
         sm:w-[290px]
         md:w-[710px] md:ml-[2rem]
         lp:w-[73rem]
+        lg:ml-[0rem]
         ">
           {images.map((image, index) => (
             <div key={index} className="flex-shrink-0 ml-[0rem] 
