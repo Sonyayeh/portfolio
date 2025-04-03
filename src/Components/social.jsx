@@ -18,8 +18,8 @@ const Social = () => {
           rel="noopener noreferrer"
         >
           <IonIcon 
-            className="text-blue-300 sm:text-[2.5rem] hover:text-purple-300 hover:cursor-pointer 
-            sm:px-2 md:text-[6rem] md:px-3 lg:text-[10rem] lg:px-2 lp:text-[6rem] lp:px-4" 
+            className="text-blue-300 sm:text-[2.5rem] hover:text-purple-300 hover:cursor-hover 
+            sm:px-2 md:text-[6rem] md:px-3 lg:text-[7rem] lg:px-2 lp:text-[6rem] lp:px-4" 
             name="logo-github" 
           />
         </a>
@@ -31,8 +31,8 @@ const Social = () => {
           rel="noopener noreferrer"
         >
           <IonIcon 
-            className="text-blue-300 sm:text-[2.5rem] hover:text-purple-300 hover:cursor-pointer 
-            sm:px-2 md:text-[6rem] md:px-3 lg:text-[10rem] lg:px-5 lp:text-[6rem] lp:px-5" 
+            className="text-blue-300 sm:text-[2.5rem] hover:text-purple-300 hover:cursor-hover 
+            sm:px-2 md:text-[6rem] md:px-3 lg:text-[7rem] lg:px-5 lp:text-[6rem] lp:px-5" 
             name="logo-linkedin" 
           />
         </a>
@@ -44,8 +44,8 @@ const Social = () => {
           rel="noopener noreferrer"
         >
           <IonIcon 
-            className="text-blue-300 sm:text-[2.5rem] hover:text-purple-300 hover:cursor-pointer 
-            sm:px-2 md:text-[6rem] md:px-3 lg:text-[10rem] lg:px-5 lp:text-[6rem] lp:px-4" 
+            className="text-blue-300 sm:text-[2.5rem] hover:text-purple-300 hover:cursor-hover 
+            sm:px-2 md:text-[6rem] md:px-3 lg:text-[7rem] lg:px-5 lp:text-[6rem] lp:px-4" 
             name="logo-youtube" 
           />
         </a>
@@ -57,8 +57,8 @@ const Social = () => {
           rel="noopener noreferrer"
         >
           <IonIcon 
-            className="text-blue-300 sm:text-[2.5rem] hover:text-purple-300 hover:cursor-pointer 
-            sm:px-2 md:text-[6rem] md:px-3 lg:text-[10rem] lg:px-5 lp:text-[6rem] lp:px-4" 
+            className="text-blue-300 sm:text-[2.5rem] hover:text-purple-300 hover:cursor-hover 
+            sm:px-2 md:text-[6rem] md:px-3 lg:text-[7rem] lg:px-5 lp:text-[6rem] lp:px-4" 
             name="logo-instagram" 
           />
         </a>

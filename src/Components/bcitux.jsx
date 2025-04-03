@@ -16,8 +16,8 @@ function BcitCase() {
         <div className="w-full relative mt-[30rem] 
         sm:mt-[1rem] sm:px-0 sm:mx-auto sm:pb-[2rem] 
         md:ml-[2rem] 
-        lg:pl-[4rem] lg:pr-[7rem] 
-        lp:w-[74rem]">
+        lg:pl-[4rem] lg:pr-[7rem]
+        lp:w-[7rem] lp:ml-[8rem]">
             {/* Project Heading */}
             <div className="text-start w-full">
                 <div className="bg-purple-200 px-4 flex justify-between items-center w-full 
@@ -33,7 +33,7 @@ function BcitCase() {
                 </div>
 
                 {/* White background tab bar */}
-                <div className="bg-purple-200 p-4 pt-0
+                <div className="bg-purple-200 p-4 pt-0 hover:cursor-hover
                 md:w-[50rem]
                 lp:w-[60rem]
                 ">
@@ -41,10 +41,10 @@ function BcitCase() {
                     md:w-[48rem]
                     lp:w-[58rem]
                     ">
-                        <li className="text-purple-200 text-lg sm:text-xl md:text-4xl lg:text-5xl lp:text-5xl font-semibold">DISC</li>
-                        <li className="text-purple-200 text-lg sm:text-xl md:text-4xl lg:text-5xl lp:text-5xl  font-semibold">OPTION</li>
-                        <li className="text-purple-200 text-lg sm:text-xl md:text-4xl lg:text-5xl lp:text-5xl  font-semibold">VIEW</li>
-                        <li className="text-purple-200 text-lg sm:text-xl md:text-4xl lg:text-5xl lp:text-5xl  font-semibold">HELP</li>
+                        <li className="text-purple-200 hover:text-emerald-300 text-lg sm:text-xl md:text-4xl lg:text-5xl lp:text-5xl font-semibold">DISC</li>
+                        <li className="text-purple-200 hover:text-emerald-300 text-lg sm:text-xl md:text-4xl lg:text-5xl lp:text-5xl  font-semibold">OPTION</li>
+                        <li className="text-purple-200 hover:text-emerald-300 text-lg sm:text-xl md:text-4xl lg:text-5xl lp:text-5xl  font-semibold">VIEW</li>
+                        <li className="text-purple-200 hover:text-emerald-300 text-lg sm:text-xl md:text-4xl lg:text-5xl lp:text-5xl  font-semibold">HELP</li>
                     </ul>
                 </div>
             </div>

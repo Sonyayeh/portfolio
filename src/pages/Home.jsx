@@ -209,6 +209,7 @@ const Home = () => {
         </div>
 
         {/* National Geographic Magazine Cover */}
+        
         <div className="grid grid-cols-1 
           transform scale-x-[-1] 
           sm:w-[20rem] sm:ml-[2.5rem] sm:pt-[22rem]
@@ -217,21 +218,23 @@ const Home = () => {
           lp:w-[50rem] lp:ml-[0rem] lp:pt-[5rem] relative z-0">
           <BlueWorkBox />
           {/* I flipped it back! */}
+          <Link to="/magazine" className="w-full h-auto flex justify-center items-center md:pt-[13rem]">
           <div className="absolute 
             transform scale-x-[-1] 
-            sm:w-[18rem] sm:ml-[1rem] sm:mt-[24rem] 
-            md:w-[60rem] md:ml-[-10rem] md:mt-[10rem]
-            lg:w-[60rem] lg:ml-[1rem] lg:mt-[32rem]
-            lp:w-[45rem] lp:ml-[2.5rem] lp:mt-[10rem]">
+            sm:w-[18rem] sm:ml-[0rem] sm:mt-[-16rem] 
+            md:w-[60rem] md:ml-[0rem] md:mt-[-57rem]
+            lg:w-[60rem] lg:ml-[-3rem] lg:mt-[-73rem]
+            lp:w-[45rem] lp:ml-[0rem] lp:mt-[-65rem]">
             <MagMockup />
           </div>
+            </Link>
         </div>
         <div className="text-center mt-4">
           <h5 className="text-xl 
             sm:text-[0.93rem] sm:ml-[1.8rem] sm:mt-[-16.8rem] 
-            md:text-[1.8rem] md:mr-[-1rem] md:mt-[-31.5rem]
-            lg:text-[2.8rem] lg:ml-[-9rem] lg:mt-[-46.3rem] lg:w-[55rem]
-            lp:text-[2rem] lp:ml-[5rem] lp:mt-[-39rem] lp:w-[40rem]">
+            md:text-[1.8rem] md:mr-[-1rem] md:mt-[-44.5rem]
+            lg:text-[2.8rem] lg:ml-[-8rem] lg:mt-[-59rem] lg:w-[55rem]
+            lp:text-[2.3rem] lp:ml-[0.5rem] lp:mt-[-51rem] lp:w-[50rem]">
             National Geographic Magazine Cover
           </h5>
         </div>
@@ -241,7 +244,7 @@ const Home = () => {
       <div className="mt-6 
         sm:w-[40rem] sm:max-w-[20rem] sm:ml-[2rem] sm:mt-[10rem] 
         md:w-[40rem] md:ml-[17rem] md:mt-[25rem] md:mb-[3rem]
-        lg:w-[80rem] lg:ml-[35rem] lg:mb-[-2rem] lg:mt-[35rem]
+        lg:w-[80rem] lg:ml-[37rem] lg:mb-[-2rem] lg:mt-[35rem]
         lp:w-[80rem] lp:ml-[33rem] lp:mt-[30rem]">
         <Social />
       </div>
