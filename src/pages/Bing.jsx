@@ -296,7 +296,7 @@ const Bing = () => {
 
                 {/* Next Button */}
                 <Link 
-                    to="/puppy" 
+                    to="/beachball" 
                     className="flex items-center text-purple-300 hover:text-emerald-500 transition-colors duration-300"
                     onClick={() => window.scrollTo({ top: 0})}
                 >
