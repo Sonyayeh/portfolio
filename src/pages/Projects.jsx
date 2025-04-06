@@ -6,7 +6,7 @@ import Magazine from "../Components/MagazineProject";
 import PuppyProject from "../Components/puppyproject";
 import BcitProject from "../Components/bcitproject";
 import BoardProject from "../Components/boardproject";
-import Bing from "../Components/Bing";
+import Bing from "../Components/BingProject";
 import TwoClouds from '../assets/twoclouds.gif';
 import Bubble from '../assets/singlebubble.gif';
 

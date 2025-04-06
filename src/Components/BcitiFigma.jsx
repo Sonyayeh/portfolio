@@ -6,8 +6,8 @@ const BcitiFig = () => {
             <h5 className=" underline text-purple-400 
             sm:text-[1.5rem] sm:justify-center sm:items-center sm:text-center sm:w-[20rem] sm:ml-[2.5rem]
             md:text-[3rem] md:w-[48rem] md:pb-[2rem]  md:items-center md:text-center
-            lp:text-[5rem] lp:w-[54rem] lp:mt-[5rem] lp:pb-[3rem] lp:justify-center lp:items-center lp:text-center 
-            lg:text-7xl lg:w-[60rem] lg:mb-[5rem] lg:mt-[2rem] lg:justify-center lg:items-center lg:text-center">
+            lp:text-[5rem] lp:w-[54rem] lp:mt-[2rem] lp:pb-[3rem] lp:ml-[8rem] 
+            lg:text-7xl lg:w-[60rem] lg:mb-[5rem] lg:mt-[2rem] lg:ml-[3.5rem]">
                 Figma File:
             </h5>
             <iframe
@@ -20,7 +20,7 @@ const BcitiFig = () => {
                 className="top-0 left-0 w-full max-w-[820px] mx-auto 
                 sm:w-[20rem] sm:ml-[3rem] sm:h-[20rem]
                 md:w-[45rem] md:h-[38rem] md:ml-[2rem] 
-                lp:ml-[13rem] lp:mt-6
+                lp:ml-[10rem] lp:mt-6 lp:w-[70rem]
                 lg:w-[820px] lg:ml-[7rem]"
             ></iframe>
 
@@ -43,8 +43,8 @@ const BcitiFig = () => {
             <h5 className=" underline text-purple-400 
             sm:text-[1.5rem] sm:justify-center sm:items-center sm:text-center sm:w-[20rem] sm:ml-[2.5rem]
             md:text-[3rem] md:w-[48rem] md:pb-[2rem]  md:items-center md:text-center
-            lp:text-[5rem] lp:w-[54rem] lp:mt-[5rem] lp:pb-[3rem] lp:justify-center lp:items-center lp:text-center 
-            lg:text-7xl lg:w-[60rem] lg:mb-[5rem] lg:mt-[2rem] lg:justify-center lg:items-center lg:text-center">
+            lp:text-[5rem] lp:w-[54rem] lp:mt-[2rem] lp:pb-[3rem] lp:ml-[8rem]
+            lg:text-7xl lg:w-[60rem] lg:mb-[5rem] lg:mt-[2rem] lg:ml-[3.5rem]">
                 Prototype:
             </h5>
             <iframe
@@ -57,14 +57,14 @@ const BcitiFig = () => {
             className="top-0 left-0 w-full max-w-[820px] mx-auto 
             sm:w-[20rem] sm:ml-[3rem] sm:h-[20rem]
             md:w-[45rem] md:h-[38rem] md:ml-5
-            lp:ml-[13rem] lp:mt-6
+            lp:ml-[10rem] lp:mt-6 lp:w-[70rem]
             lg:w-[820px] lg:ml-[7rem]"
         ></iframe>
 
                 <h3 className="flex text-emerald-500 
                 sm:pt-[1rem] sm:text-sm sm:ml-[4rem] sm:w-[20rem]
                 md:text-xl md:ml-[5rem] md:w-[40rem] md:pt-[2rem]
-                lp:text-[2rem] lp:w-[70rem] lp:leading-[3rem] lp:justify-center lp:ml-[6rem]
+                lp:text-[2rem] lp:w-[77rem] lp:leading-[3rem] lp:justify-center lp:ml-[-2rem]
                 lg:mt-[2rem] lg:w-[80rem] lg:ml-[-2rem] lg:text-[3rem] lg:leading-[4rem]">
                 This is the project's prototype screen. It shows how the project looks like if it is a real web page. This section demonstrates all of the implemented prototypes and styles based on the Hi Fi design. 
             </h3>

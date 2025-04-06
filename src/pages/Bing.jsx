@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 // Importing project data
 import projectData from "../data/project.json"; 
 import BingSoftware from "../Components/BingIcon";
-import BoardFig from "../Components/BoardFigma";
+import BingFig from "../Components/BingFigma";
 import Social from '../Components/social';
 import { Link } from "react-router-dom";
 
@@ -209,7 +209,7 @@ const Bing = () => {
                 md:text-[3rem] md:ml-[0rem] md:pt-[10rem] md:w-[50rem]
                 lp:text-[3.7rem] lp:w-[75rem] lp:justify-center lp:items-center
                 lg:text-7xl lg:ml-[-28rem] lg:w-[120rem] lg:mb-[5rem] lg:mt-[2rem]">
-                    Boardwalk Project:
+                    Bing: The Redesign:
                 </h1>
                 <h1 className="justify-center text-center underline decoration-dashed text-purple-400
                 sm:text-[1.7rem] sm:pb-[1rem] sm:w-[25rem] sm:ml-1
@@ -262,7 +262,7 @@ const Bing = () => {
 
                 {/* Mockup section */}
                 <div>
-                    <BoardFig />
+                    <BingFig />
                 </div>
 
                 {/* added a line for separate sections */}
@@ -296,7 +296,7 @@ const Bing = () => {
 
                 {/* Next Button */}
                 <Link 
-                    to="/bing" 
+                    to="/puppy" 
                     className="flex items-center text-purple-300 hover:text-emerald-500 transition-colors duration-300"
                     onClick={() => window.scrollTo({ top: 0})}
                 >
@@ -317,6 +317,7 @@ const Bing = () => {
                sm:ml-[7rem]
                md:ml-[18rem]
                lp:ml-[40rem]
+               lg:ml-[44rem]
                ">
                 <Social />
                </div>

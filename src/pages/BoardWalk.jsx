@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 // Importing project data
 import projectData from "../data/project.json"; 
 import BoardSoftware from "../Components/BoardIcon";
+import BoardProcess from "../Components/boardProcess";
 import BoardFig from "../Components/BoardFigma";
 import Social from '../Components/social';
 import { Link } from "react-router-dom";
@@ -253,6 +254,20 @@ const BoardWalk = () => {
                 <div>
                 <BoardTimeLine />
                </div>
+
+                {/* added a line for separate sections */}
+                <div className="border-t-2 border-purple-500 my-10 
+               sm:w-[20rem] sm:ml-[3rem]
+               md:w-[40rem] md:ml-[4rem] 
+               lp:w-[65rem]
+               lg:w-[100rem] lg:ml-[-16rem] lg:mb-[8rem]
+               "></div>
+
+              {/* the design process section */}
+              <div>
+                <BoardProcess />
+              </div>
+
 
                 {/* added a line for separate sections */}
                 <div className="border-t-2 border-purple-500 my-10 

@@ -49,7 +49,7 @@ const BeachMock = () => {
             <div key={index} className="flex-shrink-0 ml-[0rem] 
             sm:w-[280px] sm:
             md:w-[700px] md:gap-x-3 md:pl-[3rem]
-            lp:w-[70rem] 
+            lp:w-[30rem] 
             ">
               <img
                 src={image.src}
@@ -61,12 +61,12 @@ const BeachMock = () => {
               <div className="border-t-2 border-blue-500 my-10 
                sm:w-[16rem] sm:ml-[0rem]
                md:w-[40rem] md:ml-[4rem] 
-               lp:w-[65rem] lp:ml-[0rem]
+               lp:w-[27rem] lp:ml-[0rem]
                "></div>
               <p className="mt-2 text-left text-lg text-blue-500
               font-Dos 
               md:text-[2.5rem] md:w-[43rem] md:gap-x-3 md:pl-[1rem] md:leading-[4rem]
-              lp:ml-[-1rem] lp:w-[69rem]
+              lp:ml-[-1rem] lp:w-[30rem] lp:text-[2rem]
               ">{image.description}</p>
             </div>
           ))}

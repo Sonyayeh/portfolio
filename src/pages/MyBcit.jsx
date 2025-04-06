@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 // Importing project data
 import projectData from "../data/project.json"; 
 import BcitSoftware from "../Components/BcitIcon";
+import BcitProcess from "../Components/bcitProcess";
 import BcitWork from "../Components/BcitMock";
 import BcitiFig from "../Components/BcitiFigma";
 import Social from '../Components/social';
@@ -247,6 +248,8 @@ const MyBcit = () => {
                lg:w-[100rem] lg:ml-[-16rem]
                "></div>
 
+              
+
                 {/* timeline section */}
                 <div>
                 <BcitTimeLine />
@@ -259,6 +262,20 @@ const MyBcit = () => {
                lp:w-[65rem]
                lg:w-[100rem] lg:ml-[-16rem] lg:pb-[5rem] lg:mt-[6rem]
                "></div>
+
+                {/* design process */}
+                <div>
+                <BcitProcess />
+               </div>
+
+                {/* added a line for separate sections */}
+                <div className="border-t-2 border-purple-500 my-10 
+               sm:w-[20rem] sm:ml-[3rem]
+               md:w-[40rem] md:ml-[4rem] 
+               lp:w-[65rem]
+               lg:w-[100rem] lg:ml-[-16rem] lg:pb-[5rem] lg:mt-[6rem]
+               "></div>
+
 
                 {/* work section Section */}
                 {/* the working process */}
@@ -340,7 +357,7 @@ const MyBcit = () => {
                <div className=" w-full flex flex-col justify-center items-center
                sm:ml-[7rem]
                md:ml-[18rem]
-               lp:ml-[40rem]
+               lp:ml-[42rem]
                ">
                 <Social />
                </div>

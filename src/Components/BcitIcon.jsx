@@ -69,17 +69,18 @@ const BcitSoftware = () => {
                 {/* Adobe Stock Images */}
                 <li className="flex flex-col items-center icon" ref={(el) => iconRefs.current[3] = el}>
                     <IonIcon 
-                        className="text-purple-300 sm:text-[2.5rem]   
+                        className="text-purple-300 
+                        sm:text-[2.5rem]  sm:ml-[1rem]
                         md:text-[6rem] md:px-3 
                         lg:text-[12rem] lg:px-6 lg:pb-[2rem]
                         lp:text-[7.5rem] lp:px-4 lp:mb-8" 
                         name="image-outline" 
                     />
                    <span className="mt-2 text-center justify-center items-center
-                    sm:w-[2rem]
+                    sm:w-[7rem] sm:mr-[-1rem]
                     md:text-[2rem] md:w-[13rem]
                     lp:text-[3rem] lp:w-[20rem]
-                    lg:text-[3.5rem] lg:pb-6">Adobe Stock Images</span>
+                    lg:text-[3.5rem] lg:w-[25rem] lg:pb-6">Adobe Stock Images</span>
                 </li>
 
                  {/* Procreate Icon */}
@@ -113,7 +114,7 @@ const BcitSoftware = () => {
                     sm:w-[2rem]
                     md:text-[2rem] md:w-[11rem]
                     lp:text-[3rem] lp:w-[20rem]
-                    lg:text-[3.5rem] lg:pb-6">Figma</span>
+                    lg:text-[3.5rem] lg:mt-[5rem] lg:pb-6">Figma</span>
                 </li>
 
                 {/* Canva Icon */}
@@ -129,8 +130,8 @@ const BcitSoftware = () => {
                     <span className="mt-2 text-center 
                     sm:w-[2rem] 
                     md:text-[2rem] md:w-[11rem]
-                    lp:text-[2.5rem] lp:mt-[-3rem] 
-                    lg:text-[3.5rem] lg:w-[22rem] lg:pb-10">Canva</span>
+                    lp:text-[2.5rem] lp:mt-[1rem] 
+                    lg:text-[3.5rem] lg:mt-[6rem] lg:w-[22rem] lg:pb-10">Canva</span>
                 </li>
                 
             </ul>

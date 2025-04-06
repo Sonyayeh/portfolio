@@ -40,15 +40,16 @@ const MagazineWorkSection = () => {
       // this is where the scroller window is 
       sm:w-[320px] sm:ml-[-2.5rem]
       md:w-[700px] md:ml-[-4rem]
-      lp:w-[55rem] lp:ml-[4rem]
-      lg:ml-[1rem] lg:w-[56rem]
+      lp:w-[50rem] lp:ml-[4rem]
+      lg:ml-[-4rem] lg:w-[60rem]
       ">
         {images.map((image, index) => (
           <div key={index} className="flex-shrink-0 ml-[2rem] 
           sm:w-[280px]  sm:pl-[2rem]
           md:w-[650px] 
-          lp:w-[51rem] 
-          ">
+          lp:w-[30rem] 
+          lg:w-[30rem]
+          "> 
             <img
               src={image.src}
               alt={image.alt}
@@ -59,15 +60,14 @@ const MagazineWorkSection = () => {
             <div className="border-t-2 border-blue-500 my-10 
                sm:w-[15rem] sm:ml-[0rem]
                md:w-[38rem] md:ml-[0rem] 
-               lp:w-[44rem] lp:ml-[2rem]
-               
+               lp:w-[28rem] lp:ml-[0rem]
                "></div>
             <p className="mt-2 text-left text-lg text-blue-500 
             font-Dos 
             sm:mb-8 sm:w-[16rem]
             md:text-[2.5rem] md:pr-[4rem] md:leading-[4rem] md:w-[43rem]
-            lp:ml-[2rem] lp:w-[49rem]
-            lg:ml-[3rem]
+            lp:text-[2rem] lp:w-[30rem]
+            lg:text-[2rem] lg:w-[33rem]
             ">{image.description}</p>
           </div>
         ))}

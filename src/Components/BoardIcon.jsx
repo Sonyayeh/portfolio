@@ -63,7 +63,7 @@ const BoardSoftware = () => {
             sm:ml-[0.5rem]
             md:ml-[-7rem] md:justify-center md:items-center md:pb-[4rem] md:w-[50rem]
             lp:items-center lp:justify-center lp:w-[75rem]
-            lg:items-center lg:justify-center lg:w-[100rem] lg:pb-[5rem] lg:mt-[6rem] lg:ml-[-22rem]
+            lg:items-center lg:justify-center lg:w-[100rem] lg:pb-[5rem] lg:mt-[6rem] lg:ml-[-24rem]
             ">
                 {/* adobe photoshop icon */}
                 <li className="flex flex-col items-center icon" ref={(el) => iconRefs.current[0] = el}>
@@ -79,7 +79,7 @@ const BoardSoftware = () => {
                 sm:w-[6rem] sm:mt-3
                 md:text-[2rem] md:w-[11rem]
                 lp:text-[3rem] lp:w-[20rem]
-                lg:text-[3.5rem] lg:pb-6 
+                lg:text-[3.5rem] lg:pb-2 
                 ">Adobe Photoshop</span>
                 </li>
 
@@ -113,9 +113,9 @@ const BoardSoftware = () => {
                     />
                     <span className="mt-2 text-center justify-center items-center
                     sm:w-[6.5rem]
-                    md:text-[2rem] md:w-[11rem]
+                    md:text-[2rem] md:w-[13rem]
                     lp:text-[3rem] lp:w-[20rem]
-                    lg:text-[3.5rem] lg:pb-6
+                    lg:text-[3.5rem] lg:pb-6 lg:w-[22rem]
                     ">Adobe Stock Images</span>
                 </li>
 

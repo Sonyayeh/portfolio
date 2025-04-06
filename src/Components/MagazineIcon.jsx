@@ -59,24 +59,26 @@ const MagSoftware = () => {
             lg:text-7xl lg:w-[60rem] lg:mb-[5rem] lg:mt-[2rem] lg:ml-[3rem]">
                 Software Used:
             </h1>
-            <ul className="flex justify-center space-x-8 pl-[12.5rem]
+            <ul className="flex justify-center space-x-8 pl-[8rem]
             md:ml-[-7rem] md:justify-center md:items-center md:pb-[4rem] md:w-[50rem]
             lp:items-center lp:justify-center lp:w-[75rem]
             lg:items-center lg:justify-center lg:w-[100rem] lg:pb-[5rem] lg:mt-[6rem] lg:ml-[-22rem]
             ">
                 {/* adobe photoshop icon */}
-                <li className="flex flex-col items-center">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
-                    className="sm:w-[2.5rem] sm:h-[2.5rem] md:w-[6rem] md:h-[6rem] lg:w-[10rem] lg:h-[10rem] hover:cursor-pointer">
-                    <rect width="24" height="24" fill="#001E36" rx="4" /> {/* Darker background for Photoshop */}
-                    <text x="12" y="16" fill="#31A8FF" fontSize="12" fontFamily="Arial, sans-serif" fontWeight="bold" textAnchor="middle">Ps</text> {/* Photoshop color for text */}
-                </svg>
-                <span className="mt-2 text-center 
-                md:text-[2rem]
-                lp:text-[2.5rem] 
-                lg:text-[3.5rem] lg:pb-6
-                ">Adobe Photoshop</span>
+                <li className="flex flex-col items-center icon" ref={(el) => iconRefs.current[0] = el}>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                        className="sm:w-[2.5rem] sm:h-[2.5rem] md:w-[6rem] md:h-[6rem] lg:w-[10rem] lg:h-[10rem] hover:cursor-pointer">
+                        <rect width="24" height="24" fill="#001E36" rx="4" />
+                        <text x="12" y="16" fill="#31A8FF" fontSize="12" fontFamily="Arial, sans-serif" fontWeight="bold" textAnchor="middle">Ps</text>
+                    </svg>
+                    <span className="mt-2 text-center 
+                        sm:w-[19rem]
+                        md:text-[2rem]
+                        lp:text-[2.5rem] lp:mt-[1rem]
+                        lg:text-[3.5rem] lg:mt-[3rem] lg:pb-6
+                    ">Adobe Photoshop</span>
                 </li>
+
 
                 {/* prcreate icon */}
                 <li className="flex flex-col items-center icon" ref={(el) => iconRefs.current[2] = el}>

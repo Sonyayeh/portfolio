@@ -51,7 +51,8 @@ const Cases = () => {
             <div className="
                 sm:mt-[-4rem]
                 md:pt-[1rem] md:mr-[3rem]
-                lp:ml-[31rem] lp:mt-[1rem]
+                lp:ml-[35rem] lp:mt-[1rem]
+                lg:ml-[40rem]
             ">
                 <Social />
             </div>
