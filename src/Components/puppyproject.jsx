@@ -81,7 +81,7 @@ const PuppyProject = () => {
 
                 {/* View More Button */}
                 <div className="flex justify-center mt-8 lp:mt-[-1em] md:mt-[-7rem] sm:mt-[-1rem]">
-                    <Link to="/beachball">
+                    <Link to="/puppy">
                         <button className="px-6 py-3 bg-purple-300 text-white rounded-lg shadow-md hover:bg-purple-500 hover:text-white focus:outline-none focus:ring-2 focus:ring-purple-300 transition-colors duration-300 sm:mb-[2rem] sm:mt-[-1rem] md:ml-[28rem] md:mt-[-2rem] md:mb-[3rem] lg:mt-[4rem]"
                         onClick={() => window.scrollTo({ top: 0 })}
                         >

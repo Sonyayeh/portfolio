@@ -16,6 +16,7 @@ import Magazine from "./pages/Magazine";
 import Boutique from "./pages/BoardWalk";
 import Bing from "./pages/Bing";
 import Bcit from "./pages/MyBcit";
+import PuppyYoga from "./pages/PuppyYoga";
 
 // Import styles
 import "./reset.css";
@@ -84,6 +85,7 @@ function App() {
               <Route path="/boardwalk" element={<Boutique />} />
               <Route path="/bing" element={<Bing />} />
               <Route path="/bcit" element={<Bcit />} />
+              <Route path="/puppy" element={<PuppyYoga />} />
             </Route>
           </Routes>
         </main>

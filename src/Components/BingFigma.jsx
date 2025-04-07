@@ -4,7 +4,7 @@ const BingFig = () => {
     return (
         <div>
             <h5 className=" underline text-purple-400 
-            sm:text-[1.5rem] sm:justify-center sm:items-center sm:text-center sm:w-[20rem] sm:ml-[2.5rem] sm:mt-[-2rem]
+            sm:text-[1.5rem] sm:text-center sm:w-[20rem] sm:ml-[3rem] sm:mt-[-2rem]
             md:text-[3rem] md:w-[43rem] md:pb-[2rem]  md:items-center md:text-center md:justify-center
             lp:text-[5rem] lp:w-[65rem] lp:pb-[3rem] lp:justify-center lp:items-center lp:text-center 
             lg:text-7xl lg:w-[60rem] lg:mb-[5rem] lg:mt-[2rem] lg:justify-center lg:items-center lg:text-center">
@@ -24,9 +24,9 @@ const BingFig = () => {
                 lg:h-[600px] lg:ml-[5rem]"
             ></iframe>
              <h3 className="flex text-emerald-500 
-                sm:pt-[1rem] sm:text-sm sm:ml-[4rem] sm:w-[20rem]
-                md:text-xl md:w-[50rem] md:pt-[2rem]
-                lp:text-[2rem] lp:w-[70rem] lp:leading-[3rem] lp:justify-center lp:ml-[6rem]
+                sm:pt-[2rem] sm:text-sm sm:ml-[4rem] sm:w-[20rem]
+                md:text-[2rem] md:w-[50rem] md:pt-[2rem] md:leading-[3rem] md:ml-[-1rem]
+                lp:text-[2rem] lp:w-[70rem] lp:leading-[3rem] lp:justify-center lp:ml-[4rem]
                 lg:mt-[2rem] lg:w-[100rem] lg:ml-[-14rem] lg:text-[3rem] lg:leading-[4rem]">
                 This is the Figma file. It has three pages: Lo-Fi, Hi-Fi and style guide. It is fully prototyped in Hi-Fi, please do play around with it to experience the app yourself!
             </h3>
@@ -40,7 +40,7 @@ const BingFig = () => {
                "></div>
 
             <h5 className=" underline text-purple-400 
-            sm:text-[1.5rem] sm:justify-center sm:items-center sm:text-center sm:w-[20rem] sm:ml-[2.5rem] sm:mt-[-2rem]
+            sm:text-[1.5rem] sm:justify-center sm:items-center sm:text-center sm:w-[20rem] sm:ml-[3rem] sm:mt-[-2rem]
             md:text-[3rem] md:w-[41rem] md:pb-[2rem]  md:items-center md:text-center
             lp:text-[5rem] lp:w-[66rem] lp:pb-[3rem] lp:justify-center lp:items-center lp:text-center 
             lg:text-7xl lg:w-[60rem] lg:ml-[2rme] lg:justify-center lg:items-center lg:text-center">
@@ -60,8 +60,8 @@ const BingFig = () => {
                 lg:h-[600px] lg:ml-[7rem]"
             ></iframe>
              <h3 className="flex text-emerald-500 
-                sm:pt-[1rem] sm:text-sm sm:ml-[4rem] sm:w-[20rem]
-                md:text-xl md:w-[40rem] md:pt-[2rem]
+                sm:pt-[2rem] sm:text-sm sm:ml-[4rem] sm:w-[20rem]
+                md:text-[2rem] md:w-[45rem] md:pt-[2rem] md:leading-[3rem]
                 lp:text-[2rem] lp:w-[70rem] lp:leading-[3rem] lp:justify-center lp:ml-[6rem]
                 lg:mt-[2rem] lg:w-[90rem] lg:ml-[-10rem] lg:text-[3rem] lg:leading-[4rem]">
                 This is the project's prototype screen. It shows how the project looks like if it is a real web page.

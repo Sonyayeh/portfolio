@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 // Importing project data
 import projectData from "../data/project.json"; 
-import BingSoftware from "../Components/BingIcon";
+import PuppySoft from "../Components/PuppyIcon";
 import BingProcess from "../Components/bingProcess";
 import BingFig from "../Components/BingFigma";
 import Social from '../Components/social';
@@ -181,7 +181,7 @@ const BingTimeLine = () => {
   );
 };
 
-const Bing = () => {
+const PuppyYoga = () => {
     // Find the project by id from projectData
     const project = projectData.find((proj) => proj.id === 4);
 
@@ -224,7 +224,7 @@ const Bing = () => {
                 md:text-5xl md:pt-[3rem] md:w-[50rem] md:justify-center md:items-center md:pb-[2rem]
                 lp:text-[2.5rem] lp:w-[75rem] lp:justify-center lp:items-center
                 lg:text-7xl lg:ml-[-20rem] lg:w-[110rem] lg:mb-[5rem] lg:mt-[2rem]">
-                We redesigned Bing to address usability issues like a confusing layout, lack of relevant information, and an overly cluttered interface. Our goal is to simplify navigation, enhance accessibility, and introduce customization options, creating a cleaner and more user-friendly experience.
+               A UI/UX project dedicated for a fictional puppy yoga studio, Furrever Pals. Everything for the project was created within Figma, as well as Adobe softwares. The goal was to create a website and service that not only attracts people, but provides a community within the city.
                 </h3>
                  {/* added a line for separate sections */}
                <div className="border-t-2 border-purple-500 
@@ -236,7 +236,7 @@ const Bing = () => {
 
                 {/* software used section */}
                 <div className="pb-[2rem]">
-                    <BingSoftware />
+                    <PuppySoft />
                 </div>
 
                  {/* added a line for separate sections */}
@@ -339,4 +339,4 @@ const Bing = () => {
     );
 };
 
-export default Bing;
+export default PuppyYoga;
