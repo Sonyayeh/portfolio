@@ -35,7 +35,7 @@ const ContactMe = () => {
       .then(
         (response) => {
           console.log("SUCCESS!", response.status, response.text);
-          setSubmitted(true);
+          setSubmitted(true); // Set submitted state to true
         },
         (error) => {
           console.error("FAILED...", error);
@@ -79,24 +79,42 @@ const ContactMe = () => {
       md:ml-[12rem] md:mt-[-18rem] 
       lg:ml-[33rem] lg:mt-[-32rem]
       ">
-        <h5 className="text-[4rem] font-semibold text-center 
-        sm:text-[3rem] 
-        md:text-[4.1rem] 
-        lp:w-[50rem] lp:text-[4rem] lp:mt-[15rem] 
-        lg:ml-[-30rem] lg:text-[6rem] lg:w-[75rem] text-purple-400 mb-6">
-          Your Opinion Matters!
-        </h5>
-        <h5 className="text-[2rem] font-semibold text-center 
-        sm:text-[1.5rem] sm:mb-[3rem] sm:mt-[-1rem] 
-        lp:text-[2rem] lp:w-[50rem] lp:ml-[0rem] 
-        lg:text-[3rem] lg:ml-[-28rem] lg:w-[70rem]
-        text-blue-400 mb-6">
-          Is there anything you like? Let me know!
-        </h5>
+        {!submitted && (
+          <>
+            <h5 className="text-[4rem] font-semibold text-center 
+            sm:text-[3rem] 
+            md:text-[4.1rem] 
+            lp:w-[50rem] lp:text-[4rem] lp:mt-[15rem] 
+            lg:ml-[-30rem] lg:text-[6rem] lg:w-[75rem] text-purple-400 mb-6">
+              Your Opinion Matters!
+            </h5>
+            <h5 className="text-[2rem] font-semibold text-center 
+            sm:text-[1.5rem] sm:mb-[3rem] sm:mt-[-1rem] 
+            lp:text-[2rem] lp:w-[50rem] lp:ml-[0rem] 
+            lg:text-[3rem] lg:ml-[-28rem] lg:w-[70rem]
+            text-blue-400 mb-6">
+              Is there anything you like? Let me know!
+            </h5>
+          </>
+        )}
         {submitted ? (
-          <p className="text-center text-green-500 font-medium">
+          <h2 className="text-center text-green-500 font-medium
+          sm:text-[2rem]
+          md:text-[3rem] md:w-[50rem] md:ml-[-11rem] md:mt-[15rem]
+          lp:text-[3.5rem] lp:w-[60rem] lp:ml-[-5rem] lp:mt-[10rem]
+          lg:text-[5rem] lg:w-[80rem] lg:ml-[-32rem] lg:pt-[10rem]
+          ">
             Thank you for your message!
-          </p>
+            <br />
+            <span className="
+            sm:text-[1rem]
+            md:text-[1.7rem] 
+            lp:text-[2rem] lp:mt-[2rem]
+            lg:text-[3rem]
+            " >
+              Looking forward to connect with you!
+            </span>
+          </h2>
         ) : (
           <form onSubmit={handleSubmit} className="space-y-4">
             <div>
@@ -171,7 +189,7 @@ const ContactMe = () => {
             <button
               type="submit"
               className="px-[3rem] ml-[9rem] 
-              sm:ml-[7rem] 
+              sm:ml-[6rem] 
               md:ml-[9.5rem] 
               lp:ml-[20rem] 
               lg:ml-[0rem] lg:mt-[3rem] lg:text-[4rem]
@@ -181,7 +199,12 @@ const ContactMe = () => {
             </button>
           </form>
         )}
-        <div className="lp:ml-[22rem] lg:mt-[5rem] lg:mb-[-5rem] lg:ml-[5rem] sm:mt-[2rem]">
+        <div className="
+        lp:ml-[22rem] lp:mt-[10rem]
+        lg:mt-[-1rem] lg:mb-[-8rem] lg:ml-[5rem] 
+        sm:mt-[2rem]
+        md:mt-[15rem]
+        ">
           <Social />
         </div>
       </div>

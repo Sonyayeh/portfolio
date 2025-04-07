@@ -71,7 +71,9 @@ const SoftwareUsed = () => {
                     <rect width="24" height="24" fill="#330000" rx="4" /> {/* Darker background for Illustrator */}
                     <text x="12" y="16" fill="#FF9A01" fontSize="12" fontFamily="Arial, sans-serif" fontWeight="bold" textAnchor="middle">Ai</text> {/* Illustrator color for text */}
                 </svg>
-                <span className="mt-2 text-center lp:text-[2.5rem] lg:text-[3.5rem] lg:pb-6">Adobe Illustrator</span>
+                <span className="mt-2 text-center 
+                lp:text-[2.5rem] lp:mt-[1.5rem]
+                lg:text-[3.5rem] lg:pb-6">Adobe Illustrator</span>
                 </li>
 
                 {/* graphic design icon */}
@@ -80,12 +82,15 @@ const SoftwareUsed = () => {
                         className="text-blue-300 sm:text-[2.5rem] 
                         sm:px-2 
                         md:text-[6rem] md:px-3 
-                        lg:text-[12rem] lg:px-6 lg:pb-[2rem] 
-                        lp:text-[7.5rem] lp:px-4 lp:mb-3
+                        lg:text-[12rem] lg:px-6 lg:pb-[-1rem] 
+                        lp:text-[7.5rem] lp:px-4 lp:mb-[3rem]
                         " 
                         name="color-palette-outline" 
                     />
-                    <span className="mt-2 text-center lp:text-[2.5rem] lp:mt-[-3rem] lg:text-[3.5rem] lg:pb-10">Graphic Design</span>
+                    <span className="mt-2 text-center 
+                    lp:text-[2.5rem] lp:mt-[-3rem] 
+                    lg:text-[3.5rem] lg:mb-[3rem]
+                    ">Graphic Design</span>
                 </li>
 
                 {/* procreate icon */}
@@ -94,11 +99,11 @@ const SoftwareUsed = () => {
                         className="text-blue-300 sm:text-[2.5rem]  
                         sm:px-2 
                         md:text-[6rem] md:px-3 
-                        lg:text-[12rem] lg:px-6 lg:pb-[2rem]
+                        lg:text-[12rem] lg:px-6 lg:pb-[-1rem]
                         lp:text-[7.5rem] lp:px-4 lp:mb-8" 
                         name="brush-outline" 
                     />
-                    <span className="mt-2 text-center lp:text-[2.5rem] lp:mt-[-3rem] lg:text-[3.5rem] lg:pb-10">Procreate</span>
+                    <span className="mt-2 text-center lp:text-[2.5rem] lp:mt-[-1.5rem] lg:text-[3.5rem] lg:pb-12">Procreate</span>
                 </li>
 
                 {/* Adobe Stock Images */}
@@ -108,10 +113,13 @@ const SoftwareUsed = () => {
                         sm:px-2 
                         md:text-[6rem] md:px-3 
                         lg:text-[12rem] lg:px-6 lg:pb-[2rem]
-                        lp:text-[7.5rem] lp:px-4 lp:mb-8" 
+                        lp:text-[7.5rem] lp:px-4 lp:mb-[2rem]" 
                         name="image-outline" 
                     />
-                    <span className="mt-2 text-center lp:text-[2.5rem] lp:mt-[-3rem] lg:text-[3.5rem]  lg:pb-10">Adobe Stock Images</span>
+                    <span className="mt-2 text-center 
+                    lp:text-[2.5rem] lp:mt-[-1.5rem] 
+                    lg:text-[3.5rem] lg:pb-10">
+                        Adobe Stock Images</span>
                 </li>
             </ul>
         </div>
