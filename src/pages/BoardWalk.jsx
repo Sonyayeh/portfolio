@@ -334,6 +334,7 @@ const BoardWalk = () => {
                sm:ml-[7rem]
                md:ml-[18rem]
                lp:ml-[40rem]
+               lg:ml-[43rem]
                ">
                 <Social />
                </div>

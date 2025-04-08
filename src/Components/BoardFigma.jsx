@@ -57,7 +57,7 @@ const BoardFig = () => {
                 sm:w-[10rem] sm:ml-[7.5rem] sm:h-[400px]
                 md:w-[30rem] md:h-[50rem]
                 lp:h-[600px] lp:w-[50rem] lp:ml-[10rem]
-                lg:h-[600px] lg:ml-[7rem]"
+                lg:h-[70rem] lg:ml-[7rem]"
             ></iframe>
              <h3 className="flex text-emerald-500 
                 sm:pt-[1rem] sm:text-sm sm:ml-[4rem] sm:w-[20rem]

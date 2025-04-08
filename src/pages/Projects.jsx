@@ -61,7 +61,7 @@ const Projects = () => {
                         sm:text-[3rem] sm:mt-[-15rem]
                         md:text-[6rem] md:mt-[-30rem] 
                         lp:text-[6rem] lp:mt-[-53rem] lp:justify-center lp:items-center
-                        lg:text-[7rem] lg:justify-center lg:text-center lg:items-center lg:mt-[-40rem] 
+                        lg:text-[7rem] lg:justify-center lg:text-center lg:items-center lg:ml-[4rem] lg:mt-[-45rem] 
                         " 
                         >Projects:</h1>
                     </div>
@@ -74,7 +74,7 @@ const Projects = () => {
                             sm:w-6 sm:mb-[10rem] 
                             md:w-10 md:py-[20rem]
                             lp:w-12  lp:py-[0rem] lp:mt-[-35rem]
-                            lg:w-12 lg:justify-center lg:text-center lg:items-center lg:py-[0rem] lg:pt-[30rem]
+                            lg:w-12 lg:justify-center lg:text-center lg:items-center lg:py-[0rem] lg:pt-[20rem]
                             " 
                             onClick={scrollToGraphic}
                             />
@@ -110,7 +110,7 @@ const Projects = () => {
                     <div className="
                     sm:pt-[2rem]
                     lp:ml-[31rem]
-                    lg:ml-[35rem]
+                    lg:ml-[38.5rem]
                     ">
                         <Social />
                     </div>

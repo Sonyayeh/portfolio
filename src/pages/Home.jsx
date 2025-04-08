@@ -14,6 +14,9 @@ import Bubble from '../assets/singlebubble.gif';
 import TextBubble from "../assets/text-bubble.png";
 
 const Home = () => {
+  const scrollToSampleWork = () => {
+    document.getElementById('title-section').scrollIntoView({ behavior: 'smooth' });
+};
   return (
     <div className="container flex flex-col">
       {/* the "I am" Text */}
@@ -83,11 +86,14 @@ const Home = () => {
           md:w-10 md:ml-[27rem] md:mt-[22rem]
           lg:w-12 lg:ml-[40rem] lg:mt-[10rem] lg:mb-[10rem]
           lp:w-12 lp:ml-[38rem] lp:mt-[1rem] lp:mb-[10rem]"
+          onClick={scrollToSampleWork}
         />
       </div>
 
       {/* Sample Work Title */}
-      <div className="flex justify-center w-full mt-20 text-center">
+      <div className="flex justify-center w-full mt-20 text-center"
+      
+      >
         <h5 className="text-3xl 
           sm:text-[2rem] sm:mt-[3rem] sm:ml-[2rem] sm:mb-[20rem]
           md:text-[5rem] md:ml-[5rem] md:mt-[11rem] md:pb-[2rem]
@@ -114,7 +120,9 @@ const Home = () => {
           sm:w-[20rem] sm:mt-[-20rem] sm:pb-[35rem] sm:ml-[2.5rem] 
           md:w-[40rem] md:ml-[7rem] md:mb-[2rem] md:mt-[-15rem]
           lg:w-[70rem] lg:ml-[-10rem] lg:mt-[-10rem]
-          lp:w-[50rem] lp:ml-[0rem] lp:mt-[-10rem]">
+          lp:w-[50rem] lp:ml-[0rem] lp:mt-[-10rem]"
+          id = "title-section"
+          >
           <PurpleWorkBox />
           <div className="flex w-full justify-center items-center 
             sm:w-[18rem] sm:ml-[1rem] sm:mt-[-15rem] 
@@ -244,8 +252,8 @@ const Home = () => {
       <div className="mt-6 
         sm:w-[40rem] sm:max-w-[20rem] sm:ml-[2rem] sm:mt-[10rem] 
         md:w-[40rem] md:ml-[17rem] md:mt-[25rem] md:mb-[3rem]
-        lg:w-[80rem] lg:ml-[37rem] lg:mb-[-2rem] lg:mt-[35rem]
-        lp:w-[80rem] lp:ml-[33rem] lp:mt-[30rem]">
+        lg:w-[80rem] lg:ml-[39rem] lg:mb-[-2rem] lg:mt-[35rem]
+        lp:w-[80rem] lp:ml-[35rem] lp:mt-[30rem]">
         <Social />
       </div>
     </div>

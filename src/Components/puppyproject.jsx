@@ -11,7 +11,7 @@ const PuppyProject = () => {
     }
 
     return (
-        <div className="w-full relative mt-[30rem] sm:mt-[10rem] sm:px-0 sm:mx-auto md:ml-[0rem] lg:pl-[4rem] lg:pr-[7rem]">
+        <div className="w-full relative mt-[30rem] sm:mt-[10rem] sm:px-0 sm:mx-auto md:ml-[0rem] lg:ml-[5rem] lg:pr-[7rem]">
             {/* Project Heading and Description */}
             <div className="text-start w-full">
                 {/* this is the section title
@@ -29,7 +29,7 @@ const PuppyProject = () => {
 
                 {/* Purple heading */}
                 <div className="bg-purple-200 px-4 flex justify-between items-center w-full">
-                    <h5 className="text-white text-3xl sm:text-3xl md:text-6xl md:py-3 lg:text-7xl">Project</h5>
+                    <h5 className="text-white text-3xl sm:text-3xl md:text-6xl md:py-3 lg:text-7xl ">Project</h5>
                 </div>
 
                 {/* White background tab bar */}
@@ -43,9 +43,10 @@ const PuppyProject = () => {
             </div>
 
             {/* Project box with border */}
-            <div className="w-full p-0 sm:p-0 flex flex-col border-solid border-x-[1rem] border-b-[1rem] border-purple-200 md:p-3">
+            <div className="w-full p-0 sm:p-0 flex flex-col border-solid border-x-[1rem] border-b-[1rem] 
+            border-purple-200 md:p-3">
                 {/* Content Container */}
-                <div className="space-y-4 flex flex-col py-2 px-4 sm:px-7 w-full lg:flex-row">
+                <div className="space-y-4 flex flex-col py-2 px-4 sm:px-7 w-full lg:flex-row ">
                     {/* Title and Description Section */}
                     <div className="w-full lg:w-1/2 lg:text-left">
                         <h5 className="text-purple-400 pb-2 text-2xl sm:text-[1.5rem] sm:text-start sm:pt-5 md:text-[2.6rem] md:pt-5 md:ml-[-1rem] md:w-[59rem] lg:text-[3rem] lg:pl-4 lg:pt-[4rem] lg:absolute lg:w-[60rem]">
