@@ -14,8 +14,8 @@ import Bubble from '../assets/singlebubble.gif';
 import TextBubble from "../assets/text-bubble.png";
 
 const Home = () => {
-  const scrollToSampleWork = () => {
-    document.getElementById('title-section').scrollIntoView({ behavior: 'smooth' });
+  const scrollToPurpleBox = () => {
+    document.getElementById('purplebox-section').scrollIntoView({ behavior: 'smooth' });
 };
   return (
     <div className="container flex flex-col">
@@ -80,13 +80,16 @@ const Home = () => {
       </div>
 
       {/* Arrow */}
-      <div className="text-center mt-[-21rem]">
+      <div className="text-center mt-[-21rem]
+      hover:cursor-hover
+      
+      ">
         <Arrow className="w-8 
           sm:w-6 sm:pb-[0rem] sm:mt-[5rem] sm:ml-[12rem]
           md:w-10 md:ml-[27rem] md:mt-[22rem]
           lg:w-12 lg:ml-[40rem] lg:mt-[10rem] lg:mb-[10rem]
           lp:w-12 lp:ml-[38rem] lp:mt-[1rem] lp:mb-[10rem]"
-          onClick={scrollToSampleWork}
+          onClick={scrollToPurpleBox}
         />
       </div>
 
@@ -121,7 +124,7 @@ const Home = () => {
           md:w-[40rem] md:ml-[7rem] md:mb-[2rem] md:mt-[-15rem]
           lg:w-[70rem] lg:ml-[-10rem] lg:mt-[-10rem]
           lp:w-[50rem] lp:ml-[0rem] lp:mt-[-10rem]"
-          id = "title-section"
+          id = "purplebox-section"
           >
           <PurpleWorkBox />
           <div className="flex w-full justify-center items-center 
