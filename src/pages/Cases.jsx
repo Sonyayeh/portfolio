@@ -18,7 +18,7 @@ const Cases = () => {
                 sm:text-[2rem] sm:pt-[1rem] sm:pb-[-1rem] sm:mt-[8rem]
                 md:text-[4rem] md:mt-[20rem]
                 lp:text-[6rem] lp:mt-[5rem]
-                lg:text-[6rem] lg:mt-[13rem]
+                lg:text-[6rem] lg:mt-[10rem]
             ">
                 UX Case Studies:
             </h1>
@@ -30,7 +30,7 @@ const Cases = () => {
                     sm:w-6 sm:mb-[1rem] sm:mt-[8rem]
                     md:w-10 md:mt-[12rem] md:mb-[25rem]
                     lp:w-12 lp:mt-[10rem]
-                    lg:w-12 lg:mt-[20rem] lg:justify-center lg:text-center lg:items-center"
+                    lg:w-12 lg:mt-[18rem] lg:justify-center lg:text-center lg:items-center"
                     onClick={scrollToBcitCase}
                 />
             </div>

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import Poster from "../assets/volleyball/poster.png";
 import First from "../assets/volleyball/firstdesign.png";
 import Second from "../assets/volleyball/seconddesign.png";
@@ -48,6 +48,7 @@ const images = [
 const BeachWorkSection = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const scrollRef = useRef(null);
 
   const openLightbox = (index) => {
     setCurrentImageIndex(index);
@@ -64,6 +65,18 @@ const BeachWorkSection = () => {
     }
   };
 
+  const handlePrev = () => {
+    setCurrentImageIndex((prevIndex) =>
+      prevIndex === 0 ? images.length - 1 : prevIndex - 1
+    );
+  };
+
+  const handleNext = () => {
+    setCurrentImageIndex((prevIndex) =>
+      prevIndex === images.length - 1 ? 0 : prevIndex + 1
+    );
+  };
+
   return (
     <div className="relative ml-[4rem] w-[19rem] mx-auto md:w-[46rem] md:ml-[-2rem]">
       <h2 className="text-center text-2xl font-bold mb-4 w-[17rem] text-blue-400 underline decoration-dashed
@@ -74,14 +87,16 @@ const BeachWorkSection = () => {
         Sketches & Process:
       </h2>
 
-      <div>
-        <div className="overflow-x-auto flex space-x-4 py-4 scrollbar-visible
+      <div className="relative">
+        <div
+          className="overflow-x-auto flex space-x-4 py-4 scrollbar-visible
           lp:space-x-[4rem]
           sm:w-[290px]
           md:w-[710px] md:ml-[2rem]
-          lp:w-[70rem]
-          lg:w-[80rem] lg:ml-[-5rem]
-          ">
+          lp:w-[60rem] lp:ml-[8rem]
+          lg:w-[80rem] lg:ml-[-5rem] lg:flex lg:items-center"
+          ref={scrollRef}
+        >
           {images.map((image, index) => (
             <div
               key={index}
@@ -97,7 +112,6 @@ const BeachWorkSection = () => {
                 onClick={() => openLightbox(index)}
               />
 
-              {/* Divider */}
               <div
                 className="border-t-2 border-blue-500 my-10 
                  sm:w-[16rem]
@@ -105,7 +119,6 @@ const BeachWorkSection = () => {
                  lp:w-[27rem] lp:ml-[0rem]"
               ></div>
 
-              {/* Description */}
               <p
                 className="mt-2 text-left text-lg text-blue-500 font-Dos
                 md:text-[2.5rem] md:w-[43rem] md:gap-x-3 md:pl-[1rem] md:leading-[4rem]
@@ -116,7 +129,32 @@ const BeachWorkSection = () => {
             </div>
           ))}
         </div>
-      </div>
+
+        <div
+          className="hidden lp:block lg:block absolute top-1/2 left-[-5rem] transform -translate-y-1/2 text-5xl text-blue-500 hover:text-orange-500 hover:cursor-pointer
+          lg:left-[-15rem]
+          lp:left-[-1rem]"
+          onClick={() => {
+            handlePrev();
+            scrollRef.current.scrollBy({ left: -200, behavior: "smooth" });
+          }}
+        >
+          &#8592;
+        </div>
+
+        <div
+          className="hidden lp:block lg:block absolute top-1/2 right-[-5rem] transform -translate-y-1/2 text-5xl text-blue-500 hover:text-orange-500 hover:cursor-pointer
+          lg:right-[-40rem]
+          lp:right-[-30rem]"
+          onClick={() => {
+            handleNext();
+            scrollRef.current.scrollBy({ left: 200, behavior: "smooth" });
+          }}
+        >
+          &#8594;
+        </div>
+        </div>
+
 
       {/* Lightbox */}
       {isOpen && (
@@ -130,24 +168,37 @@ const BeachWorkSection = () => {
           >
             X
           </button>
-          <div className="relative flex items-center overflow-x-auto scrollbar-visible">
-            <div className="flex space-x-3 md:w-[850px] md:pr-2">
-              {images.map((image, index) => (
-                <div
-                  key={index}
-                  className="flex-shrink-0 w-[400px]
-                  md:w-[850px] md:pr-2
-                  lp:w-[60rem] lp:h-[49rem]"
-                >
-                  <img
-                    src={image.src}
-                    alt={image.alt}
-                    className="max-w-full max-h-full pl-[2rem] pr-[2rem] hover:cursor-pointer"
-                  />
-                </div>
-              ))}
-            </div>
+
+          <button
+            className="absolute left-4 text-white text-5xl z-10"
+            onClick={(e) => {
+              e.stopPropagation();
+              handlePrev();
+            }}
+          >
+            &#8592;
+          </button>
+
+          <div className="flex flex-col items-center px-4">
+            <img
+              src={images[currentImageIndex].src}
+              alt={images[currentImageIndex].alt}
+              className="max-w-[90vw] max-h-[80vh] object-contain"
+            />
+            <p className="text-white mt-4 max-w-[80vw] text-center">
+              {images[currentImageIndex].description}
+            </p>
           </div>
+
+          <button
+            className="absolute right-4 text-white text-5xl z-10"
+            onClick={(e) => {
+              e.stopPropagation();
+              handleNext();
+            }}
+          >
+            &#8594;
+          </button>
         </div>
       )}
 

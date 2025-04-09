@@ -9,7 +9,10 @@ const Language = () => {
       const percentage = Math.ceil(progress.getAttribute("data-percentage"));
       const bar = progress.nextElementSibling.querySelector(".bar");
 
-      // Reset the progress bar before animating
+      // Skip if already animating
+      if (progress.dataset.animating === "true") return;
+
+      progress.dataset.animating = "true"; // set flag
       progress.textContent = "0%";
       bar.style.width = "0%";
 
@@ -17,6 +20,7 @@ const Language = () => {
       const interval = setInterval(() => {
         if (count >= percentage) {
           clearInterval(interval);
+          progress.dataset.animating = "false"; // reset flag when done
         } else {
           count++;
           progress.textContent = `${count}%`;
@@ -33,8 +37,6 @@ const Language = () => {
         if (entry.isIntersecting) {
           // Trigger animation when section is visible (scroll into view)
           animateBars();
-          // Once section is in view, stop observing it
-          observer.unobserve(entry.target);
         }
       });
     };
@@ -57,26 +59,25 @@ const Language = () => {
   return (
     <div className="text-center my-5 pl-[2rem]" ref={sectionRef}>
       <h5 className="text-black-300 text-3xl mb-4 
-      sm:text-[1.5rem] sm:ml-[-2rem]
-      lg:text-[4rem] lg:ml-[-17rem] lg:pt-[2rem] lg:pb-[3rem] lg:w-[100rem]
-      lp:text-[3rem] lp:pt-[2rem] lp:pb-[3rem]
-      md:pt-[2rem] md:text-[2rem] md:pb-[2rem] ">
-        I also learning languages in my spare time:
+        sm:text-[1.5rem] sm:ml-[-2rem]
+        lg:text-[4rem] lg:ml-[-30rem] lg:pt-[2rem] lg:pb-[3rem] lg:w-[110rem]
+        lp:text-[2.75rem] lp:pt-[2rem] lp:pb-[3rem] lp:w-[100rem] lp:ml-[-17.5rem]
+        md:pt-[2rem] md:text-[2rem] md:pb-[2rem]">
+        I also <span className="text-red-500 underline">love</span> learning languages in my spare time:
       </h5>
 
       {/* Chinese/Mandarin Bar */}
       <div className="bar-main-container bg-purple-300 text-white rounded-lg w-72 mx-auto mb-4 
-      sm:ml-[0.7rem]
-      md:ml-[3rem] md:mb-[0.6rem] 
-      lg:ml-[-5rem] lg:w-full
-      lp:ml-[-2rem] lp:w-full lp:pb-[2rem]
-      ">
+        sm:ml-[0.7rem]
+        md:ml-[3rem] md:mb-[0.6rem] 
+        lg:ml-[-10rem] lg:w-full
+        lp:ml-[-3.5rem] lp:w-full lp:pb-[2rem]">
         <h5 className="text-3xl 
-        sm:text-[1.8rem] 
-        md:text-[1.6rem]
-        lg:text-[3rem] lg:pt-[1rem]
-        lp:text-[3rem] lp:pt-[1rem]">
-          Chinese/Mandarin
+          sm:text-[1.8rem] 
+          md:text-[1.6rem]
+          lg:text-[3rem] lg:pt-[1rem]
+          lp:text-[3rem] lp:pt-[1rem]">
+            English
         </h5>
         <div className="p-2">
           <div
@@ -93,12 +94,12 @@ const Language = () => {
 
       {/* English Bar */}
       <div className="bar-main-container bg-sky-300 text-white rounded-lg w-72 mx-auto mb-4 
-      sm:ml-[0.7rem]
-      md:ml-[24rem] md:mt-[-6.5rem] 
-      lg:ml-[-5rem]  lg:mt-[3rem]
-      lp:ml-[-2rem] lp:w-full lp:pb-[2rem] lp:mt-[3rem]">
+        sm:ml-[0.7rem]
+        md:ml-[24rem] md:mt-[-6.5rem] 
+        lg:ml-[-10rem]  lg:mt-[3rem]
+        lp:ml-[-3.5rem] lp:w-full lp:pb-[2rem] lp:mt-[3rem]">
         <h5 className="text-3xl sm:text-[2rem] md:text-[2rem] lg:text-[3rem] lp:text-[3rem] lg:pt-[1rem] lp:pt-[1rem]">
-          English
+        Chinese/Mandarin
         </h5>
         <div className="p-2">
           <div
@@ -115,12 +116,13 @@ const Language = () => {
 
       {/* French Bar */}
       <div className="bar-main-container bg-emerald-300 text-white rounded-lg w-72 mx-auto mb-4 
-      sm:ml-[0.7rem]
-      md:ml-[3rem] 
-      lg:ml-[-5rem]  lg:mt-[5rem]
-      lp:ml-[-2rem] lp:w-full lp:pb-[2rem] lp:mt-[3rem]">
+        sm:ml-[0.7rem]
+        md:ml-[3rem] 
+        lg:ml-[-10rem]  lg:mt-[5rem]
+        lp:ml-[-3.5rem] lp:w-full lp:pb-[2rem] lp:mt-[3rem]">
         <h5 className="text-3xl sm:text-[2rem] md:text-[2rem] md:mt-[0.5rem] lg:text-[3rem] lp:text-[3rem] lg:pt-[1rem] lp:pt-[1rem]">
-          French</h5>
+          French
+        </h5>
         <div className="p-2">
           <div
             className="bar-percentage bg-black/20 rounded-lg text-center py-1 text-sm sm:text-[2rem] 
@@ -136,12 +138,13 @@ const Language = () => {
 
       {/* Japanese Bar */}
       <div className="bar-main-container bg-yellow-300 text-white rounded-lg w-72 mx-auto mb-4
-      sm:ml-[0.7rem]
-      md:mt-[-7rem] md:ml-[24rem]
-      lg:ml-[-5rem] lg:mt-[5rem]
-      lp:ml-[-2rem] lp:w-full lp:pb-[2rem] lp:mt-[3rem]">
+        sm:ml-[0.7rem]
+        md:mt-[-7rem] md:ml-[24rem]
+        lg:ml-[-10rem] lg:mt-[5rem]
+        lp:ml-[-3.5rem] lp:w-full lp:pb-[2rem] lp:mt-[3rem]">
         <h5 className="text-3xl sm:text-[2rem] lg:text-[3rem] lp:text-[3rem] lg:pt-[1rem] lp:pt-[1rem]">
-          Japanese</h5>
+          Japanese
+        </h5>
         <div className="p-2">
           <div
             className="bar-percentage bg-black/20 rounded-lg text-center py-1 text-sm
@@ -158,12 +161,13 @@ const Language = () => {
 
       {/* Spanish Bar */}
       <div className="bar-main-container bg-orange-300 text-white rounded-lg w-72 mx-auto mb-4 
-      sm:ml-[0.7rem]
-      md:ml-[3rem] 
-      lg:ml-[-5rem]  lg:mt-[5rem]
-      lp:ml-[-2rem] lp:w-full lp:pb-[2rem] lp:mt-[3rem]">
+        sm:ml-[0.7rem]
+        md:ml-[3rem] 
+        lg:ml-[-10rem]  lg:mt-[5rem]
+        lp:ml-[-3.5rem] lp:w-full lp:pb-[2rem] lp:mt-[3rem]">
         <h5 className="text-3xl sm:text-[2rem] lg:text-[3rem] lp:text-[3rem] lg:pt-[1rem] lp:pt-[1rem]">
-          Spanish</h5>
+          Spanish
+        </h5>
         <div className="p-2">
           <div
             className="bar-percentage bg-black/20 rounded-lg text-center py-1 text-sm sm:text-[2rem] lg:text-[3rem] lp:text-[2.5rem]"
@@ -177,53 +181,25 @@ const Language = () => {
 
       {/* German Bar */}
       <div className="bar-main-container bg-red-300 text-white rounded-lg w-72 mx-auto mb-4 
-      sm:ml-[0.7rem]
-      md:ml-[24rem] md:mt-[-7rem] 
-      lg:ml-[-5rem]  lg:mt-[5rem]
-      lp:ml-[-2rem] lp:w-full lp:pb-[2rem] lp:mt-[3rem]">
-        <h5 className="text-3xl sm:text-[2rem] lg:text-[3rem] lp:text-[3rem] lg:pt-[1rem] lp:pt-[1rem]">German</h5>
-        <div className="p-2">
-          <div
-            className="bar-percentage bg-black/20 rounded-lg text-center py-1 text-sm sm:text-[2rem] lg:text-[3rem] lp:text-[2.5rem]"
-            data-percentage="20"
-          ></div>
-          <div className="bar-container bg-black/20 rounded-full h-2 mt-2 overflow-hidden">
-            <div className="bar bg-white h-full rounded-l-full transition-all duration-300 ease-linear"></div>
-          </div>
-        </div>
-      </div>
-
-      {/* Dutch Bar */}
-      <div className="bar-main-container bg-pink-300 text-white rounded-lg w-72 mx-auto mb-4 
-      sm:ml-[0.7rem]
-      md:ml-[14rem] md:mt-[1rem]
-      lg:ml-[-5rem] lg:mt-[5rem]
-      lp:ml-[-2rem] lp:w-full lp:pb-[2rem] lp:mt-[3rem]">
-        <h5 className="text-3xl sm:text-[2rem] lg:text-[3rem] lp:text-[3rem] lg:pt-[1rem] lp:pt-[1rem]">Dutch</h5>
-        <div className="p-2">
-          <div
-            className="bar-percentage bg-black/20 rounded-lg text-center py-1 text-sm sm:text-[2rem] lg:text-[3rem] lp:text-[2.5rem]"
-            data-percentage="10"
-          ></div>
-          <div className="bar-container bg-black/20 rounded-full h-2 mt-2 overflow-hidden">
-            <div className="bar bg-white h-full rounded-l-full transition-all duration-300 ease-linear"></div>
-          </div>
-        </div>
-      </div>
-
-      {/* List of Other Languages */}
-      {/* <div>
-        <h5 className="text-left text-black-400 text-3xl mb-4 
-        md:ml-[1rem] md:pt-[5rem] md:text-[3rem] md:pb-[3rem]
-        lg:ml-[-5rem] lg:mt-[-45rem] lg:text-[4rem] lg:pt-[50rem]">
-          Some other languages I learned are:
-          <ul className="list-disc ml-6 mt-2">
-            <li className="text-purple-300 font-bold">Turkish</li>
-            <li className="text-purple-300 font-bold">Korean</li>
-            <li className="text-purple-300 font-bold">Cantonese</li>
-          </ul>
+        sm:ml-[0.7rem]
+        md:ml-[24rem] md:mt-[-7rem] 
+        lg:ml-[-10rem]  lg:mt-[5rem]
+        lp:ml-[-3.5rem] lp:w-full lp:pb-[2rem] lp:mt-[3rem]">
+        <h5 className="text-3xl sm:text-[2rem] lg:text-[3rem] lp:text-[3rem] lg:pt-[1rem] lp:pt-[1rem]">
+          German
         </h5>
-      </div> */}
+        <div className="p-2">
+          <div
+            className="bar-percentage bg-black/20 rounded-lg text-center py-1 text-sm sm:text-[2rem] 
+            lg:text-[3rem]
+            lp:text-[2.5rem]"
+            data-percentage="40"
+          ></div>
+          <div className="bar-container bg-black/20 rounded-full h-2 mt-2 overflow-hidden">
+            <div className="bar bg-white h-full rounded-l-full transition-all duration-300 ease-linear"></div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };

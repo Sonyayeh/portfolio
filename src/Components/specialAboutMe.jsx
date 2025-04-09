@@ -34,7 +34,7 @@ const Special = () => {
 
     <div className="relative w-full max-w-xl flex flex-col justify-center items-center overflow-hidden p-6 border-2 border-dashed border-blue-300 h-auto 
     lg:min-w-[63rem] lg:min-h-[40rem] lg:p-10 lg:ml-[7rem]
-    lp:min-w-[70rem] lp:min-h-[20rem] lp:p-10 lp:ml-[-2rem]">
+    lp:min-w-[70rem] lp:min-h-[20rem] lp:p-10 lp:ml-[0rem]">
       
     {/* this is the animation section
       the animation shows that the title and text will come in from the right with a fade in effect, and then exit to the left with a fading effect.

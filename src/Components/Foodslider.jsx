@@ -42,8 +42,8 @@ const FoodSlider = () => {
   return (
     <div className="bg-blue-100 flex flex-col justify-center items-center p-4 
     md:w-[55rem] md:-ml-8 
-    lg:w-[85rem] lg:align-middle lg:ml-[-5rem]
-    lp:align-middle lp:w-[83rem]">
+    lg:w-[85rem] lg:align-middle lg:ml-[-10rem]
+    lp:align-middle lp:w-[81rem]">
 
       <h5 className="flex items-center text-center text-2xl md:w-[20rem[ md:text-[3rem] lg:text-5xl lg:pt-[1rem] lg:pb-[1rem] mb-4">
         <span>I enjoy cooking</span>

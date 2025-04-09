@@ -12,7 +12,7 @@ function Footer() {
         <div className="text-xl text-center
           sm:text-[1.3rem] sm:justify-center sm:mr-[-1.5rem] 
           md:text-[4rem] md:pb-[5rem] 
-          lg:text-[6rem] lg:pb-[0rem] lg:ml-[-2rem]
+          lg:text-[6rem] lg:pb-[0rem] lg:ml-[-6rem]
           lp:text-[4rem] lp:pt-[-1rem] lp:ml-[2rem]"
         >
           <p>&copy; hand coded by Sonya Yeh, 2025 </p>

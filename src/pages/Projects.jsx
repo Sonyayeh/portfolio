@@ -50,7 +50,7 @@ const Projects = () => {
                             <img src={Bubble} alt="Bubble gif" className=" 
                             sm:w-2/4 sm:h-1/4 sm:ml-[0rem] sm:mt-[-5rem]
                             md:w-2/4 md:h-1/4 md:ml-[-5rem] md:mt-[-5rem]
-                            lg:w-1/5 lg:h-1/5 lg:ml-[80rem] lg:mt-[-2rem]
+                            lg:w-1/5 lg:h-1/5 lg:ml-[80rem] lg:mt-[-10rem]
                             max-w-full
                             " />
                         </div>

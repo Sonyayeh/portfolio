@@ -8,7 +8,7 @@ const greetings = [
   "<span class='sm:text-[1rem] md:text-[2.7rem] lg:text-[4rem]'>初めまして、宜しくお願い申し上げます！</span>",
   "<span class='sm:text-[1rem] md:text-[3rem] lg:text-[5rem]'>안녕하세요、만나서 반가워요!</span>",
   "<span class='md:text-[3rem] lg:text-[5rem]'>Hallo, aangenaam!</span>",
-  "<span class='text-[1.13rem] md:text-[2.5rem] lg:text-[5rem]'>Merhaba, Tanıştığımıza memnun oldum!</span>",
+  "<span class='text-[1.13rem] md:text-[2.5rem] lg:text-[4.5rem]'>Merhaba, Tanıştığımıza memnun oldum!</span>",
 ];
 
 const Hello = () => {

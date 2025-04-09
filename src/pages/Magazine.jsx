@@ -331,7 +331,7 @@ const MagazineDesign = () => {
                sm:ml-[7rem]
                md:ml-[18rem]
                lp:ml-[41rem]
-               lg:ml-[44rem]
+               lg:ml-[42rem]
                ">
                 <Social />
                </div>

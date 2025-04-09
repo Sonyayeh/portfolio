@@ -24,7 +24,7 @@ const Home = () => {
         <h1 className="
           sm:text-[2rem] sm:mt-[-0.5rem] sm:ml-[-1rem] sm:pr-[3rem]
           md:text-[3.5rem] md:ml-[-0.5rem] md:mt-[10rem]
-          lg:text-[8rem] lg:ml-[-57rem] lg:mt-[-5rem]
+          lg:text-[8rem] lg:ml-[-57rem] lg:mt-[-10rem]
           lp:text-[5.5rem] lp:ml-[-20rem] lp:mt-[-3rem]
           font-Micro">
           I am a 
@@ -33,7 +33,7 @@ const Home = () => {
           className="w-full max-w-[80rem] h-[16rem] bg-contain bg-no-repeat 
           sm:ml-[-2rem] sm:h-[2.5rem] sm:w-[15rem] sm:mb-[10rem] sm:mt-[10rem] 
           md:ml-[-2rem] md:h-[6rem] md:w-[35rem] md:mb-[9rem] md:mt-[20rem]
-          lg:h-[9rem] lg:w-[55rem] lg:mr-[-115rem] lg:mt-[5rem]
+          lg:h-[9rem] lg:w-[55rem] lg:mr-[-115rem] lg:mt-[-1rem]
           lp:h-[7.5rem] lp:w-[55rem] lp:mt-[7rem] lp:mr-[-18rem]"
         />
       </div>

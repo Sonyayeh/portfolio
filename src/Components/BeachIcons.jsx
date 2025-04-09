@@ -89,7 +89,7 @@ const SoftwareUsed = () => {
                     />
                     <span className="mt-2 text-center 
                     lp:text-[2.5rem] lp:mt-[-3rem] 
-                    lg:text-[3.5rem] lg:mb-[3rem]
+                    lg:text-[3.5rem] lg:mb-[2rem]
                     ">Graphic Design</span>
                 </li>
 
@@ -103,7 +103,7 @@ const SoftwareUsed = () => {
                         lp:text-[7.5rem] lp:px-4 lp:mb-8" 
                         name="brush-outline" 
                     />
-                    <span className="mt-2 text-center lp:text-[2.5rem] lp:mt-[-1.5rem] lg:text-[3.5rem] lg:pb-12">Procreate</span>
+                    <span className="mt-2 text-center lp:text-[2.5rem] lp:mt-[-1.5rem] lg:text-[3.5rem] lg:pb-10">Procreate</span>
                 </li>
 
                 {/* Adobe Stock Images */}
@@ -112,13 +112,13 @@ const SoftwareUsed = () => {
                         className="text-blue-300 sm:text-[2.5rem]   
                         sm:px-2 
                         md:text-[6rem] md:px-3 
-                        lg:text-[12rem] lg:px-6 lg:pb-[2rem]
-                        lp:text-[7.5rem] lp:px-4 lp:mb-[2rem]" 
+                        lg:text-[12rem] lg:px-6 lg:pb-[1rem]
+                        lp:text-[7.5rem] lp:pb-[1rem]" 
                         name="image-outline" 
                     />
                     <span className="mt-2 text-center 
                     lp:text-[2.5rem] lp:mt-[-1.5rem] 
-                    lg:text-[3.5rem] lg:pb-10">
+                    lg:text-[3.5rem] lg:pb-[1.2rem]">
                         Adobe Stock Images</span>
                 </li>
             </ul>
