@@ -35,9 +35,6 @@ const Cases = () => {
                 />
             </div>
 
-            <p>
-                This is a testing section.
-            </p>
 
             <div id="bcit-section">
                 <BcitCase />
