@@ -1,35 +1,37 @@
-import React, { useEffect, useRef } from "react";
-import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-
-gsap.registerPlugin(ScrollTrigger);
+import React, { useEffect, useRef, useState } from "react";
 
 const Goal = () => {
   const sectionRef = useRef(null);
+  const [inView, setInView] = useState(false);
 
   useEffect(() => {
-    gsap.fromTo(
-      sectionRef.current,
-      {
-        opacity: 0,
-        y: 40, // starts slightly lower
+    const section = sectionRef.current;
+    if (!section) return;
+
+    const observer = new IntersectionObserver(
+      (entries, observerInstance) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setInView(true);               // fade in
+            observerInstance.unobserve(section); // stop watching after
+          }
+        });
       },
-      {
-        opacity: 1,
-        y: 0,
-        duration: 1.2,
-        ease: "power3.out",
-        scrollTrigger: {
-          trigger: sectionRef.current,
-          start: "top 75%", // when section enters viewport
-          toggleActions: "play none none none", // play once, never reverse
-        },
-      }
+      { threshold: 0.5 }
     );
+
+    observer.observe(section);
+
+    return () => observer.disconnect();
   }, []);
 
   return (
-    <section ref={sectionRef} className="max-w-6xl mx-auto">
+    <section
+      ref={sectionRef}
+      className={`max-w-6xl mx-auto transition-opacity duration-1000 ease-out ${
+        inView ? "opacity-100" : "opacity-0"
+      }`}
+    >
       <h2
         className="text-[2rem] font-bold text-center text-orange-300 mb-6
         sm:text-[1rem]

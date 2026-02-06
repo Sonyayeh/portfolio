@@ -64,7 +64,8 @@ const Language = () => {
       {/* Added floating animation and hover lift/shadow */}
       {[
         { name: "English", color: "bg-purple-300", percent: 98, ml: "md:ml-[3rem] lg:ml-[-10rem]" },
-        { name: "Chinese/Mandarin", color: "bg-sky-300", percent: 98, ml: "md:ml-[24rem] lg:ml-[-10rem]" },
+        { name: "Chinese/Mandarin", color: "bg-sky-500", percent: 98, ml: "md:ml-[24rem] lg:ml-[-10rem]" },
+        { name: "Dutch", color: "bg-sky-400", percent: 30, ml: "md:ml-[3rem] lg:ml-[-10rem]" },
         { name: "French", color: "bg-emerald-300", percent: 65, ml: "md:ml-[3rem] lg:ml-[-10rem]" },
         { name: "Japanese", color: "bg-yellow-300", percent: 80, ml: "md:ml-[24rem] lg:ml-[-10rem]" },
         { name: "Spanish", color: "bg-orange-300", percent: 35, ml: "md:ml-[3rem] lg:ml-[-10rem]" },
