@@ -15,7 +15,7 @@ function Footer() {
           lg:text-[6rem] lg:pb-[0rem] lg:ml-[-6rem]
           lp:text-[4rem] lp:pt-[-1rem] lp:ml-[2rem]"
         >
-          <p>&copy; hand coded by Sonya Yeh, 2025 </p>
+          <p>&copy; hand coded by Sonya Yeh, 2026 </p>
           {/* this is the footer where it states the author with a copyright icon */}
         </div>
         

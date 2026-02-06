@@ -5,7 +5,7 @@ const Social = () => {
   return (
     <div 
       className="flex justify-center items-center 
-      sm:pt-[5rem] sm:pb-[-10rem]
+      sm:pt-[7rem] sm:pb-[-10rem]
       md:pb-[2rem] md:pt-[5rem]
       lg:pt-[8rem] lg:pb-[10rem] lg:w-[45rem] lg:justify-center lg:ml-[-20rem]
       lp:pt-[4rem] lp:pb-[3rem] lp:w-[55rem] lp:ml-[-24rem] lp:justify-around"
