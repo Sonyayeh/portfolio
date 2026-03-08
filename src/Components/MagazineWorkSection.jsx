@@ -1,4 +1,5 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useEffect } from "react";
+import { gsap } from "gsap";
 import Magazine from "../assets/Magazine/magazine.jpg";
 import Posing from "../assets/Magazine/magazineposing.jpg";
 import Holding from "../assets/Magazine/magazineholding.jpg";
@@ -25,162 +26,110 @@ const images = [
 ];
 
 const MagazineWorkSection = () => {
-  const [isOpen, setIsOpen] = useState(false);
-  const [currentImageIndex, setCurrentImageIndex] = useState(0);
-  const scrollRef = useRef(null);
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const sliderRef = useRef(null);
 
-  const openLightbox = (index) => {
-    setCurrentImageIndex(index);
-    setIsOpen(true);
-  };
-
-  const closeLightbox = () => {
-    setIsOpen(false);
-  };
-
-  const handleClickOutside = (e) => {
-    if (e.target.classList.contains("lightbox-overlay")) {
-      closeLightbox();
+  // Slide images using the actual slide width for proper alignment
+  useEffect(() => {
+    if (sliderRef.current) {
+      const slideWidth = sliderRef.current.children[0].offsetWidth;
+      gsap.to(sliderRef.current, {
+        x: -currentIndex * slideWidth,
+        duration: 0.6,
+        ease: "power2.out",
+      });
     }
-  };
+  }, [currentIndex]);
 
-  const handlePrev = () => {
-    setCurrentImageIndex((prevIndex) =>
-      prevIndex === 0 ? images.length - 1 : prevIndex - 1
-    );
-  };
+  const goToImage = (index) => setCurrentIndex(index);
 
-  const handleNext = () => {
-    setCurrentImageIndex((prevIndex) =>
-      prevIndex === images.length - 1 ? 0 : prevIndex + 1
-    );
-  };
+  const handlePrev = () =>
+    setCurrentIndex((prev) => (prev === 0 ? images.length - 1 : prev - 1));
+
+  const handleNext = () =>
+    setCurrentIndex((prev) => (prev === images.length - 1 ? 0 : prev + 1));
 
   return (
-    <div className="relative ml-[4rem] w-[18rem] mx-auto">
-      <h2 className="text-center text-2xl font-bold mb-4 w-[17rem] text-blue-400 underline decoration-dashed
-        sm:ml-[1rem] 
-        md:text-[3rem] md:w-[35rem] md:pb-[2rem]
-        lp:text-[5rem] lp:w-[70rem] lp:pb-[2rem] lp:ml-[-3rem]
-        lg:justify-center lg:items-center lg:ml-[-1rem] lg:text-7xl lg:w-[60rem] lg:mb-[5rem] lg:mt-[2rem]
-      ">
+    <div className="relative w-full mx-auto">
+      <h2
+        className="text-center text-2xl font-bold mb-4 text-blue-400 underline decoration-dashed
+        sm:text-3xl sm:w-[21rem] sm:ml-[3rem] md:text-4xl lp:text-5xl lg:text-6xl"
+      >
         Sketches & Process:
       </h2>
 
-      <div className="relative">
-        <div
-          ref={scrollRef}
-          className="overflow-x-auto flex space-x-4 py-4 scrollbar-visible
-          sm:w-[320px] sm:ml-[-2.5rem]
-          md:w-[700px] md:ml-[-4rem]
-          lp:w-[50rem] lp:ml-[4rem]
-          lg:ml-[-4rem] lg:w-[60rem]"
-        >
-          {images.map((image, index) => (
-            <div
-              key={index}
-              className="flex-shrink-0 ml-[2rem] 
-              sm:w-[280px]  sm:pl-[2rem]
-              md:w-[650px] 
-              lp:w-[30rem] 
-              lg:w-[30rem]"
-            >
-              <img
-                src={image.src}
-                alt={image.alt}
-                className="w-full h-auto hover:cursor-hover"
-                onClick={() => openLightbox(index)}
-              />
-              <div className="border-t-2 border-blue-500 my-10 
-                sm:w-[15rem] sm:ml-[0rem]
-                md:w-[38rem] md:ml-[0rem] 
-                lp:w-[28rem] lp:ml-[0rem]">
-              </div>
-              <p className="mt-2 text-left text-lg text-blue-500 font-Dos 
-                sm:mb-8 sm:w-[16rem]
-                md:text-[2.5rem] md:pr-[4rem] md:leading-[4rem] md:w-[43rem]
-                lp:text-[2rem] lp:w-[30rem]
-                lg:text-[2rem] lg:w-[33rem]">
-                {image.description}
-              </p>
-            </div>
-          ))}
-        </div>
-
-        {/* ← Prev Button */}
-        <div
-          className="hidden lp:block lg:block absolute top-1/2 left-[-5rem] transform -translate-y-1/2 text-5xl text-blue-500 hover:text-orange-500 hover:cursor-pointer
-          lg:left-[-15rem]
-          lp:left-[-1rem]"
-          onClick={() => {
-            handlePrev();
-            scrollRef.current.scrollBy({ left: -200, behavior: "smooth" });
-          }}
-        >
-          &#8592;
-        </div>
-
-        {/* → Next Button */}
-        <div
-          className="hidden lp:block lg:block absolute top-1/2 right-[-5rem] transform -translate-y-1/2 text-5xl text-blue-500 hover:text-orange-500 hover:cursor-pointer
-          lg:right-[-50rem]
-          lp:right-[-30rem]"
-          onClick={() => {
-            handleNext();
-            scrollRef.current.scrollBy({ left: 200, behavior: "smooth" });
-          }}
-        >
-          &#8594;
-        </div>
-      </div>
-
-      {/* Lightbox */}
-      {isOpen && (
-        <div
-          className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50 lightbox-overlay"
-          onClick={handleClickOutside}
-        >
-          <button
-            className="absolute top-4 right-4 text-white text-3xl"
-            onClick={closeLightbox}
+      {/* Purple container */}
+      <div
+        className="relative bg-purple-100 p-4 pt-0 w-full sm:w-[25rem] sm:pt-[1rem] sm:ml-[1rem]
+        md:w-[50rem] lp:w-[60rem] lg:w-[80rem] mx-auto"
+      >
+        
+        {/* Slider + description */}
+        <div className="flex flex-row mt-6 relative">
+          <div
+            className="overflow-hidden relative
+            sm:w-[10rem] md:w-[60%] lp:w-[60%] lg:w-[55%]"
           >
-            X
-          </button>
-          <div className="relative flex items-center overflow-x-auto scrollbar-visible">
-            <div className="flex space-x-4 py-4">
+            <div
+              ref={sliderRef}
+              className="flex flex-row"
+              style={{ width: `${images.length * 100}%` }}
+            >
               {images.map((image, index) => (
                 <div
                   key={index}
-                  className="flex-shrink-0 w-[420px] pr-3
-                  md:w-[750px] md:pr-2
-                  lp:w-[500px] lp:pr-2"
+                  className="flex-shrink-0 w-full sm:w-[10rem] flex justify-center"
                 >
                   <img
                     src={image.src}
                     alt={image.alt}
-                    className="max-w-full max-h-full hover:cursor-hover"
+                    className="w-full h-auto cursor-pointer"
                   />
                 </div>
               ))}
             </div>
           </div>
-        </div>
-      )}
 
-      <style>
-        {`
-          .scrollbar-visible::-webkit-scrollbar {
-            height: 8px;
-          }
-          .scrollbar-visible::-webkit-scrollbar-thumb {
-            background-color: #888;
-            border-radius: 4px;
-          }
-          .scrollbar-visible::-webkit-scrollbar-thumb:hover {
-            background-color: #555;
-          }
-        `}
-      </style>
+          {/* Description */}
+          <div className="ml-4 sm:w-[12rem] w-[40%] md:w-[30%] lp:w-[35%] lg:w-[40%]">
+            <p className="text-left text-lg sm:text-[1rem] md:text-2xl lp:text-3xl text-blue-500 font-Dos">
+              {images[currentIndex].description}
+            </p>
+          </div>
+        </div>
+
+        {/* Pagination + arrows container */}
+        <div className="relative flex justify-center mt-6">
+          {/* LEFT ARROW */}
+          <button
+            onClick={handlePrev}
+            className="absolute left-0 -top-8 text-3xl text-blue-500 click:text-orange-500"
+          >
+            {"<"}
+          </button>
+
+          {/* Pagination dots */}
+          <div className="flex gap-3">
+            {images.map((_, idx) => (
+              <button
+                key={idx}
+                onClick={() => goToImage(idx)}
+                className={`w-3 aspect-square rounded-full p-0 ${
+                  idx === currentIndex ? "bg-sky-300" : "bg-white"
+                }`}
+              />
+            ))}
+          </div>
+
+          {/* RIGHT ARROW */}
+          <button
+            onClick={handleNext}
+            className="absolute right-0 -top-8 text-3xl text-blue-500 hover:text-orange-500"
+          >
+            {">"}
+          </button>
+        </div>
+      </div>
     </div>
   );
 };

@@ -17,7 +17,7 @@ const Header = () => {
           src="/logo1.svg"
           alt="Logo1" 
           className="h-16 w-auto 
-          sm:h-[5rem] sm:pl-[19rem]
+          sm:h-[5rem] sm:pl-[17rem]
           md:ml-[40rem] md:mt-[1rem] md:h-[8rem]
           lg:ml-[-25rem] lg:mt-[5rem] lg:mb-[5rem] lg:h-[10rem]
           lp:mr-[65rem] lp:mt-[3rem] lp:pr-[10rem] lp:mb-[7rem] lp:h-[8rem]
