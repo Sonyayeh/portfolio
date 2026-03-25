@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import React, { useState } from "react";
 import Poster from "../assets/volleyball/poster.png";
 import First from "../assets/volleyball/firstdesign.png";
 import Second from "../assets/volleyball/seconddesign.png";
@@ -10,54 +10,59 @@ const images = [
   {
     src: First,
     alt: "First Design",
+    fileName: "first_sketch.png",
     description:
-      "This is the first sketch. My idea was to simply create a group of people enjoying beach volleyball on the beach. The concept was simple, but the execution was not so ideal. After working on it for a while, I decided to scrap the idea.",
+      "This first sketch explored a social, lifestyle-oriented concept, depicting a group of people playing beach volleyball. While the idea aligned with the event’s theme, it lacked a clear focal point and strong visual hierarchy. As a result, this direction was not pursued further.",
   },
   {
     src: Second,
     alt: "Second Design",
+    fileName: "second_sketch.png",
     description:
-      "This is the second sketch. I shifted my idea to having a person reaching for the volleyball, as if they were reaching for the champion position of the volleyball tournament. I thought it would be a nice way to represent the event, only to realize the tournament isn't just about winning, but also enjoying the sport. In the end, I scrapped this idea.",
+      "This second sketch explored a more symbolic approach, featuring a player reaching for the volleyball to represent striving for a championship position. While the concept introduced a stronger focal point, it placed too much emphasis on competition, which did not fully align with the event’s focus on enjoyment and participation. As a result, this direction was not pursued further.",
   },
   {
     src: Third,
     alt: "Third Design",
+    fileName: "third_sketch.png",
     description:
-      "This is the third sketch. I decided to focus more on volleyball as a sport. Thinking about how it's a beach volleyball tournament, there has to have nature that features the beach. With that in mind, I decided to add palm trees, seagulls, with the ball being in the center and main focus of the poster.",
+      "This sketch focuses on the volleyball as the central element, supported by beach-related visuals such as palm trees and seagulls. This direction improved visual hierarchy and better reflected the event’s setting.",
   },
   {
     src: Final,
-    alt: "Final Design",
+    alt: "Fourth Design",
+    fileName: "fourth_sketch.png",
     description:
-      "This is the fourth sketch. After having others looking at the third sketch, I decided to make the ball even larger, with some other elements that features the tropical background of beach volleyball, as it originated in 1915 on Waikiki Beach, Hawaii.",
+      "This fourth sketch builds on the previous iteration through peer feedback. The volleyball was scaled up further to strengthen its role as the primary focal point, while additional tropical elements were introduced to enhance the visual context. These elements reference the origins of beach volleyball in Waikiki Beach, Hawaii, helping to reinforce both the theme and environment of the event.",
   },
   {
     src: Flower,
     alt: "Hibiscus Sketch",
+    fileName: "hibiscus_sketch.png",
     description:
-      "This is the hibiscus sketch. Since I decided on pursuing the fourth sketch, I added in some hibiscus since they're the first tropical flower that came into my mind. I sketched them in procreate, and was imported to Adobe Illustrator soon after.",
+      "This hibiscus sketch was developed to support the final direction established in the fourth iteration. As a recognizable tropical element, hibiscus flowers were introduced to further reinforce the beach environment and visual theme. The illustrations were initially created in Procreate and later refined in Adobe Illustrator for integration into the final design.",
   },
   {
     src: Poster,
-    alt: "Poster",
+    alt: "Final Poster",
+    fileName: "final_poster.png",
     description:
-      "This is the final product. I took the fourth sketch as a starting point, and produced this poster. The creation of the poster is all done in Adobe Illustrator. I also added some sun rays at the top of the poster to imitate the sun, as well as adding some hibiscus flowers at the bottom. The title includes orange and yellow, which are both tropical colors.",
+      "This final poster builds upon the fourth sketch, refining the established concept into a cohesive design. The composition emphasizes the volleyball as the central focal point, supported by tropical elements such as hibiscus flowers and sun rays to reinforce the beach setting. Warm tones of orange and yellow were used in the title to enhance the tropical atmosphere and visual appeal. The final design was created in Adobe Illustrator.",
   },
 ];
 
 const BeachWorkSection = () => {
-  const [isOpen, setIsOpen] = useState(false);
-  const [currentImageIndex, setCurrentImageIndex] = useState(0);
-  const scrollRef = useRef(null);
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [isLightboxOpen, setIsLightboxOpen] = useState(false);
 
-  const openLightbox = (index) => {
-    setCurrentImageIndex(index);
-    setIsOpen(true);
-  };
+  const handlePrev = () =>
+    setCurrentIndex((prev) => (prev === 0 ? images.length - 1 : prev - 1));
 
-  const closeLightbox = () => {
-    setIsOpen(false);
-  };
+  const handleNext = () =>
+    setCurrentIndex((prev) => (prev === images.length - 1 ? 0 : prev + 1));
+
+  const openLightbox = () => setIsLightboxOpen(true);
+  const closeLightbox = () => setIsLightboxOpen(false);
 
   const handleClickOutside = (e) => {
     if (e.target.classList.contains("lightbox-overlay")) {
@@ -65,159 +70,249 @@ const BeachWorkSection = () => {
     }
   };
 
-  const handlePrev = () => {
-    setCurrentImageIndex((prevIndex) =>
-      prevIndex === 0 ? images.length - 1 : prevIndex - 1
-    );
-  };
-
-  const handleNext = () => {
-    setCurrentImageIndex((prevIndex) =>
-      prevIndex === images.length - 1 ? 0 : prevIndex + 1
-    );
-  };
+  const currentImage = images[currentIndex];
 
   return (
-    <div className="relative ml-[4rem] w-[19rem] mx-auto md:w-[46rem] md:ml-[-2rem]">
-      <h2 className="text-center text-2xl font-bold mb-4 w-[17rem] text-blue-400 underline decoration-dashed
-        sm:ml-[0rem] 
-        md:text-[3rem] md:w-[35rem] md:pb-[2rem] md:ml-[8rem]
-        lp:text-[5rem] lp:w-[60rem] lp:mt-[6rem] lp:pb-[3rem] lp:justify-center lp:items-center lp:text-center 
-        lg:justify-center lg:items-center lg:ml-[4rem] lg:text-7xl lg:w-[60rem] lg:mb-[5rem] lg:mt-[2rem]">
-        Sketches & Process:
+    <section className="w-full">
+      <h2
+        className="
+          pl-2 justify-center text-center
+          underline decoration-dashed text-blue-400
+          sm:text-[2rem] sm:pb-[1rem] sm:w-[23rem] sm:pt-[3rem] sm:ml-[2rem]
+          md:text-[4rem] md:w-[45rem] md:mx-auto md:pt-[5rem] md:ml-[5rem]
+          lp:text-[4rem] lp:w-[65rem]
+          lg:text-7xl lg:w-[60rem] lg:mb-[3rem] lg:mt-[2rem] lg:mx-auto lg:ml-[4rem]
+        "
+      >
+        Sketches &amp; Process:
       </h2>
 
-      <div className="relative">
+      <div
+        className="
+          mx-auto
+          border-2 border-blue-200 border-dashed
+          bg-[#eee6f6]
+          sm:px-2 sm:py-3
+          sm:w-[25rem] sm:ml-[1rem]
+          md:w-[50rem] md:p-5 md:ml-[2rem]
+          lp:w-[65rem] lp:p-6 lp:ml-[3rem]
+          lg:w-[78rem] lg:p-7 lg:ml-[-5rem]
+        "
+      >
         <div
-          className="overflow-x-auto flex space-x-4 py-4 scrollbar-visible
-          lp:space-x-[4rem]
-          sm:w-[290px]
-          md:w-[710px] md:ml-[2rem]
-          lp:w-[60rem] lp:ml-[8rem]
-          lg:w-[80rem] lg:ml-[-5rem] lg:flex lg:items-center"
-          ref={scrollRef}
+          className="
+            flex items-center justify-between
+            border-2 border-blue-200
+            bg-blue-300
+            px-2 py-1
+          "
         >
-          {images.map((image, index) => (
-            <div
-              key={index}
-              className="flex-shrink-0 ml-[0rem] 
-              sm:w-[280px]
-              md:w-[700px] md:gap-x-3 md:pl-[3rem]
-              lp:w-[30rem]"
-            >
-              <img
-                src={image.src}
-                alt={image.alt}
-                className="w-full h-auto hover:cursor-pointer"
-                onClick={() => openLightbox(index)}
-              />
+          <span
+            className="
+              text-white font-vcr
+              sm:text-[0.8rem]
+              md:text-[1rem]
+              lp:text-[1.2rem]
+              lg:text-[1.4rem]
+            "
+          >
+            SketchViewer.exe
+          </span>
 
-              <div
-                className="border-t-2 border-blue-500 my-10 
-                 sm:w-[16rem]
-                 md:w-[40rem] md:ml-[4rem] 
-                 lp:w-[27rem] lp:ml-[0rem]"
-              ></div>
+          <div className="flex gap-1">
+            <span className="flex h-4 w-4 items-center justify-center border border-blue-400 bg-[#f8f4ff] text-[0.65rem] text-blue-400">
+              _
+            </span>
+            <span className="flex h-4 w-4 items-center justify-center border border-blue-400 bg-[#f8f4ff] text-[0.65rem] text-blue-400">
+              □
+            </span>
+            <span className="flex h-4 w-4 items-center justify-center border border-blue-400 bg-[#f8f4ff] text-[0.65rem] text-blue-400">
+              ×
+            </span>
+          </div>
+        </div>
+
+        <div className="mt-3 border-2 border-blue-200 bg-[#f8f4ff] p-3 md:p-4 lg:p-5">
+          <div className="flex flex-col gap-4 md:flex-row md:gap-5 lg:gap-6">
+            <div
+              className="
+                border-2 border-blue-200 bg-white p-3
+                md:w-[45%]
+              "
+            >
+              <button
+                type="button"
+                onClick={openLightbox}
+                className="block w-full"
+              >
+                <img
+                  src={currentImage.src}
+                  alt={currentImage.alt}
+                  className="
+                    mx-auto block w-full object-contain
+                    sm:h-[230px]
+                    md:h-[350px]
+                    lp:h-[430px]
+                    lg:h-[520px]
+                  "
+                />
+              </button>
+            </div>
+
+            <div
+              className="
+                border-2 border-blue-200 bg-white p-3
+                md:w-[55%]
+              "
+            >
+              <p
+                className="
+                  border-b border-blue-200 pb-2 text-blue-400 font-vcr
+                  sm:text-[0.85rem]
+                  md:text-[1rem]
+                  lp:text-[1.2rem]
+                  lg:text-[1.4rem]
+                "
+              >
+                File: {currentImage.fileName}
+              </p>
 
               <p
-                className="mt-2 text-left text-lg text-blue-500 font-Dos
-                md:text-[2.5rem] md:w-[43rem] md:gap-x-3 md:pl-[1rem] md:leading-[4rem]
-                lp:w-[30rem] lp:text-[2rem] lp:ml-[0rem]"
+                className="
+                  mt-3 text-blue-500 font-vcr
+                  sm:text-[0.8rem] sm:leading-7
+                  md:text-[1.05rem] md:leading-8
+                  lp:text-[1.25rem] lp:leading-10
+                  lg:text-[1.55rem] lg:leading-[3rem]
+                "
               >
-                {image.description}
+                {currentImage.description}
               </p>
             </div>
-          ))}
-        </div>
-
-        <div
-          className="hidden lp:block lg:block absolute top-1/2 left-[-5rem] transform -translate-y-1/2 text-5xl text-blue-500 hover:text-orange-500 hover:cursor-pointer
-          lg:left-[-15rem]
-          lp:left-[-1rem]"
-          onClick={() => {
-            handlePrev();
-            scrollRef.current.scrollBy({ left: -200, behavior: "smooth" });
-          }}
-        >
-          &#8592;
-        </div>
-
-        <div
-          className="hidden lp:block lg:block absolute top-1/2 right-[-5rem] transform -translate-y-1/2 text-5xl text-blue-500 hover:text-orange-500 hover:cursor-pointer
-          lg:right-[-40rem]
-          lp:right-[-30rem]"
-          onClick={() => {
-            handleNext();
-            scrollRef.current.scrollBy({ left: 200, behavior: "smooth" });
-          }}
-        >
-          &#8594;
-        </div>
-        </div>
-
-
-      {/* Lightbox */}
-      {isOpen && (
-        <div
-          className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50 lightbox-overlay"
-          onClick={handleClickOutside}
-        >
-          <button
-            className="absolute top-4 right-4 text-white text-3xl"
-            onClick={closeLightbox}
-          >
-            X
-          </button>
-
-          <button
-            className="absolute left-4 text-white text-5xl z-10"
-            onClick={(e) => {
-              e.stopPropagation();
-              handlePrev();
-            }}
-          >
-            &#8592;
-          </button>
-
-          <div className="flex flex-col items-center px-4">
-            <img
-              src={images[currentImageIndex].src}
-              alt={images[currentImageIndex].alt}
-              className="max-w-[90vw] max-h-[80vh] object-contain"
-            />
-            <p className="text-white mt-4 max-w-[80vw] text-center">
-              {images[currentImageIndex].description}
-            </p>
           </div>
 
-          <button
-            className="absolute right-4 text-white text-5xl z-10"
-            onClick={(e) => {
-              e.stopPropagation();
-              handleNext();
-            }}
+          <div className="mt-4 flex items-center justify-between border-t-2 border-blue-200 pt-3">
+            <button
+              onClick={handlePrev}
+              className="
+                border-2 border-blue-200 bg-[#e8dcf8] px-3 py-1 text-blue-400 font-vcr
+                hover:bg-[#f8f4ff]
+                sm:text-[0.8rem]
+                md:text-[0.95rem]
+                lp:text-[1.1rem]
+                lg:text-[1.25rem]
+              "
+            >
+              &lt; Prev
+            </button>
+
+            <p
+              className="
+                text-center text-blue-400 font-vcr
+                sm:text-[0.8rem]
+                md:text-[0.95rem]
+                lp:text-[1.1rem]
+                lg:text-[1.25rem]
+              "
+            >
+              {currentIndex + 1} / {images.length}
+            </p>
+
+            <button
+              onClick={handleNext}
+              className="
+                border-2 border-blue-200 bg-[#e8dcf8] px-3 py-1 text-blue-400 font-vcr
+                hover:bg-[#f8f4ff]
+                sm:text-[0.8rem]
+                md:text-[0.95rem]
+                lp:text-[1.1rem]
+                lg:text-[1.25rem]
+              "
+            >
+              Next &gt;
+            </button>
+          </div>
+        </div>
+      </div>
+
+      {isLightboxOpen && (
+        <div
+          className="lightbox-overlay fixed inset-0 z-50 flex items-center justify-center bg-black/80 p-2 sm:p-4"
+          onClick={handleClickOutside}
+        >
+          <div
+            className="
+              w-full max-w-[96vw]
+              max-h-[94vh]
+              overflow-hidden
+              border-2 border-blue-200 border-dashed
+              bg-[#eee6f6]
+              flex flex-col
+              sm:max-w-[94vw]
+              md:max-w-[85vw]
+              lg:max-w-[78vw]
+            "
+            onClick={(e) => e.stopPropagation()}
           >
-            &#8594;
-          </button>
+            <div className="sticky top-0 z-10 flex items-center justify-between gap-3 border-b-2 border-blue-200 bg-blue-300 px-2 py-1 sm:px-3">
+              <span className="min-w-0 truncate text-white font-vcr text-[0.75rem] sm:text-[0.85rem] md:text-[1rem]">
+                {currentImage.fileName}
+              </span>
+
+              <button
+                onClick={closeLightbox}
+                className="
+                  shrink-0 flex h-7 w-7 items-center justify-center
+                  border border-blue-400 bg-[#f8f4ff]
+                  text-[1rem] text-blue-400
+                  sm:h-8 sm:w-8 sm:text-[1.1rem]
+                "
+                aria-label="Close lightbox"
+              >
+                ×
+              </button>
+            </div>
+
+            <div className="flex-1 overflow-y-auto bg-[#f8f4ff] p-3 sm:p-4 md:p-5">
+              <div className="flex flex-col items-center">
+                <div className="w-full flex justify-center items-center min-h-[30vh] sm:min-h-[36vh] md:min-h-[44vh]">
+                  <img
+                    src={currentImage.src}
+                    alt={currentImage.alt}
+                    className="
+                      object-contain w-full
+                      max-h-[42vh]
+                      sm:max-h-[48vh]
+                      md:max-h-[56vh]
+                      lg:max-h-[62vh]
+                    "
+                  />
+                </div>
+
+                <p className="mt-4 w-full max-w-[70ch] text-center text-blue-500 font-vcr text-[0.78rem] leading-6 sm:text-[0.85rem] sm:leading-7 md:text-[1rem] md:leading-8 lg:text-[1.15rem]">
+                  {currentImage.description}
+                </p>
+
+                <div className="mt-4 flex flex-wrap justify-center gap-3">
+                  <button
+                    onClick={handlePrev}
+                    className="border-2 border-blue-200 bg-[#e8dcf8] px-3 py-1 text-blue-400 font-vcr hover:bg-white text-[0.8rem] sm:text-[0.9rem] md:text-[1rem]"
+                  >
+                    &lt; Prev
+                  </button>
+                  <button
+                    onClick={handleNext}
+                    className="border-2 border-blue-200 bg-[#e8dcf8] px-3 py-1 text-blue-400 font-vcr hover:bg-white text-[0.8rem] sm:text-[0.9rem] md:text-[1rem]"
+                  >
+                    Next &gt;
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       )}
-
-      {/* Scrollbar Styles */}
-      <style>
-        {`
-          .scrollbar-visible::-webkit-scrollbar {
-            height: 8px;
-          }
-          .scrollbar-visible::-webkit-scrollbar-thumb {
-            background-color: #888;
-            border-radius: 4px;
-          }
-          .scrollbar-visible::-webkit-scrollbar-thumb:hover {
-            background-color: #555;
-          }
-        `}
-      </style>
-    </div>
+    </section>
   );
 };
 

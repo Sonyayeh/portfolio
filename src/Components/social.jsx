@@ -6,9 +6,9 @@ const Social = () => {
     <div 
       className="flex justify-center items-center 
       sm:pt-[7rem] sm:pb-[-10rem]
-      md:pb-[2rem] md:pt-[5rem]
+      md:pb-[2rem] md:pt-[5rem] md:ml-[5rem]
       lg:pt-[8rem] lg:pb-[10rem] lg:w-[45rem] lg:justify-center lg:ml-[-20rem]
-      lp:pt-[4rem] lp:pb-[3rem] lp:w-[55rem] lp:ml-[-24rem] lp:justify-around"
+      lp:pt-[4rem] lp:pb-[3rem] lp:w-[55rem] lp:ml-[0rem] lp:justify-around"
     >
       <div className="flex justify-center items-center space-x-6 lp:space-x-8">
         {/* GitHub Icon */}

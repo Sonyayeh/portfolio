@@ -26,12 +26,12 @@ const About = () => {
       <div className="relative mt-[30rem] sm:mt-[2rem] sm:ml-[-1rem] sm:w-[25rem] md:mr-[1rem] md:w-[50rem] md:mt-[2rem] lg:w-[100rem] lg:ml-[-15rem] lp:ml-[4rem]">
 
         {/* Photo */}
-        <div className="absolute w-full sm:w-1/4 sm:mt-[-3rem] sm:ml-[17.5rem] md:w-3/4 md:ml-[30rem] md:mt-[-0rem] lg:w-1/3 lg:ml-[72rem] lg:mt-[-5rem] lp:w-1/3 lp:ml-[45rem] lp:mt-[3rem]">
+        <div className="absolute w-full sm:w-1/4 sm:mt-[3rem] sm:ml-[1rem] md:w-3/4 md:ml-[30rem] md:mt-[-0rem] lg:w-1/3 lg:ml-[72rem] lg:mt-[-5rem] lp:w-1/3 lp:ml-[45rem] lp:mt-[3rem]">
           <Photo />
         </div>
 
         {/* Pointercursor */}
-        <div className="absolute sm:w-1/4 sm:m-[20rem] sm:mt-[-4.3rem] md:w-[20rem] md:ml-[50.5rem] md:mt-[-1rem] lg:w-[5rem] lg:ml-[91rem] lg:mt-[-5.5rem] lp:w-1/3 lp:ml-[55.5rem] lp:mt-[2rem]">
+        <div className="absolute rotate-12 sm:w-1/4 sm:m-[4.2rem] sm:mt-[2rem] md:w-[20rem] md:ml-[50.5rem] md:mt-[-1rem] lg:w-[5rem] lg:ml-[91rem] lg:mt-[-5.5rem] lp:w-1/3 lp:ml-[55.5rem] lp:mt-[2rem]">
           <Pointercursor />
         </div>
 

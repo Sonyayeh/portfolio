@@ -29,7 +29,7 @@ const Projects = () => {
                             sm:w-[10rem] sm:ml-[16rem]
                             md:w-[15rem] md:ml-[35rem] md:mt-[-2rem]
                             lg:w-[30rem] lg:ml-[-10rem] lg:mt-[12rem]
-                            lp:w-[20rem] lp:ml-[60rem] 
+                            lp:w-[20rem] lp:ml-[55rem] 
                             " 
                         />
                     </div>

@@ -34,9 +34,14 @@
       font-weight: normal;
       font-style: normal;
     }
+
+    @font-face {
+      font-family: "VCR";
+      src: url("/Users/sonya/Documents/GitHub/portfolio/portfolio/public/font/VCR_OSD_MONO_1.001.ttf") format("truetype");
+    }
+
+
     
-
-
    /* Keyframes for the ripple animation */
 @keyframes rippleEffect {
   0% {
@@ -74,4 +79,39 @@
   transform: translate(-50%, -50%) scale(0);
   animation: rippleEffect 0.6s ease-out;
   opacity: 1;
+}
+
+
+.lift-text {
+  display: inline-block;
+}
+
+.lift-letter {
+  display: inline-block;
+  transition: transform 0.2s ease;
+  margin-right: 0.02em;
+  letter-spacing: 0.03em;
+}
+
+.lifted {
+  transform: translateY(-0.25em) rotate(-2deg);
+}
+
+.lifted:nth-child(2) {
+  transform: translateY(-0.35em)
+}
+
+.lift-letter:empty::before {
+  content: "\00a0";
+}
+
+
+.project-card:hover .lift-letter:nth-child(2),
+.project-card:hover .lift-letter:nth-child(6),
+.project-card:hover .lift-letter:nth-child(11),
+.project-card:hover .lift-letter:nth-child(17),
+.project-card:hover .lift-letter:nth-child(23),
+.project-card:hover .lift-letter:nth-child(29),
+.project-card:hover .lift-letter:nth-child(34) {
+  transform: translateY(-0.25em);
 }
