@@ -1,10 +1,20 @@
-import React, { useMemo, useRef, useState } from "react";
+import React, { useMemo, useState } from "react";
 import { gsap } from "gsap";
+import emailjs from "emailjs-com";
 import Profile from "../assets/simple-drawing.gif";
 
 const AboutMeCard = () => {
   const [activeTab, setActiveTab] = useState("about");
   const [poppedIcon, setPoppedIcon] = useState(null);
+
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+
+  const [submitted, setSubmitted] = useState(false);
+  const [sending, setSending] = useState(false);
 
   const tabs = useMemo(
     () => [
@@ -20,6 +30,43 @@ const AboutMeCard = () => {
     setTimeout(() => {
       setPoppedIcon(null);
     }, 450);
+  };
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prev) => ({
+      ...prev,
+      [name]: value,
+    }));
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setSending(true);
+
+    emailjs
+      .send(
+        "service_hrjqfbc",
+        "template_rbr6ouq",
+        formData,
+        "bPZu7d6EU42O4lpct"
+      )
+      .then(
+        () => {
+          setSubmitted(true);
+          setSending(false);
+          setFormData({
+            name: "",
+            email: "",
+            message: "",
+          });
+        },
+        (error) => {
+          console.error("FAILED...", error);
+          setSending(false);
+          alert("Something went wrong while sending your message. Please try again.");
+        }
+      );
   };
 
   const popProfileIcons = (event, clickedSymbol) => {
@@ -113,12 +160,7 @@ const AboutMeCard = () => {
                   <img
                     src={Profile}
                     alt="Sonya profile drawing"
-                    className="
-                      h-full w-full
-                      object-cover
-                      object-center
-                      scale-[1.4]
-                    "
+                    className="h-full w-full object-cover object-center scale-[1.4]"
                   />
                 </div>
               </div>
@@ -252,7 +294,7 @@ const AboutMeCard = () => {
 
       case "contact":
         return (
-          <div>
+          <div className="min-w-0">
             <h2 className="font-Micro text-blue-500 text-[1.8rem] sm:text-[2.2rem] md:text-[2.6rem] leading-none">
               Contact
             </h2>
@@ -271,13 +313,99 @@ const AboutMeCard = () => {
               />
             </div>
 
-            <div className="mt-8 flex flex-wrap gap-3 font-vcr">
-              <button className="border-2 border-blue-200 bg-[#e8dcf8] px-5 py-2 font-Micro text-blue-500 shadow-[inset_2px_2px_0_#ffffff,inset_-2px_-2px_0_#dcd3f7] hover:translate-y-[1px]">
-                Email Me
-              </button>
-              <button className="border-2 border-blue-200 bg-[#e8dcf8] px-5 py-2 font-Micro text-blue-500 shadow-[inset_2px_2px_0_#ffffff,inset_-2px_-2px_0_#dcd3f7] hover:translate-y-[1px]">
-                View Resume
-              </button>
+            <div className="mt-8 border-2 border-blue-200 border-dashed bg-[#eef7ff] p-4 sm:p-5">
+              {submitted ? (
+                <div className="text-center">
+                  <h3 className="font-Micro text-blue-500 text-[1.4rem] sm:text-[1.7rem] md:text-[2rem]">
+                    Thank you for your message!
+                  </h3>
+                  <p className="mt-3 font-vcr text-blue-400 text-[1rem] sm:text-[1.05rem] md:text-[1.15rem]">
+                    Looking forward to connecting with you.
+                  </p>
+                  <button
+                    type="button"
+                    onClick={() => setSubmitted(false)}
+                    className="mt-5 border-2 border-blue-200 bg-[#e8dcf8] px-5 py-2 font-Micro text-blue-500 shadow-[inset_2px_2px_0_#ffffff,inset_-2px_-2px_0_#dcd3f7] hover:translate-y-[1px]"
+                  >
+                    Send Another? 🫣
+                  </button>
+                </div>
+              ) : (
+                <form onSubmit={handleSubmit} className="space-y-4">
+                  <div>
+                    <label
+                      htmlFor="name"
+                      className="block font-Micro text-blue-500 text-[1rem] sm:text-[1.1rem] md:text-[1.2rem]"
+                    >
+                      Name
+                    </label>
+                    <input
+                      type="text"
+                      id="name"
+                      name="name"
+                      value={formData.name}
+                      onChange={handleChange}
+                      required
+                      className="mt-2 w-full border-2 border-blue-200 bg-[#f8f4ff] px-4 py-3 font-vcr text-blue-500 outline-none shadow-[inset_2px_2px_0_#ffffff,inset_-2px_-2px_0_#ddd5f7] focus:border-blue-300"
+                    />
+                  </div>
+
+                  <div>
+                    <label
+                      htmlFor="email"
+                      className="block font-Micro text-blue-500 text-[1rem] sm:text-[1.1rem] md:text-[1.2rem]"
+                    >
+                      Email
+                    </label>
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      value={formData.email}
+                      onChange={handleChange}
+                      required
+                      className="mt-2 w-full border-2 border-blue-200 bg-[#f8f4ff] px-4 py-3 font-vcr text-blue-500 outline-none shadow-[inset_2px_2px_0_#ffffff,inset_-2px_-2px_0_#ddd5f7] focus:border-blue-300"
+                    />
+                  </div>
+
+                  <div>
+                    <label
+                      htmlFor="message"
+                      className="block font-Micro text-blue-500 text-[1rem] sm:text-[1.1rem] md:text-[1.2rem]"
+                    >
+                      Message
+                    </label>
+                    <textarea
+                      id="message"
+                      name="message"
+                      value={formData.message}
+                      onChange={handleChange}
+                      required
+                      rows={5}
+                      className="mt-2 w-full resize-none border-2 border-blue-200 bg-[#f8f4ff] px-4 py-3 font-vcr text-blue-500 outline-none shadow-[inset_2px_2px_0_#ffffff,inset_-2px_-2px_0_#ddd5f7] focus:border-blue-300"
+                    />
+                  </div>
+
+                  <div className="mt-6 flex flex-wrap gap-3 font-vcr">
+                    <button
+                      type="submit"
+                      disabled={sending}
+                      className="border-2 border-blue-200 bg-[#e8dcf8] px-5 py-2 font-Micro text-blue-500 shadow-[inset_2px_2px_0_#ffffff,inset_-2px_-2px_0_#dcd3f7] hover:translate-y-[1px] disabled:opacity-60"
+                    >
+                      {sending ? "Sending..." : "Email Me"}
+                    </button>
+
+                    <a
+                      href="/resume.pdf"
+                      target="_blank"
+                      rel="noreferrer"
+                      className="border-2 border-blue-200 bg-[#e8dcf8] px-5 py-2 font-Micro text-blue-500 shadow-[inset_2px_2px_0_#ffffff,inset_-2px_-2px_0_#dcd3f7] hover:translate-y-[1px]"
+                    >
+                      View Resume
+                    </a>
+                  </div>
+                </form>
+              )}
             </div>
           </div>
         );
@@ -290,9 +418,7 @@ const AboutMeCard = () => {
   return (
     <section className="w-full px-4 sm:px-6 md:px-8">
       <div className="mx-auto w-full max-w-[980px]">
-        <div
-          className="relative border-2 border-blue-200 border-dashed bg-[#eee6f6] shadow-[4px_4px_0_#d6ccf5] overflow-hidden"
-        >
+        <div className="relative border-2 border-blue-200 border-dashed bg-[#eee6f6] shadow-[4px_4px_0_#d6ccf5] overflow-hidden">
           <div className="relative flex items-center justify-between gap-3 border-b-2 border-blue-200 bg-blue-300 px-3 py-2 sm:px-4">
             <div className="flex items-center gap-3 min-w-0">
               <div className="flex h-7 w-7 items-center justify-center border border-blue-200 bg-[#f8f4ff] text-sm text-blue-400 shadow-[inset_1px_1px_0_#ffffff,inset_-1px_-1px_0_#dcd3f7]">

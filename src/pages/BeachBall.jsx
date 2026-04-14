@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import projectData from "../data/project.json";
 import SoftwareUsed from "../Components/BeachIcons";
 import BeachPSO from "../Components/BeachProblemSolutionOutcome";
@@ -14,12 +14,16 @@ const Beachball = () => {
   const project = projectData.find((proj) => proj.id === 1);
   const [activeTab, setActiveTab] = useState("ABOUT");
 
+  useEffect(() => {
+  window.scrollTo({ top: 0, left: 0, behavior: "auto" });
+}, []);
+
   if (!project) {
     return <div>Project not found</div>;
   }
 
   return (
-    <div className="w-[12rem] relative mt-[30rem] 
+    <div className="w-[12rem] relative 
     sm:ml-[-1rem] sm:mt-[10rem] sm:px-0 sm:mx-auto 
     md:ml-[3rem] md:mt-[1rem]
     lg:pl-[4rem] lg:pr-[4rem]">
@@ -46,7 +50,7 @@ const Beachball = () => {
         sm:w-[20rem] sm:ml-[3rem]
         md:w-[40rem] md:ml-[7rem]
         lp:w-[65rem] lp:ml-[3rem]
-        lg:w-[100rem] lg:ml-[-16rem]"></div>
+        lg:w-[110rem] lg:ml-[-23rem]"></div>
 
         {/* SOFTWARE */}
         <SoftwareUsed />
@@ -56,7 +60,7 @@ const Beachball = () => {
         sm:w-[20rem] sm:ml-[3rem]
         md:w-[40rem] md:ml-[7rem]
         lp:w-[65rem] lp:ml-[3rem]
-        lg:w-[100rem] lg:ml-[-16rem]"></div>
+        lg:w-[110rem] lg:ml-[-23rem]"></div>
 
         {/* TIMELINE COMPONENT */}
         <BeachTimeline />
@@ -66,7 +70,7 @@ const Beachball = () => {
         sm:w-[20rem] sm:ml-[3rem]
         md:w-[40rem] md:ml-[7rem] md:mt-[5rem] md:mb-[5rem]
         lp:w-[65rem] lp:ml-[3rem]
-        lg:w-[100rem] lg:ml-[-16rem]"></div>
+        lg:w-[110rem] lg:ml-[-23rem]"></div>
 
         {/* PROBLEM SOLUTION OUTCOME */}
         <BeachPSO />
@@ -76,7 +80,7 @@ const Beachball = () => {
         sm:w-[20rem] sm:ml-[3rem]
         md:w-[40rem] md:ml-[7rem]
         lp:w-[65rem] lp:ml-[3rem]
-        lg:w-[100rem] lg:ml-[-16rem]"></div>
+        lg:w-[110rem] lg:ml-[-23rem]"></div>
 
         {/* WORK PROCESS */}
         <BeachWorkSection />
@@ -90,7 +94,7 @@ const Beachball = () => {
         sm:w-[20rem] sm:ml-[3rem]
         md:w-[40rem] md:ml-[7rem] md:mt-[5rem]
         lp:w-[65rem] lp:ml-[3rem]
-        lg:w-[100rem] lg:ml-[-16rem]"></div>
+        lg:w-[110rem] lg:ml-[-23rem]"></div>
 
         {/* NEXT BUTTON */}
         <div className="flex justify-end mt-8 

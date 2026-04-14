@@ -15,6 +15,7 @@ import AboutMeCard from "../Components/AboutMeCard";
 import TwoClouds from "../assets/twoclouds.gif";
 import Bubble from "../assets/singlebubble.gif";
 import TextBubble from "../assets/text-bubble.png";
+import HomLanguage from "../Components/homelanguage";
 import GlitchText from "../Components/GlitchText";
 
 gsap.registerPlugin(ScrollTrigger);
@@ -23,45 +24,49 @@ const Home = () => {
   const projectRefs = useRef([]);
 
   useEffect(() => {
-  const cards = document.querySelectorAll(".project-card");
+    const cards = document.querySelectorAll(".project-card");
 
-  cards.forEach((card) => {
-    const letters = card.querySelectorAll(".lift-letter");
+    cards.forEach((card) => {
+      const letters = card.querySelectorAll(".lift-letter");
 
-    let interval;
+      let interval;
 
-    const startRandomLift = () => {
-      interval = setInterval(() => {
+      const startRandomLift = () => {
+        interval = setInterval(() => {
+          letters.forEach((l) => l.classList.remove("lifted"));
+
+          const count = Math.floor(Math.random() * 6) + 3;
+
+          for (let i = 0; i < count; i++) {
+            const randomIndex = Math.floor(Math.random() * letters.length);
+            letters[randomIndex].classList.add("lifted");
+          }
+        }, 120);
+      };
+
+      const stopRandomLift = () => {
+        clearInterval(interval);
         letters.forEach((l) => l.classList.remove("lifted"));
+      };
 
-        const count = Math.floor(Math.random() * 6) + 3; // 3–8 letters
+      card.addEventListener("mouseenter", startRandomLift);
+      card.addEventListener("mouseleave", stopRandomLift);
 
-        for (let i = 0; i < count; i++) {
-          const randomIndex = Math.floor(Math.random() * letters.length);
-          letters[randomIndex].classList.add("lifted");
-        }
-      }, 120);
-    };
-
-    const stopRandomLift = () => {
-      clearInterval(interval);
-      letters.forEach((l) => l.classList.remove("lifted"));
-    };
-
-    card.addEventListener("mouseenter", startRandomLift);
-    card.addEventListener("mouseleave", stopRandomLift);
-
-    return () => {
-      card.removeEventListener("mouseenter", startRandomLift);
-      card.removeEventListener("mouseleave", stopRandomLift);
-    };
-  });
-}, []);
+      return () => {
+        card.removeEventListener("mouseenter", startRandomLift);
+        card.removeEventListener("mouseleave", stopRandomLift);
+      };
+    });
+  }, []);
 
   const scrollToPurpleBox = () => {
     document
       .getElementById("WorkTitleSection")
       ?.scrollIntoView({ behavior: "smooth" });
+  };
+
+  const goToTop = () => {
+    window.scrollTo({ top: 0, left: 0, behavior: "auto" });
   };
 
   return (
@@ -79,7 +84,6 @@ const Home = () => {
               lp:h-[46rem]
             "
           >
-            {/* I am a + text bubble */}
             <div
               className="
                 absolute z-20
@@ -128,7 +132,6 @@ const Home = () => {
               </div>
             </div>
 
-            {/* cloud */}
             <img
               src={TwoClouds}
               alt="Cloud gif"
@@ -143,7 +146,6 @@ const Home = () => {
               "
             />
 
-            {/* typed text */}
             <div
               className="
                 absolute z-20
@@ -182,7 +184,6 @@ const Home = () => {
               />
             </div>
 
-            {/* cat */}
             <div
               className="
                 absolute z-20
@@ -204,7 +205,6 @@ const Home = () => {
               />
             </div>
 
-            {/* arrow */}
             <button
               onClick={scrollToPurpleBox}
               className="
@@ -231,7 +231,6 @@ const Home = () => {
         </div>
       </section>
 
-      {/* SAMPLE WORK TITLE */}
       <section id="WorkTitleSection" className="relative w-full">
         <div className="relative mx-auto w-full max-w-[1600px] px-4 sm:px-6 md:px-8 lg:px-10">
           <div
@@ -275,14 +274,12 @@ const Home = () => {
         </div>
       </section>
 
-      {/* WORK SECTION */}
       <section
         id="purplebox-section"
         className="relative w-full mt-8 sm:mt-10 md:mt-8 lg:mt-4"
       >
         <div className="mx-auto w-full max-w-[1600px] px-4 sm:px-6 md:px-8 lg:px-1">
           <div className="relative flex flex-col gap-10 md:gap-14 lg:gap-16">
-            {/* Furrever Pals */}
             <div
               ref={(el) => (projectRefs.current[0] = el)}
               className="
@@ -339,22 +336,21 @@ const Home = () => {
                     lg:text-[4rem]
                   "
                 >
-                   <span className="lift-text">
-    {"Furrever Pals Puppy Yoga".split(" ").map((word, i) => (
-  <span key={i} className="inline-block mr-[0.3em]">
-    {word.split("").map((char, j) => (
-      <span key={j} className="lift-letter">
-        {char}
-      </span>
-    ))}
-  </span>
-))}
-  </span>
+                  <span className="lift-text">
+                    {"Furrever Pals Puppy Yoga".split(" ").map((word, i) => (
+                      <span key={i} className="inline-block mr-[0.3em]">
+                        {word.split("").map((char, j) => (
+                          <span key={j} className="lift-letter">
+                            {char}
+                          </span>
+                        ))}
+                      </span>
+                    ))}
+                  </span>
                 </h5>
               </div>
             </div>
 
-            {/* TOP BUBBLES */}
             <div className="relative h-0">
               <img
                 src={Bubble}
@@ -391,7 +387,6 @@ const Home = () => {
               />
             </div>
 
-            {/* Beach Volleyball */}
             <div
               ref={(el) => (projectRefs.current[1] = el)}
               className="
@@ -404,8 +399,9 @@ const Home = () => {
                 lp:w-[50rem]
               "
             >
-              <Link
+               <Link
                 to="/beachball"
+                onClick={goToTop}
                 className="relative block w-full hover:cursor-pointer"
               >
                 <BlueWorkBox />
@@ -457,22 +453,21 @@ const Home = () => {
                     "
                   >
                     <span className="lift-text">
-                    {"Beach Volleyball Tournament Poster".split(" ").map((word, i) => (
-                  <span key={i} className="inline-block mr-[0.3em]">
-                    {word.split("").map((char, j) => (
-                      <span key={j} className="lift-letter">
-                        {char}
-                      </span>
-                    ))}
-                  </span>
-                ))}
-                  </span>
+                      {"Beach Volleyball Tournament Poster".split(" ").map((word, i) => (
+                        <span key={i} className="inline-block mr-[0.3em]">
+                          {word.split("").map((char, j) => (
+                            <span key={j} className="lift-letter">
+                              {char}
+                            </span>
+                          ))}
+                        </span>
+                      ))}
+                    </span>
                   </h5>
                 </div>
               </Link>
             </div>
 
-            {/* MIDDLE BUBBLES */}
             <div className="relative h-0">
               <img
                 src={Bubble}
@@ -504,7 +499,6 @@ const Home = () => {
               />
             </div>
 
-            {/* Magazine */}
             <div
               ref={(el) => (projectRefs.current[2] = el)}
               className="
@@ -519,6 +513,7 @@ const Home = () => {
             >
               <Link
                 to="/magazine"
+                onClick={goToTop}
                 className="relative block w-full hover:cursor-pointer"
               >
                 <div className="relative scale-x-[-1]">
@@ -546,39 +541,39 @@ const Home = () => {
                     </div>
 
                     <h5
-                    className="
-                      absolute z-20
-                      left-1/2 -translate-x-1/2
-                      bottom-[0.8rem]
-                      sm:bottom-[13rem]
-                      md:bottom-[26.5rem]
-                      lg:bottom-[40rem] lg:ml-[2rem]
-                      lp:bottom-[33rem]
+                      className="
+                        absolute z-20
+                        left-1/2 -translate-x-1/2
+                        bottom-[0.8rem]
+                        sm:bottom-[13rem]
+                        md:bottom-[26.5rem]
+                        lg:bottom-[40rem] lg:ml-[2rem]
+                        lp:bottom-[33rem]
 
-                      w-full
-                      text-center
-                      font-Micro
-                      leading-none
-                      whitespace-nowrap
-                      text-[0.9rem]
-                      sm:text-[0.9rem]
-                      md:text-[1.8rem]
-                      lg:text-[3rem]
-                      lp:text-[2.3rem]
-                    "
-                  >
-                    <span className="lift-text">
-                      {"National Geographic Magazine Cover".split(" ").map((word, i) => (
-                    <span key={i} className="inline-block mr-[0.3em]">
-                      {word.split("").map((char, j) => (
-                        <span key={j} className="lift-letter">
-                          {char}
-                        </span>
-                      ))}
-                    </span>
-                  ))}
-                    </span>
-                  </h5>
+                        w-full
+                        text-center
+                        font-Micro
+                        leading-none
+                        whitespace-nowrap
+                        text-[0.9rem]
+                        sm:text-[0.9rem]
+                        md:text-[1.8rem]
+                        lg:text-[3rem]
+                        lp:text-[2.3rem]
+                      "
+                    >
+                      <span className="lift-text">
+                        {"National Geographic Magazine Cover".split(" ").map((word, i) => (
+                          <span key={i} className="inline-block mr-[0.3em]">
+                            {word.split("").map((char, j) => (
+                              <span key={j} className="lift-letter">
+                                {char}
+                              </span>
+                            ))}
+                          </span>
+                        ))}
+                      </span>
+                    </h5>
                   </div>
                 </div>
               </Link>
@@ -586,6 +581,10 @@ const Home = () => {
           </div>
         </div>
       </section>
+
+      <div className="md:pb-[1rem] lp:ml-[5rem]">
+        <HomLanguage />
+      </div>
 
       <div>
         <h5
@@ -604,7 +603,6 @@ const Home = () => {
         <AboutMeCard />
       </div>
 
-      {/* FOOTER */}
       <footer className="w-full pt-16 pb-8 sm:pt-20 md:pt-24 lg:pt-28">
         <div className="mx-auto w-full max-w-[1600px] px-4 sm:px-6 md:px-8 lg:px-10 flex justify-center">
           <Social />
