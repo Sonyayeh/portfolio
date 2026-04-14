@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 
 const languages = [
   { name: "English", level: "NATIVE" },
-  { name: "Chinese / Mandarin", level: "NATIVE" },
+  { name: "Chinese", level: "NATIVE" },
   { name: "Japanese", level: "INTERMEDIATE" },
   { name: "French", level: "BEGINNER" },
   { name: "German", level: "BEGINNER" },
