@@ -380,7 +380,7 @@ const Home = () => {
                   sm:w-[6rem] sm:top-[-2rem]
                   md:w-[20rem] md:left-[-7rem]
                   lg:w-[12rem]
-                  lp:w-[10rem]
+                  lp:w-[10rem] lp:left-[2rem]
 
                   opacity-90
                 "
@@ -582,7 +582,7 @@ const Home = () => {
         </div>
       </section>
 
-      <div className="md:pb-[1rem] lp:ml-[5rem]">
+      <div>
         <HomLanguage />
       </div>
 

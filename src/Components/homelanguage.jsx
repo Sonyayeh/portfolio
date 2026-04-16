@@ -152,8 +152,7 @@ const HomLanguage = () => {
             lg:text-[3rem]
           "
         >
-          I also <span className="text-red-500 underline">love</span> learning
-          languages in my spare time:
+        Languages has <span className="text-red-500 underline">always</span> been my passion:
         </h5>
 
         <div
@@ -189,11 +188,47 @@ const HomLanguage = () => {
               </span>
             </div>
 
-            <div className="flex items-center gap-1">
-              <span className="h-4 w-4 border border-[#bcc5ea] bg-[#f8f6ff]" />
-              <span className="h-4 w-4 border border-[#bcc5ea] bg-[#f8f6ff]" />
-              <span className="h-4 w-4 border border-[#bcc5ea] bg-[#f8f6ff]" />
-            </div>
+           <div className="flex items-center gap-1">
+  {/* Minimize */}
+  <span className="
+    flex items-center justify-center
+    h-5 w-5
+    border border-[#bcc5ea]
+    bg-[#f8f6ff]
+    text-[#5a6fb8]
+    text-[0.7rem]
+    shadow-[inset_1px_1px_0_#ffffff,inset_-1px_-1px_0_#dcd3f7]
+  ">
+    _
+  </span>
+
+  {/* Maximize */}
+  <span className="
+    flex items-center justify-center
+    h-5 w-5
+    border border-[#bcc5ea]
+    bg-[#f8f6ff]
+    text-[#5a6fb8]
+    text-[0.65rem]
+    shadow-[inset_1px_1px_0_#ffffff,inset_-1px_-1px_0_#dcd3f7]
+  ">
+    □
+  </span>
+
+  {/* Close */}
+  <span className="
+    flex items-center justify-center
+    h-5 w-5
+    border border-[#bcc5ea]
+    bg-[#f8f6ff]
+    text-[#5a6fb8]
+    text-[0.7rem]
+    shadow-[inset_1px_1px_0_#ffffff,inset_-1px_-1px_0_#dcd3f7]
+    hover:bg-red-300 hover:text-white transition
+  ">
+    ✕
+  </span>
+</div>
           </div>
 
           <div className="bg-[#f4f0fb] px-4 py-5 sm:px-5 sm:py-6 font-vcr">

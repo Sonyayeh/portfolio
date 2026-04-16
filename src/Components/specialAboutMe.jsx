@@ -32,9 +32,10 @@ const Special = () => {
   // I also made sure the container is flexible, so it can resize on its own depending on how much text there is.
   return (
 
-    <div className="relative w-full max-w-xl flex flex-col justify-center items-center overflow-hidden p-6 border-2 border-dashed border-blue-300 h-auto 
-    lg:min-w-[63rem] lg:min-h-[40rem] lg:p-10 lg:ml-[7rem]
-    lp:min-w-[70rem] lp:min-h-[20rem] lp:p-10 lp:ml-[0rem]">
+    <div className="relative w-full flex flex-col justify-center items-center overflow-hidden p-8 border-2 border-dashed border-blue-300 h-auto 
+    md:w-[42rem]
+    lg:min-w-[63rem] lg:min-h-[40rem] lg:p-10 
+    lp:min-w-[40rem] lp:min-h-[20rem] lp:p-10 ">
       
     {/* this is the animation section
       the animation shows that the title and text will come in from the right with a fade in effect, and then exit to the left with a fading effect.
@@ -50,11 +51,11 @@ const Special = () => {
     >
       {/* this is the title section */}
       {/* it will retreieve the messages with the tag of .titles from above */}
-      <h2 className="text-2xl font-bold underline text-blue-400 mb-2 lg:text-[3rem] lg:pb-[2.5rem] lp:pb-[1rem] lp:text-[2rem]">{messages[index].title}</h2>
+      <h2 className="text-2xl font-bold underline text-blue-400 mb-2 md:text-[2rem] lg:text-[3rem] lg:pb-[2.5rem] lp:pb-[1rem] lp:text-[2rem]">{messages[index].title}</h2>
 
       {/* this is the text/paragraph sectino */}
       {/* this will grab the text section from the above with those with the .text tag */}
-      <h5 className="sm:text-sm leading-relaxed whitespace-normal break-words lg:text-[2rem] lg:leading-snug lg:min-h-[15rem] lp:text-[2rem] lp:leading-[2rem]">
+      <h5 className="sm:text-sm leading-relaxed whitespace-normal break-words md:text-[1.5rem] md:leading-8 lg:text-[2rem] lg:leading-snug lg:min-h-[15rem] lp:text-[2rem] lp:leading-[2rem]">
         {messages[index].text}
       </h5>
     </motion.div>
