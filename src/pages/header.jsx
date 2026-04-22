@@ -1,9 +1,8 @@
 import React, { useEffect, useRef, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
-const MENU_WIDTH = 256;
-const MENU_HEIGHT = 320;
-const CLOSE_ANIMATION_MS = 250;
+const MENU_WIDTH = 260;
+const MENU_HEIGHT = 290;
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -17,15 +16,16 @@ const Header = () => {
   const dragOffsetRef = useRef({ x: 0, y: 0 });
   const closeTimerRef = useRef(null);
   const openingTimerRef = useRef(null);
+  const location = useLocation();
 
   const getDefaultMenuPosition = () => {
     if (!buttonRef.current) {
-      return { x: 26, y: 110 };
+      return { x: 22, y: 110 };
     }
 
     const rect = buttonRef.current.getBoundingClientRect();
 
-    let x = rect.left - 4;
+    let x = rect.left - 6;
     let y = rect.bottom + 10;
 
     const maxX = window.innerWidth - MENU_WIDTH - 8;
@@ -59,15 +59,10 @@ const Header = () => {
     openingTimerRef.current = setTimeout(() => {
       setIsOpening(false);
       openingTimerRef.current = null;
-    }, 500);
+    }, 380);
   };
 
   const closeMenu = () => {
-    if (openingTimerRef.current) {
-      clearTimeout(openingTimerRef.current);
-      openingTimerRef.current = null;
-    }
-
     setIsOpening(false);
     setIsMenuOpen(false);
 
@@ -78,7 +73,7 @@ const Header = () => {
     closeTimerRef.current = setTimeout(() => {
       setShouldRenderMenu(false);
       closeTimerRef.current = null;
-    }, CLOSE_ANIMATION_MS);
+    }, 220);
   };
 
   const toggleMenu = () => {
@@ -88,6 +83,10 @@ const Header = () => {
       openMenu();
     }
   };
+
+  const getCheck = (path) => {
+  return location.pathname === path ? "[✓]" : "[ ]";
+};
 
   const handleNavClick = () => {
     window.scrollTo(0, 0);
@@ -123,33 +122,55 @@ const Header = () => {
   }, [isMenuOpen]);
 
   useEffect(() => {
-    const handleMouseMove = (event) => {
-      if (!isDragging) return;
+  const handleMouseMove = (event) => {
+    if (!isDragging) return;
 
-      const maxX = window.innerWidth - MENU_WIDTH - 8;
-      const maxY = window.innerHeight - MENU_HEIGHT - 8;
+    const maxX = window.innerWidth - MENU_WIDTH - 8;
+    const maxY = window.innerHeight - MENU_HEIGHT - 8;
 
-      const nextX = event.clientX - dragOffsetRef.current.x;
-      const nextY = event.clientY - dragOffsetRef.current.y;
+    const nextX = event.clientX - dragOffsetRef.current.x;
+    const nextY = event.clientY - dragOffsetRef.current.y;
 
-      setMenuPosition({
-        x: Math.max(8, Math.min(nextX, maxX)),
-        y: Math.max(8, Math.min(nextY, maxY)),
-      });
-    };
+    setMenuPosition({
+      x: Math.max(8, Math.min(nextX, maxX)),
+      y: Math.max(8, Math.min(nextY, maxY)),
+    });
+  };
 
-    const handleMouseUp = () => {
-      setIsDragging(false);
-    };
+  const handleTouchMove = (event) => {
+    if (!isDragging) return;
 
-    document.addEventListener("mousemove", handleMouseMove);
-    document.addEventListener("mouseup", handleMouseUp);
+    const touch = event.touches[0];
+    if (!touch) return;
 
-    return () => {
-      document.removeEventListener("mousemove", handleMouseMove);
-      document.removeEventListener("mouseup", handleMouseUp);
-    };
-  }, [isDragging]);
+    const maxX = window.innerWidth - MENU_WIDTH - 8;
+    const maxY = window.innerHeight - MENU_HEIGHT - 8;
+
+    const nextX = touch.clientX - dragOffsetRef.current.x;
+    const nextY = touch.clientY - dragOffsetRef.current.y;
+
+    setMenuPosition({
+      x: Math.max(8, Math.min(nextX, maxX)),
+      y: Math.max(8, Math.min(nextY, maxY)),
+    });
+  };
+
+  const stopDragging = () => {
+    setIsDragging(false);
+  };
+
+  document.addEventListener("mousemove", handleMouseMove);
+  document.addEventListener("mouseup", stopDragging);
+  document.addEventListener("touchmove", handleTouchMove, { passive: false });
+  document.addEventListener("touchend", stopDragging);
+
+  return () => {
+    document.removeEventListener("mousemove", handleMouseMove);
+    document.removeEventListener("mouseup", stopDragging);
+    document.removeEventListener("touchmove", handleTouchMove);
+    document.removeEventListener("touchend", stopDragging);
+  };
+}, [isDragging]);
 
   useEffect(() => {
     const handleResize = () => {
@@ -222,22 +243,25 @@ const Header = () => {
         </Link>
       </nav>
 
-      {/* Mobile / Tablet Menu */}
+      {/* Memo nav only on sm + md */}
       <div className="lg:hidden lp:hidden">
+        {/* Paperclip button */}
         <button
           ref={buttonRef}
           type="button"
           onClick={toggleMenu}
-          aria-label="Open navigation menu"
-          className="fixed left-[26px] top-[56px] z-[200] transition"
+          aria-label="Open memo navigation"
+          className="fixed left-[24px] top-[54px] z-[200] transition hover:scale-105"
         >
           <svg
             viewBox="0 0 24 24"
-            className={`h-[3rem] w-[3rem] fill-[#c4b5fd] transition-transform duration-500 ease-in-out hover:drop-shadow-[0_0_10px_#c4b5fd] ${
-              isMenuOpen ? "rotate-[180deg]" : "rotate-[0deg]"
+            className={`h-[2.8rem] w-[2.8rem] stroke-[#c9acf7] fill-none stroke-[1.8] transition-transform duration-500 ease-in-out hover:drop-shadow-[0_0_10px_#d8b4fe] ${
+              isMenuOpen ? "rotate-[18deg]" : "rotate-[0deg]"
             }`}
+            strokeLinecap="round"
+            strokeLinejoin="round"
           >
-            <path d="M12 3.5C12.4 3.5 12.7 3.7 12.9 4.1L14.6 8.3C14.7 8.6 15 8.8 15.3 8.8L19.8 9.2C20.6 9.3 20.9 10.2 20.3 10.7L16.9 13.6C16.6 13.8 16.5 14.2 16.6 14.5L17.6 18.8C17.8 19.6 17 20.2 16.3 19.8L12.4 17.5C12.1 17.3 11.7 17.3 11.4 17.5L7.5 19.8C6.8 20.2 6 19.6 6.2 18.8L7.2 14.5C7.3 14.2 7.2 13.8 6.9 13.6L3.5 10.7C2.9 10.2 3.2 9.3 4 9.2L8.5 8.8C8.8 8.8 9.1 8.6 9.2 8.3L10.9 4.1C11.1 3.7 11.4 3.5 12 3.5Z" />
+            <path d="M9 7.5v8.2a3 3 0 1 0 6 0V6.8a4.3 4.3 0 1 0-8.6 0v9.4a5.6 5.6 0 1 0 11.2 0V8.3" />
           </svg>
         </button>
 
@@ -248,76 +272,88 @@ const Header = () => {
               left: `${menuPosition.x}px`,
               top: `${menuPosition.y}px`,
             }}
-            className={`fixed z-[220] w-[16rem] overflow-hidden border-2 border-dashed border-blue-200 bg-[#eee6f6] shadow-[4px_4px_0_#d6ccf5] ${
+            className={`fixed z-[220] w-[16.25rem] rounded-[0.35rem] border border-[#96deeb] bg-[#d0faff] shadow-[6px_6px_0_#69bac3] ${
               isDragging ? "select-none" : ""
             } ${
               isMenuOpen
                 ? isOpening
-                  ? "animate-[menuSlideIn_0.45s_ease-out_forwards,floatMenu_3.2s_ease-in-out_0.45s_infinite]"
-                  : "opacity-100 animate-[floatMenu_3.2s_ease-in-out_infinite]"
-                : "opacity-0 transition-opacity duration-250"
+                  ? "animate-[memoSlideIn_0.38s_ease-out_forwards]"
+                  : "opacity-100"
+                : "opacity-0 transition-opacity duration-200"
             }`}
           >
+            {/* memo top strip / drag handle */}
             <div
               onMouseDown={startDragging}
-              className="flex cursor-grab items-center justify-between border-b-2 border-blue-200 bg-blue-300 px-3 py-2 active:cursor-grabbing"
+              className="flex cursor-grab items-center justify-between rounded-t-[0.2rem] border-b border-[#96deeb] bg-[#d0faff] px-3 py-2 active:cursor-grabbing"
             >
-              <h5 className="font-Micro text-[1rem] text-white">
-                navigation.exe
-              </h5>
-
-              <button
-                type="button"
-                onClick={closeMenu}
-                aria-label="Close navigation menu"
-                className="flex h-6 w-6 items-center justify-center border border-blue-200 bg-[#f8f4ff] text-[0.8rem] text-blue-400 shadow-[inset_1px_1px_0_#ffffff,inset_-1px_-1px_0_#dcd3f7] hover:bg-red-300 hover:text-white"
-              >
-                ✕
-              </button>
+              <div className="flex items-center gap-2">
+                <span className="text-[0.95rem]">📎</span>
+                <p className="font-Dos text-[0.78rem] text-[#001e8b]">
+                  Menu
+                </p>
+              </div>
             </div>
 
-            <div className="bg-[#f8f4ff] p-3">
-              <div className="flex flex-col gap-2">
-                <Link
-                  to="/"
-                  onClick={handleNavClick}
-                  className="border border-blue-200 bg-[#eee6f6] px-3 py-2 font-Dos text-[0.9rem] text-blue-500 shadow-[inset_1px_1px_0_#ffffff,inset_-1px_-1px_0_#ddd5f7] hover:bg-[#e4dbfa]"
-                >
-                  Home.exe
-                </Link>
-
-                <Link
-                  to="/projects"
-                  onClick={handleNavClick}
-                  className="border border-blue-200 bg-[#eee6f6] px-3 py-2 font-Dos text-[0.9rem] text-blue-500 shadow-[inset_1px_1px_0_#ffffff,inset_-1px_-1px_0_#ddd5f7] hover:bg-[#e4dbfa]"
-                >
-                  Projects.exe
-                </Link>
-
-                <Link
-                  to="/about"
-                  onClick={handleNavClick}
-                  className="border border-blue-200 bg-[#eee6f6] px-3 py-2 font-Dos text-[0.9rem] text-blue-500 shadow-[inset_1px_1px_0_#ffffff,inset_-1px_-1px_0_#ddd5f7] hover:bg-[#e4dbfa]"
-                >
-                  About.exe
-                </Link>
-
-                <Link
-                  to="/contact"
-                  onClick={handleNavClick}
-                  className="border border-blue-200 bg-[#eee6f6] px-3 py-2 font-Dos text-[0.9rem] text-blue-500 shadow-[inset_1px_1px_0_#ffffff,inset_-1px_-1px_0_#ddd5f7] hover:bg-[#e4dbfa]"
-                >
-                  Contact.exe
-                </Link>
-
-                <Link
-                  to="/cases"
-                  onClick={handleNavClick}
-                  className="border border-blue-200 bg-[#eee6f6] px-3 py-2 font-Dos text-[0.9rem] text-blue-500 shadow-[inset_1px_1px_0_#ffffff,inset_-1px_-1px_0_#ddd5f7] hover:bg-[#e4dbfa]"
-                >
-                  Cases.exe
-                </Link>
+            {/* sticky note body */}
+            <div className="relative bg-[#d0faff] px-4 mb-4">
+                <div className="flex justify-center items-center text-center">
+              <p className="font-mono text-[0.68rem] text-[#4d7a82] tracking-wide text-center pt-4">
+                ✦•……๑⋆｡‧˚ʚ ✦ ɞ˚‧｡⋆๑……·✦
+              </p>
               </div>
+
+              <p className="mb-3 font-Dos text-[0.85rem] text-[#001e8b] pt-2">
+                Things to open:
+              </p>
+
+              <div className="flex flex-col gap-2">
+  <Link
+    to="/"
+    onClick={handleNavClick}
+    className="font-vcr text-[0.95rem] text-[#001e8b] hover:text-[#8b44fc]"
+  >
+    {getCheck("/")} Home
+  </Link>
+
+  <Link
+    to="/projects"
+    onClick={handleNavClick}
+    className="font-vcr text-[0.95rem] text-[#001e8b] hover:text-[#8b44fc]"
+  >
+    {getCheck("/projects")} Projects
+  </Link>
+
+  <Link
+    to="/about"
+    onClick={handleNavClick}
+    className="font-vcr text-[0.95rem] text-[#001e8b] hover:text-[#8b44fc]"
+  >
+    {getCheck("/about")} About
+  </Link>
+
+  <Link
+    to="/contact"
+    onClick={handleNavClick}
+    className="font-vcr text-[0.95rem] text-[#001e8b] hover:text-[#8b44fc]"
+  >
+    {getCheck("/contact")} Contact
+  </Link>
+
+  <Link
+    to="/cases"
+    onClick={handleNavClick}
+    className="font-vcr text-[0.95rem] text-[#001e8b] hover:text-[#8b44fc]"
+  >
+    {getCheck("/cases")} Cases
+  </Link>
+</div>
+
+              <div className="flex justify-center items-center text-center">
+              <p className="font-mono text-[0.68rem] text-[#4d7a82] tracking-wide text-center pt-4">
+                ✦•……๑⋆｡‧˚ʚ ✦ ɞ˚‧｡⋆๑……·✦
+              </p>
+            </div>
             </div>
           </div>
         )}
@@ -325,21 +361,15 @@ const Header = () => {
 
       <style>
         {`
-          @keyframes menuSlideIn {
+          @keyframes memoSlideIn {
             0% {
               opacity: 0;
-              transform: translateX(-40px);
+              transform: translateX(-24px) translateY(6px);
             }
             100% {
               opacity: 1;
-              transform: translateX(0);
+              transform: translateX(0) translateY(0);
             }
-          }
-
-          @keyframes floatMenu {
-            0% { transform: translateY(0); }
-            50% { transform: translateY(-4px); }
-            100% { transform: translateY(0); }
           }
         `}
       </style>

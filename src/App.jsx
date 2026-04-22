@@ -17,6 +17,7 @@ import Boutique from "./pages/BoardWalk";
 import Bing from "./pages/Bing";
 import Bcit from "./pages/MyBcit";
 import PuppyYoga from "./pages/PuppyYoga";
+import BackToTop from "./Components/BackToTop";
 
 // Import styles
 import "./reset.css";
@@ -88,6 +89,7 @@ function App() {
               <Route path="/puppy" element={<PuppyYoga />} />
             </Route>
           </Routes>
+      <BackToTop />
         </main>
       </div>
     </BrowserRouter>
