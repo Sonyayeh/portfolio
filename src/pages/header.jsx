@@ -85,8 +85,8 @@ const Header = () => {
   };
 
   const getCheck = (path) => {
-  return location.pathname === path ? "[✓]" : "[ ]";
-};
+    return location.pathname === path ? "[✓]" : "[ ]";
+  };
 
   const handleNavClick = () => {
     window.scrollTo(0, 0);
@@ -122,55 +122,57 @@ const Header = () => {
   }, [isMenuOpen]);
 
   useEffect(() => {
-  const handleMouseMove = (event) => {
-    if (!isDragging) return;
+    const handleMouseMove = (event) => {
+      if (!isDragging) return;
 
-    const maxX = window.innerWidth - MENU_WIDTH - 8;
-    const maxY = window.innerHeight - MENU_HEIGHT - 8;
+      const maxX = window.innerWidth - MENU_WIDTH - 8;
+      const maxY = window.innerHeight - MENU_HEIGHT - 8;
 
-    const nextX = event.clientX - dragOffsetRef.current.x;
-    const nextY = event.clientY - dragOffsetRef.current.y;
+      const nextX = event.clientX - dragOffsetRef.current.x;
+      const nextY = event.clientY - dragOffsetRef.current.y;
 
-    setMenuPosition({
-      x: Math.max(8, Math.min(nextX, maxX)),
-      y: Math.max(8, Math.min(nextY, maxY)),
-    });
-  };
+      setMenuPosition({
+        x: Math.max(8, Math.min(nextX, maxX)),
+        y: Math.max(8, Math.min(nextY, maxY)),
+      });
+    };
 
-  const handleTouchMove = (event) => {
-    if (!isDragging) return;
+    const handleTouchMove = (event) => {
+      if (!isDragging) return;
 
-    const touch = event.touches[0];
-    if (!touch) return;
+      event.preventDefault();
 
-    const maxX = window.innerWidth - MENU_WIDTH - 8;
-    const maxY = window.innerHeight - MENU_HEIGHT - 8;
+      const touch = event.touches[0];
+      if (!touch) return;
 
-    const nextX = touch.clientX - dragOffsetRef.current.x;
-    const nextY = touch.clientY - dragOffsetRef.current.y;
+      const maxX = window.innerWidth - MENU_WIDTH - 8;
+      const maxY = window.innerHeight - MENU_HEIGHT - 8;
 
-    setMenuPosition({
-      x: Math.max(8, Math.min(nextX, maxX)),
-      y: Math.max(8, Math.min(nextY, maxY)),
-    });
-  };
+      const nextX = touch.clientX - dragOffsetRef.current.x;
+      const nextY = touch.clientY - dragOffsetRef.current.y;
 
-  const stopDragging = () => {
-    setIsDragging(false);
-  };
+      setMenuPosition({
+        x: Math.max(8, Math.min(nextX, maxX)),
+        y: Math.max(8, Math.min(nextY, maxY)),
+      });
+    };
 
-  document.addEventListener("mousemove", handleMouseMove);
-  document.addEventListener("mouseup", stopDragging);
-  document.addEventListener("touchmove", handleTouchMove, { passive: false });
-  document.addEventListener("touchend", stopDragging);
+    const stopDragging = () => {
+      setIsDragging(false);
+    };
 
-  return () => {
-    document.removeEventListener("mousemove", handleMouseMove);
-    document.removeEventListener("mouseup", stopDragging);
-    document.removeEventListener("touchmove", handleTouchMove);
-    document.removeEventListener("touchend", stopDragging);
-  };
-}, [isDragging]);
+    document.addEventListener("mousemove", handleMouseMove);
+    document.addEventListener("mouseup", stopDragging);
+    document.addEventListener("touchmove", handleTouchMove, { passive: false });
+    document.addEventListener("touchend", stopDragging);
+
+    return () => {
+      document.removeEventListener("mousemove", handleMouseMove);
+      document.removeEventListener("mouseup", stopDragging);
+      document.removeEventListener("touchmove", handleTouchMove);
+      document.removeEventListener("touchend", stopDragging);
+    };
+  }, [isDragging]);
 
   useEffect(() => {
     const handleResize = () => {
@@ -196,6 +198,20 @@ const Header = () => {
     dragOffsetRef.current = {
       x: event.clientX - rect.left,
       y: event.clientY - rect.top,
+    };
+    setIsDragging(true);
+  };
+
+  const startTouchDragging = (event) => {
+    if (!menuRef.current) return;
+
+    const touch = event.touches[0];
+    if (!touch) return;
+
+    const rect = menuRef.current.getBoundingClientRect();
+    dragOffsetRef.current = {
+      x: touch.clientX - rect.left,
+      y: touch.clientY - rect.top,
     };
     setIsDragging(true);
   };
@@ -285,7 +301,8 @@ const Header = () => {
             {/* memo top strip / drag handle */}
             <div
               onMouseDown={startDragging}
-              className="flex cursor-grab items-center justify-between rounded-t-[0.2rem] border-b border-[#96deeb] bg-[#d0faff] px-3 py-2 active:cursor-grabbing"
+              onTouchStart={startTouchDragging}
+              className="flex cursor-grab touch-none items-center justify-between rounded-t-[0.2rem] border-b border-[#96deeb] bg-[#d0faff] px-3 py-2 active:cursor-grabbing"
             >
               <div className="flex items-center gap-2">
                 <span className="text-[0.95rem]">📎</span>
@@ -297,10 +314,10 @@ const Header = () => {
 
             {/* sticky note body */}
             <div className="relative bg-[#d0faff] px-4 mb-4">
-                <div className="flex justify-center items-center text-center">
-              <p className="font-mono text-[0.68rem] text-[#4d7a82] tracking-wide text-center pt-4">
-                ✦•……๑⋆｡‧˚ʚ ✦ ɞ˚‧｡⋆๑……·✦
-              </p>
+              <div className="flex justify-center items-center text-center">
+                <p className="font-mono text-[0.68rem] text-[#4d7a82] tracking-wide text-center pt-4">
+                  ✦•……๑⋆｡‧˚ʚ ✦ ɞ˚‧｡⋆๑……·✦
+                </p>
               </div>
 
               <p className="mb-3 font-Dos text-[0.85rem] text-[#001e8b] pt-2">
@@ -308,52 +325,52 @@ const Header = () => {
               </p>
 
               <div className="flex flex-col gap-2">
-  <Link
-    to="/"
-    onClick={handleNavClick}
-    className="font-vcr text-[0.95rem] text-[#001e8b] hover:text-[#8b44fc]"
-  >
-    {getCheck("/")} Home
-  </Link>
+                <Link
+                  to="/"
+                  onClick={handleNavClick}
+                  className="font-vcr text-[0.95rem] text-[#001e8b] hover:text-[#8b44fc]"
+                >
+                  {getCheck("/")} Home
+                </Link>
 
-  <Link
-    to="/projects"
-    onClick={handleNavClick}
-    className="font-vcr text-[0.95rem] text-[#001e8b] hover:text-[#8b44fc]"
-  >
-    {getCheck("/projects")} Projects
-  </Link>
+                <Link
+                  to="/projects"
+                  onClick={handleNavClick}
+                  className="font-vcr text-[0.95rem] text-[#001e8b] hover:text-[#8b44fc]"
+                >
+                  {getCheck("/projects")} Projects
+                </Link>
 
-  <Link
-    to="/about"
-    onClick={handleNavClick}
-    className="font-vcr text-[0.95rem] text-[#001e8b] hover:text-[#8b44fc]"
-  >
-    {getCheck("/about")} About
-  </Link>
+                <Link
+                  to="/about"
+                  onClick={handleNavClick}
+                  className="font-vcr text-[0.95rem] text-[#001e8b] hover:text-[#8b44fc]"
+                >
+                  {getCheck("/about")} About
+                </Link>
 
-  <Link
-    to="/contact"
-    onClick={handleNavClick}
-    className="font-vcr text-[0.95rem] text-[#001e8b] hover:text-[#8b44fc]"
-  >
-    {getCheck("/contact")} Contact
-  </Link>
+                <Link
+                  to="/contact"
+                  onClick={handleNavClick}
+                  className="font-vcr text-[0.95rem] text-[#001e8b] hover:text-[#8b44fc]"
+                >
+                  {getCheck("/contact")} Contact
+                </Link>
 
-  <Link
-    to="/cases"
-    onClick={handleNavClick}
-    className="font-vcr text-[0.95rem] text-[#001e8b] hover:text-[#8b44fc]"
-  >
-    {getCheck("/cases")} Cases
-  </Link>
-</div>
+                <Link
+                  to="/cases"
+                  onClick={handleNavClick}
+                  className="font-vcr text-[0.95rem] text-[#001e8b] hover:text-[#8b44fc]"
+                >
+                  {getCheck("/cases")} Cases
+                </Link>
+              </div>
 
               <div className="flex justify-center items-center text-center">
-              <p className="font-mono text-[0.68rem] text-[#4d7a82] tracking-wide text-center pt-4">
-                ✦•……๑⋆｡‧˚ʚ ✦ ɞ˚‧｡⋆๑……·✦
-              </p>
-            </div>
+                <p className="font-mono text-[0.68rem] text-[#4d7a82] tracking-wide text-center pt-4">
+                  ✦•……๑⋆｡‧˚ʚ ✦ ɞ˚‧｡⋆๑……·✦
+                </p>
+              </div>
             </div>
           </div>
         )}
