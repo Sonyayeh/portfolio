@@ -18,6 +18,11 @@ import Bing from "./pages/Bing";
 import Bcit from "./pages/MyBcit";
 import PuppyYoga from "./pages/PuppyYoga";
 import BackToTop from "./Components/BackToTop";
+import TysnCase from "./pages/TysnCase";
+import BcitCase from "./pages/BcitCase";
+import FurreverCase from "./pages/FurreverCase";
+import MarketingCase from "./pages/MarketingCase";
+
 
 // Import styles
 import "./reset.css";
@@ -87,6 +92,10 @@ function App() {
               <Route path="/bing" element={<Bing />} />
               <Route path="/bcit" element={<Bcit />} />
               <Route path="/puppy" element={<PuppyYoga />} />
+              <Route path="/cases/tysn" element={<TysnCase />} />
+              <Route path="/cases/bcit" element={<BcitCase />} />
+              <Route path="/cases/furrever" element={<FurreverCase />} />
+              <Route path="/cases/marketing" element={<MarketingCase />} />
             </Route>
           </Routes>
       <BackToTop />

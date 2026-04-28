@@ -17,9 +17,6 @@ import Shop from "../assets/travel/shop.jpg";
 import Toolip from "../assets/travel/toolip.jpg";
 import Tower from "../assets/travel/tower.jpg";
 import Tulip from "../assets/travel/tulip.jpg";
-import Water from "../assets/travel/river.mp4";
-import Station from "../assets/travel/station.mp4";
-import Nyc from "../assets/travel/nyc.mp4";
 
 const MasonryPhotoSection = () => {
   const photos = [
@@ -41,9 +38,6 @@ const MasonryPhotoSection = () => {
     { id: 16, src: Toolip, alt: "Red tulips in Amsterdam, can't wait to visit again", type: "image" },
     { id: 17, src: Tower, alt: "Tokyo Tower, terrified of heights but went up anyway", type: "image" },
     { id: 18, src: Tulip, alt: "More tulips! I absolutely love them", type: "image" },
-    { id: 19, src: Water, alt: "The Amsterdam river photo but video version", type: "video" },
-    { id: 20, src: Station, alt: "A stunning station exit in Amsterdam", type: "video" },
-    { id: 21, src: Nyc, alt: "New York Times Square, sorry my hand slipped a bit in the end", type: "video" },
   ];
 
   const [columns, setColumns] = useState(3);

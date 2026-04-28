@@ -5,8 +5,8 @@ const Social = () => {
   return (
     <div 
       className="
-        flex justify-center items-center w-full
-        pt-[2rem] 
+        relative justify-center items-center w-full
+        py-[2rem] 
       "
     >
       <div className="flex justify-center items-center gap-6 sm:gap-8 md:gap-10 lg:gap-12">

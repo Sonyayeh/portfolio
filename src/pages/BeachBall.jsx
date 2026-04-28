@@ -128,13 +128,6 @@ const Beachball = () => {
 
       </div>
 
-      <div className="w-full flex flex-col justify-center items-center
-      sm:ml-[7rem]
-      md:ml-[18rem]
-      lp:ml-[40rem]
-      lg:ml-[43rem]">
-        <Social />
-      </div>
 
     </div>
   );

@@ -105,16 +105,7 @@ const Projects = () => {
                     <Bing />
                 </div>
                 
-                <div>
-                    {/* no position adjustments for medium and large screens */}
-                    <div className="
-                    sm:pt-[2rem]
-                    lp:ml-[31rem]
-                    lg:ml-[38.5rem]
-                    ">
-                        <Social />
-                    </div>
-                </div>
+                
             
             </div>
     );

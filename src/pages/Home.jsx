@@ -3,7 +3,6 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { Link } from "react-router-dom";
 import { ReactTyped } from "react-typed";
-import Social from "../Components/social";
 import CatGif from "../Components/CatSvg";
 import PurpleWorkBox from "../Components/purpleworkbox";
 import BlueWorkBox from "../Components/blueworkbox";
@@ -248,7 +247,7 @@ const Home = () => {
                 relative z-20
                 text-center leading-none
                 text-[2rem]
-                sm:text-[2.1rem]
+                sm:text-[2rem]
                 md:text-[5rem]
                 lg:text-[6.5rem]
                 lp:text-[6.8rem]
@@ -603,11 +602,7 @@ const Home = () => {
         <AboutMeCard />
       </div>
 
-      <footer className="w-full pt-16 pb-8 sm:pt-20 md:pt-24 lg:pt-28">
-        <div className="mx-auto w-full max-w-[1600px] px-4 sm:px-6 md:px-8 lg:px-10 flex justify-center">
-          <Social />
-        </div>
-      </footer>
+     
     </div>
   );
 };

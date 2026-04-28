@@ -84,10 +84,6 @@ const About = () => {
           >
             <Special />
           </div>
-
-          <div>
-            <Social />
-          </div>
         </div>
     </div>
   );

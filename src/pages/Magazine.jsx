@@ -65,9 +65,7 @@ const MagazineDesign = () => {
           </Link>
         </div>
 
-        <div className="w-full flex flex-col justify-center items-center sm:ml-[7rem] md:ml-[18rem] lp:ml-[41rem] lg:ml-[42rem]">
-          <Social />
-        </div>
+       
       </div>
   );
 };

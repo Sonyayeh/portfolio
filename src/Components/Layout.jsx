@@ -1,16 +1,23 @@
 import { Outlet } from "react-router-dom";
 import Header from "../pages/header";
 import Footer from "../pages/footer";
-// I basically imported the header and footer to this file, so that
-// every single page would have the header and footer when made
+import Social from "../Components/social";
+
 function Layout() {
   return (
     <>
       <Header />
+
       <main className="flex-1">
         <Outlet />
+
+        <footer className="mx-auto w-full max-w-[95rem] px-4 sm:px-5 md:px-8 lg:px-10">
+          <div className="flex flex-col items-center justify-center">
+            <Social />
+            <Footer />
+          </div>
+        </footer>
       </main>
-      <Footer />
     </>
   );
 }

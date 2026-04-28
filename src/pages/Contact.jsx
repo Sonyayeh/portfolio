@@ -199,14 +199,7 @@ const ContactMe = () => {
             </button>
           </form>
         )}
-        <div className="
-        lp:ml-[22rem] lp:mt-[10rem]
-        lg:mt-[-1rem] lg:mb-[-8rem] lg:ml-[5rem] 
-        sm:mt-[2rem]
-        md:mt-[15rem]
-        ">
-          <Social />
-        </div>
+        
       </div>
     </div>
   );

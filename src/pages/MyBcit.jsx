@@ -164,13 +164,7 @@ const MyBcit = () => {
                              </div>
 
                </div>
-               <div className=" w-full flex flex-col justify-center items-center
-               sm:ml-[7rem]
-               md:ml-[18rem]
-               lp:ml-[42rem]
-               ">
-                <Social />
-               </div>
+               
                </div>
     );
 };

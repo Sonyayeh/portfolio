@@ -220,44 +220,47 @@ const Header = () => {
     <div className="relative">
       {/* Logo */}
       <div
-        className="grid justify-center items-center 
-        sm:w-[25rem] lg:w-auto lp:w-auto lp:ml-[-102rem]"
+        className="flex relative justify-center items-center 
+        sm:justify-end md:justify-end lp:justify-start
+        sm:w-[25rem] md:w-auto lg:w-auto lp:py-6 lg:pt-[3rem]
+        "
       >
         <Link onClick={handleNavClick} to="/">
           <img
             src="/logo1.svg"
             alt="Logo1"
-            className="h-16 
-            sm:h-[5rem] sm:pl-[19rem]
-            md:ml-[40rem] md:mt-[1rem] md:h-[8rem]
-            lg:mt-[5rem] lg:mb-[5rem] lg:h-[9rem]
-            lp:ml-[15rem] lp:mt-[3rem] lp:mb-[7rem] lp:h-[8rem]"
+            className=" 
+            sm:h-[5rem] 
+            md:h-[8rem]
+            lg:px-[4rem]
+            lp:px-[3rem]
+            "
           />
         </Link>
-      </div>
-
       {/* Desktop Navbar */}
       <nav
-        className="hidden font-Micro text-blue-300 justify-center
-        lg:flex lg:text-[4.5rem] lg:mt-[-15rem] lg:pb-[2rem]
-        lp:ml-[10rem] lp:flex lp:text-[4.5rem] lp:w-[68rem] lp:mt-[-15rem] lp:pb-[2rem]"
+        className="hidden text-blue-300  justify-center font-Dos sticky top-0 z-[150] bg-white
+        lg:flex lg:text-[4.5rem]lg:pb-[2rem]
+        lp:flex lp:text-[2.8rem] "
       >
-        <Link to="/" className="px-10 hover:text-blue-300 hover:underline">
+        <Link to="/" className="px-5 hover:text-blue-300 hover:underline">
           Home
         </Link>
-        <Link to="/projects" className="px-10 hover:text-blue-300 hover:underline">
+        <Link to="/projects" className="px-5 hover:text-blue-300 hover:underline">
           Projects
         </Link>
-        <Link to="/about" className="px-10 hover:text-blue-300 hover:underline">
+        <Link to="/about" className="px-5 hover:text-blue-300 hover:underline">
           About
         </Link>
-        <Link to="/contact" className="px-10 hover:text-blue-300 hover:underline">
+        <Link to="/contact" className="px-5 hover:text-blue-300 hover:underline">
           Contact
         </Link>
-        <Link to="/cases" className="px-10 hover:text-blue-300 hover:underline">
+        <Link to="/cases" className="px-5 hover:text-blue-300 hover:underline">
           Cases
         </Link>
       </nav>
+      </div>
+
 
       {/* Memo nav only on sm + md */}
       <div className="lg:hidden lp:hidden">
