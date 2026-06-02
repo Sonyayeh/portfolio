@@ -1,46 +1,31 @@
 import React, { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import concept2 from "../assets/TYSN/concept2.jpg";
 import detailHiFi from "../assets/TYSN/detailpagehifi.jpg";
 import detailWire from "../assets/TYSN/detailpagewireframe.jpg";
 import menuHiFi from "../assets/TYSN/menupagehifi.jpg";
 import menuWire from "../assets/TYSN/menupagewireframe.jpg";
-import finalPoster from "../assets/TYSN/finalposter.jpg";
 import homepageHiFi from "../assets/TYSN/homepagehifi.jpg";
 import homepageWire from "../assets/TYSN/homepagewireframe.jpg";
 import hostHiFi from "../assets/TYSN/hostpagehifi.jpg";
 import hostWire from "../assets/TYSN/hostpagewireframe.jpg";
-import logo from "../assets/TYSN/logo.jpg";
-import poster1 from "../assets/TYSN/poster1.jpg";
-import ticket from "../assets/TYSN/ticket.jpg";
-import ticketConcept from "../assets/TYSN/ticketconcept.jpg";
 
 const tysnImages = [
-  { src: finalPoster, title: "Final Posters" },
-  { src: concept2, title: "Concept Exploration" },
-  { src: poster1, title: "Poster Concept #1" },
 
-  { src: homepageHiFi, title: "Homepage Hi-Fi" },
   { src: homepageWire, title: "Homepage Wireframe" },
+  { src: homepageHiFi, title: "Homepage Hi-Fi" },
 
-  { src: detailHiFi, title: "Event Detail Hi-Fi" },
   { src: detailWire, title: "Event Detail Wireframe" },
+  { src: detailHiFi, title: "Event Detail Hi-Fi" },
 
-  { src: menuHiFi, title: "Menu Page Hi-Fi" },
   { src: menuWire, title: "Menu Page Wireframe" },
+  { src: menuHiFi, title: "Menu Page Hi-Fi" },
 
-  { src: hostHiFi, title: "Host Page Hi-Fi" },
   { src: hostWire, title: "Host Page Wireframe" },
-
-  { src: ticketConcept, title: "Ticket Concept" },
-  { src: ticket, title: "Ticket Mockups" },
-
-  { src: logo, title: "Brand Logo System" },
+  { src: hostHiFi, title: "Host Page Hi-Fi" },
 ];
 
 const campaignMaterials = [
   "Event posters",
-  "Digital ticket / QR concept",
   "Social media ad",
   "Website wireframes",
   "High-fidelity website mockups",
@@ -140,7 +125,7 @@ const TysnCase = () => {
 
         <div className="relative rounded-[1rem] border-2  border-[#3370A8] bg-[#3370A8] p-6 text-white shadow-[6px_6px_0_#242B75]">
           <PixelStar className="top-5 right-6 text-[#F79BB9]" />
-          <PixelStar className="bottom-[6rem] left-[4rem] text-white" />
+          <PixelStar className="bottom-[9rem] left-[4rem] text-white" />
 
           <SectionLabel>02 / GOAL</SectionLabel>
 
@@ -155,7 +140,7 @@ const TysnCase = () => {
       </section>
 
       {/* AUDIENCE */}
-      <section className="mt-8 rounded-[1rem] border-2 border-[#3370A8] bg-[#3370A8] p-6 shadow-[4px_4px_0_#d9d8ff]">
+      <section className="mt-8 rounded-[1rem] border-2 border-[#3370A8] bg-[#3370A8] p-6 shadow-[4px_4px_0_#242B75]">
         <SectionLabel>03 / TARGET AUDIENCE</SectionLabel>
 
         <h2 className="font-vcr text-[2rem] text-[#F79BB9]">
@@ -175,18 +160,18 @@ const TysnCase = () => {
       </section>
 
       {/* CAMPAIGN MATERIALS */}
-      <section className="relative mt-8 rounded-[1rem] border-2 border-[#3370A8] bg-[#3370A8] p-6 shadow-[4px_4px_0_#d9d8ff]">
+      <section className="relative mt-8 rounded-[1rem] border-2 border-[#3370A8] bg-[#3370A8] p-6 shadow-[4px_4px_0_#242B75]">
         <PixelStarSpin className="top-6 right-10 text-[#F79BB9]" />
-        <PixelStarSpin className="top-[10rem] right-[10rem] text-white" />
+        <PixelStarSpin className="top-[8rem] right-[10rem] text-white" />
 
         <SectionLabel>04 / CAMPAIGN OUTPUTS</SectionLabel>
 
-        <p className="font-vcr text-[2.3rem] text-[#F79BB9]">
+        <p className="font-vcr text-[2.3rem] sm:text-[2rem] pb-3 text-[#F79BB9]">
           Design Process Visuals
         </p>
         <section>
 
-  <p className="max-w-[40rem] font-mono text-[0.85rem] text-[#3370A8]">
+  <p className="max-w-[40rem] mb-3 font-mono text-[0.85rem] text-[#ffffff]">
     A collection of final visuals, wireframes, and design explorations
     for the Celestial Tea Ceremony campaign.
   </p>
@@ -211,7 +196,7 @@ const TysnCase = () => {
     {tysnImages.map((img) => (
       <div
         key={img.title}
-        className="group rounded-md border border-[#d9d8ff] bg-white p-3 shadow-[3px_3px_0_#d9d8ff] transition lg:hover:-translate-y-1"
+        className="group rounded-md border border-[#d9d8ff] bg-white p-3 shadow-[3px_3px_0_#242B75] transition lg:hover:-translate-y-1"
       >
         <div className="overflow-hidden rounded-md">
           <img
@@ -235,10 +220,10 @@ const TysnCase = () => {
 
       {/* REFLECTION + PDF */}
       <section className="mt-8 grid gap-6 lp:grid-cols-2 lg:grid-cols-2">
-        <div className="rounded-[1rem] border-2 border-[#3370A8] bg-[#3370A8] p-6 shadow-[4px_4px_0_#d9d8ff]">
+        <div className="rounded-[1rem] border-2 border-[#3370A8] bg-[#3370A8] p-6 shadow-[4px_4px_0_#242B75]">
           <SectionLabel>05 / CONCLUSION</SectionLabel>
 
-          <h2 className="font-vcr text-[2rem] text-[#F79BB9]">
+          <h2 className="font-vcr text-[2rem] sm:text-[2rem] text-[#F79BB9]">
             What I Learned
           </h2>
 
@@ -247,7 +232,7 @@ const TysnCase = () => {
             and website design need to work together as one complete experience.
           </p>
 
-          <h2 className="mt-4 font-vcr text-[2rem] text-[#F79BB9]">
+          <h2 className="mt-4 font-vcr text-[2rem] sm:text-[1.8rem] text-[#F79BB9]">
             What I'd Improve
           </h2>
 
@@ -257,13 +242,13 @@ const TysnCase = () => {
           </p>
         </div>
 
-        <div className="relative rounded-[1rem] border-2 border-[#3370A8] bg-[#3370A8] p-6 shadow-[4px_4px_0_#d9d8ff]" id="pdf-section">
+        <div className="relative rounded-[1rem] border-2 border-[#3370A8] bg-[#3370A8] p-6 shadow-[4px_4px_0_#242B75]" id="pdf-section">
           <PixelStar className="bottom-7 left-6 text-[#F79BB9]" />
           <PixelStarSpin className="top-6 right-8 text-white" />
 
           <SectionLabel>PDF FILE</SectionLabel>
 
-          <h2 className="font-vcr text-[2rem] text-[#F79BB9]">
+          <h2 className="font-vcr text-[2rem] sm:text-[1.8rem] text-[#F79BB9]">
             Full Brandbook PDF
           </h2>
 
@@ -292,7 +277,7 @@ const TysnCase = () => {
           </div>
         </div>
 
-        <div className="relative rounded-[1rem] border-2 border-[#3370A8] bg-[#3370A8] p-6 shadow-[4px_4px_0_#d9d8ff]">
+        <div className="relative rounded-[1rem] border-2 border-[#3370A8] bg-[#3370A8] p-6 shadow-[4px_4px_0_#242B75]">
           <PixelStar className="bottom-7 left-6 text-[#F79BB9]" />
           <PixelStarSpin className="top-6 right-8 text-white" />
 
