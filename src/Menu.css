@@ -1,70 +1,70 @@
 /* Position and sizing of burger button */
-.bm-burger-button {
+/* .bm-burger-button {
     position: fixed;
     width: 36px;
     height: 30px;
     left: 26px;
     top: 56px;
-  }
+  } */
   
   /* Color/shape of burger icon bars */
-  .bm-burger-bars {
+  /* .bm-burger-bars {
     background: var(--blue);
-  }
+  } */
   
   /* Color/shape of burger icon bars on hover*/
-  .bm-burger-bars-hover {
+  /* .bm-burger-bars-hover {
     background: var(--purple);
     cursor: url("/webpointer.svg"), pointer !important;
   }
-  
+   */
   /* Position and sizing of clickable cross button */
-  .bm-cross-button {
+  /* .bm-cross-button {
     height: 24px;
     width: 24px;
-  }
+  } */
   
   /* Color/shape of close button cross */
-  .bm-cross {
+  /* .bm-cross {
     background: var(--blue);
-  }
+    right: 2px;
+  } */
   
   /*
   Sidebar wrapper styles
   Note: Beware of modifying this element as it can break the animations - you should not need to touch it in most cases
   */
-  .bm-menu-wrap {
+  /* .bm-menu-wrap {
     position: fixed;
     height: 100%;
-    top: 1px
-  }
+    top: 1px;
+    left: -10px;
+  } */
   
   /* General sidebar styles */
-  .bm-menu {
+  /* .bm-menu {
     padding: 2em 1em;
     font-size: 2em;
-  }
+  } */
   
   /* Morph shape necessary with bubble or elastic */
-  .bm-morph-shape {
+  /* .bm-morph-shape {
     fill: #a884c9;
-
-  }
+    
+  } */
   
   /* Wrapper for item list */
-  .bm-item-list {
+  /* .bm-item-list {
     color: #b8b7ad;
     padding: 0.8em;
   }
-  
+   */
   /* Individual item */
-  .bm-item {
+  /* .bm-item {
     display: inline-block;
   }
-  
+   */
   /* Styling of overlay */
-  .bm-overlay {
+  /* .bm-overlay {
     background: none !important;
-
-
-  }
+  } */

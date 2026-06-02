@@ -1,3 +1,5 @@
+import { VelocityTracker } from 'gsap/src/InertiaPlugin'
+
 /** @type {import('tailwindcss').Config} */
 export default {
   content: ["./src/**/*.{js,jsx,ts,tsx}", "./public/index.html"],
@@ -14,6 +16,7 @@ export default {
 
       fontFamily: {
         Dos: ['PerfectDOSVGA437', 'monospace'],
+        vcr: ["VCR", "monospace"],
       },
 
       fontSize: {

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import { scaleRotate as Menu } from "react-burger-menu"; // Import the hamburger menu from react-burger-menu
 import { Helmet } from "react-helmet"; // Import Helmet for meta tags
@@ -12,9 +12,17 @@ import Projects from "./pages/Projects";
 import Cases from "./pages/Cases";
 import TravelPictures from "./pages/TravelPhotoFolder";
 import Vollyball from "./pages/BeachBall";
+import Magazine from "./pages/Magazine";
 import Boutique from "./pages/BoardWalk";
+import Bing from "./pages/Bing";
 import Bcit from "./pages/MyBcit";
-import Northstar from "./pages/NorthOmu";
+import PuppyYoga from "./pages/PuppyYoga";
+import BackToTop from "./Components/BackToTop";
+import TysnCase from "./pages/TysnCase";
+import BcitCase from "./pages/BcitCase";
+import FurreverCase from "./pages/FurreverCase";
+import MarketingCase from "./pages/MarketingCase";
+
 
 // Import styles
 import "./reset.css";
@@ -24,10 +32,22 @@ import "./Projects.css";
 import './index.css';
 
 function App() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  // Function to handle menu state
+  const handleMenuStateChange = (state) => {
+    setMenuOpen(state.isOpen);
+  };
+
+  // Function to close the menu when a link is clicked
+  const closeMenu = () => {
+    setMenuOpen(false);
+  };
+
   return (
     <BrowserRouter>
       <div id="outer-container" className="flex flex-col min-h-screen">
-        {/* Helmet for global meta tags, basic ones first, but will add more! */}
+        {/* Helmet for global meta tags */}
         <Helmet>
           <title>Sonya Yeh</title>
           <meta name="description" content="Hello! Welcome to my portfolio! Here are some of my most proud projects throughout BCIT's New Media Design and Web Development diploma program. They demonstrate my skills in front end developing, UI/UX designing and graphic design. I have an associate certificate in Graphic Design certificate program in BCIT as well! Thank you for your time and hope you have a wonderful day!" />
@@ -41,12 +61,17 @@ function App() {
 
         {/* Mobile Burger Menu (Visible on small and medium screens) */}
         <div className="lg:hidden">
-          <Menu pageWrapId="page-wrapper" outerContainerId="outer-container">
-            <Link to="/" className="menu-item">Home</Link>
-            <Link to="/projects" className="menu-item">Projects</Link>
-            <Link to="/about" className="menu-item">About</Link>
-            <Link to="/contact" className="menu-item">Contact</Link>
-            <Link to="/cases" className="menu-item">Cases</Link>
+          <Menu
+            pageWrapId="page-wrapper"
+            outerContainerId="outer-container"
+            isOpen={menuOpen}
+            onStateChange={handleMenuStateChange}
+          >
+            <Link to="/" className="menu-item" onClick={closeMenu}>Home</Link>
+            <Link to="/projects" className="menu-item" onClick={closeMenu}>Projects</Link>
+            <Link to="/about" className="menu-item" onClick={closeMenu}>About</Link>
+            <Link to="/contact" className="menu-item" onClick={closeMenu}>Contact</Link>
+            <Link to="/cases" className="menu-item" onClick={closeMenu}>Cases</Link>
           </Menu>
         </div>
 
@@ -62,11 +87,18 @@ function App() {
               <Route path="/cases" element={<Cases />} />
               <Route path="/travelphotofolder" element={<TravelPictures />} />
               <Route path="/beachball" element={<Vollyball />} />
+              <Route path="/magazine" element={<Magazine />} />
               <Route path="/boardwalk" element={<Boutique />} />
+              <Route path="/bing" element={<Bing />} />
               <Route path="/bcit" element={<Bcit />} />
-              <Route path="/northstar" element={<Northstar />} />
+              <Route path="/puppy" element={<PuppyYoga />} />
+              <Route path="/cases/tysn" element={<TysnCase />} />
+              <Route path="/cases/bcit" element={<BcitCase />} />
+              <Route path="/cases/furrever" element={<FurreverCase />} />
+              <Route path="/cases/marketing" element={<MarketingCase />} />
             </Route>
           </Routes>
+      <BackToTop />
         </main>
       </div>
     </BrowserRouter>

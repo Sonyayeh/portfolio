@@ -49,34 +49,39 @@ const Skills = () => {
 
   return (
     <div
-      className="scroller relative overflow-hidden"
+      className="scroller relative overflow-hidden w-full"
       data-speed="fast"
       style={{
         WebkitMask:
-          "linear-gradient(90deg, transparent, white 15%, white 84%, transparent)",
-        mask: "linear-gradient(90deg, transparent, white 15%, white 75%, transparent)",
+          "linear-gradient(90deg, transparent, white 15%, white 94%, transparent)",
+        mask: "linear-gradient(90deg, transparent, white 15%, white 94%, transparent)",
       }}
     >
       <h5
-        className="
-        text-sky-400 italic underline
-        sm:text-[1.4rem] sm:ml-[2rem] sm:pt-[1rem]
-        md:pt-[3rem] md:ml-[5rem] md:text-[3rem]
-        lg:ml-[2rem] lg:text-[4.5rem] lg:w-[62rem]
-        lp:ml-[5rem] lp:text-[5rem] lp:w-[70rem]
+        className=" flex justify-center text-center
+        text-sky-400 italic underline font-vcr
+        sm:text-[1.5rem] sm:pb-[1rem] sm:w-[24rem]
+        md:pb-[3rem] md:text-[3rem]
+        lg:text-[4.5rem] lg:w-[78rem] lg:pb-[4rem]
+        lp:text-[4rem] lp:w-[75rem]
         "
         >Some of my skills being:</h5>
 
       <ul
-        className="scroller__inner flex gap-[3rem] py-4 lp:w-[60%]
-        "
-        style={{
-          width: "max-content",
-          maxWidth: "auto",
-          animation:
-            "scroll var(--_animation-duration, 100s) var(--_animation-direction, forwards) linear infinite",
-        }}
-      >        
+  className="
+    scroller__inner 
+    flex 
+    gap-[3rem] 
+    sm:gap-[2rem]
+    py-4
+    w-max
+    min-w-full
+  "
+  style={{
+    animation:
+      "scroll var(--_animation-duration, 100s) var(--_animation-direction, forwards) linear infinite",
+  }}
+>  
         <li className="flex flex-col items-center">
           <IonIcon 
             className="text-blue-300  hover:text-purple-300 hover:cursor-pointer 
@@ -86,7 +91,7 @@ const Skills = () => {
             lp:text-[6rem] lp:px-4" 
             name="logo-figma" 
           />
-          <span className="mt-2 text-center">Figma</span> {/* Added spacing and centering */}
+          <span className="mt-2 text-center font-vcr text-[0.5rem] lp:text-[1.5rem] lg:text-[2rem]">Figma</span> {/* Added spacing and centering */}
         </li>
 
         <li className="flex flex-col items-center">
@@ -98,7 +103,7 @@ const Skills = () => {
             lp:text-[6rem] lp:px-4" 
             name="color-palette-outline" 
           />
-          <span className="mt-2 text-center">Graphic Design</span> {/* Added spacing and centering */}
+          <span className="mt-2 text-center font-vcr text-[0.5rem] lp:text-[1.5rem] lg:text-[2rem]">Graphic Design</span> {/* Added spacing and centering */}
         </li>
 
         <li className="flex flex-col items-center">
@@ -107,7 +112,7 @@ const Skills = () => {
             <rect width="24" height="24" fill="#330000" rx="4" /> {/* Darker background for Illustrator */}
             <text x="12" y="16" fill="#FF9A01" fontSize="12" fontFamily="Arial, sans-serif" fontWeight="bold" textAnchor="middle">Ai</text> {/* Illustrator color for text */}
           </svg>
-          <span className="mt-2 text-center">Adobe Illustrator</span>
+          <span className="mt-2 text-center font-vcr text-[0.5rem] lp:text-[1.5rem] lg:text-[2rem]">Adobe Illustrator</span>
         </li>
 
         <li className="flex flex-col items-center">
@@ -116,7 +121,7 @@ const Skills = () => {
             <rect width="24" height="24" fill="#49021F" rx="4" /> {/* Darker background for InDesign */}
             <text x="12" y="16" fill="#FF3366" fontSize="12" fontFamily="Arial, sans-serif" fontWeight="bold" textAnchor="middle">Id</text> {/* InDesign color for text */}
           </svg>
-          <span className="mt-2 text-center">Adobe InDesign</span>
+          <span className="mt-2 text-center font-vcr text-[0.5rem] lp:text-[1.5rem] lg:text-[2rem]">Adobe InDesign</span>
         </li>
 
         <li className="flex flex-col items-center">
@@ -125,7 +130,7 @@ const Skills = () => {
             <rect width="24" height="24" fill="#001E36" rx="4" /> {/* Darker background for Photoshop */}
             <text x="12" y="16" fill="#31A8FF" fontSize="12" fontFamily="Arial, sans-serif" fontWeight="bold" textAnchor="middle">Ps</text> {/* Photoshop color for text */}
           </svg>
-          <span className="mt-2 text-center">Adobe Photoshop</span>
+          <span className="mt-2 text-center font-vcr text-[0.5rem] lp:text-[1.5rem] lg:text-[2rem]">Adobe Photoshop</span>
         </li>
 
         <li className="flex flex-col items-center">
@@ -134,7 +139,7 @@ const Skills = () => {
             <rect width="24" height="24" fill="#013301" rx="4" /> {/* Darker background for Dimension */}
             <text x="12" y="16" fill="#33FF66" fontSize="12" fontFamily="Arial, sans-serif" fontWeight="bold" textAnchor="middle">Dn</text> {/* Dimension color for text */}
           </svg>
-          <span className="mt-2 text-center">Adobe Dimension</span>
+          <span className="mt-2 text-center font-vcr text-[0.5rem] lp:text-[1.5rem] lg:text-[2rem]">Adobe Dimension</span>
         </li>
 
         <li className="flex flex-col items-center">
@@ -143,7 +148,7 @@ const Skills = () => {
             <rect width="24" height="24" fill="#1E3101" rx="4" /> {/* Darker background for Aero */}
             <text x="12" y="16" fill="#99E83F" fontSize="12" fontFamily="Arial, sans-serif" fontWeight="bold" textAnchor="middle">Ae</text> {/* Aero color for text */}
           </svg>
-          <span className="mt-2 text-center">Adobe Aero</span>
+          <span className="mt-2 text-center font-vcr text-[0.5rem] lp:text-[1.5rem] lg:text-[2rem]">Adobe Aero</span>
         </li>
 
         <li className="flex flex-col items-center">
@@ -152,7 +157,7 @@ const Skills = () => {
             <rect width="24" height="24" fill="#00005B" rx="4" /> {/* Darker background for Premiere Pro */}
             <text x="12" y="16" fill="#9999FF" fontSize="12" fontFamily="Arial, sans-serif" fontWeight="bold" textAnchor="middle">Pr</text> {/* Premiere Pro color for text */}
           </svg>
-          <span className="mt-2 text-center">Adobe Premiere Pro</span>
+          <span className="mt-2 text-center font-vcr text-[0.5rem] lp:text-[1.5rem] lg:text-[2rem]">Adobe Premiere Pro</span>
         </li>
 
         <li className="flex flex-col items-center">
@@ -161,7 +166,7 @@ const Skills = () => {
             sm:px-2 md:text-[6rem] md:px-3 lg:text-[10rem] lg:px-2 lp:text-[6rem] lp:px-4" 
             name="film-outline" 
           />
-          <span className="mt-2 text-center">Video Editing</span> {/* Added spacing and centering */}
+          <span className="mt-2 text-center font-vcr text-[0.5rem] lp:text-[1.5rem] lg:text-[2rem]">Video Editing</span> {/* Added spacing and centering */}
         </li>
         
         <li className="flex flex-col items-center">
@@ -170,7 +175,7 @@ const Skills = () => {
             sm:px-2 md:text-[6rem] md:px-3 lg:text-[10rem] lg:px-2 lp:text-[6rem] lp:px-4" 
             name="videocam-outline" 
           />
-          <span className="mt-2 text-center">Videotography</span> {/* Added spacing and centering */}
+          <span className="mt-2 text-center  font-vcr text-[0.5rem] lp:text-[1.5rem] lg:text-[2rem]">Videotography</span> {/* Added spacing and centering */}
         </li>
         <li className="flex flex-col items-center">
           <IonIcon 
@@ -178,7 +183,7 @@ const Skills = () => {
             sm:px-2 md:text-[6rem] md:px-3 lg:text-[10rem] lg:px-2 lp:text-[6rem] lp:px-4" 
             name="image-outline" 
           />
-          <span className="mt-2 text-center">Photography</span> {/* Added spacing and centering */}
+          <span className="mt-2 text-center font-vcr text-[0.5rem] lp:text-[1.5rem] lg:text-[2rem]">Photography</span> {/* Added spacing and centering */}
         </li>
         <li className="flex flex-col items-center">
           <IonIcon 
@@ -186,7 +191,7 @@ const Skills = () => {
             sm:px-2 md:text-[6rem] md:px-3 lg:text-[10rem] lg:px-2 lp:text-[6rem] lp:px-4" 
             name="logo-html5" 
           />
-          <span className="mt-2 text-center">HTML</span> {/* Added spacing and centering */}
+          <span className="mt-2 text-center font-vcr text-[0.5rem] lp:text-[1.5rem] lg:text-[2rem]">HTML</span> {/* Added spacing and centering */}
         </li>
         <li className="flex flex-col items-center">
           <IonIcon 
@@ -194,7 +199,7 @@ const Skills = () => {
             sm:px-2 md:text-[6rem] md:px-3 lg:text-[10rem] lg:px-2 lp:text-[6rem] lp:px-4" 
             name="logo-css3" 
           />
-          <span className="mt-2 text-center">CSS</span> {/* Added spacing and centering */}
+          <span className="mt-2 text-center font-vcr text-[0.5rem] lp:text-[1.5rem] lg:text-[2.5rem]">CSS</span> {/* Added spacing and centering */}
         </li>
         <li className="flex flex-col items-center">
           <IonIcon 
@@ -202,7 +207,7 @@ const Skills = () => {
             sm:px-2 md:text-[6rem] md:px-3 lg:text-[10rem] lg:px-2 lp:text-[6rem] lp:px-4" 
             name="logo-javascript" 
           />
-          <span className="mt-2 text-center">JavaScript</span> {/* Added spacing and centering */}
+          <span className="mt-2 text-center font-vcr text-[0.5rem] lp:text-[1.5rem] lg:text-[2rem]">JavaScript</span> {/* Added spacing and centering */}
         </li>
         <li className="flex flex-col items-center">
           <IonIcon 
@@ -210,7 +215,7 @@ const Skills = () => {
             sm:px-2 md:text-[6rem] md:px-3 lg:text-[10rem] lg:px-2 lp:text-[6rem] lp:px-4" 
             name="logo-react" 
           />
-          <span className="mt-2 text-center">React</span> {/* Added spacing and centering */}
+          <span className="mt-2 text-center font-vcr text-[0.5rem] lp:text-[1.5rem] lg:text-[2rem]">React</span> {/* Added spacing and centering */}
         </li>
 
       </ul>
