@@ -6,7 +6,7 @@ const YogaMockup = () => {
     return (
         <div className={`${styles.Puppy}`}>
             <div className="">
-                <img src={Puppy} alt="the mockup photo for furrever pals" /> {/* Use the imported image here */}
+                <img loading="lazy" src={Puppy} alt="the mockup photo for furrever pals" /> {/* Use the imported image here */}
             </div>
         </div>
     );

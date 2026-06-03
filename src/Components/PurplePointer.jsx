@@ -4,7 +4,7 @@ import Cursor from "../assets/Cursor.png";
 const PurpleCursor = () => {
     return (
         <div className="flex justify-center items-center w-full h-auto">
-            <img 
+            <img loading="lazy" 
                 src={Cursor} 
                 alt="photo pointer cursor" 
                 className="animate-float"

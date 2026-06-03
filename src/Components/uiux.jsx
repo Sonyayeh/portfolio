@@ -6,7 +6,7 @@ const UiuxBox = () => {
     return (
         <div className={`${styles.uiuxBox}`}>
             <div className="">
-                <img src={Uiux} alt="box for UI UX project" /> {/* Use the imported image here */}
+                <img loading="lazy" src={Uiux} alt="box for UI UX project" /> {/* Use the imported image here */}
             </div>
         </div>
     );

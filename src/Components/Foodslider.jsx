@@ -158,7 +158,7 @@ const FoodSlider = () => {
               <h5 className="font-Dos text-[1.2rem] text-[#5a6fb8] sm:text-[1.35rem] md:text-[1.6rem]">
                 I enjoy cooking
               </h5>
-              <img src={Heart} alt="Heart" className="h-5 w-5 sm:h-6 sm:w-6 md:h-8 md:w-8" />
+              <img loading="lazy" src={Heart} alt="Heart" className="h-5 w-5 sm:h-6 sm:w-6 md:h-8 md:w-8" />
             </div>
 
             <p className="mb-5 text-center font-mono text-[0.8rem] leading-relaxed text-[#8b99d6] sm:text-[0.88rem] md:text-[0.95rem]">

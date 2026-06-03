@@ -6,7 +6,7 @@ const DevBox = () => {
     return (
         <div className={`${styles.devBox}`}>
             <div className="">
-                <img src={DevelopBox} alt="box for Development project" /> {/* Use the imported image here */}
+                <img loading="lazy" src={DevelopBox} alt="box for Development project" /> {/* Use the imported image here */}
             </div>
         </div>
     );

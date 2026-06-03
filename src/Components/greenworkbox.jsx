@@ -6,7 +6,7 @@ const PurpleWorkBox = () => {
     return (
         <div>
             <div className="">
-                <img src={greenbox} alt="work-bubble" /> {/* Use the imported image here */}
+                <img loading="lazy" src={greenbox} alt="work-bubble" /> {/* Use the imported image here */}
             </div>
         </div>
     );

@@ -6,7 +6,7 @@ const AboutBox = () => {
     return (
         <div>
             <div className="">
-                <img src={aboutbox} alt="About me box" /> {/* Use the imported image here */}
+                <img loading="lazy" src={aboutbox} alt="About me box" /> {/* Use the imported image here */}
             </div>
         </div>
     );
