@@ -4,7 +4,7 @@ import Magazine from "../mockups/magthumb.png";
 const MagMockup = () => {
     return (
         <div className="flex justify-center items-center w-full h-auto">
-            <img 
+            <img loading="lazy" 
                 src={Magazine} 
                 alt="the mockup photo for Magazine" 
                 className="

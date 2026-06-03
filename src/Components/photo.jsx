@@ -4,7 +4,7 @@ import Photo from "../assets/selfie.svg";
 const MyPhoto = () => {
     return (
         <div className="flex justify-center items-center w-full h-auto">
-            <img 
+            <img loading="lazy" 
                 src={Photo} 
                 alt="my photo" 
                 className="

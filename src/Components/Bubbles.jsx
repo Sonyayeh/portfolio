@@ -6,7 +6,7 @@ function Bubbles() {
     return(
      <div>
         <div>
-            <img src={bubble} alt="bubble" /> {/* Use the imported image here */}
+            <img loading="lazy" src={bubble} alt="bubble" /> {/* Use the imported image here */}
         </div>
      </div>
     );

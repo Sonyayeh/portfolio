@@ -228,7 +228,8 @@ const Header = () => {
         <Link onClick={handleNavClick} to="/">
           <img
             src="/logo1.svg"
-            alt="Logo1"
+            alt="Sonya Yeh portfolio logo"
+            loading="eager"
             className=" 
             sm:h-[5rem] 
             md:h-[8rem]
@@ -239,23 +240,24 @@ const Header = () => {
         </Link>
       {/* Desktop Navbar */}
       <nav
-        className="hidden text-blue-300  justify-center font-Dos sticky top-0 z-[150] bg-white
+        className="hidden text-blue-600 justify-center font-Dos sticky top-0 z-[150] bg-white
         lg:flex lg:text-[4.5rem]lg:pb-[2rem]
         lp:flex lp:text-[2.8rem] "
+        aria-label="Main navigation"
       >
-        <Link to="/" className="px-5 hover:text-blue-300 hover:underline">
+        <Link to="/" className="px-5 hover:text-blue-600 hover:underline">
           Home
         </Link>
-        <Link to="/projects" className="px-5 hover:text-blue-300 hover:underline">
+        <Link to="/projects" className="px-5 hover:text-blue-600 hover:underline">
           Projects
         </Link>
-        <Link to="/about" className="px-5 hover:text-blue-300 hover:underline">
+        <Link to="/about" className="px-5 hover:text-blue-600 hover:underline">
           About
         </Link>
-        <Link to="/contact" className="px-5 hover:text-blue-300 hover:underline">
+        <Link to="/contact" className="px-5 hover:text-blue-600 hover:underline">
           Contact
         </Link>
-        <Link to="/cases" className="px-5 hover:text-blue-300 hover:underline">
+        <Link to="/cases" className="px-5 hover:text-blue-600 hover:underline">
           Cases
         </Link>
       </nav>
@@ -279,6 +281,7 @@ const Header = () => {
             }`}
             strokeLinecap="round"
             strokeLinejoin="round"
+            aria-hidden="true"
           >
             <path d="M9 7.5v8.2a3 3 0 1 0 6 0V6.8a4.3 4.3 0 1 0-8.6 0v9.4a5.6 5.6 0 1 0 11.2 0V8.3" />
           </svg>
@@ -308,7 +311,7 @@ const Header = () => {
               className="flex cursor-grab touch-none items-center justify-between rounded-t-[0.2rem] border-b border-[#96deeb] bg-[#d0faff] px-3 py-2 active:cursor-grabbing"
             >
               <div className="flex items-center gap-2">
-                <span className="text-[0.95rem]">📎</span>
+                <span className="text-[0.95rem]" aria-hidden="true">📎</span>
                 <p className="font-Dos text-[0.78rem] text-[#001e8b]">
                   Menu
                 </p>
@@ -316,65 +319,67 @@ const Header = () => {
             </div>
 
             {/* sticky note body */}
-            <div className="relative bg-[#d0faff] px-4 mb-4">
-              <div className="flex justify-center items-center text-center">
-                <p className="font-mono text-[0.68rem] text-[#4d7a82] tracking-wide text-center pt-4">
-                  ✦•……๑⋆｡‧˚ʚ ✦ ɞ˚‧｡⋆๑……·✦
+            <nav aria-label="Mobile navigation">
+              <div className="relative bg-[#d0faff] px-4 mb-4">
+                <div className="flex justify-center items-center text-center">
+                  <p className="font-mono text-[0.68rem] text-[#4d7a82] tracking-wide text-center pt-4" aria-hidden="true">
+                    ✦•……๑⋆｡‧˚ʚ ✦ ɞ˚‧｡⋆๑……·✦
+                  </p>
+                </div>
+
+                <p className="mb-3 font-Dos text-[0.85rem] text-[#001e8b] pt-2">
+                  Things to open:
                 </p>
+
+                <div className="flex flex-col gap-2">
+                  <Link
+                    to="/"
+                    onClick={handleNavClick}
+                    className="font-vcr text-[0.95rem] text-[#001e8b] hover:text-[#8b44fc]"
+                  >
+                    {getCheck("/")} Home
+                  </Link>
+
+                  <Link
+                    to="/projects"
+                    onClick={handleNavClick}
+                    className="font-vcr text-[0.95rem] text-[#001e8b] hover:text-[#8b44fc]"
+                  >
+                    {getCheck("/projects")} Projects
+                  </Link>
+
+                  <Link
+                    to="/about"
+                    onClick={handleNavClick}
+                    className="font-vcr text-[0.95rem] text-[#001e8b] hover:text-[#8b44fc]"
+                  >
+                    {getCheck("/about")} About
+                  </Link>
+
+                  <Link
+                    to="/contact"
+                    onClick={handleNavClick}
+                    className="font-vcr text-[0.95rem] text-[#001e8b] hover:text-[#8b44fc]"
+                  >
+                    {getCheck("/contact")} Contact
+                  </Link>
+
+                  <Link
+                    to="/cases"
+                    onClick={handleNavClick}
+                    className="font-vcr text-[0.95rem] text-[#001e8b] hover:text-[#8b44fc]"
+                  >
+                    {getCheck("/cases")} Cases
+                  </Link>
+                </div>
+
+                <div className="flex justify-center items-center text-center">
+                  <p className="font-mono text-[0.68rem] text-[#4d7a82] tracking-wide text-center pt-4" aria-hidden="true">
+                    ✦•……๑⋆｡‧˚ʚ ✦ ɞ˚‧｡⋆๑……·✦
+                  </p>
+                </div>
               </div>
-
-              <p className="mb-3 font-Dos text-[0.85rem] text-[#001e8b] pt-2">
-                Things to open:
-              </p>
-
-              <div className="flex flex-col gap-2">
-                <Link
-                  to="/"
-                  onClick={handleNavClick}
-                  className="font-vcr text-[0.95rem] text-[#001e8b] hover:text-[#8b44fc]"
-                >
-                  {getCheck("/")} Home
-                </Link>
-
-                <Link
-                  to="/projects"
-                  onClick={handleNavClick}
-                  className="font-vcr text-[0.95rem] text-[#001e8b] hover:text-[#8b44fc]"
-                >
-                  {getCheck("/projects")} Projects
-                </Link>
-
-                <Link
-                  to="/about"
-                  onClick={handleNavClick}
-                  className="font-vcr text-[0.95rem] text-[#001e8b] hover:text-[#8b44fc]"
-                >
-                  {getCheck("/about")} About
-                </Link>
-
-                <Link
-                  to="/contact"
-                  onClick={handleNavClick}
-                  className="font-vcr text-[0.95rem] text-[#001e8b] hover:text-[#8b44fc]"
-                >
-                  {getCheck("/contact")} Contact
-                </Link>
-
-                <Link
-                  to="/cases"
-                  onClick={handleNavClick}
-                  className="font-vcr text-[0.95rem] text-[#001e8b] hover:text-[#8b44fc]"
-                >
-                  {getCheck("/cases")} Cases
-                </Link>
-              </div>
-
-              <div className="flex justify-center items-center text-center">
-                <p className="font-mono text-[0.68rem] text-[#4d7a82] tracking-wide text-center pt-4">
-                  ✦•……๑⋆｡‧˚ʚ ✦ ɞ˚‧｡⋆๑……·✦
-                </p>
-              </div>
-            </div>
+            </nav>
           </div>
         )}
       </div>

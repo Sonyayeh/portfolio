@@ -23,13 +23,13 @@ function BannerSlider() {
     return( 
         <Slider {...settings} className="home-banner">
             <div>
-                <img src={skellies} alt="Skeletons" />
+                <img loading="lazy" src={skellies} alt="Skeletons" />
             </div>
             <div>
-                <img src={pumpkins} alt="Pumpkins" />
+                <img loading="lazy" src={pumpkins} alt="Pumpkins" />
             </div>
             <div>
-                <img src={ghosts} alt="Ghost" />
+                <img loading="lazy" src={ghosts} alt="Ghost" />
             </div>
         </Slider>
     );

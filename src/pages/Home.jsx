@@ -118,6 +118,7 @@ const Home = () => {
                 <img
                   src={TextBubble}
                   alt="Text bubble"
+                  loading="eager"
                   className="
                     absolute z-0
                     left-1/2 -translate-x-1/2
@@ -133,7 +134,8 @@ const Home = () => {
 
             <img
               src={TwoClouds}
-              alt="Cloud gif"
+              alt="Decorative clouds"
+              loading="eager"
               className="
                 absolute z-10 pointer-events-none
                 top-[7rem] left-[1rem]
@@ -242,7 +244,8 @@ const Home = () => {
               lp:pt-[0rem]
             "
           >
-            <h5
+            {/* FIXED: was h5, now h2 for correct heading hierarchy */}
+            <h2
               className="
                 relative z-20
                 text-center leading-none
@@ -254,11 +257,12 @@ const Home = () => {
               "
             >
               A Few Things I Love
-            </h5>
+            </h2>
 
             <img
               src={TwoClouds}
-              alt="Cloud gif"
+              alt="Decorative clouds"
+              loading="lazy"
               className="
                 absolute z-0 pointer-events-none scale-x-[-1]
                 right-[0rem] top-[1rem]
@@ -312,7 +316,8 @@ const Home = () => {
                   <YogaMockup />
                 </div>
 
-                <h5
+                {/* FIXED: was h5, now h3 for correct heading hierarchy */}
+                <h3
                   className="
                     absolute z-20
                     left-1/2 -translate-x-1/2
@@ -346,14 +351,15 @@ const Home = () => {
                       </span>
                     ))}
                   </span>
-                </h5>
+                </h3>
               </div>
             </div>
 
             <div className="relative h-0">
               <img
                 src={Bubble}
-                alt="Bubble gif"
+                alt="Decorative bubble"
+                loading="lazy"
                 className="
                   absolute pointer-events-none
                   right-[5%]
@@ -370,7 +376,8 @@ const Home = () => {
 
               <img
                 src={Bubble}
-                alt="Bubble gif"
+                alt="Decorative bubble"
+                loading="lazy"
                 className="
                   absolute pointer-events-none
                   left-[8%]
@@ -402,6 +409,7 @@ const Home = () => {
                 to="/beachball"
                 onClick={goToTop}
                 className="relative block w-full hover:cursor-pointer"
+                aria-label="View Beach Volleyball Tournament Poster project"
               >
                 <BlueWorkBox />
 
@@ -426,7 +434,8 @@ const Home = () => {
                     <VolleyballMockup />
                   </div>
 
-                  <h5
+                  {/* FIXED: was h5, now h3 for correct heading hierarchy */}
+                  <h3
                     className="
                       absolute z-20
                       left-1/2 -translate-x-1/2
@@ -462,7 +471,7 @@ const Home = () => {
                         </span>
                       ))}
                     </span>
-                  </h5>
+                  </h3>
                 </div>
               </Link>
             </div>
@@ -470,7 +479,8 @@ const Home = () => {
             <div className="relative h-0">
               <img
                 src={Bubble}
-                alt="Bubble gif"
+                alt="Decorative bubble"
+                loading="lazy"
                 className="
                   absolute pointer-events-none
                   left-[6%]
@@ -484,7 +494,8 @@ const Home = () => {
               />
               <img
                 src={Bubble}
-                alt="Bubble gif"
+                alt="Decorative bubble"
+                loading="lazy"
                 className="
                   absolute pointer-events-none
                   right-[10%]
@@ -514,6 +525,7 @@ const Home = () => {
                 to="/magazine"
                 onClick={goToTop}
                 className="relative block w-full hover:cursor-pointer"
+                aria-label="View National Geographic Magazine Cover project"
               >
                 <div className="relative scale-x-[-1]">
                   <BlueWorkBox />
@@ -539,7 +551,8 @@ const Home = () => {
                       <MagMockup />
                     </div>
 
-                    <h5
+                    {/* FIXED: was h5, now h3 for correct heading hierarchy */}
+                    <h3
                       className="
                         absolute z-20
                         left-1/2 -translate-x-1/2
@@ -572,7 +585,7 @@ const Home = () => {
                           </span>
                         ))}
                       </span>
-                    </h5>
+                    </h3>
                   </div>
                 </div>
               </Link>
@@ -586,7 +599,8 @@ const Home = () => {
       </div>
 
       <div>
-        <h5
+        {/* FIXED: was h5, now h2 for correct heading hierarchy */}
+        <h2
           className="
             relative z-20
             text-center leading-none
@@ -598,7 +612,7 @@ const Home = () => {
           "
         >
           User Profile:
-        </h5>
+        </h2>
         <AboutMeCard />
       </div>
 
