@@ -78,7 +78,7 @@ const BcitTimeline = () => {
       underline decoration-dashed
       sm:text-[1.7rem] 
       md:text-[3rem] md:w-full md:ml-[12rem] md:mb-[3rem] md:pt-[5rem]
-      lp:justify-center lp:ml-[17rem] lp:text-[4rem] lp:w-[30rem]
+      lp:justify-center lp:text-[4rem] lp:w-[40rem]
       lg:text-[5rem] lg:w-[38rem] lg:ml-[10rem] lg:pb-[2rem]
       ">
         Work Timeline
