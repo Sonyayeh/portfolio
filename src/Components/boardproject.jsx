@@ -87,32 +87,13 @@ const BoardProject = () => {
                         </h4>
 
                         {/* Software used section */}
-                        <div className="flex flex-col items-start justify-start w-full 
-                        sm:mt-[2rem]
-                        lp:w-[30rem]
-                        lg:w-[30rem] lg:mt-[-3rem]">
-                            <h4 className="text-purple-300 
-                            sm:text-[1rem] sm:mt-[-1rem]
-                            md:text-3xl md:pt-[2rem]
-                            lg:text-[2rem] lg:mt-[2rem] 
-                            lp:text-[2rem]">
-                                {project.chip1}
-                            </h4>
-                            <h4 className="text-purple-300 
-                            sm:text-[1rem] sm:mt-[-1rem]
-                            md:text-3xl md:pt-[2rem]
-                            lg:text-[2rem] lg:mt-[-1rem] 
-                            lp:text-[2rem]">
-                                {project.chip2}
-                            </h4>
-                            <h4 className="text-purple-300 
-                            sm:text-[1rem] sm:mt-[-1rem]
-                            md:text-3xl md:pt-[2rem]
-                            lg:text-[2rem] lg:mt-[-1rem] 
-                            lp:text-[2rem]">
-                                {project.chip3}
-                            </h4>
-                        </div>
+                        <div className="font-Dos flex flex-col items-start justify-start w-full gap-2 sm:mt-[2rem] lg:w-[30rem] lg:mt-[-3rem]">
+                        {[project.chip1, project.chip2, project.chip3,].map((chip, index) => (
+                            <span key={index} className="bg-orange-200 text-purple-900 px-4 py-2 rounded-full text-sm sm:text-[1rem] md:text-lg lp:text-[1.5rem] lg:text-[1rem]">
+                                {chip}
+                            </span>
+                        ))}
+                    </div>
                     </div>
 
                     {/* Image Section */}
