@@ -157,7 +157,7 @@ const PuppyTimeLine = () => {
       lp:justify-center lp:text-[4rem] lp:w-[40rem]
       lg:text-[5rem] lg:w-[46rem] lg:ml-[10rem] lg:pb-[2rem]
       ">
-        Working Timeline
+        Working Timeline:
       </h1>
 
       <h2 className="text-center text-purple-400 underline decoration-dashed
