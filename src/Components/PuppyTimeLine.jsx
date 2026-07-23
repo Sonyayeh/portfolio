@@ -145,20 +145,22 @@ const PuppyTimeLine = () => {
 
   return (
     <section className="w-full p-3 
-    sm:w-[21rem] sm:ml-[2.5rem]
+    sm:w-[25rem]
     md:w-[25rem] 
     font-vcr
     ">
       {/* Title */}
-      <h1 className="text-2xl mb-6 text-center sm:text-purple-400 
-      underline decoration-dashed
-      sm:text-[1.7rem] 
+      
+      <div className="flex justify-center"> 
+        <h1 className="flex justify-center text-purple-400 underline decoration-dashed
+        sm:text-[1.7rem] sm:w-[25rem] sm:justify-center
       md:text-[3rem] md:w-full md:ml-[12rem] md:mb-[3rem] md:pt-[5rem]
       lp:justify-center lp:text-[4rem] lp:w-[40rem]
       lg:text-[5rem] lg:w-[46rem] lg:ml-[10rem] lg:pb-[2rem]
       ">
         Working Timeline:
       </h1>
+     </div>
 
       <h2 className="text-center text-purple-400 underline decoration-dashed
       sm:text-[1.3rem] sm:pb-[1rem]

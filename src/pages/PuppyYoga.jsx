@@ -4,8 +4,7 @@ import projectData from "../data/project.json";
 import PuppySoft from "../Components/PuppyIcon";
 import PuppyTimeLine from "../Components/PuppyTimeLine";
 import PuppyProcess from "../Components/PuppyProcess";
-import BingFig from "../Components/BingFigma";
-import Social from '../Components/social';
+import PuppyWorkSection from "../Components/PuppyWorkSection";
 import { Link } from "react-router-dom";
 
 const PuppyYoga = () => {
@@ -26,39 +25,51 @@ const PuppyYoga = () => {
     };
 
     return (
-        <div className="w-[12rem] relative mt-[30rem] 
-        sm:ml-[-1rem] sm:mt-[10rem] sm:px-0 sm:mx-auto 
-        md:ml-[3rem] md:mt-[1rem]
-        lg:pl-[4rem] lg:pr-[4rem]">
+        <div className=" relative mt-[30rem] justify-center
+         sm:mt-[10rem] sm:px-0 sm:mx-auto 
+        md:ml-[3rem] md:mt-[1rem]">
             {/* Project Heading and Description */}
-            <div className="text-start w-[12rem]">
-                <h1 className="justify-center text-center text-purple-500 underline decoration-dashed
-                sm:text-[2rem] sm:pb-[5rem] sm:mt-[-5rem] sm:w-[25rem] sm:justify-center sm:items-center sm:text-center
-                md:text-[3rem] md:ml-[0rem] md:pt-[10rem] md:w-[50rem]
-                lp:text-[3.7rem] lp:w-[75rem] lp:justify-center lp:items-center
-                lg:text-7xl lg:ml-[-28rem] lg:w-[120rem] lg:mb-[5rem] lg:mt-[2rem]">
+            <div className="text-start ">
+                <h1 className="flex justify-center text-purple-500 underline decoration-dashed
+                sm:text-[2rem] sm:pb-[2rem] sm:mt-[-5rem] sm:w-[25rem] sm:justify-center sm:items-center sm:text-center
+                md:text-[4rem] md:pt-[10rem] md:w-[55rem]
+                lp:text-[3.7rem] lp:w-[72rem] lp:justify-center lp:items-center
+                lg:text-[3.5rem] lg:w-[70rem] lg:mb-[5rem] lg:mt-[2rem]">
                     Puppy Yoga Studio: Furrever Pals
                 </h1>
-                <h1 className="justify-center text-center underline decoration-dashed text-purple-400
-                sm:text-[1.7rem] sm:pb-[1rem] sm:w-[25rem] sm:ml-1
-                md:text-5xl md:pt-[3rem] md:w-[50rem] md:justify-center md:text-center md:items-center
+                <h1 className="flex justify-center underline decoration-dashed text-purple-400
+                sm:text-[1.5rem] sm:pb-[2rem] sm:w-[25rem] 
+                md:text-[3.5rem] md:pt-[3rem] md:w-[55rem] 
                 lp:text-[4rem] lp:w-[75rem] lp:justify-center lp:items-center
-                lg:text-7xl lg:w-[60rem] lg:mb-[5rem] lg:mt-[2rem]">
+                lg:text-[3rem] lg:w-[70rem] lg:mb-[5rem] lg:mt-[2rem]">
                     Overview:
                 </h1>
-                <h3 className="text-emerald-500
-                sm:text-[1rem] sm:pb-[1rem] sm:w-[25rem] sm:ml-4
-                md:text-5xl md:pt-[3rem] md:w-[50rem] md:justify-center md:items-center md:pb-[2rem]
-                lp:text-[2.5rem] lp:w-[75rem] lp:justify-center lp:items-center leading-relax
-                lg:text-[2.5rem] lg:ml-[-20rem] lg:w-[110rem] lg:mb-[5rem] lg:mt-[2rem] lg:leading-[5.5rem]">
+                <div className="flex justify-center text-center">
+              <h3 className="text-orange-500 text-left justify-center
+                sm:text-[1rem] sm:pb-[1rem] sm:w-[25rem] 
+                md:text-[2rem] md:w-[50rem] md:pb-[2rem]
+                lp:text-[2rem] lp:w-[65rem] lp:leading-[3rem] lp:pb-[4rem]
+                lg:text-[2.5rem] lg:w-[75rem] lg:mb-[5rem] lg:mt-[2rem] lg:leading-[5rem]">
               Furrever Pals is a complete brand and digital service that addresses mental health and community isolation in Vancouver through purposeful design. The project spans comprehensive brand identity, thoughtful UX design, and full-stack web development, creating an accessible wellness experience where users engage with adoptable dogs from local shelters, merging personal wellbeing with animal welfare impact.
                 </h3>
+                </div>
+                  <div className="flex justify-center w-full">
+                    <a href="https://sonyayeh.ca/furreverpals" target="_blank" rel="noopener noreferrer">
+                      <button className="font-Dos text-purple-400 border border-purple-400 hover:bg-purple-400 hover:text-white transition-colors duration-300
+                        sm:text-[1rem] sm:px-[1.5rem] sm:py-[0.5rem]
+                        md:text-[1.5rem] md:px-[2rem] md:py-[0.8rem]
+                        lg:text-[2rem] lg:px-[3rem] lg:py-[1rem]">
+                        View Live Site
+                      </button>
+                    </a>
+                  </div>
+
                  {/* added a line for separate sections */}
                <div className="border-t-2 border-purple-500 
                sm:w-[20rem] sm:ml-[3rem] sm:pb-[2rem]
-               md:w-[40rem] md:ml-[4rem]
+               md:w-[50rem] md:ml-[4rem]
                lp:w-[65rem]
-               lg:w-[100rem] lg:ml-[-20rem]
+               lg:w-[60rem] 
                "></div>
 
                 {/* software used section */}
@@ -90,6 +101,14 @@ const PuppyYoga = () => {
 
                {/* process area */}
                <div>
+                <h1 className="flex justify-center text-center 
+                underline decoration-dashed text-purple-400
+                sm:text-[1.7rem] sm:pb-[1rem] sm:w-[25rem]
+                md:text-5xl md:ml-[-1rem] md:pt-[5rem] md:w-[50rem] md:mb-[2rem]
+                lp:text-[4rem] lp:w-[75rem] lp:justify-center lp:items-center lp:pb-[5rem]
+                lg:text-7xl lg:w-[60rem] lg:mb-[5rem] lg:mt-[2rem] lg:ml-[3rem]">
+                Design Rationale:
+                 </h1>
                 <PuppyProcess />
                </div>
 
@@ -103,7 +122,7 @@ const PuppyYoga = () => {
 
                 {/* Mockup section */}
                 <div>
-                    <BingFig />
+                    <PuppyWorkSection />
                 </div>
 
                 {/* added a line for separate sections */}
@@ -122,7 +141,7 @@ const PuppyYoga = () => {
                                lg:w-[90rem] lg:ml-[-11rem] lg:mx-auto lg:justify-between ">
                 <Link 
                     to="/bcit" 
-                    className="flex items-center text-purple-300 hover:text-emerald-500 transition-colors duration-300"
+                    className="flex items-center text-purple-300 hover:text-orange-500 transition-colors duration-300"
                     onClick={() => window.scrollTo({ top: 0 })}
                 >
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="w-8 h-8">
@@ -138,7 +157,7 @@ const PuppyYoga = () => {
                 {/* Next Button */}
                 <Link 
                     to="/beachball" 
-                    className="flex items-center text-purple-300 hover:text-emerald-500 transition-colors duration-300"
+                    className="flex items-center text-purple-300 hover:text-orange-500 transition-colors duration-300"
                     onClick={() => window.scrollTo({ top: 0})}
                 >
                     <h3 className="mr-3 text-purple-400 hover:text-purple-500 sm:text-[1.5rem]
