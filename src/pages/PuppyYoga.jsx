@@ -78,11 +78,11 @@ const PuppyYoga = () => {
                 </div>
 
                  {/* added a line for separate sections */}
-                 <div className="border-t-2 border-purple-500 
+                  <div className="border-t-2 border-purple-500 
                sm:w-[20rem] sm:ml-[3rem] sm:pb-[2rem]
-               md:w-[40rem] md:ml-[4rem]
+               md:w-[50rem] md:ml-[4rem]
                lp:w-[65rem]
-               lg:w-[100rem] lg:ml-[-16rem]
+               lg:w-[60rem] 
                "></div>
                 
 
@@ -92,11 +92,11 @@ const PuppyYoga = () => {
                </div>
 
                 {/* added a line for separate sections */}
-                <div className="border-t-2 border-purple-500 my-10 
-               sm:w-[20rem] sm:ml-[3rem]
-               md:w-[40rem] md:ml-[4rem] 
+                 <div className="border-t-2 border-purple-500 
+               sm:w-[20rem] sm:ml-[3rem] sm:pb-[2rem]
+               md:w-[50rem] md:ml-[4rem]
                lp:w-[65rem]
-               lg:w-[100rem] lg:ml-[-16rem] lg:mb-[8rem]
+               lg:w-[60rem] lg:mt-[5rem]
                "></div>
 
                {/* process area */}
@@ -106,18 +106,18 @@ const PuppyYoga = () => {
                 sm:text-[1.7rem] sm:pb-[1rem] sm:w-[25rem]
                 md:text-5xl md:ml-[-1rem] md:pt-[5rem] md:w-[50rem] md:mb-[2rem]
                 lp:text-[4rem] lp:w-[75rem] lp:justify-center lp:items-center lp:pb-[5rem]
-                lg:text-7xl lg:w-[60rem] lg:mb-[5rem] lg:mt-[2rem] lg:ml-[3rem]">
+                lg:text-7xl lg:w-[70rem] lg:mt-[2rem]">
                 Design Rationale:
                  </h1>
                 <PuppyProcess />
                </div>
 
                   {/* added a line for separate sections */}
-                  <div className="border-t-2 border-purple-500 my-10 
-               sm:w-[20rem] sm:ml-[3rem]
-               md:w-[40rem] md:ml-[4rem] 
+                   <div className="border-t-2 border-purple-500 
+               sm:w-[20rem] sm:ml-[3rem] sm:pb-[2rem]
+               md:w-[50rem] md:ml-[4rem]
                lp:w-[65rem]
-               lg:w-[100rem] lg:ml-[-16rem] lg:mb-[8rem]
+               lg:w-[60rem] lg:mt-[5rem]
                "></div>
 
                 {/* Mockup section */}
@@ -126,11 +126,11 @@ const PuppyYoga = () => {
                 </div>
 
                 {/* added a line for separate sections */}
-                <div className="border-t-2 border-purple-500 my-10 
-               sm:w-[20rem] sm:ml-[3rem]
-               md:w-[40rem] md:ml-[4rem] 
+                 <div className="border-t-2 border-purple-500 
+               sm:w-[20rem] sm:ml-[3rem] sm:pb-[2rem]
+               md:w-[50rem] md:ml-[4rem]
                lp:w-[65rem]
-               lg:w-[100rem] lg:ml-[-16rem]
+               lg:w-[60rem] lg:mt-[5rem]
                "></div>
 
                 <div className="flex l mt-8 

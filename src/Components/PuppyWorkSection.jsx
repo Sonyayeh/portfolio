@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Wireframe from "../assets/FurreverPals/wireframe.png";
 import Hifi from "../assets/FurreverPals/hifi.png";
 import Component from "../assets/FurreverPals/components.png";
+// import Userflow from "../assets/FurreverPals/"
 
 const images = [
   {
