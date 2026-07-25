@@ -17,7 +17,9 @@ import TextBubble from "../assets/text-bubble.png";
 import HomLanguage from "../Components/homelanguage";
 import GlitchText from "../Components/GlitchText";
 
+
 gsap.registerPlugin(ScrollTrigger);
+
 
 const Home = () => {
   const projectRefs = useRef([]);
@@ -67,6 +69,7 @@ const Home = () => {
   const goToTop = () => {
     window.scrollTo({ top: 0, left: 0, behavior: "auto" });
   };
+  
 
   return (
     <div className="w-full overflow-x-hidden flex flex-col">
@@ -287,6 +290,7 @@ const Home = () => {
               ref={(el) => (projectRefs.current[0] = el)}
               className="
                 relative mx-auto
+                project-card
                 w-[20rem]
                 sm:w-[20rem]
                 md:w-[40rem]
@@ -304,9 +308,17 @@ const Home = () => {
                   lg:ml-[-8rem] 
                 "
               >
+               <Link
+                  to="/furreverpals"
+                  onClick={goToTop}
+                  className="relative block w-full hover:cursor-pointer"
+                  aria-label="View Furrever Pals Puppy Yoga project"
+                >
+
+           
                 <div
                   className="
-                    w-[18rem]
+                    w-[18rem] justify-self-center
                     sm:w-[18rem] sm:pt-10
                     md:w-[35rem]
                     lg:w-[55rem] lg:pt-[6rem]
@@ -316,16 +328,17 @@ const Home = () => {
                   <YogaMockup />
                 </div>
 
+                
                 {/* FIXED: was h5, now h3 for correct heading hierarchy */}
                 <h3
                   className="
                     absolute z-20
                     left-1/2 -translate-x-1/2
                     bottom-[0.8rem]
-                    sm:bottom-[13rem]
-                    md:bottom-[25.5rem]
-                    lg:bottom-[40rem]
-                    lp:bottom-[32rem]
+                    sm:bottom-[10rem]
+                    md:bottom-[20rem]
+                    lp:bottom-[25rem]
+                    lg:bottom-[30rem]
 
                     w-full
                     text-center
@@ -338,6 +351,8 @@ const Home = () => {
                     md:text-[2.5rem]
                     lp:text-[3rem]
                     lg:text-[4rem]
+
+                     
                   "
                 >
                   <span className="lift-text">
@@ -352,6 +367,7 @@ const Home = () => {
                     ))}
                   </span>
                 </h3>
+              </Link>
               </div>
             </div>
 
@@ -457,7 +473,7 @@ const Home = () => {
                       lg:text-[2.7rem]
                       lp:text-[2.4rem]
 
-                      hover:animate-glitch cursor-default
+                      
                     "
                   >
                     <span className="lift-text">

@@ -49,20 +49,20 @@ const PuppySoft = () => {
                 `}
             </style>
 
-            <h1 className="flex justify-center 
+            <h1 className="flex justify-self-center justify-center
                 underline decoration-dashed text-purple-400
-                sm:text-[1.7rem] sm:pb-[1rem] sm:w-[25rem]
-                md:text-5xl md:ml-[-1rem] md:pt-[5rem] md:w-[50rem] md:mb-[2rem]
+                sm:text-[1.7rem] sm:pb-[2rem] sm:w-[25rem] 
+                md:text-[3rem] md:pt-[1rem] md:w-[60rem] md:mb-[2rem]
                 lp:text-[4rem] lp:w-[75rem] lp:justify-center lp:items-center lp:pb-[5rem]
                 lg:text-[4.5rem] lg:w-[70rem]">
                 Software Used:
             </h1>
 
-            <ul className="grid 
+            <ul className="grid justify-self-center
                 grid-cols-2 gap-y-8 justify-items-center
-                sm:grid-cols-2 sm:w-full 
-                md:grid-cols-3 md:ml-[-1rem] md:pb-[4rem] md:w-[50rem]
-                lp:grid-cols-3 lp:w-[75rem] lp:ml-[-2rem]
+                sm:grid-cols-2 sm:w-full sm:pb-[2rem]
+                md:grid-cols-3 md:w-[57rem]
+                lp:grid-cols-3 lp:w-[75rem] 
                 lg:grid-cols-3 lg:w-[77rem]
             ">
                 {/* Adobe Illustrator */}
@@ -74,7 +74,7 @@ const PuppySoft = () => {
                     </svg>
                     <span className="mt-2 text-center font-vcr text-purple-400
                     sm:text-[.9rem] sm:w-[10rem]
-                    md:text-[1.5rem] md:w-[22rem]
+                    md:text-[1.5rem] md:w-[22rem] md:pt-[2rem]
                     lp:text-[2rem] lp:w-[22rem]
                     lg:text-[2rem] lg:w-[25rem] lg:mt-[3rem]">
                         Adobe Illustrator
@@ -90,7 +90,7 @@ const PuppySoft = () => {
                     </svg>
                     <span className="mt-2 text-center font-vcr text-purple-400
                     sm:text-[.9rem] sm:w-[10rem]
-                    md:text-[1.5rem] md:w-[22rem]
+                    md:text-[1.5rem] md:w-[22rem] md:pt-[2rem]
                     lp:text-[2rem] lp:w-[22rem]
                     lg:text-[2rem] lg:w-[25rem] lg:mt-[3rem]">
                         Adobe InDesign
@@ -106,7 +106,7 @@ const PuppySoft = () => {
                     </svg>
                     <span className="mt-2 text-center font-vcr text-purple-400
                     sm:text-[.9rem] sm:w-[10rem]
-                    md:text-[1.5rem] md:w-[22rem]
+                    md:text-[1.5rem] md:w-[22rem] md:pt-[2rem]
                     lp:text-[2rem] lp:w-[22rem]
                     lg:text-[2rem] lg:w-[25rem] lg:mt-[3rem]
                     ">Adobe Photoshop</span>
@@ -125,7 +125,7 @@ const PuppySoft = () => {
                 <span
                     className="mt-2 text-center font-vcr text-purple-400
                     sm:text-[.9rem] sm:w-[10rem]
-                    md:text-[1.5rem] md:w-[22rem]
+                    md:text-[1.5rem] md:w-[22rem] md:pt-[2rem]
                     lp:text-[2rem] lp:w-[22rem]
                     lg:text-[2rem] lg:w-[25rem]
                             ">Adobe Stock Images</span>
@@ -144,7 +144,7 @@ const PuppySoft = () => {
           <span
             className="mt-2 text-center font-vcr text-purple-400
             sm:text-[.9rem] sm:w-[8rem]
-            md:text-[1.5rem] md:w-[11rem]
+            md:text-[1.5rem] md:w-[22rem] md:pt-[2rem]
             lp:text-[2rem] lp:mt-[-2rem] lp:w-[15rem]
             lg:text-[2rem] lg:w-[18rem]
                     ">Procreate</span>
@@ -163,7 +163,7 @@ const PuppySoft = () => {
                     <span
                         className="mt-2 text-center font-vcr text-purple-400
                         sm:text-[.9rem] sm:w-[8rem]
-                        md:text-[1.5rem] md:w-[11rem]
+                        md:text-[1.5rem] md:w-[22rem] md:pt-[2rem]
                         lp:text-[2rem] lp:mt-[0rem] lp:w-[13rem]
                         lg:text-[2rem] lg:w-[10rem]"
                     >

@@ -27,9 +27,9 @@ const PuppyProcess = () => {
   };
 
   return (
-    <div className="font-Dos flex flex-col items-center
-      sm:px-[1rem]
-      md:px-[2rem]
+    <div className="font-Dos flex flex-col items-center justify-self-center
+      sm:w-[25rem] sm:pb-[3rem]
+      md:w-[45rem] md:pb-[4rem] 
       lg:w-[70rem]
       ">
 
@@ -43,10 +43,10 @@ const PuppyProcess = () => {
           {/* Dropdown Button */}
           <button
             onClick={() => toggle(idx)}
-            className="flex justify-between items-center text-left py-4
-              text-purple-400  decoration-dashed hover:text-orange-400 transition-colors duration-300
-              sm:text-[1.5rem]
-              md:text-[2.5rem]
+            className="flex justify-between items-center text-left
+              text-purple-400  decoration-dashed hover:text-orange-400 transition-colors duration-300 
+              sm:text-[1.5rem] sm:py-5 sm:w-[22rem]
+              md:text-[2.5rem] md:w-[45rem]
               lp:text-[3rem]
               lg:text-[3.5rem] lg:py-5 lg:w-[65rem]">
             {slide.title}

@@ -4,6 +4,8 @@ import { scaleRotate as Menu } from "react-burger-menu"; // Import the hamburger
 import { Helmet } from "react-helmet"; // Import Helmet for meta tags
 import Layout from "./Components/Layout"; // Layout component that wraps around all pages
 
+
+
 // Import pages
 import Home from "./pages/Home";
 import About from "./pages/About";
@@ -46,7 +48,6 @@ function App() {
 
   return (
     <BrowserRouter>
-      <div id="outer-container" className="flex flex-col min-h-screen">
         {/* Helmet for global meta tags */}
         <Helmet>
           <title>Sonya Yeh</title>
@@ -87,6 +88,7 @@ function App() {
               <Route path="/cases" element={<Cases />} />
               <Route path="/travelphotofolder" element={<TravelPictures />} />
               <Route path="/beachball" element={<Vollyball />} />
+              <Route path="/furreverpals" element={<PuppyYoga />} />
               <Route path="/magazine" element={<Magazine />} />
               <Route path="/boardwalk" element={<Boutique />} />
               <Route path="/bing" element={<Bing />} />
@@ -98,9 +100,8 @@ function App() {
               <Route path="/cases/marketing" element={<MarketingCase />} />
             </Route>
           </Routes>
-      <BackToTop />
+          <BackToTop />
         </main>
-      </div>
     </BrowserRouter>
   );
 }
