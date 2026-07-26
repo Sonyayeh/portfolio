@@ -101,9 +101,9 @@ const Home = () => {
                 <h1
                   className="
                     font-Micro leading-none relative z-10
-                    whitespace-nowrap w-max
+                    whitespace-nowrap w-max justify-self-center
 
-                    text-[1.8rem]
+                    text-[1.8rem] ji
                     sm:text-[1.5rem] sm:top-[-4rem]
                     md:text-[3.2rem] md:top-[-10rem]
                     lg:text-[4.2rem] lg:top-[5rem]
@@ -224,7 +224,7 @@ const Home = () => {
             >
               <Arrow
                 className="
-                  w-6
+                  w-6 justify-self-center
                   sm:w-7
                   md:w-10
                   lg:w-12
@@ -251,7 +251,7 @@ const Home = () => {
             <h2
               className="
                 relative z-20
-                text-center leading-none
+                text-center leading-none justify-self-center
                 text-[2rem]
                 sm:text-[2rem]
                 md:text-[5rem]
@@ -618,10 +618,10 @@ const Home = () => {
         {/* FIXED: was h5, now h2 for correct heading hierarchy */}
         <h2
           className="
-            relative z-20
+            relative z-20 justify-self-center
             text-center leading-none
             text-[2rem]
-            sm:text-[2.1rem] sm:pb-5
+            sm:text-[2.1rem] sm:pb-5 sm:w-[20rem]
             md:text-[5rem]
             lg:text-[9rem]
             lp:text-[6.8rem]

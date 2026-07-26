@@ -32,17 +32,17 @@ const BackToTop = () => {
         WebkitTapHighlightColor: "transparent",
         appearance: "none",
       }}
-      className={`fixed bottom-6 right-2 z-[300] flex h-[10rem] w-[3rem] items-center justify-center p-0 m-0
-      text-[2rem] text-blue-400
-      hover:scale-105 hover:text-purple-400
-      focus:outline-none focus:ring-0
-      active:outline-none
-      rotate-[-90deg]
-      ${
-        showButton
-          ? "translate-y-0 opacity-100"
-          : "pointer-events-none translate-y-4 opacity-0"
-      }`}
+      className={`fixed bottom-6 right-2 z-[300] flex h-[2rem] w-[3rem] items-center justify-center p-0 m-0
+        text-[2rem] text-blue-400
+        hover:scale-105 hover:text-purple-400
+        focus:outline-none focus:ring-0
+        active:outline-none
+        rotate-[-90deg]
+        ${
+          showButton
+            ? "translate-y-0 opacity-100"
+            : "pointer-events-none translate-y-4 opacity-0"
+        }`}
     >
       ➤
     </button>

@@ -22,7 +22,7 @@ import PuppyYoga from "./pages/PuppyYoga";
 import BackToTop from "./Components/BackToTop";
 import TysnCase from "./pages/TysnCase";
 import BcitCase from "./pages/BcitCase";
-import FurreverCase from "./pages/FurreverCase";
+import FurreverCase from "./pages/FurreverCase"; 
 import MarketingCase from "./pages/MarketingCase";
 
 
