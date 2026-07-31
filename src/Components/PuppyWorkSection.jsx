@@ -54,7 +54,7 @@ const PuppyWorkSection = () => {
         className="
           flex justify-self-center text-center 
                 underline decoration-dashed text-purple-400
-                sm:text-[1.7rem] sm:pb-[1rem] sm:w-[23rem]
+                sm:text-[1.7rem] sm:pb-[1rem] sm:w-[19rem]
                 md:text-5xl md:pt-[5rem] md:w-[35rem] md:mb-[2rem]
                  lp:text-[4rem] lp:w-[75rem] lp:justify-center lp:items-center lp:pb-[5rem]
                 lg:text-[3.5rem] lg:w-[60rem] lg:mb-[5rem] lg:mt-[2rem]">

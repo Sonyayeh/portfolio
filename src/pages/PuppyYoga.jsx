@@ -48,7 +48,7 @@ const PuppyYoga = () => {
                 </h1>
                 <div className="flex  text-center">
               <h3 className="text-orange-500 text-left justify-center
-                sm:text-[1rem] sm:pb-[1rem] sm:w-full
+                sm:text-[1rem] sm:pb-[1rem] sm:w-[25rem]
                 md:text-[2rem] md:w-full md:pb-[2rem]
                 lp:text-[2.5rem] lp:w-[73rem] lp:leading-[3.5rem] lp:pb-[4rem]
                 lg:text-[2rem] lg:w-[75rem] lg:mt-[2rem] lg:leading-[5rem]">
@@ -69,7 +69,7 @@ const PuppyYoga = () => {
 
                  {/* added a line for separate sections */}
                <div className="border-t-2 border-purple-500 mx-auto justify-center items-center
-                    sm:w-[20rem] sm:pb-[2rem] sm:mt-[3rem]
+                    sm:w-[24rem] sm:pb-[2rem] sm:mt-[3rem]
                     md:w-[50rem]
                     lp:w-[60rem] lp:mt-[5rem]
                     lg:w-[75rem] lg:mt-[5rem]"
@@ -82,10 +82,10 @@ const PuppyYoga = () => {
 
                  {/* added a line for separate sections */}
                <div className="border-t-2 border-purple-500 mx-auto justify-center items-center
-                    sm:w-[20rem] sm:pb-[2rem] sm:mt-[3rem]
+                    sm:w-[24rem] sm:pb-[2rem] sm:mt-[3rem]
                     md:w-[50rem]
                     lp:w-[60rem] lp:mt-[5rem]
-                     lg:w-[75rem] lg:mt-[5rem]"
+                    lg:w-[75rem] lg:mt-[5rem]"
                     ></div>
                 
 
@@ -96,16 +96,15 @@ const PuppyYoga = () => {
 
                 {/* added a line for separate sections */}
                 <div className="border-t-2 border-purple-500 mx-auto justify-center items-center
-                    sm:w-[20rem] sm:pb-[2rem] sm:mt-[3rem]
+                    sm:w-[24rem] sm:pb-[2rem] sm:mt-[3rem]
                     md:w-[50rem]
-                    lp:w-[65rem] lp:mt-[5rem]
-                     lg:w-[75rem] lg:mt-[5rem]"
+                    lp:w-[60rem] lp:mt-[5rem]
+                    lg:w-[75rem] lg:mt-[5rem]"
                     ></div>
-
                {/* process area */}
                <div>
                 <h1 className="flex justify-self-center text-purple-400 underline decoration-dashed
-                sm:text-[1.7rem] sm:pb-[1rem] sm:w-[25rem]
+                sm:text-[1.7rem] sm:pb-[1rem] sm:w-[17rem]
                 md:text-[3rem] md:pt-[1rem] md:w-[55rem]
                 lp:text-[4rem] lp:w-[75rem] lp:justify-center lp:items-center lp:pb-[5rem]
                 lg:text-[3.5rem] lg:w-[60rem]  lg:mt-[2rem]">
@@ -116,10 +115,10 @@ const PuppyYoga = () => {
 
                   {/* added a line for separate sections */}
                  <div className="border-t-2 border-purple-500 mx-auto justify-center items-center
-                   sm:w-[20rem] sm:pb-[2rem] sm:mt-[3rem]
+                    sm:w-[24rem] sm:pb-[2rem] sm:mt-[3rem]
                     md:w-[50rem]
-                    lp:w-[65rem] lp:mt-[5rem]
-                     lg:w-[75rem] lg:mt-[5rem]"
+                    lp:w-[60rem] lp:mt-[5rem]
+                    lg:w-[75rem] lg:mt-[5rem]"
                     ></div>
 
                 {/* Mockup section */}
@@ -128,12 +127,12 @@ const PuppyYoga = () => {
                 </div>
 
                 {/* added a line for separate sections */}
-                <div className="border-t-2 border-purple-500 
-               sm:w-[20rem] sm:pb-[2rem] sm:mt-[3rem]
+                <div className="border-t-2 border-purple-500 mx-auto justify-center items-center
+                    sm:w-[24rem] sm:pb-[2rem] sm:mt-[3rem]
                     md:w-[50rem]
-                    lp:w-[65rem] lp:mt-[5rem]
-                     lg:w-[75rem] lg:mt-[5rem]"
-               ></div>
+                    lp:w-[60rem] lp:mt-[5rem]
+                    lg:w-[75rem] lg:mt-[5rem]"
+                    ></div>
 
                 <div className="flex l mt-8 
                                p:justify-between
