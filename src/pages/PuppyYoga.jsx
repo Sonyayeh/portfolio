@@ -105,7 +105,8 @@ const PuppyYoga = () => {
                     ></div>
                {/* process area */}
                <div>
-                <h1 className="flex justify-self-center text-purple-400 underline decoration-dashed
+                <h1 className="flex mx-auto text-center 
+            underline decoration-dashed text-purple-400
                 sm:text-[1.7rem] sm:pb-[1rem] sm:w-[17rem]
                 md:text-[3rem] md:pt-[1rem] md:w-[55rem]
                 lp:text-[4rem] lp:w-[75rem] lp:justify-center lp:items-center lp:pb-[5rem]
