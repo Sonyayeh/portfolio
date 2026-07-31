@@ -49,9 +49,10 @@ const PuppySoft = () => {
                 `}
             </style>
 
-            <h1 className="flex justify-self-center text-center 
-                underline decoration-dashed text-purple-400
-                sm:text-[1.7rem] sm:pb-[1rem] sm:w-[14rem]
+            <h1 className="
+            flex mx-auto text-center 
+            underline decoration-dashed text-purple-400
+                sm:text-[1.7rem] sm:w-[23rem] sm:justify-center sm:pb-[2rem]
                 md:text-[3rem] md:pt-[5rem] md:w-[25rem] md:mb-[2rem]
                 lp:text-[4rem] lp:w-[75rem] lp:justify-center lp:items-center lp:pb-[5rem]
                 lg:text-[3.5rem] lg:w-[60rem] lg:mt-[2rem]">
