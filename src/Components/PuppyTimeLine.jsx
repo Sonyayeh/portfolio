@@ -218,7 +218,7 @@ const PuppyTimeLine = () => {
                   sm:pt-[2rem] sm:ml-2
                   md:text-[1.5rem]
                   lp:text-[2rem] 
-                  lg:text-[2.5rem] lg:mb-[2rem]
+                  lg:text-[1.8rem] lg:mb-[2rem]
                   ${selectedIndex === idx ? "text-orange-400" : "text-purple-500"}`}
               >
                 {event.date}

@@ -142,7 +142,7 @@ const PuppyYoga = () => {
                                sm:w-[25rem] sm:justify-between sm:ml-[0.6rem]
                                md:justify-between md:w-[50rem] md:ml-[-1rem]
                                lp:w-[63rem] lp:ml-[5rem] lp:max-aut
-                               lg:w-[90rem] lg:ml-[-11rem] lg:mx-auto lg:justify-between ">
+                                lg:w-[70rem] lg:mx-auto lg:justify-between ">
                 <Link 
                     to="/bcit" 
                     className="flex items-center text-purple-300 hover:text-orange-500 transition-colors duration-300"
@@ -164,7 +164,8 @@ const PuppyYoga = () => {
                     className="flex items-center text-purple-300 hover:text-orange-500 transition-colors duration-300"
                     onClick={() => window.scrollTo({ top: 0})}
                 >
-                    <h3 className="mr-3 text-purple-400 hover:text-purple-500 sm:text-[1.5rem]
+                    <h3 className="mr-3 text-purple-400 hover:text-purple-500 
+                                        sm:text-[1.5rem]
                                          md:text-[2.5rem]
                                          lp:text-[3rem]
                                          lg:text-[4rem]">Next</h3>

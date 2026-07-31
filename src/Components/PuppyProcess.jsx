@@ -65,7 +65,7 @@ const PuppyProcess = () => {
               sm:text-[0.95rem] sm:leading-[1.8rem]
               md:text-[1.8rem] md:leading-[3rem]
               lp:text-[2rem] lp:leading-[3.2rem]
-              lg:text-[2.2rem] lg:leading-[3.8rem]">
+              lg:text-[2rem] lg:leading-[3.8rem]">
               {slide.content}
             </p>
           </div>

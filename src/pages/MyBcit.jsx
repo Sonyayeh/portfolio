@@ -19,6 +19,10 @@ const MyBcit = () => {
     // State for the active tab
     const [activeTab, setActiveTab] = useState('ABOUT');
 
+      useEffect(() => {
+          window.scrollTo({ top: 0, left: 0, behavior: "auto" });
+        }, []);
+
     // If project not found, return a message
     if (!project) {
         return <div>Project not found</div>;

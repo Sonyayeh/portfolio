@@ -137,7 +137,7 @@ const PuppySoft = () => {
             className="text-orange-400 hover:text-purple-300 
             sm:text-[2.5rem] sm:px-2
             md:text-[6rem] md:px-3
-            lg:text-[7rem] lg:px-6 lg:pb-[2rem]
+            lg:text-[7rem] lg:px-6 lg:pb-[1rem] lg:pt-[3rem]
             lp:text-[7.5rem] lp:px-4 lp:mb-8"
             name="brush-outline"
           />
