@@ -145,48 +145,49 @@ const PuppyTimeLine = () => {
 
   return (
     <section className="w-full p-3 
-    sm:w-[25rem]
+    sm:w-[23.5rem]
     md:w-[25rem] 
     font-vcr
     ">
       {/* Title */}
       
-      <div className="flex justify-center"> 
-        <h1 className="flex justify-center text-purple-400 underline decoration-dashed
-        sm:text-[1.7rem] sm:w-[25rem] sm:justify-center
-      md:text-[3rem] md:w-full md:ml-[12rem] md:mb-[3rem] md:pt-[5rem]
-      lp:justify-center lp:text-[4rem] lp:w-[40rem]
-      lg:text-[5rem] lg:w-[46rem] lg:ml-[10rem] lg:pb-[2rem]
-      ">
-        Working Timeline:
-      </h1>
-     </div>
+        <h1 className="flex mx-auto text-center 
+            underline decoration-dashed text-purple-400
+    sm:text-[1.7rem] sm:w-[23rem] sm:justify-center
+    md:text-[3.5rem] md:pt-[3rem] md:w-[55rem] 
+    lp:justify-center lp:text-[4rem] lp:w-[74rem]
+    lg:text-[3.5rem] lg:w-[75rem] lg:pb-[2rem]
+    ">
+      Working Timeline:
+    </h1>
 
-      <h2 className="text-center text-purple-400 underline decoration-dashed
+      <h2 className="flex justify-center underline decoration-dashed text-purple-400
       sm:text-[1.3rem] sm:pb-[1rem]
-      md:text-[2rem] md:w-full md:ml-[12rem] md:mb-[2rem]
-      lp:justify-center lp:text-[2.5rem] lp:w-[40rem]
-      lg:text-[3rem] lg:ml-[10rem] lg:pb-[2rem]
+      md:text-[2rem] md:pt-[1rem] md:w-[55rem] 
+      lp:justify-center lp:text-[2.5rem] lp:w-[74rem]
+      lg:text-[2.5rem] lg:pb-[2rem]
       ">
         Total hours: <span className="text-red-600">49 hours</span>
       </h2>
 
-      <div className="relative flex items-center justify-center md:mr-[-22rem] md:ml-[2rem] 
-      lp:w-[70rem] lp:ml-[-3rem]
-      lg:w-[80rem] lg:ml-[-12rem]
+      <div className="relative flex items-center justify-center 
+      sm:w-[22rem]
+      md:w-[50rem]
+      lp:w-[70rem] 
+      lg:w-[75rem] 
       ">
         {/* Timeline line */}
         <div className="absolute top-1/2 w-full border-t-[.4rem] border-purple-300 border-dashed -translate-y-1/2
-        md:w-[38rem] md:justify-start 
+        md:w-[42rem] md:justify-start 
         lp:w-[55rem]
-        lg:w-[90rem] lg:ml-[5rem]
+        lg:w-[75rem]
         "></div>
 
         {/* Events */}
-        <div className="flex space-x-10 overflow-x-auto py-4
-          md:w-[36rem] md:mx-auto md:ml-[1rem]
-          lp:w-[55rem] lp:ml-[5rem] lp:gap-[4rem]
-          lg:w-[80rem] lg:ml-[-2rem] lg:gap-[5rem]
+       <div className="flex space-x-10 overflow-x-auto py-4
+          md:w-[43rem] md:mx-auto
+          lp:w-[55rem]
+          lg:w-[70rem] lg:gap-[2rem]
           ">
           {events.map((event, idx) => (
             <div
@@ -200,7 +201,7 @@ const PuppyTimeLine = () => {
               {/* Diamond shape */}
               <div
                 className={`w-6 h-6 transform rotate-45 border-4 border-purple-200
-                  md:w-[2rem] md:h-[2rem] md:ml-[1rem] 
+                  md:w-[2rem] md:h-[2rem] 
                   lg:w-[3rem] lg:h-[3rem] lg:ml-[1.5rem] lg:mb-[4rem]
                   ${selectedIndex === idx ? "bg-orange-300" : "bg-white"}`}
               ></div>
@@ -211,7 +212,7 @@ const PuppyTimeLine = () => {
                   sm:pt-[2rem] sm:ml-2
                   md:text-[1.5rem]
                   lp:text-[2rem] 
-                  lg:text-[2.5rem] lg:mb-[2rem]
+                  lg:text-[1.8rem] lg:mb-[2rem]
                   ${selectedIndex === idx ? "text-orange-400" : "text-purple-500"}`}
               >
                 {event.date}
@@ -223,24 +224,28 @@ const PuppyTimeLine = () => {
 
       {/* Event content */}
       <div className="border-t mt-6 pt-4
-      md:ml-[2rem] md:w-[40rem] md:text-[2rem] 
+      md:ml-[2rem] md:w-[50rem] md:text-[2rem] 
+      lp:w-[65rem]
       ">
+        {/* this is the title of what each section is about*/}
         <h2 className="text-xl font-semibold text-purple-500
-          md:text-[2rem] md:pb-5 md:ml-[1rem] md:leading-[2.6rem] md:w-[45rem]
-          lp:text-[2.5rem] lp:pb-5 lp:ml-[-1rem] lp:leading-[3.2rem] lp:w-[55rem]
-          lg:text-[3rem] lg:pb-[2rem] lg:pt-[2rem] lg:ml-[-15rem] lg:leading-[3.8rem] lg:w-[67rem]
+          md:text-[2rem] md:pb-5 md:leading-[2.6rem] md:w-[45rem]
+          lp:text-[2.5rem] lp:pb-5 lp:leading-[3.2rem] lp:w-[40rem]
+          lg:text-[2rem] lg:pb-[2rem] lg:pt-[2rem] lg:leading-[3.8rem] lg:w-[67rem] 
         ">{events[selectedIndex].title}</h2>
 
+        {/* this is the duration of how long it took me to do each process*/}
         <h3 className="text-sm text-orange-600
-          md:text-[1.8rem] md:ml-[1rem]
-          lp:ml-[-1rem]
-          lg:text-[3rem] lg:pb-5 lg:ml-[-15rem] lg:leading-[3.8rem] lg:w-[67rem]
+        md:text-[1.8rem]
+        lp:text-[2rem] lp:w-[10rem] 
+        lg:text-[1.8rem]lg:leading-[3.8rem] lg:w-[67rem]
         ">{events[selectedIndex].sub}</h3>
 
+        {/* this is the content section */}
         <p className="mt-2 text-purple-700
-          md:mt-5 md:text-[2rem] md:ml-[1rem] md:w-[43rem]
-          lp:w-[70rem] lp:text-[2rem] lp:ml-[-1.5rem]
-          lg:text-[3rem] lg:pb-5 lg:ml-[-15rem] lg:leading-[5rem] lg:w-[87rem]
+        md:mt-5 md:text-[2rem]  md:w-[50rem]
+        lp:w-[60rem]
+        lg:text-[2rem] lg:pb-5 lg:leading-[5rem] lg:w-[75rem]
         ">{events[selectedIndex].content}</p>
       </div>
     </section>

@@ -29,7 +29,7 @@ const PuppyProcess = () => {
     <div className="font-Dos w-full flex flex-col items-center
       sm:px-[1rem]
       md:px-[2rem]
-      lg:px-[4rem]">
+      lg:px-[2rem]">
 
       {slides.map((slide, idx) => (
         <div key={idx} className="w-full border-b border-purple-300
@@ -46,7 +46,7 @@ const PuppyProcess = () => {
               sm:text-[1.5rem]
               md:text-[2.5rem]
               lp:text-[3rem]
-              lg:text-[3.5rem] lg:py-6">
+              lg:text-[3rem] lg:py-6">
             {slide.title}
             <span className={`transition-transform duration-300 no-underline
               sm:text-[1.2rem]
@@ -63,7 +63,7 @@ const PuppyProcess = () => {
               sm:text-[0.95rem] sm:leading-[1.8rem]
               md:text-[1.8rem] md:leading-[3rem]
               lp:text-[2rem] lp:leading-[3.2rem]
-              lg:text-[2.2rem] lg:leading-[3.8rem]">
+              lg:text-[2rem] lg:leading-[3.8rem]">
               {slide.content}
             </p>
           </div>

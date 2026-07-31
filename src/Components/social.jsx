@@ -14,7 +14,7 @@ const Social = () => {
         {/* GitHub */}
         <a href="https://github.com/Sonyayeh" target="_blank" rel="noopener noreferrer">
           <IonIcon 
-            className="text-blue-300 text-[2.5rem] sm:text-[3rem] md:text-[5rem] lg:text-[6rem] hover:text-purple-300 transition" 
+            className="text-blue-300 text-[2.5rem] sm:text-[3rem] md:text-[5rem] lg:text-[4rem] hover:text-purple-300 transition" 
             name="logo-github" 
           />
         </a>
@@ -22,7 +22,7 @@ const Social = () => {
         {/* LinkedIn */}
         <a href="https://www.linkedin.com/in/sonya-yeh-63a17a2b0/" target="_blank" rel="noopener noreferrer">
           <IonIcon 
-            className="text-blue-300 text-[2.5rem] sm:text-[3rem] md:text-[5rem] lg:text-[6rem] hover:text-purple-300 transition" 
+            className="text-blue-300 text-[2.5rem] sm:text-[3rem] md:text-[5rem] lg:text-[4rem] hover:text-purple-300 transition" 
             name="logo-linkedin" 
           />
         </a>
@@ -30,7 +30,7 @@ const Social = () => {
         {/* YouTube */}
         <a href="https://www.youtube.com/@sonyayeah" target="_blank" rel="noopener noreferrer">
           <IonIcon 
-            className="text-blue-300 text-[2.5rem] sm:text-[3rem] md:text-[5rem] lg:text-[6rem] hover:text-purple-300 transition" 
+            className="text-blue-300 text-[2.5rem] sm:text-[3rem] md:text-[5rem] lg:text-[4rem] hover:text-purple-300 transition" 
             name="logo-youtube" 
           />
         </a>
@@ -38,7 +38,7 @@ const Social = () => {
         {/* Instagram */}
         <a href="https://www.instagram.com/sooonyeh/" target="_blank" rel="noopener noreferrer">
           <IonIcon 
-            className="text-blue-300 text-[2.5rem] sm:text-[3rem] md:text-[5rem] lg:text-[6rem] hover:text-purple-300 transition" 
+            className="text-blue-300 text-[2.5rem] sm:text-[3rem] md:text-[5rem] lg:text-[4rem] hover:text-purple-300 transition" 
             name="logo-instagram" 
           />
         </a>

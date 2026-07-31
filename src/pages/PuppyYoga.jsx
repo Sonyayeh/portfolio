@@ -14,9 +14,7 @@ const PuppyYoga = () => {
     // State for the active tab
     const [activeTab, setActiveTab] = useState('ABOUT');
 
-     useEffect(() => {
-      window.scrollTo({ top: 0, left: 0, behavior: "auto" });
-    }, []);
+    
 
     // If project not found, return a message
     if (!project) {
@@ -35,33 +33,34 @@ const PuppyYoga = () => {
             {/* Project Heading and Description */}
             <div className="text-start ">
                 <h1 className="flex justify-center text-purple-500 underline decoration-dashed
-                sm:text-[2rem] sm:pb-[2rem] sm:mt-[-5rem] sm:w-[25rem] sm:justify-center sm:items-center sm:text-center
+                sm:text-[2rem] sm:pb-[2rem] sm:mt-[-5rem] sm:w-[23rem] sm:justify-center sm:items-center sm:text-center
                 md:text-[4rem] md:pt-[10rem] md:w-[55rem]
                 lp:text-[3.7rem] lp:w-[72rem] lp:justify-center lp:items-center
-                lg:text-[3.5rem] lg:w-[70rem] lg:mb-[5rem] lg:mt-[2rem]">
+                lg:text-[3.5rem] lg:w-[70rem] lg:leading-[8rem]">
                     Puppy Yoga Studio: Furrever Pals
                 </h1>
                 <h1 className="flex justify-center underline decoration-dashed text-purple-400
-                sm:text-[1.5rem] sm:pb-[2rem] sm:w-[25rem] 
+                sm:text-[1.5rem] sm:pb-[2rem] sm:w-[23rem] 
                 md:text-[3.5rem] md:pt-[3rem] md:w-[55rem] 
                 lp:text-[4rem] lp:w-[75rem] lp:justify-center lp:items-center
-                lg:text-[3rem] lg:w-[70rem] lg:mb-[5rem] lg:mt-[2rem]">
+                lg:text-[2rem] lg:w-[70rem] lg:mt-[2rem]">
                     Overview:
                 </h1>
-                <div className="flex justify-center text-center">
+                <div className="flex  text-center">
               <h3 className="text-orange-500 text-left justify-center
-                sm:text-[1rem] sm:pb-[1rem] sm:w-[25rem] 
-                md:text-[2rem] md:w-[50rem] md:pb-[2rem]
-                lp:text-[2rem] lp:w-[65rem] lp:leading-[3rem] lp:pb-[4rem]
-                lg:text-[2.5rem] lg:w-[75rem] lg:mb-[5rem] lg:mt-[2rem] lg:leading-[5rem]">
+                sm:text-[1rem] sm:pb-[1rem] sm:w-full
+                md:text-[2rem] md:w-full md:pb-[2rem]
+                lp:text-[2.5rem] lp:w-[73rem] lp:leading-[3.5rem] lp:pb-[4rem]
+                lg:text-[2rem] lg:w-[75rem] lg:mt-[2rem] lg:leading-[5rem]">
               Furrever Pals is a complete brand and digital service that addresses mental health and community isolation in Vancouver through purposeful design. The project spans comprehensive brand identity, thoughtful UX design, and full-stack web development, creating an accessible wellness experience where users engage with adoptable dogs from local shelters, merging personal wellbeing with animal welfare impact.
                 </h3>
                 </div>
                   <div className="flex justify-center w-full">
                     <a href="https://sonyayeh.ca/furreverpals" target="_blank" rel="noopener noreferrer">
-                      <button className="font-Dos text-purple-400 border border-purple-400 hover:bg-purple-400 hover:text-white transition-colors duration-300
+                      <button className="font-Dos text-purple-500 border border-purple-400 hover:bg-purple-400 hover:text-white transition-colors duration-300 underline decoration-dashed
                         sm:text-[1rem] sm:px-[1.5rem] sm:py-[0.5rem]
                         md:text-[1.5rem] md:px-[2rem] md:py-[0.8rem]
+                        lp:text-[2rem] lp:px-[2rem] lp:py-[1rem]
                         lg:text-[2rem] lg:px-[3rem] lg:py-[1rem]">
                         View Live Site
                       </button>
@@ -69,12 +68,12 @@ const PuppyYoga = () => {
                   </div>
 
                  {/* added a line for separate sections */}
-               <div className="border-t-2 border-purple-500 
-               sm:w-[20rem] sm:ml-[3rem] sm:pb-[2rem]
-               md:w-[50rem] md:ml-[4rem]
-               lp:w-[65rem]
-               lg:w-[60rem] 
-               "></div>
+               <div className="border-t-2 border-purple-500 mx-auto justify-center items-center
+                    sm:w-[20rem] sm:pb-[2rem] sm:mt-[3rem]
+                    md:w-[50rem]
+                    lp:w-[60rem] lp:mt-[5rem]
+                    lg:w-[75rem] lg:mt-[5rem]"
+                    ></div>
 
                 {/* software used section */}
                 <div className="pb-[2rem]">
@@ -82,12 +81,12 @@ const PuppyYoga = () => {
                 </div>
 
                  {/* added a line for separate sections */}
-                 <div className="border-t-2 border-purple-500 
-               sm:w-[20rem] sm:ml-[3rem] sm:pb-[2rem]
-               md:w-[40rem] md:ml-[4rem]
-               lp:w-[65rem]
-               lg:w-[100rem] lg:ml-[-16rem]
-               "></div>
+               <div className="border-t-2 border-purple-500 mx-auto justify-center items-center
+                    sm:w-[20rem] sm:pb-[2rem] sm:mt-[3rem]
+                    md:w-[50rem]
+                    lp:w-[60rem] lp:mt-[5rem]
+                     lg:w-[75rem] lg:mt-[5rem]"
+                    ></div>
                 
 
                 {/* timeline section */}
@@ -96,33 +95,32 @@ const PuppyYoga = () => {
                </div>
 
                 {/* added a line for separate sections */}
-                <div className="border-t-2 border-purple-500 my-10 
-               sm:w-[20rem] sm:ml-[3rem]
-               md:w-[40rem] md:ml-[4rem] 
-               lp:w-[65rem]
-               lg:w-[100rem] lg:ml-[-16rem] lg:mb-[8rem]
-               "></div>
+                <div className="border-t-2 border-purple-500 mx-auto justify-center items-center
+                    sm:w-[20rem] sm:pb-[2rem] sm:mt-[3rem]
+                    md:w-[50rem]
+                    lp:w-[65rem] lp:mt-[5rem]
+                     lg:w-[75rem] lg:mt-[5rem]"
+                    ></div>
 
                {/* process area */}
                <div>
-                <h1 className="flex justify-center text-center 
-                underline decoration-dashed text-purple-400
+                <h1 className="flex justify-self-center text-purple-400 underline decoration-dashed
                 sm:text-[1.7rem] sm:pb-[1rem] sm:w-[25rem]
-                md:text-5xl md:ml-[-1rem] md:pt-[5rem] md:w-[50rem] md:mb-[2rem]
+                md:text-[3rem] md:pt-[1rem] md:w-[55rem]
                 lp:text-[4rem] lp:w-[75rem] lp:justify-center lp:items-center lp:pb-[5rem]
-                lg:text-7xl lg:w-[60rem] lg:mb-[5rem] lg:mt-[2rem] lg:ml-[3rem]">
+                lg:text-[3.5rem] lg:w-[60rem]  lg:mt-[2rem]">
                 Design Rationale:
                  </h1>
                 <PuppyProcess />
                </div>
 
                   {/* added a line for separate sections */}
-                  <div className="border-t-2 border-purple-500 my-10 
-               sm:w-[20rem] sm:ml-[3rem]
-               md:w-[40rem] md:ml-[4rem] 
-               lp:w-[65rem]
-               lg:w-[100rem] lg:ml-[-16rem] lg:mb-[8rem]
-               "></div>
+                 <div className="border-t-2 border-purple-500 mx-auto justify-center items-center
+                   sm:w-[20rem] sm:pb-[2rem] sm:mt-[3rem]
+                    md:w-[50rem]
+                    lp:w-[65rem] lp:mt-[5rem]
+                     lg:w-[75rem] lg:mt-[5rem]"
+                    ></div>
 
                 {/* Mockup section */}
                 <div>
@@ -130,19 +128,19 @@ const PuppyYoga = () => {
                 </div>
 
                 {/* added a line for separate sections */}
-                <div className="border-t-2 border-purple-500 my-10 
-               sm:w-[20rem] sm:ml-[3rem]
-               md:w-[40rem] md:ml-[4rem] 
-               lp:w-[65rem]
-               lg:w-[100rem] lg:ml-[-16rem]
-               "></div>
+                <div className="border-t-2 border-purple-500 
+               sm:w-[20rem] sm:pb-[2rem] sm:mt-[3rem]
+                    md:w-[50rem]
+                    lp:w-[65rem] lp:mt-[5rem]
+                     lg:w-[75rem] lg:mt-[5rem]"
+               ></div>
 
                 <div className="flex l mt-8 
                                p:justify-between
                                sm:w-[25rem] sm:justify-between sm:ml-[0.6rem]
                                md:justify-between md:w-[50rem] md:ml-[-1rem]
                                lp:w-[63rem] lp:ml-[5rem] lp:max-aut
-                               lg:w-[90rem] lg:ml-[-11rem] lg:mx-auto lg:justify-between ">
+                                lg:w-[70rem] lg:mx-auto lg:justify-between ">
                 <Link 
                     to="/bcit" 
                     className="flex items-center text-purple-300 hover:text-orange-500 transition-colors duration-300"
@@ -164,7 +162,8 @@ const PuppyYoga = () => {
                     className="flex items-center text-purple-300 hover:text-orange-500 transition-colors duration-300"
                     onClick={() => window.scrollTo({ top: 0})}
                 >
-                    <h3 className="mr-3 text-purple-400 hover:text-purple-500 sm:text-[1.5rem]
+                    <h3 className="mr-3 text-purple-400 hover:text-purple-500 
+                                        sm:text-[1.5rem]
                                          md:text-[2.5rem]
                                          lp:text-[3rem]
                                          lg:text-[4rem]">Next</h3>

@@ -52,12 +52,12 @@ const PuppyWorkSection = () => {
     <section className="w-full">
       <h2
         className="
-          flex justify-center text-center 
+          flex justify-self-center text-center 
                 underline decoration-dashed text-purple-400
-                sm:text-[1.7rem] sm:pb-[1rem] sm:w-[25rem]
-                md:text-5xl md:ml-[-1rem] md:pt-[5rem] md:w-[50rem] md:mb-[2rem]
-                lp:text-[4rem] lp:w-[75rem] lp:justify-center lp:items-center lp:pb-[5rem]
-                lg:text-7xl lg:w-[60rem] lg:mb-[5rem] lg:mt-[2rem] lg:ml-[3rem]">
+                sm:text-[1.7rem] sm:pb-[1rem] sm:w-[23rem]
+                md:text-5xl md:pt-[5rem] md:w-[35rem] md:mb-[2rem]
+                 lp:text-[4rem] lp:w-[75rem] lp:justify-center lp:items-center lp:pb-[5rem]
+                lg:text-[3.5rem] lg:w-[60rem] lg:mb-[5rem] lg:mt-[2rem]">
         Sketches &amp; Process:
       </h2>
 
@@ -67,10 +67,10 @@ const PuppyWorkSection = () => {
           border-2 border-orange-200 border-dashed
           bg-[#eee6f6]
           sm:px-2 sm:py-3
-          sm:w-[25rem]
-          md:w-[50rem] md:p-5 md:ml-[2rem]
-          lp:w-[65rem] lp:p-6 lp:ml-[3rem]
-          lg:w-[78rem] lg:p-7 lg:ml-[-5rem]
+          sm:w-[25rem] 
+          md:w-[50rem] md:py-5 md:px-5 
+          lp:w-[65rem] lp:p-6 
+          lg:w-[70rem] lg:p-7 
         "
       >
         <div

@@ -8,7 +8,7 @@ function Footer() {
           font-Micro text-center text-[#000000]
           sm:text-[1rem]
           md:text-[2.5rem]
-          lg:text-[3.5rem]
+          lg:text-[2rem]
           lp:text-[2rem]
         "
       >

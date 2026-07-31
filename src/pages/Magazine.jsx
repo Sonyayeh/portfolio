@@ -12,6 +12,10 @@ const MagazineDesign = () => {
   const project = projectData.find((proj) => proj.id === 1);
   const [activeTab, setActiveTab] = useState('ABOUT');
 
+    useEffect(() => {
+        window.scrollTo({ top: 0, left: 0, behavior: "auto" });
+      }, []);
+
   if (!project) return <div>Project not found</div>;
 
   const handleTabClick = (tab) => setActiveTab(tab);
