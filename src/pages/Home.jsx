@@ -17,7 +17,9 @@ import TextBubble from "../assets/text-bubble.png";
 import HomLanguage from "../Components/homelanguage";
 import GlitchText from "../Components/GlitchText";
 
+
 gsap.registerPlugin(ScrollTrigger);
+
 
 const Home = () => {
   const projectRefs = useRef([]);
@@ -67,6 +69,7 @@ const Home = () => {
   const goToTop = () => {
     window.scrollTo({ top: 0, left: 0, behavior: "auto" });
   };
+  
 
   return (
     <div className="w-full overflow-x-hidden flex flex-col">
@@ -284,78 +287,89 @@ const Home = () => {
         <div className="mx-auto w-full max-w-[1600px] px-4 sm:px-6 md:px-8 lg:px-1">
           <div className="relative flex flex-col gap-10 md:gap-14 lg:gap-16">
             <div
-  ref={(el) => (projectRefs.current[0] = el)}
-  className="
-    relative mx-auto
-    project-card
-    w-[20rem]
-    sm:w-[20rem]
-    md:w-[40rem]
-    lg:w-[70rem] lg:ml-[8rem] lg:pt-[4rem]
-    lp:w-[50rem]
-  "
->
-  <PurpleWorkBox />
-  <Link
-    to="/puppy"
-    onClick={goToTop}
-    className="absolute inset-0 flex items-center justify-center
-      px-3
-      sm:px-3
-      md:px-5
-      lg:ml-[-8rem]
-    "
-    aria-label="View Furrever Pals Puppy Yoga project"
-  >
-    <div
-      className="
-        w-[18rem]
-        sm:w-[18rem] sm:pt-10
-        md:w-[35rem]
-        lg:w-[55rem] lg:pt-[6rem]
-        lp:w-[45rem] lp:hover:scale-[1.02] lp:transition-transform lp:duration-300
-      "
-    >
-      <YogaMockup />
-    </div>
+              ref={(el) => (projectRefs.current[0] = el)}
+              className="
+                relative mx-auto
+                project-card
+                w-[20rem]
+                sm:w-[20rem]
+                md:w-[40rem]
+                lg:w-[70rem] lg:ml-[8rem] lg:pt-[4rem]
+                lp:w-[50rem]
+              "
+            >
+              <PurpleWorkBox />
+              <div
+                className="
+                  absolute inset-0 flex items-center justify-center
+                  px-3
+                  sm:px-3
+                  md:px-5
+                  lg:ml-[-8rem] 
+                "
+              >
+               <Link
+                  to="/furreverpals"
+                  onClick={goToTop}
+                  className="relative block w-full hover:cursor-pointer"
+                  aria-label="View Furrever Pals Puppy Yoga project"
+                >
 
-    <h3
-      className="
-        absolute z-20
-        left-1/2 -translate-x-1/2
-        bottom-[0.8rem]
-        sm:bottom-[13rem]
-        md:bottom-[25.5rem]
-        lg:bottom-[40rem]
-        lp:bottom-[32rem]
+           
+                <div
+                  className="
+                    w-[18rem] justify-self-center
+                    sm:w-[18rem] sm:pt-10
+                    md:w-[35rem]
+                    lg:w-[55rem] lg:pt-[6rem]
+                    lp:w-[45rem] lp:hover:scale-[1.02] lp:transition-transform lp:duration-300
+                  "
+                >
+                  <YogaMockup />
+                </div>
 
-        w-full
-        text-center
-        font-Micro
-        leading-none
-        whitespace-nowrap
+                
+                {/* FIXED: was h5, now h3 for correct heading hierarchy */}
+                <h3
+                  className="
+                    absolute z-20
+                    left-1/2 -translate-x-1/2
+                    bottom-[0.8rem]
+                    sm:bottom-[10rem]
+                    md:bottom-[20rem]
+                    lp:bottom-[25rem]
+                    lg:bottom-[30rem]
 
-        text-[1rem]
-        sm:text-[1rem]
-        md:text-[2.5rem]
-        lp:text-[3rem]
-        lg:text-[4rem]
-      "
-    >
-      <span className="lift-text">
-        {"Furrever Pals Puppy Yoga".split(" ").map((word, i) => (
-          <span key={i} className="inline-block mr-[0.3em]">
-            {word.split("").map((char, j) => (
-              <span key={j} className="lift-letter">
-                {char}
-              </span>
-            ))}
-          </span>
-        ))}
-      </span>
-    </h3>
-  </Link>
-</div>
+                    w-full
+                    text-center
+                    font-Micro
+                    leading-none
+                    whitespace-nowrap
+
+                    text-[1rem]
+                    sm:text-[1rem]
+                    md:text-[2.5rem]
+                    lp:text-[3rem]
+                    lg:text-[4rem]
+
+                     
+                  "
+                >
+                  <span className="lift-text">
+                    {"Furrever Pals Puppy Yoga".split(" ").map((word, i) => (
+                      <span key={i} className="inline-block mr-[0.3em]">
+                        {word.split("").map((char, j) => (
+                          <span key={j} className="lift-letter">
+                            {char}
+                          </span>
+                        ))}
+                      </span>
+                    ))}
+                  </span>
+                </h3>
+              </Link>
+              </div>
+            </div>
 
             <div className="relative h-0">
               <img
@@ -459,7 +473,7 @@ const Home = () => {
                       lg:text-[2.7rem]
                       lp:text-[2.4rem]
 
-                      hover:animate-glitch cursor-default
+                      
                     "
                   >
                     <span className="lift-text">

@@ -49,22 +49,21 @@ const PuppySoft = () => {
                 `}
             </style>
 
-            <h1 className="
-            flex mx-auto text-center 
-            underline decoration-dashed text-purple-400
-                sm:text-[1.7rem] sm:w-[23rem] sm:justify-center sm:pb-[2rem]
-                md:text-[3rem] md:pt-[5rem] md:w-[25rem] md:mb-[2rem]
+            <h1 className="flex justify-self-center justify-center
+                underline decoration-dashed text-purple-400
+                sm:text-[1.7rem] sm:pb-[2rem] sm:w-[25rem] 
+                md:text-[3rem] md:pt-[1rem] md:w-[60rem] md:mb-[2rem]
                 lp:text-[4rem] lp:w-[75rem] lp:justify-center lp:items-center lp:pb-[5rem]
-                lg:text-[3.5rem] lg:w-[60rem] lg:mt-[2rem]">
+                lg:text-[4.5rem] lg:w-[70rem]">
                 Software Used:
             </h1>
 
-            <ul className="grid 
+            <ul className="grid justify-self-center
                 grid-cols-2 gap-y-8 justify-items-center
-                sm:grid-cols-2 sm:w-full 
-                md:grid-cols-3  md:pb-[4rem] md:w-[55rem]
-                lp:grid-cols-3 lp:w-[72rem] 
-                lg:grid-cols-3 lg:w-[70rem] lg:gap-[2rem]
+                sm:grid-cols-2 sm:w-full sm:pb-[2rem]
+                md:grid-cols-3 md:w-[57rem]
+                lp:grid-cols-3 lp:w-[75rem] 
+                lg:grid-cols-3 lg:w-[77rem]
             ">
                 {/* Adobe Illustrator */}
                 <li className="flex flex-col items-center icon" ref={(el) => iconRefs.current[0] = el}>
@@ -75,9 +74,9 @@ const PuppySoft = () => {
                     </svg>
                     <span className="mt-2 text-center font-vcr text-purple-400
                     sm:text-[.9rem] sm:w-[10rem]
-                    md:text-[1.5rem] md:w-[22rem]
+                    md:text-[1.5rem] md:w-[22rem] md:pt-[2rem]
                     lp:text-[2rem] lp:w-[22rem]
-                    lg:text-[1.5rem] lg:w-[31rem]  lg:mt-[4rem]">
+                    lg:text-[2rem] lg:w-[25rem] lg:mt-[3rem]">
                         Adobe Illustrator
                     </span>
                 </li>
@@ -91,9 +90,9 @@ const PuppySoft = () => {
                     </svg>
                     <span className="mt-2 text-center font-vcr text-purple-400
                     sm:text-[.9rem] sm:w-[10rem]
-                    md:text-[1.5rem] md:w-[22rem]
+                    md:text-[1.5rem] md:w-[22rem] md:pt-[2rem]
                     lp:text-[2rem] lp:w-[22rem]
-                   lg:text-[1.5rem] lg:w-[31rem]  lg:mt-[4rem]">
+                    lg:text-[2rem] lg:w-[25rem] lg:mt-[3rem]">
                         Adobe InDesign
                     </span>
                 </li>
@@ -107,9 +106,9 @@ const PuppySoft = () => {
                     </svg>
                     <span className="mt-2 text-center font-vcr text-purple-400
                     sm:text-[.9rem] sm:w-[10rem]
-                    md:text-[1.5rem] md:w-[22rem]
+                    md:text-[1.5rem] md:w-[22rem] md:pt-[2rem]
                     lp:text-[2rem] lp:w-[22rem]
-                   lg:text-[1.5rem] lg:w-[31rem]  lg:mt-[4rem]
+                    lg:text-[2rem] lg:w-[25rem] lg:mt-[3rem]
                     ">Adobe Photoshop</span>
                 </li>
 
@@ -119,16 +118,16 @@ const PuppySoft = () => {
                     className="text-orange-400 hover:text-purple-300 
                     sm:text-[2.5rem] sm:px-2
                     md:text-[6rem] md:px-3
-                    lg:text-[7rem] lg:px-6 lg:pb-[1rem] lg:pt-[3rem]
+                    lg:text-[7rem] lg:px-6 lg:pb-[1.5rem]
                     lp:text-[7.5rem]"
                     name="image-outline"
                 />
                 <span
                     className="mt-2 text-center font-vcr text-purple-400
                     sm:text-[.9rem] sm:w-[10rem]
-                    md:text-[1.5rem] md:w-[22rem]
+                    md:text-[1.5rem] md:w-[22rem] md:pt-[2rem]
                     lp:text-[2rem] lp:w-[22rem]
-                   lg:text-[1.5rem] lg:w-[33rem] lg:pt-[2rem]
+                    lg:text-[2rem] lg:w-[25rem]
                             ">Adobe Stock Images</span>
                 </li>
 
@@ -145,9 +144,9 @@ const PuppySoft = () => {
           <span
             className="mt-2 text-center font-vcr text-purple-400
             sm:text-[.9rem] sm:w-[8rem]
-            md:text-[1.5rem] md:w-[11rem]
+            md:text-[1.5rem] md:w-[22rem] md:pt-[2rem]
             lp:text-[2rem] lp:mt-[-2rem] lp:w-[15rem]
-          lg:text-[1.5rem] lg:w-[30rem] lg:pt-[2.5rem]
+            lg:text-[2rem] lg:w-[18rem]
                     ">Procreate</span>
                 </li>
 
@@ -157,16 +156,16 @@ const PuppySoft = () => {
                         className="text-orange-400 hover:text-purple-300 hover:cursor-pointer
                         sm:text-[2.5rem] sm:px-2
                         md:text-[6rem] md:px-3
-                        lg:text-[7rem] lg:px-6 lg:pb-[1rem] lg:pt-[3rem]
-                        lp:text-[7.5rem]"
+                        lg:text-[7rem] lg:px-[2rem]
+                        lg:text-[7rem] lg:px-6 lg:pb-[1.5rem]"
                         name="logo-figma"
                     />
                     <span
                         className="mt-2 text-center font-vcr text-purple-400
                         sm:text-[.9rem] sm:w-[8rem]
-                        md:text-[1.5rem] md:w-[11rem]
+                        md:text-[1.5rem] md:w-[22rem] md:pt-[2rem]
                         lp:text-[2rem] lp:mt-[0rem] lp:w-[13rem]
-                       lg:text-[1.5rem] lg:w-[30rem] lg:mt-[2rem]"
+                        lg:text-[2rem] lg:w-[10rem]"
                     >
                     Figma</span>
                 </li>

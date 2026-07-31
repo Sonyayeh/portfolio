@@ -2,6 +2,10 @@ import React, { useState } from "react";
 import Wireframe from "../assets/FurreverPals/wireframe.png";
 import Hifi from "../assets/FurreverPals/hifi.png";
 import Component from "../assets/FurreverPals/components.png";
+import Userflow from "../assets/FurreverPals/userflow.png";
+import Sketch from "../assets/FurreverPals/logosketch.jpg";
+import Sketch2 from "../assets/FurreverPals/logosketch2.jpg";
+import Graphics from "../assets/FurreverPals/graphicsketches.jpg";
 
 const images = [
   {
@@ -24,6 +28,34 @@ const images = [
     fileName: "components.png",
     description:
       "These components were designed specifically for the Furrever Pals experience, covering everything from the booking flow and date selection to user reviews and the contact form. While minor visual adjustments were made during development, the intent behind each component remained consistent throughout. Responsiveness was a core requirement from the start, which meant components like the review cards needed to be thoughtfully adapted to remain readable and functional across screen sizes.",
+  },
+  {
+    src: Userflow,
+    alt: "The User Flow for the Furrever Pals website",
+    fileName: "userflow.png",
+    description:
+      "A detailed user flow was mapped out across all five core navigation paths: Classes, Adoption, Our Mission, About Us, and the login and authentication system. Each path was designed with intentional decision points, ensuring users always had a clear direction whether they chose to continue or exit gracefully back to the home page. Special attention was given to the booking flow, which guides users through date selection, time slot confirmation, and a two step booking process to reduce errors and set clear expectations.",
+  },
+  {
+    src: Sketch,
+    alt: "The User Flow for the Furrever Pals website",
+    fileName: "logosketch.jpg",
+    description:
+      "The logo development for Furrever Pals explored the intersection of typographic playfulness and brand identity, with each iteration constructed from the letters F and P to anchor the name visually. Three directions were pursued: a cursive treatment emphasising elegance and fluidity, a letter union prioritising structural clarity, and a typographic graphic that paired an F with a mirrored P to form a heart upon convergence. The typographic graphic was ultimately selected as the final mark, as its formal resolution extends beyond mere initials to embody the compassion and hope central to the brand's mission for animal welfare.",
+  },
+  {
+    src: Sketch2,
+    alt: "The graphics design for Furrever Pals",
+    fileName: "logosketch2.png",
+    description:
+      "The puppy yoga concept for Furrever Pals was developed by placing a soft, floppy eared, physically clumsy dog into recognisable yoga poses, letting the mismatch between the dog and the calm world of yoga carry the brand's humor without a tagline. A rounded head and body silhouette with oversized ears formed the base character, since the ears could stretch and fold to suggest different poses without redrawing the whole figure. This base was tested across four postures, cover boy, neck stretch front, neck stretch side, and bagel position, to find how far the shape could bend while still reading as a puppy, with loose hand drawn linework and consistent wordmark placement keeping all four marks feeling like one family.",
+  },
+  {
+    src: Graphics,
+    alt: "The User Flow for the Furrever Pals website",
+    fileName: "graphicsketches.jpg",
+    description:
+      "This sheet extended the puppy yoga exploration by testing the concept across additional formats rather than settling on a single output. A simplified paw print icon was introduced as a companion mark for smaller applications such as app icons, while a puppy stretch pose on a yoga mat continued validating the yoga motif across new postures. A bold wordmark treatment and a ribbon style badge were also explored as alternate identity directions before being set aside in favour of the typographic graphic mark. The recurring heart doodle confirming the F and P combination reflects a deliberate return to that concept, reinforcing it as the strongest solution rather than an accidental repeat. Together, these sketches demonstrate a process of testing multiple directions in parallel before consolidating around the final Furrever Pals identity.",
   },
 ];
 
@@ -52,12 +84,12 @@ const PuppyWorkSection = () => {
     <section className="w-full">
       <h2
         className="
-          flex justify-self-center text-center 
+          flex justify-center text-center justify-self-center
                 underline decoration-dashed text-purple-400
-                sm:text-[1.7rem] sm:pb-[1rem] sm:w-[19rem]
-                md:text-5xl md:pt-[5rem] md:w-[35rem] md:mb-[2rem]
-                 lp:text-[4rem] lp:w-[75rem] lp:justify-center lp:items-center lp:pb-[5rem]
-                lg:text-[3.5rem] lg:w-[60rem] lg:mb-[5rem] lg:mt-[2rem]">
+                sm:text-[1.7rem] sm:pb-[1rem] sm:w-[25rem]
+                md:text-5xl md:pt-[2rem] md:w-[50rem] md:mb-[2rem]
+                lp:text-[4rem] lp:w-[75rem] lp:justify-center lp:items-center lp:pb-[5rem]
+                lg:text-[4.5rem] lg:w-[60rem] lg:mb-[2rem] lg:mt-[2rem]">
         Sketches &amp; Process:
       </h2>
 
@@ -68,9 +100,9 @@ const PuppyWorkSection = () => {
           bg-[#eee6f6]
           sm:px-2 sm:py-3
           sm:w-[25rem] 
-          md:w-[50rem] md:py-5 md:px-5 
+          md:w-[50rem] md:p-5 
           lp:w-[65rem] lp:p-6 
-          lg:w-[70rem] lg:p-7 
+          lg:w-[78rem] lg:p-7 
         "
       >
         <div

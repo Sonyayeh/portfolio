@@ -115,3 +115,7 @@
 .project-card:hover .lift-letter:nth-child(34) {
   transform: translateY(-0.25em);
 }
+
+html, body {
+  overflow-anchor: none;
+}

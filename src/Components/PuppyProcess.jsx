@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Arrow from "./ArrowSvg";
 
 const slides = [
   {
@@ -26,10 +27,11 @@ const PuppyProcess = () => {
   };
 
   return (
-    <div className="font-Dos w-full flex flex-col items-center
-      sm:px-[1rem]
-      md:px-[2rem]
-      lg:px-[2rem]">
+    <div className="font-Dos flex flex-col items-center justify-self-center
+      sm:w-[25rem] sm:pb-[3rem]
+      md:w-[45rem] md:pb-[4rem] 
+      lg:w-[70rem]
+      ">
 
       {slides.map((slide, idx) => (
         <div key={idx} className="w-full border-b border-purple-300
@@ -41,19 +43,19 @@ const PuppyProcess = () => {
           {/* Dropdown Button */}
           <button
             onClick={() => toggle(idx)}
-            className="w-full flex justify-between items-center text-left py-4
-              text-purple-400  decoration-dashed hover:text-orange-400 transition-colors duration-300
-              sm:text-[1.5rem]
-              md:text-[2.5rem]
+            className="flex justify-between items-center text-left
+              text-purple-400  decoration-dashed hover:text-orange-400 transition-colors duration-300 
+              sm:text-[1.5rem] sm:py-5 sm:w-[22rem]
+              md:text-[2.5rem] md:w-[45rem]
               lp:text-[3rem]
-              lg:text-[3rem] lg:py-6">
+              lg:text-[3.5rem] lg:py-5 lg:w-[65rem]">
             {slide.title}
             <span className={`transition-transform duration-300 no-underline
               sm:text-[1.2rem]
               md:text-[2rem]
               lg:text-[2.5rem]
               ${openIndex === idx ? "rotate-180" : "rotate-0"}`}>
-              ▼
+               <Arrow className="w-6 sm:w-[1rem] md:w-[2rem]" />
             </span>
           </button>
 
