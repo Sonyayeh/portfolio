@@ -101,10 +101,10 @@ const Home = () => {
                 <h1
                   className="
                     font-Micro leading-none relative z-10
-                    whitespace-nowrap w-max justify-self-center
+                     justify-self-center text-center
 
-                    text-[1.8rem] ji
-                    sm:text-[1.5rem] sm:top-[-4rem]
+                    text-[1.8rem]
+                    sm:text-[1.5rem] sm:top-[-5rem] sm:w-[15rem] sm:leading-[2rem]
                     md:text-[3.2rem] md:top-[-10rem]
                     lg:text-[4.2rem] lg:top-[5rem]
                     lp:text-[4rem] lp:top-[-1rem]

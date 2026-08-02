@@ -147,7 +147,7 @@ const HomLanguage = () => {
           className="
             mb-4 text-center text-black
             text-[1.45rem]
-            sm:text-[1.7rem]
+            sm:text-[1.5rem] sm:w-[19.5rem]
             md:text-[2rem]
             lg:text-[3rem]
           "
