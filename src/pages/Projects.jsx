@@ -62,8 +62,8 @@ const Projects = () => {
                         <h1 className="
                         sm:text-[3rem] sm:mt-[-15rem] 
                         md:text-[6rem] 
-                        lp:text-[5rem] lp:mt-[-20rem] lp:justify-center lp:items-center
-                        lg:text-[7rem] lg:justify-center lg:text-center lg:items-center lg:ml-[4rem] lg:mt-[-45rem] 
+                        lp:text-[4rem] lp:mt-[-20rem] lp:justify-center lp:items-center
+                        lg:text-[4rem] lg:justify-center lg:text-center lg:items-center lg:ml-[4rem] lg:mt-[-45rem] 
                         " 
                         >Projects:</h1>
                     </div>
