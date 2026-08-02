@@ -44,7 +44,7 @@ const SoftwareUsed = () => {
                 `}
             </style>
 
-            <h1 className="pl-2 justify-center text-center 
+            <h1 className="pl-2 justify-self-center text-center 
             underline decoration-dashed text-blue-400
             sm:text-[1.7rem] sm:pb-[1rem] sm:w-[25rem] sm:pt-[2rem]
             md:text-5xl md:ml-[2rem] md:pt-[5rem] md:w-[50rem] md:mb-[5rem]
@@ -53,11 +53,12 @@ const SoftwareUsed = () => {
                 Software Used:
             </h1>
 
-            <ul className="flex justify-center space-x-8 pl-[12.5rem]
-            sm:grid sm:grid-cols-2 sm:justify-items-center sm:gap-x-[2rem] sm:gap-y-[2rem] sm:space-x-0 sm:pl-0 sm:ml-[3rem] sm:w-[20rem] sm:pb-[2rem]
-            md:grid md:grid-cols-2 md:justify-items-center md:gap-x-[8rem] md:gap-y-[5rem] md:space-x-0 md:pl-0 md:ml-[11rem] md:w-[30rem] md:pb-[4rem]
-            lp:flex lp:w-[65rem] lp:ml-[3rem] lp:gap-[2rem]
-            lg:items-center lg:w-[100rem] lg:pb-[5rem] lg:mt-[6rem] lg:ml-[-15rem] lg:gap-[4rem]
+            <ul className="grid justify-self-center
+                grid-cols-2 gap-y-8 justify-items-center
+                sm:grid-cols-2 sm:w-full sm:pb-[2rem]
+                md:grid-cols-3 md:w-[57rem]
+                lp:grid-cols-3 lp:w-[75rem] 
+                lg:grid-cols-3 lg:w-[77rem]
             ">
                 {/* Adobe Illustrator */}
                 <li className="flex flex-col items-center icon sm:w-[8rem] md:w-[8rem] lp:w-auto" ref={(el) => iconRefs.current[0] = el}>

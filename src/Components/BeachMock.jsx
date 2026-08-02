@@ -62,12 +62,12 @@ const BeachMock = () => {
     <section className="">
       <h2
         className="
-          text-center
+          text-center justify-self-center
           underline decoration-dashed text-blue-400
-          sm:text-[2rem] sm:pb-[1rem] sm:w-full sm:pt-[3rem] sm:ml-[8rem]
-          md:text-[4rem] md:w-[35rem] md:mx-auto md:pt-[5rem] md:ml-[9rem]
-          lp:text-[4rem] lp:ml-[26rem] lp:w-[19rem]
-          lg:text-7xl lg:w-[60rem] lg:mb-[3rem] lg:mt-[2rem] lg:mx-auto lg:ml-[4rem]
+          sm:text-[2rem] sm:pb-[1rem] sm:w-full sm:pt-[3rem]
+          md:text-[4rem] md:w-[35rem] md:mx-auto md:pt-[5rem]
+          lp:text-[4rem] lp:w-[19rem]
+          lg:text-7xl lg:w-[60rem] lg:mb-[3rem] lg:mt-[2rem] lg:mx-auto
         "
       >
         Mockups:
@@ -75,14 +75,13 @@ const BeachMock = () => {
 
       <div
         className="
-          mx-auto
+          mx-auto justify-self-center
           border-2 border-blue-200 border-dashed
           bg-[#eee6f6]
-          sm:px-2 sm:py-3
-          sm:w-[25rem] sm:ml-[1rem]
-          md:w-[50rem] md:p-5 md:ml-[2rem]
-          lp:w-[65rem] lp:p-6 lp:ml-[3rem]
-          lg:w-[78rem] lg:p-7 lg:ml-[-5rem]
+          sm:px-2 sm:py-3 sm:w-[25rem]
+          md:w-[50rem] md:p-5
+          lp:w-[65rem] lp:p-6
+          lg:w-[78rem] lg:p-7
         "
       >
         <div className="flex items-center justify-between border-2 border-blue-200 bg-blue-300 px-2 py-1">

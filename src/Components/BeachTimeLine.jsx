@@ -26,7 +26,7 @@ const BeachTimeLine = () => {
 
   return (
     <section className="w-full p-3 
-    sm:w-[21rem] sm:ml-[2.5rem]
+    sm:w-[25rem] sm:pt-[2rem] sm:pb-[2rem]
     md:w-[25rem] 
     font-vcr
     ">
