@@ -61,8 +61,8 @@ const Projects = () => {
                     <div className="md:w-[62rem] 
                     lp:w-[30rem] lp:justify-self-center
                     lg:justify-self-center">
-                        <h1 className="flex text-2xl justify-self-center text-center items-center
-                        sm:text-[3rem] sm:mt-[-10rem]  sm:pb-[5rem] sm:w-[15rem]
+                        <h1 className="flex text-2xl justify-self-center text-center items-center margin: 0 auto
+                        sm:text-[3rem] sm:mt-[-10rem]  sm:pb-[5rem] sm:w-[15rem] 
                         md:text-[5rem] md:w-[35rem] md:h-[10rem] md:pb-[15rem]
                         lp:text-[4rem] lp:mt-[-20rem] lp:justify--self-center lp:w-[20rem]
                         lg:text-[4rem] lg:w-[20rem] lg:justify-center lg:text-center lg:items-center lg:mt-[-30rem] 
