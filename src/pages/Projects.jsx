@@ -72,12 +72,12 @@ const Projects = () => {
                         </div>
 
                     <div className="
-                            sm:w-[15rem] sm:justify-self-center sm:text-center
+                            sm:justify-self-center sm:text-center
                             md:w-[62rem] md:justify-self-center
                             lp:w-[30rem] lp:justify-self-center
                             lg:justify-self-center">
                             <h1 className="flex flex-col relative text-2xl mx-auto
-                                sm:text-[2rem] sm:mt-[-27rem] sm:pb-[10rem] 
+                                sm:text-[3rem] sm:mt-[-27rem] sm:pb-[10rem] sm:w-[25rem]
                                 md:text-[5rem] md:w-[35rem] md:pb-[15rem] md:mt-[-10rem]
                                 lp:text-[4rem] lp:mt-[-20rem] lp:w-[20rem]
                                 lg:text-[4rem] lg:w-[20rem] lg:mt-[-30rem]
