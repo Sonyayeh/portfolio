@@ -11,7 +11,7 @@ const PuppyProject = () => {
     }
 
     return (
-        <div className="w-full relative mt-[30rem] sm:mt-[5rem] sm:px-0 sm:mx-auto ">
+        <div className="w-full relative mt-[30rem] sm:mt-[5rem] sm:px-0 sm:mx-auto">
             {/* Project Heading and Description */}
             <div className="text-start w-full">
                 {/* this is the section title
