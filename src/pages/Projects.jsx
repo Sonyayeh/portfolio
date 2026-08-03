@@ -35,40 +35,53 @@ const Projects = () => {
                     </div>
 
                     {/* bubble gifs, same as the other pages but the numbers and positions are different */}
-                    <div>
-                        <div className="flex justify-between">
-                            <img loading="lazy" src={Bubble} alt="Bubble gif" className=" 
-                            sm:w-1/4 sm:h-1/4 sm:ml-[0rem] sm:mt-[12rem]
-                            md:w-1/4 md:h-1/4 md:ml-[-2rem] md:mt-[10rem]
-                            lp:w-[20%] lp:h-1/4 lp:ml-[10rem] lp:mt-[5rem]
-                            lg:w-[35%] lg:h-auto lg:ml-[60rem] lg:mt-[-12rem]
-                            max-w-full
-                            " />
+                    <div className="relative
+                        sm:h-[500px]
+                        md:h-[400px]
+                        lp:h-[500px]
+                        lg:h-[600px]
+                        ">
+                        {/* First bubble */}
+                        <img 
+                            loading="lazy" 
+                            src={Bubble} 
+                            alt="Bubble gif" 
+                            className="w-1/4 h-1/4 max-w-full
+                            sm:translate-y-[7rem] sm:translate-x-[3rem] sm:w-[170px]
+                            md:translate-y-[10rem] md:translate-x-[-1rem] md:w-[20%] md:h-[27%]
+                            lp:translate-y-[5rem]
+                            lg:translate-y-[-12rem]
+                            " 
+                            />
+                        
+                        {/* Second bubble */}
+                        <img 
+                            loading="lazy" 
+                            src={Bubble} 
+                            alt="Bubble gif" 
+                            className="absolute w-2/4 h-1/4 max-w-full
+                            sm:left-[0rem] sm:top-[10rem]
+                            md:left-[-2rem] md:top-[-5rem] md:w-[50%] md:h-[70%]
+                            lp:left-[-5rem] lp:top-[-25rem]
+                            lg:left-[80rem] lg:top-[-2rem]
+                            " 
+                        />
+                        
+                        {/* Your actual content (Projects heading, etc.) */}
+                        {/* This stays in normal flow and won't be affected by the bubbles */}
                         </div>
-                    </div>
-                    <div>
-                        <div className="flex justify-between">
-                            <img loading="lazy" src={Bubble} alt="Bubble gif" className=" 
-                            sm:w-2/4 sm:h-1/4 sm:ml-[0rem] sm:mt-[-8rem]
-                            md:w-2/4 md:h-1/4 md:ml-[-5rem] md:mt-[-5rem]
-                            lp:w-[35%] lp:h-1/4 lp:ml-[-5rem] lp:mt-[-25rem]
-                            lg:w-1/5 lg:h-1/5 lg:ml-[80rem] lg:mt-[-2rem]
-                            max-w-full
-                            " />
-                        </div>
-                    </div>
 
                     <div className="md:w-[62rem] 
-                    lp:w-[30rem] lp:justify-self-center
-                    lg:justify-self-center">
-                        <h1 className="flex text-2xl justify-self-center text-center items-center margin: 0 auto
-                        sm:text-[3rem] sm:mt-[-10rem]  sm:pb-[5rem] sm:w-[15rem] 
-                        md:text-[5rem] md:w-[35rem] md:h-[10rem] md:pb-[15rem]
-                        lp:text-[4rem] lp:mt-[-20rem] lp:justify--self-center lp:w-[20rem]
-                        lg:text-[4rem] lg:w-[20rem] lg:justify-center lg:text-center lg:items-center lg:mt-[-30rem] 
-                        " 
-                        >Projects:</h1>
-                    </div>
+                            lp:w-[30rem] lp:justify-self-center
+                            lg:justify-self-center">
+                            <h1 className="flex text-2xl text-center items-center mx-auto
+                                sm:text-[3rem] sm:mt-[-27rem] sm:pb-[10rem] sm:w-[15rem]
+                                md:text-[5rem] md:w-[35rem] md:h-[10rem] md:pb-[15rem] md:mt-[-10rem]
+                                lp:text-[4rem] lp:mt-[-20rem] lp:w-[20rem]
+                                lg:text-[4rem] lg:w-[20rem] lg:mt-[-30rem]
+                                " 
+                            >Projects:</h1>
+                            </div>
 
                     {/* the down arrow */}
                     <div>
