@@ -11,7 +11,7 @@ const PuppyProject = () => {
     }
 
     return (
-        <div className="w-full relative mt-[30rem] sm:mt-[5rem] sm:px-0 sm:mx-auto lg:ml-[5rem] lg:pr-[7rem]">
+        <div className="w-full relative mt-[30rem] sm:mt-[5rem] sm:px-0 sm:mx-auto ">
             {/* Project Heading and Description */}
             <div className="text-start w-full">
                 {/* this is the section title
@@ -20,27 +20,32 @@ const PuppyProject = () => {
                 so when it is brought into the project page
                 I don't have to make another title and manually
                 adjust it */}
-                <h1 className="pl-2 text-2xl justify-center text-center items-center
+                <h1 className="flex pl-2 text-2xl justify-center text-center items-center
                 sm:text-[2rem] sm:pb-[2rem] sm:mt-[5rem] 
-                md:text-[4rem] md:pl-[2rem] 
-                lp:text-[4rem] lp:pb-[2rem] 
-                lg:text-8xl lg:pl-3">
+                md:text-[4rem] md:h-[5rem] md:w-[49rem]
+                lp:text-[4rem] lp:pb-[2rem] lp:justify-self-center
+                lg:text-8xl lg:w-[70rem]">
                     UI/UX Design:
                 </h1>
 
                 {/* Purple heading */}
-                <div className="bg-purple-300 px-4 flex justify-between items-center w-full">
+                <div className="bg-purple-300 px-4 flex justify-between items-center 
+                md:w-[49rem] lp:w-[78rem]
+                w-full">
                     <h5 className="text-white text-3xl 
                     sm:text-[2rem] sm:p-2
-                    md:text-6xl md:py-3 
-                    lp:text-[4rem] 
+                    md:text-[3rem] md:py-3 
+                    lp:text-[4rem] lp:py-5
                     lg:text-[4rem] ">Project</h5>
                 </div>
 
                 
 
                 {/* White background tab bar */}
-                <div className="bg-purple-300 p-4 pt-0 hover:cursor-hover">
+                <div className="bg-purple-300 p-4 pt-0 
+                md:w-[49rem]
+                lp:w-[78rem]
+                hover:cursor-hover">
                     <ul className="flex items-center space-x-1 bg-white w-full px-2 justify-start">
                         {['DISC', 'OPTION', 'VIEW', 'HELP'].map((item, index) => (
                             <li key={index} className="text-purple-200 text-lg hover:text-orange-300 
@@ -54,10 +59,15 @@ const PuppyProject = () => {
             </div>
 
             {/* Project box with border */}
-            <div className="w-full p-0 sm:p-0 flex flex-col border-solid border-x-[1rem] border-b-[1rem] 
-            border-purple-300 md:p-3">
+            <div className="w-full p-0 sm:p-0 
+            md:w-[49rem]
+            lp:w-[78rem]
+            flex flex-col border-solid border-x-[1rem] border-b-[1rem] 
+            border-purple-300">
                 {/* Content Container */}
-                <div className="space-y-4 flex flex-col py-2 px-4  w-full lg:flex-row ">
+                <div className="space-y-4 flex flex-col py-2 px-4  w-full 
+                md:w-[30rem] 
+                lg:flex-row ">
                     {/* Title and Description Section */}
                     <div className="w-full lg:w-1/2 lg:text-left">
                         <h5 className="text-purple-400 pb-2 text-2xl 
@@ -69,31 +79,31 @@ const PuppyProject = () => {
                         </h5>
                         <h4 className="text-lg leading-6 
                         sm:text-[1rem] sm:pt-2 
-                        md:text-[1.8rem] md:pt-[2rem] md:pr-[10rem] md:w-[40rem] md:leading-[2.5rem]
-                        lp:text-[2rem] lp:leading-[2.5rem] lp:w-[47rem]
-                        lg:text-[2rem] lg:mt-[5rem] lg:w-[45rem]">
+                        md:text-[1.3rem] md:pt-[2rem] md:pr-[10rem] md:w-[35rem] md:leading-[2rem]
+                        lp:text-[1.5rem] lp:leading-[2.5rem] lp:w-[55rem]
+                        lg:text-[2rem] lg:mt-[5rem] lg:pb-[2rem] lg:w-[58rem]">
                             {project.description}
                         </h4>
                         
                         {/* Software used section */}
                       <div className="font-Dos flex flex-col items-start justify-start w-full gap-2 
                         sm:mt-[2rem] sm:flex-row sm:flex-wrap sm:pb-2
-                        md:flex-row md:flex-wrap md:items-center md:gap-3 md:py-[2rem]
-                        lp:
-                        lg:w-[55rem] lg:mt-[3rem] lg:pb-[3rem] lg:flex-row">
+                        md:flex-row md:flex-wrap md:items-center md:gap-3 md:py-[2rem] md:w-[47rem]
+                        lp:w-[72rem]
+                        lg:w-[72rem] lg:mt-[5rem] lg:pb-[3rem] lg:flex-row">
                             
                             <h5 className="text-purple-400 pb-2 text-2xl 
                         sm:text-[1.5rem] sm:text-start
                         md:text-[3rem] md:w-[45rem] md:pb-[2rem]
                         lp:text-[4rem] lp:w-[55rem] lp:pb-[3rem]
-                        lg:text-[4rem] lg:pb-[10rem]lg:absolute lg:w-[60rem]">
+                        lg:text-[4rem] lg:mb-[10rem] lg:absolute lg:w-[60rem]">
                             Software Used:
                         </h5>
 
                             {[project.chip1, project.chip2, project.chip3, project.chip4, project.chip5, project.chip6].map((chip, index) => (
                                 <span key={index} className="bg-orange-200 text-purple-900 px-4 py-2 rounded-full text-sm hover:bg-purple-400 hover:text-white duration-300
                                 sm:text-[.8rem] 
-                                md:text-[2rem] md:px-6 md:py-4 
+                                md:text-[1.2rem] md:px-6 md:py-4
                                 lp:text-[1.5rem] 
                                 lg:text-[1.5rem]">
                                     {chip}
@@ -102,28 +112,28 @@ const PuppyProject = () => {
                         </div>
                     </div>
                     {/* Image Section */}
-                    <div className="flex justify-center w-full lg:w-1/2 lg:ml-[-14rem] lg:pt-[50rem]">
+                    <div className="flex justify-center w-full lg:w-[85%] lg:ml-[-10rem] lg:pt-[50rem]">
                         <img
                             src={project.imageurl}
                             alt="Project Preview"
                             className="w-full h-auto object-contain rounded-xl 
                             sm:w-[20rem] sm:h-[30rem] sm:mt-[-3rem]
-                            md:w-[24rem] md:h-[32rem] md:ml-[31rem] md:mt-[-60rem] 
-                            lg:w-[45rem] lg:h-[35rem] lp:mt-[-55rem] lp:ml-[38rem]
-                            lp:w-[40rem] lp:h-[38rem] lg:mt-[-43rem] lg:ml-[30rem]"
+                            md:w-[20rem] md:h-[32rem] md:ml-[42rem] md:mt-[-50rem] 
+                            lp:w-[40rem] lp:ml-[90rem] lp:h-[23rem] lp:mt-[-42rem]
+                            lg:mt-[-45rem]  lg:w-[40rem] lg:h-[30rem]"
                         />
                     </div>
                 </div>
 
                 {/* View More Button */}
                 <div className="flex justify-center 
-                lp:mb-[-2rem]
+                lp:mb-[2rem]
                 ">
                     <Link to="/puppy">
                         <button className="font-Dos px-6 py-3 bg-purple-300 text-white rounded-lg shadow-md  hover:text-purple-900 focus:outline-none focus:ring-2 focus:ring-purple-300 transition-colors duration-300 
                         sm:mb-[2rem] sm:text-[1rem]
                         md:mb-[2rem] md:text-[1.5rem]
-                        lp:text-[1.5rem] lp:mt-[2rem]
+                        lp:text-[1.5rem] lp:mt-[2rem] 
                         lg:mt-[1rem]"
                         onClick={() => window.scrollTo({ top: 0 })}
                         >
