@@ -107,7 +107,7 @@ const Home = () => {
                     sm:text-[1.5rem] sm:top-[-5rem] sm:w-[15rem] sm:leading-[2rem]
                     md:text-[3.2rem] md:top-[-10rem] md:w-[40rem] md:leading-[5rem]
                     lg:text-[4.2rem] lg:top-[-1rem] lg:w-[30rem]
-                    lp:text-[4rem] lp:top-[-11rem] lp:w-[70rem]
+                    lp:text-[4rem] lp:top-[-8rem] lp:w-[70rem]
                     tracking-wide
                     md:tracking-wider
                     lg:text-[3rem] lg:w-[76rem] lg:tracking-[0.08em]
@@ -127,7 +127,7 @@ const Home = () => {
                     w-full
                     sm:top-1
                     md:top-[3rem]
-                    lp:top-[-4rem] lp:w-[70%]
+                    lp:top-[5rem] lp:w-[70%]
                     lg:top-[12.5rem] lg:w-[55rem]
                   "
                 />
@@ -145,7 +145,7 @@ const Home = () => {
                 sm:top-[1rem] sm:left-[-1rem] sm:w-[8rem]
                 md:top-[1rem] md:left-[2rem] md:w-[14rem]
                 lg:top-[6rem] lg:left-[57rem] lg:w-[18rem]
-                lp:top-[5rem] lp:left-[62rem] lp:w-[14rem]
+                lp:top-[10rem] lp:left-[62rem] lp:w-[14rem]
               "
             />
 
@@ -157,7 +157,7 @@ const Home = () => {
                 sm:top-[15.5rem]
                 md:top-[32.5rem]
                 lg:top-[18rem]
-                lp:top-[11rem]
+                lp:top-[20rem]
               "
             >
               <ReactTyped
@@ -194,16 +194,16 @@ const Home = () => {
                 sm:top-[20rem] sm:left-[70%] sm:-translate-x-1/2
                 md:top-[40rem] md:left-[80%]
                 lg:top-[28rem] lg:left-[82%]
-                lp:top-[20rem] lp:left-[78%]
+                lp:top-[30rem] lp:left-[78%]
               "
             >
               <CatGif
                 className="
                   w-[5rem]
                   sm:w-[5.5rem] sm:ml-[4rem]
-                  md:w-[9rem]
-                  lg:w-[11rem]
-                  lp:w-[10rem]
+                  md:w-[9rem] 
+                  lg:w-[11rem] 
+                  lp:w-[10rem] 
                 "
               />
             </div>
@@ -214,9 +214,9 @@ const Home = () => {
                 absolute z-20
                 left-1/2 -translate-x-1/2
                 bottom-[2rem]
-                md:bottom-[-1rem] md:mb-[15rem]
+                md:bottom-[-1rem] md:mb-[5rem]
                 lg:bottom-[-10rem]
-                lp:bottom-[-5rem]
+                lp:bottom-[-13rem]
                 hover:cursor-hover
               "
               aria-label="Scroll to sample work"
@@ -255,7 +255,7 @@ const Home = () => {
                 sm:text-[2rem]
                 md:text-[5rem]
                 lg:text-[5rem]
-                lp:text-[4rem]
+                lp:text-[4rem] lp:pt-[10rem]
               "
             >
               A Few Things I Love
@@ -272,7 +272,7 @@ const Home = () => {
                 sm:right-[1rem] sm:top-[3rem] sm:w-[8rem]
                 md:right-[1rem] md:top-[10rem] md:w-[18rem]
                 lg:right-[55rem] lg:top-[2rem] lg:w-[20rem]
-                lp:right-[1rem] lp:top-[-2rem] lp:w-[22rem]
+                lp:right-[1rem] lp:top-[7rem] lp:w-[22rem]
               "
             />
           </div>

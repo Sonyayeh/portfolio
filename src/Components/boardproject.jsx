@@ -15,7 +15,10 @@ const BoardProject = () => {
 
     <div className="text-start w-full">
     {/* purple heading */}
-   <div className="bg-purple-300 px-4 flex justify-between items-center w-full">
+   <div className="bg-purple-300 px-4 flex justify-between items-center w-full
+    md:w-[49rem]
+    lp:w-[60rem] lp:justify-self-center
+   ">
         <h5 className="text-white text-3xl 
         sm:text-[2rem] sm:p-2
         md:text-6xl md:py-3 
@@ -24,7 +27,10 @@ const BoardProject = () => {
     </div>
 
     {/* White background tab bar */}
-    <div className="bg-purple-300 p-4 pt-0 hover:cursor-hover">
+    <div className="bg-purple-300 p-4 pt-0 hover:cursor-hover
+    md:w-[49rem]
+    lp:w-[60rem] lp:justify-self-center
+    ">
         <ul className="flex items-center space-x-1 bg-white w-full px-2 justify-start">
             {['DISC', 'OPTION', 'VIEW', 'HELP'].map((item, index) => (
                 <li key={index} className="text-purple-200 text-lg hover:text-orange-300 
@@ -39,7 +45,9 @@ const BoardProject = () => {
 
             {/* Project box with border */}
              <div className="w-full p-0 sm:p-0 flex flex-col border-solid border-x-[1rem] border-b-[1rem] 
-            border-purple-300 md:p-3">
+              md:w-[49rem]
+              lp:w-[60rem] lp:justify-self-center
+              border-purple-300 md:p-3">
 
                 {/* Content Container */}
                <div className="space-y-4 flex flex-col py-2 px-4  w-full lg:flex-row ">
@@ -48,15 +56,15 @@ const BoardProject = () => {
                     <div className="w-full lg:w-1/2 lg:text-left">
                         <h5 className="text-purple-400 pb-2 text-2xl 
                         sm:text-[1.5rem] sm:text-start sm:pt-5 
-                        md:text-[3rem] md:pt-[3rem] md:w-[50rem] 
-                        lp:text-[4rem] lp:w-[70rem] lp:pb-[3rem]
+                        md:text-[3rem] md:pt-[2rem] md:w-[45rem] md:leading-[3rem]
+                        lp:text-[3rem] lp:w-[55rem] lp:pb-[1rem]
                         lg:text-[4rem] lg:pt-[2rem] lg:absolute lg:w-[67rem]">
                             {project.title}
                         </h5>
                         <h4 className="text-lg leading-6 
                         sm:text-[1rem] sm:pt-2 
-                        md:text-[1.8rem] md:pt-[2rem] md:pr-[10rem] md:w-[40rem] md:leading-[2.5rem]
-                        lp:pr-[5rem] lp:w-[40rem]
+                        md:text-[1.3rem] md:pt-[2rem] md:pr-[10rem] md:w-[34rem] md:leading-[2rem]
+                        lp:text-[1.5rem] lp:leading-[2.5rem] lp:w-[43rem]
                         lg:text-[2rem] lg:mt-[5rem] lg:w-[45rem]">
                             {project.description}
                         </h4>
@@ -65,13 +73,13 @@ const BoardProject = () => {
                       <div className="font-Dos flex flex-col items-start justify-start w-full gap-2 
                         sm:mt-[2rem] sm:flex-row sm:flex-wrap sm:pb-2
                         md:flex-row md:flex-wrap md:items-center md:gap-3 md:py-[2rem]
-                        lp:
+                        lp:w-[52rem]
                         lg:w-[55rem] lg:mt-[3rem] lg:pb-[3rem] lg:flex-row">
                             
                             <h5 className="text-purple-400 pb-2 text-2xl 
                         sm:text-[1.5rem] sm:text-start
                         md:text-[3rem] md:w-[45rem] md:pb-[2rem]
-                        lp:text-[4rem] lp:w-[55rem] lp:pb-[3rem]
+                        lp:text-[3rem] lp:w-[55rem] lp:pb-[1rem]
                         lg:text-[4rem] lg:pb-[10rem]lg:absolute lg:w-[60rem]">
                             Software Used:
                         </h5>
@@ -82,7 +90,7 @@ const BoardProject = () => {
                             {[project.chip1, project.chip2, project.chip3].map((chip, index) => (
                                 <span key={index} className="bg-orange-200 text-purple-900 px-4 py-2 rounded-full text-sm hover:bg-purple-400 hover:text-white duration-300
                                 sm:text-[.8rem] 
-                                md:text-[2rem] md:px-6 md:py-4 
+                                md:text-[1.2rem] md:px-6 md:py-4 
                                 lp:text-[1.5rem] 
                                 lg:text-[1.5rem]">
                                     {chip}
@@ -98,8 +106,8 @@ const BoardProject = () => {
                             alt="Project Preview"
                             className="w-full h-auto object-contain rounded-xl 
                             sm:w-[20rem] sm:h-[25rem] sm:pb-[2rem]
-                            md:w-[25rem] md:h-[40rem] md:ml-[30rem] md:mt-[-52rem] 
-                            lp:w-[40rem] lp:h-[36rem] lp:mt-[-45rem] lp:ml-[38rem]
+                            md:w-[20rem] md:h-[25rem] md:ml-[25rem] md:mt-[-40rem] 
+                            lp:w-[40rem] lp:h-[25rem] lp:mt-[-40rem] lp:ml-[34rem]
                             lg:w-[45rem] lg:h-[35rem] lg:mt-[-52rem]
                             "
                         />
@@ -109,7 +117,7 @@ const BoardProject = () => {
 
                 {/* View More Button */}
                 <div className="flex justify-center
-                               lp:mb-[-2rem]
+                               lp:mb-[2rem]
                                ">
                                    <Link to="/bcit">
                                       <button className="font-Dos px-6 py-3 bg-purple-300 text-white rounded-lg shadow-md hover:bg-orange-200 hover:text-purple-900 focus:outline-none focus:ring-2 focus:ring-purple-300 transition-colors duration-300 

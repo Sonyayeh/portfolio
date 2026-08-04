@@ -13,7 +13,9 @@ const BcitProject = () => {
     return (
         <div className="w-full relative mt-[30rem] sm:mt-[5rem] sm:px-0 sm:mx-auto lg:ml-[5rem] lg:pr-[7rem]">
 
-    <div className="text-start w-full">
+    <div className="text-start w-full
+     md:w-[49rem] lp:w-[60rem] lp:justify-self-center
+    ">
     {/* purple heading */}
    <div className="bg-purple-300 px-4 flex justify-between items-center w-full">
         <h5 className="text-white text-3xl 
@@ -24,7 +26,10 @@ const BcitProject = () => {
     </div>
 
     {/* White background tab bar */}
-    <div className="bg-purple-300 p-4 pt-0 hover:cursor-hover">
+    <div className="bg-purple-300 p-4 pt-0 hover:cursor-hover
+    md:w-[49rem]
+    lp:w-[60rem] lp:justify-self-center
+    ">
         <ul className="flex items-center space-x-1 bg-white w-full px-2 justify-start">
             {['DISC', 'OPTION', 'VIEW', 'HELP'].map((item, index) => (
                 <li key={index} className="text-purple-200 text-lg hover:text-orange-300 
@@ -40,6 +45,8 @@ const BcitProject = () => {
 
             {/* Project box with border */}
             <div className="w-full p-0 sm:p-0 flex flex-col border-solid border-x-[1rem] border-b-[1rem] 
+            md:w-[49rem]
+            lp:w-[60rem] lp:justify-self-center
             border-purple-300 md:p-3">
                 {/* Content Container */}
                 <div className="space-y-4 flex flex-col py-2 px-4  w-full lg:flex-row ">
@@ -48,14 +55,14 @@ const BcitProject = () => {
                         <h5 className="text-purple-400 pb-2 text-2xl 
                         sm:text-[1.5rem] sm:text-start sm:pt-5 
                         md:text-[3rem] md:pt-[3rem] md:w-[45rem] 
-                        lp:text-[4rem] lp:w-[55rem] lp:pb-[3rem]
+                        lp:text-[3rem] lp:w-[55rem] lp:pb-[1rem]
                         lg:text-[4rem] lg:pt-[2rem] lg:absolute lg:w-[60rem]">
                             {project.title}
                         </h5>
                         <h4 className="text-lg leading-6 
                         sm:text-[1rem] sm:pt-2 
-                        md:text-[1.8rem] md:pt-[2rem] md:pr-[10rem] md:w-[40rem] md:leading-[2.5rem]
-                        lp:w-[47rem]
+                        md:text-[1.3rem] md:pt-[2rem] md:pr-[10rem] md:w-[35rem] md:leading-[2rem]
+                        lp:text-[1.5rem] lp:leading-[2.5rem] lp:w-[43rem]
                         lg:text-[2rem] lg:mt-[6rem] lg:w-[45rem]">
                             {project.description}
                         </h4>
@@ -69,7 +76,7 @@ const BcitProject = () => {
                             <h5 className="text-purple-400 pb-2 text-2xl 
                         sm:text-[1.5rem] sm:text-start
                         md:text-[3rem] md:w-[45rem] md:pb-[2rem]
-                        lp:text-[4rem] lp:w-[55rem] lp:pb-[3rem]
+                        lp:text-[3rem] lp:w-[55rem] lp:pb-[1rem]
                         lg:text-[4rem] lg:pb-[10rem]lg:absolute lg:w-[60rem]">
                             Software Used:
                         </h5>
@@ -77,8 +84,8 @@ const BcitProject = () => {
                             {[project.chip1, project.chip2, project.chip3, project.chip4].map((chip, index) => (
                                 <span key={index} className="bg-orange-200 text-purple-900 px-4 py-2 rounded-full text-sm hover:bg-purple-400 hover:text-white duration-300
                                 sm:text-[.8rem] 
-                                md:text-[2rem] md:px-6 md:py-4 
-                                lp:text-[1.5rem] 
+                                md:text-[1.2rem] md:px-6 md:py-4 
+                                lp:text-[1.5rem]
                                 lg:text-[1.5rem]">
                                     {chip}
                                 </span>
@@ -92,8 +99,8 @@ const BcitProject = () => {
                             alt="Project Preview"
                             className="w-full h-auto object-contain rounded-xl 
                             sm:w-[20rem] sm:h-[20rem]
-                            md:w-[25rem] md:h-[40rem] md:ml-[30rem] md:mt-[-55rem] 
-                            lp:w-[33rem] lp:h-[30rem] lp:mt-[-45rem] lp:mr-[-10rem]
+                            md:w-[25rem] md:h-[18rem] md:ml-[25rem] md:mt-[-37rem] 
+                            lp:w-[23rem] lp:h-[20rem] lp:mt-[-38rem] lp:mr-[-8rem]
                             lg:w-[30rem] lg:h-[35rem] lg:mt-[-45rem] lg:ml-[25rem]
                             "
                         />
@@ -102,7 +109,7 @@ const BcitProject = () => {
 
                 {/* View More Button */}
                 <div className="flex justify-center
-                lp:mb-[-2rem]
+                lp:mb-[2rem]
                 ">
                     <Link to="/bcit">
                        <button className="font-Dos px-6 py-3 bg-purple-300 text-white rounded-lg shadow-md hover:bg-orange-200 hover:text-purple-900 focus:outline-none focus:ring-2 focus:ring-purple-300 transition-colors duration-300 
