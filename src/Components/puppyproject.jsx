@@ -30,7 +30,7 @@ const PuppyProject = () => {
 
                 {/* Purple heading */}
                 <div className="bg-purple-300 px-4 flex justify-between items-center 
-                md:w-[49rem] lp:w-[78rem]
+                md:w-[49rem] lp:w-[60rem] lp:justify-self-center
                 w-full">
                     <h5 className="text-white text-3xl 
                     sm:text-[2rem] sm:p-2
@@ -44,7 +44,7 @@ const PuppyProject = () => {
                 {/* White background tab bar */}
                 <div className="bg-purple-300 p-4 pt-0 
                 md:w-[49rem]
-                lp:w-[78rem]
+                lp:w-[60rem] lp:justify-self-center
                 hover:cursor-hover">
                     <ul className="flex items-center space-x-1 bg-white w-full px-2 justify-start">
                         {['DISC', 'OPTION', 'VIEW', 'HELP'].map((item, index) => (
@@ -61,7 +61,7 @@ const PuppyProject = () => {
             {/* Project box with border */}
             <div className="w-full p-0 sm:p-0 
             md:w-[49rem]
-            lp:w-[78rem]
+            lp:w-[60rem] lp:justify-self-center
             flex flex-col border-solid border-x-[1rem] border-b-[1rem] 
             border-purple-300">
                 {/* Content Container */}
@@ -73,14 +73,14 @@ const PuppyProject = () => {
                         <h5 className="text-purple-400 pb-2 text-2xl 
                         sm:text-[1.5rem] sm:text-start sm:pt-5 
                         md:text-[3rem] md:pt-[3rem] md:w-[45rem] 
-                        lp:text-[4rem] lp:w-[55rem] lp:pb-[3rem]
+                        lp:text-[3rem] lp:w-[55rem] lp:pb-[1rem]
                         lg:text-[4rem] lg:pt-[2rem] lg:absolute lg:w-[60rem]">
                             {project.title}
                         </h5>
                         <h4 className="text-lg leading-6 
                         sm:text-[1rem] sm:pt-2 
                         md:text-[1.3rem] md:pt-[2rem] md:pr-[10rem] md:w-[35rem] md:leading-[2rem]
-                        lp:text-[1.5rem] lp:leading-[2.5rem] lp:w-[55rem]
+                        lp:text-[1.5rem] lp:leading-[2.5rem] lp:w-[43rem]
                         lg:text-[2rem] lg:mt-[5rem] lg:pb-[2rem] lg:w-[58rem]">
                             {project.description}
                         </h4>
@@ -89,13 +89,13 @@ const PuppyProject = () => {
                       <div className="font-Dos flex flex-col items-start justify-start w-full gap-2 
                         sm:mt-[2rem] sm:flex-row sm:flex-wrap sm:pb-2
                         md:flex-row md:flex-wrap md:items-center md:gap-3 md:py-[2rem] md:w-[47rem]
-                        lp:w-[72rem]
+                        lp:w-[52rem]
                         lg:w-[72rem] lg:mt-[5rem] lg:pb-[3rem] lg:flex-row">
                             
                             <h5 className="text-purple-400 pb-2 text-2xl 
                         sm:text-[1.5rem] sm:text-start
                         md:text-[3rem] md:w-[45rem] md:pb-[2rem]
-                        lp:text-[4rem] lp:w-[55rem] lp:pb-[3rem]
+                        lp:text-[3rem] lp:w-[55rem] lp:pb-[1rem]
                         lg:text-[4rem] lg:mb-[10rem] lg:absolute lg:w-[60rem]">
                             Software Used:
                         </h5>
@@ -104,7 +104,7 @@ const PuppyProject = () => {
                                 <span key={index} className="bg-orange-200 text-purple-900 px-4 py-2 rounded-full text-sm hover:bg-purple-400 hover:text-white duration-300
                                 sm:text-[.8rem] 
                                 md:text-[1.2rem] md:px-6 md:py-4
-                                lp:text-[1.5rem] 
+                                lp:text-[1.5rem]
                                 lg:text-[1.5rem]">
                                     {chip}
                                 </span>
@@ -119,7 +119,7 @@ const PuppyProject = () => {
                             className="w-full h-auto object-contain rounded-xl 
                             sm:w-[20rem] sm:h-[30rem] sm:mt-[-3rem]
                             md:w-[20rem] md:h-[32rem] md:ml-[42rem] md:mt-[-50rem] 
-                            lp:w-[40rem] lp:ml-[90rem] lp:h-[23rem] lp:mt-[-42rem]
+                            lp:w-[40rem] lp:ml-[60rem] lp:h-[23rem] lp:mt-[-45rem]
                             lg:mt-[-45rem]  lg:w-[40rem] lg:h-[30rem]"
                         />
                     </div>
@@ -130,7 +130,7 @@ const PuppyProject = () => {
                 lp:mb-[2rem]
                 ">
                     <Link to="/puppy">
-                        <button className="font-Dos px-6 py-3 bg-purple-300 text-white rounded-lg shadow-md  hover:text-purple-900 focus:outline-none focus:ring-2 focus:ring-purple-300 transition-colors duration-300 
+                        <button className="font-Dos px-6 py-3 bg-purple-300 text-white rounded-lg shadow-md  hover:bg-orange-200 hover:text-purple-900  focus:outline-none focus:ring-2 focus:ring-purple-300 transition-colors duration-300 
                         sm:mb-[2rem] sm:text-[1rem]
                         md:mb-[2rem] md:text-[1.5rem]
                         lp:text-[1.5rem] lp:mt-[2rem] 

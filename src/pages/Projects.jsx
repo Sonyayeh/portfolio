@@ -47,9 +47,9 @@ const Projects = () => {
                             src={Bubble} 
                             alt="Bubble gif" 
                             className="w-1/4 h-1/4 max-w-full
-                            sm:translate-y-[7rem] sm:translate-x-[3rem] sm:w-[170px]
-                            md:translate-y-[10rem] md:translate-x-[-1rem] md:w-[20%] md:h-[27%]
-                            lp:translate-y-[5rem]
+                            sm:translate-y-[11rem] sm:translate-x-[-3rem] sm:w-[170px]
+                            md:translate-y-[10rem] md:translate-x-[7rem] md:w-[17%] md:h-[23%]
+                            lp:translate-y-[5rem] lp:w-[15%] lp:h-[25%]
                             lg:translate-y-[-12rem]
                             " 
                             />
@@ -60,9 +60,9 @@ const Projects = () => {
                             src={Bubble} 
                             alt="Bubble gif" 
                             className="absolute w-2/4 h-1/4 max-w-full
-                            sm:left-[0rem] sm:top-[10rem]
-                            md:left-[-2rem] md:top-[-5rem] md:w-[50%] md:h-[70%]
-                            lp:left-[-5rem] lp:top-[-25rem]
+                            sm:left-[4rem] sm:top-[10rem] sm:w-[15%] sm:h-[8%]
+                            md:left-[-2rem] md:top-[-5rem] md:w-[30%] md:h-[40%]
+                            lp:left-[-5rem] lp:top-[-5rem]
                             lg:left-[80rem] lg:top-[-2rem]
                             " 
                         />
@@ -73,13 +73,13 @@ const Projects = () => {
 
                     <div className="
                             sm:justify-self-center sm:text-center
-                            md:w-[62rem] md:justify-self-center
+                            md:w-[33rem] md:justify-self-center
                             lp:w-[30rem] lp:justify-self-center
                             lg:justify-self-center">
                             <h1 className="flex flex-col relative text-2xl mx-auto
                                 sm:text-[3rem] sm:mt-[-27rem] sm:pb-[10rem] sm:w-[25rem]
                                 md:text-[5rem] md:w-[35rem] md:pb-[15rem] md:mt-[-10rem]
-                                lp:text-[4rem] lp:mt-[-20rem] lp:w-[20rem]
+                                lp:text-[4rem] lp:mt-[-30rem] lp:w-[21rem]
                                 lg:text-[4rem] lg:w-[20rem] lg:mt-[-30rem]
                                 " 
                             >Projects:</h1>
