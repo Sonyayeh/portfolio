@@ -308,7 +308,7 @@ const Home = () => {
                 "
               >
                <Link
-                  to="/furreverpals"
+                  to="/puppy"
                   onClick={goToTop}
                   className="relative block w-full hover:cursor-pointer"
                   aria-label="View Furrever Pals Puppy Yoga project"
