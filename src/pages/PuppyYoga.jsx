@@ -104,15 +104,16 @@ const PuppyYoga = () => {
                "></div>
 
                {/* process area */}
-               <div>
-                <h1 className="flex justify-self-center text-purple-400 underline decoration-dashed
-                sm:text-[1.7rem] sm:pb-[1rem] sm:w-[17rem]
-                md:text-[3rem] md:pt-[1rem] md:w-[55rem]
-                lp:text-[4rem] lp:w-[75rem] lp:justify-center lp:items-center lp:pb-[5rem]
-                lg:text-7xl lg:w-[70rem] lg:mt-[2rem]">
-                Design Rationale:
-                 </h1>
-                <PuppyProcess />
+               <div className=" justify-self-center"> 
+                    <h1 className="flex justify-center text-purple-400 underline decoration-dashed
+                    sm:text-[1.7rem] sm:w-[23rem] sm:justify-center
+                md:text-[3rem] md:w-[35rem] md:mb-[3rem] 
+                lp:text-[4rem] lp:w-[40rem]
+                lg:text-[4.5rem] lg:pb-[2rem] lg:w-[50rem]
+                ">
+                    Design Rationale:
+                </h1>
+                    <PuppyProcess />
                </div>
 
                   {/* added a line for separate sections */}

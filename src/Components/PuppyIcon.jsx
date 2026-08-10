@@ -51,7 +51,7 @@ const PuppySoft = () => {
 
             <h1 className="flex justify-self-center justify-center
                 underline decoration-dashed text-purple-400
-                sm:text-[1.7rem] sm:pb-[2rem] sm:w-[25rem] 
+                sm:text-[1.7rem] sm:pb-[2rem] sm:w-[23rem] 
                 md:text-[3rem] md:pt-[1rem] md:w-[60rem] md:mb-[2rem]
                 lp:text-[4rem] lp:w-[75rem] lp:justify-center lp:items-center lp:pb-[5rem]
                 lg:text-[4.5rem] lg:w-[70rem]">
