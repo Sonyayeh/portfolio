@@ -9,7 +9,7 @@ import { Link } from "react-router-dom";
 
 const PuppyYoga = () => {
     // Find the project by id from projectData
-    const project = projectData.find((proj) => proj.id === 4);
+    const project = projectData.find((proj) => proj.id === 2);
 
     // State for the active tab
     const [activeTab, setActiveTab] = useState('ABOUT');
