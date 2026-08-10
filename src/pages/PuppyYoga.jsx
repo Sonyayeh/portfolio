@@ -35,14 +35,14 @@ const PuppyYoga = () => {
             {/* Project Heading and Description */}
             <div className="text-start ">
                 <h1 className="flex justify-self-center text-purple-500 underline decoration-dashed justify-center
-                sm:text-[2rem] sm:pb-[2rem] sm:mt-[-5rem] sm:w-[25rem] sm:text-center
+                sm:text-[2rem] sm:pb-[2rem] sm:mt-[-5rem] sm:w-[22rem] sm:text-center
                 md:text-[4rem] md:pt-[10rem] md:w-[55rem]
                 lp:text-[3.7rem] lp:w-[72rem] lp:justify-center lp:items-center
                 lg:text-[4.5rem] lg:w-[85rem] lg:mb-[3rem] lg:mt-[2rem]">
                     Puppy Yoga Studio: Furrever Pals
                 </h1>
                 <h1 className="flex justify-self-center underline decoration-dashed text-purple-400 text-center justify-center
-                sm:text-[1.5rem] sm:pb-[2rem] sm:w-[25rem]
+                sm:text-[1.5rem] sm:pb-[2rem] sm:w-[22rem]
                 md:text-[3.5rem] md:pt-[3rem] md:w-[55rem] 
                 lp:text-[4rem] lp:w-[75rem] lp:justify-center lp:items-center
                 lg:text-[4rem] lg:w-[70rem] lg:mb-[2rem]">
@@ -50,7 +50,7 @@ const PuppyYoga = () => {
                 </h1>
                 <div className="flex justify-self-center text-center">
               <h3 className="text-orange-500 text-left 
-                sm:text-[1rem] sm:pb-[1rem] sm:w-[25rem] 
+                sm:text-[1rem] sm:pb-[1rem] sm:w-[22rem] 
                 md:text-[2rem] md:w-[50rem] md:pb-[2rem]
                 lp:text-[2rem] lp:w-[65rem] lp:leading-[3rem] lp:pb-[4rem]
                 lg:text-[3rem] lg:w-[85rem] lg:mb-[5rem] lg:mt-[2rem] lg:leading-[5rem]">
@@ -138,7 +138,7 @@ const PuppyYoga = () => {
 
                 <div className="flex mt-8 
                                p:justify-between
-                               sm:w-[25rem] sm:justify-between sm:ml-[0.6rem]
+                               sm:w-[20rem] sm:justify-between sm:ml-[0.6rem]
                                md:justify-between md:w-[50rem] md:ml-[-1rem]
                                lp:w-[63rem] lp:ml-[5rem] lp:max-aut
                                 lg:w-[70rem] lg:mx-auto lg:justify-between ">

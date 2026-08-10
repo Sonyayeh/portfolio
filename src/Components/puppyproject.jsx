@@ -24,7 +24,7 @@ const PuppyProject = () => {
                 sm:text-[2rem] sm:pb-[2rem] sm:mt-[5rem] 
                 md:text-[4rem] md:h-[5rem] md:w-[49rem]
                 lp:text-[4rem] lp:pb-[2rem] lp:justify-self-center
-                lg:text-8xl lg:w-[70rem]">
+                lg:text-[4rem] lg:w-[70rem]">
                     UI/UX Design:
                 </h1>
 
@@ -36,7 +36,7 @@ const PuppyProject = () => {
                     sm:text-[2rem] sm:p-2
                     md:text-[3rem] md:py-3 
                     lp:text-[4rem] lp:py-5
-                    lg:text-[4rem] ">Project</h5>
+                    lg:text-[3rem] ">Project</h5>
                 </div>
 
                 
@@ -52,7 +52,7 @@ const PuppyProject = () => {
                             sm:text-[1.5rem] sm:py-1 sm:p-2
                             md:text-[3rem] md:py-5
                             lp:text-[3rem] 
-                            lg:text-[3.5rem] font-semibold">{item}</li>
+                            lg:text-[3rem] font-semibold">{item}</li>
                         ))}
                     </ul>
                 </div>
@@ -74,14 +74,14 @@ const PuppyProject = () => {
                         sm:text-[1.5rem] sm:text-start sm:pt-5 
                         md:text-[3rem] md:pt-[3rem] md:w-[45rem] 
                         lp:text-[3rem] lp:w-[55rem] lp:pb-[1rem]
-                        lg:text-[4rem] lg:pt-[2rem] lg:absolute lg:w-[60rem]">
+                        lg:text-[3rem] lg:pt-[2rem] lg:absolute lg:w-[60rem]">
                             {project.title}
                         </h5>
                         <h4 className="text-lg leading-6 
                         sm:text-[1rem] sm:pt-2 
                         md:text-[1.3rem] md:pt-[2rem] md:pr-[10rem] md:w-[35rem] md:leading-[2rem]
                         lp:text-[1.5rem] lp:leading-[2.5rem] lp:w-[43rem]
-                        lg:text-[2rem] lg:mt-[5rem] lg:pb-[2rem] lg:w-[58rem]">
+                        lg:text-[1.8rem] lg:mt-[5rem] lg:pb-[2rem] lg:w-[45rem]">
                             {project.description}
                         </h4>
                         
@@ -90,22 +90,22 @@ const PuppyProject = () => {
                         sm:mt-[2rem] sm:flex-row sm:flex-wrap sm:pb-2
                         md:flex-row md:flex-wrap md:items-center md:gap-3 md:py-[2rem] md:w-[47rem]
                         lp:w-[52rem]
-                        lg:w-[72rem] lg:mt-[5rem] lg:pb-[3rem] lg:flex-row">
+                        lg:w-[52rem] lg:mt-[5rem] lg:pb-[3rem] lg:flex-row">
                             
                             <h5 className="text-purple-400 pb-2 text-2xl 
                         sm:text-[1.5rem] sm:text-start
                         md:text-[3rem] md:w-[45rem] md:pb-[2rem]
                         lp:text-[3rem] lp:w-[55rem] lp:pb-[1rem]
-                        lg:text-[4rem] lg:mb-[10rem] lg:absolute lg:w-[60rem]">
+                        lg:text-[3rem] lg:mb-[12rem] lg:absolute lg:w-[60rem]">
                             Software Used:
                         </h5>
 
                             {[project.chip1, project.chip2, project.chip3, project.chip4, project.chip5, project.chip6].map((chip, index) => (
-                                <span key={index} className="bg-orange-200 text-purple-900 px-4 py-2 rounded-full text-sm hover:bg-purple-400 hover:text-white duration-300
+                                <span key={index} className="bg-orange-200 text-purple-900 px-4 py-2 rounded-full text-sm hover:bg-purple-400 hover:text-white duration-300 
                                 sm:text-[.8rem] 
                                 md:text-[1.2rem] md:px-6 md:py-4
                                 lp:text-[1.5rem]
-                                lg:text-[1.5rem]">
+                                lg:text-[1.5rem] ">
                                     {chip}
                                 </span>
                             ))}
@@ -119,8 +119,8 @@ const PuppyProject = () => {
                             className="w-full h-auto object-contain rounded-xl 
                             sm:w-[20rem] sm:h-[30rem] sm:mt-[-3rem]
                             md:w-[20rem] md:h-[32rem] md:ml-[42rem] md:mt-[-50rem] 
-                            lp:w-[40rem] lp:ml-[60rem] lp:h-[23rem] lp:mt-[-45rem]
-                            lg:mt-[-45rem]  lg:w-[40rem] lg:h-[30rem]"
+                            lp:w-[40rem] lp:ml-[60rem] lp:h-[23rem] lp:mt-[-42rem]
+                            lg:mt-[-45rem]  lg:w-[20rem] lg:h-[30rem]"
                         />
                     </div>
                 </div>

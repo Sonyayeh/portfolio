@@ -28,7 +28,7 @@ const PuppyProcess = () => {
 
   return (
     <div className="font-Dos flex flex-col items-center justify-self-center
-      sm:w-[25rem] sm:pb-[3rem]
+      sm:w-[23rem] sm:pb-[3rem]
       md:w-[45rem] md:pb-[4rem] 
       lg:w-[70rem]
       ">

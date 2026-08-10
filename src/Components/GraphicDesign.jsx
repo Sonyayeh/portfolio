@@ -25,7 +25,7 @@ const GraphicBox = () => {
                 sm:text-[2rem] sm:pb-[2rem] sm:pt-[2rem] 
                 md:text-[4rem] md:pl-[2rem] md:pt-[2rem] 
                 lp:text-[4rem] lp:pb-[2rem] lp:pt-[2rem]
-                lg:text-8xl lg:pl-3 lg:pt-[2rem] ">
+                lg:text-[4rem] lg:w-[70rem]">
                     Graphic Design:
                 </h1>
     {/* blue heading */}
@@ -37,7 +37,7 @@ const GraphicBox = () => {
         sm:text-[2rem] sm:p-2
         md:text-6xl md:py-3 
         lp:text-[4rem] 
-        lg:text-[4rem] ">Project</h5>
+        lg:text-[3rem] ">Project</h5>
     </div>
 
     {/* White background tab bar */}
@@ -51,7 +51,7 @@ const GraphicBox = () => {
                 sm:text-[1.5rem] sm:py-1 sm:p-2
                 md:text-[3rem] md:py-5
                 lp:text-[3rem] 
-                lg:text-[3.5rem] font-semibold">{item}</li>
+                lg:text-[3rem] font-semibold">{item}</li>
             ))}
         </ul>
     </div>
@@ -72,14 +72,14 @@ const GraphicBox = () => {
                         sm:text-[1.5rem] sm:text-start sm:pt-5 
                         md:text-[3rem] md:pt-[2rem] md:w-[45rem] md:leading-[3rem]
                         lp:text-[3rem] lp:w-[30rem]
-                        lg:text-[4rem] lg:pt-[2rem] lg:absolute lg:w-[67rem] lg:leading-[4rem]">
+                        lg:text-[3rem] lg:pt-[2rem] lg:absolute lg:w-[58rem]">
                             {project.title}
                         </h5>
                         <h4 className="text-lg leading-6 
                         sm:text-[1rem] sm:pt-2 
                         md:text-[1.3rem] md:pt-[2rem] md:pr-[10rem] md:w-[36rem] md:leading-[2rem]
                         lp:text-[1.5rem] lp:leading-[2.5rem] lp:w-[43rem]
-                        lg:text-[2rem] lg:mt-[10rem] lg:w-[45rem] ">
+                        lg:text-[1.8rem] lg:mt-[8rem] lg:w-[40rem]">
                             {project.description}
                         </h4>
 
@@ -88,13 +88,13 @@ const GraphicBox = () => {
                         sm:mt-[2rem] sm:flex-row sm:flex-wrap sm:pb-2
                         md:flex-row md:flex-wrap md:items-center md:gap-3 md:py-[2rem]
                         lp:w-[52rem]
-                        lg:w-[55rem] lg:mt-[3rem] lg:pb-[3rem] lg:flex-row">
+                        lg:w-[52rem] lg:mt-[6rem] lg:pb-[3rem] lg:flex-row">
                             
                             <h5 className="text-blue-400 pb-2 text-2xl 
                         sm:text-[1.5rem] sm:text-start
                         md:text-[3rem] md:w-[45rem] md:pb-[2rem]
                         lp:text-[3rem] lp:w-[55rem] lp:pb-[1rem]
-                        lg:text-[4rem] lg:pb-[10rem]lg:absolute lg:w-[60rem]">
+                        lg:text-[3rem] lg:mb-[12rem] lg:absolute lg:w-[60rem]">
                             Software Used:
                         </h5>
 
@@ -121,7 +121,7 @@ const GraphicBox = () => {
                             sm:w-[20rem] sm:h-[20rem] sm:pb-[2rem]
                             md:w-[25rem] md:h-[28rem] md:ml-[27rem] md:mt-[-41rem]
                             lp:h-[25rem] lp:w-[20rem] lp:max-h-[50rem] lp:mt-[-39rem] lp:ml-[33rem]
-                            lg:w-[45rem] lg:h-[35rem] lg:mt-[-32rem]"
+                            lg:w-[20rem] lg:h-[32rem] lg:mt-[-29rem] lg:ml-[30rem]"
                         />
                     </div>
 

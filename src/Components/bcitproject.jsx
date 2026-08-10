@@ -21,8 +21,8 @@ const BcitProject = () => {
         <h5 className="text-white text-3xl 
         sm:text-[2rem] sm:p-2
         md:text-6xl md:py-3 
-        lp:text-[4rem] 
-        lg:text-[4rem] ">Project</h5>
+        lp:text-[4rem] lp:py-5
+        lg:text-[3rem] ">Project</h5>
     </div>
 
     {/* White background tab bar */}
@@ -36,7 +36,7 @@ const BcitProject = () => {
                 sm:text-[1.5rem] sm:py-1 sm:p-2
                 md:text-[3rem] md:py-5
                 lp:text-[3rem] 
-                lg:text-[3.5rem] font-semibold">{item}</li>
+                lg:text-[3rem] font-semibold">{item}</li>
             ))}
         </ul>
     </div>
@@ -56,14 +56,14 @@ const BcitProject = () => {
                         sm:text-[1.5rem] sm:text-start sm:pt-5 
                         md:text-[3rem] md:pt-[3rem] md:w-[45rem] 
                         lp:text-[3rem] lp:w-[55rem] lp:pb-[1rem]
-                        lg:text-[4rem] lg:pt-[2rem] lg:absolute lg:w-[60rem]">
+                        lg:text-[3rem] lg:pt-[2rem] lg:absolute lg:w-[60rem]">
                             {project.title}
                         </h5>
                         <h4 className="text-lg leading-6 
                         sm:text-[1rem] sm:pt-2 
                         md:text-[1.3rem] md:pt-[2rem] md:pr-[10rem] md:w-[35rem] md:leading-[2rem]
                         lp:text-[1.5rem] lp:leading-[2.5rem] lp:w-[43rem]
-                        lg:text-[2rem] lg:mt-[6rem] lg:w-[45rem]">
+                        lg:text-[1.8rem] lg:mt-[5rem] lg:pb-[2rem] lg:w-[45rem]">
                             {project.description}
                         </h4>
                         
@@ -71,13 +71,13 @@ const BcitProject = () => {
                       <div className="font-Dos flex flex-col items-start justify-start w-full gap-2 
                         sm:mt-[2rem] sm:flex-row sm:flex-wrap sm:pb-2
                         md:flex-row md:flex-wrap md:items-center md:gap-3 md:py-[2rem]
-                        lg:w-[55rem] lg:mt-[3rem] lg:pb-[3rem] lg:flex-row">
+                        lg:w-[52rem] lg:mt-[5rem] lg:pb-[3rem] lg:flex-row">
                             
                             <h5 className="text-purple-400 pb-2 text-2xl 
                         sm:text-[1.5rem] sm:text-start
                         md:text-[3rem] md:w-[45rem] md:pb-[2rem]
                         lp:text-[3rem] lp:w-[55rem] lp:pb-[1rem]
-                        lg:text-[4rem] lg:pb-[10rem]lg:absolute lg:w-[60rem]">
+                        lg:text-[3rem] lg:mb-[12rem] lg:absolute lg:w-[60rem]">
                             Software Used:
                         </h5>
 
@@ -101,7 +101,7 @@ const BcitProject = () => {
                             sm:w-[20rem] sm:h-[20rem]
                             md:w-[25rem] md:h-[18rem] md:ml-[25rem] md:mt-[-37rem] 
                             lp:w-[23rem] lp:h-[20rem] lp:mt-[-38rem] lp:mr-[-8rem]
-                            lg:w-[30rem] lg:h-[35rem] lg:mt-[-45rem] lg:ml-[25rem]
+                            lg:w-[23rem] lg:h-[20rem] lg:mt-[-37rem] lg:ml-[30rem]
                             "
                         />
                     </div>

@@ -27,7 +27,7 @@ const Magazine = () => {
         sm:text-[2rem] sm:p-2
         md:text-6xl md:py-3 
         lp:text-[4rem] 
-        lg:text-[4rem] ">Project</h5>
+        lg:text-[3rem] ">Project</h5>
     </div>
 
     {/* White background tab bar */}
@@ -41,7 +41,7 @@ const Magazine = () => {
                 sm:text-[1.5rem] sm:py-1 sm:p-2
                 md:text-[3rem] md:py-5
                 lp:text-[3rem] 
-                lg:text-[3.5rem] font-semibold">{item}</li>
+                lg:text-[3rem] font-semibold">{item}</li>
             ))}
         </ul>
     </div>
@@ -63,14 +63,14 @@ const Magazine = () => {
                         sm:text-[1.5rem] sm:text-start sm:pt-5 
                         md:text-[3rem] md:pt-[1rem] md:w-[35rem] md:leading-[3rem]
                         lp:text-[3rem] lp:w-[55rem] lp:pb-[1rem]
-                        lg:text-[4rem] lg:pt-[2rem] lg:absolute lg:w-[67rem] lg:leading-[4rem]">
+                        lg:text-[3rem] lg:pt-[2rem] lg:absolute lg:w-[35rem]">
                             {project.title}
                         </h5>
                         <h4 className="text-lg leading-6 
                         sm:text-[1rem] sm:pt-2 
                         md:text-[1.3rem] md:pt-[2rem] md:pr-[10rem] md:w-[34rem] md:leading-[2rem]
                         lp:text-[1.5rem] lp:leading-[2.5rem] lp:w-[43rem]
-                        lg:text-[2rem] lg:mt-[10rem] lg:w-[38rem] ">
+                        lg:text-[1.8rem] lg:mt-[8rem] lg:w-[40rem]">
                             {project.description}
                         </h4>
 
@@ -79,13 +79,13 @@ const Magazine = () => {
                         sm:mt-[2rem] sm:flex-row sm:flex-wrap sm:pb-2
                         md:flex-row md:flex-wrap md:items-center md:gap-3 md:py-[2rem]
                         lp:w-[52rem]
-                        lg:w-[55rem] lg:mt-[3rem] lg:pb-[3rem] lg:flex-row">
+                        lg:w-[52rem] lg:mt-[6rem] lg:pb-[3rem] lg:flex-row">
                             
                             <h5 className="text-blue-400 pb-2 text-2xl 
                         sm:text-[1.5rem] sm:text-start
                         md:text-[3rem] md:w-[45rem] md:pb-[2rem]
                         lp:text-[3rem] lp:w-[55rem] lp:pb-[1rem]
-                        lg:text-[4rem] lg:pb-[10rem]lg:absolute lg:w-[60rem]">
+                        lg:text-[3rem] lg:mb-[12rem] lg:absolute lg:w-[60rem]">
                             Software Used:
                         </h5>
 
@@ -112,7 +112,7 @@ const Magazine = () => {
                             sm:w-[20rem] sm:h-[20rem] sm:pb-[2rem]
                             md:w-[20rem] md:h-[23rem] md:ml-[25rem] md:mt-[-37rem]
                             lp:h-[23rem] lp:w-[21rem] lp:max-h-[50rem] lp:mt-[-37rem] lp:ml-[34rem]
-                            lg:w-[45rem] lg:h-[30rem] lg:mt-[-31rem] lg:mr-[5rem]"
+                            lg:w-[20rem] lg:h-[24rem] lg:mt-[-28rem] lg:ml-[33rem]"
                         />
                     </div>
 
