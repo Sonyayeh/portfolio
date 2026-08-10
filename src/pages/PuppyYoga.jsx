@@ -70,7 +70,7 @@ const PuppyYoga = () => {
 
                  {/* added a line for separate sections */}
                 <div className="border-t-2 border-purple-500 justify-self-center
-               sm:w-[20rem] sm:pb-[2rem]
+                sm:w-[22rem]
                md:w-[50rem] 
                lp:w-[65rem]
                lg:w-[80rem] lg:mt-[5rem]
@@ -83,7 +83,7 @@ const PuppyYoga = () => {
 
                  {/* added a line for separate sections */}
                    <div className="border-t-2 border-purple-500 justify-self-center
-               sm:w-[20rem] sm:pb-[2rem]
+                sm:w-[22rem]sm:pb-[2rem]
                md:w-[50rem] 
                lp:w-[65rem]
                lg:w-[80rem] lg:mt-[5rem]
@@ -96,8 +96,8 @@ const PuppyYoga = () => {
                </div>
 
                 {/* added a line for separate sections */}
-                  <div className="border-t-2 border-purple-500 justify-self-center
-               sm:w-[20rem] sm:pb-[2rem]
+                <div className="border-t-2 border-purple-500 justify-self-center
+                sm:w-[22rem]
                md:w-[50rem] 
                lp:w-[65rem]
                lg:w-[80rem] lg:mt-[5rem]
@@ -118,7 +118,7 @@ const PuppyYoga = () => {
 
                   {/* added a line for separate sections */}
                    <div className="border-t-2 border-purple-500 justify-self-center
-               sm:w-[20rem] sm:pb-[2rem]
+                sm:w-[22rem]sm:pb-[2rem]
                md:w-[50rem] 
                lp:w-[65rem]
                lg:w-[80rem] lg:mt-[5rem]
@@ -139,7 +139,7 @@ const PuppyYoga = () => {
 
                 <div className="flex mt-8 
                                p:justify-between
-                               sm:w-[20rem] sm:justify-between sm:ml-[0.6rem]
+                                sm:w-[22rem]sm:justify-between sm:ml-[0.6rem]
                                md:justify-between md:w-[50rem] md:ml-[-1rem]
                                lp:w-[63rem] lp:ml-[5rem] lp:max-aut
                                 lg:w-[70rem] lg:mx-auto lg:justify-between ">
