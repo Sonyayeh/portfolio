@@ -23,7 +23,7 @@ const BoardProject = () => {
         sm:text-[2rem] sm:p-2
         md:text-6xl md:py-3 
         lp:text-[4rem] 
-        lg:text-[4rem] ">Project</h5>
+        lg:text-[3rem] ">Project</h5>
     </div>
 
     {/* White background tab bar */}
@@ -58,14 +58,14 @@ const BoardProject = () => {
                         sm:text-[1.5rem] sm:text-start sm:pt-5 
                         md:text-[3rem] md:pt-[2rem] md:w-[45rem] md:leading-[3rem]
                         lp:text-[3rem] lp:w-[55rem] lp:pb-[1rem]
-                        lg:text-[4rem] lg:pt-[2rem] lg:absolute lg:w-[67rem]">
+                        lg:text-[3rem] lg:pt-[2rem] lg:absolute lg:w-[60rem]">
                             {project.title}
                         </h5>
                         <h4 className="text-lg leading-6 
                         sm:text-[1rem] sm:pt-2 
                         md:text-[1.3rem] md:pt-[2rem] md:pr-[10rem] md:w-[34rem] md:leading-[2rem]
                         lp:text-[1.5rem] lp:leading-[2.5rem] lp:w-[43rem]
-                        lg:text-[2rem] lg:mt-[5rem] lg:w-[45rem]">
+                        lg:text-[1.8rem] lg:mt-[5rem] lg:pb-[2rem] lg:w-[40rem]">
                             {project.description}
                         </h4>
 
@@ -80,7 +80,7 @@ const BoardProject = () => {
                         sm:text-[1.5rem] sm:text-start
                         md:text-[3rem] md:w-[45rem] md:pb-[2rem]
                         lp:text-[3rem] lp:w-[55rem] lp:pb-[1rem]
-                        lg:text-[4rem] lg:pb-[10rem]lg:absolute lg:w-[60rem]">
+                        lg:text-[3rem] lg:mb-[12rem] lg:pt-[3rem] lg:absolute lg:w-[60rem]">
                             Software Used:
                         </h5>
 
@@ -108,7 +108,7 @@ const BoardProject = () => {
                             sm:w-[20rem] sm:h-[25rem] sm:pb-[2rem]
                             md:w-[20rem] md:h-[25rem] md:ml-[25rem] md:mt-[-40rem] 
                             lp:w-[40rem] lp:h-[25rem] lp:mt-[-40rem] lp:ml-[34rem]
-                            lg:w-[45rem] lg:h-[35rem] lg:mt-[-52rem]
+                            lg:w-[21rem] lg:h-[35rem] lg:mt-[-51rem]
                             "
                         />
                     </div>

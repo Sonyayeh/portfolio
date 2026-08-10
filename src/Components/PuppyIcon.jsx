@@ -60,7 +60,7 @@ const PuppySoft = () => {
 
             <ul className="grid justify-self-center
                 grid-cols-2 gap-y-8 justify-items-center
-                sm:grid-cols-2 sm:w-full sm:pb-[2rem]
+                sm:grid-cols-2 sm:w-[22rem] sm:pb-[2rem]
                 md:grid-cols-3 md:w-[57rem]
                 lp:grid-cols-3 lp:w-[75rem] 
                 lg:grid-cols-3 lg:w-[77rem]

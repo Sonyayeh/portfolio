@@ -222,7 +222,7 @@ const Header = () => {
       <div
         className="flex relative justify-center items-center 
         sm:justify-end md:justify-end lp:justify-start
-        sm:w-[23rem] md:w-auto lg:w-auto lp:py-6 lg:pt-[3rem]
+        sm:w-[22rem] md:w-auto lg:w-auto lp:py-6 lg:pt-[3rem]
         "
       >
         <Link onClick={handleNavClick} to="/">

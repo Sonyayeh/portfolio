@@ -99,7 +99,7 @@ const PuppyWorkSection = () => {
           border-2 border-orange-200 border-dashed
           bg-[#eee6f6]
           sm:px-2 sm:py-3
-          sm:w-[25rem] 
+          sm:w-[22rem] 
           md:w-[50rem] md:p-5 
           lp:w-[65rem] lp:p-6 
           lg:w-[78rem] lg:p-7 

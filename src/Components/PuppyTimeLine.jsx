@@ -145,7 +145,7 @@ const PuppyTimeLine = () => {
 
   return (
     <section className="w-full p-3 
-      sm:w-[25rem]
+      sm:w-[23rem]
       md:w-[40rem] mx-auto
       lp:w-[55rem]
       lg:w-[75rem]
@@ -176,13 +176,14 @@ const PuppyTimeLine = () => {
       </div>
 
       <div className="relative flex items-center justify-center 
+      sm:w-[20rem]
       md:w-[40rem] md:justify-self-center
       lp:w-[70rem] 
       lg:w-[75rem] 
       ">
         {/* Timeline line */}
         <div className="absolute top-1/2 w-full border-t-[.4rem] border-purple-300 border-dashed -translate-y-1/2
-        sm:w-[25rem]
+        sm:w-[20rem]
         md:w-[40rem]
         lp:w-[55rem]
         lg:w-[70rem]
@@ -190,7 +191,7 @@ const PuppyTimeLine = () => {
 
         {/* Events */}
         <div className="flex space-x-10 overflow-x-auto py-4
-        sm:w-[30rem] sm:mx-auto 
+        sm:w-[20rem] sm:mx-auto 
         md:w-[40rem] md:mx-auto
         lp:w-[55rem] lp:gap-[4rem]
         lg:w-[80rem]  lg:gap-[5rem]
@@ -229,32 +230,33 @@ const PuppyTimeLine = () => {
       </div>
 
       {/* Event content */}
-<div className="border-t mt-6 pt-4 
+<div className="border-t mt-6 pt-4 mx-auto
+sm:w-[20rem]
 md:w-[40rem] md:text-[2rem] 
-lp:w-[40rem]
+lp:w-[55rem]
+lg:w-[75rem]
 ">
   <h2 className="text-xl font-semibold text-purple-500 
     sm:text-[1.3rem] 
-    md:text-[2rem] md:pb-5 md:leading-[2.6rem] md:w-[40rem]
-    lp:text-[2.5rem] lp:pb-5 lp:leading-[3.2rem] lp:w-[55rem]
-    lg:text-[3rem] lg:pb-[2rem] lg:pt-[2rem] lg:leading-[3.8rem] lg:w-[67rem]
+    md:text-[2rem] md:pb-5 md:leading-[2.6rem]
+    lp:text-[2.5rem] lp:pb-5 lp:leading-[3.2rem]
+    lg:text-[3rem] lg:pb-[2rem] lg:pt-[2rem] lg:leading-[3.8rem]
   ">{events[selectedIndex].title}</h2>
 
   <h3 className="text-sm text-orange-600 
     sm:text-[1.2rem] sm:pt-[1rem]
     md:text-[1.8rem]
     lp:text-[2rem]
-    lg:text-[3rem] lg:pb-5 lg:leading-[3.8rem] lg:w-[67rem]
+    lg:text-[3rem] lg:pb-5
   ">{events[selectedIndex].sub}</h3>
 
   <p className="mt-2 text-purple-700 font-Dos
   sm:pb-[2rem]
-    md:mt-5 md:text-[2rem] md:w-[40rem]
-    lp:w-[50rem] lp:text-[2rem]
-    lg:text-[2.5rem] lg:pb-5 lg:leading-[5rem] lg:w-[75rem]
+    md:mt-5 md:text-[2rem]
+    lp:text-[2rem]
+    lg:text-[2.5rem] lg:pb-5 lg:leading-[5rem]
   ">{events[selectedIndex].content}</p>
-
-      </div>
+</div>
     </section>
   );
 };
