@@ -66,32 +66,31 @@ const Magazine = () => {
                         </h4>
 
                         {/* Software used section */}
-                       <div className="font-Dos flex flex-col items-start justify-start w-full gap-2 
-                        sm:mt-[2rem] sm:flex-row sm:flex-wrap sm:pb-2
-                        md:flex-row md:flex-wrap md:items-center md:gap-3 md:py-[2rem]
-                        lp:
-                        lg:w-[55rem] lg:mt-[3rem] lg:pb-[3rem] lg:flex-row">
-                            
-                            <h5 className="text-blue-400 pb-2 text-2xl 
-                        sm:text-[1.5rem] sm:text-start
-                        md:text-[3rem] md:w-[45rem] md:pb-[2rem]
-                        lp:text-[4rem] lp:w-[55rem] lp:pb-[3rem]
-                        lg:text-[4rem] lg:pb-[10rem]lg:absolute lg:w-[60rem]">
-                            Software Used:
-                        </h5>
-
-                        {/* Software used section */}
-                           <div className="flex flex-wrap gap-3">
-                             {[project.chip1, project.chip2].map((chip, index) => (
-                                <span key={index} className="bg-green-200 text-blue-900 px-4 py-2 rounded-full text-sm hover:bg-blue-400 hover:text-white duration-300
-                                sm:text-[.8rem] 
-                                md:text-[2rem] md:px-6 md:py-4 
-                                lp:text-[1.5rem] 
-                                lg:text-[1.5rem]">
-                                    {chip}
-                                </span>
-                            ))}
-                           </div>
+                        <div className="flex flex-col items-start justify-start w-full 
+                        sm:mt-[2rem]
+                        lp:w-[30rem]
+                        lg:w-[30rem] lg:mt-[-3rem]">
+                            <h4 className="text-blue-300 
+                            sm:text-[1rem] sm:mt-[-1rem]
+                            md:text-3xl md:pt-[2rem]
+                            lg:text-[2rem] lg:mt-[2rem] 
+                            lp:text-[2rem]">
+                                {project.chip1}
+                            </h4>
+                            <h4 className="text-blue-300 
+                            sm:text-[1rem] sm:mt-[-1rem]
+                            md:text-3xl md:pt-[2rem]
+                            lg:text-[2rem] lg:mt-[-1rem] 
+                            lp:text-[2rem]">
+                                {project.chip2}
+                            </h4>
+                            <h4 className="text-blue-300 
+                            sm:text-[1rem] sm:mt-[-1rem]
+                            md:text-3xl md:pt-[2rem]
+                            lg:text-[2rem] lg:mt-[-1rem] 
+                            lp:text-[2rem]">
+                                {project.chip3}
+                            </h4>
                         </div>
                     </div>
 

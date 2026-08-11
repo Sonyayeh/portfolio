@@ -2,7 +2,7 @@
     {
         "id": 1,
         "title": "Beach Volleyball Tournament Poster",
-        "description": "A graphic design project exploring typography, colour theory, and visual hierarchy through the creation of a promotional poster for a fictional volleyball tournament in the Town of Shelbyville. Every element was constructed entirely within Adobe Illustrator, demonstrating vector illustration skills and intentional compositional decisions.",
+        "description": "The volleyball tournament poster project is to create a promotional poster about a fictional volleyball match in the Town of Shelbyville. All the elements on the poster were to be created only with Adobe Illustrator.",
         "chip1": "#Adobe Illustrator",
         "chip2": "#Adobe Stock Images",
         "chip3": "#Procreate",
@@ -23,7 +23,7 @@
     {
         "id": 3,
         "title": "MyBCIT Page Re-Design",
-        "description": "A full UI/UX redesign of MyBCIT, BCIT's student portal. Through user research, iterative prototyping, and usability testing with over ten participants, the project proposes a redesigned interface that reduces navigation complexity, lowers the learning curve for new students, and modernises the visual system while staying true to BCIT's established brand identity.",
+        "description": "The goal was to create a redesign version of MyBCIT for MDIA 2540, UI/UX 1. This project consists of technical skills for Figma and basic UX components. The main purpose for this project is to create a simpler and user-friendly version of MyBCIT to reduce any possible learning curves for new students.",
         "chip1": "#Adobe Stock Images",
         "chip2": "#Procreate",
         "chip3": "#Figma",
@@ -33,7 +33,7 @@
     {
         "id": 4,
         "title": "Boardwalk Boutique App Design",
-        "description": "A mobile app concept developed using the Waterfall methodology for a project management intensive. Working within a group, I led the UI design for a skateboard and streetwear rental and retail platform. The app allows users to browse inventory, book rentals, receive notifications, and locate the physical store, combining e-commerce and service design into a single cohesive experience.",
+        "description": "The goal was to create an app for an online shop using the Waterfall methodology for MDIA 2092 Project Management’s final project. For this project, my group decided to focus on rental and location aspect of an online/rental shop for skateboards and streetwear. The app is designed so users can book, shop, receive notification and locate the shop.",
         "chip1": "#Adobe Stock Images",
         "chip2": "#Procreate",
         "chip3": "#Figma",
@@ -42,7 +42,7 @@
     {
         "id": 5,
         "title": "Bing: The Redesign",
-        "description": "A collaborative UI redesign of the Bing search engine focused on reducing visual clutter and improving navigational clarity. Working alongside a team of designers, the project streamlined the interface to surface the most relevant features and help users find what they need more efficiently without the cognitive overhead of the original layout. ",
+        "description": "The redesign of Bing is to create a more user friendly with features that are relavant to users. Along with other talented designers, we were able to enhance the user experience and layout of the search engin, making it less confusing and clutter, which helps users to get to the point right away when navigating. ",
         "chip1": "#Adobe Stock Images",
         "chip2": "#Figma",
         "chip3": "#Canva",
@@ -52,7 +52,7 @@
     {
         "id": 6,
         "title": "National Geographics Magazine Design ",
-        "description": "A Photoshop composition exploring the intersection of imagination and reality through deliberate photo manipulation, layering, and visual storytelling. The iconic National Geographic format served as a canvas to examine the boundaries between the natural world and creative interpretation. ",
+        "description": "This National Geographic magazine cover design is the final project for GDES1275, Raster Graphics: Photoshop. Part of the project was to create a composition with selected materials. I opted to design something that bridges the imagination and reality. ",
         "chip1": "#Adobe Photoshop",
         "chip2": "#Procreate",
         "imageurl": "https://i.imgur.com/QQdaqxh.jpeg"
