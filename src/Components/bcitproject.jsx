@@ -23,7 +23,7 @@ const BcitProject = () => {
         <h5 className="text-white text-3xl 
         sm:text-[2rem] sm:p-2
         md:text-6xl md:py-3 
-        lp:text-[4rem] lp:py-5
+        lp:text-[2.8rem] lp:py-5
         lg:text-[3rem] ">Project</h5>
     </div>
 
@@ -37,7 +37,7 @@ const BcitProject = () => {
                 <li key={index} className="text-purple-200 text-lg hover:text-orange-300 
                 sm:text-[1.5rem] sm:py-1 sm:p-2
                 md:text-[3rem] md:py-5
-                lp:text-[3rem] 
+                lp:text-[2.5rem] 
                 lg:text-[3rem] font-semibold">{item}</li>
             ))}
         </ul>
@@ -67,7 +67,7 @@ const BcitProject = () => {
                         <h4 className="text-lg leading-6 
                         sm:text-[1rem] sm:pt-2 
                         md:text-[1.3rem] md:pt-[2rem] md:pr-[10rem] md:w-[35rem] md:leading-[2rem]
-                        lp:text-[1.5rem] lp:leading-[2.5rem] lp:w-[43rem]
+                        lp:text-[1.5rem] lp:leading-[2.5rem] lp:w-[40rem]
                         lg:text-[1.8rem] lg:mt-[5rem] lg:pb-[2rem] lg:w-[45rem]">
                             {project.description}
                         </h4>
@@ -108,7 +108,7 @@ const BcitProject = () => {
                             className="w-full h-auto object-contain rounded-xl 
                             sm:w-[20rem] sm:h-[20rem]
                             md:w-[25rem] md:h-[18rem] md:ml-[25rem] md:mt-[-37rem] 
-                            lp:w-[23rem] lp:h-[20rem] lp:mt-[-38rem] lp:mr-[-8rem]
+                            lp:w-[23rem] lp:h-[20rem] lp:mt-[-40rem] lp:mr-[-8rem]
                             lg:w-[23rem] lg:h-[20rem] lg:mt-[-37rem] lg:ml-[30rem]
                             "
                         />
@@ -121,12 +121,11 @@ const BcitProject = () => {
                 lp:mb-[2rem]
                 ">
                     <Link to="/bcit">
-                        <button
-                        className="px-6 py-3 bg-purple-300 text-white rounded-lg shadow-md hover:bg-purple-500 hover:text-white focus:outline-none focus:ring-2 focus:ring-purple-300 transition-colors duration-300
-                            sm:mb-[2rem] 
-                            md:ml-[28rem] md:mt-[-2rem] md:mb-[3rem]
-                            lp:ml-[28rem]
-                            lg:justify-center lg:items-center"
+                        <button className="font-Dos px-6 py-3 bg-purple-300 text-white rounded-lg shadow-md hover:bg-orange-200 hover:text-purple-900 focus:outline-none focus:ring-2 focus:ring-purple-300 transition-colors duration-300 
+                                       sm:mb-[2rem] sm:text-[1rem]
+                                       md:mb-[2rem] md:text-[1.5rem]
+                                       lp:text-[1.5rem] lp:mt-[2rem]
+                                       lg:mt-[1rem]"
                             onClick={() => window.scrollTo({ top: 0 })}
                             >
                         View More

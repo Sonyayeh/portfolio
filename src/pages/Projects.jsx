@@ -63,7 +63,7 @@ const Projects = () => {
                             sm:left-[4rem] sm:top-[10rem] sm:w-[15%] sm:h-[8%]
                             md:left-[-2rem] md:top-[-5rem] md:w-[30%] md:h-[40%]
                             lp:left-[-5rem] lp:top-[-5rem] lp:w-[23%] lp:h-[40%]
-                            lg:left-[50rem] lg:top-[-10rem] lp:w-[23%] lp:h-[33%]
+                            lg:left-[50rem] lg:top-[-10rem] lg:w-[23%] lg:h-[33%]
                             " 
                         />
                         
@@ -79,7 +79,7 @@ const Projects = () => {
                             <h1 className="flex flex-col relative text-2xl mx-auto
                                 sm:text-[3rem] sm:mt-[-27rem] sm:pb-[10rem] sm:w-[25rem]
                                 md:text-[5rem] md:w-[35rem] md:pb-[15rem] md:mt-[-10rem]
-                                lp:text-[4rem] lp:mt-[-30rem] lp:w-[21rem]
+                                lp:text-[4rem] lp:mt-[-35rem] lp:w-[21rem]
                                 lg:text-[4rem] lg:w-[25rem] lg:mt-[-30rem]
                                 " 
                             >Projects:</h1>

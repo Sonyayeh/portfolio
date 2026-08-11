@@ -25,7 +25,7 @@ const BingProject = () => {
         <h5 className="text-white text-3xl 
         sm:text-[2rem] sm:p-2
         md:text-6xl md:py-3 
-        lp:text-[4rem] 
+        lp:text-[2.8rem] 
         lg:text-[3rem] ">Project</h5>
     </div>
 
@@ -39,7 +39,7 @@ const BingProject = () => {
                 <li key={index} className="text-purple-200 text-lg hover:text-orange-300 
                 sm:text-[1.5rem] sm:py-1 sm:p-2
                 md:text-[3rem] md:py-5
-                lp:text-[3rem] 
+                lp:text-[2.5rem] 
                 lg:text-[3rem] font-semibold">{item}</li>
             ))}
         </ul>
@@ -113,7 +113,7 @@ const BingProject = () => {
                             className="w-full h-auto object-contain rounded-xl 
                             sm:w-[20rem] sm:h-[25rem] sm:pb-[2rem]
                             md:w-[25rem] md:h-[25rem] md:ml-[25rem] md:mt-[-39rem] 
-                            lp:w-[18rem] lp:h-[25rem] lp:mt-[-38rem] lp:mr-[-10rem]
+                            lp:w-[18rem] lp:h-[20rem] lp:mt-[-35rem] lp:mr-[-9rem]
                             lg:w-[20rem] lg:h-[27rem] lg:mt-[-40rem]
                             "
                         />

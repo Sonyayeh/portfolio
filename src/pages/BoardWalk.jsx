@@ -297,7 +297,7 @@ const BoardWalk = () => {
                                lp:w-[63rem] lp:ml-[5rem] lp:max-aut
                                lg:w-[90rem] lg:ml-[-11rem] lg:mx-auto lg:justify-between ">
                 <Link 
-                    to="/bcit" 
+                    to="/boardwalk" 
                     className="flex items-center text-purple-300 hover:text-emerald-500 transition-colors duration-300"
                     onClick={() => window.scrollTo({ top: 0 })}
                 >
