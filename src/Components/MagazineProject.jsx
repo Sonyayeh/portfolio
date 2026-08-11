@@ -26,7 +26,7 @@ const Magazine = () => {
         <h5 className="text-white text-3xl 
         sm:text-[2rem] sm:p-2
         md:text-6xl md:py-3 
-        lp:text-[4rem] 
+        lp:text-[2.8rem] 
         lg:text-[3rem] ">Project</h5>
     </div>
 
@@ -40,7 +40,7 @@ const Magazine = () => {
                 <li key={index} className="text-blue-200 text-lg hover:text-green-300 
                 sm:text-[1.5rem] sm:py-1 sm:p-2
                 md:text-[3rem] md:py-5
-                lp:text-[3rem] 
+                lp:text-[2.5rem] 
                 lg:text-[3rem] font-semibold">{item}</li>
             ))}
         </ul>
@@ -91,7 +91,7 @@ const Magazine = () => {
 
                         {/* Software used section */}
                            <div className="flex flex-wrap gap-3">
-                             {[project.chip1, project.chip2].map((chip, index) => (
+                             {[project.chip1, project.chip2, project.chip3,].map((chip, index) => (
                                 <span key={index} className="bg-green-200 text-blue-900 px-4 py-2 rounded-full text-sm hover:bg-blue-400 hover:text-white duration-300
                                 sm:text-[.8rem] 
                                 md:text-[1.2rem] md:px-6 md:py-4 
@@ -111,7 +111,7 @@ const Magazine = () => {
                             className="w-full h-auto object-contain rounded-xl
                             sm:w-[20rem] sm:h-[20rem] sm:pb-[2rem]
                             md:w-[20rem] md:h-[23rem] md:ml-[25rem] md:mt-[-37rem]
-                            lp:h-[23rem] lp:w-[21rem] lp:max-h-[50rem] lp:mt-[-37rem] lp:ml-[34rem]
+                            lp:h-[23rem] lp:w-[21rem] lp:max-h-[50rem] lp:mt-[-36rem] lp:ml-[34rem]
                             lg:w-[20rem] lg:h-[24rem] lg:mt-[-28rem] lg:ml-[33rem]"
                         />
                     </div>

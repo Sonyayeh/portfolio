@@ -2,7 +2,7 @@
     {
         "id": 1,
         "title": "Beach Volleyball Tournament Poster",
-        "description": "A graphic design project exploring typography, colour theory, and visual hierarchy through the creation of a promotional poster for a fictional volleyball tournament in the Town of Shelbyville. Every element was constructed entirely within Adobe Illustrator, demonstrating vector illustration skills and intentional compositional decisions.",
+        "description": "A promotional poster for a fictional beach volleyball tournament held in the Town of Shelbyville, designed to capture the energy and excitement of the event at a glance. Every visual element, from the illustrations to the typography, was built entirely in Adobe Illustrator, showcasing a fully vector based approach to the composition.",
         "chip1": "#Adobe Illustrator",
         "chip2": "#Adobe Stock Images",
         "chip3": "#Procreate",
@@ -18,12 +18,13 @@
         "chip4": "#Adobe Stock Images",
         "chip5": "#Procreate",
         "chip6": "#Figma",
+        "chip7": "#VS Code",
         "imageurl": "https://i.imgur.com/X23PsPJ.png"
     },
     {
         "id": 3,
         "title": "MyBCIT Page Re-Design",
-        "description": "A full UI/UX redesign of MyBCIT, BCIT's student portal. Through user research, iterative prototyping, and usability testing with over ten participants, the project proposes a redesigned interface that reduces navigation complexity, lowers the learning curve for new students, and modernises the visual system while staying true to BCIT's established brand identity.",
+        "description": "A redesign of the MyBCIT student portal aimed at reducing the learning curve for new students. Through research into student pain points and needs, the redesign simplifies core interactions and improves overall usability, while incorporating BCIT's colour palette in a way that feels modern and refreshed, yet still clearly connected to the institution's brand.",
         "chip1": "#Adobe Stock Images",
         "chip2": "#Procreate",
         "chip3": "#Figma",
@@ -33,16 +34,18 @@
     {
         "id": 4,
         "title": "Boardwalk Boutique App Design",
-        "description": "A mobile app concept developed using the Waterfall methodology for a project management intensive. Working within a group, I led the UI design for a skateboard and streetwear rental and retail platform. The app allows users to browse inventory, book rentals, receive notifications, and locate the physical store, combining e-commerce and service design into a single cohesive experience.",
+        "description": "An app concept for a skate and streetwear rental shop, built around how people actually browse, book, and shop in one seamless flow. The design supports real time notifications and store location features, making it easy for users to stay updated and find their way to the shop.",
         "chip1": "#Adobe Stock Images",
         "chip2": "#Procreate",
         "chip3": "#Figma",
+        "chip4": "#Android Studio",
+        "chip5": "#Canva",
         "imageurl": "https://i.imgur.com/tkXT0ml.png"
     },
     {
         "id": 5,
         "title": "Bing: The Redesign",
-        "description": "A collaborative UI redesign of the Bing search engine focused on reducing visual clutter and improving navigational clarity. Working alongside a team of designers, the project streamlined the interface to surface the most relevant features and help users find what they need more efficiently without the cognitive overhead of the original layout. ",
+        "description": "The redesign of Bing is to create a more user friendly with features that are relavant to users. Along with other talented designers, we were able to enhance the user experience and layout of the search engin, making it less confusing and clutter, which helps users to get to the point right away when navigating. ",
         "chip1": "#Adobe Stock Images",
         "chip2": "#Figma",
         "chip3": "#Canva",
@@ -52,9 +55,10 @@
     {
         "id": 6,
         "title": "National Geographics Magazine Design ",
-        "description": "A Photoshop composition exploring the intersection of imagination and reality through deliberate photo manipulation, layering, and visual storytelling. The iconic National Geographic format served as a canvas to examine the boundaries between the natural world and creative interpretation. ",
+        "description": "A National Geographic magazine cover exploring the space between imagination and reality. The composition was built using a carefully selected set of materials and imagery, layered together to create a cohesive, evocative visual narrative that invites the viewer to look twice.",
         "chip1": "#Adobe Photoshop",
         "chip2": "#Procreate",
+        "chip3": "#Adobe Stock Images",
         "imageurl": "https://i.imgur.com/QQdaqxh.jpeg"
     }
 ]

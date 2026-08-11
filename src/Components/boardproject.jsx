@@ -1,17 +1,20 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import projectData from "../data/project.json";  // Import the JSON data
+import projectData from "../data/project.json"; // Import the JSON data
 
 const BoardProject = () => {
-    // Find the project with id 4
-    const project = projectData.find((proj) => proj.id === 4);
+  // Find the project with id 4
+  const project = projectData.find((proj) => proj.id === 4);
 
-    if (!project) {
-        return <div>Project not found</div>;  // Handle case where project is not found
-    }
+  if (!project) {
+    return <div>Project not found</div>; // Handle case where project is not found
+  }
 
     return (
-         <div className="w-full relative mt-[30rem] sm:mt-[5rem] sm:px-0 sm:mx-auto lg:ml-[5rem] lg:pr-[7rem]">
+        <div className="w-full relative mt-[30rem] 
+        sm:mt-[10rem] sm:px-0  sm:mx-auto sm:pb-[2rem]
+        md:ml-[0rem]
+       lg:ml-[5rem] lg:pr-[7rem] ">
 
     <div className="text-start w-full">
     {/* purple heading */}
@@ -22,7 +25,7 @@ const BoardProject = () => {
         <h5 className="text-white text-3xl 
         sm:text-[2rem] sm:p-2
         md:text-6xl md:py-3 
-        lp:text-[4rem] 
+        lp:text-[2.8rem] 
         lg:text-[3rem] ">Project</h5>
     </div>
 
@@ -36,7 +39,7 @@ const BoardProject = () => {
                 <li key={index} className="text-purple-200 text-lg hover:text-orange-300 
                 sm:text-[1.5rem] sm:py-1 sm:p-2
                 md:text-[3rem] md:py-5
-                lp:text-[3rem] 
+                lp:text-[2.5rem] 
                 lg:text-[3.5rem] font-semibold">{item}</li>
             ))}
         </ul>
@@ -50,7 +53,9 @@ const BoardProject = () => {
               border-purple-300 md:p-3">
 
                 {/* Content Container */}
-               <div className="space-y-4 flex flex-col py-2 px-4  w-full lg:flex-row ">
+                <div className="space-y-4 flex flex-col py-2 px-4 
+                sm:px-7 w-full 
+                lg:flex-row">
 
                     {/* Title and Description Section */}
                     <div className="w-full lg:w-1/2 lg:text-left">
@@ -87,7 +92,7 @@ const BoardProject = () => {
                         {/* Software used section */}
                       
 
-                            {[project.chip1, project.chip2, project.chip3].map((chip, index) => (
+                            {[project.chip4, project.chip3, project.chip5, project.chip2, project.chip1, ].map((chip, index) => (
                                 <span key={index} className="bg-orange-200 text-purple-900 px-4 py-2 rounded-full text-sm hover:bg-purple-400 hover:text-white duration-300
                                 sm:text-[.8rem] 
                                 md:text-[1.2rem] md:px-6 md:py-4 
@@ -107,7 +112,7 @@ const BoardProject = () => {
                             className="w-full h-auto object-contain rounded-xl 
                             sm:w-[20rem] sm:h-[25rem] sm:pb-[2rem]
                             md:w-[20rem] md:h-[25rem] md:ml-[25rem] md:mt-[-40rem] 
-                            lp:w-[40rem] lp:h-[25rem] lp:mt-[-40rem] lp:ml-[34rem]
+                            lp:w-[15rem] lp:h-[25rem] lp:mt-[-40rem] lp:ml-[34rem]
                             lg:w-[21rem] lg:h-[35rem] lg:mt-[-51rem]
                             "
                         />
@@ -119,7 +124,7 @@ const BoardProject = () => {
                 <div className="flex justify-center
                                lp:mb-[2rem]
                                ">
-                                   <Link to="/bcit">
+                                   <Link to="/boardwalk">
                                       <button className="font-Dos px-6 py-3 bg-purple-300 text-white rounded-lg shadow-md hover:bg-orange-200 hover:text-purple-900 focus:outline-none focus:ring-2 focus:ring-purple-300 transition-colors duration-300 
                                        sm:mb-[2rem] sm:text-[1rem]
                                        md:mb-[2rem] md:text-[1.5rem]

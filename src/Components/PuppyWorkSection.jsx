@@ -86,7 +86,7 @@ const PuppyWorkSection = () => {
       <h1 className="flex justify-center text-purple-400 underline decoration-dashed
         sm:text-[1.7rem] sm:w-[23rem] sm:justify-center
                 md:text-5xl md:pt-[5rem] md:w-[35rem] md:mb-[2rem]
-                 lp:text-[4rem] lp:w-[75rem] lp:justify-center lp:items-center lp:pb-[5rem]
+                 lp:text-[2.8rem] lp:w-[75rem] lp:justify-center lp:items-center lp:pb-[5rem]
                 lg:text-[3.5rem] lg:w-[60rem] lg:mb-[5rem] lg:mt-[2rem]">
         Sketches &amp; Process:
       </h1>
@@ -100,7 +100,7 @@ const PuppyWorkSection = () => {
           sm:px-2 sm:py-3
           sm:w-[22rem] 
           md:w-[50rem] md:p-5 
-          lp:w-[65rem] lp:p-6 
+          lp:w-[70rem] lp:p-6 
           lg:w-[78rem] lg:p-7 
         "
       >

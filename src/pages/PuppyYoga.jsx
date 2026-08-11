@@ -37,14 +37,14 @@ const PuppyYoga = () => {
                 <h1 className="flex justify-self-center text-purple-500 underline decoration-dashed justify-center
                 sm:text-[2rem] sm:pb-[2rem] sm:mt-[-5rem] sm:w-[22rem] sm:text-center
                 md:text-[4rem] md:pt-[10rem] md:w-[55rem]
-                lp:text-[3.7rem] lp:w-[72rem] lp:justify-center lp:items-center
+                lp:text-[2.8rem] lp:w-[72rem] lp:justify-center lp:items-center lp:pt-[5rem]
                 lg:text-[4.5rem] lg:w-[85rem] lg:mb-[3rem] lg:mt-[2rem]">
                     Puppy Yoga Studio: Furrever Pals
                 </h1>
                 <h1 className="flex justify-self-center underline decoration-dashed text-purple-400 text-center justify-center
                 sm:text-[1.5rem] sm:pb-[2rem] sm:w-[22rem]
                 md:text-[3.5rem] md:pt-[3rem] md:w-[55rem] 
-                lp:text-[4rem] lp:w-[75rem] lp:justify-center lp:items-center
+                lp:text-[2.5rem] lp:w-[75rem] lp:justify-center lp:items-center lp:mt-[-3rem]
                 lg:text-[4rem] lg:w-[70rem] lg:mb-[2rem]">
                     Overview:
                 </h1>
@@ -52,7 +52,7 @@ const PuppyYoga = () => {
               <h3 className="text-orange-500 text-left 
                 sm:text-[1rem] sm:pb-[1rem] sm:w-[22rem] 
                 md:text-[2rem] md:w-[50rem] md:pb-[2rem]
-                lp:text-[2rem] lp:w-[65rem] lp:leading-[3rem] lp:pb-[4rem]
+                lp:text-[1.5rem] lp:w-[60rem] lp:leading-[3rem] lp:pb-[4rem]
                 lg:text-[3rem] lg:w-[85rem] lg:mb-[5rem] lg:mt-[2rem] lg:leading-[5rem]">
               Furrever Pals is a complete brand and digital service that addresses mental health and community isolation in Vancouver through purposeful design. The project spans comprehensive brand identity, thoughtful UX design, and full-stack web development, creating an accessible wellness experience where users engage with adoptable dogs from local shelters, merging personal wellbeing with animal welfare impact.
                 </h3>
@@ -104,11 +104,12 @@ const PuppyYoga = () => {
                "></div>
 
                {/* process area */}
-               <div className=" justify-self-center"> 
-                    <h1 className="flex justify-center text-purple-400 underline decoration-dashed
+               <div className="justify-self-center"> 
+                    <h1 className="flex justify-center 
+                    justify-self-center text-purple-400 underline decoration-dashed
                     sm:text-[1.7rem] sm:w-[23rem] sm:justify-center
                 md:text-[3rem] md:w-[35rem] md:mb-[3rem] 
-                lp:text-[4rem] lp:w-[40rem]
+                lp:text-[2.8rem] lp:w-[40rem] lp:pt-[2rem]
                 lg:text-[4.5rem] lg:pb-[2rem] lg:w-[50rem]
                 ">
                     Design Rationale:

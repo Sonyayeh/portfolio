@@ -17,7 +17,10 @@ const GraphicBox = () => {
 
     return (
         // I think i commented about this section so many times already 
-        <div className="w-full relative mt-[30rem] sm:mt-[5rem] sm:px-0 sm:mx-auto lg:ml-[5rem] lg:pr-[7rem]">
+        <div className="w-full relative mt-[30rem] 
+        sm:mt-[10rem] sm:px-0  sm:mx-auto
+        md:ml-[0rem]
+        lg:ml-[5rem] lg:pr-[7rem] ">
 
     <div className="text-start w-full">
 
@@ -36,7 +39,7 @@ const GraphicBox = () => {
         <h5 className="text-white text-3xl 
         sm:text-[2rem] sm:p-2
         md:text-6xl md:py-3 
-        lp:text-[4rem] 
+        lp:text-[2.8rem] 
         lg:text-[3rem] ">Project</h5>
     </div>
 
@@ -50,7 +53,7 @@ const GraphicBox = () => {
                 <li key={index} className="text-blue-200 text-lg hover:text-orange-300 
                 sm:text-[1.5rem] sm:py-1 sm:p-2
                 md:text-[3rem] md:py-5
-                lp:text-[3rem] 
+                lp:text-[2.5rem] 
                 lg:text-[3rem] font-semibold">{item}</li>
             ))}
         </ul>
@@ -64,7 +67,9 @@ const GraphicBox = () => {
             ">
 
                 {/* Content Container */}
-                <div className="space-y-4 flex flex-col py-2 px-4  w-full lg:flex-row ">
+                <div className="space-y-4 flex flex-col py-2 px-4 
+                sm:px-7 w-full 
+                lg:flex-row">
 
                     {/* Title and Description Section */}
                     <div className="w-full lg:w-1/2 lg:text-left">
@@ -114,13 +119,13 @@ const GraphicBox = () => {
                     </div>
 
                     {/* Image Section */}
-                     <div className="flex justify-center w-full lg:w-1/2 lg:ml-[-14rem] lg:pt-[40rem]">
+                    <div className="flex justify-center w-full lg:w-1/2 lg:ml-[-14rem] lg:pt-[43rem]">
                         <img
                             src={project.imageurl} 
                             className="w-full h-auto object-contain rounded-xl
                             sm:w-[20rem] sm:h-[20rem] sm:pb-[2rem]
                             md:w-[25rem] md:h-[28rem] md:ml-[27rem] md:mt-[-41rem]
-                            lp:h-[25rem] lp:w-[20rem] lp:max-h-[50rem] lp:mt-[-39rem] lp:ml-[33rem]
+                            lp:h-[25rem] lp:w-[20rem] lp:max-h-[50rem] lp:mt-[-38rem] lp:ml-[33rem]
                             lg:w-[20rem] lg:h-[32rem] lg:mt-[-29rem] lg:ml-[30rem]"
                         />
                     </div>

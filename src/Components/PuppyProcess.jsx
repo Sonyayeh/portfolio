@@ -47,12 +47,13 @@ const PuppyProcess = () => {
               text-purple-400  decoration-dashed hover:text-orange-400 transition-colors duration-300 
               sm:text-[1.5rem] sm:py-5 sm:w-[22rem]
               md:text-[2.5rem] md:w-[45rem]
-              lp:text-[3rem]
+              lp:text-[2rem]
               lg:text-[3.5rem] lg:py-5 lg:w-[65rem]">
             {slide.title}
             <span className={`transition-transform duration-300 no-underline
               sm:text-[1.2rem]
               md:text-[2rem]
+              lp:text-[1.8rem]
               lg:text-[2.5rem]
               ${openIndex === idx ? "rotate-180" : "rotate-0"}`}>
                <Arrow className="w-6 sm:w-[1rem] md:w-[2rem]" />
@@ -62,9 +63,10 @@ const PuppyProcess = () => {
           {/* Dropdown Content */}
           <div className={`overflow-hidden transition-all duration-500 ease-in-out ${openIndex === idx ? "max-h-[1000px] opacity-100" : "max-h-0 opacity-0"}`}>
             <p className="text-orange-500 text-left pb-6
+            justify-self-center
               sm:text-[0.95rem] sm:leading-[1.8rem]
               md:text-[1.8rem] md:leading-[3rem]
-              lp:text-[2rem] lp:leading-[3.2rem]
+              lp:text-[1.5rem] lp:leading-[3.2rem] lp:w-[45rem]
               lg:text-[2rem] lg:leading-[3.8rem]">
               {slide.content}
             </p>
