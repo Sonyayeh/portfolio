@@ -22,66 +22,49 @@ const GraphicBox = () => {
         md:ml-[0rem]
         lg:ml-[5rem] lg:pr-[7rem] ">
 
-            {/* Project Heading and Description */}
-            <div className="text-start w-full">
-                {/* this is the section title
-                I did it in a way where the first project of each
-                section would have the section title,
-                so when it is brought into the project page
-                I don't have to make another title and manually
-                adjust it */}
-                <h1 className="pl-2 text-2xl justify-center text-center items-center
-                sm:text-[2rem] sm:pb-[2rem] sm:mt-[-16rem] 
-                md:text-8xl md:pl-[2rem] md:pt-[10rem] 
-                lg:text-8xl lg:pl-3">
+    <div className="text-start w-full">
+
+         <h1 className="pl-2 text-2xl justify-center text-center items-center
+                sm:text-[2rem] sm:pb-[2rem] sm:pt-[2rem] 
+                md:text-[4rem] md:pl-[2rem] md:pt-[2rem] 
+                lp:text-[4rem] lp:pb-[2rem] lp:pt-[2rem]
+                lg:text-[4rem] lg:w-[70rem]">
                     Graphic Design:
                 </h1>
+    {/* blue heading */}
+   <div className="bg-blue-300 px-4 flex justify-between items-center w-full
+   md:w-[49rem]
+    lp:w-[60rem] lp:justify-self-center
+   ">
+        <h5 className="text-white text-3xl 
+        sm:text-[2rem] sm:p-2
+        md:text-6xl md:py-3 
+        lp:text-[4rem] 
+        lg:text-[3rem] ">Project</h5>
+    </div>
 
-                {/* Blue heading */}
-                <div className="bg-blue-200 px-4 flex justify-between items-center w-full">
-                    <h5 className="text-white text-3xl 
-                    sm:text-3xl 
-                    md:text-6xl md:py-3
-                    lg:text-7xl">
-                        Project
-                    </h5>
-                </div>
-
-                {/* White background tab bar */}
-                <div className="bg-blue-200 p-4 pt-0 hover:cursor-hover">
-                    <ul className="flex gap-6 items-center space-x-1 bg-white w-full px-6 justify-start">
-                        {/* List items with responsive font sizes */}
-                        <li className="text-blue-200 text-lg 
-                        hover:text-orange-300
-                        sm:text-3xl 
-                        md:text-6xl 
-                        lg:text-7xl 
-                        font-semibold">DISC</li>
-                        <li className="text-blue-200 text-lg 
-                        hover:text-orange-300
-                        sm:text-3xl 
-                        md:text-6xl 
-                        lg:text-7xl 
-                        font-semibold">OPTION</li>
-                        <li className="text-blue-200 text-lg 
-                        hover:text-orange-300
-                        sm:text-3xl 
-                        md:text-6xl 
-                        lg:text-7xl 
-                        font-semibold">VIEW</li>
-                        <li className="text-blue-200 text-lg 
-                        hover:text-orange-300
-                        sm:text-3xl 
-                        md:text-6xl 
-                        lg:text-7xl 
-                        font-semibold">HELP</li>
-                    </ul>
-                </div>
-            </div>
+    {/* White background tab bar */}
+    <div className="bg-blue-300 p-4 pt-0 hover:cursor-hover
+    md:w-[49rem]
+    lp:w-[60rem] lp:justify-self-center
+    ">
+        <ul className="flex items-center space-x-1 bg-white w-full px-2 justify-start">
+            {['DISC', 'OPTION', 'VIEW', 'HELP'].map((item, index) => (
+                <li key={index} className="text-blue-200 text-lg hover:text-orange-300 
+                sm:text-[1.5rem] sm:py-1 sm:p-2
+                md:text-[3rem] md:py-5
+                lp:text-[3rem] 
+                lg:text-[3rem] font-semibold">{item}</li>
+            ))}
+        </ul>
+    </div>
+    </div>
 
             {/* Project box with border */}
-            <div className="w-full p-0 sm:p-0 flex flex-col border-solid border-x-[1rem] border-b-[1rem] border-blue-200
-            md:p-3">
+            <div className="w-full p-0 sm:p-0 flex flex-col border-solid border-x-[1rem] border-b-[1rem] border-blue-300
+            md:w-[49rem] md:p-3
+            lp:w-[60rem] lp:justify-self-center
+            ">
 
                 {/* Content Container */}
                 <div className="space-y-4 flex flex-col py-2 px-4 
@@ -91,45 +74,47 @@ const GraphicBox = () => {
                     {/* Title and Description Section */}
                     <div className="w-full lg:w-1/2 lg:text-left">
                         <h5 className="text-blue-400 pb-2 text-2xl 
-                        sm:text-[1.5rem] sm:text-start sm:pt-5
-                        md:text-[2.6rem] md:pt-5 md:ml-[-1rem] md:w-[59rem]
-                        lg:text-[3rem] lg:pl-4 lg:pt-[4rem] lg:absolute lg:w-[60rem]">
+                        sm:text-[1.5rem] sm:text-start sm:pt-5 
+                        md:text-[3rem] md:pt-[2rem] md:w-[45rem] md:leading-[3rem]
+                        lp:text-[3rem] lp:w-[30rem]
+                        lg:text-[3rem] lg:pt-[2rem] lg:absolute lg:w-[58rem]">
                             {project.title}
                         </h5>
                         <h4 className="text-lg leading-6 
-                        sm:text-[1rem] sm:pt-2  
-                        md:text-3xl md:mt-[4.75rem] md:pl-1 md:pr-[10rem] md:w-[38rem]
-                        lp:text-[2rem] lp:mt-[5rem]
-                        lg:text-[2rem] lg:py-[6rem] lg:ml-[-1rem] lg:pr-[1rem] lg:w-[30rem]">
+                        sm:text-[1rem] sm:pt-2 
+                        md:text-[1.3rem] md:pt-[2rem] md:pr-[10rem] md:w-[36rem] md:leading-[2rem]
+                        lp:text-[1.5rem] lp:leading-[2.5rem] lp:w-[43rem]
+                        lg:text-[1.8rem] lg:mt-[8rem] lg:w-[40rem]">
                             {project.description}
                         </h4>
 
                         {/* Software used section */}
-                        <div className="flex flex-col items-start justify-start w-full 
-                        sm:mt-[2rem]
-                        lp:w-[30rem]
-                        lg:w-[30rem] lg:mt-[-3rem]">
-                            <h4 className="text-blue-300 
-                            sm:text-[1rem] sm:mt-[-1rem]
-                            md:text-3xl md:pt-[2rem]
-                            lg:text-[2rem] lg:mt-[2rem] 
-                            lp:text-[2rem]">
-                                {project.chip1}
-                            </h4>
-                            <h4 className="text-blue-300 
-                            sm:text-[1rem] sm:mt-[-1rem]
-                            md:text-3xl md:pt-[2rem]
-                            lg:text-[2rem] lg:mt-[-1rem] 
-                            lp:text-[2rem]">
-                                {project.chip2}
-                            </h4>
-                            <h4 className="text-blue-300 
-                            sm:text-[1rem] sm:mt-[-1rem]
-                            md:text-3xl md:pt-[2rem]
-                            lg:text-[2rem] lg:mt-[-1rem] 
-                            lp:text-[2rem]">
-                                {project.chip3}
-                            </h4>
+                      <div className="font-Dos flex flex-col items-start justify-start w-full gap-2 
+                        sm:mt-[2rem] sm:flex-row sm:flex-wrap sm:pb-2
+                        md:flex-row md:flex-wrap md:items-center md:gap-3 md:py-[2rem]
+                        lp:w-[52rem]
+                        lg:w-[52rem] lg:mt-[6rem] lg:pb-[3rem] lg:flex-row">
+                            
+                            <h5 className="text-blue-400 pb-2 text-2xl 
+                        sm:text-[1.5rem] sm:text-start
+                        md:text-[3rem] md:w-[45rem] md:pb-[2rem]
+                        lp:text-[3rem] lp:w-[55rem] lp:pb-[1rem]
+                        lg:text-[3rem] lg:mb-[12rem] lg:absolute lg:w-[60rem]">
+                            Software Used:
+                        </h5>
+
+                        {/* Software used section */}
+                           <div className="flex flex-wrap gap-3">
+                             {[project.chip1, project.chip2, project.chip3].map((chip, index) => (
+                                <span key={index} className="bg-green-200 text-blue-900 px-4 py-2 rounded-full text-sm hover:bg-blue-400 hover:text-white duration-300
+                                sm:text-[.8rem] 
+                                md:text-[1.2rem] md:px-6 md:py-4 
+                                lp:text-[1.5rem] 
+                                lg:text-[1.5rem]">
+                                    {chip}
+                                </span>
+                            ))}
+                           </div>
                         </div>
                     </div>
 
@@ -138,29 +123,30 @@ const GraphicBox = () => {
                         <img
                             src={project.imageurl} 
                             className="w-full h-auto object-contain rounded-xl
-                            sm:w-[20rem] sm:h-[30rem]
-                            md:w-[20rem] md:h-[25rem] md:ml-[28rem] md:mt-[-35rem] md:mb-[-2rem]
-                            lp:h-[35rem] lp:w-[35rem] lp:max-h-[50rem]
-                            lg:w-[45rem] lg:h-[45rem]"
+                            sm:w-[20rem] sm:h-[20rem] sm:pb-[2rem]
+                            md:w-[25rem] md:h-[28rem] md:ml-[27rem] md:mt-[-41rem]
+                            lp:h-[25rem] lp:w-[20rem] lp:max-h-[50rem] lp:mt-[-39rem] lp:ml-[33rem]
+                            lg:w-[20rem] lg:h-[32rem] lg:mt-[-29rem] lg:ml-[30rem]"
                         />
                     </div>
 
                 </div>
 
                 {/* View More Button */}
-                <div className="flex justify-center mt-8">
-                    <Link to="/beachball">
-                        <button
-                        className="px-6 py-3 bg-blue-300 text-white rounded-lg shadow-md hover:bg-blue-500 hover:text-white focus:outline-none focus:ring-2 focus:ring-blue-300 transition-colors duration-300
-                            sm:mb-[2rem] sm:mt-[-1rem]
-                            md:ml-[28rem] md:mt-[-2rem] md:mb-[3rem]
-                            lp:ml-[28rem]
-                            lg:mt-[4rem] lg:justify-center lg:items-center"
-                            onClick={() => window.scrollTo({ top: 0 })}
-                            >
-                        View More
-                        </button>
-                    </Link>
+                 <div className="flex justify-center
+                                                lp:mb-[2rem]
+                                                ">
+                                                    <Link to="/bcit">
+                                                       <button className="font-Dos px-6 py-3 bg-blue-300 text-white rounded-lg shadow-md hover:bg-green-200 hover:text-blue-900 focus:outline-none focus:ring-2 focus:ring-blue-300 transition-colors duration-300 
+                                                        sm:mb-[2rem] sm:text-[1rem]
+                                                        md:mb-[2rem] md:text-[1.5rem]
+                                                        lp:text-[1.5rem] lp:mt-[2rem]
+                                                        lg:mt-[1rem]"
+                                                        onClick={() => window.scrollTo({ top: 0 })}
+                                                        >
+                                                        View More
+                                                        </button>
+                                                    </Link>
                 </div>
 
             </div>

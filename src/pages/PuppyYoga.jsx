@@ -9,7 +9,7 @@ import { Link } from "react-router-dom";
 
 const PuppyYoga = () => {
     // Find the project by id from projectData
-    const project = projectData.find((proj) => proj.id === 4);
+    const project = projectData.find((proj) => proj.id === 2);
 
     // State for the active tab
     const [activeTab, setActiveTab] = useState('ABOUT');
@@ -35,14 +35,14 @@ const PuppyYoga = () => {
             {/* Project Heading and Description */}
             <div className="text-start ">
                 <h1 className="flex justify-self-center text-purple-500 underline decoration-dashed justify-center
-                sm:text-[2rem] sm:pb-[2rem] sm:mt-[-5rem] sm:w-[25rem] sm:text-center
+                sm:text-[2rem] sm:pb-[2rem] sm:mt-[-5rem] sm:w-[22rem] sm:text-center
                 md:text-[4rem] md:pt-[10rem] md:w-[55rem]
                 lp:text-[3.7rem] lp:w-[72rem] lp:justify-center lp:items-center
                 lg:text-[4.5rem] lg:w-[85rem] lg:mb-[3rem] lg:mt-[2rem]">
                     Puppy Yoga Studio: Furrever Pals
                 </h1>
                 <h1 className="flex justify-self-center underline decoration-dashed text-purple-400 text-center justify-center
-                sm:text-[1.5rem] sm:pb-[2rem] sm:w-[25rem]
+                sm:text-[1.5rem] sm:pb-[2rem] sm:w-[22rem]
                 md:text-[3.5rem] md:pt-[3rem] md:w-[55rem] 
                 lp:text-[4rem] lp:w-[75rem] lp:justify-center lp:items-center
                 lg:text-[4rem] lg:w-[70rem] lg:mb-[2rem]">
@@ -50,7 +50,7 @@ const PuppyYoga = () => {
                 </h1>
                 <div className="flex justify-self-center text-center">
               <h3 className="text-orange-500 text-left 
-                sm:text-[1rem] sm:pb-[1rem] sm:w-[25rem] 
+                sm:text-[1rem] sm:pb-[1rem] sm:w-[22rem] 
                 md:text-[2rem] md:w-[50rem] md:pb-[2rem]
                 lp:text-[2rem] lp:w-[65rem] lp:leading-[3rem] lp:pb-[4rem]
                 lg:text-[3rem] lg:w-[85rem] lg:mb-[5rem] lg:mt-[2rem] lg:leading-[5rem]">
@@ -70,7 +70,7 @@ const PuppyYoga = () => {
 
                  {/* added a line for separate sections */}
                 <div className="border-t-2 border-purple-500 justify-self-center
-               sm:w-[20rem] sm:pb-[2rem]
+                sm:w-[22rem]
                md:w-[50rem] 
                lp:w-[65rem]
                lg:w-[80rem] lg:mt-[5rem]
@@ -83,7 +83,7 @@ const PuppyYoga = () => {
 
                  {/* added a line for separate sections */}
                    <div className="border-t-2 border-purple-500 justify-self-center
-               sm:w-[20rem] sm:pb-[2rem]
+                sm:w-[22rem] sm:pb-[2rem]
                md:w-[50rem] 
                lp:w-[65rem]
                lg:w-[80rem] lg:mt-[5rem]
@@ -96,29 +96,29 @@ const PuppyYoga = () => {
                </div>
 
                 {/* added a line for separate sections */}
-                  <div className="border-t-2 border-purple-500 justify-self-center
-               sm:w-[20rem] sm:pb-[2rem]
+                <div className="border-t-2 border-purple-500 justify-self-center
+                sm:w-[22rem]
                md:w-[50rem] 
                lp:w-[65rem]
                lg:w-[80rem] lg:mt-[5rem]
                "></div>
 
                {/* process area */}
-               <div>
-                <h1 className="flex justify-self-center justify-center
-                underline decoration-dashed text-purple-400
-                sm:text-[1.7rem] sm:pb-[1rem] sm:w-[25rem]
-                md:text-5xl md:pt-[5rem] md:w-[55rem] md:mb-[2rem]
-                lp:text-[4rem] lp:w-[75rem] lp:justify-center lp:items-center lp:pb-[5rem]
-                lg:text-7xl lg:w-[70rem] lg:mt-[2rem]">
-                Design Rationale:
-                 </h1>
-                <PuppyProcess />
+               <div className=" justify-self-center"> 
+                    <h1 className="flex justify-center text-purple-400 underline decoration-dashed
+                    sm:text-[1.7rem] sm:w-[23rem] sm:justify-center
+                md:text-[3rem] md:w-[35rem] md:mb-[3rem] 
+                lp:text-[4rem] lp:w-[40rem]
+                lg:text-[4.5rem] lg:pb-[2rem] lg:w-[50rem]
+                ">
+                    Design Rationale:
+                </h1>
+                    <PuppyProcess />
                </div>
 
                   {/* added a line for separate sections */}
                    <div className="border-t-2 border-purple-500 justify-self-center
-               sm:w-[20rem] sm:pb-[2rem]
+                sm:w-[22rem]sm:pb-[2rem]
                md:w-[50rem] 
                lp:w-[65rem]
                lg:w-[80rem] lg:mt-[5rem]
@@ -139,7 +139,7 @@ const PuppyYoga = () => {
 
                 <div className="flex mt-8 
                                p:justify-between
-                               sm:w-[25rem] sm:justify-between sm:ml-[0.6rem]
+                                sm:w-[22rem] sm:justify-between sm:ml-[0.6rem]
                                md:justify-between md:w-[50rem] md:ml-[-1rem]
                                lp:w-[63rem] lp:ml-[5rem] lp:max-aut
                                 lg:w-[70rem] lg:mx-auto lg:justify-between ">

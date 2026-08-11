@@ -81,17 +81,16 @@ const PuppyWorkSection = () => {
   const currentImage = images[currentIndex];
 
   return (
-    <section className="w-full">
-      <h2
-        className="
-          flex justify-center text-center justify-self-center
-                underline decoration-dashed text-purple-400
-                sm:text-[1.7rem] sm:pb-[1rem] sm:w-[25rem]
-                md:text-5xl md:pt-[2rem] md:w-[50rem] md:mb-[2rem]
-                lp:text-[4rem] lp:w-[75rem] lp:justify-center lp:items-center lp:pb-[5rem]
-                lg:text-[4.5rem] lg:w-[60rem] lg:mb-[2rem] lg:mt-[2rem]">
+    <section className="w-full justify-self-center">
+
+      <h1 className="flex justify-center text-purple-400 underline decoration-dashed
+        sm:text-[1.7rem] sm:w-[23rem] sm:justify-center
+                md:text-5xl md:pt-[5rem] md:w-[35rem] md:mb-[2rem]
+                 lp:text-[4rem] lp:w-[75rem] lp:justify-center lp:items-center lp:pb-[5rem]
+                lg:text-[3.5rem] lg:w-[60rem] lg:mb-[5rem] lg:mt-[2rem]">
         Sketches &amp; Process:
-      </h2>
+      </h1>
+
 
       <div
         className="
@@ -99,7 +98,7 @@ const PuppyWorkSection = () => {
           border-2 border-orange-200 border-dashed
           bg-[#eee6f6]
           sm:px-2 sm:py-3
-          sm:w-[25rem] 
+          sm:w-[22rem] 
           md:w-[50rem] md:p-5 
           lp:w-[65rem] lp:p-6 
           lg:w-[78rem] lg:p-7 

@@ -93,25 +93,24 @@ const Home = () => {
                 w-[18rem]
                 sm:top-[15rem]
                 md:w-[40rem] md:top-[29rem]
-                lg:w-[62rem] lg:top-[5rem]
-                lp:w-[54rem] lp:top-[5.5rem]
+                lg:w-[90rem] lg:top-[5rem]
+                lp:w-[70rem] lp:top-[14rem]
               "
             >
               <div className="relative flex items-center justify-center">
                 <h1
                   className="
                     font-Micro leading-none relative z-10
-                    whitespace-nowrap w-max justify-self-center
+                     justify-self-center text-center
 
-                    text-[1.8rem] ji
-                    sm:text-[1.5rem] sm:top-[-4rem]
-                    md:text-[3.2rem] md:top-[-10rem]
-                    lg:text-[4.2rem] lg:top-[5rem]
-                    lp:text-[4rem] lp:top-[-1rem]
-
+                    text-[1.8rem]
+                    sm:text-[1.5rem] sm:top-[-5rem] sm:w-[15rem] sm:leading-[2rem]
+                    md:text-[3.2rem] md:top-[-10rem] md:w-[40rem] md:leading-[5rem]
+                    lg:text-[4.2rem] lg:top-[-1rem] lg:w-[30rem]
+                    lp:text-[4rem] lp:top-[-8rem] lp:w-[70rem]
                     tracking-wide
                     md:tracking-wider
-                    lg:tracking-[0.08em]
+                    lg:text-[3rem] lg:w-[76rem] lg:tracking-[0.08em]
                   "
                 >
                   My name is <span className="text-blue-400">Sonya</span>, and I
@@ -128,7 +127,7 @@ const Home = () => {
                     w-full
                     sm:top-1
                     md:top-[3rem]
-                    lp:top-[8rem] lp:w-3/4
+                    lp:top-[5rem] lp:w-[70%]
                     lg:top-[12.5rem] lg:w-[55rem]
                   "
                 />
@@ -145,8 +144,8 @@ const Home = () => {
                 w-[7rem]
                 sm:top-[1rem] sm:left-[-1rem] sm:w-[8rem]
                 md:top-[1rem] md:left-[2rem] md:w-[14rem]
-                lg:top-[-2rem] lg:left-[57rem] lg:w-[18rem]
-                lp:top-[5rem] lp:left-[60rem] lp:w-[16rem]
+                lg:top-[6rem] lg:left-[57rem] lg:w-[18rem]
+                lp:top-[10rem] lp:left-[62rem] lp:w-[14rem]
               "
             />
 
@@ -158,7 +157,7 @@ const Home = () => {
                 sm:top-[15.5rem]
                 md:top-[32.5rem]
                 lg:top-[18rem]
-                lp:top-[14rem]
+                lp:top-[20rem]
               "
             >
               <ReactTyped
@@ -193,18 +192,18 @@ const Home = () => {
                 absolute z-20
                 top-[18rem] left-1/2 -translate-x-1/2
                 sm:top-[20rem] sm:left-[70%] sm:-translate-x-1/2
-                md:top-[45rem] md:left-[77%]
-                lg:top-[30rem] lg:left-[82%]
-                lp:top-[23rem] lp:left-[73%]
+                md:top-[40rem] md:left-[80%]
+                lg:top-[28rem] lg:left-[82%]
+                lp:top-[30rem] lp:left-[78%]
               "
             >
               <CatGif
                 className="
                   w-[5rem]
                   sm:w-[5.5rem] sm:ml-[4rem]
-                  md:w-[9rem]
-                  lg:w-[11rem]
-                  lp:w-[10rem]
+                  md:w-[9rem] 
+                  lg:w-[11rem] 
+                  lp:w-[10rem] 
                 "
               />
             </div>
@@ -216,8 +215,8 @@ const Home = () => {
                 left-1/2 -translate-x-1/2
                 bottom-[2rem]
                 md:bottom-[-1rem] md:mb-[5rem]
-                lg:bottom-[2rem]
-                lp:bottom-[3rem]
+                lg:bottom-[-10rem]
+                lp:bottom-[-13rem]
                 hover:cursor-hover
               "
               aria-label="Scroll to sample work"
@@ -255,8 +254,8 @@ const Home = () => {
                 text-[2rem]
                 sm:text-[2rem]
                 md:text-[5rem]
-                lg:text-[6.5rem]
-                lp:text-[6.8rem]
+                lg:text-[5rem]
+                lp:text-[4rem] lp:pt-[10rem]
               "
             >
               A Few Things I Love
@@ -272,8 +271,8 @@ const Home = () => {
                 w-[8rem]
                 sm:right-[1rem] sm:top-[3rem] sm:w-[8rem]
                 md:right-[1rem] md:top-[10rem] md:w-[18rem]
-                lg:right-[48rem] lg:top-[2rem] lg:w-[26rem]
-                lp:right-[2rem] lp:top-[2rem] lp:w-[22rem]
+                lg:right-[55rem] lg:top-[2rem] lg:w-[20rem]
+                lp:right-[1rem] lp:top-[7rem] lp:w-[22rem]
               "
             />
           </div>
@@ -309,7 +308,7 @@ const Home = () => {
                 "
               >
                <Link
-                  to="/furreverpals"
+                  to="/puppy"
                   onClick={goToTop}
                   className="relative block w-full hover:cursor-pointer"
                   aria-label="View Furrever Pals Puppy Yoga project"
@@ -350,7 +349,7 @@ const Home = () => {
                     sm:text-[1rem]
                     md:text-[2.5rem]
                     lp:text-[3rem]
-                    lg:text-[4rem]
+                    lg:text-[3rem] lg:w-[50rem] lg:pb-[1rem]
 
                      
                   "
@@ -384,7 +383,7 @@ const Home = () => {
                   sm:w-[7rem] sm:top-[-5rem]
                   md:w-[15rem] md:right-[-2rem] md:top-[-13rem]
                   lg:w-[16rem]
-                  lp:w-[14rem]
+                  lp:w-[19rem]
 
                   opacity-90
                 "
@@ -402,7 +401,7 @@ const Home = () => {
                   sm:w-[6rem] sm:top-[-2rem]
                   md:w-[20rem] md:left-[-7rem]
                   lg:w-[12rem]
-                  lp:w-[10rem] lp:left-[2rem]
+                  lp:w-[12rem] lp:left-[2rem]
 
                   opacity-90
                 "
@@ -470,8 +469,8 @@ const Home = () => {
                       text-[0.9rem]
                       sm:text-[0.9rem]
                       md:text-[1.9rem]
-                      lg:text-[2.7rem]
-                      lp:text-[2.4rem]
+                      lg:text-[2.5rem] lg:w-[50rem]
+                      lp:text-[2.2rem] lp:w-[45rem]
 
                       
                     "
@@ -504,7 +503,7 @@ const Home = () => {
                   sm:w-[5rem] sm:bottom-2 sm:left-8
                   md:w-[17rem] md:bottom-[-2rem] md:left-[45rem]
                   lg:w-[8rem]
-                  lp:w-[7rem]
+                  lp:w-[12rem]
                   opacity-90
                 "
               />
@@ -519,7 +518,7 @@ const Home = () => {
                   sm:w-[8rem] sm:bottom-[-2rem]
                   md:w-[8rem]
                   lg:w-[7rem]
-                  lp:w-[6rem]
+                  lp:w-[15rem] lp:right-[1rem] lp:top-[2rem]
                   opacity-90
                 "
               />
@@ -586,7 +585,7 @@ const Home = () => {
                         text-[0.9rem]
                         sm:text-[0.9rem]
                         md:text-[1.8rem]
-                        lg:text-[3rem]
+                        lg:text-[2.5rem] lg:w-[50rem] lg:pb-[1rem]
                         lp:text-[2.3rem]
                       "
                     >
@@ -622,9 +621,9 @@ const Home = () => {
             text-center leading-none
             text-[2rem]
             sm:text-[2.1rem] sm:pb-5 sm:w-[20rem]
-            md:text-[5rem]
-            lg:text-[9rem]
-            lp:text-[6.8rem]
+            md:text-[3rem] md:w-[25rem] md:pt-[5rem]
+            lg:text-[3rem]
+            lp:text-[3rem]
           "
         >
           User Profile:
