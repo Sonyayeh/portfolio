@@ -6,126 +6,119 @@ const events = [
     title: "Assignment Given & Research",
     sub: "2 hours",
     content:
-      "The project brief was received and preliminary research into screener candidate questions was conducted, establishing a clear understanding of the project scope and the criteria needed to identify suitable research participants."
+      "The brief raised an immediate question: how do you find the right people to interview for a project like this? Puppy yoga participants, dog owners, and people who might be skeptical of the concept could all offer something different. I spent this stage defining screener questions carefully, aiming to filter for a range of perspectives rather than just enthusiastic dog lovers who'd say yes to anything."
   },
   {
     date: "11/12/2024",
     title: "Screener Questions Document Created",
     sub: "1 hour",
     content:
-      "A formal screener questions document was developed to define participant eligibility criteria, ensuring that all user research gathered would be relevant, purposeful, and aligned with the project's research objectives."
+      "Not everyone who says yes to an interview is actually useful to talk to. I built a screener document with specific eligibility questions, aiming to filter out people who'd just tell me what they thought I wanted to hear, and keep the ones who'd genuinely push back or surface friction I hadn't considered."
   },
   {
     date: "11/19/2024",
     title: "Hypothesis Created",
     sub: "1 hour",
     content:
-      "A research hypothesis was formulated based on early observations and initial desk research, articulating the assumed usability gaps and user needs that the redesign would seek to validate and address."
+      "Before running any interviews, I had a hunch: people weren't avoiding puppy yoga because of the concept itself, but because of cost, unfamiliarity, or not knowing what to expect. This became my working hypothesis, something to test rather than assume, and it shaped the questions I'd end up asking real participants."
   },
   {
     date: "11/28/2024",
     title: "Screener Questions Answered",
     sub: "2 hours",
     content:
-      "Screener responses were collected and reviewed, validating participant suitability and providing a structured foundation for the user research phase. Key patterns in responses informed the direction of subsequent interviews."
+      "The screener responses came back with a clearer picture than I expected. A few patterns stood out right away, particularly around hesitation tied to cost and unfamiliarity with yoga itself, which matched part of my hypothesis but also surfaced a concern I hadn't planned for. I adjusted my interview questions to dig into that new thread before moving forward."
   },
   {
     date: "11/26/2024",
     title: "User Results Submitted",
     sub: "2 hours",
     content:
-      "User research findings were synthesised and formally submitted to the project documentation folder. The compiled results surfaced recurring themes and pain points that would directly shape the design strategy."
+      "Looking across all the interviews together, a few things kept repeating: people wanted to feel like beginners were welcome, not like they'd be the only one who didn't know a downward dog from a cat pose. Cost came up constantly too, but so did something quieter, a real curiosity about what happens to the puppies after the session ends. That last thread ended up shaping the adoption focus more than anything else in the research."
   },
   {
     date: "11/27/2024",
     title: "Google Sheet Created",
     sub: "1 hour",
     content:
-      "A structured Google Sheet was created to centralise and organise all user research data, enabling efficient cross-referencing of responses and supporting evidence-based decision making throughout the design process."
-  },
-  {
-    date: "12/09/2024",
-    title: "System Usability Scale Created",
-    sub: "3 hours",
-    content:
-      "A System Usability Scale evaluation was designed and administered to establish a quantitative baseline for the existing interface's usability, providing measurable benchmarks against which the redesign's improvements could be assessed."
+      "With responses coming in from different interviews, I needed a way to actually compare them side by side rather than relying on memory or scattered notes. I built a spreadsheet to track responses against each screener question, which made it much easier to spot when three or four people independently said the same thing, rather than assuming a pattern existed."
   },
   {
     date: "12/10/2024",
     title: "Figma File Created — Part 1",
     sub: "5 hours",
     content:
-      "High-fidelity design work commenced in Figma, with the first phase focusing on translating research insights into refined layouts, establishing visual hierarchy, and defining the typographic and spatial systems for the redesigned interface."
+      "With the research patterns clear, I moved into high fidelity design in Figma. The beginner friendly and cost conscious feedback shaped a lot of early layout decisions, things like keeping pricing visible early rather than buried, and using visual hierarchy to make the space feel approachable rather than intimidating for someone who'd never done yoga before. Typography and spacing choices followed the same logic: warm, but not so playful that it undercut trust."
   },
   {
     date: "12/12/2024",
     title: "Figma File Finished — Part 2",
     sub: "5 hours",
     content:
-      "The second design phase brought the Figma file to completion, with detailed attention given to component consistency, interaction clarity, and overall visual cohesion across all screens."
+      "The second pass was about consistency: making sure a button looked and behaved the same way whether someone was on the booking page or scrolling through puppy profiles. Small inconsistencies like that are easy to miss individually, but they add up to a site that feels unfinished, so I went screen by screen checking spacing, component states, and interaction patterns against each other before calling the file complete."
   },
   {
     date: "06/03/2026",
     title: "Project Kickoff",
     sub: "3 hours",
     content:
-      "The Furrever Pals project was initiated with a focused scoping session, defining the project's goals, target audience, and core design principles that would guide all subsequent decisions."
+      "I started by asking a basic question: who is this actually for? Not dog lovers broadly, since that's too vague to design around, but specifically people who might want a mental health boost, might be curious about adoption, and might be put off by traditional wellness spaces that feel expensive or intimidating. Narrowing that down early gave me something concrete to check every later decision against."
   },
   {
     date: "06/04/2026",
-    title: "Lo-Fi Exploration",
+    title: "Lo-Fi Redesign",
     sub: "1.5 hours",
     content:
-      "Initial low-fidelity exploration began, mapping out key user flows and interaction requirements including a class booking system, multi-page navigation architecture, and an autofill login experience to reduce friction for returning users."
+      "With the audience clear, I moved into low fidelity wireframes, mapping out the core flows someone would actually need: browsing and booking a class, moving between pages without getting lost, and logging back in easily if they'd used the site before. Keeping the login simple mattered particularly, since anything that felt like friction here risked losing someone who was already nervous about trying something new."
   },
   {
     date: "06/08/2026",
     title: "Lo-Fi Iteration",
     sub: "2.5 hours",
     content:
-      "The favouriting interaction was resolved and a content carousel was introduced to the class information page. The Our Puppies page was conceptualised and added, further defining the site's content architecture and user journey."
+      "The favouriting feature needed some rethinking, since the first version didn't make it obvious what happened after you tapped the heart icon. I reworked it and added a carousel to the class page so people could browse without a long, scrolling wall of options. Around the same time, it became clear the site needed a dedicated space just for the puppies themselves, not folded into a class description, since browsing potential companions felt like its own experience worth giving room to."
   },
   {
     date: "06/09/2026",
     title: "Lo-Fi Refinement",
     sub: "2.5 hours",
     content:
-      "The booking system flow was refined for clarity and ease of use. The Adoption and FAQ pages were introduced to round out the site's core content, and navigation restructuring was initiated to improve overall wayfinding."
+      "Testing the booking flow myself, I noticed it took more steps than it should to actually confirm a class, so I trimmed it down. Two things were still missing though: nowhere on the site actually explained the adoption process itself, which was supposed to be central to the whole concept, and there was no place to answer the smaller practical questions people would have before showing up. Adding the Adoption and FAQ pages closed that gap, but it also meant going back through the navigation to make sure everything still made sense together, not just as individual pages."
   },
   {
     date: "06/12/2026",
     title: "Lo-Fi Completed",
     sub: "2.5 hours",
     content:
-      "The low-fidelity prototype was finalised in its entirety, delivering a comprehensive structural blueprint across all pages and establishing a clear, validated foundation for the transition into high-fidelity design."
+      "With the booking flow fixed and the Adoption and FAQ pages in place, all six pages finally worked as one coherent site rather than a set of separate ideas. Before moving into visual design, I went through it one more time end to end, checking that someone could actually get from the homepage to booking a class, or from browsing puppies to understanding how adoption worked, without hitting a dead end."
   },
   {
     date: "07/05/2026",
     title: "Hi-Fi Design Begins",
     sub: "2 hours",
     content:
-      "High-fidelity design work commenced alongside dedicated copywriting, defining the brand's visual language, tone of voice, and content strategy that would be carried consistently across the full site experience."
+      "Moving into high fidelity, design and writing needed to happen together, not separately, since the tone of the copy had to match the warmth I was building visually. If the layout felt playful and approachable but the copy read stiff or corporate, the whole thing would feel disjointed. I worked through both at the same time, testing how actual sentences looked inside real components rather than designing empty boxes and filling them with placeholder text later."
   },
   {
     date: "07/08/2026",
     title: "Development Starts",
     sub: "3 hours",
     content:
-      "Front-end development began in parallel with ongoing high-fidelity design work, allowing visual decisions to be validated directly in the browser. The landing page was brought close to completion with core layout and interactive behaviours established."
+      "Rather than finishing every screen in Figma before touching code, I started building the landing page in the browser while design was still ongoing. Some things that looked fine as a static mockup didn't quite work once they were actually scrollable and interactive, spacing that felt right in Figma sometimes felt cramped once real content and animation were in motion. Catching that early, in code, saved me from redesigning things twice."
   },
   {
     date: "07/18/2026",
     title: "Website Completed",
     sub: "5 hours",
     content:
-      "All remaining pages were developed and integrated, bringing the full Furrever Pals website to completion. The final build reflects a cohesive, fully responsive experience across the entire site."
+      "With the landing page pattern established, building out the remaining five pages moved faster, since a lot of the layout logic and component styling could carry over directly. The bigger challenge was responsiveness: making sure the scroll animations and carousel still felt smooth on a phone screen, not just the desktop view I'd been testing on the whole time. Once every page held up across screen sizes, the site felt genuinely finished, not just built."
   },
   {
     date: "07/19/2026",
     title: "Finalisation",
     sub: "5 hours",
     content:
-      "The project was brought to its final state through a comprehensive copywriting review, the creation of custom class icon illustrations, and meticulous refinements across all pages to ensure a polished, portfolio-ready presentation."
+      "The last pass was the least glamorous but arguably the most important: reading every line of copy out loud to catch anything that still sounded stiff, illustrating custom icons for each class level so the site didn't rely on generic stock imagery, and going page by page fixing the small inconsistencies that only show up once you've stared at something for weeks. None of these changes were dramatic on their own, but together they were the difference between a project that looked done and one that actually was."
   },
 ];
 
@@ -171,7 +164,7 @@ const PuppyTimeLine = () => {
       lp:justify-center lp:text-[1.8rem] lp:w-[50rem]
       lg:text-[3rem] lg:pb-[2rem] lg:w-[65rem]
       ">
-        Total hours: <span className="text-red-600">49 hours</span>
+        Total hours: <span className="text-red-600">46 hours</span>
       </h2>
       </div>
 

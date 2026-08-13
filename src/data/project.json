@@ -2,7 +2,7 @@
     {
         "id": 1,
         "title": "Beach Volleyball Tournament Poster",
-        "description": "A promotional poster for a fictional beach volleyball tournament held in the Town of Shelbyville, designed to capture the energy and excitement of the event at a glance. Every visual element, from the illustrations to the typography, was built entirely in Adobe Illustrator, showcasing a fully vector based approach to the composition.",
+        "description": "A promotional poster for a fictional beach volleyball tournament in the Town of Shelbyville, built entirely in Adobe Illustrator with every illustration and typographic element constructed as vector artwork for precise control over colour, scale, and composition.",
         "chip1": "#Adobe Illustrator",
         "chip2": "#Adobe Stock Images",
         "chip3": "#Procreate",
@@ -11,7 +11,7 @@
     {
         "id": 2,
         "title": "Furrever Pals Puppy Yoga",
-        "description": "A branding and UI/UX project for a puppy yoga studio designed to address mental health and community connection in Vancouver. The project spans brand identity, visual system design, and service design, creating a cohesive ecosystem where participants experience wellness while supporting animal adoption. Every asset was intentionally designed to communicate warmth, accessibility, and purpose.",
+        "description": "A branding and service design project for a puppy yoga studio in Vancouver, built around a gap in existing local offerings: none combined wellness with shelter dog adoption. The project spans brand identity, visual design, and a fully hand coded website, connecting community wellbeing to animal welfare through one accessible experience.",
         "chip1": "#Adobe Illustrator",
         "chip2": "#Adobe InDesign ",
         "chip3": "#Adobe Photoshop",
@@ -24,7 +24,7 @@
     {
         "id": 3,
         "title": "MyBCIT Page Re-Design",
-        "description": "A redesign of the MyBCIT student portal aimed at reducing the learning curve for new students. Through research into student pain points and needs, the redesign simplifies core interactions and improves overall usability, while incorporating BCIT's colour palette in a way that feels modern and refreshed, yet still clearly connected to the institution's brand.",
+        "description": "A redesign of the MyBCIT student portal, built on interviews with over ten students, graduates, and first time users to identify what made the platform hard to navigate. The redesign reduces the clicks needed to reach core tasks like grades, while keeping BCIT's colour palette modern and immediately recognizable.",
         "chip1": "#Adobe Stock Images",
         "chip2": "#Procreate",
         "chip3": "#Figma",
@@ -34,7 +34,7 @@
     {
         "id": 4,
         "title": "Boardwalk Boutique App Design",
-        "description": "An app concept for a skate and streetwear rental shop, built around how people actually browse, book, and shop in one seamless flow. The design supports real time notifications and store location features, making it easy for users to stay updated and find their way to the shop.",
+        "description": "An app for a skate and streetwear rental shop, built with React Native around how people actually browse, book, and check out rentals. Boardwalk Boutique includes real time notifications and store location features to keep users oriented and informed throughout the rental process.",
         "chip1": "#Adobe Stock Images",
         "chip2": "#Procreate",
         "chip3": "#Figma",
@@ -45,7 +45,7 @@
     {
         "id": 5,
         "title": "Bing: The Redesign",
-        "description": "The redesign of Bing is to create a more user friendly with features that are relavant to users. Along with other talented designers, we were able to enhance the user experience and layout of the search engin, making it less confusing and clutter, which helps users to get to the point right away when navigating. ",
+        "description": "A redesign of Bing grounded in user research into how people actually search and where existing friction points slow them down. The redesign focuses on reducing clutter and surfacing more relevant results, making it faster for users to find what they need.",
         "chip1": "#Adobe Stock Images",
         "chip2": "#Figma",
         "chip3": "#Canva",
@@ -55,7 +55,7 @@
     {
         "id": 6,
         "title": "National Geographics Magazine Design ",
-        "description": "A National Geographic magazine cover exploring the space between imagination and reality. The composition was built using a carefully selected set of materials and imagery, layered together to create a cohesive, evocative visual narrative that invites the viewer to look twice.",
+        "description": "A fictional National Geographic magazine cover exploring the space between imagination and reality, composited in Photoshop from a mix of stock imagery and original illustration. Surreal elements, like a giraffe towering beside a mountain range, sit within an otherwise realistic composition, blurring the line between a real travel magazine and an imagined one.",
         "chip1": "#Adobe Photoshop",
         "chip2": "#Procreate",
         "chip3": "#Adobe Stock Images",

@@ -73,32 +73,31 @@ const BcitDes = () => {
   }, []);
 
   return (
-    <div className="w-full justify-center">
+    <div className="w-full justify-self-center">
       <h1
         ref={overviewRef}
-        className="pl-2 text-center underline decoration-dashed text-orange-400
-        sm:text-[2rem] sm:pb-[1rem] sm:w-[25rem]
-        md:text-5xl md:w-[50rem] md:pb-3 md:ml-[1rem]
-        lp:text-[4rem] lp:w-[74rem] lp:ml-[-1rem]
-        lg:text-[5rem] lg:w-[30rem] lg:ml-[18rem] lg:pb-[2rem]
+        className="pl-2 text-center justify-self-center underline decoration-dashed text-orange-400
+                sm:text-[1.5rem] sm:pb-[2rem] sm:w-[22rem]
+                md:text-[3.5rem] md:pt-[3rem] md:w-[55rem] 
+                lp:text-[2.5rem] lp:w-[75rem] lp:justify-center lp:items-center lp:mt-[-3rem]
+                lg:text-[4rem] lg:w-[70rem] lg:mb-[2rem]
         "
       >
         Overview:
       </h1>
 
       <h3
-        className="pl-2 text-purple-500 sm:text-[1rem] sm:w-[25rem] sm:ml-5 
-        md:text-4xl sm:pb-[2rem] md:pl-[1rem] md:w-[55rem] md:pb-[5rem] md:pt-[2rem] md:leading-[3.5rem]
-        lp:text-[1.8rem] lp:w-[65rem] lp:ml-[4rem]
-        lg:text-[3rem] lg:ml-[-20rem] lg:w-[110rem] lg:leading-[5rem]"
+        className="pl-2 text-purple-500 justify-self-center text-center
+        sm:text-[1rem] sm:pb-[1rem] sm:w-[22rem] 
+                md:text-[2rem] md:w-[50rem] md:pb-[2rem]
+                lp:text-[1.5rem] lp:w-[60rem] lp:leading-[3rem] lp:pb-[4rem]
+                lg:text-[3rem] lg:w-[85rem] lg:mb-[5rem] lg:mt-[2rem] lg:leading-[5rem]"
       >
-       This project set out to redesign the MyBCIT student portal, with the goal of reducing the learning curve new students face when navigating the platform for the first time. 
-       <br />
-       <br />
-       The process began with research into student pain points and needs, uncovering where the existing interface created friction and where opportunities existed to better support first time users. 
-       <br />
-       <br />
-       Building on these findings, the redesign focused on simplifying core interactions and creating a more intuitive, user friendly experience throughout. Visually, the new design incorporates BCIT's colour palette in a way that feels modern and refreshed while still maintaining a clear connection to the institution's existing brand identity.
+      Every BCIT student uses MyBCIT, and almost everyone I talked to had a complaint about it before I even finished asking the question.
+<br /><br />
+Six or more clicks just to check a grade, a security warning that dominated the homepage instead of anything students actually needed, and an interface that still looked like it belonged to 2003. Interviewing more than ten people, current students, graduates, and people who'd never seen the platform, made the pattern impossible to ignore: this wasn't a matter of taste, it was a real barrier for new students trying to navigate their own school.
+<br /><br />
+The redesign followed directly from what they told me: fewer clicks to reach the essentials, a homepage that leads with what students actually need, and a visual system that still feels unmistakably BCIT, just built for 2024 instead of 2003.
       </h3>
     </div>
   );

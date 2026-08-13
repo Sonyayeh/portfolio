@@ -68,38 +68,40 @@ const BcitTimeline = () => {
   }, [selectedIndex]);
 
   return (
-    <section className="w-full p-3 
-    sm:w-[21rem] sm:ml-[2.5rem]
+    <section className="w-full p-3 justify-self-center
+    sm:w-[21rem] 
     md:w-[25rem] 
+    lp:w-[70rem]
     font-vcr
     ">
       {/* Title */}
       <h1 className="text-2xl mb-6 text-center sm:text-purple-400 
-      underline decoration-dashed
+      underline decoration-dashed justify-self-center
       sm:text-[1.7rem] 
-      md:text-[3rem] md:w-full md:ml-[12rem] md:mb-[3rem] md:pt-[5rem]
+      md:text-[3rem] md:w-full md:mb-[3rem] md:pt-[5rem]
       lp:justify-center lp:text-[4rem] lp:w-[40rem]
-      lg:text-[5rem] lg:w-[38rem] lg:ml-[10rem] lg:pb-[2rem]
+      lg:text-[5rem] lg:w-[38rem]  lg:pb-[2rem]
       ">
         Work Timeline
       </h1>
 
-      <div className="relative flex items-center justify-center md:mr-[-22rem] md:ml-[2rem] 
-      lp:w-[70rem] lp:ml-[-3rem]
-      lg:w-[80rem] lg:ml-[-12rem]
+      <div className="relative flex items-center justify-center 
+      justify-self-center
+      lp:w-[70rem] 
+      lg:w-[70rem]
       ">
         {/* Timeline line */}
-        <div className="absolute top-1/2 w-full border-t-[.4rem] border-purple-300 border-dashed -translate-y-1/2
+        <div className="absolute top-1/2 w-full border-t-[.4rem] border-purple-300 border-dashed -translate-y-1/2 
         md:w-[38rem] md:justify-start 
         lp:w-[55rem]
-        lg:w-[90rem] lg:ml-[5rem]
+        lg:w-[70rem]
         "></div>
 
         {/* Events */}
       <div className="flex space-x-10 overflow-x-auto py-4
-          md:w-[36rem] md:mx-auto md:ml-[1rem]
-          lp:w-[55rem] lp:ml-[5rem] lp:gap-[4rem]
-          lg:w-[80rem] lg:ml-[-2rem] lg:gap-[5rem]
+          md:w-[36rem] md:mx-auto 
+          lp:w-[55rem] lp:gap-[4rem]
+          lg:w-[80rem] lg:gap-[5rem]
           ">
           {events.map((event, idx) => (
             <div
@@ -113,8 +115,8 @@ const BcitTimeline = () => {
               {/* Diamond shape */}
               <div
                 className={`w-6 h-6 transform rotate-45 border-4 border-purple-200
-                  md:w-[2rem] md:h-[2rem] md:ml-[1rem] 
-                  lg:w-[3rem] lg:h-[3rem] lg:ml-[1.5rem] lg:mb-[4rem]
+                  md:w-[2rem] md:h-[2rem] 
+                  lg:w-[3rem] lg:h-[3rem] lg:mb-[4rem]
                   ${
                   selectedIndex === idx ? "bg-orange-300" : "bg-white"
                 }`}
@@ -141,27 +143,27 @@ const BcitTimeline = () => {
 
       {/* Event content */}
       <div className="border-t mt-6 pt-4
-      md:ml-[2rem] md:w-[40rem] md:text-[2rem] 
+      justify-self-center
       ">
         {/* this is the title of what each section is about*/}
         <h2 className="text-xl font-semibold text-purple-500
-        md:text-[2rem] md:pb-5 md:ml-[1rem] md:leading-[2.6rem] md:w-[45rem]
-          lp:text-[2.5rem] lp:pb-5 lp:ml-[-1rem] lp:leading-[3.2rem] lp:w-[55rem]
-          lg:text-[3rem] lg:pb-[2rem] lg:pt-[2rem] lg:ml-[-15rem] lg:leading-[3.8rem] lg:w-[67rem] 
+        md:text-[2rem] md:pb-5 md:leading-[2.6rem] md:w-[45rem]
+          lp:text-[2.5rem] lp:pb-5  lp:leading-[3.2rem] lp:w-[55rem]
+          lg:text-[3rem] lg:pb-[2rem] lg:pt-[2rem] lg:leading-[3.8rem] lg:w-[67rem] 
         ">{events[selectedIndex].title}</h2>
 
         {/* this is the duration of how long it took me to do each process*/}
         <h3 className="text-sm text-orange-600
-        md:text-[1.8rem] md:ml-[1rem]
-        lp:ml-[-1rem]
-        lg:text-[3rem] lg:pb-5 lg:ml-[-15rem] lg:leading-[3.8rem] lg:w-[67rem]
+        
+        md:text-[1.8rem] 
+        lg:text-[2.5rem] lg:pb-5 lg:leading-[3.8rem] lg:w-[67rem]
         ">{events[selectedIndex].sub}</h3>
 
         {/* this is the content section */}
         <p className="mt-2 text-purple-700
-        md:mt-5 md:text-[2rem] md:ml-[1rem] md:w-[43rem]
-        lp:w-[70rem] lp:text-[2rem] lp:ml-[-1.5rem]
-        lg:text-[3rem] lg:pb-5 lg:ml-[-15rem] lg:leading-[5rem] lg:w-[87rem]
+        md:mt-5 md:text-[2rem]  md:w-[43rem]
+        lp:w-[55rem] lp:text-[1.5rem]
+        lg:text-[2rem] lg:pb-5 lg:leading-[5rem] lg:w-[74rem]
         
         ">{events[selectedIndex].content}</p>
       </div>

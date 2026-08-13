@@ -46,22 +46,23 @@ const BcitSoftware = () => {
       </style>
 
       <h1
-        className="pl-2 justify-center text-center 
+        className="pl-2 justify-self-center text-center 
         underline decoration-dashed text-purple-400
-        sm:text-[1.7rem] sm:pb-[1rem] sm:w-[25rem]
-        md:text-[3rem] md:ml-[15rem]  md:w-[25rem] md:mb-[2rem]
-        lp:text-[4rem] lp:w-[35rem] lp:justify-center lp:items-center lp:ml-[18rem]
-        lg:text-[5rem] lg:w-[41rem]  lg:mt-[2rem] lg:ml-[10rem]"
+       sm:text-[1.7rem] sm:pb-[2rem] sm:w-[23rem] 
+                md:text-[3rem] md:pt-[1rem] md:w-[60rem] md:mb-[2rem]
+                lp:text-[2.8rem] lp:w-[75rem] lp:justify-center lp:items-center lp:pb-[2rem] lp:pt-[3rem]
+                lg:text-[4.5rem] lg:w-[70rem]"
       >
         Software Used:
       </h1>
 
       <ul
-        className="flex justify-center space-x-8 pl-[12.5rem]
-        sm:grid sm:grid-cols-2 sm:justify-items-center sm:gap-x-[1rem] sm:gap-y-[2rem] sm:space-x-0 sm:pl-0 sm:ml-[2.5rem] sm:w-[20rem] sm:pb-[2rem]
-        md:grid md:grid-cols-2 md:justify-items-center md:gap-x-[8rem] md:gap-y-[5rem] md:space-x-0 md:pl-0 md:ml-[11rem] md:w-[30rem] md:pb-[4rem]
-        lp:flex lp:w-[65rem] lp:ml-[5rem] lp:gap-[2rem]
-        lg:items-center lg:w-[96rem] lg:pb-[5rem] lg:mt-[5rem] lg:ml-[-17rem] lg:gap-[2rem]"
+        className="grid justify-self-center
+                grid-cols-2 gap-y-8 justify-items-center
+                sm:grid-cols-2 sm:w-[22rem] sm:pb-[2rem]
+                md:grid-cols-2 md:w-[57rem]
+                lp:grid-cols-4 lp:w-[55rem] 
+                lg:grid-cols-4 lg:w-[77rem]"
       >
         {/* Adobe Stock Images */}
         <li
@@ -70,18 +71,18 @@ const BcitSoftware = () => {
         >
           <IonIcon
             className="text-orange-400 hover:text-purple-300 
-            sm:text-[2.5rem] sm:px-2
-            md:text-[6rem] md:px-3
-            lg:text-[12rem] lg:px-6 lg:pb-[1rem] lg:pt-[3rem]
-            lp:text-[7.5rem] lp:pb-[1rem]"
+             sm:text-[2.5rem] sm:px-2
+                    md:text-[6rem] md:px-3
+                    lg:text-[7rem] lg:px-6 lg:pb-[1.5rem]
+                    lp:text-[7.5rem]"
             name="image-outline"
           />
           <span
             className="mt-2 text-center font-vcr text-purple-400
-            sm:text-[.9rem] sm:w-[10rem]
-            md:text-[1.5rem] md:w-[22rem]
-            lp:text-[2rem] lp:mt-[-1rem] lp:w-[22rem]
-            lg:text-[3rem] lg:w-[25rem] lg:mt-[-.5rem]"
+             sm:text-[.9rem] sm:w-[10rem]
+                    md:text-[1.5rem] md:w-[15rem] md:pt-[2rem]
+                    lp:text-[1.5rem] lp:w-[12rem]
+                    lg:text-[2rem] lg:w-[15rem] lg:mt-[3rem]"
           >
             Adobe Stock Images
           </span>
@@ -94,18 +95,18 @@ const BcitSoftware = () => {
         >
           <IonIcon
             className="text-orange-400 hover:text-purple-300 
-            sm:text-[2.5rem] sm:px-2
-            md:text-[6rem] md:px-3
-            lg:text-[12rem] lg:px-6 lg:pb-[2rem]
-            lp:text-[7.5rem] lp:px-4 lp:mb-8"
+             sm:text-[2.5rem] sm:px-2
+                    md:text-[6rem] md:px-3
+                    lg:text-[7rem] lg:px-6 lg:pb-[1.5rem]
+                    lp:text-[7.5rem]"
             name="brush-outline"
           />
           <span
             className="mt-2 text-center font-vcr text-purple-400
-            sm:text-[.9rem] sm:w-[8rem]
-            md:text-[1.5rem] md:w-[11rem]
-            lp:text-[2rem] lp:mt-[-2rem] lp:w-[15rem]
-            lg:text-[3rem] lg:pb-[2.5rem] lg:w-[18rem]"
+             sm:text-[.9rem] sm:w-[10rem]
+                    md:text-[1.5rem] md:w-[22rem] md:pt-[2rem]
+                    lp:text-[1.5rem] lp:w-[22rem]
+                    lg:text-[2rem] lg:w-[15rem] lg:mt-[3rem]"
           >
             Procreate
           </span>
@@ -118,18 +119,18 @@ const BcitSoftware = () => {
         >
           <IonIcon
             className="text-orange-400 hover:text-purple-300 hover:cursor-pointer
-            sm:text-[2.5rem] sm:px-2
-            md:text-[6rem] md:px-3
-            lg:text-[12rem] lg:px-[2rem]
-            lp:text-[7.5rem]"
+             sm:text-[2.5rem] sm:px-2
+                    md:text-[6rem] md:px-3
+                    lg:text-[7rem] lg:px-6 lg:pb-[1.5rem]
+                    lp:text-[7.5rem]"
             name="logo-figma"
           />
           <span
             className="mt-2 text-center font-vcr text-purple-400
-            sm:text-[.9rem] sm:w-[8rem]
-            md:text-[1.5rem] md:w-[11rem]
-            lp:text-[2rem] lp:mt-[0rem] lp:w-[13rem]
-            lg:text-[3rem] lg:mt-[2rem] lg:pb-[2.5rem] lg:w-[10rem]"
+             sm:text-[.9rem] sm:w-[10rem]
+                    md:text-[1.5rem] md:w-[22rem] md:pt-[2rem]
+                    lp:text-[1.5rem] lp:w-[22rem]
+                    lg:text-[2rem] lg:w-[15rem] lg:mt-[3rem]"
           >
             Figma
           </span>
@@ -142,18 +143,18 @@ const BcitSoftware = () => {
         >
           <IonIcon
             className="text-orange-400 hover:text-purple-300 hover:cursor-pointer
-            sm:text-[2.5rem] sm:px-2
-            md:text-[6rem] md:px-3
-            lg:text-[12rem] lg:px-[2rem]
-            lp:text-[7.5rem]"
+             sm:text-[2.5rem] sm:px-2
+                    md:text-[6rem] md:px-3
+                    lg:text-[7rem] lg:px-6 lg:pb-[1.5rem]
+                    lp:text-[7.5rem]"
             name="color-palette-outline"
           />
           <span
             className="mt-2 text-center font-vcr text-purple-400
-            sm:text-[.9rem] sm:w-[8rem]
-            md:text-[1.5rem] md:w-[11rem]
-            lp:text-[2rem] lp:mt-[0rem] lp:w-[13rem]
-            lg:text-[3rem] lg:mt-[2rem] lg:w-[10rem] lg:pb-10"
+             sm:text-[.9rem] sm:w-[10rem]
+                    md:text-[1.5rem] md:w-[22rem] md:pt-[2rem]
+                    lp:text-[1.5rem] lp:w-[22rem]
+                    lg:text-[2rem] lg:w-[15rem] lg:mt-[3rem]"
           >
             Canva
           </span>
