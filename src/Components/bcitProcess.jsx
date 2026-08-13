@@ -115,83 +115,80 @@ const BcitProcess = () => {
   return (
     <section className="w-full">
       <h2
-        className="
+        className=" justify-self-center
           text-center underline decoration-dashed text-purple-400
-          sm:text-[2rem] sm:pb-[1rem] sm:w-[23rem] sm:ml-[2rem]
-          md:text-[4rem] md:w-[45rem] md:mx-auto md:pt-[5rem] md:ml-[5rem]
+          sm:text-[2rem] sm:pb-[1rem] sm:w-[18rem] 
+          md:text-[4rem] md:w-[45rem] md:mx-auto md:pt-[5rem]
           lp:text-[4rem] lp:w-[65rem]
-          lg:text-[5rem] lg:w-[61rem] lg:ml-[5rem] lg:pb-[2rem]
+          lg:text-[5rem] lg:w-[61rem] lg:pb-[2rem]
         "
       >
-        Design Documentation:
+        Design Process:
       </h2>
 
       <p
-          className="
-            text-emerald-500 font-vcr
-            sm:text-[1rem] sm:w-[24rem] sm:ml-[2rem] sm:pb-[1.5rem]
-            md:text-[2rem] md:w-[50rem] md:ml-[3rem] md:mb-[2rem]
-            lp:text-[2rem] lp:w-[65rem] lp:ml-[4rem] lp:mb-[2rem]
-            lg:text-[3rem] lg:w-[100rem] lg:ml-[-15rem] lg:mt-[1rem] lg:mb-[2rem]
+          className=" justify-self-center
+            text-purple-500 font-vcr 
+            sm:text-[1rem] sm:w-[22rem] sm:pb-[1.5rem]
+            md:text-[2rem] md:w-[50rem] md:mb-[2rem]
+            lp:text-[2rem] lp:w-[65rem] lp:mb-[2rem]
+            lg:text-[2rem] lg:w-[60rem] lg:mt-[1rem] lg:mb-[2rem]
           "
         >
           This section highlights the design process behind the project,
-          including <span className="text-purple-400">flowcharts</span>,
-          <span className="text-purple-400"> user personas</span>,
-          <span className="text-purple-400"> user stories</span>, and an
-          <span className="text-purple-400"> empathy map</span>.
+          including <span className="text-orange-400">flowcharts</span>,
+          <span className="text-orange-400"> user personas</span>,
+          <span className="text-orange-400"> user stories</span>, and an
+          <span className="text-orange-400"> empathy map</span>.
         </p>
 
 
       <div
         className="
-          mx-auto
-          border-2 border-blue-200 border-dashed
+          mx-auto justify-self-center
+          border-2 border-orange-200 border-dashed
           bg-[#eee6f6]
           sm:px-2 sm:py-3
-          sm:w-[25rem] sm:ml-[1rem]
-          md:w-[50rem] md:p-5 md:ml-[2rem]
-          lp:w-[65rem] lp:p-6 lp:ml-[3rem]
-          lg:w-[78rem] lg:p-7 lg:ml-[-5rem]
+          sm:w-[24rem] 
+          md:w-[50rem] md:p-5
+          lp:w-[65rem] lp:p-6
+          lg:w-[78rem] lg:p-7 
         "
       >
-        <div className="flex items-center justify-between border-2 border-blue-200 bg-blue-300 px-2 py-1">
-          <span className="text-white font-vcr sm:text-[0.8rem] md:text-[1rem] lp:text-[1.2rem] lg:text-[1.4rem]">
+        <div className="flex items-center justify-between border-2 border-orange-200 bg-orange-300 px-2 py-1">
+          <span className="text-white font-vcr sm:text-[0.8rem] md:text-[1rem] lp:text-[1.2rem] lg:text-[2rem]">
             BcitProcess.exe
           </span>
 
-          <div className="flex gap-1">
-            <span className="flex h-4 w-4 items-center justify-center border border-blue-400 bg-[#f8f4ff] text-[0.65rem] text-blue-400">
-              _
-            </span>
-            <span className="flex h-4 w-4 items-center justify-center border border-blue-400 bg-[#f8f4ff] text-[0.65rem] text-blue-400">
-              □
-            </span>
-            <span className="flex h-4 w-4 items-center justify-center border border-blue-400 bg-[#f8f4ff] text-[0.65rem] text-blue-400">
-              ×
-            </span>
+          <div className="flex gap-1
+          lg:text-[1.5rem]
+          ">
+            <span className="border border-orange-400 bg-[#f8f4ff] text-orange-400 px-1">_</span>
+            <span className="border border-orange-400 bg-[#f8f4ff] text-orange-400 px-1">□</span>
+            <span className="border border-orange-400 bg-[#f8f4ff] text-orange-400 px-1">×</span>
           </div>
         </div>
 
-        <div className="mt-3 border-2 border-blue-200 bg-[#f8f4ff] p-3 md:p-4 lg:p-5">
-          <div className="flex flex-wrap gap-2 border-b-2 border-blue-200 pb-3">
+        <div className="mt-3 bg-[#f8f4ff]">
+          <div className="flex flex-wrap gap-2 border-orange-200 pb-3">
             <button
               type="button"
               onClick={() => setActiveTab("work")}
               className={`
-                border-2 px-3 py-1 font-vcr
+                border-2 px-3 py-1 font-vcr  text-purple-400
                 sm:text-[0.75rem]
                 md:text-[0.95rem]
-                lg:text-[1.1rem]
+                lg:text-[1.5rem]
                 ${
                   activeTab === "work"
-                    ? "border-blue-200 bg-[#e8dcf8] text-blue-500"
-                    : "border-blue-200 bg-white text-blue-400 hover:bg-[#f3ecfb]"
+                    ? "border-orange-200 bg-[#f8f4ff] text-orange-500"
+                    : "border-orange-200 bg-[#eee6f6] text-orange-400 hover:bg-[#f3ecfb]"
                 }
               `}
             >
               Sketches & Mockups
             </button>
+            
 
             <button
               type="button"
@@ -200,11 +197,12 @@ const BcitProcess = () => {
                 border-2 px-3 py-1 font-vcr
                 sm:text-[0.75rem]
                 md:text-[0.95rem]
-                lg:text-[1.1rem]
+                lp:text-[1.1rem]
+                lg:text-[1.5rem]
                 ${
                   activeTab === "process"
-                    ? "border-blue-200 bg-[#e8dcf8] text-blue-500"
-                    : "border-blue-200 bg-white text-blue-400 hover:bg-[#f3ecfb]"
+                    ? "border-orange-200 bg-[#f8f4ff] text-orange-500"
+                    : "border-orange-200 bg-[#eee6f6] text-orange-400 hover:bg-[#f3ecfb]"
                 }
               `}
             >
@@ -212,31 +210,27 @@ const BcitProcess = () => {
             </button>
           </div>
 
-          <div className="mt-3 flex flex-col gap-4 md:flex-row md:gap-5 lg:gap-6">
-            <div className="border-2 border-blue-200 bg-white p-3 md:w-[55%]">
-              <button
-                type="button"
-                onClick={openLightbox}
-                className="block w-full"
-              >
-                <img
-                  src={currentImage.src}
-                  alt={currentImage.alt}
-                  className="
-                    mx-auto block w-full object-contain
-                    sm:h-[230px]
-                    md:h-[350px]
-                    lp:h-[430px]
-                    lg:h-[520px]
-                  "
-                />
-              </button>
-            </div>
+        <div className="justify-self-center mt-3 flex flex-row gap-4 border-2 md:w-[95%]">
+        <div className=" mx auto block w-full object-contain
+          border-2 border-orange-200 bg-white p-3
+          sm:h-[230px]
+          md:h-[390px]
+          lp:h-[430px]
+          lg:h-[520px]
+        ">
+  <button type="button" onClick={openLightbox} className="block w-full h-full">
+    <img
+      src={currentImage.src}
+      alt={currentImage.alt}
+      className="mx-auto block w-full h-full object-contain"
+    />
+  </button>
+</div>
 
-            <div className="border-2 border-blue-200 bg-white p-3 md:w-[45%]">
+            <div className="border-2 border-orange-200 bg-white p-3 md:w-[55%]">
               <p
                 className="
-                  border-b border-blue-200 pb-2 text-blue-400 font-vcr
+                  border-b border-orange-200 pb-2 text-orange-400 font-vcr
                   sm:text-[0.85rem]
                   md:text-[1rem]
                   lp:text-[1.2rem]
@@ -248,7 +242,7 @@ const BcitProcess = () => {
 
               <p
                 className="
-                  mt-3 text-blue-500 font-vcr
+                  mt-3 text-orange-500 font-vcr
                   sm:text-[0.8rem] sm:leading-7
                   md:text-[1.05rem] md:leading-8
                   lp:text-[1.25rem] lp:leading-10
@@ -260,11 +254,11 @@ const BcitProcess = () => {
             </div>
           </div>
 
-          <div className="mt-4 flex items-center justify-between border-t-2 border-blue-200 pt-3">
+          <div className=" flex justify-center gap-[5rem] p-2 border-orange-200 pt-3">
             <button
               onClick={handlePrev}
               className="
-                border-2 border-blue-200 bg-[#e8dcf8] px-3 py-1 text-blue-400 font-vcr
+                border-2 border-orange-200 bg-[#e8dcf8] px-3 py-1 text-orange-400 font-vcr
                 hover:bg-white
                 sm:text-[0.8rem]
                 md:text-[0.95rem]
@@ -277,7 +271,7 @@ const BcitProcess = () => {
 
             <p
               className="
-                text-center text-blue-400 font-vcr
+                text-center text-orange-400 font-vcr
                 sm:text-[0.8rem]
                 md:text-[0.95rem]
                 lp:text-[1.1rem]
@@ -290,7 +284,7 @@ const BcitProcess = () => {
             <button
               onClick={handleNext}
               className="
-                border-2 border-blue-200 bg-[#e8dcf8] px-3 py-1 text-blue-400 font-vcr
+                border-2 border-orange-200 bg-[#e8dcf8] px-3 py-1 text-orange-400 font-vcr
                 hover:bg-white
                 sm:text-[0.8rem]
                 md:text-[0.95rem]
@@ -313,26 +307,29 @@ const BcitProcess = () => {
             className="
               w-full max-w-[95vw]
               max-h-[92vh]
-              border-2 border-blue-200 border-dashed
+              border-2 border-orange-200 border-dashed
               bg-[#eee6f6]
               flex flex-col
+              lg:w-[60rem]
             "
             onClick={(e) => e.stopPropagation()}
           >
-            <div className="flex items-center justify-between border-b-2 border-blue-200 bg-blue-300 px-2 py-1">
+            <div className="flex items-center justify-between border-b-2 border-orange-200 bg-orange-300 px-2 py-1 ">
               <span className="text-white font-vcr text-sm">
                 {currentImage.fileName}
               </span>
 
               <button
                 onClick={closeLightbox}
-                className="shrink-0 flex h-7 w-7 items-center justify-center border border-blue-400 bg-[#f8f4ff] text-[1rem] text-blue-400"
+                className="shrink-0 flex h-7 w-7 items-center justify-center border border-orange-400 bg-[#f8f4ff] text-[1rem] text-orange-400"
               >
                 ×
               </button>
             </div>
 
-            <div className="flex-1 overflow-y-auto bg-[#f8f4ff] p-3 md:p-5">
+            <div className="flex-1 overflow-y-auto bg-[#f8f4ff] p-3 md:p-5
+            
+            ">
               <div className="flex flex-col items-center gap-4">
                 <div className="w-full flex justify-center">
                   <img
@@ -347,21 +344,27 @@ const BcitProcess = () => {
                   />
                 </div>
 
-                <p className="text-center text-blue-500 font-vcr text-sm md:text-base max-w-[60ch]">
-                  {currentImage.description}
-                </p>
-
                 <div className="flex gap-4 mt-2">
                   <button
                     onClick={handlePrev}
-                    className="border-2 border-blue-200 bg-[#e8dcf8] px-3 py-1 text-blue-400 font-vcr hover:bg-white"
+                    className="border-2 border-orange-200 bg-[#e8dcf8] px-3 py-1 text-orange-400 font-vcr hover:bg-white
+                    sm:text-[0.8rem]
+                md:text-[0.95rem]
+                lp:text-[1.1rem]
+                lg:text-[1.25rem]
+                    "
                   >
                     &lt; Prev
                   </button>
 
                   <button
                     onClick={handleNext}
-                    className="border-2 border-blue-200 bg-[#e8dcf8] px-3 py-1 text-blue-400 font-vcr hover:bg-white"
+                    className="border-2 border-orange-200 bg-[#e8dcf8] px-3 py-1 text-orange-400 font-vcr hover:bg-white
+                    sm:text-[0.8rem]
+                md:text-[0.95rem]
+                lp:text-[1.1rem]
+                lg:text-[1.25rem]
+                    "
                   >
                     Next &gt;
                   </button>

@@ -60,49 +60,56 @@ const BcitJourney = () => {
     <section className="w-full">
       {/* TITLE */}
       <h2
-        className="
+        className=" justify-self-center
           text-center underline decoration-dashed text-purple-400
-          sm:text-[2rem] sm:pb-[1rem] sm:w-[23rem] sm:ml-[2rem]
-          md:text-[4rem] md:w-[45rem] md:mx-auto md:pt-[5rem] md:ml-[5rem]
+          sm:text-[2rem] sm:w-[24rem] 
+          md:text-[4rem] md:w-[45rem] md:mx-auto md:pt-[5rem]
           lp:text-[4rem] lp:w-[65rem]
-          lg:text-[5rem] lg:w-[38rem] lg:ml-[15rem] lg:pb-[2rem]
+          lg:text-[5rem] lg:w-[38rem] lg:pb-[2rem]
         "
       >
         User Journey:
       </h2>
 
-      {/* 🌸 WINDOW */}
+      {/* WINDOW */}
+      <div>
+        
+      </div>
       <div
         className="
-          mx-auto
-          border-2 border-blue-200 border-dashed
+        mx-auto justify-self-center
+          border-2 border-orange-200 border-dashed
           bg-[#eee6f6]
           sm:px-2 sm:py-3
-          sm:w-[25rem] sm:ml-[1rem]
-          md:w-[50rem] md:p-5 md:ml-[2rem]
-          lp:w-[65rem] lp:p-6 lp:ml-[3rem]
-          lg:w-[78rem] lg:p-7 lg:ml-[-5rem]
+          sm:w-[24rem] 
+          md:w-[50rem] md:p-5 
+          lp:w-[70rem] lp:p-6 
+          lg:w-[78rem] lg:p-7 
         "
       >
         {/* TITLE BAR */}
-        <div className="flex items-center justify-between border-2 border-blue-200 bg-blue-300 px-2 py-1">
-          <span className="text-white font-vcr">
+        <div className="flex items-center justify-between border-2 border-orange-200 bg-orange-300 px-2 py-1">
+          <span className="text-white font-vcr
+          lg:text-[2rem]
+          ">
             JourneyViewer.exe
           </span>
 
-          <div className="flex gap-1">
-            <span className="border border-blue-400 bg-[#f8f4ff] text-blue-400 px-1">_</span>
-            <span className="border border-blue-400 bg-[#f8f4ff] text-blue-400 px-1">□</span>
-            <span className="border border-blue-400 bg-[#f8f4ff] text-blue-400 px-1">×</span>
+          <div className="flex gap-1
+          lg:text-[1.5rem]
+          ">
+            <span className="border border-orange-400 bg-[#f8f4ff] text-orange-400 px-1">_</span>
+            <span className="border border-orange-400 bg-[#f8f4ff] text-orange-400 px-1">□</span>
+            <span className="border border-orange-400 bg-[#f8f4ff] text-orange-400 px-1">×</span>
           </div>
         </div>
 
         {/* BODY */}
-        <div className="mt-3 border-2 border-blue-200 bg-[#f8f4ff] p-3 md:p-4 lg:p-5">
+        <div className="mt-3 border-orange-200 bg-[#f8f4ff] p-3 md:p-4 lg:p-5">
           <div className="flex flex-col gap-4 md:flex-row md:gap-5 lg:gap-6">
             
             {/* IMAGE */}
-            <div className="border-2 border-blue-200 bg-white p-3 md:w-[55%]">
+            <div className="border-2 border-orange-200 bg-white p-3 md:w-[55%]">
               <button onClick={openLightbox} className="w-full">
                 <img
                   src={currentImage.src}
@@ -119,33 +126,53 @@ const BcitJourney = () => {
             </div>
 
             {/* TEXT */}
-            <div className="border-2 border-blue-200 bg-white p-3 md:w-[45%]">
-              <p className="border-b border-blue-200 pb-2 text-blue-400 font-vcr">
+            <div className="border-2 border-orange-200 bg-white p-3 md:w-[45%]">
+              <p className="border-b border-orange-200 pb-2 text-orange-400 font-vcr
+              sm:text-[0.85rem]
+                  md:text-[1rem]
+                  lp:text-[1.2rem]
+                  lg:text-[1.4rem]
+              ">
                 File: {currentImage.fileName}
               </p>
 
-              <p className="mt-3 text-blue-500 font-vcr leading-7">
+              <p className="mt-3 text-orange-500 font-vcr leading-7
+               sm:text-[0.8rem] sm:leading-7
+                  md:text-[1.05rem] md:leading-8
+                  lp:text-[1.25rem] lp:leading-10
+                  lg:text-[1.55rem] lg:leading-[3rem]
+              ">
                 {currentImage.description}
               </p>
             </div>
           </div>
 
           {/* CONTROLS */}
-          <div className="mt-4 flex justify-between border-t-2 border-blue-200 pt-3">
+          <div className="flex justify-between border-orange-200 pt-3">
             <button
               onClick={handlePrev}
-              className="border-2 border-blue-200 bg-[#e8dcf8] px-3 py-1 text-blue-400 font-vcr hover:bg-white"
+              className="border-2 border-orange-200 bg-[#e8dcf8] px-3 py-1  text-orange-500 font-vcr hover:bg-white
+               sm:text-[0.8rem]
+                md:text-[0.95rem]
+                lp:text-[1.1rem]
+                lg:text-[1.25rem]
+              "
             >
               &lt; Prev
             </button>
 
-            <p className="text-blue-400 font-vcr">
+            <p className="text-orange-400 font-vcr">
               {currentIndex + 1} / {images.length}
             </p>
 
             <button
               onClick={handleNext}
-              className="border-2 border-blue-200 bg-[#e8dcf8] px-3 py-1 text-blue-400 font-vcr hover:bg-white"
+              className="border-2 border-orange-200 bg-[#e8dcf8] px-3 py-1 text-orange-500 font-vcr hover:bg-white
+               sm:text-[0.8rem]
+                md:text-[0.95rem]
+                lp:text-[1.1rem]
+                lg:text-[1.25rem]
+              "
             >
               Next &gt;
             </button>
@@ -163,21 +190,22 @@ const BcitJourney = () => {
       className="
         w-full max-w-[95vw]
         max-h-[92vh]
-        border-2 border-blue-200 border-dashed
+        border-2 border-orange-200 border-dashed
         bg-[#eee6f6]
         flex flex-col
+        lg:w-[60rem]
       "
       onClick={(e) => e.stopPropagation()}
     >
       {/* 🟦 TITLE BAR */}
-      <div className="flex items-center justify-between border-b-2 border-blue-200 bg-blue-300 px-2 py-1">
+      <div className="flex items-center justify-between border-b-2 border-orange-200 bg-orange-300 px-2 py-1">
         <span className="text-white font-vcr text-sm">
           {currentImage.fileName}
         </span>
 
         <button
           onClick={closeLightbox}
-                className="shrink-0 flex h-4 w-4 items-center justify-center border border-blue-400 bg-[#f8f4ff] text-[0.65rem] text-blue-400
+                className="shrink-0 flex h-4 w-4 items-center justify-center border border-orange-400 bg-[#f8f4ff] text-[0.65rem] text-orange-400
                 sm:text-[2rem] 
           "
         >
@@ -203,23 +231,28 @@ const BcitJourney = () => {
             />
           </div>
 
-          {/* DESCRIPTION */}
-          <p className="text-center text-blue-500 font-vcr text-sm md:text-base max-w-[60ch]">
-            {currentImage.description}
-          </p>
-
           {/* CONTROLS */}
           <div className="flex gap-4 mt-2">
             <button
               onClick={handlePrev}
-              className="border-2 border-blue-200 bg-[#e8dcf8] px-3 py-1 text-blue-400 font-vcr hover:bg-white"
+              className="border-2 border-purple-200 bg-[#e8dcf8] px-3 py-1 text-purple-400 font-vcr hover:bg-white
+              sm:text-[0.8rem]
+                md:text-[0.95rem]
+                lp:text-[1.1rem]
+                lg:text-[1.25rem]
+              "
             >
               &lt; Prev
             </button>
 
             <button
               onClick={handleNext}
-              className="border-2 border-blue-200 bg-[#e8dcf8] px-3 py-1 text-blue-400 font-vcr hover:bg-white"
+              className="border-2 border-purple-200 bg-[#e8dcf8] px-3 py-1 text-purple-400 font-vcr hover:bg-white
+              sm:text-[0.8rem]
+                md:text-[0.95rem]
+                lp:text-[1.1rem]
+                lg:text-[1.25rem]
+              "
             >
               Next &gt;
             </button>

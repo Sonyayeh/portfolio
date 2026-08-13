@@ -29,12 +29,12 @@ const BcitiFig = () => {
   return (
     <section className="w-full">
       <h2
-        className="
-          text-center underline decoration-dashed text-blue-400
-          sm:text-[2rem] sm:pb-[1rem] sm:w-[23rem] sm:pt-[3rem] sm:ml-[2rem]
-          md:text-[4rem] md:w-[45rem] md:mx-auto md:pt-[5rem] md:ml-[5rem]
+        className=" justify-self-center
+          text-center underline decoration-dashed text-purple-400
+          sm:text-[2rem] sm:w-[23rem] 
+          md:text-[4rem] md:w-[45rem] md:mx-auto md:pt-[5rem] 
           lp:text-[4rem] lp:w-[65rem]
-          lg:text-7xl lg:w-[60rem] lg:mb-[3rem] lg:mt-[2rem] lg:mx-auto lg:ml-[4rem]
+          lg:text-7xl lg:w-[60rem] lg:mb-[3rem] lg:mt-[2rem] lg:mx-auto
         "
       >
         Figma Access:
@@ -43,50 +43,47 @@ const BcitiFig = () => {
       <div
         className="
           mx-auto
-          border-2 border-blue-200 border-dashed
-          bg-[#eee6f6]
+          border-2 border-orange-200 border-dashed
+          bg-[#eee6f6] justify-self-center
           sm:px-2 sm:py-3
-          sm:w-[25rem] sm:ml-[1rem]
-          md:w-[50rem] md:p-5 md:ml-[2rem]
-          lp:w-[65rem] lp:p-6 lp:ml-[3rem]
-          lg:w-[78rem] lg:p-7 lg:ml-[-5rem]
+          sm:w-[24rem] 
+          md:w-[50rem] md:p-5 
+          lp:w-[65rem] lp:p-6 
+          lg:w-[78rem] lg:p-7 
         "
       >
         {/* Title bar */}
-        <div className="flex items-center justify-between border-2 border-blue-200 bg-blue-300 px-2 py-1">
+        <div className="flex items-center justify-between border-2 border-orange-200 bg-orange-300 px-2 py-1">
           <span className="text-white font-vcr sm:text-[0.8rem] md:text-[1rem] lp:text-[1.2rem] lg:text-[1.4rem]">
             FigmaViewer.exe
           </span>
 
-          <div className="flex gap-1">
-            <span className="flex h-4 w-4 items-center justify-center border border-blue-400 bg-[#f8f4ff] text-[0.65rem] text-blue-400">
-              _
-            </span>
-            <span className="flex h-4 w-4 items-center justify-center border border-blue-400 bg-[#f8f4ff] text-[0.65rem] text-blue-400">
-              □
-            </span>
-            <span className="flex h-4 w-4 items-center justify-center border border-blue-400 bg-[#f8f4ff] text-[0.65rem] text-blue-400">
-              ×
-            </span>
+         <div className="flex gap-1
+          lg:text-[1.5rem]
+          ">
+            <span className="border border-orange-400 bg-[#f8f4ff] text-orange-400 px-1">_</span>
+            <span className="border border-orange-400 bg-[#f8f4ff] text-orange-400 px-1">□</span>
+            <span className="border border-orange-400 bg-[#f8f4ff] text-orange-400 px-1">×</span>
           </div>
         </div>
 
         {/* Body */}
-        <div className="mt-3 border-2 border-blue-200 bg-[#f8f4ff] p-3 md:p-4 lg:p-5">
+        <div className="mt-3 border-2 border-orange-200 bg-[#f8f4ff] p-3 md:p-4 lg:p-5">
           {/* Tabs */}
-          <div className="flex flex-wrap gap-2 border-b-2 border-blue-200 pb-3">
+          <div className="flex flex-wrap gap-2 pb-3">
             <button
               type="button"
               onClick={() => setActiveTab("design")}
               className={`
                 border-2 px-3 py-1 font-vcr
-                sm:text-[0.75rem]
+                 sm:text-[0.75rem]
                 md:text-[0.95rem]
-                lg:text-[1.1rem]
+                lp:text-[1.1rem]
+                lg:text-[1.5rem]
                 ${
                   activeTab === "design"
-                    ? "border-blue-200 bg-[#e8dcf8] text-blue-500"
-                    : "border-blue-200 bg-white text-blue-400 hover:bg-[#f3ecfb]"
+                    ? "border-orange-200 bg-[#f8f4ff] text-orange-500"
+                    : "border-orange-200 bg-[#eee6f6] text-orange-400 hover:bg-[#f3ecfb]"
                 }
               `}
             >
@@ -100,11 +97,12 @@ const BcitiFig = () => {
                 border-2 px-3 py-1 font-vcr
                 sm:text-[0.75rem]
                 md:text-[0.95rem]
-                lg:text-[1.1rem]
+                lp:text-[1.1rem]
+                lg:text-[1.5rem]
                 ${
                   activeTab === "prototype"
-                    ? "border-blue-200 bg-[#e8dcf8] text-blue-500"
-                    : "border-blue-200 bg-white text-blue-400 hover:bg-[#f3ecfb]"
+                    ? "border-orange-200 bg-[#f8f4ff] text-orange-500"
+                    : "border-orange-200 bg-[#eee6f6] text-orange-400 hover:bg-[#f3ecfb]"
                 }
               `}
             >
@@ -115,7 +113,7 @@ const BcitiFig = () => {
           {/* File name row */}
           <p
             className="
-              mt-3 border-b border-blue-200 pb-2 text-blue-400 font-vcr
+              mt-3 pb-2 text-orange-400 font-vcr
               sm:text-[0.85rem]
               md:text-[1rem]
               lp:text-[1.2rem]
@@ -126,7 +124,7 @@ const BcitiFig = () => {
           </p>
 
           {/* Embed */}
-          <div className="mt-4 border-2 border-blue-200 bg-white p-2 md:p-3">
+          <div className="mt-4 border-2 border-orange-200 bg-white p-2 md:p-3">
             <iframe
               src={current.src}
               allowFullScreen
@@ -145,21 +143,21 @@ const BcitiFig = () => {
           {/* Description */}
           <p
             className="
-              mt-4 text-emerald-500 font-vcr
-              sm:text-[0.9rem] sm:leading-7
-              md:text-[1.4rem] md:leading-[2.4rem]
-              lp:text-[1.8rem] lp:leading-[3rem]
-              lg:text-[2.2rem] lg:leading-[3.5rem]
+              mt-4 text-orange-500 font-vcr
+               sm:text-[0.85rem]
+                  md:text-[1rem]
+                  lp:text-[1.2rem]
+                  lg:text-[1.4rem]
             "
           >
             {current.description}
           </p>
 
           {/* Actions */}
-          <div className="mt-4 flex justify-between items-center border-t-2 border-blue-200 pt-3">
+          <div className="mt-4 flex justify-between items-center border-t-2 border-orange-200 pt-3">
             <p
               className="
-                text-blue-400 font-vcr
+                text-orange-400 font-vcr
                 sm:text-[0.8rem]
                 md:text-[0.95rem]
                 lg:text-[1.1rem]
@@ -173,8 +171,8 @@ const BcitiFig = () => {
               target="_blank"
               rel="noreferrer"
               className="
-                border-2 border-blue-200 bg-[#e8dcf8] px-3 py-1
-                text-blue-400 font-vcr hover:bg-white
+                border-2 border-orange-200 bg-[#e8dcf8] px-3 py-1
+                text-orange-400 font-vcr hover:bg-white
                 sm:text-[0.8rem]
                 md:text-[0.95rem]
                 lg:text-[1.1rem]

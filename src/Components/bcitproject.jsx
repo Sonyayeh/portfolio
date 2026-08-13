@@ -126,7 +126,7 @@ const BcitProject = () => {
                                        md:mb-[2rem] md:text-[1.5rem]
                                        lp:text-[1.5rem] lp:mt-[2rem]
                                        lg:mt-[1rem]"
-                            onClick={() => window.scrollTo({ top: 0 })}
+                             onClick={() => window.scrollTo({ top: 0 })}
                             >
                         View More
                         </button>

@@ -5,17 +5,17 @@ const slides = [
   {
     title: "Mission",
     content:
-      "Furrever Pals was designed to bring together two things that make people feel good: movement and animals. The goal was to create a welcoming space where wellness and genuine connection coexist, giving puppies a meaningful path to their forever homes while offering people a yoga experience that feels warm, joyful, and entirely their own.",
+      "Furrever Pals started from a simple idea: movement and animals both make people feel good, so why not combine them. Yoga lowers cortisol and calms the nervous system. Dogs do something similar, physical contact with them raises oxytocin, the hormone tied to trust and bonding. But the puppies in every session aren't just there for the hour, they're all adoptable, sourced from local shelters, free to go home with anyone who connects with them that day. The mission is really two things at once: a wellness space people genuinely want to return to, and a low pressure way for shelter dogs to find a home.",
   },
   {
     title: "Problem",
     content:
-      "For many people, adopting a pet feels like a high-stakes decision made under pressure, while traditional yoga can feel intimidating or socially isolating. There was no low-pressure, feel-good environment where people could organically connect with animals before committing to adoption — and no yoga experience designed to feel genuinely accessible and community-driven from the start.",
+      "Adopting a pet is usually treated as a decision, not an experience, something you research, then commit to, often without ever really meeting the animal beforehand under normal circumstances. Yoga has its own barrier: walking into a studio for the first time can feel intimidating, especially if everyone else already seems to know what they're doing. Neither problem is really about the activity itself, they're both about pressure. What was missing was a space where the stakes felt lower on both fronts: a chance to spend real time with a dog before any commitment, and a yoga session where not knowing anything yet was completely fine.",
   },
   {
     title: "Solution",
     content:
-      "Furrever Pals proposes a puppy yoga studio concept where every class doubles as an informal adoption event. By removing the formality of a traditional shelter visit and replacing it with a relaxed, joyful environment, people can connect with puppies naturally and on their own terms. This model lowers the emotional barrier to both yoga and pet adoption, creating a business that is genuinely good for people, animals, and community wellbeing.",
+      "The solution was to stop treating yoga and adoption as two separate things people had to choose between. Every Furrever Pals class doubles as an informal adoption event, so there's no shelter visit with its usual pressure, no sense of being watched or judged while you decide. People just spend an hour moving, breathing, and sitting with a dog who might become theirs, with no expectation attached either way. That's the whole model: lower the stakes enough that people show up for themselves, and stay open to something more.",
   },
 ];
 

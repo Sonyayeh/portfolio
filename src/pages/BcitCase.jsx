@@ -87,9 +87,7 @@ const BcitCase = () => {
         </h1>
 
         <p className="mt-5 max-w-[45rem] font-mono text-[#ffffff]">
-           Improving the MyBCIT experience by simplifying navigation,
-              reducing unnecessary steps, and modernizing the interface for
-              students in a fast-paced learning environment.
+           Redesigning MyBCIT to simplify navigation, reduce unnecessary steps, and modernize the interface for students in a fast-paced learning environment.
         </p>
       </section>
 
@@ -109,9 +107,7 @@ const BcitCase = () => {
     </h2>
 
     <p className="mt-4 font-mono text-[#ffffff]">
-      MyBCIT is known for being confusing, outdated, and difficult to
-      navigate. Students often struggle to find grades, schedules, and
-      important tools.
+      MyBCIT is outdated, difficult to navigate, and inconsistent with BCIT's identity as a fast-paced, hands-on institution. Students consistently struggle to find grades, schedules, and other essential tools.
     </p>
 
   </div>
@@ -129,8 +125,7 @@ const BcitCase = () => {
     </h2>
 
     <p className="mt-4 font-mono text-[0.9rem] leading-relaxed text-[#ffffff]">
-      Create a cleaner, more modern interface that reduces cognitive load,
-      improves navigation speed, and enhances usability for students.
+Design a cleaner, more modern interface that reduces cognitive load, shortens the path to key information, and improves usability for every student, regardless of experience level.
     </p>
 
   </div>
@@ -172,11 +167,9 @@ const BcitCase = () => {
   </p>
 
   <p className="mt-3 mb-6 max-w-[50rem] font-mono text-[0.9rem] leading-relaxed text-[#ffffff]">
-    Key UX artifacts created during the redesign process, including personas,
-    empathy mapping, user stories, flowcharts, and layout planning.
-  </p>
+Key UX artifacts developed throughout the redesign process, translating research findings into concrete design decisions.  </p>
 
-  <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+  <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-3 lp:grid-cols-3">
     {projectImages.map((image) => (
       <div
         key={image.title}
@@ -214,9 +207,7 @@ const BcitCase = () => {
     </h2>
 
     <p className="mt-4 font-mono text-[0.9rem] text-[#ffffff]">
-      This project taught me how important clarity and hierarchy are in
-      complex systems. Small UX improvements can significantly reduce user
-      frustration.
+      This project reinforced how much clarity and hierarchy matter in complex systems, and how small, deliberate UX changes can meaningfully reduce user frustration.
     </p>
 
     <h2 className="mt-4 font-vcr text-[2rem] text-[#FDEB5B]">
@@ -224,9 +215,7 @@ const BcitCase = () => {
     </h2>
 
     <p className="mt-4 font-mono text-[0.9rem] text-[#ffffff]">
-      Next step would be conducting usability testing on real BCIT
-      students and iterating based on navigation heatmaps.
-    </p>
+The next step would be structured usability testing with real BCIT students, paired with navigation heatmaps to validate whether click depth genuinely improved in practice.    </p>
   </div>
 
   {/* RIGHT: PDF */}
@@ -248,7 +237,7 @@ const BcitCase = () => {
 
     <div className="mt-5 flex flex-wrap gap-4">
       <a
-        href="/bcitcase.pdf"
+        href="/bcituxcase.pdf"
         target="_blank"
         rel="noopener noreferrer"
         className="border border-[#0A345E] bg-[#F5F5F5] px-4 py-2 font-Dos text-[#0A345E]  lp:hover:bg-[#FDEB5B] hover:text-[#0A345E] transition"
@@ -257,7 +246,7 @@ const BcitCase = () => {
       </a>
 
       <a
-        href="/bcitcase.pdf"
+        href="/bcituxcase.pdf"
         download
         className="border border-[#0A345E] bg-white px-4 py-2 font-Dos text-[#0A345E] lp:hover:bg-[#FDEB5B] hover:text-[#0A345E] transition"
       >

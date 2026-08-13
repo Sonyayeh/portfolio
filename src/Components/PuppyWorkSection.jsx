@@ -20,42 +20,42 @@ const images = [
     alt: "the High Fidelity design for Furrever Pals Design",
     fileName: "Hifi.png",
     description:
-      "The high fidelity designs were built around two core goals: readability and visual calm. The cream palette that defines the Furrever Pals brand was carried through as the primary background, creating a warm, unhurried atmosphere that felt true to the studio's identity. Accent colours were used deliberately to create contrast between sections without disrupting the overall softness of the experience, ensuring each page felt distinct but cohesive.",
+      "Moving into high fidelity, I kept coming back to one tension: how do you make pages feel distinct from each other without breaking the calm the brand was built on? Too much contrast between sections risked feeling busy, which worked against everything the wellness angle was trying to say. I kept the cream background constant across every page, since changing it page to page would've undercut that unhurried feeling, and let accent colours do the work of signalling new section instead. It meant every page had its own identity, but none of them ever felt like they'd wandered off from the rest.",
   },
   {
     src: Component,
     alt: "The Components that were used for Furrever Pals",
     fileName: "components.png",
     description:
-      "These components were designed specifically for the Furrever Pals experience, covering everything from the booking flow and date selection to user reviews and the contact form. While minor visual adjustments were made during development, the intent behind each component remained consistent throughout. Responsiveness was a core requirement from the start, which meant components like the review cards needed to be thoughtfully adapted to remain readable and functional across screen sizes.",
+      "Every component here, booking flow, date selection, review cards, the contact form, was built specifically for how Furrever Pals actually works, not pulled from a generic UI kit. The review cards ended up needing the most rework: what looked clean as three columns on desktop turned into a cramped mess on mobile, text overlapping, star ratings squeezed too small to read. I restructured them to stack vertically on smaller screens, which meant rethinking the spacing and hierarchy rather than just shrinking everything proportionally.",
   },
   {
     src: Userflow,
     alt: "The User Flow for the Furrever Pals website",
     fileName: "userflow.png",
     description:
-      "A detailed user flow was mapped out across all five core navigation paths: Classes, Adoption, Our Mission, About Us, and the login and authentication system. Each path was designed with intentional decision points, ensuring users always had a clear direction whether they chose to continue or exit gracefully back to the home page. Special attention was given to the booking flow, which guides users through date selection, time slot confirmation, and a two step booking process to reduce errors and set clear expectations.",
+      "I mapped the flow across five core paths, Classes, Adoption, Our Mission, About Us, and login, asking the same question at every branch: if someone changes their mind here, can they back out cleanly, or do they hit a dead end? The booking flow got the most attention, since it's the one place a mistake actually costs something. I split it into two steps, date and time selection first, confirmation second, rather than one long form, so people could double check what they picked before committing, instead of realizing an error only after submitting.",
   },
   {
     src: Sketch,
     alt: "The User Flow for the Furrever Pals website",
     fileName: "logosketch.jpg",
     description:
-      "The logo development for Furrever Pals explored the intersection of typographic playfulness and brand identity, with each iteration constructed from the letters F and P to anchor the name visually. Three directions were pursued: a cursive treatment emphasising elegance and fluidity, a letter union prioritising structural clarity, and a typographic graphic that paired an F with a mirrored P to form a heart upon convergence. The typographic graphic was ultimately selected as the final mark, as its formal resolution extends beyond mere initials to embody the compassion and hope central to the brand's mission for animal welfare.",
+      "Every logo direction started from the same two letters, F and P, but I pushed them three different ways to see what actually felt right. A cursive version leaned elegant and fluid, closer to a signature than a mark. A more structural version treated the letters as building blocks, clean but a little cold. The third direction combined an F with a mirrored P, and when they met in the middle, they formed a heart almost by accident. That felt like the obvious choice the moment I saw it, since the mark wasn't just initials anymore, it was actually saying something about what the brand stood for, without needing any text to explain it.",
   },
   {
     src: Sketch2,
     alt: "The graphics design for Furrever Pals",
     fileName: "logosketch2.png",
     description:
-      "The puppy yoga concept for Furrever Pals was developed by placing a soft, floppy eared, physically clumsy dog into recognisable yoga poses, letting the mismatch between the dog and the calm world of yoga carry the brand's humor without a tagline. A rounded head and body silhouette with oversized ears formed the base character, since the ears could stretch and fold to suggest different poses without redrawing the whole figure. This base was tested across four postures, cover boy, neck stretch front, neck stretch side, and bagel position, to find how far the shape could bend while still reading as a puppy, with loose hand drawn linework and consistent wordmark placement keeping all four marks feeling like one family.",
+      "The character came from a simple mismatch: a soft, floppy eared, slightly clumsy dog attempting calm, controlled yoga poses. That contrast did the humour on its own, no tagline needed. I built the base around a rounded head and body with oversized ears, since the ears could stretch and fold to suggest movement without redrawing the whole figure each time. I pushed that base through four postures, cover boy, neck stretch front, neck stretch side, and bagel position, mostly to find the point where the shape stopped reading as a puppy and started looking like an abstract blob. Loose, hand drawn linework and consistent wordmark placement kept all four feeling like one family, even as the poses got more extreme.",
   },
   {
     src: Graphics,
     alt: "The User Flow for the Furrever Pals website",
     fileName: "graphicsketches.jpg",
     description:
-      "This sheet extended the puppy yoga exploration by testing the concept across additional formats rather than settling on a single output. A simplified paw print icon was introduced as a companion mark for smaller applications such as app icons, while a puppy stretch pose on a yoga mat continued validating the yoga motif across new postures. A bold wordmark treatment and a ribbon style badge were also explored as alternate identity directions before being set aside in favour of the typographic graphic mark. The recurring heart doodle confirming the F and P combination reflects a deliberate return to that concept, reinforcing it as the strongest solution rather than an accidental repeat. Together, these sketches demonstrate a process of testing multiple directions in parallel before consolidating around the final Furrever Pals identity.",
+      "This sheet pushed the exploration wider instead of narrowing in too early. A simplified paw print icon came out of it, meant for small applications like app icons where the full mark wouldn't hold up at that size. A puppy mid stretch on a yoga mat tested the yoga motif from a new angle. I also tried a bold wordmark and a ribbon style badge, both eventually set aside, they felt more generic, closer to a typical pet brand than something specific to Furrever Pals. The heart doodle kept reappearing throughout this sheet too, which wasn't an accident. By that point I'd already half decided the F and P mark was the strongest direction, and kept sketching it just to be sure.",
   },
 ];
 
@@ -294,9 +294,7 @@ const PuppyWorkSection = () => {
                   />
                 </div>
 
-                <p className="mt-4 w-full max-w-[70ch] text-center text-orange-500 font-vcr text-[0.78rem] leading-6 sm:text-[0.85rem] sm:leading-7 md:text-[1rem] md:leading-8 lg:text-[1.15rem]">
-                  {currentImage.description}
-                </p>
+              
 
                 <div className="mt-4 flex flex-wrap justify-center gap-3">
                   <button

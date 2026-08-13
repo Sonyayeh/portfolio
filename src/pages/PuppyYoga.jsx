@@ -54,7 +54,7 @@ const PuppyYoga = () => {
                 md:text-[2rem] md:w-[50rem] md:pb-[2rem]
                 lp:text-[1.5rem] lp:w-[60rem] lp:leading-[3rem] lp:pb-[4rem]
                 lg:text-[3rem] lg:w-[85rem] lg:mb-[5rem] lg:mt-[2rem] lg:leading-[5rem]">
-              Furrever Pals is a complete brand and digital service that addresses mental health and community isolation in Vancouver through purposeful design. The project spans comprehensive brand identity, thoughtful UX design, and full-stack web development, creating an accessible wellness experience where users engage with adoptable dogs from local shelters, merging personal wellbeing with animal welfare impact.
+              Vancouver's existing puppy yoga studios solve one problem: people want time with dogs. But looking closer, something was missing. None of them connected that desire to the thousands of dogs sitting in local shelters, waiting for homes. And most leaned entirely on the "cute" factor, without any real framing around wellness or accessibility, for people who might feel priced out of typical studio culture. Furrever Pals started as an attempt to close both gaps at once: a wellness experience genuinely built around accessibility, and a real bridge between community and shelter dog adoption. The project spans brand identity, UX design, and a fully hand coded website.
                 </h3>
                 </div>
                   <div className="flex justify-center w-full pb-[1rem]">
