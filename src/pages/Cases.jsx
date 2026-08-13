@@ -3,12 +3,12 @@ import { Link } from "react-router-dom";
 
 const caseStudies = [
   {
-    title: "TYSN",
-    subtitle: "Celestial Tea Ceremony Brandbook",
-    type: "Brand Campaign / UIUX",
-    path: "/cases/tysn",
-    pdf: "/tysn.pdf",
-    color: "bg-[#d0faff]",
+    title: "Furrever Pals",
+    subtitle: "Pet Adoption / Community Experience",
+    type: "UX Research / UI Design",
+    path: "/cases/furrever",
+    pdf: "/furreverpals.pdf",
+    color: "bg-[#fff1f7]",
   },
   {
     title: "BCIT",
@@ -19,12 +19,12 @@ const caseStudies = [
     color: "bg-[#eef3ff]",
   },
   {
-    title: "Furrever Pals",
-    subtitle: "Pet Adoption / Community Experience",
-    type: "UX Research / UI Design",
-    path: "/cases/furrever",
-    pdf: "/furreverpals.pdf",
-    color: "bg-[#fff1f7]",
+    title: "TYSN",
+    subtitle: "Celestial Tea Ceremony Brandbook",
+    type: "Brand Campaign / UIUX",
+    path: "/cases/tysn",
+    pdf: "/tysn.pdf",
+    color: "bg-[#d0faff]",
   },
   {
     title: "Marketing Plan",
