@@ -5,17 +5,22 @@ const slides = [
   {
     title: "Mission",
     content:
-      "Furrever Pals started from a simple idea: movement and animals both make people feel good, so why not combine them. Yoga lowers cortisol and calms the nervous system. Dogs do something similar, physical contact with them raises oxytocin, the hormone tied to trust and bonding. But the puppies in every session aren't just there for the hour, they're all adoptable, sourced from local shelters, free to go home with anyone who connects with them that day. The mission is really two things at once: a wellness space people genuinely want to return to, and a low pressure way for shelter dogs to find a home.",
+      "Furrever Pals started from something almost everyone deals with: stress. Not a niche problem, not something only certain people carry, just a near universal weight that shows up differently for everyone but rarely gets addressed directly. Yoga is one proven way to work through it, it lowers cortisol and calms the nervous system, gives the body somewhere to put tension it's been holding. But there's a second, less talked about effect worth taking seriously: cute things trigger a real dopamine response, the same reward pathway behind why people can't help smiling at a puppy, and few things hit that instinct as reliably as a dog. Combining the two wasn't a novelty pairing, it was two real, separate feel-good mechanisms working at once.",
   },
   {
-    title: "Problem",
+    title: "Problem 1",
     content:
-      "Adopting a pet is usually treated as a decision, not an experience, something you research, then commit to, often without ever really meeting the animal beforehand under normal circumstances. Yoga has its own barrier: walking into a studio for the first time can feel intimidating, especially if everyone else already seems to know what they're doing. Neither problem is really about the activity itself, they're both about pressure. What was missing was a space where the stakes felt lower on both fronts: a chance to spend real time with a dog before any commitment, and a yoga session where not knowing anything yet was completely fine.",
+      "Most people don't seek professional help when they're overwhelmed. More often, they turn to something more accessible, exercise, movement, anything physical that offers some relief, even if the underlying stress never actually gets addressed. That gap, between needing support and actually seeking it, is where Furrever Pals tries to meet people halfway.",
+  },
+  {
+    title: "Problem 2",
+    content:
+      "The second problem is less visible but just as real. Vancouver's shelters have made genuine progress reducing dog intake over the past two decades, but the dogs still coming in aren't guaranteed safety. According to BC SPCA's 2023 Annual Report, 1,697 animals were euthanized that year, including dogs whose conditions were considered treatable, cases where the outcome came down to space, time, or the absence of a ready home, not the animal's actual health. Furrever Pals treats that as directly connected to the wellness problem, not separate from it: bringing people and dogs into the same low pressure room does something for both. People get a form of stress relief that doesn't require booking a therapist. Dogs get seen by people who might actually take them home. To make that connection more than symbolic, Furrever Pals donates 10 percent of all income to local shelters, regardless of how many adoptions happen in a given month.",
   },
   {
     title: "Solution",
     content:
-      "The solution was to stop treating yoga and adoption as two separate things people had to choose between. Every Furrever Pals class doubles as an informal adoption event, so there's no shelter visit with its usual pressure, no sense of being watched or judged while you decide. People just spend an hour moving, breathing, and sitting with a dog who might become theirs, with no expectation attached either way. That's the whole model: lower the stakes enough that people show up for themselves, and stay open to something more.",
+      "The solution was to merge two genuinely separate things, movement based stress relief and animal adoption, because together they create something neither could offer alone. Every Furrever Pals class doubles as an informal adoption event, so there's no shelter visit with its usual pressure, no sense of being watched or judged while you decide. People just spend an hour moving, being near dogs whose presence alone does something good for their mood, and sitting with one who might become theirs, with no expectation attached either way. That's the whole model: lower the stakes enough that people show up for themselves, and stay open to something more. The shelter side of that model isn't passive either. Ten percent of everything Furrever Pals earns goes directly to local dog shelters, whether or not a single adoption happens that month. The wellness side and the welfare side were never meant to be separate businesses loosely connected by a shared logo, they're the same commitment, pointed in two directions at once.",
   },
 ];
 

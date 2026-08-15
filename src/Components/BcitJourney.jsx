@@ -60,12 +60,11 @@ const BcitJourney = () => {
     <section className="w-full">
       {/* TITLE */}
       <h2
-        className=" justify-self-center
-          text-center underline decoration-dashed text-purple-400
-          sm:text-[2rem] sm:w-[24rem] 
+        className="flex justify-self-center underline decoration-dashed text-purple-400 text-center justify-center
+          sm:text-[2rem] sm:pb-[1rem] sm:w-[18rem] 
           md:text-[4rem] md:w-[45rem] md:mx-auto md:pt-[5rem]
-          lp:text-[4rem] lp:w-[65rem]
-          lg:text-[5rem] lg:w-[38rem] lg:pb-[2rem]
+          lp:text-[4rem] lp:w-[30rem] lp:pt-[2rem]
+          lg:text-[5rem] lg:w-[61rem] lg:pb-[2rem]
         "
       >
         User Journey:
@@ -81,9 +80,9 @@ const BcitJourney = () => {
           border-2 border-orange-200 border-dashed
           bg-[#eee6f6]
           sm:px-2 sm:py-3
-          sm:w-[24rem] 
+          sm:w-[21rem] 
           md:w-[50rem] md:p-5 
-          lp:w-[70rem] lp:p-6 
+          lp:w-[60rem] lp:p-6 
           lg:w-[78rem] lg:p-7 
         "
       >
@@ -109,7 +108,7 @@ const BcitJourney = () => {
           <div className="flex flex-col gap-4 md:flex-row md:gap-5 lg:gap-6">
             
             {/* IMAGE */}
-            <div className="border-2 border-orange-200 bg-white p-3 md:w-[55%]">
+            <div className="border-2 border-orange-200 bg-white p-3 min-w-0 md:w-[55%]">
               <button onClick={openLightbox} className="w-full">
                 <img
                   src={currentImage.src}
@@ -126,7 +125,7 @@ const BcitJourney = () => {
             </div>
 
             {/* TEXT */}
-            <div className="border-2 border-orange-200 bg-white p-3 md:w-[45%]">
+            <div className="border-2 border-orange-200 bg-white p-3 min-w-0 md:w-[45%]">
               <p className="border-b border-orange-200 pb-2 text-orange-400 font-vcr
               sm:text-[0.85rem]
                   md:text-[1rem]
@@ -197,7 +196,7 @@ const BcitJourney = () => {
       "
       onClick={(e) => e.stopPropagation()}
     >
-      {/* 🟦 TITLE BAR */}
+      {/* TITLE BAR */}
       <div className="flex items-center justify-between border-b-2 border-orange-200 bg-orange-300 px-2 py-1">
         <span className="text-white font-vcr text-sm">
           {currentImage.fileName}
@@ -213,7 +212,7 @@ const BcitJourney = () => {
         </button>
       </div>
 
-      {/* 🧊 BODY */}
+      {/* BODY */}
       <div className="flex-1 overflow-y-auto bg-[#f8f4ff] p-3 md:p-5">
         <div className="flex flex-col items-center gap-4">
 

@@ -28,10 +28,18 @@ const BeachPSO = () => {
 
   return (
     <div className="font-Dos flex flex-col items-center justify-self-center
-      sm:w-[25rem] sm:pb-[3rem]
+      sm:w-[20rem] sm:pb-[3rem]
       md:w-[45rem] md:pb-[4rem] 
       lg:w-[70rem]
       ">
+        <h1 className="flex justify-self-center justify-center
+                        underline decoration-dashed text-blue-400
+                        sm:text-[1.7rem] sm:pb-[1rem] sm:pt-[1rem] sm:w-[17rem]
+                        md:text-5xl md:pt-[5rem] md:w-[55rem] md:mb-[2rem]
+                        lp:text-[4rem] lp:w-[75rem] lp:justify-center lp:items-center lp:pb-[5rem]
+                        lg:text-7xl lg:w-[70rem] lg:mt-[2rem]">
+                        Design Rationale:
+                  </h1>
 
       {slides.map((slide, idx) => (
         <div key={idx} className="w-full border-b border-purple-300

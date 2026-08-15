@@ -100,7 +100,7 @@ const PuppyWorkSection = () => {
           sm:px-2 sm:py-3
           sm:w-[22rem] 
           md:w-[50rem] md:p-5 
-          lp:w-[70rem] lp:p-6 
+          lp:w-[60rem] lp:p-6 
           lg:w-[78rem] lg:p-7 
         "
       >

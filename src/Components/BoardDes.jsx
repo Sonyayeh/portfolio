@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 
-const BeachDes = () => {
+const BoardDes = () => {
   const overviewRef = useRef(null);
   const waveTweenRef = useRef(null);
 
@@ -73,33 +73,18 @@ const BeachDes = () => {
   }, []);
 
   return (
-    <div className="w-full justify-self-center">
-      <h1
-        ref={overviewRef}
-        className="flex justify-self-center underline decoration-dashed text-blue-400 text-center justify-center
-                sm:text-[1.5rem] sm:pb-[2rem] sm:w-[22rem]
-                md:text-[3.5rem] md:pt-[3rem] md:w-[45rem] 
-                lp:text-[2.5rem] lp:w-[75rem] lp:justify-center lp:items-center lp:mt-[-3rem]
-                lg:text-[4rem] lg:w-[70rem] lg:mb-[2rem]
-        "
-      >
-        Overview:
-      </h1>
+   
 
-      <h3
-        className=" text-purple-500 justify-self-center
-        sm:text-[1rem] sm:pb-[1rem] sm:w-[22rem] 
+       <h3 className=" text-orange-500 justify-self-center
+        sm:text-[1rem] sm:pb-[1rem] sm:w-[20rem] 
                 md:text-[2rem] md:w-[50rem] md:pb-[2rem]
                 lp:text-[1.5rem] lp:w-[60rem] lp:leading-[3rem] lp:pb-[4rem]
-                lg:text-[3rem] lg:w-[85rem] lg:mb-[5rem] lg:mt-[2rem] lg:leading-[5rem]"
-      >
-        This project focuses on designing a promotional poster for a volleyball tournament in the Town of Shelbyville.
-        <br />
-        <br />
-        The objective was to create a visually engaging design that clearly communicates event information while capturing the energy and atmosphere of the sport. Using Adobe Illustrator, I applied principles of composition, hierarchy, and colour to produce a cohesive and impactful final design under time constraints.
-      </h3>
-    </div>
+                lg:text-[3rem] lg:w-[85rem] lg:mb-[5rem] lg:mt-[2rem] lg:leading-[5rem]">
+                Boardwalk Boutique is a skate shop that does skateboard rentals and streetwear and skateboard
+                retail. It is a fictional skate shop located in the heart of Vancouver. The app includes various of designs and brands of skateboards and is to guarantee users to find something for them. There are also the review sections users can read upon before renting/purchasing any merchandise, and they can also leave comments about products.
+                </h3>
+
   );
 };
 
-export default BeachDes;
+export default BoardDes;

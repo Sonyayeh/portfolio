@@ -107,84 +107,79 @@ const BoardProcess = () => {
 
   return (
     <section className="w-full">
-      <h2
-        className="
-          text-center underline decoration-dashed text-purple-400
-          sm:text-[2rem] sm:pb-[1rem] sm:w-[23rem] sm:ml-[2rem]
-          md:text-[4rem] md:w-[45rem] md:mx-auto md:pt-[5rem] md:ml-[5rem]
-          lp:text-[4rem] lp:w-[65rem]
-          lg:text-[5rem] lg:w-[61rem] lg:ml-[5rem] lg:pb-[2rem]
-        "
-      >
+      <h1 className="flex justify-self-center justify-center
+                underline decoration-dashed text-purple-400
+                sm:text-[1.7rem] sm:pb-[2rem] sm:w-[22rem] 
+                md:text-[3rem] md:pt-[1rem] md:w-[60rem] md:mb-[2rem]
+                lp:text-[2.8rem] lp:w-[75rem] lp:justify-center lp:items-center lp:pb-[2rem] lp:pt-[3rem]
+                lg:text-[4.5rem] lg:w-[70rem]">
         Design Process:
-      </h2>
+      </h1>
 
       <p
-        className="
-          text-emerald-500 font-vcr
-          sm:text-[1rem] sm:w-[24rem] sm:ml-[2rem] sm:pb-[1.5rem]
-          md:text-[2rem] md:w-[50rem] md:ml-[3rem] md:mb-[2rem]
-          lp:text-[2rem] lp:w-[65rem] lp:ml-[4rem] lp:mb-[2rem]
-          lg:text-[3rem] lg:w-[100rem] lg:ml-[-15rem] lg:mt-[1rem] lg:mb-[2rem]
-        "
-      >
+          className=" justify-self-center
+            text-purple-500 font-vcr 
+            sm:text-[1rem] sm:w-[22rem] sm:pb-[1.5rem]
+            md:text-[2rem] md:w-[50rem] md:mb-[2rem]
+            lp:text-[2rem] lp:w-[65rem] lp:mb-[2rem]
+            lg:text-[2rem] lg:w-[60rem] lg:mt-[1rem] lg:mb-[2rem]
+          "
+        >
         This section highlights the product design process behind the project,
         including
-        <span className="text-purple-400"> team structure</span>,
-        <span className="text-purple-400"> visual system development</span>,
-        <span className="text-purple-400"> user story thinking</span>, and
-        <span className="text-purple-400"> journey mapping</span>.
+        <span className="text-orange-400"> team structure</span>,
+        <span className="text-orange-400"> visual system development</span>,
+        <span className="text-orange-400"> user story thinking</span>, and
+        <span className="text-orange-400"> journey mapping</span>.
       </p>
 
+      
       <div
         className="
-          mx-auto
-          border-2 border-blue-200 border-dashed
+          mx-auto justify-self-center
+          border-2 border-orange-200 border-dashed
           bg-[#eee6f6]
           sm:px-2 sm:py-3
-          sm:w-[25rem] sm:ml-[1rem]
-          md:w-[50rem] md:p-5 md:ml-[2rem]
-          lp:w-[65rem] lp:p-6 lp:ml-[3rem]
-          lg:w-[78rem] lg:p-7 lg:ml-[-5rem]
+          sm:w-[21rem] 
+          md:w-[50rem] md:p-5
+          lp:w-[60rem] lp:p-6
+          lg:w-[78rem] lg:p-7 
         "
       >
-        <div className="flex items-center justify-between border-2 border-blue-200 bg-blue-300 px-2 py-1">
-          <span className="text-white font-vcr sm:text-[0.8rem] md:text-[1rem] lp:text-[1.2rem] lg:text-[1.4rem]">
-            BoardProcess.exe
+        <div className="flex items-center justify-between border-2 border-orange-200 bg-orange-300 px-2 py-1">
+          <span className="text-white font-vcr sm:text-[0.8rem] md:text-[1rem] lp:text-[1.2rem] lg:text-[2rem]">
+            BcitProcess.exe
           </span>
 
-          <div className="flex gap-1">
-            <span className="border border-blue-400 bg-[#f8f4ff] text-blue-400 px-1">
-              _
-            </span>
-            <span className="border border-blue-400 bg-[#f8f4ff] text-blue-400 px-1">
-              □
-            </span>
-            <span className="border border-blue-400 bg-[#f8f4ff] text-blue-400 px-1">
-              ×
-            </span>
+          <div className="flex gap-1
+          lg:text-[1.5rem]
+          ">
+            <span className="border border-orange-400 bg-[#f8f4ff] text-orange-400 px-1">_</span>
+            <span className="border border-orange-400 bg-[#f8f4ff] text-orange-400 px-1">□</span>
+            <span className="border border-orange-400 bg-[#f8f4ff] text-orange-400 px-1">×</span>
           </div>
         </div>
 
-        <div className="mt-3 border-2 border-blue-200 bg-[#f8f4ff] p-3 md:p-4 lg:p-5">
-          <div className="flex flex-wrap gap-2 border-b-2 border-blue-200 pb-3">
+        <div className="mt-3 bg-[#f8f4ff]">
+          <div className="flex flex-wrap gap-2 border-orange-200 pb-3">
             <button
               type="button"
               onClick={() => setActiveTab("work")}
               className={`
-                border-2 px-3 py-1 font-vcr
+                border-2 px-3 py-1 font-vcr  text-purple-400
                 sm:text-[0.75rem]
                 md:text-[0.95rem]
-                lg:text-[1.1rem]
+                lg:text-[1.5rem]
                 ${
                   activeTab === "work"
-                    ? "border-blue-200 bg-[#e8dcf8] text-blue-500"
-                    : "border-blue-200 bg-white text-blue-400 hover:bg-[#f3ecfb]"
+                    ? "border-orange-200 bg-[#f8f4ff] text-orange-500"
+                    : "border-orange-200 bg-[#eee6f6] text-orange-400 hover:bg-[#f3ecfb]"
                 }
               `}
             >
               Sketches & Mockups
             </button>
+            
 
             <button
               type="button"
@@ -193,11 +188,12 @@ const BoardProcess = () => {
                 border-2 px-3 py-1 font-vcr
                 sm:text-[0.75rem]
                 md:text-[0.95rem]
-                lg:text-[1.1rem]
+                lp:text-[1.1rem]
+                lg:text-[1.5rem]
                 ${
                   activeTab === "process"
-                    ? "border-blue-200 bg-[#e8dcf8] text-blue-500"
-                    : "border-blue-200 bg-white text-blue-400 hover:bg-[#f3ecfb]"
+                    ? "border-orange-200 bg-[#f8f4ff] text-orange-500"
+                    : "border-orange-200 bg-[#eee6f6] text-orange-400 hover:bg-[#f3ecfb]"
                 }
               `}
             >
@@ -205,35 +201,32 @@ const BoardProcess = () => {
             </button>
           </div>
 
-          <div className="mt-4">
-            <div className="border-2 border-blue-200 bg-white p-3">
-              <button
-                type="button"
-                onClick={openLightbox}
-                className="block w-full"
-              >
+          {/* Image + file info: stacked on sm, side by side on md and up */}
+          <div className="justify-self-center mt-3 flex flex-col gap-4 md:flex-row md:w-[95%]">
+            <div className=" mx auto block w-full object-contain min-w-0
+              border-2 border-orange-200 bg-white p-3
+              sm:h-[230px]
+              md:h-[390px] md:w-[45%]
+              lp:h-[430px]
+              lg:h-[520px]
+            ">
+              <button type="button" onClick={openLightbox} className="block w-full h-full">
                 <img
                   src={currentImage.src}
                   alt={currentImage.alt}
-                  className="
-                    mx-auto block w-full object-contain
-                    sm:h-[230px]
-                    md:h-[350px]
-                    lp:h-[430px]
-                    lg:h-[520px]
-                  "
+                  className="mx-auto block w-full h-full object-contain"
                 />
               </button>
             </div>
 
-            <div className="mt-5 border-2 border-blue-200 bg-white p-4 md:p-6">
+            <div className="border-2 border-orange-200 bg-white p-3 min-w-0 md:w-[55%]">
               <p
                 className="
-                  border-b border-blue-200 pb-3 text-blue-400 font-vcr
-                  sm:text-[0.9rem]
-                  md:text-[1.1rem]
-                  lp:text-[1.25rem]
-                  lg:text-[1.5rem]
+                  border-b border-orange-200 pb-2 text-orange-400 font-vcr
+                  sm:text-[0.85rem]
+                  md:text-[1rem]
+                  lp:text-[1.2rem]
+                  lg:text-[1.4rem]
                 "
               >
                 File: {currentImage.fileName}
@@ -241,11 +234,11 @@ const BoardProcess = () => {
 
               <p
                 className="
-                  mt-4 text-blue-500 font-vcr
-                  sm:text-[0.9rem] sm:leading-8
-                  md:text-[1.2rem] md:leading-[2.5rem]
-                  lp:text-[1.4rem] lp:leading-[2.8rem]
-                  lg:text-[1.7rem] lg:leading-[3.3rem]
+                  mt-3 text-orange-500 font-vcr
+                  sm:text-[0.8rem] sm:leading-7
+                  md:text-[1.05rem] md:leading-8
+                  lp:text-[1.25rem] lp:leading-10
+                  lg:text-[1.55rem] lg:leading-[3rem]
                 "
               >
                 {currentImage.description}
@@ -253,11 +246,11 @@ const BoardProcess = () => {
             </div>
           </div>
 
-          <div className="mt-5 flex items-center justify-between border-t-2 border-blue-200 pt-4">
+          <div className=" flex justify-center gap-[3rem] p-2 border-orange-200 pt-3">
             <button
               onClick={handlePrev}
               className="
-                border-2 border-blue-200 bg-[#e8dcf8] px-5 py-2 text-blue-400 font-vcr
+                border-2 border-orange-200 bg-[#e8dcf8] px-3 py-1 text-orange-400 font-vcr
                 hover:bg-white
                 sm:text-[0.8rem]
                 md:text-[0.95rem]
@@ -270,8 +263,8 @@ const BoardProcess = () => {
 
             <p
               className="
-                text-center text-blue-400 font-vcr
-                sm:text-[0.8rem]
+                text-center text-orange-400 font-vcr
+                sm:text-[1rem]
                 md:text-[0.95rem]
                 lp:text-[1.1rem]
                 lg:text-[1.25rem]
@@ -283,7 +276,7 @@ const BoardProcess = () => {
             <button
               onClick={handleNext}
               className="
-                border-2 border-blue-200 bg-[#e8dcf8] px-5 py-2 text-blue-400 font-vcr
+                border-2 border-orange-200 bg-[#e8dcf8] px-3 py-1 text-orange-400 font-vcr
                 hover:bg-white
                 sm:text-[0.8rem]
                 md:text-[0.95rem]
@@ -306,26 +299,29 @@ const BoardProcess = () => {
             className="
               w-full max-w-[95vw]
               max-h-[92vh]
-              border-2 border-blue-200 border-dashed
+              border-2 border-orange-200 border-dashed
               bg-[#eee6f6]
               flex flex-col
+              lg:w-[60rem]
             "
             onClick={(e) => e.stopPropagation()}
           >
-            <div className="flex items-center justify-between border-b-2 border-blue-200 bg-blue-300 px-2 py-1">
+            <div className="flex items-center justify-between border-b-2 border-orange-200 bg-orange-300 px-2 py-1 ">
               <span className="text-white font-vcr text-sm">
                 {currentImage.fileName}
               </span>
 
               <button
                 onClick={closeLightbox}
-                className="shrink-0 flex h-4 w-4 items-center justify-center border border-blue-400 bg-[#f8f4ff] text-[0.65rem] text-blue-400 sm:text-[2rem]"
+                className="shrink-0 flex h-7 w-7 items-center justify-center border border-orange-400 bg-[#f8f4ff] text-[1rem] text-orange-400"
               >
                 ×
               </button>
             </div>
 
-            <div className="flex-1 overflow-y-auto bg-[#f8f4ff] p-3 md:p-5">
+            <div className="flex-1 overflow-y-auto bg-[#f8f4ff] p-3 md:p-5
+            
+            ">
               <div className="flex flex-col items-center gap-4">
                 <div className="w-full flex justify-center">
                   <img
@@ -340,21 +336,27 @@ const BoardProcess = () => {
                   />
                 </div>
 
-                <p className="text-center text-blue-500 font-vcr text-sm md:text-base max-w-[60ch]">
-                  {currentImage.description}
-                </p>
-
                 <div className="flex gap-4 mt-2">
                   <button
                     onClick={handlePrev}
-                    className="border-2 border-blue-200 bg-[#e8dcf8] px-3 py-1 text-blue-400 font-vcr hover:bg-white"
+                    className="border-2 border-orange-200 bg-[#e8dcf8] px-3 py-1 text-orange-400 font-vcr hover:bg-white
+                    sm:text-[0.8rem]
+                md:text-[0.95rem]
+                lp:text-[1.1rem]
+                lg:text-[1.25rem]
+                    "
                   >
                     &lt; Prev
                   </button>
 
                   <button
                     onClick={handleNext}
-                    className="border-2 border-blue-200 bg-[#e8dcf8] px-3 py-1 text-blue-400 font-vcr hover:bg-white"
+                    className="border-2 border-orange-200 bg-[#e8dcf8] px-3 py-1 text-orange-400 font-vcr hover:bg-white
+                    sm:text-[0.8rem]
+                md:text-[0.95rem]
+                lp:text-[1.1rem]
+                lg:text-[1.25rem]
+                    "
                   >
                     Next &gt;
                   </button>
