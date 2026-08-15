@@ -115,11 +115,10 @@ const BcitProcess = () => {
   return (
     <section className="w-full">
       <h2
-        className=" justify-self-center
-          text-center underline decoration-dashed text-purple-400
+        className="flex justify-self-center underline decoration-dashed text-purple-400 text-center justify-center
           sm:text-[2rem] sm:pb-[1rem] sm:w-[18rem] 
           md:text-[4rem] md:w-[45rem] md:mx-auto md:pt-[5rem]
-          lp:text-[4rem] lp:w-[65rem]
+          lp:text-[4rem] lp:w-[35rem] lp:pt-[2rem]
           lg:text-[5rem] lg:w-[61rem] lg:pb-[2rem]
         "
       >
@@ -129,9 +128,9 @@ const BcitProcess = () => {
       <p
           className=" justify-self-center
             text-purple-500 font-vcr 
-            sm:text-[1rem] sm:w-[22rem] sm:pb-[1.5rem]
+            sm:text-[1rem] sm:w-[21rem] sm:pb-[1.5rem]
             md:text-[2rem] md:w-[50rem] md:mb-[2rem]
-            lp:text-[2rem] lp:w-[65rem] lp:mb-[2rem]
+            lp:text-[1.5rem] lp:w-[65rem] lp:mb-[2rem]
             lg:text-[2rem] lg:w-[60rem] lg:mt-[1rem] lg:mb-[2rem]
           "
         >
@@ -149,9 +148,9 @@ const BcitProcess = () => {
           border-2 border-orange-200 border-dashed
           bg-[#eee6f6]
           sm:px-2 sm:py-3
-          sm:w-[24rem] 
+          sm:w-[21rem] 
           md:w-[50rem] md:p-5
-          lp:w-[65rem] lp:p-6
+          lp:w-[60rem] lp:p-6
           lg:w-[78rem] lg:p-7 
         "
       >
@@ -210,24 +209,25 @@ const BcitProcess = () => {
             </button>
           </div>
 
-        <div className="justify-self-center mt-3 flex flex-row gap-4 border-2 md:w-[95%]">
-        <div className=" mx auto block w-full object-contain
-          border-2 border-orange-200 bg-white p-3
-          sm:h-[230px]
-          md:h-[390px]
-          lp:h-[430px]
-          lg:h-[520px]
-        ">
-  <button type="button" onClick={openLightbox} className="block w-full h-full">
-    <img
-      src={currentImage.src}
-      alt={currentImage.alt}
-      className="mx-auto block w-full h-full object-contain"
-    />
-  </button>
-</div>
+          {/* Image + file info: stacked on sm, side by side on md and up */}
+          <div className="justify-self-center mt-3 flex flex-col gap-4 md:flex-row md:w-[95%]">
+            <div className=" mx auto block w-full object-contain min-w-0
+              border-2 border-orange-200 bg-white p-3
+              sm:h-[230px]
+              md:h-[390px] md:w-[45%]
+              lp:h-[430px]
+              lg:h-[520px]
+            ">
+              <button type="button" onClick={openLightbox} className="block w-full h-full">
+                <img
+                  src={currentImage.src}
+                  alt={currentImage.alt}
+                  className="mx-auto block w-full h-full object-contain"
+                />
+              </button>
+            </div>
 
-            <div className="border-2 border-orange-200 bg-white p-3 md:w-[55%]">
+            <div className="border-2 border-orange-200 bg-white p-3 min-w-0 md:w-[55%]">
               <p
                 className="
                   border-b border-orange-200 pb-2 text-orange-400 font-vcr
@@ -254,7 +254,7 @@ const BcitProcess = () => {
             </div>
           </div>
 
-          <div className=" flex justify-center gap-[5rem] p-2 border-orange-200 pt-3">
+          <div className=" flex justify-center gap-[3rem] p-2 border-orange-200 pt-3">
             <button
               onClick={handlePrev}
               className="
@@ -272,7 +272,7 @@ const BcitProcess = () => {
             <p
               className="
                 text-center text-orange-400 font-vcr
-                sm:text-[0.8rem]
+                sm:text-[1rem]
                 md:text-[0.95rem]
                 lp:text-[1.1rem]
                 lg:text-[1.25rem]

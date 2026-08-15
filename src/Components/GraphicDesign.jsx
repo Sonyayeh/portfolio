@@ -136,7 +136,7 @@ const GraphicBox = () => {
                  <div className="flex justify-center
                                                 lp:mb-[2rem]
                                                 ">
-                                                    <Link to="/bcit">
+                                                    <Link to="/beachball">
                                                        <button className="font-Dos px-6 py-3 bg-blue-300 text-white rounded-lg shadow-md hover:bg-green-200 hover:text-blue-900 focus:outline-none focus:ring-2 focus:ring-blue-300 transition-colors duration-300 
                                                         sm:mb-[2rem] sm:text-[1rem]
                                                         md:mb-[2rem] md:text-[1.5rem]

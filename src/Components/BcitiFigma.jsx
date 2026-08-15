@@ -29,12 +29,11 @@ const BcitiFig = () => {
   return (
     <section className="w-full">
       <h2
-        className=" justify-self-center
-          text-center underline decoration-dashed text-purple-400
-          sm:text-[2rem] sm:w-[23rem] 
-          md:text-[4rem] md:w-[45rem] md:mx-auto md:pt-[5rem] 
-          lp:text-[4rem] lp:w-[65rem]
-          lg:text-7xl lg:w-[60rem] lg:mb-[3rem] lg:mt-[2rem] lg:mx-auto
+        className="flex justify-self-center underline decoration-dashed text-purple-400 text-center justify-center
+          sm:text-[2rem] sm:pb-[1rem] sm:w-[18rem] 
+          md:text-[4rem] md:w-[45rem] md:mx-auto md:pt-[5rem]
+          lp:text-[4rem] lp:w-[30rem] lp:pt-[2rem]
+          lg:text-[5rem] lg:w-[61rem] lg:pb-[2rem]
         "
       >
         Figma Access:
@@ -46,9 +45,9 @@ const BcitiFig = () => {
           border-2 border-orange-200 border-dashed
           bg-[#eee6f6] justify-self-center
           sm:px-2 sm:py-3
-          sm:w-[24rem] 
+          sm:w-[21rem] 
           md:w-[50rem] md:p-5 
-          lp:w-[65rem] lp:p-6 
+          lp:w-[60rem] lp:p-6 
           lg:w-[78rem] lg:p-7 
         "
       >

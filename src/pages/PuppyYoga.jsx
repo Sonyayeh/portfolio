@@ -54,7 +54,11 @@ const PuppyYoga = () => {
                 md:text-[2rem] md:w-[50rem] md:pb-[2rem]
                 lp:text-[1.5rem] lp:w-[60rem] lp:leading-[3rem] lp:pb-[4rem]
                 lg:text-[3rem] lg:w-[85rem] lg:mb-[5rem] lg:mt-[2rem] lg:leading-[5rem]">
-              Vancouver's existing puppy yoga studios solve one problem: people want time with dogs. But looking closer, something was missing. None of them connected that desire to the thousands of dogs sitting in local shelters, waiting for homes. And most leaned entirely on the "cute" factor, without any real framing around wellness or accessibility, for people who might feel priced out of typical studio culture. Furrever Pals started as an attempt to close both gaps at once: a wellness experience genuinely built around accessibility, and a real bridge between community and shelter dog adoption. The project spans brand identity, UX design, and a fully hand coded website.
+              Furrever Pals started from something almost everyone deals with: stress, and the gap between needing support and actually seeking it. Movement helps, but so does a less talked about effect, people relax around things they find genuinely cute, a real dopamine response. Furrever Pals merges the two, movement based stress relief and time with dogs, into something neither offers alone.
+            <br/><br />
+            The dogs in every session are real and adoptable. BC SPCA's 2023 data shows animals are sometimes euthanized simply for lack of space or a ready home, not lack of health, so ten percent of everything Furrever Pals earns goes directly to local shelters, regardless of how many adoptions happen that month.
+            <br/><br />
+            The project spans brand identity, UX design, and a fully hand coded website.
                 </h3>
                 </div>
                   <div className="flex justify-center w-full pb-[1rem]">
@@ -119,11 +123,12 @@ const PuppyYoga = () => {
 
                   {/* added a line for separate sections */}
                    <div className="border-t-2 border-purple-500 justify-self-center
-                sm:w-[22rem]sm:pb-[2rem]
+                sm:w-[22rem] sm:pb-[2rem]
                md:w-[50rem] 
                lp:w-[65rem]
                lg:w-[80rem] lg:mt-[5rem]
                "></div>
+               
 
                 {/* Mockup section */}
                 <div className="justify-self-center pb-[2rem]">
@@ -138,12 +143,12 @@ const PuppyYoga = () => {
                lg:w-[80rem] lg:mt-[5rem]
                "></div>
 
-                <div className="flex mt-8 
-                               p:justify-between
-                                sm:w-[22rem] sm:justify-between sm:ml-[0.6rem]
-                               md:justify-between md:w-[50rem] md:ml-[-1rem]
-                               lp:w-[63rem] lp:ml-[5rem] lp:max-aut
-                                lg:w-[70rem] lg:mx-auto lg:justify-between ">
+                <div className="flex l mt-8 
+                               p:justify-between justify-self-center
+                               sm:w-[22rem] sm:justify-between
+                               md:justify-between md:w-[50rem]
+                               lp:w-[63rem] lp:max-aut
+                               lg:w-[90rem] lg:mx-auto lg:justify-between ">
                 <Link 
                     to="/bcit" 
                     className="flex items-center text-purple-300 hover:text-orange-500 transition-colors duration-300"
@@ -152,7 +157,7 @@ const PuppyYoga = () => {
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="w-8 h-8">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 19l-7-7 7-7" />
                     </svg>
-                    <h3 className="ml-2 text-purple-400 hover:text-purple-500
+                    <h3 className="ml-2 text-purple-400 hover:text-orange-500
                     sm:text-[1.5rem]
                     md:text-[2.5rem]
                     lp:text-[3rem]
@@ -161,11 +166,11 @@ const PuppyYoga = () => {
 
                 {/* Next Button */}
                 <Link 
-                    to="/beachball" 
+                    to="/bcit" 
                     className="flex items-center text-purple-300 hover:text-orange-500 transition-colors duration-300"
                     onClick={() => window.scrollTo({ top: 0})}
                 >
-                    <h3 className="mr-3 text-purple-400 hover:text-purple-500 
+                    <h3 className="mr-3 text-purple-400 hover:text-orange-500 
                                         sm:text-[1.5rem]
                                          md:text-[2.5rem]
                                          lp:text-[3rem]

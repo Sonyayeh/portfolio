@@ -46,12 +46,11 @@ const BcitSoftware = () => {
       </style>
 
       <h1
-        className="pl-2 justify-self-center text-center 
-        underline decoration-dashed text-purple-400
-       sm:text-[1.7rem] sm:pb-[2rem] sm:w-[23rem] 
-                md:text-[3rem] md:pt-[1rem] md:w-[60rem] md:mb-[2rem]
-                lp:text-[2.8rem] lp:w-[75rem] lp:justify-center lp:items-center lp:pb-[2rem] lp:pt-[3rem]
-                lg:text-[4.5rem] lg:w-[70rem]"
+        className="flex justify-self-center underline decoration-dashed text-purple-400 text-center justify-center
+          sm:text-[2rem] sm:pb-[1rem] sm:w-[18rem] 
+          md:text-[4rem] md:w-[45rem] md:mx-auto md:pt-[5rem]
+          lp:text-[4rem] lp:w-[33rem] lp:pt-[2rem]
+          lg:text-[5rem] lg:w-[61rem] lg:pb-[2rem]"
       >
         Software Used:
       </h1>

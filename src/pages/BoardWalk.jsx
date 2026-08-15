@@ -1,186 +1,14 @@
 import React, { useEffect, useRef, useState } from "react";
 // Importing project data
 import projectData from "../data/project.json"; 
+import BoardDes from "../Components/BoardDes";
+import BoardTimeLine from "../Components/BoardTimeline";
 import BoardSoftware from "../Components/BoardIcon";
 import BoardProcess from "../Components/boardProcess";
 import BoardFig from "../Components/BoardFigma";
 import Social from '../Components/social';
 import { Link } from "react-router-dom";
 
-const BoardTimeLine = () => {
-  const listItemsRef = useRef([]);
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add("timeline-visible");
-          } else {
-            entry.target.classList.remove("timeline-visible");
-          }
-        });
-      },
-      { threshold: 0.1 }
-    );
-
-    listItemsRef.current.forEach((item) => {
-      if (item) observer.observe(item);
-    });
-
-    return () => {
-      listItemsRef.current.forEach((item) => {
-        if (item) observer.unobserve(item);
-      });
-    };
-  }, []);
-
-  return (
-    <div>
-      <style>
-        {`
-          .timeline-visible {
-            opacity: 1 !important;
-            transform: translateY(0) !important;
-          }
-          .timeline-item {
-            opacity: 0;
-            transform: translateY(20px);
-            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-            position: relative;
-          }
-          .timeline-line {
-            position: absolute;
-            left: 110%;
-            top: 0;
-            transform: translateX(-50%);
-            width: 4px;
-            height: 100%;
-            background-color: #c084fc;
-            z-index: 1;
-          }
-          .timeline-dot {
-            position: absolute;
-            left: 110%;
-            transform: translateX(-50%);
-            width: 15px;
-            height: 15px;
-            background-color: #c084fc;
-            border-radius: 50%;
-            z-index: 2;
-            top: -8px; /* Adjust this value to position the dot on top of the line */
-          }
-          @media (min-width: 768px) and (max-width: 1024px) {
-            .timeline-dot {
-              width: 20px; /* Adjusted size for medium screens */
-              height: 20px; /* Adjusted size for medium screens */
-              top: -10px; /* Adjust this value to position the dot on top of the line */
-            }
-          }
-          @media (min-width: 1280px) {
-            .timeline-dot {
-              width: 25px; /* Adjusted size for large screens */
-              height: 25px; /* Adjusted size for large screens */
-              top: -12px; /* Adjust this value to position the dot on top of the line */
-            }
-          }
-          @media (min-width: 1920px) {
-            .timeline-dot {
-              width: 35px; /* Adjusted size for large screens */
-              height: 35px; /* Adjusted size for large screens */
-              top: -12px; /* Adjust this value to position the dot on top of the line */
-            }
-          }
-        `}
-      </style>
-      <h1 className="pl-2 justify-center text-center 
-      underline decoration-dashed text-purple-400 pt-8
-      sm:text-[1.7rem] sm:w-[25rem] sm:ml-1
-      md:text-5xl md:ml-[-1rem] md:pt-[5rem] md:w-[50rem]
-      lp:text-6xl lp:w-[75rem] lp:justify-center lp:items-center
-      lg:text-7xl lg:ml-[3rem] lg:w-[60rem] lg:mb-[5rem] lg:mt-[2rem]">
-        Working timeline:
-      </h1>
-      <h1 className="pl-2 justify-center text-center 
-      underline decoration-dashed text-purple-400
-      sm:text-[1.3rem] sm:pb-[1rem] sm:w-[25rem] sm:ml-1
-      md:text-5xl md:ml-[-1rem] md:pt-[5rem] md:w-[50rem] md:mb-[2rem]
-      lp:text-4xl lp:w-[75rem] lp:justify-center lp:items-center
-      lg:text-7xl lg:ml-[3rem] lg:w-[60rem] lg:mb-[5rem] lg:mt-[2rem]">
-        Total hours: <span className="text-red-600">25 hours</span>
-      </h1>
-      <div className="relative md:ml-[12rem]">
-        {/* the timeline itself */}
-        <div className="timeline-line 
-        md:ml-[11rem]
-        lp:ml-[25rem]
-        lg:ml-[20rem]
-        "></div>
-        <ul className="space-y-10 relative">
-          {[
-            { date: "July 12", text: "Everyone in the group was assigned specific roles and tasks", hours: "(20 minutes)", side: "right" },
-            { date: "July 15", text: "Created FigJam to put all information needed for project", hours: "(30 minutes)", side: "left" },
-            { date: "July 19", text: "General meeting and research", hours: "(1 hour)", side: "right" },
-            { date: "July 24", text: "Design draft 1", hours: "(45 minutes)", side: "left" },
-            { date: "July 26", text: "General meeting and design draft 2", hours: "(3 hours)", side: "right" },
-            { date: "July 30", text: "Positioning wireframe components and adding extra screens", hours: "(2.5 hours)", side: "left" },
-            { date: "August 2", text: "Designing high-fidelity and prototype", hours: "(3 hours)", side: "right" },
-            { date: "August 7", text: "Finishing mockup 1", hours: "(3 hours)", side: "left" },
-            { date: "August 10", text: "Finishing mockup 2, made sure everything works and user testing and updates", hours: "(9 hours)", side: "right" },
-            { date: "August 13", text: "Color adjustment, About Us text and additional touch up", hours: "(1 hour)", side: "left" },
-          ].map((item, index) => (
-            <li
-              key={index}
-              ref={(el) => (listItemsRef.current[index] = el)}
-              className="timeline-item flex justify-between items-center w-full transition-all duration-700 ease-in-out"
-            >
-              {/* the timeline dot section */}
-              <div className="timeline-dot 
-              md:ml-[11rem]
-              lp:ml-[25rem]
-              lg:ml-[20rem]
-              "></div>
-              {item.side === "right" ? (
-                <>
-                {/* right side */}
-                  <div className="w-1/2 text-right pr-8 text-emerald-400 font-Dos">
-                    <span className="block text-left ml-[15rem] w-[11rem] sm:text-[1.3rem]
-                    md:text-[2rem] md:w-[25rem] md:ml-[15rem]
-                    lp:text-[2.5rem] lp:w-[35rem] lp:ml-[28rem]
-                    lg:text-[3rem] lg:w-[40rem] lg:ml-[25rem]
-                    ">
-                      <strong>{item.date}</strong><br />
-                      {item.text}<br />
-                      <em>{item.hours}</em>
-                    </span>
-                  </div>
-                  <div className="w-1/2 pl-8"></div>
-                </>
-              ) : (
-                <>
-                {/* left side */}
-                  <div className="w-1/2"></div>
-                  <div className="w-1/2 text-right pr-8 text-emerald-400 font-Dos">
-                    <span className="block text-left ml-[-5rem] w-[12rem] 
-                    sm:text-[1.3rem] 
-                    md:text-[2rem] md:w-[25rem] md:ml-[-14rem]
-                    lp:text-[2.5rem] lp:w-[35rem] lp:ml-[-12rem]
-                    lg:text-[3rem] lg:w-[45rem] lg:ml-[-25rem]
-                    ">
-                      <strong>{item.date}</strong><br />
-                      {item.text}<br />
-                      <em>{item.hours}</em>
-                    </span>
-                  </div>
-                </>
-              )}
-            </li>
-          ))}
-        </ul>
-      </div>
-    </div>
-  );
-};
 
 const BoardWalk = () => {
     // Find the project by id from projectData
@@ -188,6 +16,10 @@ const BoardWalk = () => {
 
     // State for the active tab
     const [activeTab, setActiveTab] = useState('ABOUT');
+
+    useEffect(() => {
+          window.scrollTo({ top: 0, left: 0, behavior: "auto" });
+        }, []);
 
     // If project not found, return a message
     if (!project) {
@@ -200,67 +32,64 @@ const BoardWalk = () => {
     };
 
     return (
-        <div className="w-[12rem] relative mt-[30rem] 
-        sm:ml-[-1rem] sm:mt-[10rem] sm:px-0 sm:mx-auto 
-        md:ml-[3rem] md:mt-[1rem]
-        lg:pl-[4rem] lg:pr-[4rem]">
+        <div className=" relative mt-[3rem] justify-center
+            sm:mt-[10rem] sm:px-0 sm:mx-auto 
+            md:ml-[3rem] md:mt-[1rem]">
             {/* Project Heading and Description */}
-            <div className="text-start w-[12rem]">
-                <h1 className="justify-center text-center text-purple-500 underline decoration-dashed
-                sm:text-[2rem] sm:pb-[5rem] sm:mt-[-5rem] sm:w-[25rem] sm:justify-center sm:items-center sm:text-center
-                md:text-[3rem] md:ml-[0rem] md:pt-[10rem] md:w-[50rem]
-                lp:text-[3.7rem] lp:w-[75rem] lp:justify-center lp:items-center
-                lg:text-7xl lg:ml-[-28rem] lg:w-[120rem] lg:mb-[5rem] lg:mt-[2rem]">
+            <div className="text-start">
+               <h1 className="flex justify-self-center text-purple-500 underline decoration-dashed justify-center
+                sm:text-[2rem] sm:pb-[2rem] sm:mt-[-5rem] sm:w-[22rem] sm:text-center
+                md:text-[4rem] md:pt-[10rem] md:w-[55rem]
+                lp:text-[2.8rem] lp:w-[72rem] lp:justify-center lp:items-center lp:pt-[5rem]
+                lg:text-[4.5rem] lg:w-[85rem] lg:mb-[3rem] lg:mt-[2rem]">
                     Boardwalk Project:
                 </h1>
-                <h1 className="justify-center text-center underline decoration-dashed text-purple-400
-                sm:text-[1.7rem] sm:pb-[1rem] sm:w-[25rem] sm:ml-1
-                md:text-5xl md:pt-[3rem] md:w-[50rem] md:justify-center md:text-center md:items-center
-                lp:text-[4rem] lp:w-[75rem] lp:justify-center lp:items-center
-                lg:text-7xl lg:w-[60rem] lg:mb-[5rem] lg:mt-[2rem]">
+                    
+                 <div className="w-full justify-self-center">
+     <h1 className="flex justify-self-center underline decoration-dashed text-purple-400 text-center justify-center
+                sm:text-[1.5rem] sm:pb-[2rem] sm:w-[22rem]
+                md:text-[3.5rem] md:pt-[3rem] md:w-[55rem] 
+                lp:text-[2.5rem] lp:w-[75rem] lp:justify-center lp:items-center lp:mt-[-3rem]
+                lg:text-[4rem] lg:w-[70rem] lg:mb-[2rem]">
                     Overview:
                 </h1>
-                <h3 className="text-emerald-500
-                sm:text-[1rem] sm:pb-[1rem] sm:w-[25rem] sm:ml-4
-                md:text-5xl md:pt-[3rem] md:w-[50rem] md:justify-center md:items-center md:pb-[2rem]
-                lp:text-[2.5rem] lp:w-[75rem] lp:justify-center lp:items-center
-                lg:text-7xl lg:ml-[-20rem] lg:w-[110rem] lg:mb-[5rem] lg:mt-[2rem]">
-                Boardwalk Boutique is a skate shop that does skateboard rentals and streetwear and skateboard
-                retail. It is a fictional skate shop located in the heart of Vancouver. The app includes various of designs and brands of skateboards and is to guarantee users to find something for them. There are also the review sections users can read upon before renting/purchasing any merchandise, and they can also leave comments about products.
-                </h3>
-                 {/* added a line for separate sections */}
-               <div className="border-t-2 border-purple-500 
-               sm:w-[20rem] sm:ml-[3rem] sm:pb-[2rem]
-               md:w-[40rem] md:ml-[4rem]
+                <div>
+                  <BoardDes />
+                </div>
+
+                  {/* added a line for separate sections */}
+                  <div className="border-t-2 border-orange-500 justify-self-center mt-[2rem]
+               sm:w-[20rem]
+               md:w-[50rem] 
                lp:w-[65rem]
-               lg:w-[100rem] lg:ml-[-16rem]
+               lg:w-[80rem] lg:mt-[5rem]
                "></div>
 
                 {/* software used section */}
-                <div className="pb-[2rem]">
+                <div>
                     <BoardSoftware />
                 </div>
 
-                 {/* added a line for separate sections */}
-                 <div className="border-t-2 border-purple-500 
-               sm:w-[20rem] sm:ml-[3rem] sm:pb-[2rem]
-               md:w-[40rem] md:ml-[4rem]
+                  {/* added a line for separate sections */}
+                  <div className="border-t-2 border-orange-500 justify-self-center mb-[2rem]
+               sm:w-[20rem]
+               md:w-[50rem] 
                lp:w-[65rem]
-               lg:w-[100rem] lg:ml-[-16rem]
+               lg:w-[80rem] lg:mt-[5rem]
                "></div>
                 
 
                 {/* timeline section */}
-                <div>
-                <BoardTimeLine />
-               </div>
+                <div className="pb-[2rem]">
+                    <BoardTimeLine />
+                </div>
 
-                {/* added a line for separate sections */}
-                <div className="border-t-2 border-purple-500 my-10 
-               sm:w-[20rem] sm:ml-[3rem]
-               md:w-[40rem] md:ml-[4rem] 
+                 {/* added a line for separate sections */}
+                  <div className="border-t-2 border-orange-500 justify-self-center mb-[2rem]
+               sm:w-[20rem]
+               md:w-[50rem] 
                lp:w-[65rem]
-               lg:w-[100rem] lg:ml-[-16rem] lg:mb-[8rem]
+               lg:w-[80rem] lg:mt-[5rem]
                "></div>
 
               {/* the design process section */}
@@ -270,11 +99,11 @@ const BoardWalk = () => {
 
 
                 {/* added a line for separate sections */}
-                <div className="border-t-2 border-purple-500 my-10 
-               sm:w-[20rem] sm:ml-[3rem]
-               md:w-[40rem] md:ml-[4rem] 
+                  <div className="border-t-2 border-orange-500 justify-self-center mt-[2rem]
+               sm:w-[20rem]
+               md:w-[50rem] 
                lp:w-[65rem]
-               lg:w-[100rem] lg:ml-[-16rem] lg:mb-[8rem]
+               lg:w-[80rem] lg:mt-[5rem]
                "></div>
 
                 {/* Mockup section */}
@@ -282,20 +111,20 @@ const BoardWalk = () => {
                     <BoardFig />
                 </div>
 
-                {/* added a line for separate sections */}
-                <div className="border-t-2 border-purple-500 my-10 
-               sm:w-[20rem] sm:ml-[3rem]
-               md:w-[40rem] md:ml-[4rem] 
+                 {/* added a line for separate sections */}
+                  <div className="border-t-2 border-orange-500 justify-self-center mt-[2rem]
+               sm:w-[20rem]
+               md:w-[50rem] 
                lp:w-[65rem]
-               lg:w-[100rem] lg:ml-[-16rem]
+               lg:w-[80rem] lg:mt-[5rem]
                "></div>
 
                 <div className="flex l mt-8 
-                               p:justify-between
-                               sm:w-[25rem] sm:justify-between sm:ml-[0.6rem]
-                               md:justify-between md:w-[50rem] md:ml-[-1rem]
-                               lp:w-[63rem] lp:ml-[5rem] lp:max-aut
-                               lg:w-[90rem] lg:ml-[-11rem] lg:mx-auto lg:justify-between ">
+                               p:justify-between justify-self-center
+                               sm:w-[22rem] sm:justify-between
+                               md:justify-between md:w-[50rem]
+                               lp:w-[63rem] lp:max-aut
+                               lg:w-[90rem] lg:mx-auto lg:justify-between ">
                 <Link 
                     to="/boardwalk" 
                     className="flex items-center text-purple-300 hover:text-emerald-500 transition-colors duration-300"
@@ -317,7 +146,8 @@ const BoardWalk = () => {
                     className="flex items-center text-purple-300 hover:text-emerald-500 transition-colors duration-300"
                     onClick={() => window.scrollTo({ top: 0})}
                 >
-                    <h3 className="mr-3 text-purple-400 hover:text-purple-500 sm:text-[1.5rem]
+                     <h3 className="mr-3 text-purple-400 hover:text-purple-500 
+                                        sm:text-[1.5rem]
                                          md:text-[2.5rem]
                                          lp:text-[3rem]
                                          lg:text-[4rem]">Next</h3>
@@ -329,6 +159,7 @@ const BoardWalk = () => {
 
               
 
+               </div>
                </div>
                </div>
     );

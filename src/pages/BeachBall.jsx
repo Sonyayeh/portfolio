@@ -24,18 +24,19 @@ const Beachball = () => {
 
   return (
    <div className="w-full relative 
-    sm:mt-[10rem] sm:px-0 sm:mx-auto 
+    sm:mt-[3rem] sm:px-0 sm:mx-auto 
     md:mt-[1rem]
     lg:pr-[4rem]">
 
   <div className="text-start w-full">
 
-        {/* TITLE */}
-        <h1 className="pl-2 justify-self-center text-center text-blue-500 underline decoration-dashed
-        sm:text-[2rem] sm:pb-[5rem] sm:mt-[-5rem] sm:w-[25rem]
-        md:text-[2.5rem] md:w-[51rem] md:pt-[8rem] 
-        lp:text-[3.5rem] lp:w-[74rem] 
-        lg:text-7xl  lg:w-[120rem] lg:mt-6">
+        {/* Project Heading and Description */}
+            <div className="text-start">
+                <h1 className="flex justify-self-center underline decoration-dashed text-blue-400 text-center justify-center
+          sm:text-[2rem] sm:pb-[1rem] sm:w-[21rem] 
+          md:text-[4rem] md:w-[45rem] md:mx-auto md:pt-[5rem]
+          lp:text-[4rem] lp:w-[40rem]
+          lg:text-[5rem] lg:w-[61rem] lg:pb-[2rem]">
           Beach Volleyball Tournament Poster:
         </h1>
 
@@ -74,14 +75,6 @@ const Beachball = () => {
 
         {/* PROBLEM SOLUTION OUTCOME */}
         <div>
-          <h1 className="flex justify-self-center justify-center
-                underline decoration-dashed text-blue-400
-                sm:text-[1.7rem] sm:pb-[1rem] sm:pt-[1rem] sm:w-[25rem]
-                md:text-5xl md:pt-[5rem] md:w-[55rem] md:mb-[2rem]
-                lp:text-[4rem] lp:w-[75rem] lp:justify-center lp:items-center lp:pb-[5rem]
-                lg:text-7xl lg:w-[70rem] lg:mt-[2rem]">
-                Design Rationale:
-          </h1>
             <BeachPSO />
         </div>
 
@@ -93,7 +86,16 @@ const Beachball = () => {
         lg:w-[110rem]"></div>
 
         {/* WORK PROCESS */}
+        <div className="pb-[3rem]">
         <BeachWorkSection />
+        </div>
+
+         {/* divider */}
+        <div className="border-t-2 border-blue-500 justify-self-center
+        sm:w-[20rem] sm:pb-[2rem]
+        md:w-[40rem] 
+        lp:w-[65rem] 
+        lg:w-[110rem]"></div>
 
        
         {/* MOCKUP */}
@@ -108,36 +110,54 @@ const Beachball = () => {
         lp:w-[65rem] 
         lg:w-[110rem]"></div>
 
-        {/* NEXT BUTTON */}
-        <div className="flex justify-end mt-8 
-        sm:w-[25rem] 
-        md:ml-[20rem]
-        lp:ml-[45rem]
-        lg:ml-[60rem]">
+         <div className="flex l mt-8 
+                                      p:justify-between justify-self-center
+                                      sm:w-[22rem] sm:justify-between
+                                      md:justify-between md:w-[50rem]
+                                      lp:w-[63rem] lp:max-aut
+                                      lg:w-[90rem] lg:mx-auto lg:justify-between ">
+                          
+                                        {/* Back Button */}
+                                        <Link 
+                                            to="/boardwalk" 
+                                            className="flex items-center text-purple-300 hover:text-orange-500 transition-colors duration-300"
+                                            onClick={() => window.scrollTo({ top: 0 })}
+                                        >
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" 
+                                                className="w-8 h-8 lg:w-16 lg:h-16">
+                                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 19l-7-7 7-7" />
+                                            </svg>
+                                            <h3 className="ml-2 text-purple-400 hover:text-orange-500 
+                                                sm:text-[1.5rem]
+                                                md:text-[2.5rem]
+                                                lp:text-[3rem]
+                                                lg:text-[4rem]">
+                                                Back
+                                            </h3>
+                                        </Link>
+                      
+                                        {/* Next Button */}
+                                        <Link 
+                                            to="/magazine" 
+                                            className="flex items-center text-purple-300 hover:text-orange-500 transition-colors duration-300"
+                                            onClick={() => window.scrollTo({ top: 0 })}
+                                        >
+                                            <h3 className="mr-3 text-purple-400 hover:text-orange-500 
+                                                sm:text-[1.5rem]
+                                                md:text-[2.5rem]
+                                                lp:text-[3rem]
+                                                lg:text-[4rem]">
+                                                Next
+                                            </h3>
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" 
+                                                className="w-8 h-8 lg:w-16 lg:h-16">
+                                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
+                                            </svg>
+                                        </Link>
+                      
+                                    </div>
 
-          <Link
-            to="/magazine"
-            className="flex items-center text-blue-300 hover:text-orange-500"
-            onClick={() => window.scrollTo({ top: 0 })}
-          >
-            <h3 className="mr-2 text-blue-400 hover:text-orange-500
-            sm:text-[1.5rem]
-            md:text-[2.5rem]
-            lp:text-[3rem]
-            lg:text-[4rem]">
-              Next
-            </h3>
-
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none"
-              viewBox="0 0 24 24" stroke="currentColor"
-              className="w-8 h-8 md:w-12 md:h-12 lg:h-16 lg:w-16">
-              <path strokeLinecap="round" strokeLinejoin="round"
-                strokeWidth="2" d="M9 5l7 7-7 7" />
-            </svg>
-
-          </Link>
-        </div>
-
+      </div>
       </div>
 
 

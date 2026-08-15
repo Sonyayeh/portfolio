@@ -34,17 +34,18 @@ const MyBcit = () => {
     };
 
     return (
-        <div className="w-[12rem] relative mt-[30rem] 
-        sm:mt-[10rem] sm:px-0 sm:mx-auto 
+        <div className="relative mt-[30rem] 
+        sm:mt-[5rem] sm:px-0 sm:mx-auto 
         md:mt-[1rem]
-        lg:pr-[4rem]">
+        lg:pr-[4rem] lp:w-[40rem]">
+            
             {/* Project Heading and Description */}
-            <div className="text-start w-[12rem]">
-                <h1 className="pl-2 justify-self-center text-center text-purple-500 underline decoration-dashed
-                sm:text-[2rem] sm:pb-[2rem] sm:mt-[-5rem] sm:w-[22rem] sm:text-center
-                md:text-[4rem] md:pt-[10rem] md:w-[55rem]
-                lp:text-[2.8rem] lp:w-[72rem] lp:justify-center lp:items-center lp:pt-[5rem]
-                lg:text-[4.5rem] lg:w-[85rem] lg:mb-[3rem] lg:mt-[2rem]">
+            <div className="text-start">
+                <h1 className="flex justify-self-center underline decoration-dashed text-purple-400 text-center justify-center
+          sm:text-[2rem] sm:pb-[1rem] sm:w-[20rem] 
+          md:text-[4rem] md:w-[45rem] md:mx-auto md:pt-[5rem]
+          lp:text-[4rem] lp:w-[40rem]
+          lg:text-[5rem] lg:w-[61rem] lg:pb-[2rem]">
                     MyBCIT Redesign:
                 </h1>
                <BcitDes />
@@ -134,7 +135,7 @@ const MyBcit = () => {
                    
                                  {/* Back Button */}
                                  <Link 
-                                     to="/magazine" 
+                                     to="/furreverpals" 
                                      className="flex items-center text-purple-300 hover:text-orange-500 transition-colors duration-300"
                                      onClick={() => window.scrollTo({ top: 0 })}
                                  >

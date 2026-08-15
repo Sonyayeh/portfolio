@@ -76,9 +76,9 @@ const BcitDes = () => {
     <div className="w-full justify-self-center">
       <h1
         ref={overviewRef}
-        className="pl-2 text-center justify-self-center underline decoration-dashed text-orange-400
+        className="flex justify-self-center underline decoration-dashed text-purple-400 text-center justify-center
                 sm:text-[1.5rem] sm:pb-[2rem] sm:w-[22rem]
-                md:text-[3.5rem] md:pt-[3rem] md:w-[55rem] 
+                md:text-[3.5rem] md:pt-[3rem] md:w-[45rem] 
                 lp:text-[2.5rem] lp:w-[75rem] lp:justify-center lp:items-center lp:mt-[-3rem]
                 lg:text-[4rem] lg:w-[70rem] lg:mb-[2rem]
         "
@@ -87,8 +87,8 @@ const BcitDes = () => {
       </h1>
 
       <h3
-        className="pl-2 text-purple-500 justify-self-center text-center
-        sm:text-[1rem] sm:pb-[1rem] sm:w-[22rem] 
+        className=" text-orange-500 justify-self-center
+        sm:text-[1rem] sm:pb-[1rem] sm:w-[20rem] 
                 md:text-[2rem] md:w-[50rem] md:pb-[2rem]
                 lp:text-[1.5rem] lp:w-[60rem] lp:leading-[3rem] lp:pb-[4rem]
                 lg:text-[3rem] lg:w-[85rem] lg:mb-[5rem] lg:mt-[2rem] lg:leading-[5rem]"

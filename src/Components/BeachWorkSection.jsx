@@ -74,18 +74,14 @@ const BeachWorkSection = () => {
 
   return (
     <section className="w-full">
-      <h2
-        className="
-          justify-self-center text-center
-          underline decoration-dashed text-blue-400
-          sm:text-[2rem] sm:pb-[1rem] sm:w-[23rem] sm:pt-[3rem]
-          md:text-[4rem] md:w-[45rem] md:mx-auto md:pt-[5rem] 
-          lp:text-[4rem] lp:w-[65rem]
-          lg:text-7xl lg:w-[60rem] lg:mb-[3rem] lg:mt-[2rem] lg:mx-auto 
-        "
-      >
+      <h1 className="flex justify-self-center justify-center
+                        underline decoration-dashed text-blue-400
+                        sm:text-[1.7rem] sm:pb-[1rem] sm:pt-[1rem] sm:w-[20rem]
+                        md:text-5xl md:pt-[5rem] md:w-[55rem] md:mb-[2rem]
+                        lp:text-[4rem] lp:w-[75rem] lp:justify-center lp:items-center lp:pb-[5rem]
+                        lg:text-7xl lg:w-[70rem] lg:mt-[2rem]">
         Sketches &amp; Process:
-      </h2>
+      </h1>
 
       <div
         className="
@@ -93,7 +89,7 @@ const BeachWorkSection = () => {
           border-2 border-blue-200 border-dashed
           bg-[#eee6f6]
           sm:px-2 sm:py-3
-          sm:w-[25rem] 
+          sm:w-[20rem] 
           md:w-[50rem] md:p-5
           lp:w-[65rem] lp:p-6
           lg:w-[78rem] lg:p-7
