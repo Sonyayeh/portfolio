@@ -27,30 +27,28 @@ const BcitiFig = () => {
   const current = tabContent[activeTab];
 
   return (
-    <section className="w-full">
-      <h2
-        className="flex justify-self-center underline decoration-dashed text-purple-400 text-center justify-center
-          sm:text-[2rem] sm:pb-[1rem] sm:w-[18rem] 
-          md:text-[4rem] md:w-[45rem] md:mx-auto md:pt-[5rem]
-          lp:text-[4rem] lp:w-[30rem] lp:pt-[2rem]
-          lg:text-[5rem] lg:w-[61rem] lg:pb-[2rem]
-        "
-      >
+    <section className="w-full justify-self-center">
+       <h1 className="flex justify-self-center justify-center text-blue-400 underline decoration-dashed
+        sm:text-[1.7rem] sm:w-[23rem]
+                md:text-[3rem] md:w-[49rem]
+                lp:text-[4rem] lp:w-[60rem] lp:items-center
+                lg:text-[3.5rem] lg:w-[60rem]lg:mt-[2rem]">
         Figma Access:
-      </h2>
+      </h1>
 
-      <div
+     <div
         className="
           mx-auto
           border-2 border-orange-200 border-dashed
           bg-[#eee6f6] justify-self-center
           sm:px-2 sm:py-3
-          sm:w-[21rem] 
-          md:w-[50rem] md:p-5 
-          lp:w-[60rem] lp:p-6 
+          sm:w-[22rem] 
+          md:w-[45rem] md:p-5 
+          lp:w-[65rem] lp:p-6 
           lg:w-[78rem] lg:p-7 
         "
       >
+        
         {/* Title bar */}
         <div className="flex items-center justify-between border-2 border-orange-200 bg-orange-300 px-2 py-1">
           <span className="text-white font-vcr sm:text-[0.8rem] md:text-[1rem] lp:text-[1.2rem] lg:text-[1.4rem]">
