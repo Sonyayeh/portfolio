@@ -46,43 +46,41 @@ const BcitSoftware = () => {
       </style>
 
       <h1
-        className="flex justify-self-center underline decoration-dashed text-purple-400 text-center justify-center
-          sm:text-[2rem] sm:pb-[1rem] sm:w-[18rem] 
-          md:text-[4rem] md:w-[45rem] md:mx-auto md:pt-[5rem]
-          lp:text-[4rem] lp:w-[33rem] lp:pt-[2rem]
-          lg:text-[5rem] lg:w-[61rem] lg:pb-[2rem]"
+        className="flex justify-self-center justify-center
+                underline decoration-dashed text-blue-400
+                sm:text-[1.7rem] sm:pb-[2rem] sm:w-[23rem] 
+                md:text-[3rem] md:pt-[1rem] md:w-[60rem] md:mb-[2rem]
+                lp:text-[4rem] lp:w-[75rem] lp:justify-center
+                lg:text-[4.5rem] lg:w-[70rem]"
       >
         Software Used:
       </h1>
 
-      <ul
-        className="grid justify-self-center
+       <ul className="grid justify-self-center
                 grid-cols-2 gap-y-8 justify-items-center
-                sm:grid-cols-2 sm:w-[22rem] sm:pb-[2rem]
+                sm:grid-cols-2 sm:w-[22rem]
                 md:grid-cols-2 md:w-[57rem]
-                lp:grid-cols-4 lp:w-[55rem] 
-                lg:grid-cols-4 lg:w-[77rem]"
-      >
+                lp:grid-cols-2 lp:w-[45rem] lp:h-[30rem]
+                lg:grid-cols-3 lg:w-[77rem]
+            ">
         {/* Adobe Stock Images */}
         <li
           className="flex flex-col items-center icon sm:w-[8rem] md:w-[8rem] lp:w-auto"
           ref={(el) => (iconRefs.current[0] = el)}
         >
-          <IonIcon
-            className="text-orange-400 hover:text-purple-300 
-             sm:text-[2.5rem] sm:px-2
+         <IonIcon
+                    className="text-orange-400 hover:text-purple-300 
+                    sm:text-[2.5rem] sm:px-2
                     md:text-[6rem] md:px-3
                     lg:text-[7rem] lg:px-6 lg:pb-[1.5rem]
                     lp:text-[7.5rem]"
             name="image-outline"
           />
-          <span
-            className="mt-2 text-center font-vcr text-purple-400
-             sm:text-[.9rem] sm:w-[10rem]
-                    md:text-[1.5rem] md:w-[15rem] md:pt-[2rem]
-                    lp:text-[1.5rem] lp:w-[12rem]
-                    lg:text-[2rem] lg:w-[15rem] lg:mt-[3rem]"
-          >
+           <span className="mt-2 text-center font-vcr text-blue-400
+                    sm:text-[.9rem] sm:w-[10rem]
+                    md:text-[1.5rem] md:w-[22rem]
+                    lp:text-[2rem] lp:w-[22rem]
+                    lg:text-[2rem] lg:w-[25rem]">
             Adobe Stock Images
           </span>
         </li>
@@ -92,21 +90,19 @@ const BcitSoftware = () => {
           className="flex flex-col items-center icon sm:w-[8rem] md:w-[8rem] lp:w-auto"
           ref={(el) => (iconRefs.current[1] = el)}
         >
-          <IonIcon
-            className="text-orange-400 hover:text-purple-300 
-             sm:text-[2.5rem] sm:px-2
+         <IonIcon
+                    className="text-orange-400 hover:text-purple-300 
+                    sm:text-[2.5rem] sm:px-2
                     md:text-[6rem] md:px-3
                     lg:text-[7rem] lg:px-6 lg:pb-[1.5rem]
                     lp:text-[7.5rem]"
             name="brush-outline"
           />
-          <span
-            className="mt-2 text-center font-vcr text-purple-400
-             sm:text-[.9rem] sm:w-[10rem]
-                    md:text-[1.5rem] md:w-[22rem] md:pt-[2rem]
-                    lp:text-[1.5rem] lp:w-[22rem]
-                    lg:text-[2rem] lg:w-[15rem] lg:mt-[3rem]"
-          >
+           <span className="mt-2 text-center font-vcr text-blue-400
+                    sm:text-[.9rem] sm:w-[10rem]
+                    md:text-[1.5rem] md:w-[22rem]
+                    lp:text-[2rem] lp:w-[22rem]
+                    lg:text-[2rem] lg:w-[25rem]">
             Procreate
           </span>
         </li>
@@ -116,21 +112,19 @@ const BcitSoftware = () => {
           className="flex flex-col items-center icon sm:w-[8rem] md:w-[8rem] lp:w-auto"
           ref={(el) => (iconRefs.current[2] = el)}
         >
-          <IonIcon
-            className="text-orange-400 hover:text-purple-300 hover:cursor-pointer
-             sm:text-[2.5rem] sm:px-2
+         <IonIcon
+                    className="text-orange-400 hover:text-purple-300 
+                    sm:text-[2.5rem] sm:px-2
                     md:text-[6rem] md:px-3
                     lg:text-[7rem] lg:px-6 lg:pb-[1.5rem]
                     lp:text-[7.5rem]"
             name="logo-figma"
           />
-          <span
-            className="mt-2 text-center font-vcr text-purple-400
-             sm:text-[.9rem] sm:w-[10rem]
-                    md:text-[1.5rem] md:w-[22rem] md:pt-[2rem]
-                    lp:text-[1.5rem] lp:w-[22rem]
-                    lg:text-[2rem] lg:w-[15rem] lg:mt-[3rem]"
-          >
+          <span className="mt-2 text-center font-vcr text-blue-400
+                    sm:text-[.9rem] sm:w-[10rem]
+                    md:text-[1.5rem] md:w-[22rem]
+                    lp:text-[2rem] lp:w-[22rem]
+                    lg:text-[2rem] lg:w-[25rem]">
             Figma
           </span>
         </li>
@@ -141,20 +135,18 @@ const BcitSoftware = () => {
           ref={(el) => (iconRefs.current[3] = el)}
         >
           <IonIcon
-            className="text-orange-400 hover:text-purple-300 hover:cursor-pointer
-             sm:text-[2.5rem] sm:px-2
+                    className="text-orange-400 hover:text-purple-300 
+                    sm:text-[2.5rem] sm:px-2
                     md:text-[6rem] md:px-3
                     lg:text-[7rem] lg:px-6 lg:pb-[1.5rem]
                     lp:text-[7.5rem]"
             name="color-palette-outline"
           />
-          <span
-            className="mt-2 text-center font-vcr text-purple-400
-             sm:text-[.9rem] sm:w-[10rem]
-                    md:text-[1.5rem] md:w-[22rem] md:pt-[2rem]
-                    lp:text-[1.5rem] lp:w-[22rem]
-                    lg:text-[2rem] lg:w-[15rem] lg:mt-[3rem]"
-          >
+           <span className="mt-2 text-center font-vcr text-blue-400
+                    sm:text-[.9rem] sm:w-[10rem]
+                    md:text-[1.5rem] md:w-[22rem]
+                    lp:text-[2rem] lp:w-[22rem]
+                    lg:text-[2rem] lg:w-[25rem]">
             Canva
           </span>
         </li>

@@ -27,7 +27,7 @@ const BcitDes = () => {
 
       // Color shift
       gsap.to(letters, {
-        color: "#a855f7", // purple
+        color: "#a855f7", // blue
         duration: 0.3,
         ease: "steps(1)",
       });
@@ -73,33 +73,20 @@ const BcitDes = () => {
   }, []);
 
   return (
-    <div className="w-full justify-self-center">
-      <h1
-        ref={overviewRef}
-        className="flex justify-self-center underline decoration-dashed text-purple-400 text-center justify-center
-                sm:text-[1.5rem] sm:pb-[2rem] sm:w-[22rem]
-                md:text-[3.5rem] md:pt-[3rem] md:w-[45rem] 
-                lp:text-[2.5rem] lp:w-[75rem] lp:justify-center lp:items-center lp:mt-[-3rem]
-                lg:text-[4rem] lg:w-[70rem] lg:mb-[2rem]
-        "
-      >
-        Overview:
-      </h1>
+  
 
-      <h3
-        className=" text-orange-500 justify-self-center
-        sm:text-[1rem] sm:pb-[1rem] sm:w-[20rem] 
+      <div className="flex justify-self-center text-center">
+              <h1 className="text-orange-500 text-left 
+                sm:text-[1rem] sm:pb-[1rem] sm:w-[22rem] 
                 md:text-[2rem] md:w-[50rem] md:pb-[2rem]
-                lp:text-[1.5rem] lp:w-[60rem] lp:leading-[3rem] lp:pb-[4rem]
-                lg:text-[3rem] lg:w-[85rem] lg:mb-[5rem] lg:mt-[2rem] lg:leading-[5rem]"
-      >
-      Every BCIT student uses MyBCIT, and almost everyone I talked to had a complaint about it before I even finished asking the question.
-<br /><br />
-Six or more clicks just to check a grade, a security warning that dominated the homepage instead of anything students actually needed, and an interface that still looked like it belonged to 2003. Interviewing more than ten people, current students, graduates, and people who'd never seen the platform, made the pattern impossible to ignore: this wasn't a matter of taste, it was a real barrier for new students trying to navigate their own school.
-<br /><br />
-The redesign followed directly from what they told me: fewer clicks to reach the essentials, a homepage that leads with what students actually need, and a visual system that still feels unmistakably BCIT, just built for 2024 instead of 2003.
-      </h3>
-    </div>
+                lp:text-[2rem] lp:w-[70rem] lp:leading-[3rem] lp:pb-[4rem]
+                lg:text-[3rem] lg:w-[85rem] lg:mb-[5rem] lg:mt-[2rem] lg:leading-[5rem]">
+       I led a redesign of the MyBCIT platform to improve usability, streamline navigation, and reduce cognitive load for students and administrators. By identifying key friction points in the existing experience, I restructured the interface to prioritize clarity, accessibility, and efficiency. 
+       <br />
+       <br />
+       Key improvements include surfacing essential information, such as the student ID directly on the main dashboard, reducing the need for multi-step navigation. The result is a more intuitive, user-centered system that enhances overall usability and aligns with modern interface standards.
+      </h1>
+      </div>
   );
 };
 
