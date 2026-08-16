@@ -126,7 +126,7 @@ const GraphicBox = () => {
                             sm:w-[20rem] sm:h-[20rem] sm:pb-[2rem]
                             md:w-[25rem] md:h-[28rem] md:ml-[27rem] md:mt-[-41rem]
                             lp:h-[25rem] lp:w-[20rem] lp:max-h-[50rem] lp:mt-[-38rem] lp:ml-[33rem]
-                            lg:w-[20rem] lg:h-[32rem] lg:mt-[-29rem] lg:ml-[30rem]"
+                            lg:w-[20rem] lg:h-[32rem] lg:mt-[-35rem] lg:ml-[34rem]"
                         />
                     </div>
 

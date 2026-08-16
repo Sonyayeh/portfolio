@@ -114,7 +114,7 @@ const BingProject = () => {
                             sm:w-[20rem] sm:h-[25rem] sm:pb-[2rem]
                             md:w-[25rem] md:h-[25rem] md:ml-[25rem] md:mt-[-39rem] 
                             lp:w-[18rem] lp:h-[20rem] lp:mt-[-35rem] lp:mr-[-9rem]
-                            lg:w-[20rem] lg:h-[27rem] lg:mt-[-40rem]
+                            lg:w-[20rem] lg:h-[27rem] lg:mt-[-45rem]
                             "
                         />
                     </div>

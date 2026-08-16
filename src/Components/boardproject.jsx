@@ -85,7 +85,7 @@ const BoardProject = () => {
                         sm:text-[1.5rem] sm:text-start
                         md:text-[3rem] md:w-[45rem] md:pb-[2rem]
                         lp:text-[3rem] lp:w-[55rem] lp:pb-[1rem]
-                        lg:text-[3rem] lg:mb-[12rem] lg:pt-[3rem] lg:absolute lg:w-[60rem]">
+                        lg:text-[3rem] lg:mb-[12rem] lg:pt-[3rem] lg:absolute lg:w-[60rem] lg:pb-[5rem]">
                             Software Used:
                         </h5>
 
@@ -105,7 +105,7 @@ const BoardProject = () => {
                     </div>
 
                     {/* Image Section */}
-                    <div className="flex justify-center w-full lg:w-1/2 lg:ml-[-14rem] lg:pt-[58rem] ">
+                    <div className="flex justify-center w-full lg:w-1/2 lg:ml-[-14rem] lg:pt-[50rem] ">
                          <img
                             src={project.imageurl}
                             alt="Project Preview"
@@ -113,7 +113,7 @@ const BoardProject = () => {
                             sm:w-[20rem] sm:h-[25rem] sm:pb-[2rem]
                             md:w-[20rem] md:h-[25rem] md:ml-[25rem] md:mt-[-40rem] 
                             lp:w-[15rem] lp:h-[25rem] lp:mt-[-40rem] lp:ml-[34rem]
-                            lg:w-[21rem] lg:h-[35rem] lg:mt-[-51rem]
+                            lg:w-[21rem] lg:h-[29rem] lg:mt-[-52rem]
                             "
                         />
                     </div>

@@ -68,7 +68,7 @@ const BcitProject = () => {
                         sm:text-[1rem] sm:pt-2 
                         md:text-[1.3rem] md:pt-[2rem] md:pr-[10rem] md:w-[35rem] md:leading-[2rem]
                         lp:text-[1.5rem] lp:leading-[2.5rem] lp:w-[40rem]
-                        lg:text-[1.8rem] lg:mt-[5rem] lg:pb-[2rem] lg:w-[45rem]">
+                        lg:text-[1.8rem] lg:mt-[5rem] lg:pb-[2rem] lg:w-[40rem]">
                             {project.description}
                         </h4>
                         
@@ -109,7 +109,7 @@ const BcitProject = () => {
                             sm:w-[20rem] sm:h-[20rem]
                             md:w-[25rem] md:h-[18rem] md:ml-[25rem] md:mt-[-37rem] 
                             lp:w-[23rem] lp:h-[20rem] lp:mt-[-40rem] lp:mr-[-8rem]
-                            lg:w-[23rem] lg:h-[20rem] lg:mt-[-37rem] lg:ml-[30rem]
+                            lg:w-[21rem] lg:h-[20rem] lg:mt-[-30rem] lg:ml-[25rem]
                             "
                         />
                     </div>

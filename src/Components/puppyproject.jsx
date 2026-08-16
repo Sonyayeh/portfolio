@@ -93,7 +93,7 @@ const PuppyProject = () => {
                         sm:text-[1.5rem] sm:text-start
                         md:text-[3rem] md:w-[45rem] md:pb-[2rem]
                         lp:text-[3rem] lp:w-[55rem] lp:pb-[1rem]
-                        lg:text-[3rem] lg:mb-[12rem] lg:absolute lg:w-[60rem]">
+                        lg:text-[3rem] lg:mb-[12rem] lg:absolute lg:w-[60rem] lg:pb-[5rem]">
                             Software Used:
                         </h5>
 
@@ -118,7 +118,8 @@ const PuppyProject = () => {
                             sm:w-[20rem] sm:h-[30rem] sm:mt-[-3rem]
                             md:w-[20rem] md:h-[32rem] md:ml-[42rem] md:mt-[-50rem] 
                             lp:w-[18rem] lp:ml-[34rem] lp:h-[23rem] lp:mt-[-44rem]
-                            lg:mt-[-45rem]  lg:w-[20rem] lg:h-[30rem]"
+                            lg:mt-[-43rem]  lg:w-[20rem] lg:h-[25rem]
+                            lg:ml-[18rem]"
                         />
                     </div>
                 </div>

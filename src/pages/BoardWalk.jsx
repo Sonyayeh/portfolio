@@ -124,7 +124,7 @@ const BoardWalk = () => {
                                sm:w-[22rem] sm:justify-between
                                md:justify-between md:w-[50rem]
                                lp:w-[63rem] lp:max-aut
-                               lg:w-[90rem] lg:mx-auto lg:justify-between ">
+                               lg:w-[75rem] lg:mx-auto lg:justify-between ">
                 <Link 
                     to="/boardwalk" 
                     className="flex items-center text-purple-300 hover:text-emerald-500 transition-colors duration-300"
