@@ -85,7 +85,7 @@ const BcitJourney = () => {
         {/* TITLE BAR */}
         <div className="flex items-center justify-between border-2 border-orange-200 bg-orange-300 px-2 py-1">
           <span className="text-white font-vcr
-          text-white font-vcr
+          
               sm:text-[0.8rem]
               md:text-[1rem]
               lp:text-[1.2rem]

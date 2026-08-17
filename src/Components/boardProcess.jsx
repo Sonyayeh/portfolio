@@ -116,7 +116,7 @@ const BoardProcess = () => {
       </h1>
 
       <p
-          className=" justify-self-center
+          className=" 
             text-purple-500 font-vcr justify-self-center
             sm:text-[1rem] sm:w-[22rem] sm:pb-[1.5rem]
             md:text-[1.8rem] md:w-[40rem] md:mb-[2rem]
