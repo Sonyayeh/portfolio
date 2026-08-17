@@ -50,7 +50,7 @@ const PuppyYoga = () => {
                 </h1>
                 <div className="flex justify-self-center text-center">
               <h3 className="text-orange-500 text-left 
-                sm:text-[1rem] sm:pb-[1rem] sm:w-[22rem] 
+                sm:text-[1rem] sm:pb-[1rem] sm:w-[24rem] 
                 md:text-[2rem] md:w-[50rem] md:pb-[2rem]
                 lp:text-[1.5rem] lp:w-[60rem] lp:leading-[3rem] lp:pb-[4rem]
                 lg:text-[1.5rem] lg:w-[69rem] lg:mb-[2rem] lg:mt-[2rem] lg:leading-[3rem]">
