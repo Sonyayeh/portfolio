@@ -113,32 +113,31 @@ const BcitProcess = () => {
   };
 
   return (
-    <section className="w-full">
-      <h2
-        className="flex justify-self-center underline decoration-dashed text-purple-400 text-center justify-center
-          sm:text-[2rem] sm:pb-[1rem] sm:w-[18rem] 
-          md:text-[4rem] md:w-[45rem] md:mx-auto md:pt-[5rem]
-          lp:text-[4rem] lp:w-[35rem] lp:pt-[2rem]
-          lg:text-[5rem] lg:w-[61rem] lg:pb-[2rem]
-        "
-      >
-        Design Process:
-      </h2>
+    <section className="w-full justify-self-center">
+      {/* TITLE */}
+       <h1 className="flex justify-self-center justify-center text-purple-400 underline decoration-dashed
+        sm:text-[1.7rem] sm:w-[23rem]
+                md:text-[3rem] md:w-[49rem]
+                lp:text-[4rem] lp:w-[60rem] lp:items-center
+                lg:text-[3rem] lg:pb-[2rem] lg:w-[50rem]
+                ">
+         Design Documentation:
+      </h1>
 
       <p
-          className=" justify-self-center
-            text-purple-500 font-vcr 
-            sm:text-[1rem] sm:w-[21rem] sm:pb-[1.5rem]
-            md:text-[2rem] md:w-[50rem] md:mb-[2rem]
-            lp:text-[1.5rem] lp:w-[65rem] lp:mb-[2rem]
-            lg:text-[2rem] lg:w-[60rem] lg:mt-[1rem] lg:mb-[2rem]
+          className="
+            text-orange-500 font-vcr justify-self-center
+            sm:text-[1rem] sm:w-[22rem] sm:pb-[1.5rem]
+            md:text-[1.8rem] md:w-[40rem] md:mb-[2rem]
+            lp:text-[2rem] lp:w-[65rem] lp:ml-[4rem] lp:mb-[2rem]
+            lg:text-[2rem] lg:leading-[3.5rem]
           "
         >
           This section highlights the design process behind the project,
-          including <span className="text-orange-400">flowcharts</span>,
-          <span className="text-orange-400"> user personas</span>,
-          <span className="text-orange-400"> user stories</span>, and an
-          <span className="text-orange-400"> empathy map</span>.
+          including <span className="text-purple-500">flowcharts</span>,
+          <span className="text-purple-500"> user personas</span>,
+          <span className="text-purple-500"> user stories</span>, and an
+          <span className="text-purple-500"> empathy map</span>.
         </p>
 
 
@@ -148,14 +147,19 @@ const BcitProcess = () => {
           border-2 border-orange-200 border-dashed
           bg-[#eee6f6]
           sm:px-2 sm:py-3
-          sm:w-[21rem] 
-          md:w-[50rem] md:p-5
-          lp:w-[60rem] lp:p-6
+          sm:w-[22rem] 
+          md:w-[45rem] md:p-5 
+          lp:w-[65rem] lp:p-6 
           lg:w-[78rem] lg:p-7 
         "
       >
+        
         <div className="flex items-center justify-between border-2 border-orange-200 bg-orange-300 px-2 py-1">
-          <span className="text-white font-vcr sm:text-[0.8rem] md:text-[1rem] lp:text-[1.2rem] lg:text-[2rem]">
+          <span className="text-white font-vcr
+              sm:text-[0.8rem]
+              md:text-[1rem]
+              lp:text-[1.2rem]
+              lg:text-[1.4rem]">
             BcitProcess.exe
           </span>
 
@@ -242,11 +246,11 @@ const BcitProcess = () => {
 
               <p
                 className="
-                  mt-3 text-orange-500 font-vcr
+                  mt-3 text-orange-500 font-Dos
                   sm:text-[0.8rem] sm:leading-7
                   md:text-[1.05rem] md:leading-8
                   lp:text-[1.25rem] lp:leading-10
-                  lg:text-[1.55rem] lg:leading-[3rem]
+                  lg:text-[1.5rem] lg:leading-[3.5rem]
                 "
               >
                 {currentImage.description}

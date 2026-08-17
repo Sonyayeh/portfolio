@@ -13,42 +13,42 @@ const workImages = [
     alt: "Team members and roles",
     fileName: "team_roles.svg",
     description:
-      "This document outlines the team structure and responsibilities for the project. Defining roles early helped organize collaboration, clarify ownership, and support a smoother product design workflow from planning to execution.",
+      "Assigning roles at the outset, project manager, web designer, graphic designer, app designer, gave the team a clear division of ownership before any design work began. That structure proved essential once the project moved into waterfall execution, where ambiguity about who owned what would have slowed everything down.",
   },
   {
     src: style,
     alt: "Style guide",
     fileName: "style_guide.svg",
     description:
-      "This style guide established the visual system for the project, including typography, colour choices, and interface patterns. It helped maintain consistency across screens and supported a more cohesive product experience.",
+      "Typography, colour, and interface patterns were consolidated into a single reference to ensure consistency didn't rely on memory or assumption. Every screen that followed drew from this system directly, which is part of why the final product reads as one coherent experience rather than a set of loosely related screens.",
   },
   {
     src: approach,
     alt: "User story approach",
     fileName: "user_story_approach.jpg",
     description:
-      "This user story approach helped define what users needed to accomplish and why those tasks mattered. Framing features around user goals supported more intentional design decisions and kept the experience focused on usability.",
+      "Rather than designing around assumed features, this stage started by asking what users actually needed to accomplish, and why that task mattered to them in the first place. That distinction, need versus assumption, shaped which features made the final cut.",
   },
   {
     src: example,
     alt: "User story examples",
     fileName: "user_story_examples.jpg",
     description:
-      "These user story examples translated broader goals into specific scenarios and actions. Breaking the experience into practical use cases made it easier to prioritize features and shape interactions around real user needs.",
+      "Translating broad goals into specific, situational scenarios made prioritization possible. A goal like browse available boards easily means little until it's grounded in an actual use case; these examples provided that grounding.",
   },
   {
     src: userjourney,
     alt: "App user journey",
     fileName: "user_journey.png",
     description:
-      "This user journey maps the steps a person may take while moving through the app. It helped visualize touchpoints, identify potential friction, and ensure the overall flow felt logical, clear, and user-centred.",
+      "Mapping the likely path a user takes through the app surfaced friction points that weren't visible when screens were considered individually. Sequence matters as much as content, a logical flow can fail even when every screen, in isolation, looks correct.",
   },
   {
     src: summary,
     alt: "Brand summary",
     fileName: "brand_summary.jpg",
     description:
-      "This summary captures the project's overall direction, including its tone, goals, and intended experience. It acted as a reference point throughout the design process to keep the product aligned with its purpose and identity.",
+      "Establishing tone, goals, and intended experience early gave the project a fixed point to return to whenever a decision felt uncertain. Design work drifts without that anchor; this summary was what kept the product's identity consistent from concept through execution.",
   },
 ];
 
@@ -107,22 +107,21 @@ const BoardProcess = () => {
 
   return (
     <section className="w-full">
-      <h1 className="flex justify-self-center justify-center
-                underline decoration-dashed text-purple-400
-                sm:text-[1.7rem] sm:pb-[2rem] sm:w-[22rem] 
-                md:text-[3rem] md:pt-[1rem] md:w-[60rem] md:mb-[2rem]
-                lp:text-[2.8rem] lp:w-[75rem] lp:justify-center lp:items-center lp:pb-[2rem] lp:pt-[3rem]
-                lg:text-[4.5rem] lg:w-[70rem]">
+      <h1 className="flex justify-center text-purple-400 underline decoration-dashed justify-self-center
+        sm:text-[1.7rem] sm:w-[23rem] sm:justify-center
+                md:text-5xl md:pt-[5rem] md:w-[35rem] md:mb-[2rem]
+                 lp:text-[2.8rem] lp:w-[75rem] lp:justify-center lp:items-center lp:pb-[5rem]
+                lg:text-[3rem] lg:w-[40rem] lg:mt-[2rem]">
         Design Process:
       </h1>
 
       <p
           className=" justify-self-center
-            text-purple-500 font-vcr 
+            text-purple-500 font-vcr justify-self-center
             sm:text-[1rem] sm:w-[22rem] sm:pb-[1.5rem]
-            md:text-[2rem] md:w-[50rem] md:mb-[2rem]
-            lp:text-[2rem] lp:w-[65rem] lp:mb-[2rem]
-            lg:text-[2rem] lg:w-[60rem] lg:mt-[1rem] lg:mb-[2rem]
+            md:text-[1.8rem] md:w-[40rem] md:mb-[2rem]
+            lp:text-[2rem] lp:w-[65rem] lp:ml-[4rem] lp:mb-[2rem]
+            lg:text-[2rem] lg:leading-[3.5rem]
           "
         >
         This section highlights the product design process behind the project,
@@ -136,18 +135,21 @@ const BoardProcess = () => {
       
       <div
         className="
-          mx-auto justify-self-center
+         mx-auto justify-self-center
           border-2 border-orange-200 border-dashed
           bg-[#eee6f6]
           sm:px-2 sm:py-3
-          sm:w-[21rem] 
-          md:w-[50rem] md:p-5
-          lp:w-[60rem] lp:p-6
+          sm:w-[22rem] 
+          md:w-[45rem] md:p-5 
+          lp:w-[65rem] lp:p-6 
           lg:w-[78rem] lg:p-7 
         "
       >
         <div className="flex items-center justify-between border-2 border-orange-200 bg-orange-300 px-2 py-1">
-          <span className="text-white font-vcr sm:text-[0.8rem] md:text-[1rem] lp:text-[1.2rem] lg:text-[2rem]">
+          <span className="text-white font-vcr sm:text-[0.8rem]
+              md:text-[1rem]
+              lp:text-[1.2rem]
+              lg:text-[1.4rem]">
             BcitProcess.exe
           </span>
 
@@ -222,7 +224,7 @@ const BoardProcess = () => {
             <div className="border-2 border-orange-200 bg-white p-3 min-w-0 md:w-[55%]">
               <p
                 className="
-                  border-b border-orange-200 pb-2 text-orange-400 font-vcr
+                   border-b border-orange-200 pb-2 text-orange-400 font-vcr
                   sm:text-[0.85rem]
                   md:text-[1rem]
                   lp:text-[1.2rem]
@@ -234,11 +236,11 @@ const BoardProcess = () => {
 
               <p
                 className="
-                  mt-3 text-orange-500 font-vcr
+                  mt-3 text-orange-500 font-Dos
                   sm:text-[0.8rem] sm:leading-7
                   md:text-[1.05rem] md:leading-8
                   lp:text-[1.25rem] lp:leading-10
-                  lg:text-[1.55rem] lg:leading-[3rem]
+                  lg:text-[1.5rem] lg:leading-[3.5rem]
                 "
               >
                 {currentImage.description}
@@ -263,7 +265,7 @@ const BoardProcess = () => {
 
             <p
               className="
-                text-center text-orange-400 font-vcr
+                 text-center text-orange-400 font-vcr
                 sm:text-[1rem]
                 md:text-[0.95rem]
                 lp:text-[1.1rem]

@@ -76,10 +76,10 @@ const BoardDes = () => {
    
 
        <h3 className=" text-orange-500 justify-self-center
-        sm:text-[1rem] sm:pb-[1rem] sm:w-[20rem] 
+        sm:text-[1rem] sm:pb-[1rem] sm:w-[22rem] 
                 md:text-[2rem] md:w-[50rem] md:pb-[2rem]
                 lp:text-[1.5rem] lp:w-[60rem] lp:leading-[3rem] lp:pb-[4rem]
-                lg:text-[3rem] lg:w-[85rem] lg:mb-[5rem] lg:mt-[2rem] lg:leading-[5rem]">
+                lg:text-[1.5rem] lg:w-[69rem] lg:mb-[2rem] lg:mt-[2rem] lg:leading-[3rem]">
                 Boardwalk Boutique is a skate shop that does skateboard rentals and streetwear and skateboard
                 retail. It is a fictional skate shop located in the heart of Vancouver. The app includes various of designs and brands of skateboards and is to guarantee users to find something for them. There are also the review sections users can read upon before renting/purchasing any merchandise, and they can also leave comments about products.
                 </h3>

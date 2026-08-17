@@ -51,10 +51,10 @@ const BoardSoftware = () => {
             {/* software used list */}
             <h1 className="flex justify-self-center justify-center
                 underline decoration-dashed text-purple-400
-                sm:text-[1.7rem] sm:pb-[2rem] sm:w-[22rem] 
+                sm:text-[1.7rem] sm:pb-[2rem] sm:w-[23rem] 
                 md:text-[3rem] md:pt-[1rem] md:w-[60rem] md:mb-[2rem]
                 lp:text-[2.8rem] lp:w-[75rem] lp:justify-center lp:items-center lp:pb-[2rem] lp:pt-[3rem]
-                lg:text-[4.5rem] lg:w-[70rem]">
+                lg:text-[3rem] lg:w-[70rem]">
                 Software Used:
             </h1>
              <ul className="grid justify-self-center
@@ -62,7 +62,7 @@ const BoardSoftware = () => {
                 sm:grid-cols-2 sm:w-[22rem] sm:pb-[2rem]
                 md:grid-cols-3 md:w-[57rem]
                 lp:grid-cols-3 lp:w-[50rem] 
-                lg:grid-cols-3 lg:w-[77rem]
+                lg:grid-cols-3 lg:w-[65rem]
             ">
                 {/* Adobe Photoshop */}
                 <li className="flex flex-col items-center icon" ref={(el) => iconRefs.current[2] = el}>
@@ -75,7 +75,7 @@ const BoardSoftware = () => {
                     sm:text-[.9rem] sm:w-[10rem]
                     md:text-[1.5rem] md:w-[22rem] md:pt-[2rem]
                     lp:text-[1.5rem] lp:w-[22rem]
-                    lg:text-[2rem] lg:w-[25rem] lg:mt-[3rem]
+                    lg:text-[2rem] lg:w-[18rem] lg:mt-[3rem]
                     ">Adobe Photoshop</span>
                 </li>
 
@@ -85,7 +85,7 @@ const BoardSoftware = () => {
             className="text-orange-400 hover:text-purple-300 
             sm:text-[2.5rem] sm:px-2
             md:text-[6rem] md:px-3
-            lg:text-[7rem] lg:px-6 lg:pb-[1rem] lg:pt-[3rem]
+            lg:text-[7rem] lg:px-6 lg:pb-[1rem] lg:pt-[1.5rem]
             lp:text-[7.5rem] lp:px-4 lp:mb-8"
             name="brush-outline"
           />
@@ -104,7 +104,7 @@ const BoardSoftware = () => {
                     className="text-orange-400 hover:text-purple-300 
                     sm:text-[2.5rem] sm:px-2
                     md:text-[6rem] md:px-3
-                    lg:text-[7rem] lg:px-6 lg:pb-[1.5rem]
+                    lg:text-[7rem] lg:px-6 lg:pb-[2.5rem]
                     lp:text-[7.5rem]"
                     name="image-outline"
                 />
@@ -113,7 +113,7 @@ const BoardSoftware = () => {
                     sm:text-[.9rem] sm:w-[10rem]
                     md:text-[1.5rem] md:w-[22rem] md:pt-[2rem]
                     lp:text-[1.5rem] lp:w-[22rem]
-                    lg:text-[2rem] lg:w-[25rem]
+                    lg:text-[2rem] lg:w-[20rem]
                             ">Adobe Stock Images</span>
                 </li>
 

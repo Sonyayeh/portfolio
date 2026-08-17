@@ -34,14 +34,14 @@ const BoardWalk = () => {
     return (
         <div className=" relative mt-[3rem] justify-center
             sm:mt-[10rem] sm:px-0 sm:mx-auto 
-            md:ml-[3rem] md:mt-[1rem]">
+            md:mt-[1rem]">
             {/* Project Heading and Description */}
             <div className="text-start">
                <h1 className="flex justify-self-center text-purple-500 underline decoration-dashed justify-center
                 sm:text-[2rem] sm:pb-[2rem] sm:mt-[-5rem] sm:w-[22rem] sm:text-center
                 md:text-[4rem] md:pt-[10rem] md:w-[55rem]
                 lp:text-[2.8rem] lp:w-[72rem] lp:justify-center lp:items-center lp:pt-[5rem]
-                lg:text-[4.5rem] lg:w-[85rem] lg:mb-[3rem] lg:mt-[2rem]">
+                lg:text-[3rem] lg:w-[56rem] lg:mb-[3rem] lg:mt-[2rem]">
                     Boardwalk Project:
                 </h1>
                     
@@ -50,7 +50,7 @@ const BoardWalk = () => {
                 sm:text-[1.5rem] sm:pb-[2rem] sm:w-[22rem]
                 md:text-[3.5rem] md:pt-[3rem] md:w-[55rem] 
                 lp:text-[2.5rem] lp:w-[75rem] lp:justify-center lp:items-center lp:mt-[-3rem]
-                lg:text-[4rem] lg:w-[70rem] lg:mb-[2rem]">
+                lg:text-[3rem] lg:w-[16rem] lg:mb-[2rem]">
                     Overview:
                 </h1>
                 <div>
@@ -124,33 +124,33 @@ const BoardWalk = () => {
                                sm:w-[22rem] sm:justify-between
                                md:justify-between md:w-[50rem]
                                lp:w-[63rem] lp:max-aut
-                               lg:w-[90rem] lg:mx-auto lg:justify-between ">
+                               lg:w-[75rem] lg:mx-auto lg:justify-between ">
                 <Link 
-                    to="/boardwalk" 
-                    className="flex items-center text-purple-300 hover:text-emerald-500 transition-colors duration-300"
+                    to="/bcit" 
+                    className="flex items-center text-purple-300 hover:text-orange-500 transition-colors duration-300"
                     onClick={() => window.scrollTo({ top: 0 })}
                 >
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="w-8 h-8">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 19l-7-7 7-7" />
                     </svg>
-                    <h3 className="ml-2 text-purple-400 hover:text-purple-500
+                    <h3 className="ml-2 text-purple-400 hover:text-orange-500
                     sm:text-[1.5rem]
                     md:text-[2.5rem]
                     lp:text-[3rem]
-                    lg:text-[4rem]">Back</h3>
+                    lg:text-[3rem]">Back</h3>
                 </Link>
 
                 {/* Next Button */}
                 <Link 
                     to="/bing" 
-                    className="flex items-center text-purple-300 hover:text-emerald-500 transition-colors duration-300"
+                    className="flex items-center text-purple-300 hover:text-orange-500 transition-colors duration-300"
                     onClick={() => window.scrollTo({ top: 0})}
                 >
-                     <h3 className="mr-3 text-purple-400 hover:text-purple-500 
+                     <h3 className="mr-3 text-purple-400 hover:text-orange-500 
                                         sm:text-[1.5rem]
                                          md:text-[2.5rem]
                                          lp:text-[3rem]
-                                         lg:text-[4rem]">Next</h3>
+                                         lg:text-[3rem]">Next</h3>
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="w-8 h-8">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
                     </svg>

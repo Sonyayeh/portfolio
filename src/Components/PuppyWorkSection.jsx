@@ -83,11 +83,11 @@ const PuppyWorkSection = () => {
   return (
     <section className="w-full justify-self-center">
 
-      <h1 className="flex justify-center text-purple-400 underline decoration-dashed
+      <h1 className="flex justify-center text-purple-400 underline decoration-dashed justify-self-center
         sm:text-[1.7rem] sm:w-[23rem] sm:justify-center
                 md:text-5xl md:pt-[5rem] md:w-[35rem] md:mb-[2rem]
                  lp:text-[2.8rem] lp:w-[75rem] lp:justify-center lp:items-center lp:pb-[5rem]
-                lg:text-[3.5rem] lg:w-[60rem] lg:mb-[5rem] lg:mt-[2rem]">
+                lg:text-[3rem] lg:w-[40rem] lg:mt-[2rem]">
         Sketches &amp; Process:
       </h1>
 
@@ -184,11 +184,11 @@ const PuppyWorkSection = () => {
 
               <p
                 className="
-                  mt-3 text-orange-500 font-vcr
+                  mt-3 text-orange-500 font-Dos
                   sm:text-[0.8rem] sm:leading-7
                   md:text-[1.05rem] md:leading-8
                   lp:text-[1.25rem] lp:leading-10
-                  lg:text-[1.55rem] lg:leading-[3rem]
+                  lg:text-[1.5rem] lg:leading-[3.5rem]
                 "
               >
                 {currentImage.description}
@@ -255,7 +255,7 @@ const PuppyWorkSection = () => {
               flex flex-col
               sm:max-w-[94vw]
               md:max-w-[85vw]
-              lg:max-w-[78vw]
+              lg:max-w-[25vw]
             "
             onClick={(e) => e.stopPropagation()}
           >

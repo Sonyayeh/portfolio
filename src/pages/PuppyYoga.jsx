@@ -31,21 +31,21 @@ const PuppyYoga = () => {
     return (
         <div className=" relative mt-[3rem] justify-center
             sm:mt-[10rem] sm:px-0 sm:mx-auto 
-            md:ml-[3rem] md:mt-[1rem]">
+            md:mt-[1rem]">
             {/* Project Heading and Description */}
             <div className="text-start ">
                 <h1 className="flex justify-self-center text-purple-500 underline decoration-dashed justify-center
                 sm:text-[2rem] sm:pb-[2rem] sm:mt-[-5rem] sm:w-[22rem] sm:text-center
                 md:text-[4rem] md:pt-[10rem] md:w-[55rem]
                 lp:text-[2.8rem] lp:w-[72rem] lp:justify-center lp:items-center lp:pt-[5rem]
-                lg:text-[4.5rem] lg:w-[85rem] lg:mb-[3rem] lg:mt-[2rem]">
+                lg:text-[3rem] lg:w-[56rem] lg:mb-[3rem] lg:mt-[2rem]">
                     Puppy Yoga Studio: Furrever Pals
                 </h1>
                 <h1 className="flex justify-self-center underline decoration-dashed text-purple-400 text-center justify-center
                 sm:text-[1.5rem] sm:pb-[2rem] sm:w-[22rem]
                 md:text-[3.5rem] md:pt-[3rem] md:w-[55rem] 
                 lp:text-[2.5rem] lp:w-[75rem] lp:justify-center lp:items-center lp:mt-[-3rem]
-                lg:text-[4rem] lg:w-[70rem] lg:mb-[2rem]">
+                lg:text-[3rem] lg:w-[16rem] lg:mb-[2rem]">
                     Overview:
                 </h1>
                 <div className="flex justify-self-center text-center">
@@ -53,7 +53,7 @@ const PuppyYoga = () => {
                 sm:text-[1rem] sm:pb-[1rem] sm:w-[24rem] 
                 md:text-[2rem] md:w-[50rem] md:pb-[2rem]
                 lp:text-[1.5rem] lp:w-[60rem] lp:leading-[3rem] lp:pb-[4rem]
-                lg:text-[3rem] lg:w-[85rem] lg:mb-[5rem] lg:mt-[2rem] lg:leading-[5rem]">
+                lg:text-[1.5rem] lg:w-[69rem] lg:mb-[2rem] lg:mt-[2rem] lg:leading-[3rem]">
               Furrever Pals started from something almost everyone deals with: stress, and the gap between needing support and actually seeking it. Movement helps, but so does a less talked about effect, people relax around things they find genuinely cute, a real dopamine response. Furrever Pals merges the two, movement based stress relief and time with dogs, into something neither offers alone.
             <br/><br />
             The dogs in every session are real and adoptable. BC SPCA's 2023 data shows animals are sometimes euthanized simply for lack of space or a ready home, not lack of health, so ten percent of everything Furrever Pals earns goes directly to local shelters, regardless of how many adoptions happen that month.
@@ -66,7 +66,7 @@ const PuppyYoga = () => {
                       <button className="font-Dos text-purple-400 border-3 border-dashed border-purple-400 hover:bg-orange-200 hover:text-purple-600 transition-colors duration-300 mb-3
                         sm:text-[1rem] sm:px-[1.5rem] sm:py-[0.5rem]
                         md:text-[1.5rem] md:px-[2rem] md:py-[0.8rem]
-                        lg:text-[3rem] lg:px-[3rem] lg:py-[1rem]">
+                        lg:text-[2rem] lg:px-[3rem] lg:py-[1rem]">
                         View Live Site
                       </button>
                     </a>
@@ -77,7 +77,7 @@ const PuppyYoga = () => {
                 sm:w-[22rem]
                md:w-[50rem] 
                lp:w-[65rem]
-               lg:w-[80rem] lg:mt-[5rem]
+               lg:w-[80rem] 
                "></div>
 
                 {/* software used section */}
@@ -114,7 +114,7 @@ const PuppyYoga = () => {
                     sm:text-[1.7rem] sm:w-[23rem] sm:justify-center
                 md:text-[3rem] md:w-[35rem] md:mb-[3rem] 
                 lp:text-[2.8rem] lp:w-[40rem] lp:pt-[2rem]
-                lg:text-[4.5rem] lg:pb-[2rem] lg:w-[50rem]
+                lg:text-[3rem] lg:w-[50rem]
                 ">
                     Design Rationale:
                 </h1>
@@ -148,7 +148,7 @@ const PuppyYoga = () => {
                                sm:w-[22rem] sm:justify-between
                                md:justify-between md:w-[50rem]
                                lp:w-[63rem] lp:max-aut
-                               lg:w-[90rem] lg:mx-auto lg:justify-between ">
+                               lg:w-[75rem] lg:mx-auto lg:justify-between ">
                 <Link 
                     to="/bcit" 
                     className="flex items-center text-purple-300 hover:text-orange-500 transition-colors duration-300"
@@ -161,7 +161,7 @@ const PuppyYoga = () => {
                     sm:text-[1.5rem]
                     md:text-[2.5rem]
                     lp:text-[3rem]
-                    lg:text-[4rem]">Back</h3>
+                    lg:text-[3rem]">Back</h3>
                 </Link>
 
                 {/* Next Button */}
@@ -174,7 +174,7 @@ const PuppyYoga = () => {
                                         sm:text-[1.5rem]
                                          md:text-[2.5rem]
                                          lp:text-[3rem]
-                                         lg:text-[4rem]">Next</h3>
+                                         lg:text-[3rem]">Next</h3>
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="w-8 h-8">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
                     </svg>

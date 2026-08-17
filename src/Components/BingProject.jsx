@@ -14,7 +14,7 @@ const BingProject = () => {
         <div className="w-full relative mt-[30rem] 
         sm:mt-[10rem] sm:px-0  sm:mx-auto sm:pb-[2rem]
         md:ml-[0rem]
-        lg:ml-[5rem] lg:pr-[7rem] ">
+        lg:justify-self-center ">
 
     <div className="text-start w-full">
     {/* purple heading */}
@@ -71,7 +71,7 @@ const BingProject = () => {
                         sm:text-[1rem] sm:pt-2 
                         md:text-[1.3rem] md:pt-[2rem] md:pr-[10rem] md:w-[34rem] md:leading-[2rem]
                         lp:text-[1.5rem] lp:leading-[2.5rem] lp:w-[43rem]
-                        lg:text-[1.8rem] lg:mt-[5rem] lg:pb-[2rem] lg:w-[40rem]">
+                        lg:text-[1.5rem] lg:mt-[5rem] lg:pb-[2rem] lg:w-[40rem]">
                             {project.description}
                         </h4>
 
@@ -106,7 +106,7 @@ const BingProject = () => {
                     </div>
 
                     {/* Image Section */}
-                    <div className="flex justify-center w-full lg:w-1/2 lg:ml-[-14rem] lg:pt-[50rem] ">
+                    <div className="flex justify-center w-full lg:w-1/2 lg:ml-[-14rem] lg:pt-[40rem] ">
                          <img
                             src={project.imageurl}
                             alt="Project Preview"
@@ -114,7 +114,7 @@ const BingProject = () => {
                             sm:w-[20rem] sm:h-[25rem] sm:pb-[2rem]
                             md:w-[25rem] md:h-[25rem] md:ml-[25rem] md:mt-[-39rem] 
                             lp:w-[18rem] lp:h-[20rem] lp:mt-[-35rem] lp:mr-[-9rem]
-                            lg:w-[20rem] lg:h-[27rem] lg:mt-[-40rem]
+                            lg:w-[17rem] lg:h-[25rem] lg:mt-[-35rem]
                             "
                         />
                     </div>

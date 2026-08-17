@@ -106,7 +106,7 @@ const Home = () => {
                     text-[1.8rem]
                     sm:text-[1.5rem] sm:top-[-5rem] sm:w-[15rem] sm:leading-[2rem]
                     md:text-[3.2rem] md:top-[-10rem] md:w-[40rem] md:leading-[5rem]
-                    lg:text-[4.2rem] lg:top-[-1rem] lg:w-[30rem]
+                    lg:text-[4.2rem] lg:top-[-1rem] lg:w-[46rem]
                     lp:text-[3rem] lp:top-[-13rem] lp:w-[70rem]
                     tracking-wide
                     md:tracking-wider lg:tracking-[0.08em]
@@ -214,7 +214,7 @@ const Home = () => {
                 left-1/2 -translate-x-1/2
                 bottom-[2rem]
                 md:bottom-[-1rem] md:mb-[5rem]
-                lg:bottom-[-10rem]
+                lg:bottom-[-5rem]
                 lp:bottom-[10rem]
                 hover:cursor-hover
               "
@@ -270,7 +270,7 @@ const Home = () => {
                 w-[8rem]
                 sm:right-[1rem] sm:top-[3rem] sm:w-[8rem]
                 md:right-[1rem] md:top-[10rem] md:w-[18rem]
-                lg:right-[55rem] lg:top-[2rem] lg:w-[20rem]
+                lg:right-[55rem] lg:top-[-2rem] lg:w-[20rem]
                 lp:right-[1rem] lp:top-[7rem] lp:w-[22rem]
               "
             />
