@@ -9,7 +9,7 @@ const BcitiFig = () => {
       iframeTitle: "Figma Design File",
       src: "https://embed.figma.com/design/QZRxtL2jsXw5Q4ojCa3RyZ/MyBcit-edit?node-id=2-3&embed-host=share",
       description:
-        "This file contains the full design process, including low-fidelity wireframes, high-fidelity screens, and the style guide. It provides a closer look at the visual system and interface decisions behind the redesign.",
+        "This file documents the reasoning behind each stage of the redesign rather than presenting only its final output. The low fidelity wireframes reflect the point at which click reduction was first tested as a structural hypothesis; the high fidelity screens show where accessibility considerations, particularly contrast ratios and type scale, were formally applied; and the accompanying style guide demonstrates how BCIT's existing palette was preserved and extended rather than replaced. Together, these artifacts serve as a visual record of design reasoning, not simply a showcase of the completed interface.",
       externalLink:
         "https://www.figma.com/design/QZRxtL2jsXw5Q4ojCa3RyZ/MyBcit-edit?node-id=2-3",
     },
@@ -18,7 +18,7 @@ const BcitiFig = () => {
       iframeTitle: "Figma Prototype",
       src: "https://embed.figma.com/proto/QZRxtL2jsXw5Q4ojCa3RyZ/MyBcit-edit?page-id=2%3A3&node-id=134-3101&node-type=canvas&viewport=-255%2C344%2C0.11&scaling=min-zoom&content-scaling=fixed&embed-host=share",
       description:
-        "This interactive prototype demonstrates how the redesigned experience functions as a real product flow. It allows viewers to explore the screens, navigation, and interactions in a more realistic context.",
+        "Static screens can only demonstrate so much about whether a redesign actually functions, so this prototype allows for direct interaction with the flow a student would realistically follow: signing in, arriving at the dashboard, checking grades, and navigating to student services. This is the same flow evaluated with more than ten participants during usability testing, now available to explore firsthand rather than take on description alone.",
       externalLink:
         "https://www.figma.com/proto/QZRxtL2jsXw5Q4ojCa3RyZ/MyBcit-edit?page-id=2%3A3&node-id=134-3101&scaling=min-zoom&content-scaling=fixed",
     },
@@ -28,14 +28,14 @@ const BcitiFig = () => {
 
   return (
     <section className="w-full justify-self-center">
-       <h1 className="flex justify-self-center justify-center text-blue-400 underline decoration-dashed
-        sm:text-[1.7rem] sm:w-[23rem]
+       <h1 className="flex justify-self-center justify-center text-purple-400 underline decoration-dashed
+       sm:text-[1.7rem] sm:w-[23rem]
                 md:text-[3rem] md:w-[49rem]
                 lp:text-[4rem] lp:w-[60rem] lp:items-center
-                lg:text-[3.5rem] lg:w-[60rem]lg:mt-[2rem]">
+                lg:text-[3rem] lg:pb-[2rem] lg:pt-[2rem] lg:w-[50rem]
+                ">
         Figma Access:
       </h1>
-
      <div
         className="
           mx-auto
@@ -72,7 +72,7 @@ const BcitiFig = () => {
               type="button"
               onClick={() => setActiveTab("design")}
               className={`
-                border-2 px-3 py-1 font-vcr
+                 border-2 px-3 py-1 font-vcr
                  sm:text-[0.75rem]
                 md:text-[0.95rem]
                 lp:text-[1.1rem]
@@ -110,7 +110,7 @@ const BcitiFig = () => {
           {/* File name row */}
           <p
             className="
-              mt-3 pb-2 text-orange-400 font-vcr
+             mt-3 pb-2 text-orange-400 font-vcr
               sm:text-[0.85rem]
               md:text-[1rem]
               lp:text-[1.2rem]
@@ -140,7 +140,7 @@ const BcitiFig = () => {
           {/* Description */}
           <p
             className="
-              mt-4 text-orange-500 font-vcr
+                mt-4 text-orange-500 font-vcr
                sm:text-[0.85rem]
                   md:text-[1rem]
                   lp:text-[1.2rem]
@@ -154,7 +154,7 @@ const BcitiFig = () => {
           <div className="mt-4 flex justify-between items-center border-t-2 border-orange-200 pt-3">
             <p
               className="
-                text-orange-400 font-vcr
+                 text-orange-400 font-vcr
                 sm:text-[0.8rem]
                 md:text-[0.95rem]
                 lg:text-[1.1rem]

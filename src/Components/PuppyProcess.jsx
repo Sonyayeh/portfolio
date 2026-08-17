@@ -53,7 +53,7 @@ const PuppyProcess = () => {
               sm:text-[1.5rem] sm:py-5 sm:w-[22rem]
               md:text-[2.5rem] md:w-[45rem]
               lp:text-[2rem]
-              lg:text-[3.5rem] lg:py-5 lg:w-[65rem]">
+              lg:text-[2rem] lg:py-5 lg:w-[65rem]">
             {slide.title}
             <span className={`transition-transform duration-300 no-underline
               sm:text-[1.2rem]
@@ -72,7 +72,7 @@ const PuppyProcess = () => {
               sm:text-[0.95rem] sm:leading-[1.8rem]
               md:text-[1.8rem] md:leading-[3rem]
               lp:text-[1.5rem] lp:leading-[3.2rem] lp:w-[45rem]
-              lg:text-[2rem] lg:leading-[3.8rem]">
+              lg:text-[1.5rem] lg:leading-[3.8rem] lg:w-[67rem]">
               {slide.content}
             </p>
           </div>

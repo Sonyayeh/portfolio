@@ -37,21 +37,21 @@ const MyBcit = () => {
         <div className="relative mt-[3rem] justify-center
         sm:mt-[10rem] sm:px-0 sm:mx-auto 
         md:mt-[1rem]
-        lg:pl-[4rem] lg:pr-[4rem]">
+        ">
             {/* Project Heading and Description */}
             <div className="text-start ">
-              <h1 className="flex justify-self-center justify-center text-blue-400 underline decoration-dashed
+              <h1 className="flex justify-self-center justify-center text-purple-500 underline decoration-dashed
                 sm:text-[1.7rem] sm:w-[23rem]
                 md:text-[3rem] md:w-[49rem]
                 lp:text-[4rem] lp:w-[60rem] lp:items-center
-                lg:text-[3.5rem] lg:w-[60rem]lg:mt-[2rem]">
+                lg:text-[3rem] lg:w-[60rem]lg:mt-[2rem]">
                     MyBCIT Redesign:
                 </h1>
-                <h1 className="flex justify-self-center justify-center text-blue-400 underline decoration-dashed
+                <h1 className="flex justify-self-center justify-center text-purple-400 underline decoration-dashed
                 sm:text-[1.7rem] sm:w-[23rem]
                 md:text-[3rem] md:w-[49rem]
                 lp:text-[3rem] lp:w-[60rem] lp:items-center lp:pb-[2rem]
-                lg:text-[3.5rem] lg:w-[60rem]lg:mt-[2rem]">
+                lg:text-[3rem] lg:w-[60rem] lg:mt-[2rem]">
                     Overview:
                 </h1>
                <BcitDes />
@@ -60,7 +60,7 @@ const MyBcit = () => {
                 sm:w-[22rem]
                md:w-[45rem] 
                lp:w-[65rem]
-               lg:w-[80rem] lg:mt-[5rem]
+               lg:w-[80rem] lg:mt-[2rem]
                "></div>
 
 
@@ -87,7 +87,7 @@ const MyBcit = () => {
                 sm:w-[22rem]
                md:w-[45rem] 
                lp:w-[65rem]
-               lg:w-[80rem] lg:mt-[5rem]
+               lg:w-[80rem] lg:mt-[2rem]
                "></div>
 
 
@@ -146,19 +146,19 @@ const MyBcit = () => {
                    
                                  {/* Back Button */}
                                  <Link 
-                                     to="/magazine" 
-                                     className="flex items-center text-orange-300 hover:text-orange-500 transition-colors duration-300"
+                                     to="/puppy" 
+                                     className="flex items-center text-purple-300 hover:text-orange-500 transition-colors duration-300"
                                      onClick={() => window.scrollTo({ top: 0 })}
                                  >
                                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" 
                                          className="w-8 h-8 lg:w-16 lg:h-16">
                                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 19l-7-7 7-7" />
                                      </svg>
-                                     <h3 className="ml-2 text-orange-400 hover:text-orange-500 
+                                     <h3 className="ml-2 text-purple-400 hover:text-orange-500 
                                          sm:text-[1.5rem]
                                          md:text-[2.5rem]
                                          lp:text-[3rem]
-                                         lg:text-[4rem]">
+                                         lg:text-[3rem]">
                                          Back
                                      </h3>
                                  </Link>
@@ -166,14 +166,14 @@ const MyBcit = () => {
                                  {/* Next Button */}
                                  <Link 
                                      to="/boardwalk" 
-                                     className="flex items-center text-orange-300 hover:text-orange-500 transition-colors duration-300"
+                                     className="flex items-center text-purple-300 hover:text-orange-500 transition-colors duration-300"
                                      onClick={() => window.scrollTo({ top: 0 })}
                                  >
-                                     <h3 className="mr-3 text-orange-400 hover:text-orange-500 
+                                     <h3 className="mr-3 text-purple-400 hover:text-orange-500 
                                          sm:text-[1.5rem]
                                          md:text-[2.5rem]
                                          lp:text-[3rem]
-                                         lg:text-[4rem]">
+                                         lg:text-[3rem]">
                                          Next
                                      </h3>
                                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" 

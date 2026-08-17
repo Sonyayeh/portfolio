@@ -13,7 +13,7 @@ const BcitProject = () => {
         <div className="w-full relative mt-[30rem] 
         sm:mt-[10rem] sm:px-0  sm:mx-auto
         md:ml-[0rem]
-        lg:ml-[5rem] lg:pr-[7rem] ">
+        lg:justify-self-center ">
 
     <div className="text-start w-full
      md:w-[49rem] lp:w-[60rem] lp:justify-self-center
@@ -61,14 +61,14 @@ const BcitProject = () => {
                         sm:text-[1.5rem] sm:text-start sm:pt-5 
                         md:text-[3rem] md:pt-[3rem] md:w-[45rem] 
                         lp:text-[3rem] lp:w-[55rem] lp:pb-[1rem]
-                        lg:text-[3rem] lg:pt-[2rem] lg:absolute lg:w-[60rem]">
+                        lg:text-[3rem] lg:pt-[2rem] lg:absolute lg:w-[37rem]">
                             {project.title}
                         </h5>
                         <h4 className="text-lg leading-6 
                         sm:text-[1rem] sm:pt-2 
                         md:text-[1.3rem] md:pt-[2rem] md:pr-[10rem] md:w-[35rem] md:leading-[2rem]
                         lp:text-[1.5rem] lp:leading-[2.5rem] lp:w-[40rem]
-                        lg:text-[1.8rem] lg:mt-[5rem] lg:pb-[2rem] lg:w-[40rem]">
+                        lg:text-[1.5rem] lg:mt-[5rem] lg:pb-[2rem] lg:w-[40rem]">
                             {project.description}
                         </h4>
                         

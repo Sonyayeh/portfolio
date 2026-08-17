@@ -104,21 +104,22 @@ const BoardTimeline = () => {
     ">
       {/* Title */}
       <h1 className="flex justify-self-center text-purple-400 underline decoration-dashed
-        sm:text-[1.7rem] sm:w-[23rem] sm:justify-center
+      sm:text-[1.7rem] sm:w-[23rem] sm:justify-center
       md:text-[3rem] md:w-[35rem] md:mb-[3rem] 
-      lp:text-[2.8rem] lp:w-[30rem]
-      lg:text-[4.5rem] lg:pb-[2rem] lg:w-[50rem]">
+      lp:text-[2.8rem] lp:w-[40rem]
+      lg:text-[3rem] lg:pb-[2rem] lg:w-[50rem]
+      ">
         Work Timeline
       </h1>
 
       <div className=" justify-self-center"> 
       <h2 className="flex text-center text-purple-400 underline decoration-dashed
-      sm:text-[1rem] sm:pb-[1rem] sm:w-[21rem]
+     sm:text-[1.3rem] sm:pb-[1rem] sm:justify-center sm:w-[20rem]
       md:text-[2rem] md:w-[35rem] md:mb-[2rem]
       lp:justify-center lp:text-[1.8rem] lp:w-[50rem]
-      lg:text-[3rem] lg:pb-[2rem] lg:w-[65rem]
+      lg:text-[2rem] lg:pb-[2rem] lg:w-[65rem]
       ">
-        Total hours: <span className="text-red-600">29.5 hours & counting...</span>
+        Total hours: <span className="text-red-600">29.5 hours ...</span>
       </h2>
       </div>
 
@@ -138,9 +139,10 @@ const BoardTimeline = () => {
 
         {/* Events */}
       <div className="flex space-x-10 overflow-x-auto py-4
-          md:w-[36rem] md:mx-auto 
-          lp:w-[54rem] lp:mx-auto
-          lg:w-[70rem] lg:gap-[5rem]
+          sm:w-[20rem] sm:mx-auto 
+        md:w-[40rem] md:mx-auto
+        lp:w-[55rem] lp:gap-[4rem]
+        lg:w-[80rem]  lg:gap-[5rem]
           ">
           {events.map((event, idx) => (
             <div
@@ -164,10 +166,10 @@ const BoardTimeline = () => {
               {/*This is the note on the bottom part of the diamond */}
              <span
               className={`mt-2 text-sm text-center 
-                sm:pt-[2rem] 
-                md:text-[1.5rem]
-                lp:text-[2rem] 
-                lg:text-[2.5rem] lg:mb-[2rem]
+                sm:pt-[2rem]
+                  md:text-[1.5rem]
+                  lp:text-[1.8rem] 
+                lg:text-[1.8rem] lg:mb-[2rem]
                 ${
                 selectedIndex === idx ? "text-orange-400" : "text-purple-500"
               }`}
@@ -181,30 +183,34 @@ const BoardTimeline = () => {
       </div>
 
       {/* Event content */}
-      <div className="border-t mt-6 pt-4
-      justify-self-center
+      <div className="border-t mt-6 pt-4 mx-auto
+sm:w-[20rem]
+md:w-[40rem] md:text-[2rem] 
+lp:w-[55rem]
+lg:w-[75rem]
       ">
         {/* this is the title of what each section is about*/}
-        <h2 className="text-xl font-semibold text-purple-500
-        sm:text-[1.3rem] 
-        md:text-[2rem] md:pb-5 md:leading-[2.6rem] md:w-[45rem]
-          lp:text-[2.5rem] lp:pb-5  lp:leading-[3.2rem] lp:w-[55rem]
-          lg:text-[3rem] lg:pb-[2rem] lg:pt-[2rem] lg:leading-[3.8rem] lg:w-[67rem] 
+        <h2 className="text-xl font-semibold text-purple-500 
+    sm:text-[1.3rem] 
+    md:text-[2rem] md:pb-5 md:leading-[2.6rem]
+    lp:text-[2rem] lp:pb-5 lp:leading-[2.5rem]
+    lg:text-[2.5rem] lg:pb-[2rem] lg:pt-[2rem] lg:leading-[3.8rem]
         ">{events[selectedIndex].title}</h2>
 
         {/* this is the duration of how long it took me to do each process*/}
-        <h3 className="text-sm text-orange-600
-        
-        md:text-[1.8rem] 
-        lg:text-[2.5rem] lg:pb-5 lg:leading-[3.8rem] lg:w-[67rem]
+        <h3 className="text-sm text-orange-600 
+    sm:text-[1.2rem] sm:pt-[1rem]
+    md:text-[1.8rem]
+    lp:text-[1.5rem]
+    lg:text-[2rem] lg:pb-5
         ">{events[selectedIndex].sub}</h3>
 
         {/* this is the content section */}
-        <p className="mt-2 text-purple-700
-        md:mt-5 md:text-[2rem]  md:w-[46rem]
-        lp:w-[55rem] lp:text-[1.5rem]
-        lg:text-[2rem] lg:pb-5 lg:leading-[5rem] lg:w-[74rem]
-        
+        <p className="mt-2 text-purple-700 font-Dos
+  sm:pb-[2rem]
+    md:mt-5 md:text-[2rem]
+    lp:text-[1.8rem]
+    lg:text-[1.5rem] lg:pb-5 lg:leading-[5rem]
         ">{events[selectedIndex].content}</p>
       </div>
     </section>

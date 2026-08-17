@@ -77,21 +77,22 @@ const BcitTimeline = () => {
     ">
       {/* Title */}
        <div className=" justify-self-center"> 
-        <h1 className="flex justify-self-center justify-center text-blue-400 underline decoration-dashed
+        <h1 className="flex justify-self-center justify-center text-purple-400 underline decoration-dashed
         sm:text-[1.7rem] sm:w-[23rem]
                 md:text-[3rem] md:w-[49rem]
                 lp:text-[4rem] lp:w-[60rem] lp:items-center
-                lg:text-[3.5rem] lg:w-[60rem]lg:mt-[2rem]">
+                lg:text-[3rem] lg:pb-[2rem] lg:w-[50rem]
+                ">
         Work Timeline
       </h1>
       </div>
 
       <div className=" justify-self-center"> 
-      <h2 className="flex text-center text-blue-400 underline decoration-dashed
+      <h2 className="flex text-center text-purple-400 underline decoration-dashed
       sm:text-[1.3rem] sm:pb-[1rem] sm:justify-center
       md:text-[2rem] md:w-[35rem] md:mb-[2rem]
       lp:justify-center lp:text-[2.5rem] lp:w-[50rem]
-      lg:text-[3rem] lg:pb-[2rem] lg:w-[65rem]
+      lg:text-[2rem] lg:pb-[2rem] lg:w-[65rem]
       ">
         Total hours: <span className="text-red-600">13 hours</span>
       </h2>
@@ -104,7 +105,7 @@ const BcitTimeline = () => {
       lg:w-[75rem] 
       ">
         {/* Timeline line */}
-        <div className="absolute top-1/2 w-full border-t-[.4rem] border-blue-300 border-dashed -translate-y-1/2
+        <div className="absolute top-1/2 w-full border-t-[.4rem] border-purple-300 border-dashed -translate-y-1/2
         sm:w-[20rem]
         md:w-[35rem]
         lp:w-[55rem]
@@ -129,7 +130,7 @@ const BcitTimeline = () => {
             >
               {/* Diamond shape */}
               <div
-                className={`w-6 h-6 transform rotate-45 border-4 border-blue-200
+                className={`w-6 h-6 transform rotate-45 border-4 border-purple-200
                   md:w-[2rem] md:h-[2rem] md:ml-[1rem] 
                   lg:w-[3rem] lg:h-[3rem] lg:ml-[1.5rem] lg:mb-[4rem]
                   ${
@@ -143,9 +144,9 @@ const BcitTimeline = () => {
                 sm:pt-[2rem] 
                 md:text-[1.5rem]
                 lp:text-[2rem] 
-                lg:text-[2.5rem] lg:mb-[2rem]
+                lg:text-[1.8rem] lg:mb-[2rem]
                 ${
-                selectedIndex === idx ? "text-orange-400" : "text-blue-500"
+                selectedIndex === idx ? "text-orange-400" : "text-purple-500"
               }`}
             >
               {event.date}
@@ -164,25 +165,25 @@ const BcitTimeline = () => {
         lg:w-[75rem]
         ">
         {/* this is the title of what each section is about*/}
-       <h2 className="text-xl font-semibold text-blue-500 
+       <h2 className="text-xl font-semibold text-purple-500 
     sm:text-[1.3rem] 
     md:text-[2rem] md:pb-5 md:leading-[2.6rem]
     lp:text-[2.5rem] lp:pb-5 lp:leading-[3.2rem]
-    lg:text-[3rem] lg:pb-[2rem] lg:pt-[2rem] lg:leading-[3.8rem]
+    lg:text-[2.5rem] lg:pb-[2rem] lg:pt-[2rem] lg:leading-[3.8rem]
   ">{events[selectedIndex].title}</h2>
 
   <h3 className="text-sm text-orange-600 
     sm:text-[1.2rem] sm:pt-[1rem]
     md:text-[1.8rem]
     lp:text-[2rem]
-    lg:text-[3rem] lg:pb-5
+    lg:text-[2rem] lg:pb-5
   ">{events[selectedIndex].sub}</h3>
 
-  <p className="mt-2 text-blue-700 font-Dos
+  <p className="mt-2 text-purple-700 font-Dos
   sm:pb-[2rem]
     md:mt-5 md:text-[2rem]
     lp:text-[2rem]
-    lg:text-[2.5rem] lg:pb-5 lg:leading-[5rem]
+    lg:text-[1.5rem] lg:leading-[5rem]
   ">{events[selectedIndex].content}</p>
 </div>
     </section>

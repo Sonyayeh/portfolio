@@ -15,7 +15,7 @@ const Magazine = () => {
 
     return (
         // I think i commented about this section so many times already 
-       <div className="w-full relative mt-[30rem] sm:mt-[5rem] sm:px-0 sm:mx-auto lg:ml-[5rem] lg:pr-[7rem]">
+       <div className="w-full relative mt-[30rem] sm:mt-[5rem] sm:px-0 sm:mx-auto lg:justify-self-center ">
 
     <div className="text-start w-full
      md:w-[49rem]
@@ -70,7 +70,7 @@ const Magazine = () => {
                         sm:text-[1rem] sm:pt-2 
                         md:text-[1.3rem] md:pt-[2rem] md:pr-[10rem] md:w-[34rem] md:leading-[2rem]
                         lp:text-[1.5rem] lp:leading-[2.5rem] lp:w-[43rem]
-                        lg:text-[1.8rem] lg:mt-[8rem] lg:w-[40rem]">
+                        lg:text-[1.5rem] lg:mt-[8rem] lg:w-[40rem]">
                             {project.description}
                         </h4>
 
@@ -112,7 +112,7 @@ const Magazine = () => {
                             sm:w-[20rem] sm:h-[20rem] sm:pb-[2rem]
                             md:w-[20rem] md:h-[23rem] md:ml-[25rem] md:mt-[-37rem]
                             lp:h-[23rem] lp:w-[21rem] lp:max-h-[50rem] lp:mt-[-36rem] lp:ml-[34rem]
-                            lg:w-[20rem] lg:h-[24rem] lg:mt-[-28rem] lg:ml-[33rem]"
+                            lg:w-[23rem] lg:h-[25rem] lg:mt-[-28rem] lg:ml-[32rem]"
                         />
                     </div>
 

@@ -47,11 +47,11 @@ const BcitSoftware = () => {
 
       <h1
         className="flex justify-self-center justify-center
-                underline decoration-dashed text-blue-400
+                underline decoration-dashed text-purple-400
                 sm:text-[1.7rem] sm:pb-[2rem] sm:w-[23rem] 
                 md:text-[3rem] md:pt-[1rem] md:w-[60rem] md:mb-[2rem]
                 lp:text-[4rem] lp:w-[75rem] lp:justify-center
-                lg:text-[4.5rem] lg:w-[70rem]"
+                lg:text-[3rem] lg:w-[70rem]"
       >
         Software Used:
       </h1>
@@ -61,7 +61,7 @@ const BcitSoftware = () => {
                 sm:grid-cols-2 sm:w-[22rem]
                 md:grid-cols-2 md:w-[57rem]
                 lp:grid-cols-2 lp:w-[45rem] lp:h-[30rem]
-                lg:grid-cols-3 lg:w-[77rem]
+                lg:grid-cols-4 lg:w-[77rem] lg:h-[15rem]
             ">
         {/* Adobe Stock Images */}
         <li
@@ -76,11 +76,11 @@ const BcitSoftware = () => {
                     lp:text-[7.5rem]"
             name="image-outline"
           />
-           <span className="mt-2 text-center font-vcr text-blue-400
+           <span className="mt-2 text-center font-vcr text-purple-400
                     sm:text-[.9rem] sm:w-[10rem]
                     md:text-[1.5rem] md:w-[22rem]
                     lp:text-[2rem] lp:w-[22rem]
-                    lg:text-[2rem] lg:w-[25rem]">
+                    lg:text-[2rem] lg:w-[20rem]">
             Adobe Stock Images
           </span>
         </li>
@@ -98,11 +98,11 @@ const BcitSoftware = () => {
                     lp:text-[7.5rem]"
             name="brush-outline"
           />
-           <span className="mt-2 text-center font-vcr text-blue-400
+           <span className="mt-2 text-center font-vcr text-purple-400
                     sm:text-[.9rem] sm:w-[10rem]
                     md:text-[1.5rem] md:w-[22rem]
                     lp:text-[2rem] lp:w-[22rem]
-                    lg:text-[2rem] lg:w-[25rem]">
+                    lg:text-[2rem] lg:w-[20rem]">
             Procreate
           </span>
         </li>
@@ -120,7 +120,7 @@ const BcitSoftware = () => {
                     lp:text-[7.5rem]"
             name="logo-figma"
           />
-          <span className="mt-2 text-center font-vcr text-blue-400
+          <span className="mt-2 text-center font-vcr text-purple-400
                     sm:text-[.9rem] sm:w-[10rem]
                     md:text-[1.5rem] md:w-[22rem]
                     lp:text-[2rem] lp:w-[22rem]
@@ -142,7 +142,7 @@ const BcitSoftware = () => {
                     lp:text-[7.5rem]"
             name="color-palette-outline"
           />
-           <span className="mt-2 text-center font-vcr text-blue-400
+           <span className="mt-2 text-center font-vcr text-purple-400
                     sm:text-[.9rem] sm:w-[10rem]
                     md:text-[1.5rem] md:w-[22rem]
                     lp:text-[2rem] lp:w-[22rem]
