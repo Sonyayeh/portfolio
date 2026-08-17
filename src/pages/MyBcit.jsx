@@ -40,18 +40,18 @@ const MyBcit = () => {
         ">
             {/* Project Heading and Description */}
             <div className="text-start ">
-              <h1 className="flex justify-self-center justify-center text-purple-500 underline decoration-dashed
-                sm:text-[1.7rem] sm:w-[23rem]
-                md:text-[3rem] md:w-[49rem]
-                lp:text-[4rem] lp:w-[60rem] lp:items-center
-                lg:text-[3rem] lg:w-[60rem]lg:mt-[2rem]">
+              <h1 className="flex justify-self-center text-purple-500 underline decoration-dashed justify-center
+                sm:text-[2rem] sm:pb-[2rem] sm:mt-[-5rem] sm:w-[22rem] sm:text-center
+                md:text-[4rem] md:pt-[10rem] md:w-[55rem]
+                lp:text-[2.8rem] lp:w-[72rem] lp:justify-center lp:items-center lp:pt-[6rem]
+                lg:text-[3rem] lg:w-[56rem] lg:mb-[3rem] lg:mt-[2rem]">
                     MyBCIT Redesign:
                 </h1>
-                <h1 className="flex justify-self-center justify-center text-purple-400 underline decoration-dashed
-                sm:text-[1.7rem] sm:w-[23rem]
-                md:text-[3rem] md:w-[49rem]
-                lp:text-[3rem] lp:w-[60rem] lp:items-center lp:pb-[2rem]
-                lg:text-[3rem] lg:w-[60rem] lg:mt-[2rem]">
+                <h1 className="flex justify-self-center underline decoration-dashed text-purple-400 text-center justify-center
+                sm:text-[1.5rem] sm:pb-[2rem] sm:w-[22rem]
+                md:text-[3.5rem] md:pt-[3rem] md:w-[55rem] 
+                lp:text-[2.5rem] lp:w-[75rem] lp:justify-center lp:items-center lp:mt-[-5rem]
+                lg:text-[3rem] lg:w-[16rem] lg:mb-[2rem]">
                     Overview:
                 </h1>
                <BcitDes />
@@ -70,25 +70,26 @@ const MyBcit = () => {
                 </div>
 
                  {/* added a line for separate sections */}
-                                <div className="border-t-2 border-orange-500 justify-self-center
-                sm:w-[22rem]
-               md:w-[45rem] 
-               lp:w-[65rem]
-               lg:w-[80rem] lg:mt-[5rem]
-               "></div>
-               
-                {/* timeline section */}
-                <div className="pb-[2rem] pt-[2rem]">
-                    <BcitTimeline />
-                </div>
-
-                {/* added a line for separate sections */}
-                  <div className="border-t-2 border-orange-500 justify-self-center
+               <div className="border-t-2 border-orange-500 justify-self-center
                 sm:w-[22rem]
                md:w-[45rem] 
                lp:w-[65rem]
                lg:w-[80rem] lg:mt-[2rem]
                "></div>
+
+                {/* timeline section */}
+                <div className="pt-[2rem]">
+                    <BcitTimeline />
+                </div>
+
+                {/* added a line for separate sections */}
+               <div className="border-t-2 border-orange-500 justify-self-center
+                sm:w-[22rem]
+               md:w-[45rem] 
+               lp:w-[65rem]
+               lg:w-[80rem] lg:mt-[2rem]
+               "></div>
+
 
 
                 {/* work section Section */}
@@ -113,13 +114,14 @@ const MyBcit = () => {
                </div>
 
 
-               {/* added a line for separate sections */}
-                <div className="border-t-2 border-orange-500 justify-self-center
-               sm:w-[20rem]
-               md:w-[50rem] 
+                {/* added a line for separate sections */}
+               <div className="border-t-2 border-orange-500 justify-self-center
+                sm:w-[22rem]
+               md:w-[45rem] 
                lp:w-[65rem]
-               lg:w-[80rem] lg:mt-[5rem]
+               lg:w-[80rem] lg:mt-[2rem]
                "></div>
+
 
                 {/* Mockup section */}
                 <div className="pb-[2rem]">

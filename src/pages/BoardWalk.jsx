@@ -58,11 +58,11 @@ const BoardWalk = () => {
                 </div>
 
                   {/* added a line for separate sections */}
-                  <div className="border-t-2 border-orange-500 justify-self-center mt-[2rem]
-               sm:w-[20rem]
-               md:w-[50rem] 
+               <div className="border-t-2 border-orange-500 justify-self-center
+                sm:w-[22rem] sm:pb-[2rem] sm:mt-[2rem]
+               md:w-[45rem] 
                lp:w-[65rem]
-               lg:w-[80rem] lg:mt-[5rem]
+               lg:w-[80rem] lg:mt-[2rem] 
                "></div>
 
                 {/* software used section */}
@@ -71,26 +71,28 @@ const BoardWalk = () => {
                 </div>
 
                   {/* added a line for separate sections */}
-                  <div className="border-t-2 border-orange-500 justify-self-center mb-[2rem]
-               sm:w-[20rem]
-               md:w-[50rem] 
+               <div className="border-t-2 border-orange-500 justify-self-center
+                sm:w-[22rem] sm:pb-[2rem] sm:mt-[2rem]
+               md:w-[45rem] 
                lp:w-[65rem]
-               lg:w-[80rem] lg:mt-[5rem]
+               lg:w-[80rem] lg:mt-[2rem]
                "></div>
+
                 
 
                 {/* timeline section */}
-                <div className="pb-[2rem]">
+                <div>
                     <BoardTimeLine />
                 </div>
 
                  {/* added a line for separate sections */}
-                  <div className="border-t-2 border-orange-500 justify-self-center mb-[2rem]
-               sm:w-[20rem]
-               md:w-[50rem] 
+               <div className="border-t-2 border-orange-500 justify-self-center
+                sm:w-[22rem] sm:pb-[2rem] sm:mt-[2rem]
+               md:w-[45rem] 
                lp:w-[65rem]
-               lg:w-[80rem] lg:mt-[5rem]
+               lg:w-[80rem] lg:mt-[2rem]
                "></div>
+
 
               {/* the design process section */}
               <div>
@@ -99,12 +101,13 @@ const BoardWalk = () => {
 
 
                 {/* added a line for separate sections */}
-                  <div className="border-t-2 border-orange-500 justify-self-center mt-[2rem]
-               sm:w-[20rem]
-               md:w-[50rem] 
+               <div className="border-t-2 border-orange-500 justify-self-center
+                sm:w-[22rem] sm:pb-[2rem] sm:mt-[2rem]
+               md:w-[45rem] 
                lp:w-[65rem]
-               lg:w-[80rem] lg:mt-[5rem]
+               lg:w-[80rem] lg:mt-[2rem] 
                "></div>
+
 
                 {/* Mockup section */}
                 <div>
@@ -112,11 +115,11 @@ const BoardWalk = () => {
                 </div>
 
                  {/* added a line for separate sections */}
-                  <div className="border-t-2 border-orange-500 justify-self-center mt-[2rem]
-               sm:w-[20rem]
-               md:w-[50rem] 
+               <div className="border-t-2 border-orange-500 justify-self-center
+                sm:w-[22rem] sm:pb-[2rem] sm:mt-[2rem]
+               md:w-[45rem] 
                lp:w-[65rem]
-               lg:w-[80rem] lg:mt-[5rem]
+               lg:w-[80rem] lg:mt-[2rem]
                "></div>
 
                 <div className="flex l mt-8 
