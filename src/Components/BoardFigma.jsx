@@ -9,7 +9,7 @@ const BoardFig = () => {
       iframeTitle: "Boardwalk Figma Design File",
       src: "https://embed.figma.com/design/1gCrT0CT3cuodCsgmVOBvB/Broadway-Boutique?node-id=0-1&embed-host=share",
       description:
-        "This file contains the full design process, including low-fidelity wireframes, high-fidelity screens, and the style guide. It provides a closer look at the visual system and interface decisions behind the project.",
+        "This file documents the full design process, from low fidelity wireframes through high fidelity screens to the finalized style guide, offering a closer examination of the visual system and the interface decisions that shaped the project.",
       externalLink:
         "https://www.figma.com/design/1gCrT0CT3cuodCsgmVOBvB/Broadway-Boutique?node-id=0-1",
     },
@@ -18,7 +18,7 @@ const BoardFig = () => {
       iframeTitle: "Boardwalk Figma Prototype",
       src: "https://embed.figma.com/proto/1gCrT0CT3cuodCsgmVOBvB/Broadway-Boutique?page-id=0%3A1&node-id=35-75&p=f&viewport=1686%2C205%2C0.08&scaling=scale-down&content-scaling=fixed&starting-point-node-id=35%3A75&embed-host=share",
       description:
-        "This interactive prototype demonstrates how the project functions as a real product flow. It allows viewers to explore the screens, navigation, and interactions in a more realistic context.",
+        "This interactive prototype demonstrates how the project functions as a complete product flow, allowing viewers to engage directly with the screens, navigation, and interactions within a more realistic context.",
       externalLink:
         "https://www.figma.com/proto/1gCrT0CT3cuodCsgmVOBvB/Broadway-Boutique?page-id=0%3A1&node-id=35-75&scaling=scale-down&content-scaling=fixed",
     },
@@ -30,10 +30,10 @@ const BoardFig = () => {
     <section className="w-full">
       <h2
         className="flex justify-self-center underline decoration-dashed text-purple-400 text-center justify-center
-          sm:text-[2rem] sm:pb-[1rem] sm:w-[18rem] 
-          md:text-[4rem] md:w-[45rem] md:mx-auto md:pt-[5rem]
-          lp:text-[4rem] lp:w-[30rem] lp:pt-[2rem]
-          lg:text-[5rem] lg:w-[61rem] lg:pb-[2rem]
+          sm:text-[1.7rem] sm:w-[23rem]
+                md:text-[3rem] md:w-[49rem]
+                lp:text-[4rem] lp:w-[60rem] lp:items-center
+                lg:text-[3rem] lg:pb-[2rem] lg:pt-[2rem] lg:w-[50rem]
         "
       >
         Figma Access:
@@ -41,13 +41,13 @@ const BoardFig = () => {
 
       <div
         className="
-          mx-auto
+           mx-auto
           border-2 border-orange-200 border-dashed
           bg-[#eee6f6] justify-self-center
           sm:px-2 sm:py-3
-          sm:w-[21rem] 
-          md:w-[50rem] md:p-5 
-          lp:w-[60rem] lp:p-6 
+          sm:w-[22rem] 
+          md:w-[45rem] md:p-5 
+          lp:w-[65rem] lp:p-6 
           lg:w-[78rem] lg:p-7 
         "
       >

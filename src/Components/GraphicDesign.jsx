@@ -20,11 +20,11 @@ const GraphicBox = () => {
         <div className="w-full relative mt-[30rem] 
         sm:mt-[10rem] sm:px-0  sm:mx-auto
         md:ml-[0rem]
-        lg:ml-[5rem] lg:pr-[7rem] ">
+        lg:justify-self-center ">
 
     <div className="text-start w-full">
 
-         <h1 className="pl-2 text-2xl justify-center text-center items-center
+         <h1 className="pl-2 text-2xl justify-self-center text-center items-center
                 sm:text-[2rem] sm:pb-[2rem] sm:pt-[2rem] 
                 md:text-[4rem] md:pl-[2rem] md:pt-[2rem] 
                 lp:text-[4rem] lp:pb-[2rem] lp:pt-[2rem]
@@ -84,7 +84,7 @@ const GraphicBox = () => {
                         sm:text-[1rem] sm:pt-2 
                         md:text-[1.3rem] md:pt-[2rem] md:pr-[10rem] md:w-[36rem] md:leading-[2rem]
                         lp:text-[1.5rem] lp:leading-[2.5rem] lp:w-[43rem]
-                        lg:text-[1.8rem] lg:mt-[8rem] lg:w-[40rem]">
+                        lg:text-[1.5rem] lg:mt-[8rem] lg:w-[41rem]">
                             {project.description}
                         </h4>
 
@@ -126,7 +126,7 @@ const GraphicBox = () => {
                             sm:w-[20rem] sm:h-[20rem] sm:pb-[2rem]
                             md:w-[25rem] md:h-[28rem] md:ml-[27rem] md:mt-[-41rem]
                             lp:h-[25rem] lp:w-[20rem] lp:max-h-[50rem] lp:mt-[-38rem] lp:ml-[33rem]
-                            lg:w-[20rem] lg:h-[32rem] lg:mt-[-29rem] lg:ml-[30rem]"
+                            lg:w-[16rem] lg:h-[26rem] lg:mt-[-37rem] lg:ml-[34rem]"
                         />
                     </div>
 

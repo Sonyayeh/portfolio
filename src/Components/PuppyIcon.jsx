@@ -54,7 +54,7 @@ const PuppySoft = () => {
                 sm:text-[1.7rem] sm:pb-[2rem] sm:w-[23rem] 
                 md:text-[3rem] md:pt-[1rem] md:w-[60rem] md:mb-[2rem]
                 lp:text-[2.8rem] lp:w-[75rem] lp:justify-center lp:items-center lp:pb-[2rem] lp:pt-[3rem]
-                lg:text-[4.5rem] lg:w-[70rem]">
+                lg:text-[3rem] lg:w-[70rem]">
                 Software Used:
             </h1>
 
@@ -63,7 +63,7 @@ const PuppySoft = () => {
                 sm:grid-cols-2 sm:w-[22rem] sm:pb-[2rem]
                 md:grid-cols-3 md:w-[57rem]
                 lp:grid-cols-3 lp:w-[50rem] 
-                lg:grid-cols-3 lg:w-[77rem]
+                lg:grid-cols-3 lg:w-[70rem]
             ">
                 {/* Adobe Illustrator */}
                 <li className="flex flex-col items-center icon" ref={(el) => iconRefs.current[0] = el}>
@@ -137,7 +137,7 @@ const PuppySoft = () => {
             className="text-orange-400 hover:text-purple-300 
             sm:text-[2.5rem] sm:px-2
             md:text-[6rem] md:px-3
-            lg:text-[7rem] lg:px-6 lg:pb-[1rem] lg:pt-[3rem]
+            lg:text-[7rem] lg:px-6 lg:pb-[1rem] lg:pt-[0.5rem]
             lp:text-[7.5rem] lp:px-4 lp:mb-8"
             name="brush-outline"
           />
