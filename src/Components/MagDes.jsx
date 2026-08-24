@@ -73,20 +73,27 @@ const MagDes = () => {
   }, []);
 
   return (
-    <div className="w-full justify-center">
-      <div className="text-start w-[12rem]">
-        <h1 className="pl-2 justify-center text-center text-blue-500 underline decoration-dashed sm:text-[2rem] sm:pb-[5rem] sm:mt-[-5rem] sm:w-[25rem] md:text-[2.5rem] md:ml-[-5rem] md:pt-[10rem] md:w-[65rem] lp:text-[3.7rem] lp:w-[77rem] lp:justify-center lp:items-center lp:ml-[-2rem]
-        lg:text-[4.5rem] lg:ml-[-18rem] lg:w-[95rem] lg:mb-[1rem] lg:mt-[2rem]">
+    <div className="w-full justify-self-center">
+      <div>
+         <h1 className="flex justify-self-center text-blue-500 underline decoration-dashed justify-center
+                sm:text-[2rem] sm:pb-[2rem] sm:mt-[5rem] sm:w-[23rem] sm:text-center
+                md:text-[4rem] md:pt-[10rem] md:w-[55rem]
+                lp:text-[2.8rem] lp:w-[72rem] lp:justify-center lp:items-center lp:pt-[6rem]
+                lg:text-[3rem] lg:w-[56rem] lg:mb-[3rem] lg:mt-[2rem]">
           National Geographic Magazine Design:
         </h1>
-        <h1 className="pl-2 justify-center text-center underline decoration-dashed text-blue-400 sm:text-[1.7rem] sm:pb-[1rem] sm:w-[25rem] sm:ml-1 md:text-5xl md:ml-[2rem] md:pt-[3rem] md:w-[50rem] lp:text-[4rem] lp:w-[22rem] lp:ml-[25rem]
-        lg:text-7xl lg:w-[25rem] lg:mb-[5rem] lg:mt-[2rem] lg:ml-[18rem]">
+        <h1 className="flex justify-self-center underline decoration-dashed text-blue-400 text-center justify-center
+                sm:text-[1.5rem] sm:pb-[2rem] sm:w-[22rem]
+                md:text-[3.5rem] md:pt-[3rem] md:w-[45rem] 
+                lp:text-[2.5rem] lp:w-[75rem] lp:justify-center lp:items-center lp:mt-[-3rem]
+                lg:text-[4rem] lg:w-[70rem] lg:mb-[2rem]">
           Overview:
         </h1>
-        <h3 className="pl-2 text-orange-500 sm:text-[1rem] sm:pb-[1rem] sm:w-[25rem] sm:ml-4 
-        md:text-[2rem] md:ml-[0rem] md:pt-[3rem] md:w-[58rem] md:mb-[3rem] 
-        lp:text-[2.5rem] lp:w-[75rem] lp:justify-center lp:items-center lp:ml-[-1rem]
-        lg:text-[3.5rem] lg:ml-[-20rem] lg:w-[105rem] lg:mb-[5rem] lg:mt-[2rem]">
+        <h3 className=" text-purple-500 justify-self-center
+                sm:text-[1rem] sm:pb-[1rem] sm:w-[23rem] 
+                md:text-[2rem] md:w-[50rem] md:pb-[2rem]
+                lp:text-[1.5rem] lp:w-[60rem] lp:leading-[3rem] lp:pb-[4rem]
+                lg:text-[3rem] lg:w-[85rem] lg:mb-[5rem] lg:mt-[2rem] lg:leading-[5rem]">
          This project was completed over 11 hours through an iterative design process focused on composition, visual hierarchy, and thematic storytelling. The goal was to create a magazine cover that captures the exploratory and educational tone of National Geographic while maintaining strong visual clarity and engagement.
         </h3>
         </div>

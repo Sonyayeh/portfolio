@@ -48,7 +48,7 @@ const Beachball = () => {
 
         {/* divider */}
         <div className="border-t-2 border-blue-500 justify-self-center
-        sm:w-[20rem] 
+        sm:w-[23rem] 
         md:w-[40rem] 
         lp:w-[65rem] 
         lg:w-[110rem]"></div>
@@ -58,7 +58,7 @@ const Beachball = () => {
 
         {/* divider */}
        <div className="border-t-2 border-blue-500 justify-self-center
-        sm:w-[20rem] 
+        sm:w-[23rem] 
         md:w-[40rem] 
         lp:w-[65rem] 
         lg:w-[110rem]"></div>
@@ -68,7 +68,7 @@ const Beachball = () => {
 
         {/* divider */} 
         <div className="border-t-2 border-blue-500 justify-self-center
-        sm:w-[20rem] 
+        sm:w-[23rem] 
         md:w-[40rem] 
         lp:w-[65rem] 
         lg:w-[110rem]"></div>
@@ -80,7 +80,7 @@ const Beachball = () => {
 
          {/* divider */}
         <div className="border-t-2 border-blue-500 justify-self-center
-        sm:w-[20rem] 
+        sm:w-[23rem] 
         md:w-[40rem] 
         lp:w-[65rem] 
         lg:w-[110rem]"></div>
@@ -92,7 +92,7 @@ const Beachball = () => {
 
          {/* divider */}
         <div className="border-t-2 border-blue-500 justify-self-center
-        sm:w-[20rem] sm:pb-[2rem]
+        sm:w-[23rem] sm:pb-[2rem]
         md:w-[40rem] 
         lp:w-[65rem] 
         lg:w-[110rem]"></div>
@@ -105,14 +105,14 @@ const Beachball = () => {
 
         {/* divider */}
         <div className="border-t-2 border-blue-500 justify-self-center
-        sm:w-[20rem] 
+        sm:w-[23rem] 
         md:w-[40rem] 
         lp:w-[65rem] 
         lg:w-[110rem]"></div>
 
          <div className="flex l mt-8 
                                       p:justify-between justify-self-center
-                                      sm:w-[22rem] sm:justify-between
+                                      sm:w-[24rem] sm:justify-between
                                       md:justify-between md:w-[50rem]
                                       lp:w-[63rem] lp:max-aut
                                       lg:w-[90rem] lg:mx-auto lg:justify-between ">

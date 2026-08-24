@@ -21,37 +21,40 @@ const MagazineDesign = () => {
   const handleTabClick = (tab) => setActiveTab(tab);
 
   return (
-    <div className="w-[12rem] relative mt-[30rem] sm:ml-[-1rem] sm:mt-[10rem] sm:px-0 sm:mx-auto md:ml-[3rem] md:mt-[1rem] lg:pl-[4rem] lg:pr-[4rem]">
+    <div className="w-full relative 
+    sm:mt-[3rem] sm:px-0 sm:mx-auto 
+    md:mt-[1rem]
+    lg:pr-[4rem]">
       
       <MagDes />
 
         <div className="border-t-2 border-blue-500 
-        sm:w-[20rem] sm:ml-[3rem] sm:pb-[2rem] 
-        md:w-[50rem] md:ml-[3rem] 
-        lp:w-[70rem] lp:ml-[1rem]
-        lg:w-[110rem] lg:ml-[-23rem]"></div>
+        sm:w-[23rem] sm:pb-[2rem]
+        md:w-[40rem] 
+        lp:w-[65rem] 
+        lg:w-[110rem]"></div>
 
         <div className="pb-[2rem]">
           <MagSoftware />
         </div>
 
         <div className="border-t-2 border-blue-500 
-        sm:w-[20rem] sm:ml-[3rem] sm:pb-[2rem] 
-        md:w-[50rem] md:ml-[3rem] 
-        lp:w-[70rem] lp:ml-[1rem]
-        lg:w-[110rem] lg:ml-[-23rem]"></div>
+        sm:w-[23rem] sm:pb-[2rem] 
+        md:w-[40rem]
+        lp:w-[65rem]
+        lg:w-[110rem]"></div>
 
         <MagTimeline />
 
-        <div className="border-t-2 border-blue-500 my-10 sm:w-[20rem] sm:ml-[3rem] md:w-[50rem] md:ml-[3rem] lp:w-[65rem] lg:w-[110rem] lg:ml-[-23rem] lg:pb-[5rem] lg:mt-[6rem]"></div>
+        <div className="border-t-2 border-blue-500 my-10 sm:w-[23rem] md:w-[50rem] lp:w-[65rem] lg:w-[110rem] lg:pb-[5rem] lg:mt-[6rem]"></div>
 
         <div><MagazineWorkSection /></div>
 
         <div className="border-t-2 border-blue-500 my-10 
-        sm:w-[20rem] sm:ml-[3rem] 
-        md:w-[50rem] md:ml-[3rem] 
-        lp:w-[70rem] lp:ml-[1rem]
-        lg:w-[110rem] lg:ml-[-23rem] lg:mb-[8rem]"></div>
+         sm:w-[23rem] 
+        md:w-[40rem] 
+        lp:w-[65rem] 
+        lg:w-[110rem] lg:mb-[8rem]"></div>
 
         <div className="flex l mt-8 p:justify-between sm:w-[25rem] sm:justify-between sm:ml-[0.6rem] md:justify-between md:w-[50rem] md:ml-[-1rem] lp:w-[63rem] lp:ml-[5rem] lp:max-aut lg:w-[90rem] lg:ml-[-11rem] lg:mx-auto lg:justify-between">
           <Link to="/beachball" className="flex items-center text-blue-300 hover:text-orange-500 transition-colors duration-300" onClick={() => window.scrollTo({ top: 0 })}>

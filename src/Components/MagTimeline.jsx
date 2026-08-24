@@ -48,37 +48,35 @@ const MagTimeline = () => {
 
   return (
     <section className="w-full p-3 
-    sm:w-[21rem] sm:ml-[2.5rem]
+    sm:w-[25rem]
     md:w-[25rem] 
     font-vcr
     ">
       {/* Title */}
-      <h1 className="text-2xl mb-6 text-center sm:text-blue-400 
-      underline decoration-dashed
-      sm:text-[1.7rem] 
-      md:text-[3rem] md:w-full md:ml-[12rem] md:mb-[3rem] md:pt-[5rem]
-      lp:justify-center lp:ml-[17rem] lp:text-[4rem] lp:w-[30rem]
-      lg:ml-[5rem] lg:w-[50rem] lg:text-[4.5rem]
-      ">
+      <h1 className="flex justify-center text-blue-400 underline decoration-dashed justify-self-center
+        sm:text-[1.7rem] sm:w-[23rem] sm:justify-center
+                md:text-5xl md:pt-[5rem] md:w-[35rem] md:mb-[2rem]
+                 lp:text-[2.8rem] lp:w-[75rem] lp:justify-center lp:items-center lp:pb-[5rem]
+                lg:text-[3rem] lg:w-[40rem] lg:mt-[2rem]">
         Work Timeline
       </h1>
 
-      <div className="relative flex items-center justify-center md:mr-[-22rem] md:ml-[2rem] 
-      lp:w-[70rem] lp:ml-[-3rem]
-      lg:w-[80rem] lg:ml-[-12rem]
+      <div className="relative flex items-center justify-center
+      lp:w-[70rem] 
+      lg:w-[80rem] 
       ">
         {/* Timeline line */}
         <div className="absolute top-1/2 w-full border-t-[.4rem] border-sky-200 border-dashed -translate-y-1/2
         md:w-[38rem] md:justify-start 
         lp:w-[55rem]
-        lg:w-[90rem] lg:ml-[5rem]
+        lg:w-[90rem] 
         "></div>
 
         {/* Events */}
       <div className="flex space-x-10 overflow-x-auto py-4
-          md:w-[36rem] md:mx-auto md:ml-[1rem]
-          lp:w-[55rem] lp:ml-[5rem] lp:gap-[4rem]
-          lg:w-[80rem] lg:ml-[-2rem] lg:gap-[5rem]
+          md:w-[36rem] md:mx-auto 
+          lp:w-[55rem] lp:gap-[4rem]
+          lg:w-[80rem] lg:gap-[5rem]
           ">
           {events.map((event, idx) => (
             <div
@@ -92,8 +90,8 @@ const MagTimeline = () => {
               {/* Diamond shape */}
               <div
                 className={`w-6 h-6 transform rotate-45 border-4 border-sky-200
-                  md:w-[2rem] md:h-[2rem] md:ml-[1rem] 
-                  lg:w-[3rem] lg:h-[3rem] lg:ml-[1.5rem] lg:mb-[4rem]
+                  md:w-[2rem] md:h-[2rem] 
+                  lg:w-[3rem] lg:h-[3rem] lg:mb-[4rem]
                   ${
                   selectedIndex === idx ? "bg-purple-300" : "bg-white"
                 }`}
@@ -125,22 +123,21 @@ const MagTimeline = () => {
         {/* this is the title of what each section is about*/}
         <h2 className="text-xl font-semibold text-blue-500
         md:text-[2rem] md:pb-5 md:ml-[1rem] md:leading-[2.6rem] md:w-[45rem]
-          lp:text-[2.5rem] lp:pb-5 lp:ml-[-1rem] lp:leading-[3.2rem] lp:w-[55rem]
-          lg:text-[3rem] lg:pb-[2rem] lg:pt-[2rem] lg:ml-[-15rem] lg:leading-[3.8rem] lg:w-[67rem] 
+          lp:text-[2.5rem] lp:pb-5 lp:leading-[3.2rem] lp:w-[55rem]
+          lg:text-[3rem] lg:pb-[2rem] lg:pt-[2rem] lg:leading-[3.8rem] lg:w-[67rem] 
         ">{events[selectedIndex].title}</h2>
 
         {/* this is the duration of how long it took me to do each process*/}
         <h3 className="text-sm text-orange-600
-        md:text-[1.8rem] md:ml-[1rem]
-        lp:ml-[-1rem]
-        lg:text-[3rem] lg:pb-5 lg:ml-[-15rem] lg:leading-[3.8rem] lg:w-[67rem]
+        md:text-[1.8rem] 
+        lg:text-[3rem] lg:pb-5 lg:leading-[3.8rem] lg:w-[67rem]
         ">{events[selectedIndex].sub}</h3>
 
         {/* this is the content section */}
         <p className="mt-2 text-sky-700
-        md:mt-5 md:text-[2rem] md:ml-[1rem] md:w-[43rem]
-        lp:w-[65rem] lp:text-[2rem] lp:ml-[-1rem]
-        lg:text-[3rem] lg:pb-5 lg:ml-[-15rem] lg:leading-[5rem] lg:w-[87rem]
+        md:mt-5 md:text-[2rem] md:w-[43rem]
+        lp:w-[65rem] lp:text-[2rem]
+        lg:text-[3rem] lg:pb-5 lg:leading-[5rem] lg:w-[87rem]
         
         ">{events[selectedIndex].content}</p>
       </div>

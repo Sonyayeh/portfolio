@@ -35,14 +35,14 @@ const PuppyYoga = () => {
             {/* Project Heading and Description */}
             <div className="text-start ">
                 <h1 className="flex justify-self-center text-purple-500 underline decoration-dashed justify-center
-                sm:text-[2rem] sm:pb-[2rem] sm:mt-[-5rem] sm:w-[22rem] sm:text-center
+                sm:text-[2rem] sm:pb-[2rem] sm:mt-[-5rem] sm:w-[23rem] sm:text-center
                 md:text-[4rem] md:pt-[10rem] md:w-[55rem]
                 lp:text-[2.8rem] lp:w-[72rem] lp:justify-center lp:items-center lp:pt-[5rem]
                 lg:text-[3rem] lg:w-[56rem] lg:mb-[3rem] lg:mt-[2rem]">
                     Puppy Yoga Studio: Furrever Pals
                 </h1>
                 <h1 className="flex justify-self-center underline decoration-dashed text-purple-400 text-center justify-center
-                sm:text-[1.5rem] sm:pb-[2rem] sm:w-[22rem]
+                sm:text-[1.5rem] sm:pb-[2rem] sm:w-[23rem]
                 md:text-[3.5rem] md:pt-[3rem] md:w-[55rem] 
                 lp:text-[2.5rem] lp:w-[75rem] lp:justify-center lp:items-center lp:mt-[-3rem]
                 lg:text-[3rem] lg:w-[16rem] lg:mb-[2rem]">
@@ -87,7 +87,7 @@ const PuppyYoga = () => {
 
                  {/* added a line for separate sections */}
                    <div className="border-t-2 border-purple-500 justify-self-center
-                sm:w-[22rem] sm:pb-[2rem]
+                sm:w-[23rem] sm:pb-[2rem]
                md:w-[50rem] 
                lp:w-[65rem]
                lg:w-[80rem] lg:mt-[5rem]
@@ -101,7 +101,7 @@ const PuppyYoga = () => {
 
                 {/* added a line for separate sections */}
                 <div className="border-t-2 border-purple-500 justify-self-center
-                sm:w-[22rem]
+                sm:w-[23rem]
                md:w-[50rem] 
                lp:w-[65rem]
                lg:w-[80rem] lg:mt-[5rem]
@@ -123,7 +123,7 @@ const PuppyYoga = () => {
 
                   {/* added a line for separate sections */}
                    <div className="border-t-2 border-purple-500 justify-self-center
-                sm:w-[22rem] sm:pb-[2rem]
+                sm:w-[23rem] sm:pb-[2rem]
                md:w-[50rem] 
                lp:w-[65rem]
                lg:w-[80rem] lg:mt-[5rem]
@@ -137,7 +137,7 @@ const PuppyYoga = () => {
 
                    {/* added a line for separate sections */}
                    <div className="border-t-2 border-purple-500 justify-self-center
-                sm:w-[22rem] sm:pb-[2rem]
+                sm:w-[23rem] sm:pb-[2rem]
                md:w-[50rem] 
                lp:w-[65rem]
                lg:w-[80rem] lg:mt-[5rem]
@@ -145,7 +145,7 @@ const PuppyYoga = () => {
 
                 <div className="flex l mt-8 
                                p:justify-between justify-self-center
-                               sm:w-[22rem] sm:justify-between
+                               sm:w-[24rem] sm:justify-between
                                md:justify-between md:w-[50rem]
                                lp:w-[63rem] lp:max-aut
                                lg:w-[75rem] lg:mx-auto lg:justify-between ">
