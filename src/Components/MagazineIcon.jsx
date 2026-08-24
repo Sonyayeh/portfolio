@@ -45,14 +45,11 @@ const MagSoftware = () => {
         `}
       </style>
 
-      <h1
-        className="pl-2 justify-center text-center 
-        underline decoration-dashed text-blue-400
-        sm:text-[1.7rem] sm:pb-[1rem] sm:w-[25rem]
-        md:text-5xl md:ml-[15rem] md:pt-[2rem] md:w-[25rem] md:mb-[3rem]
-        lp:text-[4rem] lp:w-[35rem] lp:justify-center lp:items-center lp:ml-[20rem]
-        lg:text-7xl lg:w-[60rem] lg:mb-[5rem] lg:mt-[2rem] lg:ml-[3rem]"
-      >
+      <h1 className="flex justify-center text-blue-400 underline decoration-dashed justify-self-center
+        sm:text-[1.7rem] sm:w-[23rem] sm:justify-center
+                md:text-5xl md:pt-[5rem] md:w-[35rem] md:mb-[2rem]
+                 lp:text-[2.8rem] lp:w-[75rem] lp:justify-center lp:items-center lp:pb-[5rem]
+                lg:text-[3rem] lg:w-[40rem] lg:mt-[2rem]">
         Software Used:
       </h1>
 
