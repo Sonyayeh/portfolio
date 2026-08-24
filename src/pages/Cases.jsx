@@ -8,7 +8,7 @@ const caseStudies = [
     type: "UX Research / UI Design",
     path: "/cases/furrever",
     pdf: "/furreverpals.pdf",
-    color: "bg-[#fff1f7]",
+    color: "bg-[#d0faff]",
   },
   {
     title: "BCIT",
@@ -19,21 +19,22 @@ const caseStudies = [
     color: "bg-[#eef3ff]",
   },
   {
+    title: "Boardwalk Boutique",
+    subtitle: "UI/UX App Design Case Study",
+    type: "ECOMMERCE / MARKETING",
+    path: "/cases/boardwalk",
+    pdf: "/boardwalk.pdf",
+    color: "bg-[#fff1f7]",
+  },
+  {
     title: "TYSN",
     subtitle: "Celestial Tea Ceremony Brandbook",
     type: "Brand Campaign / UIUX",
     path: "/cases/tysn",
     pdf: "/tysn.pdf",
-    color: "bg-[#d0faff]",
-  },
-  {
-    title: "Marketing Plan",
-    subtitle: "Campaign Strategy Case Study",
-    type: "Marketing / Campaign Planning",
-    path: "/cases/marketing",
-    pdf: "/marketingplan.pdf",
     color: "bg-[#fff6cf]",
   },
+  
 ];
 
 const Cases = () => {
@@ -41,7 +42,7 @@ const Cases = () => {
     <main className="mx-auto w-full max-w-[80rem] px-4 py-10 sm:px-5 md:px-8">
       <section className="text-center">
         <h1 className="font-vcr text-[2.3rem] text-blue-400 sm:text-[2rem] md:text-[4rem]">
-          Case Study Folder
+          Design Documentations
         </h1>
 
         <p className="mx-auto mt-4 max-w-[40rem] font-mono text-[0.9rem] leading-relaxed text-[#8b44fc] md:text-[1rem]">
