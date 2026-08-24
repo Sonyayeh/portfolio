@@ -23,6 +23,7 @@ import BackToTop from "./Components/BackToTop";
 import TysnCase from "./pages/TysnCase";
 import BcitCase from "./pages/BcitCase";
 import FurreverCase from "./pages/FurreverCase"; 
+import BoardwalkCase from "./pages/BoardwalkCase"; 
 import MarketingCase from "./pages/MarketingCase";
 
 
@@ -97,6 +98,7 @@ function App() {
               <Route path="/cases/tysn" element={<TysnCase />} />
               <Route path="/cases/bcit" element={<BcitCase />} />
               <Route path="/cases/furrever" element={<FurreverCase />} />
+              <Route path="/cases/boardwalk" element={<BoardwalkCase />} />
               <Route path="/cases/marketing" element={<MarketingCase />} />
             </Route>
           </Routes>

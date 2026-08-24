@@ -57,7 +57,7 @@ const MyBcit = () => {
                <BcitDes />
                  {/* added a line for separate sections */}
                <div className="border-t-2 border-orange-500 justify-self-center
-                sm:w-[22rem]
+               sm:w-[22rem]
                md:w-[45rem] 
                lp:w-[65rem]
                lg:w-[80rem] lg:mt-[2rem]

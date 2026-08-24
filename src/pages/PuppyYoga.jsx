@@ -73,8 +73,8 @@ const PuppyYoga = () => {
                   </div>
 
                  {/* added a line for separate sections */}
-                <div className="border-t-2 border-purple-500 justify-self-center
-                sm:w-[22rem]
+                <div className="border-t-2 border-purple-500 justify-self-center 
+                sm:w-[23rem]
                md:w-[50rem] 
                lp:w-[65rem]
                lg:w-[80rem] 
