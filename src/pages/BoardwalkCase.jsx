@@ -218,7 +218,7 @@ useEffect(() => {
       <section className="mt-8 rounded-[1rem] border-2 border-[#0A3560] bg-[#849ED6] p-6 shadow-[4px_4px_0_#c2d0ee]">
         <SectionLabel>03 / TARGET AUDIENCE</SectionLabel>
         
-        <PixelStar className="left-[23rem] text-[#9D0606]" />
+        <PixelStar className="left-[20rem] text-[#9D0606]" />
 
         <h2 className="font-vcr text-[2rem] text-[#ffffff]">
           Target Audience
