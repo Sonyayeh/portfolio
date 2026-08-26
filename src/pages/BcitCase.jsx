@@ -11,8 +11,8 @@ import userstory from "../BcitDesignProcess/userstoryBcit.svg";
 
 const projectImages = [
   { title: "Empathy Map", src: empathy },
-  { title: "User Flowchart", src: flowchart },
-  { title: "Grid System", src: grid },
+  { title: "User Flow", src: flowchart },
+  { title: "Journey Map", src: grid },
   { title: "Persona 1", src: persona1 },
   { title: "Persona 2", src: persona2 },
   { title: "User Story", src: userstory },
@@ -183,8 +183,8 @@ const BcitCase = () => {
         </h1>
 
         <p className="mt-5 max-w-[45rem] font-mono text-[#ffffff]">
-           Redesigning MyBCIT to simplify navigation, reduce unnecessary steps, and modernize the interface for students in a fast-paced learning environment.
-        </p>
+          MyBCIT's existing interface buries essential student tasks, course registration, grades, schedules, under unnecessary steps and unclear navigation. This redesign focuses on simplifying that structure, cutting friction from core workflows, and modernizing the visual interface, so students moving between classes on a tight schedule can find what they need without fighting the platform to get there.
+          </p>
       </section>
 
       {/* PROBLEM + GOAL */}
@@ -203,8 +203,8 @@ const BcitCase = () => {
     </h2>
 
     <p className="mt-4 font-mono text-[#ffffff]">
-      MyBCIT is outdated, difficult to navigate, and inconsistent with BCIT's identity as a fast-paced, hands-on institution. Students consistently struggle to find grades, schedules, and other essential tools.
-    </p>
+      MyBCIT feels outdated and difficult to navigate, at odds with BCIT's identity as a fast-paced, hands-on institution. Students consistently struggle to locate essential tools like grades and schedules, tasks that should take seconds, not several clicks through unclear menus.    
+      </p>
 
   </div>
 
@@ -212,7 +212,7 @@ const BcitCase = () => {
   <div className="relative rounded-[1rem] border-2 border-[#0A345E]  bg-[#0A345E] p-6 shadow-[4px_4px_0_#E5E5E5]">
 
     <PixelStar className="top-5 right-6 text-[#FDEB5B]" />
-    <PixelStar className="bottom-[6rem] left-[4rem] text-[#FDEB5B]" />
+    <PixelStarSpin className="bottom-[14rem] left-[4rem] text-[#FDEB5B]" />
 
     <SectionLabel>02 / GOAL</SectionLabel>
 
@@ -221,7 +221,7 @@ const BcitCase = () => {
     </h2>
 
     <p className="mt-4 font-mono text-[0.9rem] leading-relaxed text-[#ffffff]">
-Design a cleaner, more modern interface that reduces cognitive load, shortens the path to key information, and improves usability for every student, regardless of experience level.
+    Design a cleaner, more modern interface that shortens the path to essential information like grades and schedules, reduces cognitive load, and improves usability for every student, regardless of technical experience, matching the speed and clarity BCIT students expect from the institution itself.   
     </p>
 
   </div>
@@ -263,7 +263,7 @@ Design a cleaner, more modern interface that reduces cognitive load, shortens th
         </p>
 
         <p className="mb-6 mt-3 max-w-[50rem] font-mono text-[0.9rem] leading-relaxed text-white">
-          This section includes the key UX documentation behind the MyBCIT redesign, including the empathy map, user flow, and journey map, among other process artifacts. Full detail on each is available in the {" "}.
+          This section includes the key UX documentation behind the MyBCIT redesign, including the empathy map, user flow, and journey map, among other process artifacts. Full detail on each is available in the {" "}
           <span
             onClick={() => {
               document
@@ -335,15 +335,15 @@ Design a cleaner, more modern interface that reduces cognitive load, shortens th
     </h2>
 
     <p className="mt-4 font-mono text-[0.9rem] text-[#ffffff]">
-      This project reinforced how much clarity and hierarchy matter in complex systems, and how small, deliberate UX changes can meaningfully reduce user frustration.
-    </p>
+    This project reinforced how much clarity and hierarchy matter in complex systems, especially ones students rely on daily under time pressure. Reducing the number of steps between a student and information as basic as their grades or schedule showed me how much frustration accumulates from small, unaddressed friction points, and how deliberate, focused UX changes can meaningfully shrink that gap.    </p>
 
     <h2 className="mt-4 font-vcr text-[2rem] text-[#FDEB5B]">
       What I'd Improve
     </h2>
 
     <p className="mt-4 font-mono text-[0.9rem] text-[#ffffff]">
-The next step would be structured usability testing with real BCIT students, paired with navigation heatmaps to validate whether click depth genuinely improved in practice.    </p>
+    This project focused on the student experience, but MyBCIT also serves faculty, whose workflows and priorities likely differ in ways this redesign didn't account for. The next step would be structured usability testing with both students and instructors, paired with navigation heatmaps, to validate whether click depth genuinely improved across both groups rather than just the one this redesign was built around.   
+     </p>
   </div>
 
   {/* RIGHT: PDF */}
