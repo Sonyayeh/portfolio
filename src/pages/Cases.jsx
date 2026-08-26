@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const caseStudies = [
   {
     title: "Furrever Pals",
-    subtitle: "Pet Adoption / Community Experience",
+    subtitle: "Pet Adoption / Community Experience / UI/UX Web Design & Development Case Study",
     type: "UX Research / UI Design",
     path: "/cases/furrever",
     pdf: "/furreverpals.pdf",
@@ -12,7 +12,7 @@ const caseStudies = [
   },
   {
     title: "BCIT",
-    subtitle: "Student App / Service Design Case Study",
+    subtitle: "Student App / Service Re-design Case Study",
     type: "UX/UI Design",
     path: "/cases/bcit",
     pdf: "/bcitcase.pdf",
@@ -20,7 +20,7 @@ const caseStudies = [
   },
   {
     title: "Boardwalk Boutique",
-    subtitle: "UI/UX App Design Case Study",
+    subtitle: "UI/UX E-commerce App Design & Development Case Study",
     type: "ECOMMERCE / MARKETING",
     path: "/cases/boardwalk",
     pdf: "/boardwalk.pdf",

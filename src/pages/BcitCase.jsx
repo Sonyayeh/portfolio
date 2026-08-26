@@ -1,4 +1,6 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useCallback, useState  } from "react";
+
+
 import { useNavigate } from "react-router-dom";
 import empathy from "../BcitDesignProcess/empathyBcit.svg";
 import flowchart from "../BcitDesignProcess/FlowchartBcit.svg";
@@ -47,6 +49,100 @@ const BcitCase = () => {
 
      useEffect(() => {
     window.scrollTo(0, 0);
+  }, []);
+
+  //picture scroller
+  
+  const ChevronLeft = ({ size = 18 }) => (
+    <svg
+      width={size}
+      height={size}
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    >
+      <path d="M15 18l-6-6 6-6" />
+    </svg>
+  );
+  
+  const ChevronRight = ({ size = 18 }) => (
+    <svg
+      width={size}
+      height={size}
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    >
+      <path d="M9 18l6-6-6-6" />
+    </svg>
+  );
+  
+  const scrollByAmount = useCallback((direction) => {
+    const el = scrollRef.current;
+    if (!el) return;
+  
+    const atEnd = el.scrollLeft + el.clientWidth >= el.scrollWidth - 5;
+    const atStart = el.scrollLeft <= 5;
+  
+    if (direction === "next" && atEnd) {
+      el.scrollTo({ left: 0, behavior: "smooth" });
+    } else if (direction === "prev" && atStart) {
+      el.scrollTo({ left: el.scrollWidth, behavior: "smooth" });
+    } else {
+      el.scrollBy({
+        left: direction === "next" ? SCROLL_AMOUNT : -SCROLL_AMOUNT,
+        behavior: "smooth",
+      });
+    }
+  }, []);
+  
+  const pauseAutoplay = useCallback(() => {
+    setIsPaused(true);
+    if (autoplayRef.current) clearTimeout(autoplayRef.current);
+    autoplayRef.current = setTimeout(() => setIsPaused(false), RESUME_DELAY);
+  }, []);
+  
+  const scrollRef = useRef(null);
+  const autoplayRef = useRef(null);
+  const [isPaused, setIsPaused] = useState(false);
+  
+  const CARD_WIDTH = 280;
+  const GAP = 20; 
+  const SCROLL_AMOUNT = CARD_WIDTH + GAP;
+  const AUTOPLAY_INTERVAL = 3500;
+  const RESUME_DELAY = 5000; 
+  
+  
+  const handleNext = () => {
+    scrollByAmount("next");
+    pauseAutoplay();
+  };
+  
+  const handlePrev = () => {
+    scrollByAmount("prev");
+    pauseAutoplay();
+  };
+  
+  useEffect(() => {
+    if (isPaused) return;
+  
+    const interval = setInterval(() => {
+      scrollByAmount("next");
+    }, AUTOPLAY_INTERVAL);
+  
+    return () => clearInterval(interval);
+  }, [isPaused, scrollByAmount]);
+  
+  useEffect(() => {
+    return () => {
+      if (autoplayRef.current) clearTimeout(autoplayRef.current);
+    };
   }, []);
   
   return (
@@ -162,30 +258,45 @@ Design a cleaner, more modern interface that reduces cognitive load, shortens th
 
   <SectionLabel>03 / UX ARTIFACTS</SectionLabel>
 
-  <p className="font-vcr text-[2.3rem] text-[#FDEB5B]">
-    Design Process Visuals
-  </p>
+  <p className="pb-3 font-vcr text-[2.3rem] text-[#FDEB5B] sm:text-[2rem]">
+          Design Process Visuals
+        </p>
 
-  <p className="mt-3 mb-6 max-w-[50rem] font-mono text-[0.9rem] leading-relaxed text-[#ffffff]">
-Key UX artifacts developed throughout the redesign process, translating research findings into concrete design decisions.  </p>
+        <p className="mb-6 mt-3 max-w-[50rem] font-mono text-[0.9rem] leading-relaxed text-white">
+          This section includes the key UX documentation behind the MyBCIT redesign, including the empathy map, user flow, and journey map, among other process artifacts. Full detail on each is available in the {" "}.
+          <span
+            onClick={() => {
+              document
+                .getElementById("pdf-section")
+                ?.scrollIntoView({ behavior: "smooth" });
+            }}
+            className="cursor-pointer underline text-[#FDEB5B]"
+          >
+            PDF
+          </span>
+          !
+        </p>
 
-  <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-3 lp:grid-cols-3">
+       <div className="relative">
+  <div
+    ref={scrollRef}
+    onPointerDown={pauseAutoplay}
+    className="flex gap-5 overflow-x-auto pb-4 snap-x snap-mandatory [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden"
+  >
     {projectImages.map((image) => (
       <div
         key={image.title}
-        className="group relative rounded-md border border-[#E5E5E5] bg-white p-3 shadow-[3px_3px_0_#E5E5E5]"
+        className="group relative flex-none w-[280px] snap-start rounded-md border border-[#E5E5E5] bg-white p-3 shadow-[3px_3px_0_#E5E5E5]"
       >
         <PixelStar
           className="top-2 right-2 text-[#0A345E] opacity-70"
           size="text-[0.7rem]"
         />
-
         <img
           src={image.src}
           alt={image.title}
           className="h-[14rem] w-full object-contain p-2 transition group-hover:scale-105"
         />
-
         <p className="mt-3 font-Dos text-[#0A345E]">{image.title}</p>
         <p className="mt-1 font-mono text-[0.7rem] text-[#0A345E]">
           process_file.svg
@@ -193,6 +304,23 @@ Key UX artifacts developed throughout the redesign process, translating research
       </div>
     ))}
   </div>
+
+  <button
+    onClick={handlePrev}
+    aria-label="Previous"
+    className="absolute left-[-2.5rem] top-1/2 -translate-y-1/2 -translate-x-3.5 z-10 transition text-[#ffffff] hover:text-[#0A3560]"
+  >
+    <ChevronLeft size={18} />
+  </button>
+
+  <button
+    onClick={handleNext}
+    aria-label="Next"
+    className="absolute right-[-2.5rem] top-1/2 -translate-y-1/2 translate-x-3.5 z-10 transition text-[#ffffff] hover:text-[#0A3560]"
+  >
+    <ChevronRight size={18} />
+  </button>
+</div>
 </section>
 
        {/* REFLECTION + PDF COMBINED */}
@@ -219,7 +347,9 @@ The next step would be structured usability testing with real BCIT students, pai
   </div>
 
   {/* RIGHT: PDF */}
-  <div className="relative rounded-[1rem] border-2 border-[#0A345E] bg-[#0A345E] p-6 shadow-[4px_4px_0_#E5E5E5]">
+  <div
+  id="pdf-section"
+  className="relative rounded-[1rem] border-2 border-[#0A345E] bg-[#0A345E] p-6 shadow-[4px_4px_0_#E5E5E5]">
 
     <PixelStar className="bottom-7 left-6 text-[#FDEB5B]" />
     <PixelStarSpin className="top-6 right-8 text-[#FDEB5B]" />

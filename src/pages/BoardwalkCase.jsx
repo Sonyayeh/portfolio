@@ -15,15 +15,6 @@ const projectImages = [
   { title: "App Mockup", src: appmock },
 ];
 
-const projectFeatures = [
-  "Pet profile browsing",
-  "Adoption application flow",
-  "Rescue organization information",
-  "User-friendly pet matching",
-  "Warm and approachable visual design",
-  "Mobile-friendly experience",
-];
-
 const audience = [
 "Young adults (18-30)",
   "Skateboard lovers / beginners",
