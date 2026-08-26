@@ -15,15 +15,6 @@ const projectImages = [
   { title: "App Mockup", src: appmock },
 ];
 
-const projectFeatures = [
-  "Pet profile browsing",
-  "Adoption application flow",
-  "Rescue organization information",
-  "User-friendly pet matching",
-  "Warm and approachable visual design",
-  "Mobile-friendly experience",
-];
-
 const audience = [
 "Young adults (18-30)",
   "Skateboard lovers / beginners",
@@ -329,21 +320,22 @@ useEffect(() => {
           </h2>
 
           <p className="mt-4 font-mono text-[0.9rem] text-white">
-            This project helped me think about how emotional design and clear UX
-            can work together. A pet adoption experience needs to feel friendly,
-            trustworthy, and easy to follow.
+            This project clarified how differently app and web design need to be approached. On a smaller screen, CTA clarity and accessibility carry disproportionate weight, since there's little room to compensate for a misstep. Every layout choice shapes the relationship between user and designer, and that relationship depends on details easy to overlook precisely because the margin for error is so small.
           </p>
+        </div>
+
+         <section className="mt-3 grid gap-6 lp:grid-cols-2 lg:grid-cols-2">
+        <div className="rounded-[1rem] border-2 border-[#0A3560] bg-[#849ED6] p-6 shadow-[4px_4px_0_#c2d0ee]">
 
           <h2 className="mt-4 font-vcr text-[2rem] text-[#ffffff] sm:text-[1.8rem]">
             What I'd Improve
           </h2>
 
           <p className="mt-4 font-mono text-[0.9rem] text-white">
-            If I had more time, I would conduct usability testing with users who
-            are actively looking to adopt pets and refine the application flow
-            based on their feedback.
+            If I had more time, I would take this beyond a case study and work toward a genuinely shippable app, applying the same WCAG-driven redesign process across every remaining screen and testing the full flow with real users.
           </p>
-        </div>
+          </div>
+          </section>
 
         <div
           id="pdf-section"
