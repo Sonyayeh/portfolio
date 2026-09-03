@@ -111,7 +111,7 @@ const Magazine = () => {
                             className="w-full h-auto object-contain rounded-xl
                             sm:w-[20rem] sm:h-[20rem] sm:pb-[2rem]
                             md:w-[20rem] md:h-[23rem] md:ml-[25rem] md:mt-[-37rem]
-                            lp:h-[23rem] lp:w-[21rem] lp:max-h-[50rem] lp:mt-[-36rem] lp:ml-[34rem]
+                            lp:h-[23rem] lp:w-[21rem] lp:max-h-[50rem] lp:mt-[-39rem] lp:ml-[34rem]
                             lg:w-[23rem] lg:h-[25rem] lg:mt-[-28rem] lg:ml-[32rem]"
                         />
                     </div>

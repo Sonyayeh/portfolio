@@ -243,7 +243,7 @@ const TravelPhotos = () => {
   };
 
   return (
-    <section className="mx-auto mt-8 w-full max-w-[24rem] sm:max-w-[28rem] md:max-w-[46rem] lg:max-w-[70rem]">
+    <section className="mx-auto mt-8 w-full max-w-[24rem] sm:max-w-[28rem] md:max-w-[46rem] lp:max-w-[42rem] lg:max-w-[54rem]">
       <div className="overflow-hidden border-2 border-blue-200 bg-[#eee6f6] shadow-[4px_4px_0_#d6ccf5]">
         {/* Header */}
         <div className="flex items-center justify-between border-b-2 border-blue-200 bg-blue-300 px-3 py-2 sm:px-4">
@@ -374,7 +374,7 @@ const TravelPhotos = () => {
                 {/* Left sidebar */}
                 <div className="border-r-2 border-blue-200 bg-[#f8f4ff] px-3">
                   <h2 className="flex justify-center text-center lp:text-[2rem] font-vcr text-[#8758fe] underline decoration-dotted decoration-[#659bff] py-[1rem] ">
-                    ʚT.O.Cɞ
+                    T.O.C
                   </h2>
                   <div className="max-h-[38rem] space-y-2 overflow-y-auto pr-1">
                     {photos.map((photo) => {
@@ -416,9 +416,9 @@ const TravelPhotos = () => {
                 {/* Right preview panel */}
                 <div className="bg-[#f8f4ff] px-4 py-4 lg:px-5 lg:py-5">
                   <div className="mx-auto flex h-full max-w-[36rem] flex-col">
-                    <div className="flex justify-center border-2 border-blue-200 bg-[linear-gradient(180deg,#f8f4ff_0%,#eef7ff_100%)] p-3 shadow-[inset_-2px_-2px_0_#ddd5f7,inset_2px_2px_0_#ffffff]">
-                      <div className="w-full max-w-[26rem] border-2 border-blue-200 bg-white p-2 shadow-[inset_2px_2px_0_#ffffff,inset_-2px_-2px_0_#ece6fb]">
-                        <div className="flex h-[22rem] items-center justify-center overflow-hidden bg-[#f8f4ff] lg:h-[23rem] lp:h-[24rem]">
+                    <div className="flex justify-center">
+                      <div className="w-full max-w-[26rem] ">
+                        <div className="flex h-[22rem] items-center justify-center overflow-hidden bg-[#f8f4ff] lg:h-[30rem] lp:h-[30rem]">
                           <img
                             key={selectedPhoto.id}
                             src={selectedPhoto.src}

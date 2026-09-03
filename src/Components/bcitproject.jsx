@@ -108,7 +108,7 @@ const BcitProject = () => {
                             className="w-full h-auto object-contain rounded-xl 
                             sm:w-[20rem] sm:h-[20rem]
                             md:w-[25rem] md:h-[18rem] md:ml-[25rem] md:mt-[-37rem] 
-                            lp:w-[23rem] lp:h-[20rem] lp:mt-[-40rem] lp:mr-[-8rem]
+                            lp:w-[23rem] lp:h-[20rem] lp:mt-[-37rem] lp:mr-[-8rem]
                             lg:w-[21rem] lg:h-[20rem] lg:mt-[-30rem] lg:ml-[25rem]
                             "
                         />

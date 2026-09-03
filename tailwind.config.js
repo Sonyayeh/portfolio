@@ -17,6 +17,7 @@ export default {
       fontFamily: {
         Dos: ['PerfectDOSVGA437', 'monospace'],
         vcr: ["VCR", "monospace"],
+        pix: ["pixelmix", "monospace"],
       },
 
       fontSize: {

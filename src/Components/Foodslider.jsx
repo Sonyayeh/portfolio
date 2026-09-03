@@ -122,7 +122,7 @@ const FoodSlider = () => {
 
   return (
     <section className="w-full flex justify-center mt-8 lg:mt-[5rem]">
-      <div className="w-full max-w-[24rem] sm:max-w-[28rem] md:max-w-[46rem] lg:max-w-[70rem]">
+      <div className="w-full max-w-[24rem] sm:max-w-[28rem] md:max-w-[46rem] lp:max-w-[42rem] lg:max-w-[54rem]">
 
         <div className="overflow-hidden border-2 border-[#bcc5ea] bg-[#ece7f7] shadow-[4px_4px_0_#d7d0ef]">
         
@@ -161,13 +161,15 @@ const FoodSlider = () => {
               <img loading="lazy" src={Heart} alt="Heart" className="h-5 w-5 sm:h-6 sm:w-6 md:h-8 md:w-8" />
             </div>
 
-            <p className="mb-5 text-center font-mono text-[0.8rem] leading-relaxed text-[#8b99d6] sm:text-[0.88rem] md:text-[0.95rem]">
+            <div className="justify-self-center">
+            <p className="mb-5 text-center justify-center font-mono text-[0.8rem] leading-relaxed text-[#8b99d6] sm:w-[19rem] sm:text-[0.88rem] md:text-[0.95rem] md:w-[40rem] lp:w-[35rem]">
               One of my favourite ways to unwind is making comforting meals and
               cute desserts.
             </p>
+            </div>
 
            <div className="relative rounded-md border border-dashed border-[#3461f8] bg-[#eef3ff] p-3 sm:p-4">
-          <div className="absolute right-[-2rem] top-[-3rem] z-20 pointer-events-none sm:w-[5rem]">
+          <div className="absolute right-[-2rem] top-[-3rem] z-20 pointer-events-none sm:w-[5rem] lp:w-[5rem] lp:pt-[1rem]">
             <Pointercursor />
           </div>
 

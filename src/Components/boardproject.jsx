@@ -112,7 +112,7 @@ const BoardProject = () => {
                             className="w-full h-auto object-contain rounded-xl 
                             sm:w-[20rem] sm:h-[25rem] sm:pb-[2rem]
                             md:w-[20rem] md:h-[25rem] md:ml-[25rem] md:mt-[-40rem] 
-                            lp:w-[15rem] lp:h-[25rem] lp:mt-[-40rem] lp:ml-[34rem]
+                            lp:w-[18rem] lp:h-[25rem] lp:mt-[-41rem] lp:ml-[34rem]
                             lg:w-[28rem] lg:h-[25rem] lg:mt-[-42rem]
                             "
                         />
