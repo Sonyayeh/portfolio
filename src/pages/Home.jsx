@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { Link } from "react-router-dom";
@@ -20,9 +20,18 @@ import GlitchText from "../Components/GlitchText";
 
 gsap.registerPlugin(ScrollTrigger);
 
+const roleColors = [
+  "text-purple-500",
+  "text-blue-500",
+  "text-emerald-500",
+  "text-pink-500",
+  "text-orange-500",
+  "text-sky-500",
+];
 
 const Home = () => {
   const projectRefs = useRef([]);
+  const [roleColorIndex, setRoleColorIndex] = useState(0);
 
   useEffect(() => {
     const cards = document.querySelectorAll(".project-card");
@@ -69,7 +78,6 @@ const Home = () => {
   const goToTop = () => {
     window.scrollTo({ top: 0, left: 0, behavior: "auto" });
   };
-  
 
   return (
     <div className="w-full overflow-x-hidden flex flex-col">
@@ -153,37 +161,41 @@ const Home = () => {
                 absolute z-20
                 top-[11rem] left-1/2 -translate-x-1/2
                 w-full text-center
-                sm:top-[15.5rem]
-                md:top-[32.5rem]
-                lg:top-[18rem]
-                lp:top-[9.5rem]
+                sm:top-[16rem]
+                md:top-[33.5rem]
+                lp:top-[10.5rem]
+                lg:top-[20rem]
               "
             >
               <ReactTyped
-                strings={[
-                  "UI/UX Designer",
-                  "Product Designer",
-                  "Graphic Designer",
-                  "Video Editor",
-                  "Illustrator",
-                  "Front End Developer",
-                  "Motion Graphics Designer",
-                ]}
-                typeSpeed={100}
-                backSpeed={100}
-                backDelay={1000}
-                startDelay={500}
-                loop
-                showCursor
-                className="
-                  font-Micro text-black leading-none inline-block
-                  text-[1.8rem]
-                  sm:text-[2rem]
-                  md:text-[4.2rem]
-                  lg:text-[6.5rem]
-                  lp:text-[4.9rem]
-                "
-              />
+  strings={[
+    "UI/UX Designer",
+    "Product Designer",
+    "Graphic Designer",
+    "Video Editor",
+    "Illustrator",
+    "Front End Developer",
+    "Motion Graphics Designer",
+  ]}
+  typeSpeed={100}
+  backSpeed={100}
+  backDelay={1000}
+  startDelay={500}
+  loop
+  showCursor
+  onStringTyped={(arrayPos) =>
+    setRoleColorIndex(arrayPos % roleColors.length)
+  }
+  className={`
+    font-pix leading-none inline-block
+    text-[1.8rem]
+    sm:text-[1rem]
+    md:text-[2rem]
+    lp:text-[2.3rem]
+    lg:text-[3rem]
+    ${roleColors[roleColorIndex]}
+  `}
+/>
             </div>
 
             <div

@@ -113,7 +113,7 @@ const BingProject = () => {
                             className="w-full h-auto object-contain rounded-xl 
                             sm:w-[20rem] sm:h-[25rem] sm:pb-[2rem]
                             md:w-[25rem] md:h-[25rem] md:ml-[25rem] md:mt-[-39rem] 
-                            lp:w-[18rem] lp:h-[20rem] lp:mt-[-35rem] lp:mr-[-9rem]
+                            lp:w-[17rem] lp:h-[24rem] lp:mt-[-35rem] lp:mr-[-9rem]
                             lg:w-[17rem] lg:h-[25rem] lg:mt-[-35rem]
                             "
                         />

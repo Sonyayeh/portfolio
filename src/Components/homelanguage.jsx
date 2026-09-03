@@ -146,7 +146,7 @@ const HomLanguage = () => {
         <h5
           className="
             mb-4 text-center text-black
-            text-[1.45rem]
+            text-[1.45rem] justify-self-center
             sm:text-[1.5rem] sm:w-[19.5rem]
             md:text-[3rem] md:w-[45rem]
             lp:text-[3rem] lp:w-[64rem]

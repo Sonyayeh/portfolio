@@ -30,10 +30,10 @@ const Hello = () => {
   
   <div
     key={index}
-    className="text-purple-500 font-vcr 
+    className="text-purple-500 font-pix 
     sm:text-[1rem] 
-    md:text-[3rem] 
-    lg:text-[3.5rem] 
+    md:text-[2rem] 
+    lg:text-[2.5rem] 
     lg:whitespace-nowrap"
     style={{
       animation: "fadeInOut 6s ease-in-out infinite",

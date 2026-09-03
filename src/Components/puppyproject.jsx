@@ -120,7 +120,7 @@ const PuppyProject = () => {
                             className="w-full h-auto object-contain rounded-xl 
                             sm:w-[20rem] sm:h-[30rem] sm:mt-[-3rem]
                             md:w-[20rem] md:h-[32rem] md:ml-[42rem] md:mt-[-50rem] 
-                            lp:w-[18rem] lp:ml-[34rem] lp:h-[23rem] lp:mt-[-44rem]
+                            lp:w-[18rem] lp:ml-[34rem] lp:h-[23rem] lp:mt-[-42rem]
                             lg:mt-[-43rem]  lg:w-[20rem] lg:h-[25rem]
                             lg:ml-[14rem]"
                         />
