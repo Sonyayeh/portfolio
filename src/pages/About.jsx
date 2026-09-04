@@ -36,7 +36,7 @@ const About = () => {
 
             <div
               className="
-              sm:ml-[17rem] sm:w-[8rem] sm:mt-[-3rem] 
+              sm:ml-[15rem] sm:w-[8rem] sm:mt-[-3rem] 
               md:ml-[30rem] md:w-[12rem] 
               lp:ml-[55rem] lp:mt-[-9rem]
               lg:ml-[55rem] lg:w-[20rem] lg:mb-[2rem]"

@@ -33,7 +33,7 @@ const ValueItem = ({ title, children, textSize = "text-[2rem]" }) => {
         {/* Text with individual letter ripple effect */}
         <p
           className={`text-base text-blue-400 leading-relaxed whitespace-normal break-normal
-          sm:text-[1rem] md:text-[1.5rem] lp:text-[2rem]  p-4 ${textSize}`}
+          sm:text-[0.7rem] md:text-[1.5rem] lp:text-[1rem] lg:text-[1rem] p-4 ${textSize}`}
           style={{
             display: 'flex',
             flexWrap: 'wrap', // Makes text wrap when it exceeds the container width
