@@ -65,7 +65,9 @@ const SelfIntro = () => {
   return (
     <section className="flex justify-center items-center w-full sm:px-6">
       <div className="mx-auto w-full max-w-[980px]">
-        <div className="relative overflow-visible border-2 border-blue-200 border-dashed bg-[#eee6f6] shadow-[4px_4px_0_#d6ccf5]">
+        <div className="relative overflow-visible border-2 border-blue-200 border-dashed bg-[#eee6f6] shadow-[4px_4px_0_#d6ccf5]
+        
+        ">
           {/* Floating photo */}
           <div className="pointer-events-none absolute right-[-1.2rem] top-[-4.2rem] z-20 rotate-[7deg] w-[7rem] 
           sm:pt-[10rem] sm:mr-[0.5rem] sm:w-[8rem] 
@@ -79,7 +81,8 @@ const SelfIntro = () => {
 
 
           {/* Window Header */}
-          <div className="flex items-center justify-between border-b-2 font-Dos border-blue-200 bg-blue-300 px-3 sm:px-4 md:px-6">
+          <div className="flex items-center justify-between border-b-2 font-Dos border-blue-200 bg-blue-300 px-3 
+          sm:px-4 md:px-6">
             <h5 className="font-Micro text-[1rem] text-white 
             sm:text-[1.5rem] 
             md:text-[2rem]
