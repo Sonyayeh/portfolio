@@ -19,7 +19,7 @@ const PuppyProject = () => {
                 so when it is brought into the project page
                 I don't have to make another title and manually
                 adjust it */}
-                <h1 className="flex pl-2 text-2xl justify-center text-center items-center
+                <h1 className="flex pl-2 text-2xl justify-self-center text-center items-center
                 sm:text-[2rem] sm:pb-[2rem] sm:mt-[5rem] 
                 md:text-[4rem] md:h-[5rem] md:w-[49rem]
                 lp:text-[4rem] lp:pb-[2rem] lp:justify-self-center
@@ -29,6 +29,7 @@ const PuppyProject = () => {
 
                 {/* Purple heading */}
                 <div className="bg-purple-300 px-4 flex justify-between items-center 
+                sm:w-[23rem] sm:justify-self-center
                 md:w-[49rem] lp:w-[60rem] lp:justify-self-center
                 lg:justify-self-center 
                 w-full">
@@ -41,6 +42,7 @@ const PuppyProject = () => {
 
                 {/* White background tab bar */}
                 <div className="bg-purple-300 p-4 pt-0 
+                sm:w-[23rem] sm:justify-self-center
                 md:w-[49rem]
                 lp:w-[60rem] lp:justify-self-center
                 lg:justify-self-center
@@ -59,6 +61,7 @@ const PuppyProject = () => {
 
             {/* Project box with border */}
             <div className="w-full p-0 sm:p-0 
+            sm:w-[23rem] sm:justify-self-center
             md:w-[49rem]
             lp:w-[60rem] lp:justify-self-center
             lg:w-[60rem] lg:justify-self-center
