@@ -24,7 +24,7 @@ const GraphicBox = () => {
 
     <div className="text-start w-full">
 
-         <h1 className="pl-2 text-2xl justify-self-center text-center items-center
+         <h1 className="text-2xl justify-self-center text-center items-center
                 sm:text-[2rem] sm:pb-[2rem] sm:pt-[2rem] 
                 md:text-[4rem] md:pl-[2rem] md:pt-[2rem] 
                 lp:text-[4rem] lp:pb-[2rem] lp:pt-[2rem]
@@ -33,6 +33,7 @@ const GraphicBox = () => {
                 </h1>
     {/* blue heading */}
    <div className="bg-blue-300 px-4 flex justify-between items-center w-full
+   sm:w-[24rem] sm:justify-self-center
    md:w-[49rem]
     lp:w-[60rem] lp:justify-self-center
    ">
@@ -45,6 +46,7 @@ const GraphicBox = () => {
 
     {/* White background tab bar */}
     <div className="bg-blue-300 p-4 pt-0 hover:cursor-hover
+    sm:w-[24rem] sm:justify-self-center
     md:w-[49rem]
     lp:w-[60rem] lp:justify-self-center
     ">
@@ -62,6 +64,7 @@ const GraphicBox = () => {
 
             {/* Project box with border */}
             <div className="w-full p-0 sm:p-0 flex flex-col border-solid border-x-[1rem] border-b-[1rem] border-blue-300
+            sm:w-[24rem] sm:justify-self-center
             md:w-[49rem] md:p-3
             lp:w-[60rem] lp:justify-self-center
             ">

@@ -18,6 +18,7 @@ const Magazine = () => {
        <div className="w-full relative mt-[30rem] sm:mt-[5rem] sm:px-0 sm:mx-auto lg:justify-self-center ">
 
     <div className="text-start w-full
+    sm:w-[24rem] sm:justify-self-center
      md:w-[49rem]
     lp:w-[60rem] lp:justify-self-center
     ">
@@ -32,6 +33,7 @@ const Magazine = () => {
 
     {/* White background tab bar */}
     <div className="bg-blue-300 p-4 pt-0 hover:cursor-hover
+    sm:w-[24rem] sm:justify-self-center
      md:w-[49rem]
     lp:w-[60rem] lp:justify-self-center
     ">
@@ -49,8 +51,9 @@ const Magazine = () => {
 
             {/* Project box with border */}
              <div className="w-full p-0 sm:p-0 flex flex-col border-solid border-x-[1rem] border-b-[1rem] 
-            border-blue-300 md:p-3
-            md:w-[49rem]
+            border-blue-300 
+            sm:w-[24rem] sm:justify-self-center
+            md:p-3 md:w-[49rem]
             lp:w-[60rem] lp:justify-self-center
             ">
 

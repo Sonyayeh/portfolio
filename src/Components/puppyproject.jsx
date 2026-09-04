@@ -19,17 +19,17 @@ const PuppyProject = () => {
                 so when it is brought into the project page
                 I don't have to make another title and manually
                 adjust it */}
-                <h1 className="flex pl-2 text-2xl justify-self-center text-center items-center
-                sm:text-[2rem] sm:pb-[2rem] sm:mt-[5rem] 
-                md:text-[4rem] md:h-[5rem] md:w-[49rem]
-                lp:text-[4rem] lp:pb-[2rem] lp:justify-self-center
-                lg:text-[4rem] lg:w-[70rem] lg:justify-self-center">
+                <h1 className="text-2xl justify-self-center text-center items-center
+                sm:text-[2rem] sm:pb-[2rem] sm:pt-[2rem] 
+                md:text-[4rem] md:pl-[2rem] md:pt-[2rem] 
+                lp:text-[4rem] lp:pb-[2rem] lp:pt-[2rem]
+                lg:text-[4rem] lg:w-[70rem]">
                     UI/UX Design:
                 </h1>
 
                 {/* Purple heading */}
                 <div className="bg-purple-300 px-4 flex justify-between items-center 
-                sm:w-[23rem] sm:justify-self-center
+                sm:w-[24rem] sm:justify-self-center
                 md:w-[49rem] lp:w-[60rem] lp:justify-self-center
                 lg:justify-self-center 
                 w-full">
@@ -61,7 +61,7 @@ const PuppyProject = () => {
 
             {/* Project box with border */}
             <div className="w-full p-0 sm:p-0 
-            sm:w-[23rem] sm:justify-self-center
+            sm:w-[24rem] sm:justify-self-center
             md:w-[49rem]
             lp:w-[60rem] lp:justify-self-center
             lg:w-[60rem] lg:justify-self-center
