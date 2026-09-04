@@ -42,7 +42,7 @@ const PuppyProject = () => {
 
                 {/* White background tab bar */}
                 <div className="bg-purple-300 p-4 pt-0 
-                sm:w-[25rem] sm:justify-self-center
+                sm:w-[24rem] sm:justify-self-center
                 md:w-[49rem]
                 lp:w-[60rem] lp:justify-self-center
                 lg:justify-self-center
