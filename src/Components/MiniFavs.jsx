@@ -84,7 +84,7 @@ const Mp3Value = ({ text }) => {
 
 const MiniFavourites = () => {
   return (
-    <section className="mx-auto mt-6 w-full max-w-[24rem] sm:max-w-[28rem] md:max-w-[42rem] lg:max-w-[54rem]">
+    <section className="mx-auto mt-6 w-full max-w-[24rem] sm:max-w-[20rem] md:max-w-[42rem] lg:max-w-[54rem]">
       <div className="overflow-hidden border-2 border-[#bcc5ea] bg-[#ece7f7] shadow-[4px_4px_0_#d7d0ef]">
         <div className="flex items-center justify-between border-b-2 border-[#bcc5ea] bg-blue-300 px-3 py-2 sm:px-4">
           <div className="flex items-center gap-2">

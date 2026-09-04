@@ -243,7 +243,7 @@ const TravelPhotos = () => {
   };
 
   return (
-    <section className="mx-auto mt-8 w-full max-w-[24rem] sm:max-w-[28rem] md:max-w-[46rem] lp:max-w-[42rem] lg:max-w-[54rem]">
+    <section className="mx-auto mt-8 w-full max-w-[24rem] sm:max-w-[20rem] md:max-w-[46rem] lp:max-w-[42rem] lg:max-w-[54rem]">
       <div className="overflow-hidden border-2 border-blue-200 bg-[#eee6f6] shadow-[4px_4px_0_#d6ccf5]">
         {/* Header */}
         <div className="flex items-center justify-between border-b-2 border-blue-200 bg-blue-300 px-3 py-2 sm:px-4">
