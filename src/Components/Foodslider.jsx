@@ -122,7 +122,7 @@ const FoodSlider = () => {
 
   return (
     <section className="w-full flex justify-center mt-8 lg:mt-[5rem]">
-      <div className="w-full sm:w-[25rem] md:max-w-[46rem] lp:max-w-[42rem] lg:max-w-[54rem]">
+      <div className="w-full sm:max-w-[24rem] md:max-w-[46rem] lp:max-w-[42rem] lg:max-w-[54rem]">
 
         <div className="overflow-hidden border-2 border-[#bcc5ea] bg-[#ece7f7] shadow-[4px_4px_0_#d7d0ef]">
         
