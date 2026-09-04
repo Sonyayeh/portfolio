@@ -26,7 +26,7 @@ const About = () => {
           <Hello />
 
 
-          <div className="relative mt-[30rem] justify-self-center
+          <div className="relative mt-[30rem] justify-center
           sm:mt-[4rem] sm:w-[24rem] 
           md:w-[45rem] md:mt-[2rem] 
           lp:w-[80rem]
