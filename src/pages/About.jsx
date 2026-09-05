@@ -70,7 +70,7 @@ const About = () => {
           <h5
         className=" justify-center text-center
         text-sky-600 italic underline font-pix
-        sm:text-[1.4rem] sm:pb-[2rem] sm:w-[25rem]
+        sm:text-[1rem] sm:pb-[2rem] sm:w-[25rem]
         md:pb-[3rem] md:text-[2.5rem] md:w-[50rem]
         lg:text-[4rem] lg:w-[78rem] lg:pb-[4rem] lg:pt-[2rem]
         lp:text-[3rem] lp:w-[75rem]
