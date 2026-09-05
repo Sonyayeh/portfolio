@@ -63,14 +63,14 @@ const SelfIntro = () => {
   const activeContent = tabs.find((tab) => tab.id === activeTab) || tabs[0];
 
   return (
-    <section className="flex justify-center items-center w-full sm:px-6">
+    <section className="flex justify-center items-center w-full">
       <div className="mx-auto w-full max-w-[980px]">
         <div className="relative overflow-visible border-2 border-blue-200 border-dashed bg-[#eee6f6] shadow-[4px_4px_0_#d6ccf5]
         
         ">
           {/* Floating photo */}
           <div className="pointer-events-none absolute right-[-1.2rem] top-[-4.2rem] z-20 rotate-[7deg] w-[7rem] 
-          sm:pt-[10rem] sm:mr-[0.5rem] sm:w-[8rem] 
+          sm:pt-[10rem] sm:w-[8rem] 
           md:w-[10rem] md:pt-[9rem] 
           lp:w-[15rem] lp:pt-[8rem]
           lg:w-[15rem] lg:pt-[4rem] lg:mr-[-1rem]">
