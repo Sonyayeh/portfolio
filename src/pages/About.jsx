@@ -27,7 +27,7 @@ const About = () => {
 
 
           <div className="relative mt-[30rem] justify-center
-          sm:mt-[4rem] sm:w-[24rem] 
+          sm:mt-[4rem] sm:w-[22rem] 
           md:w-[45rem] md:mt-[2rem] 
           lp:w-[80rem]
           lg:w-[80rem] 
@@ -36,7 +36,7 @@ const About = () => {
 
             <div
               className="
-              sm:ml-[15rem] sm:w-[8rem] sm:mt-[-3rem] 
+              sm:ml-[12rem] sm:w-[8rem] sm:mt-[-3rem] 
               md:ml-[30rem] md:w-[12rem] 
               lp:ml-[55rem] lp:mt-[-9rem]
               lg:ml-[55rem] lg:w-[20rem] lg:mb-[2rem]"
