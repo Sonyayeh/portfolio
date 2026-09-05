@@ -89,11 +89,12 @@ const About = () => {
           lp:w-[60rem]
           border-dashed border-purple-300" />
 
-          <h5 className=" flex justify-self-center 
-          sm:text-[1.2rem] sm:pb-[1rem] sm:w-[23rem]
+          <h5 className=" justify-self-center text-center
+        text-sky-600 italic underline font-pix
+        sm:text-[1.2rem] sm:pb-[1rem] sm:w-[23rem]
           md:text-[3rem] md:w-[48rem]
           lg:text-[4rem] lp:w-[48rem]
-          lp:text-[3rem] lg:w-[63rem] lg:pt-[3rem] text-sky-600 font-pix">
+          lp:text-[3rem] lg:w-[63rem] lg:pt-[3rem]">
             A little more about me:
           </h5>
 
