@@ -75,7 +75,7 @@ const Values = () => {
 
       <h5 className="justify-self-center text-center
         text-sky-600 italic underline font-pix
-      sm:text-[0.8rem] sm:w-[12rem]
+      sm:text-[0.8rem] sm:w-[20rem] sm:pb-[2rem]
       md:text-[2rem] md:pt-[2rem] md:pb-[2rem] md:w-[40rem]
       lp:text-[2rem] lp:w-[63rem] lp:pt-[2rem]
       lg:text-[2.5rem] lg:mb-[5rem] ">
