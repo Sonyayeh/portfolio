@@ -73,7 +73,8 @@ const Values = () => {
         My Values:
       </h5>
 
-      <h5 className="text-[3rem] font-pix font-bold text-center text-blue-400 mb-6 justify-self-center
+      <h5 className="justify-self-center text-center
+        text-sky-600 italic underline font-pix
       sm:text-[0.8rem] sm:w-[12rem]
       md:text-[2rem] md:pt-[2rem] md:pb-[2rem] md:w-[40rem]
       lp:text-[2rem] lp:w-[63rem] lp:pt-[2rem]
