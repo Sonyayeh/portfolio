@@ -23,7 +23,11 @@ const Hello = () => {
   }, []);
 
   return (
-  <div className="flex justify-center items-center text-center w-full sm:mb-[1rem] sm:w-[22rem] sm:h-[5rem] lg:whitespace-nowrap lg:pb-6">
+  <div className="flex justify-center items-center text-center w-full 
+  sm:mb-[1rem] sm:w-[22rem] sm:h-[5rem] 
+  md:w-[49rem] md:pb-[1rem]
+  lp:w-[78rem]
+  lg:whitespace-nowrap lg:pb-6">
   <div
     key={index}
     className="text-purple-500 font-pix 

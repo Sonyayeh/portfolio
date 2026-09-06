@@ -67,18 +67,18 @@ const Values = () => {
         <h5 className=" justify-self-center text-center
         text-sky-600 italic underline font-pix
         sm:text-[1.2rem] sm:pb-[1rem] sm:w-[23rem]
-          md:text-[3rem] md:w-[48rem]
-          lg:text-[4rem] lp:w-[48rem]
-          lp:text-[3rem] lg:w-[63rem] lg:pt-[3rem]">
+          md:text-[2.5rem] md:w-[48rem]
+          lg:text-[3rem] lp:w-[48rem]
+          lp:text-[2.5rem] lg:w-[63rem] lg:pt-[3rem]">
         My Values:
       </h5>
 
       <h5 className="justify-self-center text-center
         text-sky-600 italic underline font-pix
       sm:text-[0.8rem] sm:w-[23rem] sm:pb-[2rem]
-      md:text-[2rem] md:pt-[2rem] md:pb-[2rem] md:w-[40rem]
-      lp:text-[2rem] lp:w-[63rem] lp:pt-[2rem]
-      lg:text-[2.5rem] lg:mb-[5rem] ">
+      md:text-[1.5rem] md:pt-[2rem] md:pb-[2rem] md:w-[40rem]
+      lp:text-[1.5rem] lp:w-[63rem] lp:pt-[2rem]
+      lg:text-[2rem] lg:mb-[5rem] ">
         What makes{" "}
         <strong className="italic underline text-purple-500">Me</strong>{" "}
         a valuable candidate?

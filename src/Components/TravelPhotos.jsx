@@ -243,10 +243,10 @@ const TravelPhotos = () => {
   };
 
   return (
-    <section className="mx-auto mt-8 w-full max-w-[24rem] sm:max-w-[23rem] md:max-w-[46rem] lp:max-w-[42rem] lg:max-w-[54rem]">
-      <div className="overflow-hidden border-2 border-blue-200 bg-[#eee6f6] shadow-[4px_4px_0_#d6ccf5]">
+    <section className="mx-auto mt-8 w-full max-w-[24rem] sm:max-w-[23rem] md:max-w-[46rem] lp:max-w-[40rem] lg:max-w-[54rem]">
+      <div className="overflow-hidden border-2 border-blue-200 bg-[#eee6f6] shadow-[4px_4px_0_#d6ccf5] lp:h-[50rem] lg:h-[53rem]">
         {/* Header */}
-        <div className="flex items-center justify-between border-b-2 border-blue-200 bg-blue-300 px-3 py-2 sm:px-4">
+        <div className="flex items-center justify-between border-b-2 border-blue-200 bg-blue-300 px-3 py-2 sm:px-4 ">
           <div className="flex items-center gap-2">
             <span className="flex h-6 w-6 items-center justify-center border border-blue-200 bg-[#f8f4ff] text-[0.8rem] text-blue-400 shadow-[inset_1px_1px_0_#ffffff,inset_-1px_-1px_0_#dcd3f7]">
               ✈
@@ -271,13 +271,13 @@ const TravelPhotos = () => {
 
         {/* Intro */}
         <div className="border-b-2 border-blue-200 bg-[#f8f4ff] px-4 py-4 sm:px-5 md:px-6">
-          <div className="mb-2 flex items-center justify-between gap-3">
-            <h5 className="font-vcr text-[1.05rem] text-blue-500 sm:text-[1rem] md:text-[1.5rem]">
+          <div className="mb-2 flex items-center justify-between gap-3 ">
+            <h5 className="font-vcr text-[1.05rem] text-blue-500 sm:text-[1rem] md:text-[1.5rem] lg:text-[2.5rem]">
               I also love travelling & taking photos!
             </h5>
           </div>
 
-          <p className="font-mono text-[0.78rem] leading-relaxed text-[#8b44fc] sm:text-[0.6rem] md:text-[0.95rem]">
+          <p className="font-mono text-[0.78rem] leading-relaxed text-[#8b44fc] sm:text-[0.6rem] md:text-[0.95rem] lg:text-[1.5rem]">
             Because I have a memory of a goldfish...
           </p>
         </div>
@@ -367,16 +367,20 @@ const TravelPhotos = () => {
         </div>
 
         {/* LP + LG ONLY */}
-        <div className="hidden lp:block">
-          <div className="bg-[#f8f4ff] px-5 py-6 lg:px-6 lp:px-6">
-            <div className="mx-auto w-full max-w-[58rem] overflow-hidden border-2 border-blue-200 bg-[#eee6f6] shadow-[4px_4px_0_#d6ccf5]">
-              <div className="grid grid-cols-[13rem_minmax(0,1fr)] lp:grid-cols-[14rem_minmax(0,1fr)]">
+        <div className="hidden lp:block ">
+          <div className="bg-[#f8f4ff] px-5 py-6 lg:px-6 lp:px-6 lp:h-[40rem]
+          
+          ">
+            <div className="mx-auto w-full max-w-[58rem] overflow-hidden border-2 border-blue-200 bg-[#eee6f6] shadow-[4px_4px_0_#d6ccf5] lp:h-[37rem] 
+            lg:h-[34rem]
+            ">
+              <div className="grid grid-cols-[13rem_minmax(0,1fr)] lp:grid-cols-[15rem_minmax(0,1fr)]">
                 {/* Left sidebar */}
                 <div className="border-r-2 border-blue-200 bg-[#f8f4ff] px-3">
                   <h2 className="flex justify-center text-center lp:text-[2rem] font-vcr text-[#8758fe] underline decoration-dotted decoration-[#659bff] py-[1rem] ">
                     T.O.C
                   </h2>
-                  <div className="max-h-[38rem] space-y-2 overflow-y-auto pr-1">
+                  <div className="max-h-[38rem] lp:h-[27rem] space-y-2 overflow-y-auto pr-1">
                     {photos.map((photo) => {
                       const isSelected = photo.id === selectedId;
 
@@ -396,7 +400,7 @@ const TravelPhotos = () => {
                           </div>
 
                           <div className="min-w-0">
-                            <p className="truncate font-Dos text-[0.72rem]">
+                            <p className="truncate font-Dos text-[0.72rem] ">
                               {photo.fileName}
                             </p>
                             <p
@@ -418,7 +422,7 @@ const TravelPhotos = () => {
                   <div className="mx-auto flex h-full max-w-[36rem] flex-col">
                     <div className="flex justify-center">
                       <div className="w-full max-w-[26rem] ">
-                        <div className="flex h-[22rem] items-center justify-center overflow-hidden bg-[#f8f4ff] lg:h-[30rem] lp:h-[30rem]">
+                        <div className="flex h-[22rem] items-center justify-center overflow-hidden bg-[#f8f4ff] lg:h-[15rem] lp:h-[15rem]">
                           <img
                             key={selectedPhoto.id}
                             src={selectedPhoto.src}
@@ -430,13 +434,13 @@ const TravelPhotos = () => {
                     </div>
 
                     <div className="mt-4 border-2 border-blue-200 bg-[#f8f4ff] p-3 shadow-[inset_2px_2px_0_#ffffff,inset_-2px_-2px_0_#ddd5f7]">
-                      <div className="mb-3 inline-block border border-blue-200 bg-[#e4dbfa] px-3 py-1">
+                      <div className="mb-3 inline-block border border-blue-200 bg-[#e4dbfa] px-3 lp:py-1">
                         <span className="font-Dos text-[0.75rem] text-blue-500">
                           File Details
                         </span>
                       </div>
 
-                      <h6 className="font-Dos text-[1.45rem] text-blue-500 lg:text-[1.6rem]">
+                      <h6 className="font-Dos text-[1.45rem] text-blue-500 lg:text-[1.6rem] lp:text-[1.4rem]">
                         {selectedPhoto.fileName}
                       </h6>
 

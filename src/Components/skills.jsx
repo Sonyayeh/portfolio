@@ -64,6 +64,7 @@ const Skills = () => {
     flex 
     gap-[3rem] 
     sm:gap-[1rem]
+    lg:gap-[5rem]
     py-4
     w-max
     min-w-full
