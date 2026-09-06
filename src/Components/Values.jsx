@@ -65,7 +65,7 @@ const Values = () => {
   return (
     <section className="w-6xl mx-auto lg:w-8xl justify-self-center">
       <h1 className="text-[4rem] font-pix justify-self-center
-      sm:text-[1.4rem] sm:pb-[2rem] sm:w-[25rem]
+      sm:text-[1.4rem] sm:pb-[2rem] sm:w-[10rem]
       md:text-[3rem] md:w-[30rem]
       lg:text-[4rem] lg:pb-[2rem]
       lp:text-[3rem] lp:pb-[2rem]
@@ -74,7 +74,7 @@ const Values = () => {
       </h1>
 
       <h5 className="text-[3rem] font-pix font-bold text-center text-blue-400 mb-6 justify-self-center
-      sm:text-[0.8rem] sm:w-[25rem]
+      sm:text-[0.8rem] sm:w-[12rem]
       md:text-[2rem] md:pt-[2rem] md:pb-[2rem] md:w-[40rem]
       lp:text-[2rem] lp:w-[63rem] lp:pt-[2rem]
       lg:text-[2.5rem] lg:mb-[5rem] ">
