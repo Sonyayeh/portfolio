@@ -22,7 +22,9 @@ const About = () => {
 
       <div>
         <AboutMeTitle />
-        <div className="container mx-auto justify-self-center sm:w-full relative ">
+        <div className="container mx-auto justify-self-center 
+        sm:w-full md:w-full
+        relative ">
           <Hello />
 
 
@@ -70,9 +72,9 @@ const About = () => {
           <h5 className=" justify-self-center text-center
         text-sky-600 italic underline font-pix
         sm:text-[1.2rem] sm:pb-[1rem] sm:w-[23rem]
-          md:text-[3rem] md:w-[48rem]
-          lg:text-[4rem] lp:w-[48rem]
-          lp:text-[3rem] lg:w-[63rem] lg:pt-[3rem]">
+          md:text-[2.5rem] md:w-[48rem]
+          lg:text-[3rem] lp:w-[48rem]
+           lp:text-[2.5rem] lg:w-[63rem] lg:pt-[3rem]">
             Some of my skills being:</h5>
 
           <div className="flex text-items-center justify-self-center w-50 
@@ -91,9 +93,9 @@ const About = () => {
           <h5 className=" justify-self-center text-center
         text-sky-600 italic underline font-pix
         sm:text-[1.2rem] sm:pb-[1rem] sm:w-[23rem]
-          md:text-[3rem] md:w-[48rem]
-          lg:text-[4rem] lp:w-[48rem]
-          lp:text-[3rem] lg:w-[63rem] lg:pt-[3rem]">
+          md:text-[2.5rem] md:w-[48rem]
+          lg:text-[3rem] lp:w-[48rem]
+           lp:text-[2.5rem] lg:w-[63rem] lg:pt-[3rem]">
             A little more about me:
           </h5>
 

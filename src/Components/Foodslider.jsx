@@ -155,14 +155,14 @@ const FoodSlider = () => {
           <div className="bg-[#f8f4ff] p-4 sm:p-5 md:p-6">
 
             <div className="mb-4 flex items-center justify-center gap-2 text-center">
-              <h5 className="font-Dos text-[1.2rem] text-[#5a6fb8] sm:text-[1.35rem] md:text-[1.6rem]">
+              <h5 className="font-Dos text-[1.2rem] text-[#5a6fb8] sm:text-[1.35rem] md:text-[1.6rem] lg:text-[2.5rem]">
                 I enjoy cooking
               </h5>
               <img loading="lazy" src={Heart} alt="Heart" className="h-5 w-5 sm:h-6 sm:w-6 md:h-8 md:w-8" />
             </div>
 
             <div className="justify-self-center">
-            <p className="mb-5 text-center justify-center font-mono text-[0.8rem] leading-relaxed text-[#8b99d6] sm:w-[19rem] sm:text-[0.88rem] md:text-[0.95rem] md:w-[40rem] lp:w-[35rem]">
+            <p className="mb-5 text-center justify-center font-mono text-[0.8rem] leading-relaxed text-[#8b99d6] sm:w-[19rem] sm:text-[0.88rem] md:text-[0.95rem] md:w-[40rem] lp:w-[35rem] lg:w-[50rem] lg:text-[1.5rem]">
               One of my favourite ways to unwind is making comforting meals and
               cute desserts.
             </p>

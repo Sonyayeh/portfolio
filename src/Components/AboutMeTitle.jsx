@@ -4,7 +4,9 @@ import Threebubbles from "../assets/threebubbles.gif";
 const AboutMeTitle = () => {
   return (
     <div className="w-full flex justify-center pt-[3rem] pb-[2rem]
-    lg:pb-[2rem] lg:pt-[2rem]
+    sm:pb-[1rem]
+    lg:pt-[2rem]
+    lg:pb-[2rem]
     ">
       <div className="flex items-center justify-center">
         <h1
