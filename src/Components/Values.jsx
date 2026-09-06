@@ -66,7 +66,7 @@ const Values = () => {
     <section className="w-6xl mx-auto lg:w-8xl justify-self-center">
         <h5 className=" justify-self-center text-center
         text-sky-600 italic underline font-pix
-        sm:text-[1.2rem] sm:pb-[1rem] sm:w-[23rem]
+        sm:text-[1.2rem] sm:pb-[1rem] sm:w-[12rem]
           md:text-[3rem] md:w-[48rem]
           lg:text-[4rem] lp:w-[48rem]
           lp:text-[3rem] lg:w-[63rem] lg:pt-[3rem]">
@@ -75,7 +75,7 @@ const Values = () => {
 
       <h5 className="justify-self-center text-center
         text-sky-600 italic underline font-pix
-      sm:text-[0.8rem] sm:w-[20rem] sm:pb-[2rem]
+      sm:text-[0.8rem] sm:w-[23rem] sm:pb-[2rem]
       md:text-[2rem] md:pt-[2rem] md:pb-[2rem] md:w-[40rem]
       lp:text-[2rem] lp:w-[63rem] lp:pt-[2rem]
       lg:text-[2.5rem] lg:mb-[5rem] ">
