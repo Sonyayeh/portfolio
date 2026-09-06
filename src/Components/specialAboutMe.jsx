@@ -33,7 +33,7 @@ const Special = () => {
   return (
 
     <div className="relative w-full flex flex-col justify-center items-center overflow-hidden p-8 border-2 border-dashed border-blue-300 h-auto 
-    sm:max-w-[20rem]
+    sm:max-w-[23rem]
     md:w-[42rem]
     lg:min-w-[54rem] lg:min-h-[40rem] lg:p-10 
     lp:min-w-[40rem] lp:min-h-[20rem] lp:p-10 ">
@@ -48,7 +48,7 @@ const Special = () => {
       animate={{ opacity: 1, x: 0 }}
       exit={{ opacity: 0, x: -20 }}
       transition={{ duration: 1 }}
-      className="text-center justify-self-center bg-white-500 text-blue-400 px-6 rounded-lg w-full flex flex-col lg:w-[50rem] lg:min-h-[30rem] lg:p-6 "
+      className="text-center justify-self-center bg-white-500 text-blue-400 px-6 rounded-lg w-full flex flex-col sm:w-[20rem] lg:w-[50rem] lg:min-h-[30rem] lg:p-6 "
     >
       {/* this is the title section */}
       {/* it will retreieve the messages with the tag of .titles from above */}
@@ -57,7 +57,7 @@ const Special = () => {
       {/* this is the text/paragraph sectino */}
       {/* this will grab the text section from the above with those with the .text tag */}
       <h5 className="text-left justify-self-center leading-relaxed whitespace-normal break-words
-      sm:text-[0.8rem] sm:pt-[1rem] sm:w-[14rem]
+      sm:text-[0.8rem] sm:pt-[1rem] sm:w-[17rem]
       md:text-[1.5rem] md:pt-[2rem] md:leading-8 
       lg:text-[2rem] lg:leading-[3rem] lg:min-h-[15rem] 
       lp:text-[1.5rem] lp:leading-[2rem]">

@@ -23,11 +23,7 @@ const Hello = () => {
   }, []);
 
   return (
-  <div className="flex justify-self-center items-center text-center w-full sm:mb-[1rem] sm:w-[20rem] sm:h-[5rem] lg:whitespace-nowrap lg:pb-6">
-  <div>
-  </div>
-  
-  
+  <div className="flex justify-center items-center text-center w-full sm:mb-[1rem] sm:w-[22rem] sm:h-[5rem] lg:whitespace-nowrap lg:pb-6">
   <div
     key={index}
     className="text-purple-500 font-pix 
@@ -43,19 +39,17 @@ const Hello = () => {
     {greetings[index]}
   </div>
 
-      
-      {/* Custom CSS */}
-      <style>
-        {`
-          @keyframes fadeInOut {
-            0% { opacity: 0; }
-            10% { opacity: 1; }
-            80% { opacity: 1; }
-            100% { opacity: 0; }
-          }
-        `}
-      </style>
-    </div>
+  <style>
+    {`
+      @keyframes fadeInOut {
+        0% { opacity: 0; }
+        10% { opacity: 1; }
+        80% { opacity: 1; }
+        100% { opacity: 0; }
+      }
+    `}
+  </style>
+</div>
   );
 };
 

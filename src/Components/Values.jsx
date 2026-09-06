@@ -64,14 +64,14 @@ const ValueItem = ({ title, children, textSize = "text-[2rem]" }) => {
 const Values = () => {
   return (
     <section className="w-6xl mx-auto lg:w-8xl justify-self-center">
-      <h1 className="text-[4rem] font-pix justify-self-center
-      sm:text-[1.4rem] sm:pb-[2rem] sm:w-[10rem]
-      md:text-[3rem] md:w-[30rem]
-      lg:text-[4rem] lg:pb-[2rem]
-      lp:text-[3rem] lp:pb-[2rem]
-      lg:mb-[2rem]  text-center text-sky-600 underline">
+        <h5 className=" justify-self-center text-center
+        text-sky-600 italic underline font-pix
+        sm:text-[1.2rem] sm:pb-[1rem] sm:w-[23rem]
+          md:text-[3rem] md:w-[48rem]
+          lg:text-[4rem] lp:w-[48rem]
+          lp:text-[3rem] lg:w-[63rem] lg:pt-[3rem]">
         My Values:
-      </h1>
+      </h5>
 
       <h5 className="text-[3rem] font-pix font-bold text-center text-blue-400 mb-6 justify-self-center
       sm:text-[0.8rem] sm:w-[12rem]
