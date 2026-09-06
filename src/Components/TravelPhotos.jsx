@@ -244,7 +244,7 @@ const TravelPhotos = () => {
 
   return (
     <section className="mx-auto mt-8 w-full max-w-[24rem] sm:max-w-[23rem] md:max-w-[46rem] lp:max-w-[40rem] lg:max-w-[54rem]">
-      <div className="overflow-hidden border-2 border-blue-200 bg-[#eee6f6] shadow-[4px_4px_0_#d6ccf5] lp:h-[50rem] lg:h-[53rem]">
+      <div className="overflow-hidden border-2 border-blue-200 bg-[#eee6f6] shadow-[4px_4px_0_#d6ccf5] lp:h-[48rem] lg:h-[53rem]">
         {/* Header */}
         <div className="flex items-center justify-between border-b-2 border-blue-200 bg-blue-300 px-3 py-2 sm:px-4 ">
           <div className="flex items-center gap-2">
@@ -368,10 +368,10 @@ const TravelPhotos = () => {
 
         {/* LP + LG ONLY */}
         <div className="hidden lp:block ">
-          <div className="bg-[#f8f4ff] px-5 py-6 lg:px-6 lp:px-6 lp:h-[40rem]
+          <div className="bg-[#f8f4ff] px-5 py-6 lg:px-6 lp:px-6 lp:h-[38rem]
           
           ">
-            <div className="mx-auto w-full max-w-[58rem] overflow-hidden border-2 border-blue-200 bg-[#eee6f6] shadow-[4px_4px_0_#d6ccf5] lp:h-[37rem] 
+            <div className="mx-auto w-full max-w-[58rem] overflow-hidden border-2 border-blue-200 bg-[#eee6f6] shadow-[4px_4px_0_#d6ccf5] lp:h-[35rem] 
             lg:h-[34rem]
             ">
               <div className="grid grid-cols-[13rem_minmax(0,1fr)] lp:grid-cols-[15rem_minmax(0,1fr)]">
