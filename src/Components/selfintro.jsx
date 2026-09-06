@@ -70,7 +70,7 @@ const SelfIntro = () => {
         ">
           {/* Floating photo */}
           <div className="pointer-events-none absolute right-[-1.2rem] top-[-4.2rem] z-20 rotate-[7deg] w-[7rem] 
-          sm:pt-[10rem] sm:w-[8rem] 
+          sm:pt-[13rem] sm:w-[7rem]  sm:mr-[2rem]
           md:w-[10rem] md:pt-[9rem] 
           lp:w-[15rem] lp:pt-[8rem]
           lg:w-[15rem] lg:pt-[4rem] lg:mr-[-1rem]">

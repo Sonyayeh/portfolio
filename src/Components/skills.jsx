@@ -63,7 +63,7 @@ const Skills = () => {
     scroller__inner 
     flex 
     gap-[3rem] 
-    sm:gap-[2rem]
+    sm:gap-[1rem]
     py-4
     w-max
     min-w-full

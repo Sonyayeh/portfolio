@@ -26,7 +26,7 @@ const About = () => {
           <Hello />
 
 
-          <div className="relative mt-[30rem] justify-center
+          <div className="relative mt-[30rem] justify-self-center
           sm:mt-[4rem] sm:w-[23rem] 
           md:w-[45rem] md:mt-[2rem] 
           lp:w-[80rem]
@@ -70,14 +70,15 @@ const About = () => {
           <h5
         className=" justify-self-center text-center
         text-sky-600 italic underline font-pix
-        sm:text-[1.2rem] sm:pb-[1rem] sm:w-[23rem]
+        sm:text-[1.2rem] sm:pb-[1rem] sm:w-[20rem]
         md:pb-[3rem] md:text-[2.5rem] md:w-[50rem]
         lg:text-[4rem] lg:w-[78rem] lg:pb-[4rem] lg:pt-[2rem]
         lp:text-[3rem] lp:w-[75rem]
         "
         >Some of my skills being:</h5>
 
-          <div className="flex text-items-center justify-self-center w-50 sm:w-[23rem] sm:text-[1rem] sm:pb-[2rem]
+          <div className="flex text-items-center justify-self-center w-50 
+          sm:w-[20rem] sm:text-[1rem] sm:pb-[2rem]
           md:pt-[3rem] md:text-[2rem] md:w-[50rem] 
           lg:text-[3rem] lg:w-[65rem] 
           lp:text-[3rem] lp:w-[60rem] lp:pb-[2rem]">
