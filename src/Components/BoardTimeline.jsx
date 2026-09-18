@@ -125,7 +125,7 @@ const BoardTimeline = () => {
 
       <div className="relative flex items-center justify-center 
       justify-self-center
-      sm:w-[19rem]
+      sm:w-[22rem]
       md:w-[36rem]
       lp:w-[60rem] 
       lg:w-[70rem]
