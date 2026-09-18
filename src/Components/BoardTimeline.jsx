@@ -114,7 +114,7 @@ const BoardTimeline = () => {
 
       <div className=" justify-self-center"> 
       <h2 className="flex text-center text-purple-400 underline decoration-dashed
-     sm:text-[1.3rem] sm:pb-[1rem] sm:justify-center sm:w-[20rem]
+     sm:text-[1.3rem] sm:pb-[1rem] sm:justify-self-center sm:w-[20rem]
       md:text-[2rem] md:w-[35rem] md:mb-[2rem]
       lp:justify-center lp:text-[1.8rem] lp:w-[50rem]
       lg:text-[2rem] lg:pb-[2rem] lg:w-[65rem]
