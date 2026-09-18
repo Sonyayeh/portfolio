@@ -29,7 +29,7 @@ const PuppyProject = () => {
 
                 {/* Purple heading */}
                 <div className="bg-purple-300 px-4 flex justify-between items-center 
-                sm:w-[24rem] sm:justify-self-center
+                sm:w-[20rem] sm:justify-self-center
                 md:w-[49rem] lp:w-[60rem] lp:justify-self-center
                 lg:justify-self-center 
                 w-full">
