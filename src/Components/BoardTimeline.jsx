@@ -184,7 +184,7 @@ const BoardTimeline = () => {
 
       {/* Event content */}
       <div className="border-t mt-6 pt-4 mx-auto
-sm:w-[22rem]
+sm:w-[23rem]
 md:w-[40rem] md:text-[2rem] 
 lp:w-[55rem]
 lg:w-[75rem]
