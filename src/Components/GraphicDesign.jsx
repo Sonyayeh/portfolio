@@ -33,7 +33,7 @@ const GraphicBox = () => {
                 </h1>
     {/* blue heading */}
    <div className="bg-blue-300 px-4 flex justify-between items-center w-full
-   sm:w-[22rem] sm:justify-self-center
+   sm:w-[23rem] sm:justify-self-center
    md:w-[49rem]
     lp:w-[60rem] lp:justify-self-center
    ">
@@ -46,7 +46,7 @@ const GraphicBox = () => {
 
     {/* White background tab bar */}
     <div className="bg-blue-300 p-4 pt-0 hover:cursor-hover
-    sm:w-[22rem] sm:justify-self-center
+    sm:w-[23rem] sm:justify-self-center
     md:w-[49rem]
     lp:w-[60rem] lp:justify-self-center
     ">
@@ -64,7 +64,7 @@ const GraphicBox = () => {
 
             {/* Project box with border */}
             <div className="w-full p-0 sm:p-0 flex flex-col border-solid border-x-[1rem] border-b-[1rem] border-blue-300
-            sm:w-[22rem] sm:justify-self-center
+            sm:w-[23rem] sm:justify-self-center
             md:w-[49rem] md:p-3
             lp:w-[60rem] lp:justify-self-center
             ">
