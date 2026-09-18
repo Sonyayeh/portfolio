@@ -19,7 +19,7 @@ const BoardProject = () => {
     <div className="text-start w-full">
     {/* purple heading */}
    <div className="bg-purple-300 px-4 flex justify-between items-center w-full
-   sm:w-[24rem] sm:justify-self-center
+   sm:w-[22rem] sm:justify-self-center
     md:w-[49rem]
     lp:w-[60rem] lp:justify-self-center
    ">
@@ -32,7 +32,7 @@ const BoardProject = () => {
 
     {/* White background tab bar */}
     <div className="bg-purple-300 p-4 pt-0 hover:cursor-hover
-    sm:w-[24rem] sm:justify-self-center
+    sm:w-[22rem] sm:justify-self-center
     md:w-[49rem]
     lp:w-[60rem] lp:justify-self-center
     ">
@@ -50,7 +50,7 @@ const BoardProject = () => {
 
             {/* Project box with border */}
              <div className="w-full p-0 sm:p-0 flex flex-col border-solid border-x-[1rem] border-b-[1rem] 
-             sm:w-[24rem] sm:justify-self-center
+             sm:w-[22rem] sm:justify-self-center
               md:w-[49rem]
               lp:w-[60rem] lp:justify-self-center
               border-purple-300 md:p-3">
