@@ -26,7 +26,7 @@ const Projects = () => {
                             src={TwoClouds} 
                             alt="Cloud gif"
                             className="w-auto max-w-full
-                            sm:w-[10rem] sm:ml-[12rem]
+                            sm:w-[10rem] sm:ml-[10rem]
                             md:w-[15rem] md:ml-[35rem] md:mt-[-2rem]
                             lp:w-[20rem] lp:ml-[55rem] 
                             lg:w-[20rem] lg:ml-[3rem] 
