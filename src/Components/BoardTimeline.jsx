@@ -139,7 +139,7 @@ const BoardTimeline = () => {
 
         {/* Events */}
       <div className="flex space-x-10 overflow-x-auto py-4
-          sm:w-[20rem] sm:mx-auto 
+        sm:w-[22rem] sm:mx-auto 
         md:w-[40rem] md:mx-auto
         lp:w-[55rem] lp:gap-[4rem]
         lg:w-[80rem]  lg:gap-[5rem]
@@ -184,7 +184,7 @@ const BoardTimeline = () => {
 
       {/* Event content */}
       <div className="border-t mt-6 pt-4 mx-auto
-sm:w-[20rem]
+sm:w-[22rem]
 md:w-[40rem] md:text-[2rem] 
 lp:w-[55rem]
 lg:w-[75rem]
