@@ -32,12 +32,27 @@ const BoardFig = () => {
         className="flex justify-self-center underline decoration-dashed text-purple-400 text-center justify-center
           sm:text-[1.7rem] sm:w-[23rem]
                 md:text-[3rem] md:w-[49rem]
-                lp:text-[4rem] lp:w-[60rem] lp:items-center
+                lp:text-[2.8rem] lp:w-[60rem] lp:items-center
                 lg:text-[3rem] lg:pb-[2rem] lg:pt-[2rem] lg:w-[50rem]
         "
       >
         Figma Access:
       </h2>
+
+      <section className="w-full">
+      <p
+           className="text-purple-500 justify-self-center font-vcr
+            sm:text-[1rem] sm:w-[22rem] sm:pb-[1.5rem]
+            md:text-[1.8rem] md:w-[40rem] md:mb-[2rem]
+            lp:text-[1.3rem] lp:w-[60rem] lp:mb-[2rem]
+            lg:text-[2rem] lg:leading-[3.5rem]">
+
+                        The Figma file documents the full design progression, from low-fidelity to high-fidelity, including the structure of each component. Layouts remain unified across every page in accordance with 
+                         <span className="text-orange-400">  Nielsen's consistency and standards heuristic</span>,
+                       ensuring users encounter familiar patterns throughout their journey through the app.
+
+        </p>
+</section>
 
       <div
         className="

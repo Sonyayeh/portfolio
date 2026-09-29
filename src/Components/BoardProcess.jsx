@@ -110,7 +110,7 @@ const BoardProcess = () => {
       <h1 className="flex justify-center text-purple-400 underline decoration-dashed justify-self-center
         sm:text-[1.7rem] sm:w-[23rem] sm:justify-center
                 md:text-5xl md:pt-[5rem] md:w-[35rem] md:mb-[2rem]
-                 lp:text-[2.8rem] lp:w-[75rem] lp:justify-center lp:items-center lp:pb-[5rem]
+                 lp:text-[2.8rem] lp:w-[75rem] lp:justify-center lp:items-center lp:pb-[2rem]
                 lg:text-[3rem] lg:w-[40rem] lg:mt-[2rem]">
         Design Process:
       </h1>
@@ -120,7 +120,7 @@ const BoardProcess = () => {
             text-purple-500 font-vcr justify-self-center
             sm:text-[1rem] sm:w-[22rem] sm:pb-[1.5rem]
             md:text-[1.8rem] md:w-[40rem] md:mb-[2rem]
-            lp:text-[2rem] lp:w-[65rem] lp:ml-[4rem] lp:mb-[2rem]
+            lp:text-[1.3rem] lp:w-[60rem]
             lg:text-[2rem] lg:leading-[3.5rem]
           "
         >

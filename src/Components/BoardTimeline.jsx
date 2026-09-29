@@ -193,7 +193,7 @@ lg:w-[75rem]
         <h2 className="text-xl font-semibold text-purple-500 
     sm:text-[1.3rem] 
     md:text-[2rem] md:pb-5 md:leading-[2.6rem]
-    lp:text-[2rem] lp:pb-5 lp:leading-[2.5rem]
+    lp:text-[2rem] lp:pb-5 lp:leading-[2.5rem] lp:w-[60rem]
     lg:text-[2.5rem] lg:pb-[2rem] lg:pt-[2rem] lg:leading-[3.8rem]
         ">{events[selectedIndex].title}</h2>
 
@@ -209,7 +209,7 @@ lg:w-[75rem]
         <p className="mt-2 text-purple-700 font-Dos
   sm:pb-[2rem]
     md:mt-5 md:text-[2rem]
-    lp:text-[1.8rem]
+    lp:text-[1.3rem]
     lg:text-[1.5rem] lg:pb-5 lg:leading-[5rem]
         ">{events[selectedIndex].content}</p>
       </div>
