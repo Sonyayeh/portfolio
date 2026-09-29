@@ -4,7 +4,7 @@ import projectData from "../data/project.json";
 import BoardDes from "../Components/BoardDes";
 import BoardTimeLine from "../Components/BoardTimeline";
 import BoardSoftware from "../Components/BoardIcon";
-import BoardProcess from "../Components/boardProcess";
+import BoardProcess from "../Components/BoardProcess";
 import BoardProject from "../Components/BoardProject";
 import CodeShowcase from "../Components/CodeShowcase.jsx"; 
 import boardProjectSource from "../Components/BoardProject.jsx?raw";
