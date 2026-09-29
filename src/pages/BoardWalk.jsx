@@ -5,6 +5,10 @@ import BoardDes from "../Components/BoardDes";
 import BoardTimeLine from "../Components/BoardTimeline";
 import BoardSoftware from "../Components/BoardIcon";
 import BoardProcess from "../Components/boardProcess";
+import BoardProject from "../Components/BoardProject";
+import CodeShowcase from "../Components/CodeShowcase.jsx";
+import boardProjectSource from "../Components/BoardProject.jsx?raw";
+import LiveCodeShowcase from "../Components/LiveCodeShowcase";
 import BoardFig from "../Components/BoardFigma";
 import Social from '../Components/social';
 import { Link } from "react-router-dom";
@@ -113,6 +117,24 @@ const BoardWalk = () => {
                 <div>
                     <BoardFig />
                 </div>
+
+                <div className="border-t-2 border-orange-500 justify-self-center
+                sm:w-[23rem] sm:pb-[2rem] sm:mt-[2rem]
+                md:w-[45rem] 
+                lp:w-[65rem]
+                lg:w-[80rem] lg:mt-[2rem]
+                "></div>
+
+                {/* Live demo + code section */}
+                <div>
+                    <LiveCodeShowcase
+                demoUrl="https://boardwalk-boutique-app-hxpn.vercel.app"
+                repo="Sonyayeh/boardwalk-boutique-app"
+                branch="main"
+                folderPath="boardwalk-boutique"
+                />
+                </div>
+
 
                  {/* added a line for separate sections */}
                <div className="border-t-2 border-orange-500 justify-self-center
