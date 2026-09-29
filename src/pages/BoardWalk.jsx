@@ -5,7 +5,7 @@ import BoardDes from "../Components/BoardDes";
 import BoardTimeLine from "../Components/BoardTimeline";
 import BoardSoftware from "../Components/BoardIcon";
 import BoardProcess from "../Components/boardProcess";
-import BoardProject from "../Components/boardproject";
+import BoardProject from "../Components/BoardProject";
 import CodeShowcase from "../Components/CodeShowcase.jsx"; 
 import boardProjectSource from "../Components/BoardProject.jsx?raw";
 import LiveCodeShowcase from "../Components/LiveCodeShowcase";
