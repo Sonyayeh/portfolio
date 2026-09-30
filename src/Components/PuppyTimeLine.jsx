@@ -230,7 +230,7 @@ lp:w-[55rem]
 lg:w-[75rem]
 ">
   <h2 className="text-xl font-semibold text-purple-500 
-     sm:text-[1.3rem] sm:w-[25rem]
+     sm:text-[1.3rem] sm:w-[20rem]
     md:text-[2rem] md:pb-5 md:leading-[2.6rem]
     lp:text-[2rem] lp:pb-5 lp:leading-[2.5rem] lp:w-[60rem]
     lg:text-[2.5rem] lg:pb-[2rem] lg:pt-[2rem] lg:leading-[3.8rem] lg:w-[70rem]
