@@ -37,14 +37,14 @@ const PuppyYoga = () => {
                 <h1 className="flex justify-self-center text-purple-500 underline decoration-dashed justify-center
                 sm:text-[2rem] sm:pb-[2rem] sm:mt-[-5rem] sm:w-[23rem] sm:text-center
                 md:text-[4rem] md:pt-[10rem] md:w-[55rem]
-                lp:text-[2.8rem] lp:w-[72rem] lp:justify-center lp:items-center lp:pt-[5rem]
-                lg:text-[3rem] lg:w-[56rem] lg:mb-[3rem] lg:mt-[2rem]">
+                lp:text-[3rem] lp:w-[72rem] lp:justify-center lp:items-center lp:pt-[5rem]
+                lg:text-[3rem] lg:w-[56rem] lg:mt-[2rem]">
                     Puppy Yoga Studio: Furrever Pals
                 </h1>
                 <h1 className="flex justify-self-center underline decoration-dashed text-purple-400 text-center justify-center
-                sm:text-[1.5rem] sm:pb-[2rem] sm:w-[23rem]
+                 sm:text-[1.5rem] sm:pb-[2rem] sm:w-[23rem]
                 md:text-[3.5rem] md:pt-[3rem] md:w-[55rem] 
-                lp:text-[2.5rem] lp:w-[75rem] lp:justify-center lp:items-center lp:mt-[-3rem]
+                lp:text-[2.8rem] lp:w-[75rem] lp:justify-center lp:items-center lp:mt-[-3rem]
                 lg:text-[3rem] lg:w-[16rem] lg:mb-[2rem]">
                     Overview:
                 </h1>
@@ -52,8 +52,8 @@ const PuppyYoga = () => {
               <h3 className="text-orange-500 text-left 
                 sm:text-[1rem] sm:pb-[1rem] sm:w-[24rem] 
                 md:text-[2rem] md:w-[50rem] md:pb-[2rem]
-                lp:text-[1.5rem] lp:w-[60rem] lp:leading-[3rem] lp:pb-[4rem]
-                lg:text-[1.5rem] lg:w-[69rem] lg:mb-[2rem] lg:mt-[2rem] lg:leading-[3rem]">
+                lp:text-[1.5rem] lp:w-[60rem] lp:leading-[3rem] lp:pb-[3rem]
+                lg:text-[1.5rem] lg:w-[69rem]  lg:leading-[3rem]">
               Furrever Pals started from something almost everyone deals with: stress, and the gap between needing support and actually seeking it. Movement helps, but so does a less talked about effect, people relax around things they find genuinely cute, a real dopamine response. Furrever Pals merges the two, movement based stress relief and time with dogs, into something neither offers alone.
             <br/><br />
             The dogs in every session are real and adoptable. BC SPCA's 2023 data shows animals are sometimes euthanized simply for lack of space or a ready home, not lack of health, so ten percent of everything Furrever Pals earns goes directly to local shelters, regardless of how many adoptions happen that month.
@@ -61,11 +61,12 @@ const PuppyYoga = () => {
             The project spans brand identity, UX design, and a fully hand coded website.
                 </h3>
                 </div>
-                  <div className="flex justify-center w-full pb-[1rem]">
+                  <div className="flex justify-center w-full pb-[1rem] lg:pb-[4rem] lp:pb-[2rem]">
                     <a href="https://sonyayeh.ca/furreverpals" target="_blank" rel="noopener noreferrer">
                       <button className="font-Dos text-purple-400 border-3 border-dashed border-purple-400 hover:bg-orange-200 hover:text-purple-600 transition-colors duration-300 mb-3
                         sm:text-[1rem] sm:px-[1.5rem] sm:py-[0.5rem]
                         md:text-[1.5rem] md:px-[2rem] md:py-[0.8rem]
+                        lp:text-[1.5rem]
                         lg:text-[2rem] lg:px-[3rem] lg:py-[1rem]">
                         View Live Site
                       </button>
@@ -112,10 +113,10 @@ const PuppyYoga = () => {
                     <h1 className="flex justify-center 
                     justify-self-center text-purple-400 underline decoration-dashed
                     sm:text-[1.7rem] sm:w-[23rem] sm:justify-center
-                md:text-[3rem] md:w-[35rem] md:mb-[3rem] 
-                lp:text-[2.8rem] lp:w-[40rem] lp:pt-[2rem]
-                lg:text-[3rem] lg:w-[50rem]
-                ">
+                    md:text-[3rem] md:w-[35rem] md:mb-[3rem] 
+                    lp:text-[2.8rem] lp:w-[40rem] lp:pt-[2rem]
+                    lg:text-[3rem] lg:w-[70rem] lg:pt-[5rem] lg:pb-[3rem]
+                                ">
                     Design Rationale:
                 </h1>
                     <PuppyProcess />

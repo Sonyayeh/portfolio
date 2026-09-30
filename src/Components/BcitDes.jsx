@@ -79,8 +79,8 @@ const BcitDes = () => {
               <h3 className="text-orange-500 text-left 
                 sm:text-[1rem] sm:pb-[1rem] sm:w-[24rem] 
                 md:text-[2rem] md:w-[50rem] md:pb-[2rem]
-                lp:text-[1.5rem] lp:w-[65rem] lp:leading-[3rem] lp:pb-[4rem]
-                lg:text-[1.5rem] lg:w-[69rem] lg:mb-[2rem] lg:mt-[2rem] lg:leading-[3rem]">
+                lp:text-[1.5rem] lp:w-[60rem] lp:leading-[3rem] lp:pb-[4rem]
+                lg:text-[1.5rem] lg:w-[69rem]  lg:leading-[3rem]">
        I led a redesign of the MyBCIT platform to improve usability, streamline navigation, and reduce cognitive load for students and administrators. By identifying key friction points in the existing experience, I restructured the interface to prioritize clarity, accessibility, and efficiency. 
        <br />
        <br />

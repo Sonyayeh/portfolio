@@ -14,10 +14,10 @@ const AppDes = () => {
 
       <p
            className="text-purple-500 justify-self-center font-vcr
-            sm:text-[1rem] sm:w-[22rem] sm:pb-[1.5rem]
+            sm:text-[0.8rem] sm:w-[22rem] sm:pb-[1.5rem]
             md:text-[1.8rem] md:w-[40rem] md:mb-[2rem]
             lp:text-[1.3rem] lp:w-[60rem] lp:mb-[2rem]
-            lg:text-[2rem] lg:leading-[3.5rem]">
+            lg:text-[1.5rem] lg:leading-[2.5rem] lg:w-[80rem]">
 
                 A fully coded, functional prototype that demonstrates Boardwalk Boutique's 
                 <span className="text-orange-400"> shopping</span>,

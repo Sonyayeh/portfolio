@@ -28,12 +28,12 @@ const BcitiFig = () => {
 
   return (
     <section className="w-full justify-self-center">
-       <h1 className="flex justify-self-center justify-center text-purple-400 underline decoration-dashed
-       sm:text-[1.7rem] sm:w-[23rem]
-                md:text-[3rem] md:w-[49rem]
-                lp:text-[4rem] lp:w-[60rem] lp:items-center
-                lg:text-[3rem] lg:pb-[2rem] lg:pt-[2rem] lg:w-[50rem]
-                ">
+       <h1  className="flex justify-self-center justify-center
+                underline decoration-dashed text-purple-400
+                 sm:text-[1.7rem] sm:pb-[2rem] sm:w-[23rem] 
+                md:text-[3rem] md:w-[60rem] 
+                lp:text-[2.8rem] lp:w-[75rem] lp:justify-center lp:items-center lp:pt-[2rem]
+                lg:text-[3rem] lg:w-[70rem] lg:pt-[2rem] lg:pb-[3rem]">
         Figma Access:
       </h1>
      <div
@@ -140,11 +140,11 @@ const BcitiFig = () => {
           {/* Description */}
           <p
             className="
-                mt-4 text-orange-500 font-vcr
-               sm:text-[0.85rem]
-                  md:text-[1rem]
-                  lp:text-[1.2rem]
-                  lg:text-[1.4rem]
+            mt-4 text-orange-500 font-vcr
+            sm:text-[0.7rem] sm:w-[19rem] sm:leading-[1.5rem]
+            md:text-[1rem] md:w-[40rem] md:leading-[2.5rem]
+            lp:text-[1.2rem] lp:w-[60rem] lp:leading-[3rem] lp:px-[2rem]
+            lg:text-[1.5rem] lg:leading-[3rem] lg:w-[70rem] lg:pt-[2rem] lg:px-[2rem]
             "
           >
             {current.description}

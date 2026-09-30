@@ -59,12 +59,12 @@ const BcitJourney = () => {
   return (
     <section className="w-full justify-self-center">
       {/* TITLE */}
-       <h1 className="flex justify-self-center justify-center text-purple-400 underline decoration-dashed
-        sm:text-[1.7rem] sm:w-[23rem]
-                md:text-[3rem] md:w-[49rem]
-                lp:text-[4rem] lp:w-[60rem] lp:items-center
-                lg:text-[3rem] lg:pb-[2rem] lg:w-[50rem]
-                ">
+       <h1  className="flex justify-self-center justify-center
+                underline decoration-dashed text-purple-400
+                 sm:text-[1.7rem] sm:pb-[2rem] sm:w-[23rem] 
+                md:text-[3rem] md:w-[60rem]
+                lp:text-[2.8rem] lp:w-[75rem] lp:justify-center lp:items-center
+                lg:text-[3rem] lg:w-[70rem] lg:pt-[2rem] lg:pb-[3rem]">
         User Journey:
       </h1>
 
@@ -138,7 +138,7 @@ const BcitJourney = () => {
             </div>
 
             {/* TEXT */}
-            <div className="border-2 border-purple-200 bg-white p-3 md:w-[45%]">
+            <div className="border-2 border-purple-200 bg-white p-3 md:w-[52%] lg:w-[53%]">
              <p
                 className="
                   border-b border-purple-200 pb-2 text-purple-400 font-vcr
@@ -155,9 +155,9 @@ const BcitJourney = () => {
                 className="
                   mt-3 text-orange-500 font-Dos
                   sm:text-[0.8rem] sm:leading-7
-                  md:text-[1.05rem] md:leading-8
+                  md:text-[0.8rem] md:leading-[2rem]
                   lp:text-[1.25rem] lp:leading-10
-                  lg:text-[1.5rem] lg:leading-[3.5rem]
+                  lg:text-[1.2rem] lg:leading-[3rem]
                 "
               >
                 {currentImage.description}

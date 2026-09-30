@@ -85,9 +85,9 @@ const PuppyWorkSection = () => {
 
       <h1 className="flex justify-center text-purple-400 underline decoration-dashed justify-self-center
         sm:text-[1.7rem] sm:w-[23rem] sm:justify-center
-                md:text-5xl md:pt-[5rem] md:w-[35rem] md:mb-[2rem]
-                 lp:text-[2.8rem] lp:w-[75rem] lp:justify-center lp:items-center lp:pb-[5rem]
-                lg:text-[3rem] lg:w-[40rem] lg:mt-[2rem]">
+                md:text-5xl md:w-[35rem]
+                lp:text-[2.8rem] lp:w-[75rem] lp:justify-center lp:items-center lp:pb-[3rem] lp:pt-[2rem]
+                lg:text-[3rem] lg:w-[70rem] lg:pt-[5rem] lg:pb-[4rem]">
         Sketches &amp; Process:
       </h1>
 
@@ -188,7 +188,7 @@ const PuppyWorkSection = () => {
                   sm:text-[0.8rem] sm:leading-7
                   md:text-[1.05rem] md:leading-8
                   lp:text-[1.25rem] lp:leading-10
-                  lg:text-[1.5rem] lg:leading-[3.5rem]
+                  lg:text-[1.3rem] lg:leading-[2.5rem] lg:w-[35rem]
                 "
               >
                 {currentImage.description}

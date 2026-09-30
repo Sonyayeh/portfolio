@@ -115,22 +115,21 @@ const BcitProcess = () => {
   return (
     <section className="w-full justify-self-center">
       {/* TITLE */}
-       <h1 className="flex justify-self-center justify-center text-purple-400 underline decoration-dashed
-        sm:text-[1.7rem] sm:w-[23rem]
-                md:text-[3rem] md:w-[49rem]
-                lp:text-[4rem] lp:w-[60rem] lp:items-center
-                lg:text-[3rem] lg:pb-[2rem] lg:w-[50rem]
-                ">
+       <h1  className="flex justify-self-center justify-center
+                underline decoration-dashed text-purple-400
+                 sm:text-[1.7rem] sm:pb-[2rem] sm:w-[23rem] 
+                md:text-[3rem] md:w-[60rem]
+                lp:text-[2.8rem] lp:w-[75rem] lp:justify-center lp:items-center
+                lg:text-[3rem] lg:w-[70rem] lg:pt-[2rem] lg:pb-[3rem]">
          Design Documentation:
       </h1>
 
-      <p
-          className="
-            text-orange-500 font-vcr justify-self-center
-            sm:text-[1rem] sm:w-[22rem] sm:pb-[1.5rem]
+       <p
+           className="text-orange-500 justify-self-center font-vcr
+            sm:text-[0.8rem] sm:w-[22rem] sm:pb-[1.5rem]
             md:text-[1.8rem] md:w-[40rem] md:mb-[2rem]
-            lp:text-[2rem] lp:w-[65rem] lp:ml-[4rem] lp:mb-[2rem]
-            lg:text-[2rem] lg:leading-[3.5rem]
+            lp:text-[1.3rem] lp:w-[60rem] lp:mb-[2rem]
+            lg:text-[1.5rem] lg:leading-[2.5rem] lg:w-[80rem]
           "
         >
           This section highlights the design process behind the project,
@@ -250,7 +249,7 @@ const BcitProcess = () => {
                   sm:text-[0.8rem] sm:leading-7
                   md:text-[1.05rem] md:leading-8
                   lp:text-[1.25rem] lp:leading-10
-                  lg:text-[1.5rem] lg:leading-[3.5rem]
+                  lg:text-[1.2rem] lg:leading-[3rem]
                 "
               >
                 {currentImage.description}

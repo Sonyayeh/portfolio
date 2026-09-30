@@ -107,7 +107,7 @@ const BoardTimeline = () => {
       sm:text-[1.7rem] sm:w-[23rem] sm:justify-center
       md:text-[3rem] md:w-[35rem] md:mb-[3rem] 
       lp:text-[2.8rem] lp:w-[40rem]
-      lg:text-[3rem] lg:pb-[2rem] lg:w-[50rem]
+      lg:text-[3rem] lg:w-[70rem] lg:pt-[5rem] lg:pb-[3rem]
       ">
         Work Timeline
       </h1>
@@ -191,10 +191,10 @@ lg:w-[75rem]
       ">
         {/* this is the title of what each section is about*/}
         <h2 className="text-xl font-semibold text-purple-500 
-    sm:text-[1.3rem] 
+    sm:text-[1.3rem] sm:w-[25rem]
     md:text-[2rem] md:pb-5 md:leading-[2.6rem]
     lp:text-[2rem] lp:pb-5 lp:leading-[2.5rem] lp:w-[60rem]
-    lg:text-[2.5rem] lg:pb-[2rem] lg:pt-[2rem] lg:leading-[3.8rem]
+    lg:text-[2.5rem] lg:pb-[2rem] lg:pt-[2rem] lg:leading-[3.8rem] lg:w-[70rem]
         ">{events[selectedIndex].title}</h2>
 
         {/* this is the duration of how long it took me to do each process*/}
@@ -207,10 +207,10 @@ lg:w-[75rem]
 
         {/* this is the content section */}
         <p className="mt-2 text-purple-700 font-Dos
-  sm:pb-[2rem]
+    sm:text-[0.8rem] sm:pb-[2rem]
     md:mt-5 md:text-[2rem]
-    lp:text-[1.3rem]
-    lg:text-[1.5rem] lg:pb-5 lg:leading-[5rem]
+    lp:text-[1.3rem] lp:pb-3 lp:leading-[2rem]
+    lg:text-[1.5rem] lg:pb-5 lg:leading-[2.5rem]
         ">{events[selectedIndex].content}</p>
       </div>
     </section>

@@ -111,17 +111,17 @@ const BoardProcess = () => {
         sm:text-[1.7rem] sm:w-[23rem] sm:justify-center
                 md:text-5xl md:pt-[5rem] md:w-[35rem] md:mb-[2rem]
                  lp:text-[2.8rem] lp:w-[75rem] lp:justify-center lp:items-center lp:pb-[2rem]
-                lg:text-[3rem] lg:w-[40rem] lg:mt-[2rem]">
+                lg:text-[3rem] lg:w-[70rem] lg:pt-[5rem] lg:pb-[3rem]">
         Design Process:
       </h1>
 
       <p
           className=" 
             text-purple-500 font-vcr justify-self-center
-            sm:text-[1rem] sm:w-[22rem] sm:pb-[1.5rem]
+            sm:text-[0.8rem] sm:w-[22rem] sm:pb-[1.5rem]
             md:text-[1.8rem] md:w-[40rem] md:mb-[2rem]
             lp:text-[1.3rem] lp:w-[60rem]
-            lg:text-[2rem] lg:leading-[3.5rem]
+            lg:text-[1.5rem] lg:leading-[2.5rem] lg:w-[80rem]
           "
         >
         This section highlights the product design process behind the project,

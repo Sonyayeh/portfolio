@@ -48,109 +48,82 @@ const BcitSoftware = () => {
       <h1
         className="flex justify-self-center justify-center
                 underline decoration-dashed text-purple-400
-                sm:text-[1.7rem] sm:pb-[2rem] sm:w-[23rem] 
+                 sm:text-[1.7rem] sm:pb-[2rem] sm:w-[23rem] 
                 md:text-[3rem] md:pt-[1rem] md:w-[60rem] md:mb-[2rem]
-                lp:text-[4rem] lp:w-[75rem] lp:justify-center
-                lg:text-[3rem] lg:w-[70rem]"
+                lp:text-[2.8rem] lp:w-[75rem] lp:justify-center lp:items-center lp:pb-[2rem] 
+                lg:text-[3rem] lg:w-[70rem] lg:pt-[2rem] lg:pb-[3rem]"
       >
         Software Used:
       </h1>
 
-       <ul className="grid justify-self-center
-                grid-cols-2 gap-y-8 justify-items-center
-                sm:grid-cols-2 sm:w-[22rem]
-                md:grid-cols-2 md:w-[57rem]
-                lp:grid-cols-2 lp:w-[45rem] lp:h-[30rem]
-                lg:grid-cols-4 lg:w-[77rem] lg:h-[15rem]
-            ">
-        {/* Adobe Stock Images */}
-        <li
-          className="flex flex-col items-center icon sm:w-[8rem] md:w-[8rem] lp:w-auto"
-          ref={(el) => (iconRefs.current[0] = el)}
-        >
-         <IonIcon
-                    className="text-orange-400 hover:text-purple-300 
-                    sm:text-[2.5rem] sm:px-2
-                    md:text-[6rem] md:px-3
-                    lg:text-[7rem] lg:px-6 lg:pb-[1.5rem]
-                    lp:text-[7.5rem]"
-            name="image-outline"
-          />
-           <span className="mt-2 text-center font-vcr text-purple-400
-                    sm:text-[.9rem] sm:w-[10rem]
-                    md:text-[1.5rem] md:w-[22rem]
-                    lp:text-[2rem] lp:w-[22rem]
-                    lg:text-[2rem] lg:w-[20rem]">
-            Adobe Stock Images
-          </span>
-        </li>
+                <ul className="flex flex-wrap justify-center items-start
+              gap-x-6 gap-y-8
+              sm:gap-x-4
+              md:gap-x-10
+              lp:gap-x-10 lp:pb-[2rem]
+              lg:gap-x-[4rem]
+          ">
 
-        {/* Procreate Icon */}
-        <li
-          className="flex flex-col items-center icon sm:w-[8rem] md:w-[8rem] lp:w-auto"
-          ref={(el) => (iconRefs.current[1] = el)}
-        >
-         <IonIcon
-                    className="text-orange-400 hover:text-purple-300 
-                    sm:text-[2.5rem] sm:px-2
-                    md:text-[6rem] md:px-3
-                    lg:text-[7rem] lg:px-6 lg:pb-[1.5rem]
-                    lp:text-[7.5rem]"
-            name="brush-outline"
-          />
-           <span className="mt-2 text-center font-vcr text-purple-400
-                    sm:text-[.9rem] sm:w-[10rem]
-                    md:text-[1.5rem] md:w-[22rem]
-                    lp:text-[2rem] lp:w-[22rem]
-                    lg:text-[2rem] lg:w-[20rem]">
-            Procreate
-          </span>
-        </li>
-
-        {/* Figma Icon */}
-        <li
-          className="flex flex-col items-center icon sm:w-[8rem] md:w-[8rem] lp:w-auto"
-          ref={(el) => (iconRefs.current[2] = el)}
-        >
-         <IonIcon
-                    className="text-orange-400 hover:text-purple-300 
-                    sm:text-[2.5rem] sm:px-2
-                    md:text-[6rem] md:px-3
-                    lg:text-[7rem] lg:px-6 lg:pb-[1.5rem]
-                    lp:text-[7.5rem]"
+    {/* Figma */}
+    <li className="flex flex-col items-center icon" ref={(el) => iconRefs.current[5] = el}>
+        <IonIcon
+            className="text-orange-400 hover:text-purple-300 hover:cursor-pointer
+            sm:text-[2.5rem] sm:px-2
+            md:text-[6rem] md:px-3
+            lp:text-[5rem] lp:px-[2rem]
+            lg:text-[7rem] lg:px-6 lg:pb-[1.5rem]"
             name="logo-figma"
-          />
-          <span className="mt-2 text-center font-vcr text-purple-400
-                    sm:text-[.9rem] sm:w-[10rem]
-                    md:text-[1.5rem] md:w-[22rem]
-                    lp:text-[2rem] lp:w-[22rem]
-                    lg:text-[2rem] lg:w-[25rem]">
-            Figma
-          </span>
-        </li>
-
-        {/* Canva Icon */}
-        <li
-          className="flex flex-col items-center icon sm:w-[8rem] md:w-[8rem] lp:w-auto"
-          ref={(el) => (iconRefs.current[3] = el)}
+        />
+        <span
+            className="mt-2 text-center font-vcr text-purple-400
+            sm:text-[.9rem] sm:w-[8rem]
+            md:text-[1.5rem] md:w-[22rem]
+            lp:text-[1rem] lp:w-[8rem]
+            lg:text-[1.5rem] lg:w-[10rem]"
         >
-          <IonIcon
-                    className="text-orange-400 hover:text-purple-300 
-                    sm:text-[2.5rem] sm:px-2
-                    md:text-[6rem] md:px-3
-                    lg:text-[7rem] lg:px-6 lg:pb-[1.5rem]
-                    lp:text-[7.5rem]"
+        Figma</span>
+    </li>
+
+    {/* Procreate */}
+    <li className="flex flex-col items-center icon" ref={(el) => iconRefs.current[4] = el}>
+        <IonIcon
+            className="text-orange-400 hover:text-purple-300
+            sm:text-[2.5rem] sm:px-2
+            md:text-[6rem] md:px-3
+            lg:text-[7rem] lg:px-6 
+            lp:text-[5rem] lp:px-4"
+            name="brush-outline"
+        />
+        <span
+            className="mt-2 text-center font-vcr text-purple-400
+            sm:text-[.9rem] sm:w-[8rem]
+            md:text-[1.5rem] md:w-[22rem]
+            lp:text-[1rem] lp:w-[8rem]
+            lg:text-[1.5rem] lg:w-[10rem] lg:pt-[1.5rem]
+        ">Procreate</span>
+    </li>
+
+    {/* Canva Icon */}
+    <li className="flex flex-col items-center icon" ref={(el) => (iconRefs.current[3] = el)}>
+        <IonIcon
+            className="text-orange-400 hover:text-purple-300 hover:cursor-pointer
+            sm:text-[2.5rem] sm:px-2
+            md:text-[6rem] md:px-3
+            lp:text-[5rem]
+            lg:text-[7rem] lg:px-6 lg:pb-[1.5rem]"
             name="color-palette-outline"
-          />
-           <span className="mt-2 text-center font-vcr text-purple-400
-                    sm:text-[.9rem] sm:w-[10rem]
-                    md:text-[1.5rem] md:w-[22rem]
-                    lp:text-[2rem] lp:w-[22rem]
-                    lg:text-[2rem] lg:w-[25rem]">
-            Canva
-          </span>
-        </li>
-      </ul>
+        />
+        <span
+            className="mt-2 text-center font-vcr text-purple-400
+            sm:text-[.9rem] sm:w-[8rem]
+            md:text-[1.5rem] md:w-[22rem]
+            lp:text-[1rem] lp:w-[9rem]
+            lg:text-[1.5rem] lg:w-[10rem]"
+        >
+        Canva
+        </span>
+    </li>
+</ul>
     </div>
   );
 };

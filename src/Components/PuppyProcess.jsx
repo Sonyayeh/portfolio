@@ -69,10 +69,10 @@ const PuppyProcess = () => {
           <div className={`overflow-hidden transition-all duration-500 ease-in-out ${openIndex === idx ? "max-h-[1000px] opacity-100" : "max-h-0 opacity-0"}`}>
             <p className="text-orange-500 text-left pb-6
             justify-self-center
-              sm:text-[0.95rem] sm:leading-[1.8rem]
-              md:text-[1.8rem] md:leading-[3rem]
-              lp:text-[1.5rem] lp:leading-[3.2rem] lp:w-[45rem]
-              lg:text-[1.5rem] lg:leading-[3.8rem] lg:w-[67rem]">
+              sm:text-[0.8rem] sm:w-[22rem] sm:pb-[1.5rem]
+            md:text-[1.8rem] md:w-[40rem] md:mb-[2rem]
+            lp:text-[1.3rem] lp:w-[60rem] lp:mb-[2rem]
+            lg:text-[1.5rem] lg:leading-[2.5rem] lg:w-[60rem] lg:pt-[3rem]">
               {slide.content}
             </p>
           </div>
