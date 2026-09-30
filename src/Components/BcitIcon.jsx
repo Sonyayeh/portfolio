@@ -56,12 +56,11 @@ const BcitSoftware = () => {
         Software Used:
       </h1>
 
-                <ul className="flex flex-wrap justify-center items-start
-              gap-x-6 gap-y-8
-              sm:gap-x-4
-              md:gap-x-10
-              lp:gap-x-10 lp:pb-[2rem]
-              lg:gap-x-[4rem]
+                <ul className="flex flex-nowrap justify-center items-start
+    sm:gap-x-2
+    md:gap-x-[1rem]
+    lp:gap-x-10 lp:pb-[2rem]
+    lg:gap-x-[4rem]
           ">
 
     {/* Figma */}
@@ -77,8 +76,8 @@ const BcitSoftware = () => {
         <span
             className="mt-2 text-center font-vcr text-purple-400
             sm:text-[.9rem] sm:w-[8rem]
-            md:text-[1.5rem] md:w-[22rem]
-            lp:text-[1rem] lp:w-[8rem]
+            md:text-[1.5rem] md:w-[12rem]
+            lp:text-[1rem] lp:w-[10rem]
             lg:text-[1.5rem] lg:w-[10rem]"
         >
         Figma</span>
@@ -97,8 +96,8 @@ const BcitSoftware = () => {
         <span
             className="mt-2 text-center font-vcr text-purple-400
             sm:text-[.9rem] sm:w-[8rem]
-            md:text-[1.5rem] md:w-[22rem]
-            lp:text-[1rem] lp:w-[8rem]
+            md:text-[1.5rem] md:w-[12rem]
+            lp:text-[1rem] lp:w-[10rem]
             lg:text-[1.5rem] lg:w-[10rem] lg:pt-[1.5rem]
         ">Procreate</span>
     </li>
@@ -116,8 +115,8 @@ const BcitSoftware = () => {
         <span
             className="mt-2 text-center font-vcr text-purple-400
             sm:text-[.9rem] sm:w-[8rem]
-            md:text-[1.5rem] md:w-[22rem]
-            lp:text-[1rem] lp:w-[9rem]
+            md:text-[1.5rem] md:w-[12rem]
+            lp:text-[1rem] lp:w-[10rem]
             lg:text-[1.5rem] lg:w-[10rem]"
         >
         Canva

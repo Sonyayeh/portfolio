@@ -77,7 +77,7 @@ const BcitDes = () => {
 
       <div className="flex justify-self-center text-center">
               <h3 className="text-orange-500 text-left 
-                sm:text-[1rem] sm:pb-[1rem] sm:w-[24rem] 
+                sm:text-[1rem] sm:pb-[1rem] sm:w-[25rem] 
                 md:text-[2rem] md:w-[50rem] md:pb-[2rem]
                 lp:text-[1.5rem] lp:w-[60rem] lp:leading-[3rem] lp:pb-[4rem]
                 lg:text-[1.5rem] lg:w-[69rem]  lg:leading-[3rem]">
